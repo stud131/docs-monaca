@@ -1,6 +1,7 @@
 ---
 title: Backend Memo
 weight: 80
+aliases: /en/backend/samples/
 ---
 
 This sample app allows user to create a memo app using Monaca Backend API.

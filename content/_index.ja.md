@@ -94,11 +94,6 @@ type="homepage"
             <p>モバイル広告やユーザー行動分析など、アプリの成長をサポートするサービスとの連携方法について解説しています。</p>
         </div>
         <div class="item">
-            <a href="rpg_tkool"><img src="/images/common/top_page/img_rpg1.jpg"></a>
-            <h3>RPGツクールゲームのアプリ化</h3>
-            <p>「RPGツクールMV」で作成したゲームを簡単にiOS/Android向けにアプリ化できるサービスを提供しています。</p>
-        </div>
-        <div class="item">
             <a href="https://edu.monaca.io/"><img src="/images/common/top_page/img_school1.jpg"></a>
             <h3>学習・教育</h3>
             <p>"モバイルアプリの開発手法を学びたい方や、 学校などの教育機関のための学習サポートプログラムを提供しています。"</p>
@@ -116,7 +111,7 @@ type="homepage"
 <div class="bottom-menu">
     <ul class="bottom-menu">
         <li><a href="environment">更新履歴</a></li>
-        <li><a href="">対応環境</a></li>
+        <li><a href="https://ja.monaca.io/headline/">対応環境</a></li>
         <li><a href="https://ja.monaca.io/pricing.html">料金プラン</a></li>
         <li><a href="https://ja.monaca.io/support/inquiry.html">お問い合わせ窓口</a></li>
         <li><a href="sitemap">サイトマップ</a></li>

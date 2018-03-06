@@ -1,6 +1,7 @@
 ---
 title: Getting Started with Vue 2 & Onsen UI 2
 weight: 10
+aliases: /en/monaca_cli/samples
 ---
 
 The new [Vue with Onsen UI template](https://github.com/OnsenUI/vue-cordova-webpack) is a great way

@@ -1,6 +1,7 @@
 ---
 title: バックエンド メモ帳アプリ
 weight: 80
+aliases: /ja/backend/samples/
 ---
 
 Monaca バックエンド API を使用するメモ帳アプリを作成します。
