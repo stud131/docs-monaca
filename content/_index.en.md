@@ -95,7 +95,7 @@ type="homepage"
         </div>
     </div>
     <footer class="footline">
-        <p>Copyright © 2011-2016 Asial Corporation. All rights reserved.</p>
+        <p>Copyright © 2018 Asial Corporation. All rights reserved.</p>
     </footer>
 </div>
 <div class="bottom-menu">
