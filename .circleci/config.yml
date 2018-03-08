@@ -51,7 +51,7 @@ jobs:
             - docs
       - run:
           name: Deploy to production
-          command: aws s3 sync ~/project/public s3://s.docs.monaca.io --delete
+          command: aws s3 sync ~/project/public s3://docs.monaca.io --delete
 
 workflows:
   version: 2
