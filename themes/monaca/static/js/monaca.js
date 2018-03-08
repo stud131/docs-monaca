@@ -28,8 +28,7 @@ $(function () {
     });
 
     // On mobile, we want to scroll the breadcrumbs to the right
-    $('#top-bar #breadcrumbs')
-        .scrollLeft(100000)
-        .css({opacity: 1});
+    $('#top-bar #breadcrumbs').scrollLeft(100000);
+    $('#top-bar #breadcrumbs').css({opacity: 1});
 
 });
