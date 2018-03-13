@@ -4,7 +4,11 @@ These docs are built using [Hugo](https://gohugo.io/). If you do not have it ins
 
 ## Update Site flow
 
-1. Add tag following the rule.   
+1. Fork a branch from the latest master, and name it dev_xxxx.  
+2. Edit and commit your code.
+3. Merge your branch into the master and see the change on the staging server. 
+4. Merge master branch into production branch.
+5. Add tag following the rule.   
   (Tag only if your updates affects the other content created in another language.)
 
 ```
@@ -14,7 +18,7 @@ xxx_language  // (e.g.: 1_en, 2_jp)
   - xxx: sequential number  
   - language: en or ja
 
-2. Draft a new release  
+6. Draft a new release  
 Describe your update points
 
 ## Development
