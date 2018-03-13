@@ -2,6 +2,21 @@
 
 These docs are built using [Hugo](https://gohugo.io/). If you do not have it installed, follow the instructions on the Hugo site.
 
+## Update Site flow
+
+1. Add tag following the rule.   
+  (Tag only if your updates affects the other content created in another language.)
+
+```
+xxx_language  // (e.g.: 1_en, 2_jp)   
+```
+
+  - xxx: sequential number  
+  - language: en or ja
+
+2. Draft a new release  
+Describe your update points
+
 ## Development
 Hugo comes with a built-in server which watches for file changes. To use it, just run:
 
