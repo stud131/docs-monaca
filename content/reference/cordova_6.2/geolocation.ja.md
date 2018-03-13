@@ -1,6 +1,10 @@
 ---
 title: 位置情報の取得 プラグイン
 weight: 120
+aliases: 
+    - /ja/reference/cordova_5.2/geolocation
+    - /ja/reference/cordova_4.1/geolocation
+    - /ja/reference/cordova_3.5/geolocation
 ---
 
 テスト環境 ( バージョン番号 ) :

@@ -1,6 +1,10 @@
 ---
 title: メディア操作 プラグイン
 weight: 150
+aliases: 
+    - /ja/reference/cordova_5.2/media
+    - /ja/reference/cordova_4.1/media
+    - /ja/reference/cordova_3.5/media
 ---
 
 テスト環境 ( バージョン番号 ) :

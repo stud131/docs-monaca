@@ -1,6 +1,10 @@
 ---
 title: スプラッシュスクリーンの制御 プラグイン
 weight: 180
+aliases: 
+    - /ja/reference/cordova_5.2/splashscreen
+    - /ja/reference/cordova_4.1/splashscreen
+    - /ja/reference/cordova_3.5/splashscreen
 ---
 
 テスト環境 ( バージョン番号 ) :

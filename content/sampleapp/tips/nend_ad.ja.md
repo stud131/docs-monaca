@@ -1,6 +1,9 @@
 ---
 title: nend ( ネンド広告 )
 weight: 40
+aliases: 
+    - /en/sampleapp/tips/external_services/nend_ad
+    - /ja/sampleapp/tips/external_services/nend_ad
 ---
 
 Monacaで開発したアプリには、WebView上に表示できるものであれば広告ネットワーク各社が提供している広告を掲載することができます。

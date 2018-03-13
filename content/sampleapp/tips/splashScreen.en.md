@@ -1,6 +1,7 @@
 ---
 title: Control the Splash Screen
 weight: 20
+aliases: /en/sampleapp/tips/splashScreen
 ---
 
 Splash screen is displayed while waiting for the `index.html` page to

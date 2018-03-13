@@ -1,6 +1,10 @@
 ---
 title: カメラ操作 プラグイン
 weight: 20
+aliases: 
+    - /ja/reference/cordova_5.2/camera
+    - /ja/reference/cordova_4.1/camera
+    - /ja/reference/cordova_3.5/camera
 ---
 
 テスト環境 ( バージョン番号 ) : [2.2.0](https://github.com/apache/cordova-plugin-camera/releases/tag/2.2.0)

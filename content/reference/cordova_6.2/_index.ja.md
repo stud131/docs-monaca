@@ -1,6 +1,10 @@
 ---
 title: 基本 Cordova プラグイン ( Cordova のコア プラグイン )
 hidden: true
+aliases: 
+    - /ja/reference/cordova_5.2/
+    - /ja/reference/cordova_4.1/
+    - /ja/reference/cordova_3.5/
 ---
 
 - [バッテリー情報の取得 プラグイン](battery-status)

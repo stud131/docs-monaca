@@ -1,6 +1,10 @@
 ---
 title: バッテリー情報の取得 プラグイン
 weight: 10
+aliases: 
+    - /ja/reference/cordova_5.2/battery-status
+    - /ja/reference/cordova_4.1/battery-status
+    - /ja/reference/cordova_3.5/battery-status
 ---
 
 テスト環境 ( バージョン番号 ) : [1.1.2](https://github.com/apache/cordova-plugin-battery-status/releases/tag/1.1.2)

@@ -1,6 +1,10 @@
 ---
 title: メディアキャプチャー プラグイン
 weight: 160
+aliases: 
+    - /ja/reference/cordova_5.2/media-capture
+    - /ja/reference/cordova_4.1/media-capture
+    - /ja/reference/cordova_3.5/media-capture
 ---
 
 テスト環境 ( バージョン番号 ) :

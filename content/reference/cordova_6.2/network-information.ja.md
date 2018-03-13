@@ -1,6 +1,10 @@
 ---
 title: ネットワーク情報の取得 プラグイン
 weight: 170
+aliases: 
+    - /ja/reference/cordova_5.2/network-information
+    - /ja/reference/cordova_4.1/network-information
+    - /ja/reference/cordova_3.5/network-information
 ---
 
 テスト環境 ( バージョン番号 ) :

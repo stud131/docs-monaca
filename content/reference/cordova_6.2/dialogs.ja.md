@@ -1,6 +1,10 @@
 ---
 title: ダイアログの制御 プラグイン
 weight: 90
+aliases: 
+    - /ja/reference/cordova_5.2/dialogs
+    - /ja/reference/cordova_4.1/dialogs
+    - /ja/reference/cordova_3.5/dialogs
 ---
 
 テスト環境 ( バージョン番号 ) : [1.2.1](https://github.com/apache/cordova-plugin-dialogs/releases/tag/1.2.1)

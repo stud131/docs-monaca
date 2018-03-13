@@ -1,6 +1,10 @@
 ---
 title: ホワイトリストへの登録 プラグイン ( Android 専用 )
 weight: 210
+aliases: 
+    - /ja/reference/cordova_5.2/whitelist
+    - /ja/reference/cordova_4.1/whitelist
+    - /ja/reference/cordova_3.5/whitelist
 ---
 
 テスト環境 ( バージョン番号 ) :

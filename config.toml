@@ -3,6 +3,8 @@ baseURL = "http://docs.monaca.io/"
 title = "Monaca Docs"
 theme = "monaca"
 
+disablePathToLower = true 
+
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 

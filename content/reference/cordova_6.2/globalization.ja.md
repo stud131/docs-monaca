@@ -1,6 +1,10 @@
 ---
 title: 表記の国際化対応 プラグイン
 weight: 130
+aliases: 
+    - /ja/reference/cordova_5.2/globalization
+    - /ja/reference/cordova_4.1/globalization
+    - /ja/reference/cordova_3.5/globalization
 ---
 
 テスト環境 ( バージョン番号 ) :

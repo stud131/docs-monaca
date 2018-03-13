@@ -1,6 +1,10 @@
 ---
 title: ファイル操作 プラグイン
 weight: 100
+aliases: 
+    - /ja/reference/cordova_5.2/file
+    - /ja/reference/cordova_4.1/file
+    - /ja/reference/cordova_3.5/file
 ---
 
 テスト環境 ( バージョン番号 ) :

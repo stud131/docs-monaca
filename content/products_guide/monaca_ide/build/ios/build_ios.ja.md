@@ -1,7 +1,9 @@
 ---
 title: iOS アプリのビルド
 weight: 10
-aliases: /ja/monaca_ide/manual/build/ios/build_ios
+aliases: 
+    - /ja/monaca_ide/manual/build/ios/build_ios
+    - /ja/manual/build/ios/build_ios
 ---
 
 事前準備

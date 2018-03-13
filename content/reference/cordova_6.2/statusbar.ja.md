@@ -1,6 +1,10 @@
 ---
 title: ステータスバーの制御 プラグイン
 weight: 200
+aliases: 
+    - /ja/reference/cordova_5.2/statusbar
+    - /ja/reference/cordova_4.1/statusbar
+    - /ja/reference/cordova_3.5/statusbar
 ---
 
 テスト環境 ( バージョン番号 ) :

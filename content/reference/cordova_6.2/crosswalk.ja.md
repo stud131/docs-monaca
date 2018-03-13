@@ -1,6 +1,10 @@
 ---
 title: Crosswalk プラグイン ( Android 専用 )
 weight: 50
+aliases: 
+    - /ja/reference/cordova_5.2/crosswalk
+    - /ja/reference/cordova_4.1/crosswalk
+    - /ja/reference/cordova_3.5/crosswalk
 ---
 
 テスト環境 ( バージョン番号 ) : [1.3.0](https://github.com/crosswalk-project/cordova-plugin-crosswalk-webview/releases/tag/1.3.0)

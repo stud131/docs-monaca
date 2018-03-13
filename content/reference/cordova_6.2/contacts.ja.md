@@ -1,6 +1,10 @@
 ---
 title: 住所録の取得 プラグイン
 weight: 40
+aliases: 
+    - /ja/reference/cordova_5.2/contacts
+    - /ja/reference/cordova_4.1/contacts
+    - /ja/reference/cordova_3.5/contacts
 ---
 
 テスト環境 ( バージョン番号 ) :

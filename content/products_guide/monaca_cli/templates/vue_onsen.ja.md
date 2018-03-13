@@ -1,7 +1,9 @@
 ---
 title: Vue 2 & Onsen UI 2 入門
 weight: 10
-aliases: /ja/monaca_cli/samples
+aliases: 
+        - /ja/monaca_cli/samples
+        - /ja/monaca_cli/samples/vue_onsen
 ---
 
 新しい [Vue with Onsen UI template](https://github.com/OnsenUI/vue-cordova-webpack)

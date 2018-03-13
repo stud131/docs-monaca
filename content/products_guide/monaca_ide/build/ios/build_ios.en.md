@@ -1,7 +1,9 @@
 ---
 title: Building an iOS App
 weight: 10
-aliases: /en/monaca_ide/manual/build/ios/build_ios
+aliases: 
+    - /en/monaca_ide/manual/build/ios/build_ios
+    - /en/manual/build/ios/build_ios
 ---
 
 ## Prerequisites

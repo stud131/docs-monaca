@@ -1,6 +1,7 @@
 ---
 title: スプラッシュ画像の制御方法
 weight: 20
+aliases: /ja/sampleapp/tips/splashScreen
 ---
 
 `index.html` ページの読み込み時に、スプラッシュ画像を表示します。スプラッシュ画像を消去する場合は、JavaScript

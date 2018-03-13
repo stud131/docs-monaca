@@ -1,6 +1,10 @@
 ---
 title: 端末情報の取得 プラグイン
 weight: 60
+aliases: 
+    - /ja/reference/cordova_5.2/device
+    - /ja/reference/cordova_4.1/device
+    - /ja/reference/cordova_3.5/device
 ---
 
 テスト環境 ( バージョン番号 ) : [1.1.2](https://github.com/apache/cordova-plugin-device/releases/tag/1.1.2)

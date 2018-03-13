@@ -1,6 +1,10 @@
 ---
 title: バイブレーションの制御 プラグイン
 weight: 190
+aliases: 
+    - /ja/reference/cordova_5.2/vibration
+    - /ja/reference/cordova_4.1/vibration
+    - /ja/reference/cordova_3.5/vibration
 ---
 
 Tested Version:

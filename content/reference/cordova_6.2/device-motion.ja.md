@@ -1,6 +1,10 @@
 ---
 title: 端末のモーション検知 プラグイン
 weight: 70
+aliases: 
+    - /ja/reference/cordova_5.2/device-motion
+    - /ja/reference/cordova_4.1/device-motion
+    - /ja/reference/cordova_3.5/device-motion
 ---
 
 テスト環境 ( バージョン番号 ) :

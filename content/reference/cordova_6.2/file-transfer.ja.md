@@ -1,6 +1,10 @@
 ---
 title: ファイル転送 プラグイン
 weight: 110
+aliases: 
+    - /ja/reference/cordova_5.2/file-transfer
+    - /ja/reference/cordova_4.1/file-transfer
+    - /ja/reference/cordova_3.5/file-transfer
 ---
 
 

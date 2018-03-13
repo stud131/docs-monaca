@@ -1,6 +1,10 @@
 ---
 title: 端末のオリエンテーション検知 プラグイン
 weight: 80
+aliases: 
+    - /ja/reference/cordova_5.2/device-orientation
+    - /ja/reference/cordova_4.1/device-orientation
+    - /ja/reference/cordova_3.5/device-orientation
 ---
 
 テスト環境 ( バージョン番号 ) :

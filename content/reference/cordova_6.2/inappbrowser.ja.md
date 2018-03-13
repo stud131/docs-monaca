@@ -1,6 +1,10 @@
 ---
 title: InAppBrowser プラグイン
 weight: 140
+aliases: 
+    - /ja/reference/cordova_5.2/inappbrowser
+    - /ja/reference/cordova_4.1/inappbrowser
+    - /ja/reference/cordova_3.5/inappbrowser
 ---
 
 テスト環境 ( バージョン番号 ) :

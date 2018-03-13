@@ -1,6 +1,10 @@
 ---
 title: Console への出力 プラグイン
 weight: 30
+aliases: 
+    - /ja/reference/cordova_5.2/console
+    - /ja/reference/cordova_4.1/console
+    - /ja/reference/cordova_3.5/console
 ---
 
 テスト環境 ( バージョン番号 ) : [1.0.3](https://github.com/apache/cordova-plugin-console/releases/tag/1.0.3)
