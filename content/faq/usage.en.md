@@ -46,17 +46,12 @@ tutorial, introductory guide, and sample apps. Each of these reference
 materials provides descriptions on how to write specific codes, so
 please do take a look. ([Third-party Cordova Plugins](/en/reference/third_party_phonegap) and [Samples & Tips](/en/sampleapp))
 
-## When developing an app, is it necessary to own a server?
+## Please tell me how to do team development with Monaca.
 
-When developing an app with Monaca, you don't need to own a server
-because Monaca provides server functions with backend services. For more
-details, please refer to [Monaca Backend](/en/products_guide/backend).
+Using the Monaca cloud IDE team management function, you can share a project among members registered in Monaca. For details, please check the [Share](https://docs.monaca.io/en/products_guide/monaca_ide/overview/#share).
 
-## Does Monaca support team development?
+In addition, it is possible to develop team using various version management tools through Monaca Cloud IDE, GitHub, Git SSH linkage function, Monaca Localkit, Monaca CLI, etc.
 
-Yes, Monaca supports team development. Users can share their projects to
-other registered users using the team function in Monaca Cloud IDE. For
-more detail, please refer to [Share](/en/products_guide/monaca_ide/overview/#team-tab).
 
 The usability of this function depends on your usage plan with Monaca.
 

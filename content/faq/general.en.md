@@ -6,8 +6,7 @@ weight: 10
 ## What is Monaca?
 
 Monaca is a development environment for smartphone applications provided
-by Asial Corporation. You can develop your app using Monaca Cloud IDE
-which operates via the Web. Monaca does not only provide a development
+by Asial Corporation. Monaca does not only provide a development
 environment at your fingertips, but also allows everyone to develop
 easily smartphone applications.
 
@@ -39,30 +38,6 @@ Please inquire using our [Community Forum](https://community.onsen.io/) or
 [Support Service](https://monaca.io/service/index.html) for the issues
 concerning Monaca such as technical questions, requests, practical
 business use, and etc.
-
-## Do I need a Platinum Plan to develop commercial application or OEM application?
-
-You may develop commercial applications or OEM applications under any
-Monaca plan. However, since the availability of services such as support
-and team development functionality varies from plan to plan, we
-recommend as the following:
-
-- `Personal` plan: for personal development of an application.
-- `Gold` plan: for commercial application development.
-- `Platinum` plan: for application original equipment manufacture.
-- `Enterprise` plan: for large scale development.
-
-For more information, pleaser refer to [Monaca Subscription Plan](https://monaca.io/pricing.html).
-
-## Which plan should I choose?
-
-Please choose your plan according to the functions and range of support
-that you will need. We recommend:
-
-- `Personal` plan: for personal development of an application.
-- `Gold` plan: for commercial application development.
-- `Platinum` plan: for application original equipment manufacture.
-- `Enterprise` plan: for large scale development.
 
 For more information, pleaser refer to [Monaca Subscription Plan](https://monaca.io/pricing.html).
 

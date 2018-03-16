@@ -60,9 +60,7 @@ Store submission:
 
 ## Are there any examples of applications developed with Monaca that went through Apple's review, and are actually available on the App Store?
 
-For example, [Kobuta House](http://itunes.apple.com/us/app/kobutahausu/id553150583?mt=8) is a
-sample app that we developed. It is a mini-game app that is available on
-the App Store. For more samples, please check [our showcase link](http://monaca.mobi/showcase).
+Many applications have been published on the App Store so far.
 
 ## Can I develop Windows Store apps?
 

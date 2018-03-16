@@ -13,8 +13,7 @@ Monaca users can also develop on their local computers without using Monaca Clou
 
 ## What knowledge required to develop mobile apps with Monaca?
 
-Apps development with Monaca is very simple. All you need are some
-knowledge of HTML5, CSS3, and JavaScript.
+If you develop a simple application, you can start developing immediately as long as you know HTML5, CSS3, JavaScript to some extent.
 
 ## Why can I develop smartphone applications with Monaca even without using Java or Objective-C?
 
@@ -27,13 +26,7 @@ iPhone/iPad) are not required when developing with Monaca.
 
 ## Tell me about the operating systems of devices which are compatible with Monaca.
 
-Monaca is currently supporting the following operating systems:
-
--   Android 4 or higher
--   iOS 8 or higher
--   Windows 8.1
--   Chrome OS
--   Kindle Fire OS
+For the corresponding OS of each tool of Monaca, please see the [Supported Environment](https://docs.monaca.io/en/environment/) page.
 
 ## How can I remove a permission for an unused feature in an Android app?
 
@@ -67,13 +60,6 @@ Chrome browser.
 ## Can I use my own development environment to develop Monaca apps?
 
 Yes, you can. Monaca comes with [Monaca Localkit](/en/products_guide/monaca_localkit) and [Monaca CLI](/en/products_guide/monaca_cli) which allow you to develop locally using your own preferred IDE or code editor.
-
-## As a Visual Studio user, can I use Visual Studio to develop Monaca apps?
-
-If you are familiar with Visual Studio, you can develop Monaca apps
-using an extension called [Monaca for Visual Studio](/en/products_guide/monaca_vs). Most of [Monaca Cloud IDE](/en/products_guide/monaca_ide)'s features are included in this
-extension. Therefore, app development with Monaca for Visual Studio is
-very similar to the one with Monaca Cloud IDE.
 
 ## Application does not run on Preview panel in the IDE.
 

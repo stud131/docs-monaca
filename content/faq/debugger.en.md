@@ -36,14 +36,6 @@ which the debug log cannot be displayed. If possible, please inform us
 of any information about devices that have such problem via [Monaca Support](https://monaca.io/service/index.html), we will look into it and provide
 the solution as soon as possible.
 
-## Why are there two types (App Store version and Build version) of iOS version for Monaca Debugger?
-
-Due to the reviewing process of Apple App Store, the availability of the
-latest version of Monaca Debugger in App Store may take sometimes.
-Therefore, to provide the lastes version of iOS-based Monaca Debugger as
-soon as possible to our customers, we have prepared other option which
-is the build version of Monaca debugger.
-
 ## When I started the app on Android, the app crashed.
 
 There may have problems of configuration in `AndroidManifest.xml` file. If you use PhoneGap, please make sure to have this setting: 

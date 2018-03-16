@@ -9,10 +9,6 @@ For Monaca, there is no particular restriction on installing an ad
 network in an application. Technically, ads can be posted on WebView, so
 please use them according to the agreements of each ad network company.
 
-If they are InMobi, mediba (Japanese) or nend (Japanese), you can
-display the ads in apps created by Monaca. In regard to nend, please
-refer to [nend (Japanese)](/ja/sampleapp/tips/nend_ad).
-
 ## Can I use external backend service?
 
 You can use external backend services with Monaca. We also provide some
@@ -36,21 +32,11 @@ the document below.
 Windows Store apps are not compatible with Cordova Core Plugins, but
 compatible with developments that used WinJS.
 
-## Is there any way to implement Push Notification features such as membership management?
-
-You can implement Push Notification features such as membership management by using backend services such as [Kii Platform](http://en.kii.com/) since it can be easily implemented using the provided APIs.
-
-## Can I develop applications that run in the background?
-
-One of the common issues in mobile apps development is unstable
-functionality due to memory issue. As a result, currently Monaca does
-not support the development of apps running in the background.
-
 ## In applications that are developed using Monaca, can I embed codes written in Java? (For Android)
 
 Monaca currently does not support the embedding of Java native codes.
 
-## Can I use UIKit in applications developed using Monaca? (For iOS)
+## Can I use UIKit with an application developed with Monaca?
 
 Monaca currently does not support the uses of UIKit.
 
