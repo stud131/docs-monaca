@@ -4,23 +4,7 @@ weight: 3
 aliases: /en/monaca_ide/tutorial/adding_backend/
 ---
 
-## Step 1: Enabling a Required Plugin for Monaca Backend
-
-
-In order to use Monaca Backend, you need to add [jQuery
-library](https://jquery.com/) into your project. If you haven't added
-jQuery into your project yet, please do as follows:
-
-1.  From Monaca Cloud IDE menu, go to `Config` &rarr; `Manage JS/CSS Components`.
-2.  Then, `Add or Remove JS/CSS Components` page will be shown. Select {{<guilabel name="Add">}} button of `jQuery (Monaca Version)` to add it to your project.
-
-    {{<img src="/images/monaca_ide/tutorial/adding_backend/1.png">}}
-
-3.  In this dialog, you can choose which version of jQuery library you want to install. Then, click {{<guilabel name="Start Install">}} button. Next, click on {{<guilabel name="OK">}} button.
-
-    {{<img src="/images/monaca_ide/tutorial/adding_backend/2.png" width="400">}}
-
-## Step 2: Attaching Backend to Your Project
+## Step 1: Attaching Backend to Your Project
 
 1.  From Monaca Cloud IDE, click on `Cloud` icon above the file tree menu
     to go to the Backend Control Panel. Then, click on {{<guilabel name="Start Using Backend">}}
@@ -38,7 +22,7 @@ jQuery into your project yet, please do as follows:
 
     {{<img src="/images/monaca_ide/tutorial/adding_backend/5.png">}}
 
-## Step 3: Creating a New Collection
+## Step 2: Creating a New Collection
 
 Collection is a general purpose storage to keep data in the Backend.
 

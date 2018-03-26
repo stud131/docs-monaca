@@ -5,12 +5,6 @@ weight: 50
 
 You can make query with Criteria object.
 
-{{<note>}}
-In order to access Backend API, you need to load <code>jQuery</code> and register
-<code>cloud.monaca.mobi</code> in the whitelist by editing each OS's configuaration
-file. For more details, please refer to {{<link href="/en/reference/config/android_configuration/#access-origin-android" title="Access Origin (Android)">}} and {{<link href="/en/reference/config/ios_configuration/#access-origin" title="Access Origin (iOS)">}}.
-{{</note>}}
-
 Method/Property | Description
 ----------------|--------------------
 [monaca.cloud.Criteria()](#creating-a-criteria-object) | Create a criteria object

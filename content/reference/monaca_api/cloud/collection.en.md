@@ -6,10 +6,6 @@ weight: 30
 Collection management can be done by using the following functions and
 properties.
 
-{{<note>}}
-    In order to access Backend API, you need to load <code>jQuery</code> and register <code>cloud.monaca.mobi</code> in the whitelist by editing each OS's configuaration file. For more details, please refer to {{<link href="/en/reference/config/android_configuration/#access-origin-android" title="Access Origin (Android)">}} and {{<link href="/en/reference/config/ios_configuration/#access-origin" title="Access Origin (iOS)">}}.
-{{</note>}}
-
 Method/Property | Description
 ----------------|----------------
 [monaca.cloud.Collection()](#collection) | Get a collection object
