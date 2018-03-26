@@ -10,7 +10,7 @@ database. Monaca Backend provides these functionalities in advance as a
 cloud-based service that can manage users without a need for server-side
 development on the client's part.
 
-##  Setup
+In order to add Monaca Backend into your Monaca project, please do as follows:
 
 1. From Monaca Cloud IDE menu, click on `Backend`. Then, Monaca Backend will be open in a new tab.
 
