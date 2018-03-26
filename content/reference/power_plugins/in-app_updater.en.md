@@ -29,8 +29,7 @@ project:
 1.  From Monaca Cloud IDE menu, go to {{<menu menu1="File" menu2="Manage Cordova Plugins">}}
     or {{<menu menu1="Config" menu2="Manage Cordova Plugins">}}.
 
-2.  Click {{<guilabel name="Enable">}} button of the `Monaca In-App Updater (Version 4.0.0)`
-    to add it into your project.
+2.  Under *Available Plugins* section, find `InAppUpdater` plugin. Hover it and click on {{<guilabel name="Enable">}} button.
 
     {{<img src="/images/reference/power_plugins/inapp_updater/8.png">}}
 
@@ -43,6 +42,8 @@ project:
 4.  Input the [CheckUpdate URL](#checkupdate-url-checkupdate) and [Download URL](#download-url-download) appropriately. Then, click {{<guilabel name="OK">}} button.
 
     {{<img src="/images/reference/power_plugins/inapp_updater/10.png" width="500">}}
+
+### Usage
 
 ###  Plugin Configuration
 
@@ -136,7 +137,7 @@ Parameter| Data Type | Description
 
 A successful response contains a ZIP file of InAppUpdater resource.
 
-### Methods
+### API Reference
 
 The easiest way to use this plugin is to only use [autoUpdate()](#autoupdate) which will
 download the update files (as configure in [Plugin Configuration](#plugin-configuration)) and

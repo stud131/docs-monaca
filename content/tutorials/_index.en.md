@@ -3,8 +3,14 @@ title: Tutorials
 weight: 20
 ---
 
-- [Monaca Cloud IDE Tutorial](/en/tutorials/monaca_ide/)
-- [Monaca Localkit Tutorial](/en/tutorials/monaca_localkit/)
-- [Monaca CLI Tutorial](/en/tutorials/monaca_cli/)
-- [Monaca for Visual Studio Tutorial](/en/tutorials/monaca_vs/)
+## Products Tutorials    
+
+- [Monaca Cloud IDE Tutorial](monaca_ide)
+- [Monaca Localkit Tutorial](monaca_localkit)
+- [Monaca CLI Tutorial](monaca_cli)
+- [Monaca for Visual Studio Tutorial](monaca_vs)
+
+## Plugins Tutorials 
+
+- [Sqlite Storage Plugin](sqlite)   
 
