@@ -23,18 +23,18 @@ This manual will show user management from the Monaca Cloud IDE.
 1.  From Monaca Cloud IDE, click on `Cloud` icon above the file tree menu
     to go to the Backend Control panel. Then, click {{<guilabel name="Start Using Backend">}} button.
 
-    {{<img src="/images/backend/control_panel/1.png">}}
+    {{<img src="/images/backend/cur_control_panel/1.png">}}
 
 2.  The following dialog will appear. You can create a new Backend, or
     select an existing one which is used in a different project. Then,
     click {{<guilabel name="Apply">}} to attach the Backend to your project.
 
-    {{<img src="/images/backend/control_panel/2.png">}}
+    {{<img src="/images/backend/cur_control_panel/2.png">}}
 
 3.  After attaching the Backend, your Backend Control panel will look
     similar to this:
 
-    {{<img src="/images/backend/control_panel/3.png">}}
+    {{<img src="/images/backend/cur_control_panel/3.png">}}
 
 ## Backend Configuration
 
@@ -42,18 +42,18 @@ This manual will show user management from the Monaca Cloud IDE.
 
 1.  From Backend Control panel, click on the `Gear` icon and choose `Select a Backend`.
 
-    {{<img src="/images/backend/control_panel/25.png">}}
+    {{<img src="/images/backend/cur_control_panel/25.png">}}
 
 2.  Backend dialog will appear. You can switch to another existing
     backend or a new one. Then, click {{<guilabel name="Apply">}}.
 
-    {{<img src="/images/backend/control_panel/26.png">}}
+    {{<img src="/images/backend/cur_control_panel/26.png">}}
 
 ### Security Settings
 
 1.  From Backend Control Panel, click on the `Gear` icon and choose `Backend Settings`.
 
-    {{<img src="/images/backend/control_panel/27.png">}}
+    {{<img src="/images/backend/cur_control_panel/27.png">}}
 
 2.  Backend Settings dialog will appear. In this page, you can:
 
@@ -61,7 +61,7 @@ This manual will show user management from the Monaca Cloud IDE.
     -   change the minimum character length required for password and username.
     -   set password reset token expiration period.
 
-    {{<img src="/images/backend/control_panel/28.png">}}
+    {{<img src="/images/backend/cur_control_panel/28.png">}}
 
 3.  Then, click {{<guilabel name="Apply">}}.
 
@@ -77,19 +77,19 @@ instruction below:
 
 1.  From Backend Control Panel, click on the `Gear` icon and choose `Backend Settings`.
 
-    {{<img src="/images/backend/control_panel/29.png">}}
+    {{<img src="/images/backend/cur_control_panel/29.png">}}
 
 2.  Backend Settings dialog will appear. In this page, go to
     `Management API` and click {{<guilabel name="Enable">}}.
 
-    {{<img src="/images/backend/control_panel/30.png">}}
+    {{<img src="/images/backend/cur_control_panel/30.png">}}
 
 3.  In this page, there are two important information such as:
 
     -   `Management API Endpoint URL`: This URL looks like this `"https://cloud.monaca.mobi/manage/json-rpc/CLOUD_PROJECT_ID"` in which `CLOUD_PROJECT_ID` is your Monaca Backend ID. This URL will be used as `JSON-RPC Request URL` (See [Backend Management API](/en/reference/monaca_api/cloud_management)).
     -   `IP Address Range`: You can specify one API key for a particular range of IP addresses. Leaving it blank is not recommended.
 
-    {{<img src="/images/backend/control_panel/31.png">}}
+    {{<img src="/images/backend/cur_control_panel/31.png">}}
 
 4.  Click {{<guilabel name="Create">}} button to generate the API key.
 
