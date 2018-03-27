@@ -57,6 +57,30 @@ instruction below:
 
     {{<img src="/images/backend/control_panel/6.png">}}
 
+## Show/Hide Columns of Records
+
+By default, only system properties of a record are shown such as: `Oid`, `Username`, `Password`, `Owner User`, `Permission`, `Created at` and `Updated at`. 
+
+If you want to show/hide other column(s), please do as follows:
+
+1. Click on {{<guilabel name="+">}} icon.
+
+    {{<img src="/images/backend/backend_operations/4.png">}}
+
+2. Select the column you want to be shown and click {{<guilabel name="Add">}}. You can only add one column at a time.
+
+    {{<img src="/images/backend/backend_operations/5.png">}}
+
+3. After that, the additional column(s) will be shown. You can re-arrange the column order by dragging and moving the column header. 
+
+    {{<img src="/images/backend/backend_operations/6.png">}}
+
+4.  When you want to hide a column, click on its dropdown icon and
+    choose {{<guilabel name="Hide this column">}}.
+
+    {{<img src="/images/backend/control_panel/7.png">}}
+
+
 See Also:
 
 - [Backend API](/en/reference/monaca_api/cloud)

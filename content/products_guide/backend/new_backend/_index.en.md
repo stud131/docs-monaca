@@ -10,7 +10,7 @@ cloud-based service that can manage users without a need for server-side
 development on the client part.
 
 {{<note>}}
-    Monaca Backend plugin is not included in both Monaca Debugger (store-version) and custom Monaca Debugger. Therefore, please build (debug build) your app and install on your device in order to test Monaca Backend operations.
+    Monaca Backend plugin is not included in both Monaca Debugger (store-version) and custom Monaca Debugger (build from a project). Therefore, please build (debug build) your app and install on your device in order to test Monaca Backend operations.
 {{</note>}}
 
 - [Getting Started](getting_started)

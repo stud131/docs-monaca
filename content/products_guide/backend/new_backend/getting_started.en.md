@@ -16,13 +16,11 @@ In order to add Monaca Backend into your Monaca project, please do as follows:
 
 2. Click on {{<guilabel name="Create and use the Monaca Backend">}} button.
 
-3.  The following dialog will appear. You can create a new Backend, or
-    select an existing one which is used in a different project. Then,
-    click {{<guilabel name="Apply">}} to attach the Backend to your project.
+3. The following dialog will appear. You can create a new Backend, or select an existing one which is used in a different project. Then, click {{<guilabel name="Apply">}} to attach the Backend to your project.
 
     {{<img src="/images/backend/getting_started/1.png">}}
 
-4.  After attaching the Backend, the Backend Control panel will appear. Within this control panel, various [Backend Operations](../backend_operations) such as User and Collection management
+4.  After attaching the Backend, the Backend Control panel will appear. Within this control panel, various [Backend Operations](../backend_operations) can be done. These backend operations can also be done using [Monaca Backend API](/en/reference/monaca_api/cloud).
 
     {{<img src="/images/backend/getting_started/2.png">}}
 
