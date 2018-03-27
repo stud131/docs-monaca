@@ -27,10 +27,6 @@ Monaca バックエンド API を使用するメモ帳アプリを作成しま�
   <code>JavaScript からのアイテム追加を許可する</code> にチェックを入れます。<code>Read</code> と <code>Write</code>  オプションは必要ありません。バックエンドの作成方法の詳細は、{{<link href="/ja/products_guide/backend/control_panel" title=" バックエンド管理パネル">}} をご確認ください。
 {{</note>}}
 
-{{<note>}}
-  バックエンド API にアクセスするためには、各 OS の設定ファイルを編集して、 <code>cloud.monaca.mobi</code> ドメインをアプリのホワイトリストに追加する必要があります。詳細は、 {{<link href="/ja/reference/config/android_configuration/#lt-access-gt-要素" title="Access Origin (Android)">}} と {{<link href="/ja/reference/config/ios_configuration/#lt-access-gt-要素" title="Access Origin (iOS)">}} をご確認ください。
-{{</note>}}
-
 ## ファイル構成          
 
 {{<figure src="/images/sampleapp/backend_memo/1.png">}}    

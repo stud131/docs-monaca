@@ -39,7 +39,7 @@ version. The differences between these types of build are as follows:
 </table>
 
 {{<note>}}
-    サイドローディング ( Sideloading ) とは、一般的にはファイルのアップロード・ダウンロードを指しますが、ここでは、アプリのパッケージ ( APK 形式 ) を、マーケットを経由せずに、端末にインストールすることを指します。ビルド後、APK ファイルを直にダウロードして、インストールします。
+    Sideloading typically refers to media file transfer to a mobile device via USB, Bluetooth, WiFi or by writing to a memory card for insertion into the mobile device. When referring to Android apps, "sideloading" typically means installing an application package in APK format onto an Android device without going through the market.
 {{</note>}}
 
 

@@ -4,26 +4,7 @@ weight: 3
 aliases: /ja/monaca_ide/tutorial/adding_backend/
 ---
 
-ステップ 1 : Monaca バックエンドで使用するプラグインの有効化
-------------------------------------------------------------
-
-Monaca バックエンドを使用する場合、[jQuery ライブラリー](https://jquery.com/)
-をプロジェクトに追加します。追加する場合には、次の手順に従います。
-
-1.  Monaca クラウド IDE メニューから、{{<menu menu1="設定" menu2="JS/CSS コンポーネントの追加と削除...">}}
-    を選択します。
-2.  [ JS/CSS コンポーネントの追加と削除 ]
-    ページが表示されるので、jQuery ( Monaca Version ) の {{<guilabel name="追加">}} ボタンをクリックします。
-
-    {{<img src="/images/monaca_ide/tutorial/adding_backend/1.png">}}
-
-3.  次のダイアログが表示されます。使用する jQuery
-    ライブラリーのバージョンを選択して、{{<guilabel name="インストール開始">}}
-    ボタンをクリックします。次に、{{<guilabel name="OK">}} ボタンをクリックします。
-
-    {{<img src="/images/monaca_ide/tutorial/adding_backend/2.png" width="400">}}
-
-ステップ 2 : バックエンドとプロジェクトの紐付け
+ステップ 1 : バックエンドとプロジェクトの紐付け
 -----------------------------------------------
 
 1.  Monaca クラウド IDE のメニュー上で、左側のツリーメニューの上部に表示された `クラウド` ( 雲
@@ -43,7 +24,7 @@ Monaca バックエンドを使用する場合、[jQuery ライブラリー](htt
 
     {{<img src="/images/monaca_ide/tutorial/adding_backend/5.png">}}
 
-ステップ 3 : コレクションの新規作成
+ステップ 2 : コレクションの新規作成
 -----------------------------------
 
 コレクションとは、バックエンドの使用時に、データの格納を行う、汎用的なストレージのことを指します。

@@ -27,10 +27,6 @@ After you have created a new backend, please create a new `Memo` collection as f
   Please check <code>Allow JavaScript API to insert data</code>. <code>Read</code> and <code>Write</code> options must not be selected. For more details on how to create Backend, please read {{<link href="/en/products_guide/backend/control_panel" title="Backend Control Panel">}}.
 {{</note>}}
 
-{{<note>}}
-  In order to access Backend API, you need to register <code>cloud.monaca.mobi</code> in the whitelist by editing each OSs configuration file. For more details, please refer to {{<link href="/en/reference/config/android_configuration/#lt-access-gt-element" title="Access Origin (Android)">}} and {{<link href="/en/reference/config/ios_configuration/#lt-access-gt-element" title="Access Origin (iOS)">}}.
-{{</note>}}
-
 ## File Components                                           
 
 {{<figure src="/images/sampleapp/backend_memo/1.png">}}                                               
