@@ -162,6 +162,5 @@ See Also:
 
 - [Debugger Installation on Emulator](../debugger_emulator)
 - [Debugger Installation on iOS](../debugger_ios)
-- [Debugger Installation on Chrome](../debugger_chrome)
 - [Debugger's Functionalities](../../features)
 - [Debugger's Usage](../../debug)

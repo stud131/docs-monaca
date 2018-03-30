@@ -9,5 +9,4 @@ aliases: /ja/debugger/manual/installation
 
 - [Android 向けの Monaca デバッガー](debugger_android)
 - [iOS 向け Monaca デバッガー](debugger_ios)
-- [Chrome 向け Monaca デバッガー](debugger_chrome)
 - [Android エミュレーター向け Monaca デバッガー](debugger_emulator)

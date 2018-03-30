@@ -110,7 +110,6 @@ Debuggeに含まれていません。
 
 参考ページ
 
-- [Chrome 向け Monaca デバッガー]({{<ref "debugger_chrome.ja.md">}})
 - [iOS 上へのデバッガーのインストール]({{<ref "debugger_ios.ja.md">}})
 - [Android 向けの Monaca デバッガー]({{<ref "debugger_android.ja.md">}})
 - [機能の概要]({{<ref "features.ja.md">}})

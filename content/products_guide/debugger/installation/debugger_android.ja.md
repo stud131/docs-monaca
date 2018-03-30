@@ -174,6 +174,5 @@ Android 向けの Monaca
 
 - [エミュレーター上へのデバッガーのインストール]({{<ref "debugger_emulator.ja.md">}})
 - [iOS 上へのデバッガーのインストール]({{<ref "debugger_ios.ja.md">}})
-- [Chrome 向け Monaca デバッガー]({{<ref "debugger_chrome.ja.md">}})
 - [機能の概要]({{<ref "features.ja.md">}})
 - [使用例]({{<ref "debug.ja.md">}})
