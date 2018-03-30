@@ -11,8 +11,6 @@ title: サイトマップ
             - [新しい Monaca クラウド IDE の変更点](/ja/products_guide/monaca_ide/changes)
             - [コードエディター](/ja/products_guide/monaca_ide/code_editor)
                 - [エディターのショートカット一覧](/ja/products_guide/monaca_ide/code_editor/editor)
-                - [TypeScript](/ja/products_guide/monaca_ide/code_editor/type_script)
-                - [Emmet](/ja/products_guide/monaca_ide/code_editor/zen_coding)
             - [プロジェクトの構成](/ja/products_guide/monaca_ide/dependencies)
                 - [ファイル・フォルダー構成](/ja/products_guide/monaca_ide/dependencies/file_dir)
                 - [JS・CSS コンポーネント](/ja/products_guide/monaca_ide/dependencies/components)

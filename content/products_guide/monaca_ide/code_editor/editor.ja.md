@@ -94,9 +94,3 @@ aliases: /ja/monaca_ide/manual/code_editor/editor
 | マルチカーソルを、下方向に伸ばします。|	Ctrl + Alt + Down |	Command + Alt + Down |
 | マルチカーソルを、上方向に伸ばします。 |	Ctrl + Alt + Shift + Up |	Command + Alt + Shift + Up |
 | マルチカーソルは維持したまま、別カーソルで行を移動します。 | 	Ctrl + Alt + Shift + Down |	Command + Alt + Shift + Down |
-
-
-参考ページ 
-
-- [TypeScript](../type_script)
-- [Emmet](../zen_coding)

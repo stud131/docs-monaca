@@ -277,8 +277,7 @@ such as Preferences is also shown and can be edited here. Once you open
 a file, you can select it from the tab.
 
 The editor supports the syntax highlight of JavaScript/HTML5/CSS3. The
-editor also supports JavaScript and CSS autocomplete function,
-[Emmet (Zen Coding)](/en/products_guide/monaca_ide/code_editor/zen_coding/) and [Typescript](/en/products_guide/monaca_ide/code_editor/type_script/).
+editor also supports JavaScript and CSS autocomplete function.
 
 {{<note>}}
     Please refer to {{< link href="/en/products_guide/monaca_ide/code_editor/editor/" title="Editor Shortcuts">}} for the list of all shortcuts available in Monaca code editor.

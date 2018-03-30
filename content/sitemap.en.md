@@ -11,8 +11,6 @@ title: Sitemap
             - [Changes in the New Cloud IDE](/en/products_guide/monaca_ide/changes)
             - [Code Editor](/en/products_guide/monaca_ide/code_editor)
                 - [Editor Shortcut](/en/products_guide/monaca_ide/code_editor/editor)
-                - [TypeScript](/en/products_guide/monaca_ide/code_editor/type_script)
-                - [Emmet](/en/products_guide/monaca_ide/code_editor/zen_coding)
             - [Project Dependencies](/en/products_guide/monaca_ide/dependencies)
                 - [File and Folder Structure](/en/products_guide/monaca_ide/dependencies/file_dir)
                 - [JS/CSS Components](/en/products_guide/monaca_ide/dependencies/components)
