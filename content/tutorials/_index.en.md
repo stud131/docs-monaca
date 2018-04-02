@@ -12,5 +12,8 @@ weight: 20
 
 ## Plugins Tutorials 
 
-- [Sqlite Storage Plugin](sqlite)   
+- [Cordova Sqlite Storage Plugin](sqlite)   
+- [Cordova OneSignal Plugin](one_signal)
+- [Cordova Google Analytics Plugin](google_analytics)   
+- [Cordova In-App Purchase Plugin](inapp_purchase)
 
