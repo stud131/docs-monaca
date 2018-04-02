@@ -1,7 +1,9 @@
 ---
 title: 検証版アプリなどの配信/配布支援サービス ( デプロイサービス )
 weight: 20
-aliases: /ja/monaca_ide/manual/monaca_ci/supported_services
+aliases: 
+    - /ja/monaca_ide/manual/monaca_ci/supported_services
+    - /ja/manual/monaca_ci/supported_services
 ---
 
 サポートしている支援サービス
