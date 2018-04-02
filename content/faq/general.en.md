@@ -29,8 +29,7 @@ refer to [Cordova Plugins](/en/products_guide/monaca_ide/dependencies/cordova_pl
 
 ## Can I develop commercial smartphone applications using Monaca?
 
-Yes, please make the most use of Monaca. Currently, there is no
-restriction on commercial use. Please use our [Support Service](https://monaca.io/service/index.html) if you have any questions.
+Yes, please make the most use of Monaca. Please use our [Support Service](https://monaca.io/service/index.html) if you have any questions.
 
 ## I don't understand something about Monaca. Where can I ask questions?
 

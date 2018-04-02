@@ -93,7 +93,6 @@ apps on more than one Android device.
 
 See Also:
 
-- [Debugger Installation on Chrome Apps](../debugger_chrome)
 - [Debugger Installation on iOS](../debugger_ios)
 - [Debugger Installation on Android](../debugger_android)
 - [Debugger's Functionalities](../../features)

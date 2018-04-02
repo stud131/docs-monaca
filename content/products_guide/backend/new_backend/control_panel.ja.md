@@ -4,87 +4,81 @@ weight: 30
 aliases: /ja/backend/manual/control_panel/
 ---
 
-ユーザーを登録・管理する機能を、モバイルアプリに実装するためには、クライアントアプリと連携するサーバーサイドのプログラムを、別途、組む必要があります。Monaca
-バックエンドでは、クラウドサービスとして、ユーザーの管理機能を提供しています。Monaca
-バックエンドを使用すれば、アプリ開発者はサーバーサイドの開発をせずとも、バックエンドの機能をアプリに実装できます。
+[バックエンドの操作](../backend_operations) のほかに、さまざまなバックエンドの設定と情報がバックエンド管理パネルにあります。
 
-Monaca バックエンドを使用すれば、次の機能を実装できます。
+## バックエンドの切り替え
 
--   サーバー上での、エンドユーザーのデータ管理
--   エンドユーザーの登録とログイン認証
-
-ここでは、 Monaca クラウド IDE
-上で、ユーザー管理を行う方法について解説します。
-
-## <a name="backend-control-panel-getting-started"></a> Monaca バックエンドの管理
-
-1.  バックエンド管理パネル上で、歯車のアイコンをクリックして、バックエンドの切り替え
-    を選択します。
+1.  バックエンド管理パネルから、`navicon` アイコンをクリックし、`バックエンドの切り替え` を選択します。 バックエンドダイアログが表示されます。
 
     {{<img src="/images/backend/control_panel/1.png">}}
 
-2.  次のダイアログが表示されます。ここでは、バックエンドの新規作成、または、他のプロジェクトで使用しているバックエンドの再利用を選択できます。選択後、{{<guilabel name="適用">}}ボタンをクリックして、プロジェクトにバックエンドを紐付けします。
+2.  既存のバックエンドを使用、または、新規バックエンドの作成を選択できます。選択後、{{<guilabel name="適用">}} ボタンをクリックします。
 
     {{<img src="/images/backend/control_panel/2.png">}}
 
-3.  バックエンドの適用後、次のようなバックエンド管理パネルが表示されます。
+## セキュリティー設定
+
+1. バックエンド管理パネルから、`バックエンド設定` を選択します。次に、[ Backend Settings ] ページが表示されます。
 
     {{<img src="/images/backend/control_panel/3.png">}}
 
-## バックエンド設定
-
-### バックエンドの切り替え
-
-1.  バックエンド管理パネル上で、歯車のアイコンをクリックして、`バックエンドの切り替え`を選択します。
-
-    {{<img src="/images/backend/control_panel/25.png">}}
-
-2.  バックエンドの切り替え用のダイアログが表示されます。既存のバックエンドを使用、または、新規バックエンドの作成を選択できます。選択後、{{<guilabel name="適用">}}ボタンをクリックします。
-
-    {{<img src="/images/backend/control_panel/26.png">}}
-
-### セキュリティー設定
-
-1. バックエンド管理パネル上で、歯車のアイコンをクリックして、`バックエンド設定`を選択します。
-
-    {{<img src="/images/backend/control_panel/27.png">}}
-
-2. \[ Backend Settings \] メニュー画面が表示されます。このメニュー画面では、次の設定ができます。
+2. このメニュー画面では、次の設定ができます。
 
     - 自動ログインの有効化・無効化、自動ログインの有効時間の設定
     - ユーザー名とパスワードの最短文字数の設定
     - パスワード リセット トークンの有効時間の設定
 
-    {{<img src="/images/backend/control_panel/28.png">}}
+3. {{<guilabel name="適用">}} ボタンをクリックします。
 
-3. {{<guilabel name="適用">}}ボタンをクリックします。
-
-バックエンド マネジメント API キー
-----------------------------------
+## バックエンド マネジメント API キー と エンドポイント URL
 
 Monaca バックエンド マネジメント API の使用時には、バックエンド
 マネジメント API キーが必要です。この API を使用すれば、Monaca クラウド
 IDE からではなく、開発者自身のサーバーから Monaca
-バックエンドを管理できます。詳細は、[バックエンド マネジメント API](/ja/reference/monaca_api/cloud_management)をご確認ください。
+バックエンドを管理できます。詳細は、[バックエンド マネジメント API](/ja/reference/monaca_api/cloud_management) をご確認ください。
 
-バックエンド マネジメント API キーの取得手順を、次に記します。
+バックエンド マネジメント API キーとエンドポイント URL の取得手順を、次に記します。
 
-1.  バックエンド管理パネル上で、歯車のアイコンをクリックして、`バックエンド設定`を選択します。
+1.  バックエンド管理パネルから、`バックエンド設定` を選択します。次に、[ Backend Settings ] ページが表示されます。
 
-    {{<img src="/images/backend/control_panel/29.png">}}
+2.  {{<guilabel name="マネジメント API">}} を選択して、{{<guilabel name="有効にする">}} をクリックします。
 
-2.  \[ Backend Settings \] メニューが表示されます。{{<guilabel name="マネジメント API">}}を選択して、{{<guilabel name="有効にする">}}をクリックします。
+    {{<img src="/images/backend/control_panel/4.png">}}
 
-    {{<img src="/images/backend/control_panel/30.png">}}
+3.  次に、マネジメント APIに関連するさまざまな情報が表示されます。
+**マネジメント API のエンドポイント URL**は、`JSON-RPC Request URL` ([バックエンド マネジメント API](/ja/reference/monaca_api/cloud_management) を参照）として使用されます。
 
-3.  このページ上で、次の 2 つの情報を確認します。
+    {{<img src="/images/backend/control_panel/5.png">}}
 
-    - マネジメント API のエンドポイント URL: `"https://cloud.monaca.mobi/manage/json-rpc/CLOUD_PROJECT_ID"`形式の URL が表示されています。URL 内の 「 CLOUD\_PROJECT\_ID 」部分は、Monaca バックエンドの ID です。また、この URL は、*JSON-RPC リクエストの送信先* として使用されます ([バックエンド マネジメント API](/ja/reference/monaca_api/cloud_management))。
-    - IP アドレスの範囲 : 指定した IP アドレスの範囲に対して、API キーを 1 つ設定できます。空白設定は、推奨しません。
+4.  次に、APIキーを作成します。 2つの方法でAPIキーを作成できます。
 
-    {{<img src="/images/backend/control_panel/31.png">}}
+    - IP アドレスの範囲 : 指定した IP アドレスの範囲に対して、API キーを 1 つ設定できます。
+    - 空白を設定 (推奨しません) : 任意のIPアドレス用のAPIキーを作成します。
 
-4.  {{<guilabel name="作成する">}}ボタンをクリックして、API キーを生成します (画面中央に表示)。
+    {{<img src="/images/backend/control_panel/6.png">}}
+
+### レコードの項目 ( 列 ) の表示・非表示
+
+デフォルトでは、`Oid`、`ユーザー`、`パスワード`、`オーナーユーザー`、`パーミッション`、`作成日時`、`更新日時` が表示されています。
+
+他の列を 表示/非表示 にする場合は、次のようにします。
+
+1.  {{<guilabel name="+">}} アイコンをクリックします。
+
+    {{<img src="/images/backend/backend_operations/4.png">}}
+
+2.  表示する項目 ( 列 ) を選択し、{{<guilabel name="追加する">}}をクリックします。
+
+    {{<img src="/images/backend/backend_operations/5.png">}}
+
+3.  項目のヘッダーをドラッグして移動することで、項目の順序を変更することができます。
+
+    {{<img src="/images/backend/backend_operations/6.png">}}
+
+4.  項目を非表示にする場合は、対象の項目上にカーソルを移動させ、表示されたドロップダウン アイコンから {{<guilabel name="この列を表示しない">}}を選択します ( システムプロパティー以外が対象 )。
+
+    {{<img src="/images/backend/control_panel/7.png">}}
+
 
 参考ページ
 

@@ -1,6 +1,7 @@
 ---
 title: React Native Support
 aliases: /en/monaca_cli/react_native/
+hidden : true
 ---
 
 In this page, we will be talking about everthing you need to know when

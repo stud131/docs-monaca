@@ -93,8 +93,3 @@ aliases: /en/monaca_ide/manual/code_editor/editor
 | Add multi-cursor above |	Ctrl + Alt + Shift + Up |	Command + Alt + Shift + Up |
 | Move multi-cursor from current line to the line below | 	Ctrl + Alt + Shift + Down |	Command + Alt + Shift + Down |
 
-
-See Also: 
-
-- [TypeScript](../type_script)
-- [Emmet](../zen_coding)

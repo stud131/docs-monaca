@@ -165,7 +165,6 @@ building with the following instruction:
 
 See Also:
 
-- [Debugger Installation on Chrome Apps](../debugger_chrome)
 - [Debugger Installation on Emulator](../debugger_emulator)
 - [Debugger Installation on Android](../debugger_android)
 - [Debugger's Functionalities](../../features)
