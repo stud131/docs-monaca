@@ -50,6 +50,10 @@ Before getting started, you need to install Monaca Localkit on the computer and 
 1. Download the latest version of Monaca Localkit [here](https://monaca.io/localkit.html). Please refer to [GitHub release page](https://github.com/monaca/Localkit/releases) for change logs.
 2. Install Monaca Debugger as described in [Debugger Installation](/en/products_guide/debugger/installation).
 
+{{<warning>}}
+    Install Localkit under Windows environment require Git.
+{{</warning>}}
+
 ## Usage
 
 ### Starting Monaca Localkit

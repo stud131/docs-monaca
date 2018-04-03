@@ -53,6 +53,9 @@ Monaca Localkit
 1. Monaca Localkit の [最新版はこちら](https://ja.monaca.io/localkit.html) からダウンロードできます。変更履歴に関しては、 [GitHub のリリースページ](https://github.com/monaca/Localkit/releases) をご確認ください。
 2. [こちら](../../debugger/installation) の記載内容に従い、Monaca デバッガーをインストールします。
 
+{{<warning>}}
+    Windows環境でLocalkitを利用する場合、事前にGitをインストールする必要があります。
+{{</warning>}}
 
 使用例
 ------
