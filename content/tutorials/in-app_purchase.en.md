@@ -22,166 +22,116 @@ A Cordova/PhoneGap plugin to perform In-App Purchase for Cordova on iOS, Android
 
 ## Usage
 
-After importing the plugin into the project, you can start generate a token for your device and set an event for when a user opens a notification. Please make sure to call the plugin API after the Cordova is loaded. 
+The store API is mostly events based. As a user of this plugin, you will have to register listeners to changes happening to the products you register.
+
+The core of the listening mechanism is the `when()` method. It allows you to be notified of changes to one or a set of products using a query mechanism:
 
 {{<highlight javascript>}}
-document.addEventListener("deviceready", function(){
-    window.FirebasePlugin.getToken(function(token) {
-        // save this server-side and use it to push notifications to this device
-        console.log(token);
-    }, function(error) {
-        console.error(error);
-    });
-
-    // Get notified when a token is refreshed
-    window.FirebasePlugin.onTokenRefresh(function(token) {
-        // save this server-side and use it to push notifications to this device
-        console.log("Refresh to get new token: " + token);
-    }, function(error) {
-        alert(error);
-    });
-
-    // Get notified when the user opens a notification
-    window.FirebasePlugin.onNotificationOpen(function(notification) {
-        console.log(JSON.stringify(notification));
-        alert("The notification is open!");
-    }, function(error) {
-        console.error(error);
-    });    
-}, false);
+store.when("product").updated(refreshScreen);
+store.when("full version").owned(unlockApp);
+store.when("subscription").approved(serverCheck);
+store.when("downloadable content").downloaded(showContent);
+etc.
 {{</highlight>}}
+
+The `updated` event is fired whenever one of the fields of a product is changed (its `owned` status for instance).
+
+This event provides a generic way to track the statuses of your purchases, to unlock features when needed and to refresh your views accordingly.
 
 ## API References
 
-In this page, we only describe some main APIs used in our [Demo](https://monaca.mobi/directimport?pid=5ac6e55ee788855e368b4567). For a complete API references, please refer to [here](https://github.com/danwilson/google-analytics-plugin).
+In this page, we only describe some main APIs used in our [Demo](https://monaca.mobi/directimport?pid=5ac6e55ee788855e368b4567). For a complete API references, please refer to [here](https://github.com/j3k0/cordova-plugin-purchase).
 
-### getToken()
+### store.verbosity
 
-Get the device token. The token will be null if it has not been established yet
+The `verbosity` property defines how much you want `store.js` to write on the console. Available values are as follows:
+
+- `store.QUIET` or `0` to disable all logging (default)
+- `store.ERROR` or `1` to show only error messages
+- `store.WARNING` or `2` to show warnings and errors
+- `store.INFO` or `3` to also show information messages
+- `store.DEBUG` or `4` to enable internal debugging messages.
 
 {{<highlight javascript>}}
-window.FirebasePlugin.getToken();
+store.verbosity
 {{</highlight>}}
-
-**Return Value**
-
-- `Promise`
 
 **Example**
 
 {{<highlight javascript>}}
-window.FirebasePlugin.getToken(function(token) {
-    // save this server-side and use it to push notifications to this device
-    console.log(token);
-}, function(error) {
-    console.error(error);
-});
+// Enable maximum logging level
+store.verbosity = store.DEBUG;
 {{</highlight>}}
 
-### onTokenRefresh()
+### store.register()
 
-Get notified when a token is refreshed. This is the best way to get a valid token for the device as soon as the token is established.
-
-{{<highlight javascript>}}
-window.FirebasePlugin.onTokenRefresh();
-{{</highlight>}}
-
-**Return Value**
-
-- `Promise`
-
-**Example**
+Add or register a product to the store before you can use them in your code.
 
 {{<highlight javascript>}}
-window.FirebasePlugin.onTokenRefresh(function(token) {
-    // save this server-side and use it to push notifications to this device
-    console.log(token);
-}, function(error) {
-    console.error(error);
-});
-{{</highlight>}}
-
-### onNotificationOpen()
-
-Get notified when the notification is open.
-
-{{<highlight javascript>}}
-window.FirebasePlugin.onNotificationOpen();
-{{</highlight>}}
-
-**Return Value**
-
-- `Promise`
-
-**Example**
-
-{{<highlight javascript>}}
-window.FirebasePlugin.onNotificationOpen(function(notification) {
-    console.log(JSON.stringify(notification));
-    alert("The notification is open!");
-}, function(error) {
-    console.error(error);
-});    
-{{</highlight>}}
-
-### hasPermission()
-
-Check permission to recieve push notifications.
-
-{{<highlight javascript>}}
-window.FirebasePlugin.hasPermission();
-{{</highlight>}}
-
-**Return Value**
-
-- `Promise`
-
-**Example**
-
-{{<highlight javascript>}}
-window.FirebasePlugin.hasPermission(function(data){
-    if (data.isEnabled)
-        alert("Permission to receive notification is granted.");
-    else
-        alert("Permission to receive notification is NOT granted.");
-});
-{{</highlight>}}
-
-### grantPermission() (iOS only)
-
-Grant permission to recieve push notifications for iOS (will trigger a prompt if the permission has not been granted yet).
-
-{{<highlight javascript>}}
-window.FirebasePlugin.grantPermission();
-{{</highlight>}}
-
-**Return Value**
-
-- `Promise`
-
-**Example**
-
-{{<highlight javascript>}}
-window.FirebasePlugin.grantPermission(function(){
-    alert("Permission is granted for iOS");    
-}, function(error){
-    alert(error);
-});
-{{</highlight>}}
-
-### setBadgeNumber()
-
-Set a number on the icon badge.
-
-{{<highlight javascript>}}
-window.FirebasePlugin.setBadgeNumber(badgeNumber);
+store.register(product);
 {{</highlight>}}
 
 **Parameter**
 
 Name | Type | Description
 -----|------|-------------
-`badgeNumber` | Number | The number on the icon badge
+`product` | JSON Object | Production options
+
+**Example**
+
+{{<highlight javascript>}}
+store.register({
+    id:    'consumable1', // id without package name!
+    alias: 'Extra Life',
+    type:   store.CONSUMABLE
+});
+{{</highlight>}}
+
+### store.refresh()
+
+Load product data from the servers and restore whatever already have been purchased by the user.
+
+{{<highlight javascript>}}
+store.refresh();
+{{</highlight>}}
+
+**Example**
+
+{{<highlight javascript>}}
+// ...
+// register products and events handlers here
+// ...
+//
+// then and only then, call refresh.
+store.refresh();
+{{</highlight>}}
+
+### store.get(id/alias)
+
+Retrieve a product by its `id` or `alias`.
+
+{{<highlight javascript>}}
+store.get(id/alias)
+{{</highlight>}}
+
+Name | Type | Description
+-----|------|-------------
+`id` | String | Product ID 
+`alias` | String | Product Name
+
+**Example**
+
+{{<highlight javascript>}}
+var product = store.get("consumable1");
+{{</highlight>}}
+
+### store.when(query, event, callback)
+
+Register a callback for a product-related event. For more details about this api, please refer to [here](https://github.com/j3k0/cordova-plugin-purchase/blob/master/doc/api.md#storewhenquery)
+
+{{<highlight javascript>}}
+store.when(query, event, callback)
+{{</highlight>}}
 
 **Return Value**
 
@@ -189,106 +139,46 @@ Name | Type | Description
 
 **Example**
 
-After running setting the badge number, close the app. Then, you will see the badge number appear on your app icon. If you want to remove the number, please set it to `0`.
-
 {{<highlight javascript>}}
-window.FirebasePlugin.setBadgeNumber(5);
+store.when("subscription1", "approved", function(product) { 
+    console.log("Subscription approved!");
+});
 {{</highlight>}}
 
+### store.error(callback)
 
-### getBadgeNumber()
-
-Get icon badge number.
+Register an error handler.
 
 {{<highlight javascript>}}
-window.FirebasePlugin.getBadgeNumber();
+store.error(callback);
 {{</highlight>}}
-
-**Return Value**
-
-- `Promise`
 
 **Example**
 
 {{<highlight javascript>}}
-window.FirebasePlugin.getBadgeNumber(function(n) {
-        alert("Badge Number is " + n);
-    });
-{{</highlight>}}
-
-
-### unregister()
-
-Unregister from firebase to stop receiving push notifications. Call this when you logout user from your app.
-
-{{<highlight javascript>}}
-window.FirebasePlugin.unregister();
-{{</highlight>}}
-
-**Return Value**
-
-- `Promise`
-
-**Example**
-
-{{<highlight javascript>}}
-window.FirebasePlugin.unregister(function(){
-    alert("Stop receiving push notifications."); 
-}, function(error){
-    alert(error);
+store.error(function(e){
+    console.log("ERROR " + e.code + ": " + e.message);
 });
 {{</highlight>}}
 
 
-### setScreenName()
+### store.ready(callback)
 
-Set the name of the current screen in Analytics.
+Register the callback to be called when the store is ready to be used.
+
+If the store is already ready, callback is executed immediately. `store.ready()` without arguments will return the `ready` status.
 
 {{<highlight javascript>}}
-window.FirebasePlugin.setScreenName(screenName);
+store.ready(callback)
 {{</highlight>}}
-
-**Parameter**
-
-Name | Type | Description
------|------|-------------
-`screenName` | String | Screen name
-
-**Return Value**
-
-- `Promise`
 
 **Example**
 
 {{<highlight javascript>}}
-var page="FirebaseHome";
-window.FirebasePlugin.setScreenName(page);
-alert(page + " screen is tracked.");
+store.ready(function() {
+    console.log("Store is ready");
+});
+
 {{</highlight>}}
 
-### setUserId()
 
-Set a user id for use in Analytics.
-
-{{<highlight javascript>}}
-window.FirebasePlugin.setUserId(id);
-{{</highlight>}}
-
-**Parameter**
-
-Name | Type | Description
------|------|-------------
-`id` | String | A unique identifier, associated with that particular user, must be sent with each hit
-
-**Return Value**
-
-- `Promise`
-
-**Example**
-
-{{<highlight javascript>}}
-//user ID for testing purpose
-var myUserId="35009a79-1a05-49d7-b876-2b884d0f825b";
-window.FirebasePlugin.setUserId("user_id");
-alert("UserID is set to: " + myUserId);
-{{</highlight>}}
