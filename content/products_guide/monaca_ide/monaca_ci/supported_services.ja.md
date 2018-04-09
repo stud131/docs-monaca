@@ -1,5 +1,5 @@
 ---
-title: 検証版アプリなどの配信/配布支援サービス ( デプロイサービス )
+title: アプリ配信/配布支援サービス (デプロイサービス)
 weight: 20
 aliases: 
     - /ja/monaca_ide/manual/monaca_ci/supported_services
@@ -31,7 +31,7 @@ Monaca CI では、次のパラメーターをサポートしています ( JSON
 
  
 
-#### API キー または API トークンの取得方法
+#### API キーの取得方法
 
 1.  [DeployGate](https://deploygate.com/) にログインします。
 2.  {{<guilabel name="アカウント設定/Account Settings">}} を選択します。
@@ -152,7 +152,8 @@ Monaca CI では、次のパラメーターをサポートしています ( JSON
     </tr>
 </table>
 
-#### API キー または API トークンの取得方法
+
+#### API トークンの取得方法
 
 1.  [HockeyApp](https://hockeyapp.net/) にログインします。
 2.  {{<guilabel name="アカウント設定/Account Settings">}} を選択します。
@@ -171,14 +172,50 @@ Monaca CI では、次のパラメーターをサポートしています ( JSON
 
     {{<img src="/images/monaca_ide/manual/monaca_ci/supported_services/5.png">}}
 
-## サポート予定の支援サービス
 
-上述のサービス以外にも、今後、次の配信/配布支援サービス (
-デプロイサービス ) を追加していく予定です。
+
+### Appetize.io
+
+[Appetize.ios](https://appetize.io/) では、AndroidとiOSアプリをブラウザ上でシミュレートすることができます。  
+このサービスを利用すると、iOS証明書やプロビジョニングファイルなしで、アプリの動作確認が可能となります。
+
+まずは、Appetize.ioの[デモ](https://appetize.io/demo)を体験してみてください。  
+
+![image](/images/monaca_ide/manual/monaca_ci/supported_services/appetize_demo.png)
+
+
+#### API トークンの取得方法
+
+1.  [Appetize.io](https://appetize.io/) のアカウントを作成し、ログインします。  
+2.  [APIトークン取得用フォーム](https://appetize.io/docs#request-api-token)にメールアドレスを入力し、トークンを取得します。  
+
+    {{<img src="/images/monaca_ide/manual/monaca_ci/supported_services/appetize_get_api_token.png" width="450">}}
+
+
+#### 設定パラーメーター
+
+Monaca CI では、次のパラメーターをサポートしています ( JSON 形式 )。  
+詳細は、[Appetize.io ドキュメント ( 英語サイト )](https://appetize.io/docs#creating-apps) をご確認ください。
+
+パラメーター | 説明 | 備考
+-----------|-----|-------
+platform| `ios` or `android`| 必須項目
+timeout|セッションが自動的に終了するまで待機する秒数。<br>30,60,90,120,180,300または600を指定。デフォルトは120。| number
+disableHome|ホームボタンを無効にします。| boolean
+disabled| このアプリのストリーミングを無効にします。| boolean
+useLastFrame| セッションが終了した後、シミュレータの画面上に、最後の表示されていた画像を表示します。| boolean
+buttonText| セッションの開始を促すメッセージをカスタマイズします。<br>デフォルトは「Tap to play」| string
+postSessionButtonText| セッションを再開するように促すメッセージをカスタマイズします。<br>デフォルトは「Tap to play」| string
+launchUrl| アプリの起動時に、特定の場所にユーザーを誘導するためのディープリンクを指定します。| string
+note| メモを残せます。メモは管理ダッシュボードに表示されます。| string
+appPermissions| JSONオブジェクト。値は `authenticated`、`public`、または`null`(デフォルトにリセット)に設定します。キーは次のいずれかです。<br><br>　run: アプリ実行<br>　networkProxy: アプリ実行時のネットワークプロキシを指定する<br>　networkIntercept: アプリ実行時にAppetize.ioプロキシを使用する<br>　debugLog: アプリのNSLogまたはLogcatの出力を見る<br>　adbConnect: ホストされているエミュレータにADBを接続してアプリケーションをデバッグする<br>　androidPackageManager: アプリの実行中に追加のAPKをインストールできるようにする | Object
+
+
+### サポート予定の支援サービス
+
+上述のサービス以外にも、今後、次の配信/配布サービスを追加していく予定です。
 
 -   [Test Flight](https://developer.apple.com/testflight/)
--   [Appetize.io](https://appetize.io/)
 
-参考ページ
-
-- [概要](../overview)
+参考ページ  
+- [Monaca CI について](../overview)
