@@ -2,6 +2,10 @@
     <a class="reference external internet-link" 
     href="https://monaca.mobi/directimport?pid={{ .Get "pid" }}" 
     target="_blank">
-        Import {{ .Get "title" }} to your Monaca Account
+	    {{if eq .Page.Lang "ja"}}
+			<img src="/images/common/import_img.png" width="5%" style="vertical-align: middle">プロジェクトをインポート
+		{{else }}
+			<img src="/images/common/import_img.png" width="5%" style="vertical-align: middle">Import {{ .Get "title" }} to your Monaca Account	
+		{{end}}
     </a>
 </div>
