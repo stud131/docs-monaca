@@ -3,10 +3,11 @@ title: "Cordova Sqlite Storage Plugin"
 weight: 50
 ---
 
-A Cordova/PhoneGap plugin to open and use sqlite databases on Android, iOS and Windows with HTML5/Web SQL API.
+This Cordova/PhoneGap plugin opens and uses sqlite databases on Android, iOS and Windows with HTML5/Web SQL API.
 
 - Repo: https://github.com/litehelpers/Cordova-sqlite-storage
 - Plugin ID/Package Name: `cordova-sqlite-storage`
+- Tested Version: 2.3.0
 
 ## Demo 
 

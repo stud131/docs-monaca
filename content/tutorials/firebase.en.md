@@ -3,10 +3,11 @@ title: "Cordova Firebase Plugin"
 weight: 90
 ---
 
-A Cordova/PhoneGap plugin to open and use sqlite databases on Android, iOS and Windows with HTML5/Web SQL API.
+This Cordova plugin brings push notifications, analytics, event tracking, crash reporting and more from Google Firebase to your Cordova project.
 
 - Repo: https://github.com/arnesson/cordova-plugin-firebase
 - Plugin ID/Package Name: `cordova-plugin-firebase`
+- Tested Version: 0.1.25
 
 ## Demo 
 

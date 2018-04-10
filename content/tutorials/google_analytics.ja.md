@@ -3,10 +3,11 @@ title: "Cordova Google Analytics Plugin"
 weight: 70
 ---
 
-A Cordova/PhoneGap plugin to open and use sqlite databases on Android, iOS and Windows with HTML5/Web SQL API.
+This Cordova plugin is used to connect to Google's native Universal Analytics SDK.
 
 - Repo: https://github.com/danwilson/google-analytics-plugin
 - Plugin ID/Package Name: `cordova-plugin-google-analytics`
+- Tested Version: 1.8.3
 
 ## Demo 
 

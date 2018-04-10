@@ -3,10 +3,11 @@ title: "Cordova In-app Purchase Plugin"
 weight: 100
 ---
 
-A Cordova/PhoneGap plugin to perform In-App Purchase for Cordova on iOS, Android and Windows.
+This Cordova/PhoneGap plugin is used for In-App Purchase on iOS, Android and Windows apps.
 
 - Repo: https://github.com/j3k0/cordova-plugin-purchase
 - Plugin ID/Package Name: `cc.fovea.cordova.purchase`
+- Tested Version: 7.1.3
 
 ## Demo 
 
