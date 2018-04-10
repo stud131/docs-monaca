@@ -3,27 +3,27 @@ title: "Cordova Sqlite Storage Plugin"
 weight: 50
 ---
 
-This Cordova/PhoneGap plugin opens and uses sqlite databases on Android, iOS and Windows with HTML5/Web SQL API.
+この Cordova/PhoneGap プラグインは、HTML5/Web SQL API を使用して Android、iOS、Windows 上で sqlite データベースを開き、使用します。
 
 - Repo: https://github.com/litehelpers/Cordova-sqlite-storage
 - Plugin ID/Package Name: `cordova-sqlite-storage`
 - Tested Version: 2.3.0
 
-## Demo 
+## デモ 
 
 {{<import pid="5ac33652e78885cd208b4567" title="Sqlite Storage Plugin Demo">}}
 
 {{< figure src="/images/samples/sqlite.png">}}
 
-## Enable the Plugin in Monaca IDE
+## Monaca クラウド IDE でプラグインを有効にする
 
-1.  From the IDE menu, go to {{<menu menu1="Config" menu2="Manage Cordova Plugins">}}.
+1. IDE メニューから {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} へ移動します。
 
-2.  Click on {{<guilabel name="Import Cordova Plugin">}} button. Then, you can choose to import the plugin using a ZIP file or URL/Package Name. 
+2. {{<guilabel name="Cordova プラグインのインポート">}}  ボタンをクリッククリックします。 次に、[ZIP ファイル] または [パッケージ名 / URL] を使用してプラグインをインポートします。
 
-## Usage
+## 使い方
 
-After importing the plugin into the project, you can start initialize your database. Please make sure to call the plugin API after the Cordova is loaded. 
+プラグインをプロジェクトへインポート後、データベースの初期化を開始できます。[deviceready] イベント後にプラグイン API を使用します。
 
 {{<highlight javascript>}}
 var database = null;
@@ -42,59 +42,59 @@ function initDatabase() {
 }
 {{</highlight>}}
 
-## API References
+## API リファレンス
 
-In this page, we only describe some main APIs used in our [Demo](https://monaca.mobi/directimport?pid=5ac33652e78885cd208b4567). For a complete API references, please refer to [here](https://github.com/litehelpers/Cordova-sqlite-storage).
+ここでは、[デモ](https://monaca.mobi/directimport?pid=5ac33652e78885cd208b4567) で使用されている主な API について説明します。 完全なAPIリファレンスについては、[こちら](https://github.com/litehelpers/Cordova-sqlite-storage) を参照してください。
 
-### Self-test functions
+### セルフテスト 機能
 
 #### echoTest()
 
-Verify that both the Javascript and native part of this plugin are installed in your application.
+このプラグインの Javascript とネイティブ部分の両方がアプリにインストールされていることを確認してください。
 
 {{<highlight javascript>}}
 window.sqlitePlugin.echoTest(successCallback, errorCallback);
 {{</highlight>}}
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
 #### selfTest()
 
-Verify that this plugin is able to open a database, execute the CRUD (create, read, update, and delete) operations, and clean it up properly.
+プラグインがデータベースを開き、CRUD (作成、読み取り、更新、削除) 操作を実行し、正しくクリーンアップできることを確認します。
 
 {{<highlight javascript>}}
 window.sqlitePlugin.selfTest(successCallback, errorCallback);
 {{</highlight>}}
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
-### Opening a database
+### データベースの操作
 
-Open a database access handle object.
+データベースオブジェクトを開きます。
 
 {{<highlight javascript>}}
 window.sqlitePlugin.openDatabase({name: String, [location: String], [iosDatabaseLocation: String]}, [successCallback], [errorCallback]);
 {{</highlight>}}
 
-**Parameter**
+**パラメーター**
 
-Name | Type | Description
+パラメーター名 | 型 | 説明
 -----|------|-------------
-`name` | String | Name of the database
-`location` | String | [optional] Location of the database
-`iosDatabaseLocation` | String | [optional] iOS Database Location. Available options are: <ul><li>`default`: Library/LocalDatabase subdirectory - NOT visible to iTunes and NOT backed up by iCloud</li><li>`Library`: Library subdirectory - backed up by iCloud, NOT visible to iTunes</li><li>`Documents`: Documents subdirectory - visible to iTunes and backed up by iCloud</li></ul>
+`name` | String | データベースの名前
+`location` | String | [オプション] データベースの場所
+`iosDatabaseLocation` | String | [オプション] iOSデータベースの場所。<ul><li>`default`: Library/LocalDatabase サブディレクトリ - iTunes には表示されず、iCloud によってバックアップされません。</li><li>`Library`: Library サブディレクトリ - iCloud によってバックアップされ、iTunes には表示されません。</li><li>`Documents`: Documents サブディレクトリ - iTunesに表示され、iCloudによってバックアップされる</li></ul>
 
-**Return Value**
+**戻り値**
 
 - `Promise` 
 
-**Example**
+**例**
 
-An example of opening a database access handle object with a default or a specified location:
+既定または指定された場所でデータベースアクセスハンドルオブジェクトを開く例：
 
 {{<highlight javascript>}}
 // use the default location
@@ -116,19 +116,19 @@ window.sqlitePlugin.openDatabase({name: 'my.db', location: 'default'}, function(
 });
 {{</highlight>}}
 
-### SQL transactions
+### SQL トランザクション
 
-Execute SQL on the opened database.
+開いているデータベースで SQL を実行します。
 
 {{<highlight javascript>}}
 database.executeSql(SQL_STATEMENT: String, [] , [successCallback], [errorCallback]);
 {{</highlight>}}
 
-**Return Value**
+**戻り値**
 
 - `Promise` 
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 database.transaction(function(transaction) {
@@ -150,27 +150,27 @@ database.transaction(function(transaction) {
 });
 {{</highlight>}}
 
-### Deleting a Database
+### データベースの削除
 
-Delete a database access handle object.
+データベースオブジェクトを削除します。
 
 {{<highlight javascript>}}
 window.sqlitePlugin.deleteDatabase({name: String, [location: String], [iosDatabaseLocation: String]}, [successCallback], [errorCallback]);
 {{</highlight>}}
 
-**Parameter**
+**パラメーター**
 
-Name | Type | Description
+パラメーター名 | 型 | 説明
 -----|------|-------------
-`name` | String | Name of the database
-`location` | String | [optional] Location of the database
-`iosDatabaseLocation` | String | [optional] iOS Database Location. Available options are: <ul><li>`default`: Library/LocalDatabase subdirectory - NOT visible to iTunes and NOT backed up by iCloud</li><li>`Library`: Library subdirectory - backed up by iCloud, NOT visible to iTunes</li><li>`Documents`: Documents subdirectory - visible to iTunes and backed up by iCloud</li></ul>
+`name` | String | データベースの名前
+`location` | String | [オプション] データベースの場所
+`iosDatabaseLocation` | String | [オプション] iOSデータベースの場所。<ul><li>`default`: Library/LocalDatabase サブディレクトリ - iTunes には表示されず、iCloud によってバックアップされません。</li><li>`Library`: Library サブディレクトリ - iCloud によってバックアップされ、iTunes には表示されません。</li><li>`Documents`: Documents サブディレクトリ - iTunesに表示され、iCloudによってバックアップされる</li></ul>
 
-**Return Value**
+**戻り値**
 
 - `Promise` 
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 // use the default location

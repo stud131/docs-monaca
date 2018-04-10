@@ -3,29 +3,29 @@ title: "Cordova In-app Purchase Plugin"
 weight: 100
 ---
 
-This Cordova/PhoneGap plugin is used for In-App Purchase on iOS, Android and Windows apps.
+このCordova/PhoneGap プラグインは、iOS、Android、Windows アプリでのアプリ内課金に使用されます。
 
 - Repo: https://github.com/j3k0/cordova-plugin-purchase
 - Plugin ID/Package Name: `cc.fovea.cordova.purchase`
 - Tested Version: 7.1.3
 
-## Demo 
+## デモ 
 
 {{<import pid="5ac6e55ee788855e368b4567" title="In-app Purchase Plugin Demo">}}
 
 {{< figure src="/images/samples/in-app_purchase.png">}}
 
-## Enable the Plugin in Monaca IDE
+## Monaca クラウド IDE でプラグインを有効にする
 
-1.  From the IDE menu, go to {{<menu menu1="Config" menu2="Manage Cordova Plugins">}}.
+1. IDE メニューから {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} へ移動します。
 
-2.  Click on {{<guilabel name="Import Cordova Plugin">}} button. Then, you can choose to import the plugin using a ZIP file or URL/Package Name. 
+2. {{<guilabel name="Cordova プラグインのインポート">}}  ボタンをクリッククリックします。 次に、[ZIP ファイル] または [パッケージ名 / URL] を使用してプラグインをインポートします。
 
-## Usage
+## 使い方
 
-The store API is mostly events based. As a user of this plugin, you will have to register listeners to changes happening to the products you register.
+ストアAPI は、主にイベントを使用します。 このプラグインを使用する場合は、イベントを登録する必要があります。
 
-The core of the listening mechanism is the `when()` method. It allows you to be notified of changes to one or a set of products using a query mechanism:
+イベントの中心は `when()` メソッドです。 クエリーを使用して、1つまたは一連の製品への変更を通知することができます。
 
 {{<highlight javascript>}}
 store.when("product").updated(refreshScreen);
@@ -35,29 +35,30 @@ store.when("downloadable content").downloaded(showContent);
 etc.
 {{</highlight>}}
 
-The `updated` event is fired whenever one of the fields of a product is changed (its `owned` status for instance).
+`updated` イベントは、製品のフィールドの1つが変更されると起動されます (例: `owned` ステータス) 。
 
-This event provides a generic way to track the statuses of your purchases, to unlock features when needed and to refresh your views accordingly.
+このイベントは、購入状況を追跡し、必要に応じてロック解除を行い、それに応じてビューを更新するための一般的な方法を提供します。
 
-## API References
+## API リファレンス
 
-In this page, we only describe some main APIs used in our [Demo](https://monaca.mobi/directimport?pid=5ac6e55ee788855e368b4567). For a complete API references, please refer to [here](https://github.com/j3k0/cordova-plugin-purchase).
+ここでは、[デモ](https://monaca.mobi/directimport?pid=5ac6e55ee788855e368b4567) で使用されている主な API について説明します。 完全なAPIリファレンスについては、[こちら](https://github.com/j3k0/cordova-plugin-purchase) を参照してください。
 
 ### store.verbosity
 
 The `verbosity` property defines how much you want `store.js` to write on the console. Available values are as follows:
+`verbosity` プロパティは、 `store.js` のコンソール出力の種類を定義します。 使用可能な設定は、次のとおりです。
 
-- `store.QUIET` or `0` to disable all logging (default)
-- `store.ERROR` or `1` to show only error messages
-- `store.WARNING` or `2` to show warnings and errors
-- `store.INFO` or `3` to also show information messages
-- `store.DEBUG` or `4` to enable internal debugging messages.
+- `store.QUIET` または `0` すべてのログを無効にします。 (デフォルト)
+- `store.ERROR` または `1` エラーメッセージのみを表示します。
+- `store.WARNING` または `2` 警告やエラーを表示します。
+- `store.INFO` または `3` 情報メッセージも表示します。
+- `store.DEBUG` または `4` 内部デバッグメッセージを有効にします。
 
 {{<highlight javascript>}}
 store.verbosity
 {{</highlight>}}
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 // Enable maximum logging level
@@ -66,19 +67,19 @@ store.verbosity = store.DEBUG;
 
 ### store.register()
 
-Add or register a product to the store before you can use them in your code.
+このメソッドを使用する前に、ストアに課金アイテムを登録する必要があります。
 
 {{<highlight javascript>}}
 store.register(product);
 {{</highlight>}}
 
-**Parameter**
+**パラメーター**
 
-Name | Type | Description
+パラメーター名 | 型 | 説明
 -----|------|-------------
-`product` | JSON Object | Production options
+`product` | JSON Object | 製品情報
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 store.register({
@@ -90,13 +91,13 @@ store.register({
 
 ### store.refresh()
 
-Load product data from the servers and restore whatever already have been purchased by the user.
+サーバーから製品データをロードし、ユーザーが既に購入したものを復元します。
 
 {{<highlight javascript>}}
 store.refresh();
 {{</highlight>}}
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 // ...
@@ -109,18 +110,18 @@ store.refresh();
 
 ### store.get(id/alias)
 
-Retrieve a product by its `id` or `alias`.
+`id` または `alias` で、製品を取得します。
 
 {{<highlight javascript>}}
 store.get(id/alias)
 {{</highlight>}}
 
-Name | Type | Description
+パラメーター名 | 型 | 説明
 -----|------|-------------
-`id` | String | Product ID 
-`alias` | String | Product Name
+`id` | String | 製品 ID 
+`alias` | String | 製品名
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 var product = store.get("consumable1");
@@ -128,17 +129,17 @@ var product = store.get("consumable1");
 
 ### store.when(query, event, callback)
 
-Register a callback for a product-related event. For more details about this api, please refer to [here](https://github.com/j3k0/cordova-plugin-purchase/blob/master/doc/api.md#storewhenquery)
+製品関連イベントのコールバックを登録します。 この api の詳細については、[こちら](https://github.com/j3k0/cordova-plugin-purchase/blob/master/doc/api.md#storewhenquery) を参照してください。
 
 {{<highlight javascript>}}
 store.when(query, event, callback)
 {{</highlight>}}
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 store.when("subscription1", "approved", function(product) { 
@@ -154,7 +155,7 @@ Register an error handler.
 store.error(callback);
 {{</highlight>}}
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 store.error(function(e){
@@ -165,15 +166,16 @@ store.error(function(e){
 
 ### store.ready(callback)
 
-Register the callback to be called when the store is ready to be used.
+ストアが使用できる状態なったときに呼び出されるコールバックを登録します。
 
-If the store is already ready, callback is executed immediately. `store.ready()` without arguments will return the `ready` status.
+ストアがすでに使用できる状態の場合は、コールバックは直ちに実行されます。 引数なしで `store.ready()` は、 `ready` ステータスを返します。
+
 
 {{<highlight javascript>}}
 store.ready(callback)
 {{</highlight>}}
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 store.ready(function() {

@@ -3,138 +3,139 @@ title: "Cordova Firebase Plugin"
 weight: 90
 ---
 
-This Cordova plugin brings push notifications, analytics, event tracking, crash reporting and more from Google Firebase to your Cordova project.
+このCordovaプラグインは、プッシュ通知、分析、イベントトラッキング、クラッシュレポートなどを Google Firebase から アプリへ提供します。
 
 - Repo: https://github.com/arnesson/cordova-plugin-firebase
 - Plugin ID/Package Name: `cordova-plugin-firebase`
 - Tested Version: 0.1.25
 
-## Demo 
+## デモ
 
 {{<import pid="5ac5776ee788854f3a8b456a" title="Google Firebase Plugin Demo">}}
 
 {{<figure src="/images/samples/firebase.png">}}
 
-## Preparation for iOS
+## iOSの準備
 
-When working with push notification for iOS, APNs authentication key or APNs certificate is required. For this reason, we will need to create one of them first. In this page, we will show you how to create Development APNs cerficate for testing on iOS Debug build. 
+iOS向けのプッシュ通知を使用する場合は、APNs の認証キーまたは APNs 証明書が必要になります。 ここでは、iOS デバッグビルド用の Development APNs 署名書の作成方法を説明します。
 
 {{<note>}}
-For release build, Production APNs Certificate is required. 
+リリースビルドでは、Production APNs 証明書が必要になります。
 {{</note>}}
 
-Assuming that you have already [Apple Developer Program](https://developer.apple.com/programs/), please follow the instruction below on how to create a Development APNs certificate. 
+既に [Apple Developer Program](https://developer.apple.com/programs/) をお持ちの場合は、以下の手順に従って Development APNs 証明書を作成してください。
 
-1. From [Apple Developer page](https://developer.apple.com/), go to `Account`.
+1. [Apple Developer page](https://developer.apple.com/) から、`Account` に移動します。
 
-2. Select `Certificates, Identifiers & Profiles`.
+2. `Certificates, Identifiers & Profiles` を選択します。
 
     {{<img src="/images/tutorials/11.png">}}
 
-3. An App ID with push notification enabled is required when creating an APNs certificate. Therefore, let's start creating one. Under `Identifiers` section, go to `App IDs` and click on `+` button in the upper-right corner.
+3. APNs 証明書を作成する場合は、プッシュ通知を有効にした App ID が必要になります。`Identifiers` 項目の `App IDs` 選択し、右上隅の `+` ボタンをクリックします。
 
     {{<img src="/images/tutorials/14.png">}}
 
-4. Fill in the following information for the App ID such as:
+4. 次のような App ID 情報を入力します。
 
-    - `App Description`: Input your app name here (e.g. Cordova Firebase Demo)
-    - `Explicit ID`: Select this option because Wildcard App ID is not allowed for push notification. Input a unique identifier for your app (e.g. io.monaca.firebase).
+    - `App Description`: アプリ名を入力します (例：Cordova Firebase Demo)
+    - `Explicit ID`: プッシュ通知では、ワイルドカードの App ID を使用できないため、このオプションを選択します。 アプリの固有の識別子（io.monaca.firebaseなど）を入力します。
 
     {{<img src="/images/tutorials/15.png">}}
 
-5. Scroll down to `App Services` section and tick `Push Notifications` option. Then, click {{<guilabel name="Continue">}}.
+5. `App Services` 項目の `Push Notifications` オプションをチェックし、{{<guilabel name="Continue">}} をクリックします。
 
     {{<img src="/images/tutorials/16.png">}}
 
-6. After that, you will be redirected to a `Confirm your App ID` page. click {{<guilabel name="Register">}} to complete this process.
+6. `Confirm your App ID` ページにリダイレクトされます。 {{<guilabel name="Register">}} をクリックします。
 
-7. Now, you should be back to the iOS App IDs page. Select on the App ID you've just created and click {{<guilabel name="Edit">}}.
+7. iOS App IDs ページで作成した App ID を選択し、{{<guilabel name="Edit">}} をクリックします。
 
 8. Scroll down to `Push Notifications` section, click on {{<guilabel name="Create Cerficate">}} under `Development SSL Certificate`. 
+`Push Notifications` 項目にある `Development SSL Certificate` の {{<guilabel name="Create Cerficate">}} をクリックします。
 
     {{<img src="/images/tutorials/17.png">}}
 
-9. Click {{<guilabel name="Continue">}}. 
+9. {{<guilabel name="Continue">}} をクリックします。
 
-10. After that, click {{<guilabel name="Choose File">}} to browse your CSR file. You can get this file from Monaca Cloud IDE by going to {{<menu menu1="Config" menu2="iOS Build Settings">}}. Then, click on {{<guilabel name="Generate Key and CSR">}}. After creating the CRS file, download it by clicking on {{<guilabel name="Export">}} button.
+10. {{<guilabel name="Choose File">}} をクリックし、CSR ファイルを選択します。 CSR ファイルは、Monaca クラウド IDE の {{<menu menu1="設定" menu2="iOS ビルド設定">}} から取得することができます。 {{<guilabel name="秘密鍵と CSR の生成">}}をクリックし、CRSファイルを作成後 {{<guilabel name="エクスポート">}} ボタンをクリックしてダウンロードします。
 
-11. Next, click {{<guilabel name="Continue">}} again. When the certificate is ready, you can start downloading it. Keep the file, we will need it for Firebase configuration in the upcoming section. 
+11. 次に、{{<guilabel name="Continue">}} をクリックします。 証明書の準備でき、ダウンロード可能になったら証明書をダウンロードします。次の項目の Firebase の設定に必要になります。
 
-## Configuring Firebase for Push Notification
+## Firebase (プッシュ通知) の設定
 
-1. Go to [Firebase console](https://firebase.google.com/).
+1. [Firebase console](https://firebase.google.com/) にアクセスします。
 
-2. Sign in with your Google account to enter the console.
+2. Firebase console にログインします。
 
-3. Click on {{<guilabel name="Add project">}}.
+3. {{<guilabel name="プロジェクトを追加">}} をクリックします。
 
     {{<img src="/images/tutorials/1.png">}}
 
-4. Fill in the project information and click {{<guilabel name="CREATE PROJECT">}}. Then, you will be redirected to the Project Overview page.
+4. プロジェクト情報を入力し、 {{<guilabel name="プロジェクトを作成">}} をクリックします。 その後、プロジェクト概要ページにリダイレクトされます。
 
     {{<img src="/images/tutorials/2.png">}}
 
-After project creation, we can start configuring the push notification the project for specific platform. 
+プロジェクトを作成後、各プラットフォーム用プッシュ通知の設定を行うことができます。
 
-### For iOS
+### iOS の場合
 
-1. Go to `Project setting`.
+1. `プロジェクトの設定`　を選択します。
 
     {{<img src="/images/tutorials/3.png">}}
 
-2. Under General section, click {{<guilabel name="ADD APP">}} and select `iOS`.
+2. [全般] 項目で {{<guilabel name="アプリを追加">}} をクリックし、`iOS` を選択します。
 
-3. Enter your iOS Bundle ID (You can find that by going to {{<menu menu1="Config" menu2="iOS App Settings">}} ). Then, click {{<guilabel name="REGISTER APP">}}.
+3. iOS のバンドルID を入力します。( {{<menu menu1="設定" menu2="iOS アプリ設定">}} ) で確認することができます)。 次に、{{<guilabel name="アプリの登録">}} をクリックします。
 
     {{<img src="/images/tutorials/4.png">}}
 
-4. Download `GoogleService-Info.plist` file and place it in the root folder of your project. After that, click {{<guilabel name="CONTINUE">}}.
+4. `GoogleService-Info.plist` ファイルをダウンロードし、プロジェクトのルートフォルダに配置します。 次に、 {{<guilabel name="続行">}} をクリックします。
 
     {{<img src="/images/tutorials/5.png">}}
 
-5. You will see instructions on how to add the Firebase SDK into our project. However, we are not developing the app natively, we can skip this step. So just click click {{<guilabel name="CONTINUE">}} to proceed. Then, click click {{<guilabel name="FINISH">}} to complete the configuration. After that, you should see your iOS app in the Firebase overview page.
+5. [Firebase SDK の追加] では、Monacaで開発するアプリは、ネイティブアプリではないため、 {{<guilabel name="続行">}} をクリックします。 次に、{{<guilabel name="終了">}} をクリックして設定を完了します。その後、Firebase の概要ページに iOS アプリが表示されます。
     
     {{<img src="/images/tutorials/6.png">}}
 
-6. Now, it's time to add APNs certificates into this project. Go to `Project setting` and select `CLOUD MESSAGING`.
+6. 作成したプロジェクトに APNs 証明書を追加します。 `プロジェクトの設定` に移動し、  `クラウド メッセージング`を選択します。
 
     {{<img src="/images/tutorials/3.png">}}
 
-7. Scroll down to **iOS app configuration** section and upload APNs authentication key or APNs certificates.
+7. **iOS アプリの設定** 項目で、APNs 認証キーまたは APNs 証明書をアップロードします。
 
     {{<img src="/images/tutorials/7.png">}}
 
-That's it! Now, you are done with iOS configuration. 
+以上で、iOS 用の設定は完了です。
 
-### For Android
+### Android の場合
 
-1. Go to `Project setting`.
+1. `プロジェクトの設定`　を選択します。
 
     {{<img src="/images/tutorials/3.png">}}
 
-2. Under General section, click {{<guilabel name="ADD APP">}} and select `Android`.
+2. [全般] 項目で {{<guilabel name="アプリを追加">}} をクリックし、`Android` を選択します。
 
-3. Enter your package name (You can find that by going to {{<menu menu1="Config" menu2="Android App Settings">}} ). Then, click {{<guilabel name="REGISTER APP">}}.
+3. パッケージ名を入力します ( {{<menu menu1="設定" menu2="Android アプリ設定">}} で確認することができます) 。 次に、{{<guilabel name="アプリの登録">}} をクリックします。
 
     {{<img src="/images/tutorials/8.png">}}
 
-4. Download `google-services.json` file and place it in the root folder of your project. After that, click {{<guilabel name="CONTINUE">}}.
+4. `google-services.json` ファイルをダウンロードし、プロジェクトのルートフォルダに配置します。 次に、 {{<guilabel name="続行">}} をクリックします。
 
     {{<img src="/images/tutorials/9.png">}}
 
-5. You will see instructions on how to add the Firebase SDK into our project. However, we are not developing the app natively, we can skip this step. So just click click {{<guilabel name="FINISH">}} to complete the configuration. After that, you should see your Android app in the Firebase overview page.
+5. [Firebase SDK の追加] では、Monacaで開発するアプリは、ネイティブアプリではないため、 {{<guilabel name="続行">}} をクリックします。 次に、{{<guilabel name="終了">}} をクリックして設定を完了します。その後、Firebase の概要ページに iOS アプリが表示されます。
     
     {{<img src="/images/tutorials/10.png">}}
 
-## Adding the Plugin in Monaca IDE
+## Monaca クラウド IDE にプラグインを追加する
 
-1.  From the IDE menu, go to {{<menu menu1="Config" menu2="Manage Cordova Plugins">}}.
+1. IDE メニューから、{{<menu menu1="設定" menu2="Cordova プラグインの管理">}} へ移動します。
 
-2.  Click on {{<guilabel name="Import Cordova Plugin">}} button. Then, you can choose to import the plugin using a ZIP file or URL/Package Name. 
+2. {{<guilabel name="Cordova プラグインのインポート">}}  ボタンをクリッククリックします。 次に、[ZIP ファイル] または [パッケージ名 / URL] を使用してプラグインをインポートします。
 
-## Usage
+## 使い方
 
-After importing the plugin into the project, you can start generate a token for your device and set an event for when a user opens a notification. Please make sure to call the plugin API after the Cordova is loaded. 
+Cordova プラグインをプロジェクトにインポートすることで、デバイストークンの取得や、プッシュ通知を開いたときのイベントを設定することができます。[deviceready] イベント後にプラグイン API を使用します。
 
 {{<highlight javascript>}}
 document.addEventListener("deviceready", function(){
@@ -163,23 +164,23 @@ document.addEventListener("deviceready", function(){
 }, false);
 {{</highlight>}}
 
-## API References
+## API リファレンス
 
-In this page, we only describe some main APIs used in our [Demo](https://monaca.mobi/directimport?pid=5ac5776ee788854f3a8b456a). For a complete API references, please refer to [here](https://github.com/arnesson/cordova-plugin-firebase).
+ここでは、[デモ](https://monaca.mobi/directimport?pid=5ac5776ee788854f3a8b456a) で使用されている主な API について説明します。 完全なAPIリファレンスについては、 [こちら](https://github.com/arnesson/cordova-plugin-firebase) を参照してください。
 
 ### getToken()
 
-Get the device token. The token will be null if it has not been established yet
+デバイストークンを取得します。 トークンが確立できない場合は、null になります。
 
 {{<highlight javascript>}}
 window.FirebasePlugin.getToken();
 {{</highlight>}}
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 window.FirebasePlugin.getToken(function(token) {
@@ -192,17 +193,17 @@ window.FirebasePlugin.getToken(function(token) {
 
 ### onTokenRefresh()
 
-Get notified when a token is refreshed. This is the best way to get a valid token for the device as soon as the token is established.
+トークンがリフレッシュされたときに通知を受け取ります。 トークン確立後、すぐにデバイスの有効なトークンを取得することができます。
 
 {{<highlight javascript>}}
 window.FirebasePlugin.onTokenRefresh();
 {{</highlight>}}
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 window.FirebasePlugin.onTokenRefresh(function(token) {
@@ -215,17 +216,17 @@ window.FirebasePlugin.onTokenRefresh(function(token) {
 
 ### onNotificationOpen()
 
-Get notified when the notification is open.
+プッシュ通知を開いたときに、通知データを取得します。
 
 {{<highlight javascript>}}
 window.FirebasePlugin.onNotificationOpen();
 {{</highlight>}}
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 window.FirebasePlugin.onNotificationOpen(function(notification) {
@@ -238,17 +239,17 @@ window.FirebasePlugin.onNotificationOpen(function(notification) {
 
 ### hasPermission()
 
-Check permission to recieve push notifications.
+プッシュ通知を受信するためのアクセス許可を確認します。
 
 {{<highlight javascript>}}
 window.FirebasePlugin.hasPermission();
 {{</highlight>}}
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 window.FirebasePlugin.hasPermission(function(data){
@@ -259,19 +260,19 @@ window.FirebasePlugin.hasPermission(function(data){
 });
 {{</highlight>}}
 
-### grantPermission() (iOS only)
+### grantPermission() (iOS)
 
-Grant permission to recieve push notifications for iOS (will trigger a prompt if the permission has not been granted yet).
+iOS でプッシュ通知を受信する権限を与えます (まだ権限が与えられていない場合は、プロンプトを表示します)。
 
 {{<highlight javascript>}}
 window.FirebasePlugin.grantPermission();
 {{</highlight>}}
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 window.FirebasePlugin.grantPermission(function(){
@@ -283,25 +284,25 @@ window.FirebasePlugin.grantPermission(function(){
 
 ### setBadgeNumber()
 
-Set a number on the icon badge.
+バッジに数字を設定します。
 
 {{<highlight javascript>}}
 window.FirebasePlugin.setBadgeNumber(badgeNumber);
 {{</highlight>}}
 
-**Parameter**
+**パラメーター**
 
-Name | Type | Description
+パラメーター名 | 型 | 説明
 -----|------|-------------
-`badgeNumber` | Number | The number on the icon badge
+`badgeNumber` | Number | バッジ表示する数値
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
-**Example**
+**例**
 
-After running setting the badge number, close the app. Then, you will see the badge number appear on your app icon. If you want to remove the number, please set it to `0`.
+バッジに表示する数値を設定して実行した後、アプリを終了します。 次に、アプリアイコンにバッジ数が表示されます。 番号を削除する場合は、`0` を設定します。
 
 {{<highlight javascript>}}
 window.FirebasePlugin.setBadgeNumber(5);
@@ -310,17 +311,17 @@ window.FirebasePlugin.setBadgeNumber(5);
 
 ### getBadgeNumber()
 
-Get icon badge number.
+バッジの数値を取得します。
 
 {{<highlight javascript>}}
 window.FirebasePlugin.getBadgeNumber();
 {{</highlight>}}
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 window.FirebasePlugin.getBadgeNumber(function(n) {
@@ -331,17 +332,17 @@ window.FirebasePlugin.getBadgeNumber(function(n) {
 
 ### unregister()
 
-Unregister from firebase to stop receiving push notifications. Call this when you logout user from your app.
+firebase からの登録を解除してプッシュ通知の受信を停止します。アプリからユーザーをログアウトするときに呼び出します。
 
 {{<highlight javascript>}}
 window.FirebasePlugin.unregister();
 {{</highlight>}}
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 window.FirebasePlugin.unregister(function(){
@@ -354,23 +355,23 @@ window.FirebasePlugin.unregister(function(){
 
 ### setScreenName()
 
-Set the name of the current screen in Analytics.
+アナリティクスで現在のスクリーン名を設定します。
 
 {{<highlight javascript>}}
 window.FirebasePlugin.setScreenName(screenName);
 {{</highlight>}}
 
-**Parameter**
+**パラメーター**
 
-Name | Type | Description
+パラメーター名 | 型 | 説明
 -----|------|-------------
-`screenName` | String | Screen name
+`screenName` | String | スクリーン名
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 var page="FirebaseHome";
@@ -380,23 +381,23 @@ alert(page + " screen is tracked.");
 
 ### setUserId()
 
-Set a user id for use in Analytics.
+アナリティクスで使用するユーザーID を設定します。
 
 {{<highlight javascript>}}
 window.FirebasePlugin.setUserId(id);
 {{</highlight>}}
 
-**Parameter**
+**パラメーター**
 
-Name | Type | Description
+パラメーター名 | 型 | 説明
 -----|------|-------------
-`id` | String | A unique identifier, associated with that particular user, must be sent with each hit
+`id` | String | 特定のユーザーに関連付けられた一意の識別子は、ヒットごとに送信する必要があります。
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 //user ID for testing purpose
