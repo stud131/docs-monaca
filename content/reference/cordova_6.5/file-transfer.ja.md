@@ -471,6 +471,10 @@ function displayImageByFileURL(fileEntry) {
 オブジェクトをこのメソッドに渡します。ファイルの読み込み後は、その処理結果を使用して、 `Blob`
 オブジェクトを作成します。
 
+{{<note>}}
+画像をBlob URL形式で表示する場合は、デフォルトの<b>Content-Security-Policy</b>の<code>&lt;meta&gt;</code>要素に <code>img-src  blob:;</code>を追加する必要があります。
+{{</note>}}
+
 {{<highlight javascript>}}
 function readBinaryFile(fileEntry) {
     fileEntry.file(function (file) {

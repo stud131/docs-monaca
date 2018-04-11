@@ -446,6 +446,10 @@ support operations with binary files, FileReader supports two methods,
 you read the file successfully, construct a Blob object using the result
 of the read.
 
+{{<note>}}
+When using a Blob object, you will need to add <code>img-src  blob:;</code> to the default <b>Content-Security-Policy</b> <code>&lt;meta&gt;</code> element.
+{{</note>}}
+
 {{<highlight javascript>}}
 function readBinaryFile(fileEntry) {
     fileEntry.file(function (file) {
