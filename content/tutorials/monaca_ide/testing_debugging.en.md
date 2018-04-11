@@ -6,12 +6,9 @@ aliases: /en/monaca_ide/tutorial/testing_debugging/
 
 [Monaca Debugger](/en/products_guide/debugger/) is a powerful
 application for testing and debugging your Monaca applications on real
-devices in real time.
+devices in real-time.
 
-When developing Monaca apps in Monaca Cloud IDE, assuming that the
-Internet connection is available, all changes made to your project files
-will be pushed into your Monaca Debugger in real-time as soon as you
-save those changes.
+When developing Monaca apps in the Cloud IDE, all changes made to your project file(s) will be synced with your Monaca Debugger in real-time as soon as you save them. 
 
 ## Before Getting Started
 
@@ -27,47 +24,45 @@ Please install Monaca Debugger on your device.
 
 ## Step 1: Running a Project on Monaca Debugger
 
-1.  Launch Monaca Debugger app and sign in using your Monaca account
-    information. Make sure you are using the same account information
-    you use for Monaca Cloud IDE.
+1. Launch Monaca Debugger app and sign in with your Monaca account. Make sure you are using the same account for Monaca Cloud IDE.
 
-    {{<figure src="/images/monaca_ide/tutorial/testing_debugging/1.png" width="300">}}
+    {{<img src="/images/monaca_ide/tutorial/testing_debugging/1.png" width="300">}}
 
-2.  Then, a project list will appear. All Monaca Cloud IDE projects are
-    listed under `Monaca.io Projects`. To run a project, you can just
-    click on the project name in Monaca Debugger or click {{<guilabel name="Run on Device">}} button in Monaca Cloud IDE menu.
+2. The list of projects will appear. All Monaca Cloud IDE projects are listed under `Monaca.io Projects`. To run a project, simply tap on the project name in Monaca Debugger or select {{<guilabel name="Run on Device">}} in Monaca Cloud IDE.
 
-    {{<figure src="/images/monaca_ide/tutorial/testing_debugging/2.png" width="300">}}
+    {{<img src="/images/monaca_ide/tutorial/testing_debugging/2.png" width="300">}}
 
-3.  Then, your project should be running in the debugger. To go back to
-    the Project List screen, go to Debugger Menu and click {{<guilabel name="Back">}} button.
+3. Your project should now be running in the debugger. 
+
+4. Go ahead and try out the various features of the demo app!  
+
+    {{<img src="/images/monaca_ide/tutorial/testing_debugging/4.png" width="300">}}
+
+    {{<note>}}
+    To go back to the Project List screen, go to Debugger Menu and tap on the <i>Back</i> button.
+    {{</note>}} 
 
     {{<multi_figures>}}
         {{< img src="/images/monaca_ide/tutorial/testing_debugging/3.png" width="300">}}
         {{< img src="/images/monaca_ide/tutorial/testing_debugging/6.png" width="300">}}  
     {{</multi_figures>}}
 
-4.  Try and test your project by adding/deleting a memo.
-
-    {{<figure src="/images/monaca_ide/tutorial/testing_debugging/4.png" width="300">}}
+    
 
 ## Step 2: Real-time Updates between Monaca Cloud IDE and Debugger
 
-By now, you are able to run your Monaca project on the debugger. Next,
-let's try to edit this project and see how it is reflected on the
-debugger.
+By now, you should be able to get your Monaca project running on the debugger. Next, let’s try to make changes to this project and see how it is reflected in the debugger.  
 
-1.  Run the project on the debugger.
-2.  On Monaca Cloud IDE, make some changes in a project file and save
-    them (please refer to [Edit Project Files](../starting_project/#step-4-editing-a-project). In this example, we edit `index.html` and change the title of page from `Monaca Memo` to `My Memo`. Then, save the change.
 
-    {{<figure src="/images/monaca_ide/tutorial/testing_debugging/7.png" >}}
+1. Run the project on the debugger.
 
-3.  The saved changes will be sent to Monaca Debugger on your device.
-    You can also click on {{<guilabel name="Reload">}} button to retrieve the latest updates
-    of your app in case the changes are not reflected.
+2. On Monaca Cloud IDE, let's open `index.html` and change the title of the front page from `Monaca Memo` to `My Memo`. Then, save the change.
 
-    {{<multi_figures title="Updated Page Title & Reload Button">}}
+    {{<img src="/images/monaca_ide/tutorial/testing_debugging/7.png" >}}
+
+3. As soon as you save your new changes, Monaca Debugger will automatically refresh itself. (You can also tap on *Reload* button to manually retrieve the latest updates of your app, in case the changes are not reflected.) 
+
+    {{<multi_figures>}}
         {{< img src="/images/monaca_ide/tutorial/testing_debugging/5.png" width="300">}}
         {{< img src="/images/monaca_ide/tutorial/testing_debugging/8.png" width="300">}}  
     {{</multi_figures>}}
@@ -76,15 +71,12 @@ debugger.
     Please refer to {{<link href="/en/products_guide/debugger/features/" title="Debugger Functionalities">}} to explore the other functions provided by Monaca Debugger.
 {{</note>}}
 
-That's it! That's how easy it is to use Monaca Debugger. Please try to
-make more changes to your project and see how it runs on the debugger.
+{{<note>}}
+    You can also use USB debugging with Monaca CLI. Please refer to {{<link title="USB Debugging with Monaca" href="/en/products_guide/debugger/debug/#monaca-debugger-with-monaca-local-development-tools">}}.
+{{</note>}}
 
-PRACTICE MAKES PERFECT! Enjoy developing with Monaca!
+That’s it! That’s how easy it is to use Monaca Debugger. Please try to make more changes to your project and see how it runs on the debugger. Enjoy developing with Monaca!
 
-See Also:
+**Next**: 
 
-- [Starting a Project](../starting_project/)
-- [Setting up Monaca Backend](../adding_backend/)
-- [Building Monaca App](../building_app/)
-- [Publishing Monaca App](../publishing_app/)
-- [Sample Apps & Templates](/en/sampleapp/samples)
+- [Part 3: Building Monaca App](../building_app/)

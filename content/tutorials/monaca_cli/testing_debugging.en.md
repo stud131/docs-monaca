@@ -60,6 +60,10 @@ to the following points:
 
     {{<img src="/images/monaca_cli/tutorial/testing_debugging/4.png" width="300">}}
 
+{{<note>}}
+    In order to stop debugging and unpair the debugger, press <code>Ctrl+c</code>.
+{{</note>}}
+
 ## Step 2: Running a Project on Monaca Debugger
 
 1.  From the Local Projects list in Monaca Debugger, click on your
@@ -98,8 +102,16 @@ to the following points:
 
     {{<img src="/images/monaca_cli/tutorial/testing_debugging/7.png" width="300">}}
 
-See Also:
+{{<note>}}
+    Please refer to {{<link href="/en/products_guide/debugger/features/" title="Debugger Functionalities">}} to explore the other functions provided by Monaca Debugger.
+{{</note>}}
 
-- [Part 1: Starting a Project](../starting_project)
+{{<note>}}
+    You can also use USB debugging with Monaca CLI. Please refer to {{<link title="USB Debugging with Monaca" href="/en/products_guide/debugger/debug/#monaca-debugger-with-monaca-local-development-tools">}}.
+{{</note>}}
+
+That’s it! That’s how easy it is to use Monaca Debugger. Please try to make more changes to your project and see how it runs on the debugger. Enjoy developing with Monaca!
+
+**Next**: 
+
 - [Part 3: Building Monaca App](../building_app)
-- [Part 4: Publishing Monaca App](../publishing_app)

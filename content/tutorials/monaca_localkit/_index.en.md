@@ -20,10 +20,12 @@ code management system, task runner and so on. It also allows you to
 develop offline and provides a faster synchronization with Monaca
 Debugger.
 
-Before getting started with this tutorial, you need to:
+Before getting started with this tutorial, you will need the following:
 
-1. get a Monaca account. Register [here](https://monaca.mobi/en/register/start).
-2. install Monaca Localkit. Download [here](https://monaca.io/localkit.html).
+- install Monaca Localkit. Download [here](https://monaca.io/localkit.html).
+- [optional] have a smart mobile device (either iOS or Android) if you want to test on a real device.
+
+<hr>
 
 - [Part 1: Starting a Project](/en/tutorials/monaca_localkit/starting_project/)
 - [Part 2: Running Monaca Debugger with Monaca Localkit](/en/tutorials/monaca_localkit/testing_debugging)

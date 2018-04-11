@@ -1,5 +1,5 @@
 ---
-title: "Part 4: Building Monaca App"
+title: "Part 3: Building Monaca App"
 weight: 4
 aliases: /en/monaca_ide/tutorial/building_app/
 ---
@@ -36,11 +36,15 @@ Portal after enrolling Apple Developer Program:
 ### Step 1: Configuring iOS App Settings
 
 1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Config" menu2="iOS App Settings...">}}.
+
 2.  Fill in the necessary information of your app:
 
     - `Application Name`: a name representing your app publicly such as in the Market.
+
     - `App ID`: a unique ID representing your app. It is recommended to use reverse-domain style (for example, mobi.monaca.appname) for App ID. Only alphanumeric characters and periods (at least one period must be used) are allowed. Each segment separated by a period should begin with an alphabetic character.
+
     - `Version Number`: a number representing the version of your app which will be required when uploading (publishing process) your application via iTunes Connect later. It needs 3 numbers separated by dots (for example, 1.10.2). Each number should be in \[0-99\].
+    
     - The remaining information is optional. You can configure icon, splash screen and other configurations in the page.
 
     {{<img src="/images/monaca_ide/tutorial/building_app/ios_1.png">}}
@@ -53,12 +57,13 @@ Portal after enrolling Apple Developer Program:
 
 ### Step 2: Configuring iOS Build Settings
 
-1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Config" menu2="iOS Build Settings...">}}.
-2.  Click on {{<guilabel name="Generate Key and CSR">}} button.
+1. From Monaca Cloud IDE menu, go to {{<menu menu1="Config" menu2="iOS Build Settings...">}}.
+
+2. You can either create a new private key or [import an existing one](/en/products_guide/monaca_ide/build/ios/import_export/#step-2-import-private-key-and-certificate-into-monaca). For this tutorial, we will show how to create a new private key. Therefore, let's click on {{<guilabel name="Generate Key and CSR">}} button.
 
     {{<img src="/images/monaca_ide/tutorial/building_app/ios_2.png">}}
 
-3.  Fill in your Apple ID information (user name & email address) and country. Then, click on {{<guilabel name="Generate Key and CSR">}} button. You can also [import an existing Private Key](/en/products_guide/monaca_ide/build/ios/import_export/#step-2-import-private-key-and-certificate-into-monaca) if you have one.
+3.  Fill in your Apple ID information (user name & email address) and country. Then, click on {{<guilabel name="Generate Key and CSR">}} button.
 
     {{<img src="/images/monaca_ide/tutorial/building_app/ios_3.png" width="600">}}
 
@@ -83,11 +88,11 @@ Portal after enrolling Apple Developer Program:
 
 ### Step 4: Installing the Built App
 
-There are 3 ways to install the debug built app:
+There are 3 ways to install the debug built app such as:
 
-1. Download the built app and use iTunes to install the built app on your iOS device.
-2. Install via QR code.
-3. Install via cofigured [deployment services](/en/products_guide/monaca_ide/monaca_ci/supported_services).
+1. downloading the built app and using iTunes to install the built app on your iOS device.
+2. installing via QR code.
+3. install via configured [deployment services](/en/products_guide/monaca_ide/monaca_ci/supported_services).
 
 ## Building a Monaca App for Android
 
@@ -98,14 +103,19 @@ of build, please refer to [Types of Build](/en/products_guide/monaca_ide/build/b
 ### Step 1: Configuring Android App Settings
 
 1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Config" menu2="Android App Settings...">}}.
+
 2.  Fill in the necessary information of your app:
 
     - `Application Name`: a name representing your app publicly such as in the Market.
-    - `Package Name`: a unique ID representing your app. It is recommended to use reverse-domain style (for example, mobi.monaca.appname) for App ID. Only alphanumeric characters and periods (at least one period must be used) are allowed. Each segment separated by a period should begin with an alphabetic character.
-    - `Version Number`: a number representing the version of your app. It needs `3` numbers separated by dots (for example, 1.10.2). Each number should be in `[0-99]`.
-    - `Use Different Package Name for Debug Build`: if checked, the package name of the debug-built app and custom-built debugger are different. In other words, the package name of debug-built app will have `.debug` extension, and the one for project debugger will have `.debugger` extension. However, this option is disable by default because it made some plugins impossible to be debugged due to the fact that they are tied to exact package names (eg. in-app purchase).
-    - The remaining information is optional. You can configure icon, splash screen and other configurations in the page.
 
+    - `Package Name`: a unique ID representing your app. It is recommended to use reverse-domain style (for example, mobi.monaca.appname) for App ID. Only alphanumeric characters and periods (at least one period must be used) are allowed. Each segment separated by a period should begin with an alphabetic character.
+
+    - `Version Number`: a number representing the version of your app. It needs `3` numbers separated by dots (for example, 1.10.2). Each number should be in `[0-99]`.
+
+    - `Use Different Package Name for Debug Build`: if checked, the package name of the debug-built app and custom-built debugger are different. In other words, the package name of debug-built app will have `.debug` extension, and the one for project debugger will have `.debugger` extension. However, this option is disable by default because it made some plugins impossible to be debugged due to the fact that they are tied to exact package names (eg. in-app purchase).
+
+    - The remaining information is optional. You can configure icon, splash screen and other configurations in the page.
+    <br/>
         {{<img src="/images/monaca_ide/tutorial/building_app/android_1.png">}}
 
 3.  After finishing the configurations, click {{<guilabel name="Save">}}.
@@ -152,18 +162,14 @@ In order to configure Android KeyStore in Monaca, please do as follows:
 
 ### Step 4: Installing the Built App
 
-There are 5 ways you can install the built app:
+There are 5 ways you can install the built app such as:
 
-1.  [Network Install](/en/products_guide/debugger/installation/debugger_android/#network-install)
-2.  Install via QR Barcode
-3.  download the built app directly to your computer and install it via USB cable
-4.  send the URL to download the built app to your registered email address
-5.  Install via cofigured [deployment services](/en/products_guide/monaca_ide/monaca_ci/supported_services)
+1.  using [Network Install](/en/products_guide/debugger/installation/debugger_android/#network-install)
+2.  installing via QR Barcode
+3.  downloading the built app directly to your computer and installing it via USB cable
+4.  sending the URL to download the built app to your registered email address
+5.  installing via configured [deployment services](/en/products_guide/monaca_ide/monaca_ci/supported_services).
 
-See Also:
+**Next**: 
 
-- [Starting a Project](../starting_project/)
-- [Running Monaca Debugger with Monaca Cloud IDE](../testing_debugging/)
-- [Setting up Monaca Backend](../adding_backend/)
-- [Publishing Monaca App](../publishing_app/)
-- [Sample Apps & Templates](/en/sampleapp/samples)
+- [Part 4: Publishing Monaca App](../publishing_app/)

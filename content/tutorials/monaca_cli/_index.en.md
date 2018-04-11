@@ -13,10 +13,15 @@ your local PC and start developing Monaca apps with any editors you
 prefer. Monaca CLI allows you to debug your app with inspector
 integration and remote build your projects without any setups locally.
 
-Before getting started, you need to:
+Before getting started with this tutorial, you will need the following:
 
-1. get a Monaca account. If you don’t have one, please register [here](https://monaca.mobi/en/register/start).
-2. install Monaca CLI. Please follow the installation instruction [here](/en/products_guide/monaca_cli/overview/#step-1-cli-installation).
+- install Monaca CLI with the following command ([read more](/en/products_guide/monaca_cli/overview/#step-1-cli-installation)).
+    
+    {{<highlight bash>}}$ npm install -g monaca{{</highlight>}}
+
+- [optional] have a smart mobile device (either iOS or Android) if you want to test on a real device.
+
+<hr>
 
 - [Part 1: Starting a Project](/en/tutorials/monaca_cli/starting_project)
 - [Part 2: Running Monaca Debugger with Monaca CLI](/en/tutorials/monaca_cli/testing_debugging)

@@ -86,8 +86,6 @@ In order to preview a project, please do as follows:
     changes.
 
 
-See Also:
+**Next**:
 
 - [Part 2: Running Monaca Debugger with Monaca Localkit](../testing_debugging)
-- [Part 3: Building Monaca App](../building_app)
-- [Part 4: Publishing Monaca App](../publishing_app)

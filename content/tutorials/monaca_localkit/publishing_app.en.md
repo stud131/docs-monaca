@@ -15,8 +15,3 @@ Please refer to [Google Play Distribution](/en/products_guide/monaca_ide/deploy/
 For more information regarding the distribution of Monaca Apps for other
 platforms, please refer to [Distribution](/en/products_guide/monaca_ide/deploy).
 
-See Also:
-
-- [Part 1: Starting a Project](../starting_project)
-- [Part 2: Running Monaca Debugger with Monaca Localkit](../testing_debugging)
-- [Part 3: Building Monaca App](../building_app)
