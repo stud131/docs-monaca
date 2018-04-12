@@ -17,7 +17,7 @@ Monaca Cloud IDE consists of 5 main parts such as:
 
 ##  Menu Bar
 
-{{<figure src="/images/monaca_ide/manual/overview/2.png" >}}
+{{< figure src="/images/monaca_ide/manual/overview/2.png" >}}
 
 In the menu bar, there are several main menus such as:
 
