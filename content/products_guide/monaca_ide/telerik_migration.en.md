@@ -7,6 +7,22 @@ Monaca is built on top of Cordova. Therefore, any Cordova projects can be import
 
 In this page, we will demonstrate a quick and easy steps to migrate a Telerik project into Monaca. After finish this guide, you would be able to run, test/debug and build an app from your telerik project using Monaca! Let's get started!
 
+## Cordova version & Build Environment
+
+Before getting started with the migration, you may want to know about the supported Cordova version and build environment in Monaca.
+
+All newly created projects in Monaca will be using the latest supported Cordova version (currently, <b>Cordova 7.1</b>) by default. If you want to use a lower version, please [contact us](https://monaca.io/service/index.html).
+
+<br />
+Build environment for Cordova 7.1:
+
+- Cordova Android platform: `6.4.0` (API level 26)
+- Gradle version: `4.3.1`
+- Cordova iOS platform: `4.5.4` 
+- Xcode: `9`
+
+For more information on build environment for lower Cordova version, pleaser refer to [Build Environment](/en/environment/).
+
 ## Step 1: Preparation
 
 Use Telerik tool to convert your project to Cordova CLI. This will convert your project into a Cordova project. Then, zip your project.
@@ -30,7 +46,7 @@ Use Telerik tool to convert your project to Cordova CLI. This will convert your 
     {{<img src="/images/monaca_ide/manual/4.png">}}
 
     {{<note>}}
-        The views or operations in the Preview window might not work properly when Ajax requests or Cordova APIs are used. Read more on {{<link title="Live Preivew Limitations" href="https://docs.monaca.io/en/products_guide/monaca_ide/overview/#live-preivew-limitations">}}. In this case, you can test/debug your project with Monaca Debugger (we will talk about this in the next section).
+        The views or operations in the Preview window might not work properly when Ajax requests or Cordova APIs are used. Read more on {{<link title="Live Preview Limitations" href="https://docs.monaca.io/en/products_guide/monaca_ide/overview/#live-preivew-limitations">}}. In this case, you can test/debug your project with Monaca Debugger (we will talk about this in the next section).
     {{</note>}}
 
 ## Step 3: Debugging with Monaca
