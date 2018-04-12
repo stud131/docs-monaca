@@ -1,5 +1,5 @@
 ---
-title: "パート 4 : Monaca アプリのビルド"
+title: "パート 3 : Monaca アプリのビルド"
 weight: 4
 aliases: /ja/monaca_ide/tutorial/building_app/
 ---

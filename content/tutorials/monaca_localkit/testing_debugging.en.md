@@ -13,12 +13,6 @@ assuming that the local PC is successfully paired with Monaca Debugger,
 all changes made to project files will be pushed into Monaca Debugger as
 soon as you save those changes.
 
-In this page, we describe a step-by-step instruction of how to:
-
--   run the project on Monaca Debugger.
--   get real-time updates between Monaca Localkit and Monaca Debugger.
--   start debugging the project with Chrome DevTools.
-
 ## Before Getting Started
 
 Please install Monaca Debugger on your device.
@@ -34,6 +28,7 @@ Please install Monaca Debugger on your device.
 
 1.  Pair the Monaca Debugger with the PC hosting Monaca Localkit. Please
     refer to [Pairing and Debugging](/en/products_guide/monaca_localkit/pairing_debugging).
+
 2.  If your pairing is successful, a project list will appear in Monaca
     Debugger and the connected debugger will appear in the Monaca
     Localkit (see screenshots below as an example). However, if you
@@ -99,7 +94,7 @@ appropriate version of Monaca Debugger.
     [Inspecting](https://developer.chrome.com/devtools/docs/dom-and-styles)
     and [JavaScript
     Debugging](https://developer.chrome.com/devtools/docs/javascript-debugging)
-    with Chrome DevTools. However, if the Chrome DevTools are failed to
+    with Chrome DevTools. However, if the Chrome DevTools failed to
     open, please refer to [Inspector Isn’t Loaded](/en/products_guide/debugger/troubleshooting/#inspector-isn-t-loaded).
 
     {{<img src="/images/monaca_localkit/tutorial/testing_debugging/9.png">}}
@@ -111,11 +106,15 @@ appropriate version of Monaca Debugger.
 {{<figure src="/images/monaca_localkit/tutorial/testing_debugging/10.png">}}
 
 {{<note>}}
-    Please refer to {{<link href="/en/products_guide/debugger/features" title="Functionalities">}} to explore the other functions provided by Monaca Debugger.
+    Please refer to {{<link href="/en/products_guide/debugger/features/" title="Debugger Functionalities">}} to explore the other functions provided by Monaca Debugger.
 {{</note>}}
 
-See Also:
+{{<note>}}
+    You can also use USB debugging with Monaca CLI. Please refer to {{<link title="USB Debugging with Monaca" href="/en/products_guide/debugger/debug/#monaca-debugger-with-monaca-local-development-tools">}}.
+{{</note>}}
 
-- [Part 1: Starting a Project](../starting_project)
+That’s it! That’s how easy it is to use Monaca Debugger. Please try to make more changes to your project and see how it runs on the debugger. Enjoy developing with Monaca!
+
+**Next**:
+
 - [Part 3: Building Monaca App](../building_app)
-- [Part 4: Publishing Monaca App](../publishing_app)

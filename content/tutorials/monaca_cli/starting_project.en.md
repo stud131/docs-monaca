@@ -10,12 +10,12 @@ aliases: /en/monaca_cli/tutorial/starting_project/
 
     {{<highlight bash>}}$ monaca login{{</highlight>}}
 
-2.  Then, you will be asked to input email and password of your Monaca account.
+2.  Then, you will be asked to enter email and password of your Monaca account.
 
     {{<img src="/images/monaca_cli/tutorial/starting_project/1.png">}}
 
 {{<note>}}
-    You can use <code>monaca signup</code> command if you need to sign up.
+    Please use {{<link title="monaca signup" href="/en/products_guide/monaca_cli/cli_commands/#monaca-signup">}} command if you need to sign up.
 {{</note>}}
 
 ## Step 2: Creating a New Project
@@ -40,8 +40,6 @@ aliases: /en/monaca_cli/tutorial/starting_project/
     You can also use Monaca CLI to {{<link href="/en/products_guide/monaca_cli/cli_commands/#monaca-import" title="import">}} or {{<link href="/en/products_guide/monaca_cli/cli_commands/#monaca-clone" title="clone">}} your existing projects from Monaca Cloud.
 {{</note>}}
 
-See Also:
+**Next**: 
 
-- [Part 2: Running Monaca Debugger with Monaca CLI](../testing_debugging)
-- [Part 3: Building Monaca App](../building_app)
-- [Part 4: Publishing Monaca App](../publishing_app)
+- [Part 2: Running Monaca Debugger with Monaca CLI](../testing_debugging/)

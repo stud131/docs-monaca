@@ -3,26 +3,27 @@ title: "Cordova Google Analytics Plugin"
 weight: 70
 ---
 
-A Cordova/PhoneGap plugin to open and use sqlite databases on Android, iOS and Windows with HTML5/Web SQL API.
+このCordovaプラグインは、Google のユニバーサルアナリティクス SDK に接続するために使用されます。
 
 - Repo: https://github.com/danwilson/google-analytics-plugin
 - Plugin ID/Package Name: `cordova-plugin-google-analytics`
+- Tested Version: 1.8.3
 
-## Demo 
+## デモ 
 
 {{<import pid="5ac33902e7888548428b4567" title="Google Analytics Plugin Demo">}}
 
 {{< figure src="/images/samples/analytics.png">}}
 
-## Enable the Plugin in Monaca IDE
+## Monaca クラウド IDE でプラグインを有効にする
 
-1.  From the IDE menu, go to {{<menu menu1="Config" menu2="Manage Cordova Plugins">}}.
+1. IDE メニューから {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} へ移動します。
 
-2.  Click on {{<guilabel name="Import Cordova Plugin">}} button. Then, you can choose to import the plugin using a ZIP file or URL/Package Name. 
+2. {{<guilabel name="Cordova プラグインのインポート">}}  ボタンをクリッククリックします。 次に、[ZIP ファイル] または [パッケージ名 / URL] を使用してプラグインをインポートします。
 
-## Usage
+## 使い方
 
-After importing the plugin into the project, you can start initialize your tracking ID. Please make sure to call the plugin API after the Cordova is loaded. 
+プラグインをプロジェクトへインポート後、トラッキングID の初期化を開始することができます。[deviceready] イベント後にプラグイン API を使用します。
 
 {{<highlight javascript>}}
 //Replace your app tracking id here
@@ -36,30 +37,30 @@ function onDeviceReady(){
 }
 {{</highlight>}}
 
-## API References
+## API リファレンス
 
-In this page, we only describe some main APIs used in our [Demo](https://monaca.mobi/directimport?pid=5ac33902e7888548428b4567). For a complete API references, please refer to [here](https://github.com/danwilson/google-analytics-plugin).
+ここでは、[デモ](https://monaca.mobi/directimport?pid=5ac33902e7888548428b4567) で使用されている主な API について説明します。 完全なAPIリファレンスについては、[こちら](https://github.com/danwilson/google-analytics-plugin) を参照してください。
 
 ### startTrackerWithId()
 
-Set up your Analytics tracker.
+Analytics トラッカーを設定します。
 
 {{<highlight javascript>}}
 window.ga.startTrackerWithId(trackingId, [interval]);
 {{</highlight>}}
 
-**Parameter**
+**パラメーター**
 
-Name | Type | Description
+パラメーター名 | 型 | 説明
 -----|------|-------------
-`trackingId` | String | Your Google Analytics Mobile App property
-`interval` | Number | [optional] The dispatch period in seconds (default: `30`)
+`trackingId` | String | Google Analytics モバイルアプリのプロパティ
+`interval` | Number | [オプション] 秒単位でのディスパッチ期間 (default: `30`)
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 window.ga.startTrackerWithId('UA-XXXX-YY', 30);
@@ -67,25 +68,25 @@ window.ga.startTrackerWithId('UA-XXXX-YY', 30);
 
 ### trackView()
 
-Track a screen.
+画面を追跡します。
 
 {{<highlight javascript>}}
 window.ga.trackView(title, campaignUrl, [newSession]);
 {{</highlight>}}
 
-**Parameter**
+**パラメーター**
 
-Name | Type | Description
+パラメーター名 | 型 | 説明
 -----|------|-------------
-`title` | String | Screen title
-`campaignUrl` | String | Campaign url for measuring referrals
-`newSession` | Boolean | [optional] Set to `true` to create a new session
+`title` | String | 画面のタイトル
+`campaignUrl` | String | 参照を測定するためのキャンペーンURL
+`newSession` | Boolean | [オプション] 新しいセッションを作成するには `true` を設定します。
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 //To track a Screen (PageView):
@@ -100,27 +101,27 @@ window.ga.trackView('Screen Title', '', true)
 
 ### trackEvent()
 
-Track an event.
+イベントを追跡します。
 
 {{<highlight javascript>}}
 window.ga.trackEvent(category, action, [label], [value], [newSession])
 {{</highlight>}}
 
-**Parameter**
+**パラメーター**
 
-Name | Type | Description
+パラメーター名 | 型 | 説明
 -----|------|-------------
-`category` | String | Event category (e.g. 'Video')
-`action` | String | Action type (e.g. 'play')
-`label` | String | [optional] Event label (e.g. 'Fall Campaign')
-`value` | Number | [optional] A numeric value associated with the event (e.g. 42)
-`newSession` | Boolean | [optional] Set to `true` to create a new session
+`category` | String | イベントカテゴリー (例：'Video')
+`action` | String | Action type (例： 'play')
+`label` | String | [オプション] イベントラベル (例：'Fall Campaign')
+`value` | Number | [オプション] イベントに関連付けられた数値 (例：42)
+`newSession` | Boolean | [オプション] 新しいセッションを作成するには `true` を設定します。
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 //To track an Event
@@ -132,23 +133,23 @@ window.ga.trackEvent('Videos', 'play', 'Fall Campaign', 42, true)
 
 ### setUserId()
 
-Set a UserId.
+UserId を設定します.
 
 {{<highlight javascript>}}
 window.ga.setUserId(id);
 {{</highlight>}}
 
-**Parameter**
+**パラメーター**
 
-Name | Type | Description
+パラメーター名 | 型 | 説明
 -----|------|-------------
-`id` | String | A unique identifier, associated with that particular user, must be sent with each hit
+`id` | String | 特定のユーザーに関連付けられた一意の識別子は、ヒットごとに送信する必要があります
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 //user ID for testing purpose
@@ -158,23 +159,23 @@ window.ga.setUserId(myUserId);
 
 ### setAppVersion()
 
-Set a specific app version.
+特定のアプリのバージョンを設定します。
 
 {{<highlight javascript>}}
 window.ga.setAppVersion(appVersion)
 {{</highlight>}}
 
-**Parameter**
+**パラメーター**
 
-Name | Type | Description
+パラメーター名 | 型 | 説明
 -----|------|-------------
-`appVersion` | String | App version
+`appVersion` | String | アプリバージョン
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 window.ga.setAppVersion('1.33.7');
@@ -183,17 +184,17 @@ window.ga.setAppVersion('1.33.7');
 
 ### debugMode()
 
-Enable verbose logging.
+冗長ロギングを有効にします。
 
 {{<highlight javascript>}}
 window.ga.debugMode()
 {{</highlight>}}
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 window.ga.debugMode();

@@ -1,6 +1,7 @@
 ---
 title: "パート 3 : Monaca バックエンドのセットアップ"
 weight: 3
+hidden: true
 aliases: /ja/monaca_ide/tutorial/adding_backend/
 ---
 

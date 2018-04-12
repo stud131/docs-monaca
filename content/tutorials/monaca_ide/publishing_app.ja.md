@@ -1,5 +1,5 @@
 ---
-title: "パート 5 : Monaca アプリの配布申請"
+title: "パート 4 : Monaca アプリの配布申請"
 weight: 5
 aliases: /ja/monaca_ide/tutorial/publishing_app/
 ---

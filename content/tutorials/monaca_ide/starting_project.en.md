@@ -7,67 +7,47 @@ aliases: /en/monaca_ide/tutorial/starting_project/
 ## Step 1: Logging into Monaca
 
 1.  Login to [Monaca](https://monaca.mobi/en/login).
-2.  Input your Monaca account information.
+2.  Enter your Monaca account information.
 
-    {{< img src="/images/monaca_ide/tutorial/starting_project/9.png" width="400">}}
+    {{<figure src="/images/monaca_ide/tutorial/starting_project/9.png" width="400">}}
 
 ## Step 2: Creating a New Project
 
-After a successful sign-in, you will be directed to Monaca Dashboard.
-You are now ready to create your first Monaca project. Please do as
-follows:
+After successfully signing in, you will be redirected to the Monaca Dashboard. You are now ready to create your first Monaca project! Let's do the following: 
 
-1.  From Monaca Dashboard, click on {{<guilabel name="Create Project">}} or {{<guilabel name="Import Project">}} to create a new Monaca project.
+1.  From the Monaca Dashboard, you can choose {{<guilabel name="Create Project">}} or {{<guilabel name="Import">}} to create a new Monaca project. If you select `Create Project`, you can create a new project based on various templates or from scratch. On the other hand, if you choose `Import`, you can create a new project from an existing Cordova/Monaca project in a number of different ways such as: 
 
-    {{< img src="/images/monaca_ide/tutorial/starting_project/1.png" >}}
+    - import from URL (zip file) 
+    - upload a project (zip file)
+    - import from Git repository (see [Git SSH Integration]({{<ref "git_ssh_integration.en.md">}}))
+    - or import from your existing GitHub repository (see [GitHub Integration]({{<ref "github_integration.en.md">}})).
 
-2.  If you select `Create Project`, you will be able to create a new
-    Monaca project based on various templates. On the other hand, if you
-    choose `Import Project`, you will be able to create a new Monaca
-    project by importing an existing project in 3 ways such as:
+    {{< figure src="/images/monaca_ide/tutorial/starting_project/11.png" title="Import Project Dialog" >}}
+    {{< figure src="/images/monaca_ide/tutorial/starting_project/10.png" title="Create Project Dialog" >}}
 
-    -   filling in a project's URL
-    -   uploading a project package
-    -   or selecting your existing GitHub repository. Please refer to [GitHub Integration]({{<ref "github_integration.en.md">}}) on how to set up GitHub integration with Monaca.
+2. For this tutorial, we will choose the `Create Project` option. In the Create Project dialog, under Sample Applications, select the `jQuery TODO App` template by clicking on its {{<guilabel name="Create New">}} button.
 
-    {{< figure src="/images/monaca_ide/tutorial/starting_project/10.png" title="Create Project" >}}
+3. Simply click on the {{<guilabel name="Make Project">}} button.
 
-    {{< figure src="/images/monaca_ide/tutorial/starting_project/11.png" title="Import Project" >}}
+    {{<figure src="/images/monaca_ide/tutorial/starting_project/3.png" >}}
 
-3.  In this tutorial, we will choose the Create Project option. In the
-    Create Project dialog, select Sample Applications and choose
-    `jQuery TODO App` template by clicking on its {{<guilabel name="Create New">}} button.
-
-    {{< img src="/images/monaca_ide/tutorial/starting_project/2.png" >}}
-
-4.  Fill in the project's information and click on {{<guilabel name="Make Project">}} button.
-
-    {{< img src="/images/monaca_ide/tutorial/starting_project/3.png" >}}
-
-5.  Then, you will see your newly created project listed under the
-    `Online` tab of the Dashboard.
+4. You will then see your newly created project listed under the `Online` tab of the Dashboard. 
 
 ## Step 3: Previewing a Project
 
-Monaca Cloud IDE allows you to preview your project through a Preview
-window without any real devices.
+Monaca Cloud IDE allows you to preview your project through a Preview window without any real devices.
 
-{{< note >}}
-    Some functionalities of applications might not be properly previewed
-    because the Preview window has several limitations such as Ajax
-    requests, Cordova plugin APIs and so on. For more information, please
-    refer to {{<link href="/en/products_guide/monaca_ide/overview#live-preivew-limitations" title="Usage and Limitation of Live Preview" >}}.
+{{<note >}}
+    Some functionalities of applications might not be previewed properly because the Preview window has several limitations on Ajax requests, Cordova plugin APIs, etc. For the full list of limitations, please refer to {{<link href="/en/products_guide/monaca_ide/overview#live-preivew-limitations" title="Usage and Limitation of Live Preview">}}. 
 {{< /note >}}
 
-1.  From the Monaca Dashboard, open a project. Then, Monaca Cloud IDE
-    will be open. You can find the Preview window on the right panel of
-    the IDE.
+1. From the Monaca Dashboard, open the project we just created. Then, Monaca Cloud IDE will be opened. The Preview window is at the right side of the IDE by default. 
 
-    {{< img src="/images/monaca_ide/tutorial/starting_project/5.png" >}}
+    {{<figure src="/images/monaca_ide/tutorial/starting_project/5.png" >}}
 
 2.  Try adding some TODO items in the Preview window.
 
-    {{< img src="/images/monaca_ide/tutorial/starting_project/6.png" >}}
+    {{<figure src="/images/monaca_ide/tutorial/starting_project/6.png" >}}
 
 ## Step 4: Editing a Project
 
@@ -75,12 +55,12 @@ window without any real devices.
     All editable files are listed under {{<guilabel name="www/">}} folder.
 {{< /note >}}
 
-1.  From the File Tree panel, choose a file to edit. Let's make some
-    changes in `index.html` file in the code editor.
+1. From the File Tree panel, choose a file to edit. Let’s make some changes in the `index.html` file using the code editor. For example, change the title of the app to something else.
+
 2.  Save the changes, then you will be able to see the updates instantly
     in the Preview window. Feel free to edit the project as you wish.
-    For more detailed explanation about this template, please refer to
-    [Explanation about jQuery TODO App](/en/sampleapp/samples/todo/).
+    For a more detailed explanation about this template, please refer to
+    [jQuery TODO App](/en/sampleapp/samples/todo/).
 
 {{< note >}}
     For more information regarding the code editor in Monaca Cloud IDE,
@@ -88,10 +68,6 @@ window without any real devices.
 {{< /note >}}
 
 
-See Also:
+**Next**: 
 
-- [Running Monaca Debugger with Monaca Cloud IDE](../testing_debugging/)
-- [Setting up Monaca Backend](../adding_backend/)
-- [Building Monaca App](../building_app/)
-- [Publishing Monaca App](../publishing_app/)
-- [Sample Apps & Templates](/en/sampleapp/samples)
+- [Part 2: Running Monaca Debugger with Monaca Cloud IDE](../testing_debugging/)

@@ -1,6 +1,7 @@
 ---
 title: "Part 3: Setting up Monaca Backend"
 weight: 3
+hidden: true
 aliases: /en/monaca_ide/tutorial/adding_backend/
 ---
 

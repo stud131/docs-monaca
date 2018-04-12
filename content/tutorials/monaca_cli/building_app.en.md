@@ -20,15 +20,15 @@ more information about other types of build, please refer to [Types of Build]({{
 
 ### Prerequisite
 
-1.  You must enroll in [Apple Developer
-    Program](https://developer.apple.com/programs/).
+1.  You must enroll in [Apple Developer Program](https://developer.apple.com/programs/).
+
 2.  After enrolling in the program, you will be able to create the
     following items which are required to create a Debug build in
     Monaca:
 
--   `App ID` (see [How to Register App ID]({{<ref "build_ios.en.md#register-app-id">}}))
--   `Development Certificate` (see [How to Generate Certificates]({{<ref "build_ios.en.md#generate-certificates">}}))
--   `Development Provisioning Profile` (see [How to Create Provisioning Profiles]({{<ref "build_ios.en.md#create-provisioning-profiles">}}))
+    -   `App ID` (see [How to Register App ID]({{<ref "build_ios.en.md#register-app-id">}}))
+    -   `Development Certificate` (see [How to Generate Certificates]({{<ref "build_ios.en.md#generate-certificates">}}))
+    -   `Development Provisioning Profile` (see [How to Create Provisioning Profiles]({{<ref "build_ios.en.md#create-provisioning-profiles">}}))
 
 ### Step 1: Configuring iOS App Settings
 
@@ -43,8 +43,11 @@ more information about other types of build, please refer to [Types of Build]({{
 3.  Fill in the necessary information of your app:
 
     -   `Application Name`: a name representing your app publicly such as in the Market.
+
     -   `App ID`: a unique ID representing your app. It is recommended to use reverse-domain style (for example, mobi.monaca.appname) for App ID. Only alphanumeric characters and periods (at least one period must be used) are allowed. Each segment separated by a period should begin with an alphabetic character.
+
     -   `Version Number`: a number representing the version of your app which will be required when uploading (publishing process) your application via iTune Connect later. It needs 3 numbers separated by dots (for example, 1.10.2). Each number should be in `[0-99]`.
+    
     -   The remaining information is optional. In this page, you can also configure icon, splash screen and other configurations.
 
     {{<img src="/images/monaca_cli/tutorial/building_app/ios_1.png">}}
@@ -89,11 +92,11 @@ more information about other types of build, please refer to [Types of Build]({{
 
 ### Step 4: Installing the Built App
 
-There are 3 ways to install the debug built app:
+There are 3 ways to install the debug built app such as:
 
-1.  Download the built app and use iTunes to install the built app on your iOS device.
-2.  Install via QR code.
-3.  Install via [cofigured deployment services](/en/products_guide/monaca_ide/monaca_ci/supported_services).
+1.  downloading the built app and using iTunes to install the built app on your iOS device.
+2.  installing via QR code.
+3.  installing via [configured deployment services](/en/products_guide/monaca_ide/monaca_ci/supported_services).
 
 ##  Building a Monaca App for Android
 
@@ -108,12 +111,17 @@ please refer to [Types of Build]({{<ref "build_android.en.md#types-of-build">}})
     {{<highlight bash>}}$ monaca remote build --browser{{</highlight>}}
 
 2.  From the build interface under the `App Settings` on the left menu, select {{<guilabel name="Android">}}.
+
 3.  Fill in the necessary information of your app:
 
     - `Application Name`: a name representing your app publicly such as in the Market.
+
     - `Package Name`: a unique ID representing your app. It is recommended to use reverse-domain style (for example, mobi.monaca.appname) for App ID. Only alphanumeric characters and periods (at least one period must be used) are allowed. Each segment separated by a period should begin with an alphabetic character.
+
     - `Version Number`: a number representing the version of your app. It needs 3 numbers separated by dots (for example, 1.10.2). Each number should be in `[0-99]`.
+
     - `Use Different Package Name for Debug Build`: if checked, the package name of the debug-built app and custom-built debugger are different. In other words, the package name of debug-built app will have `.debug` extension, and the one for project debugger will have `.debugger` extension. However, this option is disable by default because it made some plugins impossible to be debugged due to the fact that they are tied to exact package names (eg. in-app purchase).
+
     - The remaining information is optional. In this page, you can also configure icon, splash screen and other configurations.
 
     {{<img src="/images/monaca_cli/tutorial/building_app/android_1.png">}}   
@@ -169,18 +177,16 @@ follows:
 
 ### Step 4: Installing the Built App
 
-There are 5 ways you can install the built app:
+There are 5 ways you can install the built app such as:
 
-1.  [Network Install]({{<ref "debugger_android.en.md#network-install">}})
-2.  Install via QR Barcode.
-3.  download the built app directly to your computer and install it via
+1.  using [Network Install]({{<ref "debugger_android.en.md#network-install">}})
+2.  install via QR Barcode.
+3.  downloading the built app directly to your computer and installing it via
     USB cable.
-4.  send the URL to download the built app to your registered email
+4.  sending the URL to download the built app to your registered email
     address.
-5.  Install via [cofigured deployment services](/en/products_guide/monaca_ide/monaca_ci/supported_services).
+5.  installing via [configured deployment services](/en/products_guide/monaca_ide/monaca_ci/supported_services).
 
-See Also:
+**Next**: 
 
-- [Part 1: Starting a Project](../starting_project)
-- [Part 2: Running Monaca Debugger with Monaca CLI](../testing_debugging)
 - [Part 4: Publishing Monaca App](../publishing_app)
