@@ -17,20 +17,6 @@ Android
 ( プロトタイプ、開発、検証、マーケティングなど )
 におけるアプリの配信作業を、滞りなく行えます。
 
-Monaca CI では、次のパラメーターをサポートしています ( JSON 形式 )。詳細は、[DeployGate API ドキュメント ( 日本語サイト )](https://deploygate.com/docs/api) をご確認ください。
-
-パラメーター | 説明 | 備考
------------|-----|-------
-`token` | 「 API キー 」を指定します。グループでの利用の場合には、グループのページに表示されている API キー を使用します。これにより、メンバーの種類 ( 役割/権限 ) とは関わりなく、アプリをアップロードすることができます。| このキーは、自動的に生成されます。DeplyGate サイトの [ 配信支援サービス設定 ]、または、Monaca クラウド IDE の [ デプロイサービス一覧 ] 上で、API キーを確認できます。
-`file` | 対象アプリのバイナリ―ファイルを設定します。 | 自動で生成されます。
-`message` | [ 任意 ] プッシュ時に表示する通知メッセージを設定します。|
-`distribution_key` | [ 任意 ] 配布キー ( Distribution Key ) を設定します。配布キーとは、配布ページを指し示す URL に使用されている hash 値です ( たとえば、`https://deploygate.com/distributions/` [ 配布キー ] )。また、配布ページとは、配布対象者向けに作成された、アプリのダウンロード用のページです。配布ページの作成は、DeployGate のサイト上から行えます。|
-`release_note` | [ 任意 ] 配布ページ ( ダウンロード用ページ ) からアプリをダウンロードするときに表示するメッセージ | 
-`disable_notify` | [ 任意 ]\(`iOS 専用`\) `yes` を設定した場合、email での通知を行いません。|
-`visibility` | [ 任意 ] アップロードするアプリのセキュリティー設定です。`private` ( デフォルト ) または `public` を指定します。個人開発者向けの無料プラン ( Personal Free ) を利用している場合、`public` に設定します。無料プランの場合、プライベート ( 非公開 ) 設定は利用できません。また、private に指定しても、無視されます。|
-
- 
-
 #### API キーの取得方法
 
 1.  [DeployGate](https://deploygate.com/) にログインします。
@@ -44,12 +30,47 @@ Monaca CI では、次のパラメーターをサポートしています ( JSON
 
     {{<img src="/images/monaca_ide/manual/monaca_ci/supported_services/2.png" width="600">}}
 
+#### 設定パラーメーター
+
+Monaca CI では、次のパラメーターをサポートしています ( JSON 形式 )。詳細は、[DeployGate API ドキュメント ( 日本語サイト )](https://deploygate.com/docs/api) をご確認ください。
+
+パラメーター | 説明 | 備考
+-----------|-----|-------
+`token` | 「 API キー 」を指定します。グループでの利用の場合には、グループのページに表示されている API キー を使用します。これにより、メンバーの種類 ( 役割/権限 ) とは関わりなく、アプリをアップロードすることができます。| このキーは、自動的に生成されます。DeplyGate サイトの [ 配信支援サービス設定 ]、または、Monaca クラウド IDE の [ デプロイサービス一覧 ] 上で、API キーを確認できます。
+`file` | 対象アプリのバイナリ―ファイルを設定します。 | 自動で生成されます。
+`message` | [ 任意 ] プッシュ時に表示する通知メッセージを設定します。|
+`distribution_key` | [ 任意 ] 配布キー ( Distribution Key ) を設定します。配布キーとは、配布ページを指し示す URL に使用されている hash 値です ( たとえば、`https://deploygate.com/distributions/` [ 配布キー ] )。また、配布ページとは、配布対象者向けに作成された、アプリのダウンロード用のページです。配布ページの作成は、DeployGate のサイト上から行えます。|
+`release_note` | [ 任意 ] 配布ページ ( ダウンロード用ページ ) からアプリをダウンロードするときに表示するメッセージ | 
+`disable_notify` | [ 任意 ]\(`iOS 専用`\) `yes` を設定した場合、email での通知を行いません。|
+`visibility` | [ 任意 ] アップロードするアプリのセキュリティー設定です。`private` ( デフォルト ) または `public` を指定します。個人開発者向けの無料プラン ( Personal Free ) を利用している場合、`public` に設定します。無料プランの場合、プライベート ( 非公開 ) 設定は利用できません。また、private に指定しても、無視されます。|
+
 ### HockeyApp
 
 [HockeyApp](https://hockeyapp.net/) では、モバイルアプリ開発の DevOps
 に役立つ、さまざまな機能 (
 ベータ版アプリの配信、クラッシュレポート、ユーザーの監視、ユーザーからのフィードバック、ユーザーの監視、他のシステムとの連携
 ) が提供されています。
+
+#### API トークンの取得方法
+
+1.  [HockeyApp](https://hockeyapp.net/) にログインします。
+2.  {{<guilabel name="アカウント設定/Account Settings">}} を選択します。
+
+    {{<img src="/images/monaca_ide/manual/monaca_ci/supported_services/3.png">}}
+
+3.  \[ Account Settings \] 画面の左側に表示された一覧から、`API Tokens`
+    を選択します。次に表示される画面上では、既存の API トークン
+    の確認、および、API
+    トークンの新規作成を行えます。ここでは、既存のトークンが存在しないことを前提に解説します。次の赤枠で囲まれた項目を指定して、トークンを作成します。
+
+    {{<img src="/images/monaca_ide/manual/monaca_ci/supported_services/4.png">}}
+
+4.  API
+    トークンの作成後、画面の最下部まで移動して、作成されたトークンが表示されていることを確認します。
+
+    {{<img src="/images/monaca_ide/manual/monaca_ci/supported_services/5.png">}}
+
+#### 設定パラーメーター
 
 Monaca CI では、次のパラメーターをサポートしています ( JSON 形式 )。詳細は、[HockeyApp API ドキュメント ( 英語サイト )](https://support.hockeyapp.net/kb/api/api-apps) をご確認ください。
 
@@ -152,28 +173,6 @@ Monaca CI では、次のパラメーターをサポートしています ( JSON
     </tr>
 </table>
 
-
-#### API トークンの取得方法
-
-1.  [HockeyApp](https://hockeyapp.net/) にログインします。
-2.  {{<guilabel name="アカウント設定/Account Settings">}} を選択します。
-
-    {{<img src="/images/monaca_ide/manual/monaca_ci/supported_services/3.png">}}
-
-3.  \[ Account Settings \] 画面の左側に表示された一覧から、`API Tokens`
-    を選択します。次に表示される画面上では、既存の API トークン
-    の確認、および、API
-    トークンの新規作成を行えます。ここでは、既存のトークンが存在しないことを前提に解説します。次の赤枠で囲まれた項目を指定して、トークンを作成します。
-
-    {{<img src="/images/monaca_ide/manual/monaca_ci/supported_services/4.png">}}
-
-4.  API
-    トークンの作成後、画面の最下部まで移動して、作成されたトークンが表示されていることを確認します。
-
-    {{<img src="/images/monaca_ide/manual/monaca_ci/supported_services/5.png">}}
-
-
-
 ### Appetize.io
 
 [Appetize.ios](https://appetize.io/) では、AndroidとiOSアプリをブラウザ上でシミュレートすることができます。  
@@ -197,19 +196,18 @@ Monaca CI では、次のパラメーターをサポートしています ( JSON
 Monaca CI では、次のパラメーターをサポートしています ( JSON 形式 )。  
 詳細は、[Appetize.io ドキュメント ( 英語サイト )](https://appetize.io/docs#creating-apps) をご確認ください。
 
-パラメーター | 説明 | 備考
------------|-----|-------
-platform| `ios` or `android`| 必須項目
-timeout|セッションが自動的に終了するまで待機する秒数。<br>30,60,90,120,180,300または600を指定。デフォルトは120。| number
-disableHome|ホームボタンを無効にします。| boolean
-disabled| このアプリのストリーミングを無効にします。| boolean
-useLastFrame| セッションが終了した後、シミュレータの画面上に、最後の表示されていた画像を表示します。| boolean
-buttonText| セッションの開始を促すメッセージをカスタマイズします。<br>デフォルトは「Tap to play」| string
-postSessionButtonText| セッションを再開するように促すメッセージをカスタマイズします。<br>デフォルトは「Tap to play」| string
-launchUrl| アプリの起動時に、特定の場所にユーザーを誘導するためのディープリンクを指定します。| string
-note| メモを残せます。メモは管理ダッシュボードに表示されます。| string
-appPermissions| JSONオブジェクト。値は `authenticated`、`public`、または`null`(デフォルトにリセット)に設定します。キーは次のいずれかです。<br><br>　run: アプリ実行<br>　networkProxy: アプリ実行時のネットワークプロキシを指定する<br>　networkIntercept: アプリ実行時にAppetize.ioプロキシを使用する<br>　debugLog: アプリのNSLogまたはLogcatの出力を見る<br>　adbConnect: ホストされているエミュレータにADBを接続してアプリケーションをデバッグする<br>　androidPackageManager: アプリの実行中に追加のAPKをインストールできるようにする | Object
-
+パラメーター | タイプ | 説明
+-----------|-------|-------
+`platform` | string | [必須項目] `ios` or `android`
+`timeout`| number | セッションが自動的に終了するまで待機する秒数。`30`, `60`, `90`, `120`, `180`, `300` または `600` を指定。(デフォルトは`120`。)
+`disableHome` | boolean | ホームボタンを無効にします。
+`disabled` | boolean | このアプリのストリーミングを無効にします。
+`useLastFrame` | boolean | セッションが終了した後、シミュレータの画面上に、最後の表示されていた画像を表示します。
+`buttonText` | string | セッションの開始を促すメッセージをカスタマイズします。 (デフォルトは「Tap to play」)
+`postSessionButtonText` | string | セッションを再開するように促すメッセージをカスタマイズします。 (デフォルトは「Tap to play」)
+`launchUrl` | string | アプリの起動時に、特定の場所にユーザーを誘導するためのディープリンクを指定します。
+`note` | string | メモを残せます。メモは管理ダッシュボードに表示されます。
+`appPermissions` | JSON オブジェクト | 値は `authenticated`、`public`、または`null`(デフォルトにリセット)に設定します。キーは次のいずれかです。<ul><li>`run`: アプリ実行</li><li>`networkProxy`: アプリ実行時のネットワークプロキシを指定する</li><li>`networkIntercept`: アプリ実行時にAppetize.ioプロキシを使用する</li><li>`debugLog`: アプリのNSLogまたはLogcatの出力を見る</li><li>`adbConnect`: ホストされているエミュレータにADBを接続してアプリケーションをデバッグする</li><li>`androidPackageManager`: アプリの実行中に追加のAPKをインストールできるようにする</li></ul>
 
 ### サポート予定の支援サービス
 

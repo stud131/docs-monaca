@@ -15,9 +15,22 @@ in-development iOS and Android apps, allowing developers to seamlessly
 progress through the prototyping, development, testing, and marketing
 stages of app distribution.
 
-You may need to use the following parameters in the JSON recipe script
-for Monaca CI. For more information, please refer to [DeployGate API
-documentation](https://deploygate.com/docs/api).
+####  How to Get API Key
+
+1.  Register and log into [DeployGate](https://deploygate.com/).
+
+2.  Go to `Account Settings`.
+
+    {{<img src="/images/monaca_ide/manual/monaca_ci/supported_services/1.png">}}
+
+3.  Then, a Profile page will be shown. You will be able to find the API
+    key at the end of the page.
+
+    {{<img src="/images/monaca_ide/manual/monaca_ci/supported_services/2.png" width="600">}}
+
+#### Parameters
+
+You can use the following parameters in the JSON recipe script for Monaca CI. For more information, please refer to [DeployGate API documentation](https://deploygate.com/docs/api).
 
 | Param | Description | Remark |
 |-------|-------------|--------|
@@ -29,26 +42,35 @@ documentation](https://deploygate.com/docs/api).
 | `disable_notify` | [Optional]\(`iOS only`\) If you set yes as a value, disable notify via email. | |
 | `visibility` | [Optional] Set a new application’s privacy setting by specifying `private` (default) or `public`. If you are using Personal Free account, you have to specify `public` to upload a new app since it doesn’t have a slot for private app. No effect when updating. | | 
 
-####  How to Get API Key
-
-1.  Log into [DeployGate](https://deploygate.com/).
-2.  Go to `Account Settings`.
-
-    {{<img src="/images/monaca_ide/manual/monaca_ci/supported_services/1.png">}}
-
-3.  Then, a Profile page will be shown. You will be able to find the API
-    key at the end of the page.
-
-    {{<img src="/images/monaca_ide/manual/monaca_ci/supported_services/2.png" width="600">}}
-
 ### HockeyApp
 
 [HockeyApp](https://hockeyapp.net/) brings mobile DevOps to your apps
 with beta distribution, crash reporting, user metrics, feedback, and
 powerful workflow integrations.
 
-You may need to use the following parameters in the JSON recipe script
-for Monaca CI. For more information, please refer to [HockeyApp API documentation](https://support.hockeyapp.net/kb/api/api-apps).
+####  How to Get API Key
+
+1.  Register and log into [HockeyApp](https://hockeyapp.net/).
+
+2.  Go to `Account Settings`.
+
+    {{<img src="/images/monaca_ide/manual/monaca_ci/supported_services/3.png">}}
+
+3.  In the `Account Settings` page, go to `API Tokens` tab. In this page,
+    you can find all of your API tokens or create a new one. Assuming
+    you haven't created an API token yet, let's create one as shown in
+    the screenshot below:
+
+    {{<img src="/images/monaca_ide/manual/monaca_ci/supported_services/4.png">}}
+
+4.  Once the API token is successfully created, you will be able to see
+    it at the bottom of the page.
+
+    {{<img src="/images/monaca_ide/manual/monaca_ci/supported_services/5.png">}}
+
+#### Parameters
+
+You can use the following parameters in the JSON recipe script for Monaca CI. For more information, please refer to [HockeyApp API documentation](https://support.hockeyapp.net/kb/api/api-apps).
 
 <table>
     <tr>
@@ -149,32 +171,45 @@ for Monaca CI. For more information, please refer to [HockeyApp API documentatio
     </tr>
 </table>
 
-####  How to Get API Key
+### Appetize.io
 
-1.  Log into [HockeyApp](https://hockeyapp.net/).
-2.  Go to `Account Settings`.
+[Appetize.ios](https://appetize.io/) allows you to run Android and iOS apps on your browser. 
+By using this service, it is possible to check the operations of the application without iOS certificates or provisioning profiles.
 
-    {{<img src="/images/monaca_ide/manual/monaca_ci/supported_services/3.png">}}
+Let's try experiencing Appetize.io's services with [this demo](https://appetize.io/demo).
 
-3.  In the `Account Settings` page, go to `API Tokens` tab. In this page,
-    you can find all of your API tokens or create a new one. Assuming
-    you haven't created an API token yet, let's create one as shown in
-    the screenshot below:
+{{<img src="/images/monaca_ide/manual/monaca_ci/supported_services/appetize_demo.png">}}
 
-    {{<img src="/images/monaca_ide/manual/monaca_ci/supported_services/4.png">}}
+#### How to Get API Key
 
-4.  Once the API token is successfully created, you will be able to see
-    it at the bottom of the page.
+1. Register and log into [Appetize.io](https://appetize.io/).
 
-    {{<img src="/images/monaca_ide/manual/monaca_ci/supported_services/5.png">}}
+2. Enter your email in the [Request an API token form](https://appetize.io/docs#request-api-token) and click on {{<guilabel name="Request">}} button to acquire the API token.
 
+    {{<img src="/images/monaca_ide/manual/monaca_ci/supported_services/appetize_get_api_token.png" width="450">}}
+
+
+#### Parameters
+
+You can use the following parameters in the JSON recipe script for Monaca CI. For more information, please refer to [Appetize.io documentation](https://appetize.io/docs#creating-apps).
+
+Parameter | Type | Description
+----------|-------------|-------------
+`platform` | string | [Required] Must be `ios` or `android`.
+`timeout`| number | The number of seconds to wait until automatically ending the session due to user inactivity. Must be `30`, `60`, `90`, `120`, `180`, `300` or `600`. (Default is `120`)
+`disableHome` | boolean | Disables the home button on the iOS simulator.
+`disabled` | boolean | Disables streaming for this app.
+`useLastFrame` | boolean | Show the last image on the screen in the simulator after session ends.
+`buttonText` | string | Customize the message prompting the user to start the session. (Default is `Tap to play`)
+`postSessionButtonText` | string | Sustomize the message prompting the user to restart the session. (Default is `Tap to play`)
+`launchUrl` | string | Specify a deep link to bring your users to a specific location when your app is launched.
+`note` | string | A note for your own purposes, will appear on your management dashboard.
+`appPermissions` | JSON object | Values can be `authenticated`, `public`, or null to reset to default. Keys can be:<ul><li>`run`: run your app</li><li>`networkProxy`: specify a network proxy when running app</li><li>`networkIntercept`: use Appetize.io's intercepting proxy when running the app</li><li>`debugLog`: view your app's NSLog or Logcat output</li><li>`adbConnect`: debug your app by connecting ADB to the hosted emulator</li><li>`androidPackageManager`: allow the installation of additional APK's while your app is running</li></ul>
 ## Upcoming Supported Deploy Services
 
-In addition to the above services, we are planning to add more
-deployment services. Currently, we are working the following services:
+In addition to the above services, we are planning to add more deployment services. Currently, we are working the following service:
 
 -   [Test Flight](https://developer.apple.com/testflight/)
--   [Appetize.io](https://appetize.io/)
 
 See Also:
 
