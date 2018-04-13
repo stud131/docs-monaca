@@ -12,3 +12,4 @@ weight: 10
 - [Monaca Backend](backend)
 - [Push Notification](push_notification)
 - [Onsen UI](onsenui)
+- [Migration](migration)

@@ -1,11 +1,9 @@
 ---
-title: Migration from Telerik
+title: Migration from Telerik Platform
 hidden: true
 ---
 
-Monaca is built on top of Cordova. Therefore, any Cordova projects can be imported into Monaca. 
-
-In this page, we will demonstrate a quick and easy steps to migrate a Telerik project into Monaca. After finish this guide, you would be able to run, test/debug and build an app from your telerik project using Monaca! Let's get started!
+In this page, we will demonstrate a quick and easy steps to migrate a Telerik AppBuilder project into Monaca. After finish this guide, you would be able to run, test/debug and build an app from your telerik project using Monaca! Let's get started!
 
 ## Cordova version & Build Environment
 
