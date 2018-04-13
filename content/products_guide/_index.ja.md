@@ -12,3 +12,4 @@ weight: 10
 - [Monaca バックエンド](backend)
 - [プッシュ通知機能](push_notification)
 - [Onsen UI](onsenui)
+- [Migration from Other Platforms](migration)

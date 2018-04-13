@@ -19,7 +19,7 @@ Build environment for Cordova 7.1:
 - Cordova iOS platform: `4.5.4` 
 - Xcode: `9`
 
-For more information on build environment for lower Cordova version, pleaser refer to [Build Environment](/en/environment/).
+For more information on build environment for lower Cordova version, pleaser refer to [Build Environment](/ja/environment/).
 
 ## Step 1: Preparation
 
@@ -39,17 +39,17 @@ Use Telerik tool to convert your project to Cordova CLI. This will convert your 
 
     {{<img src="/images/monaca_ide/manual/3.png" width="400px">}}
 
-5. When the IDE appears, you can view your app in the [Preview window](https://docs.monaca.io/en/products_guide/monaca_ide/overview/#live-preview). 
+5. When the IDE appears, you can view your app in the [Preview window](https://docs.monaca.io/ja/products_guide/monaca_ide/overview/#live-preview). 
 
     {{<img src="/images/monaca_ide/manual/4.png">}}
 
     {{<note>}}
-        The views or operations in the Preview window might not work properly when Ajax requests or Cordova APIs are used. Read more on {{<link title="Live Preview Limitations" href="https://docs.monaca.io/en/products_guide/monaca_ide/overview/#live-preivew-limitations">}}. In this case, you can test/debug your project with Monaca Debugger (we will talk about this in the next section).
+        The views or operations in the Preview window might not work properly when Ajax requests or Cordova APIs are used. Read more on {{<link title="Live Preview Limitations" href="https://docs.monaca.io/ja/products_guide/monaca_ide/overview/#live-preivew-limitations">}}. In this case, you can test/debug your project with Monaca Debugger (we will talk about this in the next section).
     {{</note>}}
 
 ## Step 3: Debugging with Monaca
 
-[Monaca Debugger](/en/products_guide/debugger/) is an application for testing and debugging your Monaca apps on real devices in real-time. When developing Monaca apps in the Cloud IDE, all changes made to your project file(s) will be synced with your Monaca Debugger in real-time as soon as you save them. 
+[Monaca Debugger](/ja/products_guide/debugger/) is an application for testing and debugging your Monaca apps on real devices in real-time. When developing Monaca apps in the Cloud IDE, all changes made to your project file(s) will be synced with your Monaca Debugger in real-time as soon as you save them. 
 
 Let's get started with Monaca Debugger as follows:
 
@@ -59,7 +59,7 @@ Let's get started with Monaca Debugger as follows:
     {{<img src="/images/monaca_ide/tutorial/testing_debugging/Google_play.png" width="100" link="https://play.google.com/store/apps/details?id=mobi.monaca.debugger&hl=en">}}
 
     {{<note>}}
-        If you want to install Monaca Debugger on Android emulator, please refer to {{<link href="/en/products_guide/debugger/installation/debugger_emulator/" title="Monaca Debugger for Android Emulator">}}.
+        If you want to install Monaca Debugger on Android emulator, please refer to {{<link href="/ja/products_guide/debugger/installation/debugger_emulator/" title="Monaca Debugger for Android Emulator">}}.
     {{</note>}}
 
 2. Launch Monaca Debugger app and sign in with your Monaca account. Make sure you are using the same account for Monaca Cloud IDE.
@@ -98,10 +98,10 @@ When migrating a project into Monaca, there are a few things you should be aware
 
 ### When using third-party Cordova plugins
 
-Store-version Monaca Debugger (found in Google play or AppStore) only includes [Core Cordova plugins](/en/reference/cordova_6.5/). If your project contains any third-party Cordova plugins besides the Core Cordova plugins, you will need to build custom debugger to test this kind of project. Custom debugger will only include the plugins used in the project. Please refer to:
+Store-version Monaca Debugger (found in Google play or AppStore) only includes [Core Cordova plugins](/ja/reference/cordova_6.5/). If your project contains any third-party Cordova plugins besides the Core Cordova plugins, you will need to build custom debugger to test this kind of project. Custom debugger will only include the plugins used in the project. Please refer to:
 
-- [Build custom debugger for iOS]({{<ref "debugger_ios.en.md#how-to-build-custom-monaca-debugger">}})
-- [Build custom debugger for Android]({{<ref "debugger_android.en.md#build-and-install-custom-monaca-debugger">}})
+- [Build custom debugger for iOS]({{<ref "debugger_ios.ja.md#how-to-build-custom-monaca-debugger">}})
+- [Build custom debugger for Android]({{<ref "debugger_android.ja.md#build-and-install-custom-monaca-debugger">}})
 
 ### When using JS/CSS Component page
 
@@ -129,6 +129,6 @@ Please note that `loader.js` file is also loaded `cordova.js` file. Therefore, i
 
 To learn more about Monaca, please refer to the following materials:
 
-- [Monaca Cloud IDE tutorials](/en/tutorials/monaca_ide/)
-- [Monaca Cloud IDE manual](/en/products_guide/monaca_ide/)
-- [Sample Apps](/en/sampleapp/samples/)
+- [Monaca Cloud IDE tutorials](/ja/tutorials/monaca_ide/)
+- [Monaca Cloud IDE manual](/ja/products_guide/monaca_ide/)
+- [Sample Apps](/ja/sampleapp/samples/)
