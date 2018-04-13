@@ -25,10 +25,13 @@ Localkit を使用すれば、オフラインでの開発も行え、また、Mo
 デバッガーとのスピーディーな同期も行えます。詳細は、[こちら](/ja/products_guide/monaca_localkit)
 をご確認ください。
 
-事前準備として、次の内容を行います。
+このチュートリアルを始める前に、下記が必要になります。
 
-1. Monaca アカウントの作成。[こちら](https://monaca.mobi/ja/register/start) から登録できます。
-2. Monaca Localkit のインストール。[こちら](https://ja.monaca.io/localkit.html) からダウンロードできます。
+- Monaca Localkitをインストールします。[こちら](https://ja.monaca.io/localkit.html) からダウンロードできます。
+
+- [オプション] スマートデバイス ( iOS または Android 端末 )。端末上で検証を行う場合には必要となります。
+
+<hr>
 
 - [パート 1 : プロジェクトの作成](/ja/tutorials/monaca_localkit/starting_project)
 - [パート 2 : Monaca Localkit と Monaca デバッガーとの連携](/ja/tutorials/monaca_localkit/testing_debugging)

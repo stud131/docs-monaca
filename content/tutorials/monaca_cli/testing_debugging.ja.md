@@ -12,8 +12,7 @@ Monaca アプリの開発時、Monaca CLI ( ローカル PC 側 ) と Monaca
 がペアリングされていれば、プロジェクトファイルに加えられた変更は、保存後、即座にデバッガー側に
 「 プッシュ 」 されます。
 
-事前準備
---------
+## はじめに
 
 Monaca デバッガーを端末にインストールします。
 
@@ -26,8 +25,7 @@ Monaca デバッガーのインストール方法 ( プラットフォーム別 
 は、{{<link href="/ja/products_guide/debugger/installation/" title="こちら">}} をご確認ください。
 {{</note>}}
 
-ステップ 1 : Monaca デバッガーとローカル PC のペアリング
---------------------------------------------------------
+## ステップ 1 : Monaca デバッガーとローカル PC のペアリング
 
 ローカル PC 上で作成した Monaca アプリを、Monaca
 デバッガー上でデバッグ・検証をする場合には、ローカル PC と Monaca
@@ -59,13 +57,15 @@ Monaca デバッガーのインストール方法 ( プラットフォーム別 
     {{<img src="/images/monaca_cli/tutorial/testing_debugging/2.png" width="300">}}
 
 4.  ペアリング後、Monaca デバッガーの `ローカルプロジェクト`
-    欄に、ローカルに置かれているプロジェクト名が表示されます。ペアリングに失敗した場合には、troubleshoot\_pair
-    をご確認ください。
+    欄に、ローカルに置かれているプロジェクト名が表示されます。ペアリングに失敗した場合には、[Monaca デバッガーとのペアリングが失敗する場合](/ja/products_guide/debugger/troubleshooting/#monaca-デバッガーとのペアリングが失敗する場合) をご確認ください。
 
     {{<img src="/images/monaca_cli/tutorial/testing_debugging/4.png" width="300">}}
 
-ステップ 2 : Monaca デバッガー上でのプロジェクトの実行
-------------------------------------------------------
+{{<note>}}
+    デバッグを停止し、デバッガのペアを解除するには、<code>Ctrl+c</code> を押します。
+{{</note>}}
+
+## ステップ 2 : Monaca デバッガー上でのプロジェクトの実行
 
 1.  Monaca デバッガーの \[ ローカルプロジェクト \]
     上に表示されたプロジェクト名をタップして、アプリを実行します。
@@ -74,8 +74,7 @@ Monaca デバッガーのインストール方法 ( プラットフォーム別 
     {{<img src="/images/monaca_cli/tutorial/testing_debugging/5.png" width="300">}}
     {{<img src="/images/monaca_cli/tutorial/testing_debugging/6.png" width="300">}}
 
-ステップ 3 : Monaca CLI と デバッガー間のリアルタイムでの同期
--------------------------------------------------------------
+## ステップ 3 : Monaca CLI と デバッガー間のリアルタイムでの同期
 
 1.  Monaca デバッガー上で、プロジェクトを実行します。
 2.  ファイル内のコードを変更してみましょう。たとえば、アプリの起動時に表示するページを
@@ -96,8 +95,20 @@ Monaca デバッガーのインストール方法 ( プラットフォーム別 
 </ons-sliding-menu>
 ...{{</highlight>}}
 
-3.  If your PC is still connected to Monaca Debugger, it will
-    automatically refresh the updates. Now your starting page should be
-    Page 2.
+3.  PC が Monaca Debugger に接続されている場合は、自動的にアップデートが更新され Page 2 が表示されます。
 
     {{<img src="/images/monaca_cli/tutorial/testing_debugging/7.png" width="300">}}
+
+{{<note>}}
+    Monaca Debugger が提供する他の機能については、{{<link href="/ja/products_guide/debugger/features/" title="デバッガーの機能">}} を参照してください。
+{{</note>}}
+
+{{<note>}}
+    Monaca CLI で USBデバッグを使用することもできます。{{<link title="Monaca 提供のローカル環境用の開発ツールと Monaca デバッガーとの連携" href="ja/products_guide/debugger/debug/#monaca-提供のローカル環境用の開発ツールと-monaca-デバッガーとの連携">}} を参照してください。
+{{</note>}}
+
+Monaca デバッガーを使うのは簡単です。 プロジェクトをさらに変更し、デバッガ上でどのように動作するかを確認してください。 モナカで開発をお楽しみください！
+
+**次へ**: 
+
+- [パート 3 : Monaca アプリのビルド](../building_app)

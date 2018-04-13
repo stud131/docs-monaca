@@ -5,13 +5,11 @@ aliases: /ja/monaca_ide/tutorial/publishing_app/
 ---
 
 
-App Store への申請
-------------------
+## App Store への申請
 
 [App Store での配布](/ja/products_guide/monaca_ide/deploy/appstore/) をご確認ください。
 
-Google Play への申請
---------------------
+## Google Play への申請
 
 [Google Play での配布]({{<ref "google_play.ja.md">}}) をご確認ください。
 

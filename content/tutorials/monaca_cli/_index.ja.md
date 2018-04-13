@@ -17,11 +17,16 @@ CLI は、コマンドライン形式のインターフェイスであり、Mona
 などができます。また、使い慣れたエディターと Monaca CLI
 を併用して、開発も行えます。
 
-事前準備として、次の事を行います。
+このチュートリアルを始める前に、下記が必要になります。
 
 
-1. Monaca アカウントの作成。[こちら](https://monaca.mobi/ja/register/start) から、登録できます。
-2. Monaca CLIのインストール。[こちら](/ja/products_guide/monaca_cli/overview/#ステップ-1-cli-のインストール) のインストール手順をご確認ください。
+- 次のコマンド ([詳細はこちら](/ja/products_guide/monaca_cli/overview/#step-1-cli-installation)) を使用して Monaca CLI をインストールします。
+    
+    {{<highlight bash>}}$ npm install -g monaca{{</highlight>}}
+
+- [オプション] 端末でテストする場合は、対象端末 (iOS または Androi) をご用意ください。
+
+<hr>
 
 - [パート 1 : プロジェクトの作成](/ja/tutorials/monaca_cli/starting_project)
 - [パート 2 : Monaca CLI と Monaca デバッガーとの連携](/ja/tutorials/monaca_cli/testing_debugging)

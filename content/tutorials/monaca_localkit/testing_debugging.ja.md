@@ -18,8 +18,7 @@ Monaca Localkit を使用して、ローカル PC 上で Monaca
     デバッガー間を、リアルタイムで同期させます。
 -   Chrome DevTools を使用して、プロジェクトをデバッグします。
 
-事前準備
---------
+## はじめに
 
 Monaca デバッガーを端末にインストールします。
 
@@ -32,8 +31,7 @@ Monaca デバッガーのインストール方法 ( プラットフォーム別 
 は、{{<link href="/ja/products_guide/debugger/installation/" title="こちら">}} をご確認ください。
 {{</note>}}
 
-ステップ 1 : Monaca デバッガー上でのプロジェクトの実行
-------------------------------------------------------
+## ステップ 1 : Monaca デバッガー上でのプロジェクトの実行
 
 1.  Monaca デバッガーと PC ( Monaca Localkit が実行中であること )
     をペアリングします。詳細は、[ペアリングとデバッグ](/ja/products_guide/monaca_localkit/pairing_debugging)
@@ -64,8 +62,7 @@ Monaca デバッガーのインストール方法 ( プラットフォーム別 
 
     {{<img src="/images/monaca_localkit/tutorial/testing_debugging/4.png" width="300">}}
 
-ステップ 2 : Monaca Localkit と Monaca デバッガー間のリアルタイムでの同期
--------------------------------------------------------------------------
+## ステップ 2 : Monaca Localkit と Monaca デバッガー間のリアルタイムでの同期
 
 1.  Monaca デバッガー上で、プロジェクトを実行します。
 2.  プロジェクトファイルに変更を加えて、保存しましょう ( 詳細は、
@@ -86,8 +83,7 @@ Monaca デバッガーのインストール方法 ( プラットフォーム別 
 
     {{<img src="/images/monaca_localkit/tutorial/testing_debugging/6.png" width="300">}}
 
-ステップ 3 : Monaca デバッガーを使用した、プロジェクトのデバッグ
-----------------------------------------------------------------
+## ステップ 3 : Monaca デバッガーを使用した、プロジェクトのデバッグ
 
 Monaca Localkit では、 [Chrome DevTools](https://developer.chrome.com/devtools)
 を使用して、アプリをデバッグできます ( USB 接続を使用 )。USB
@@ -96,6 +92,7 @@ Monaca Localkit では、 [Chrome DevTools](https://developer.chrome.com/devtool
 デバッガーのバージョンをご確認ください。
 
 1.  Monaca デバッガー上で、プロジェクトを実行します。
+
 2.  デバッガーメニュー上で、`インスペクタ` ボタンをタップします (
     下のスクリーンショットを参照のこと )。
 
@@ -123,4 +120,12 @@ Monaca Localkit では、 [Chrome DevTools](https://developer.chrome.com/devtool
     Monaca デバッガーが提供する機能に関しては、{{<link href="/ja/products_guide/debugger/features" title=" 機能の概要">}} をご確認ください。
 {{</note>}}
 
+{{<note>}}
+    Monaca CLI で USBデバッグを使用することもできます。{{<link title="Monaca 提供のローカル環境用の開発ツールと Monaca デバッガーとの連携" href="ja/products_guide/debugger/debug/#monaca-提供のローカル環境用の開発ツールと-monaca-デバッガーとの連携">}} を参照してください。
+{{</note>}}
 
+Monaca デバッガーを使うのは簡単です。 プロジェクトをさらに変更し、デバッガ上でどのように動作するかを確認してください。 モナカで開発をお楽しみください！
+
+**次へ**: 
+
+- [パート 3 : Monaca アプリのビルド](../building_app)
