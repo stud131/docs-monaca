@@ -13,9 +13,9 @@ Monaca クラウド IDEは、ブラウザベースの開発環境をサービス
 
 <hr>
 
-1. [パート 1 : プロジェクトの作成](/ja/tutorials/monaca_ide/starting_project/)
-2. [パート 2 : Monaca クラウド IDE と Monaca デバッガーとの連携](/ja/tutorials/monaca_ide/testing_debugging/)
-4. [パート 4 : Monaca アプリのビルド](/ja/tutorials/monaca_ide/building_app/)
-5. [パート 5 : Monaca アプリの配布申請](/ja/tutorials/monaca_ide/publishing_app/)
+- [パート 1 : プロジェクトの作成](/ja/tutorials/monaca_ide/starting_project/)
+- [パート 2 : Monaca クラウド IDE と Monaca デバッガーとの連携](/ja/tutorials/monaca_ide/testing_debugging/)
+- [パート 3 : Monaca アプリのビルド](/ja/tutorials/monaca_ide/building_app/)
+- [パート 4 : Monaca アプリの配布申請](/ja/tutorials/monaca_ide/publishing_app/)
 
 {{%/excerpt%}}
