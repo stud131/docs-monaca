@@ -73,4 +73,4 @@ Monaca クラウド IDE
 
 **次へ**: 
 
-- [パート 2 : Monaca CLI と Monaca デバッガーとの連携](../testing_debugging/)
+- [パート 2 : Monaca クラウド IDE と Monaca デバッガーとの連携](../testing_debugging/)
