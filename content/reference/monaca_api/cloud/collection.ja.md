@@ -285,9 +285,6 @@ Collection.insert(item: Object, [permission: Object]) : $.Promise
 `item` | JSON オブジェクト | 新規アイテムに関して、ユーザーが定義したデータ | Key 名には、 `[a-zA-Z0-9]` を使用して、 `[a-zA-Z]` から始まる必要がります。データサイズは、`500 KB` 内です。
 `permission` | JSON オブジェクト | アイテムにパーミッションを設定するときに使用するオブジェクト。オブジェクトに設定する Key は、 `“public”` ( すべてのユーザーが対象 ) または [ユーザーの Oid](../user/#user-oid) になります。また、オブジェクトに設定する Value は、 `“r”` ( 読み取り許可 ) 、 `“w”` ( 書き込み許可 ) 、 `“rw”` ( 読み取りと書き込み許可 ) 、 `“”` ( すべて不許可 ) のいずれかとなります。例 : { “public”: 'rw', “oidOfUserA”: 'r', “oidOfUserB”: 'rw' } 。permission は、Key と Value の組み合わせで設定します。
 
-
-A permission object applied to the item. Each key of the permission object can be `"public"` (all users) or a [user’s Oid](../user/#u-oid). Each value of the permission object can be `"r"` (allow read) , `"w"` (allow write), `"rw"` (allow read and write) or `""` (allow nothing). For instance: `{ "public": "rw", "oidOfUserA": "r", "oidOfUserB": "rw"}`
-
 **戻り値**
 
 型 | 解説
