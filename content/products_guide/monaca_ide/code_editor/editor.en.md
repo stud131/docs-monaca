@@ -55,12 +55,9 @@ aliases: /en/monaca_ide/manual/code_editor/editor
 
 | Description |	Windows/Linux |	Mac |
 |-------------|---------------|-----|
-|Search |	Ctrl + F |	Command + F |
-| Search Next |	Ctrl + G |	Command + G |
-| Search Previous |	Shift + Ctrl + G |	Shift + Command + G |
-|Increase Indent |	Tab |	Tab |
+| Search |	Ctrl + F |	Command + F |
+| Increase Indent |	Tab |	Tab |
 | Decrease Indent |	Shift + Tab |	Shift + Tab |
-| Format the selected text (valid for JS, HTML and CSS.) |	Ctrl + I |	Command + I |
 | Comment Out |	Ctrl + / |	Command + / |
 | Comment In |	Ctrl + / |	Command + / |
 | Undo |	Ctrl + Z |	Command + Z |
@@ -69,13 +66,9 @@ aliases: /en/monaca_ide/manual/code_editor/editor
 | Decrease font size |	Ctrl + , |	Command + , |
 | Show previous tab |	Ctrl + [ |	Command + [ |
 | Show next tab	| Ctrl + ] |	Command + ] |
-| Close current tab | 	Ctrl + Q |	Command + Q |
-| Remove the line |	Ctrl + D |	Command + D |
-| Duplicate the selection |	Ctrl + Shift + D |	Command + Shift + D |
 | Move the line down |	Alt + Down |	Option + Down |
 | Move the line up |	Alt + Up |	Option + Up |
-| Replace |	Shift + Ctrl + F | 	Command + Alt + F |
-| Replace All |	Shift + Ctrl + R |	Command + Shift + Alt + F |
+| Replace |	Ctrl + F | 	Command + Alt + F |
 | Select all |	Ctrl + A | 	Command + A |
 | Select downward |	Shift + Down |	Shift + Down |
 | Select right |	Shift + Right |	Shift + Right |
@@ -83,11 +76,8 @@ aliases: /en/monaca_ide/manual/code_editor/editor
 | Select upward |	Shift + Up |	Shift + Up |
 | Select to the end |	Alt + Shift + Right |	Command + Shift + Right |
 | Select to the start |	Alt + Shift + Left |	Command + Shift + Left |
-| Go to the line |	Ctrl + L |	Command + L |
-| Go to the end of the line |	Alt + Right |	Command + Right |
-| Go to the beginning of the line |	Alt + Left |	Command + Left |
-| Align text right |	Ctrl + Right |	Option + Right |
-| Align text left |	Ctrl + Left	 |Option + Left |
+| Align text right |	Ctrl + Shift + Right |	Option + Right |
+| Align text left |	Ctrl + Shift + Left	 |Option + Left |
 | Add multi-cursor above |	Ctrl + Alt + Up |	Command + Alt + Up |
 | Add multi-cursor below |	Ctrl + Alt + Down |	Command + Alt + Down |
 | Add multi-cursor above |	Ctrl + Alt + Shift + Up |	Command + Alt + Shift + Up |
