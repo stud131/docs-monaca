@@ -20,14 +20,13 @@ aliases: /ja/monaca_ide/manual/changes/
 
     旧 IDE で使用されている Ace エディタは、Monaco
     エディタに置き換えられています。
-    この置き換えにより、以下のショートカットキーが変更されます。 
+    この置き換えにより、以下のショートカットキーが変更されます。
+    詳細は、[エディターのショートカット一覧](../code_editor/editor/) をご参照ください。
 
     説明 | Windows/Linux | Mac OS
     ----|---------------|----------
-    やり直す| Ctrl + Y | Shift + Command + Z or Command + Y
-    次を検索| Ctrl + G | Command + G
-    前を検索 | Shift + Ctrl + G | Shift + Command + G
-    置換| Shift + Ctrl + F | Command + Alt + F
-    コメント化 | Ctrl + / | Command + /
-    コメントを外す | Ctrl + / | Command + /
+    やり直す| `Ctrl + Y` | `Shift + Command + Z` or `Command + Y`
+    置換| `Shift + Ctrl + F` | `Command + Alt + F`
+    コメント化 | `Ctrl + /` | `Command + /`
+    コメントを外す | `Ctrl + /` | `Command + /`
 
