@@ -21,4 +21,5 @@ screen structure, editor's shortcuts and project files management.
 - [Build](build)
 - [Distribution](deploy)
 - [Tutorial](tutorial)
+- [Terminal](terminal)
 
