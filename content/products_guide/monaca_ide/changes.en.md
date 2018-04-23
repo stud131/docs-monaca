@@ -9,7 +9,7 @@ The new Monaca Cloud IDE provides developers with some special features that all
 
 - Golden Layout: adapting the Cloud Interface as you prefer
 - Multiple previewers: speeding up testing efficiency
-- Monaca Editor: better code editor to speed up your development process
+- Monaco Editor: better code editor to speed up your development process
 - New Monaca Backend: better GUI for Monaca Backend
 
 ## Golden Layout
@@ -49,7 +49,7 @@ With this replacement, the following shortcut keys are changed. For a complete l
 | Description |	Windows/Linux | Mac |
 |-------------|---------------|-----|
 | Redo | `Ctrl + Y` |	`Shift + Command + Z` or `Command + Y` |
-| Replace |	`Shift + Ctrl + F` |	`Command + Alt + F` |
+| Replace |	`Ctrl + F` |	`Command + Alt + F` |
 | Comment Out |	`Ctrl + /` |	`Command + /` |
 | Comment In |	`Ctrl + /` |	`Command + /` |
 
