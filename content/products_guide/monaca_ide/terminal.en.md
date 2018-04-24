@@ -1,6 +1,6 @@
 ---
 title: Integrated Terminal
-weight: 100
+weight: 25
 ---
 
 Monaca Cloud IDE is equipped with terminal consoles. This is mainly used for running a HTTP server for showing preview application (Previewer). It can also be used to provide access to the Linux container for your project.
