@@ -14,6 +14,7 @@ screen structure, editor's shortcuts and project files management.
 
 - [Overview](overview)
 - [Changes in the New Cloud IDE](changes)
+- [Terminal](terminal)
 - [Code Editor](code_editor)
 - [Project Dependencies](dependencies)
 - [Version Control](version_control)
@@ -21,4 +22,5 @@ screen structure, editor's shortcuts and project files management.
 - [Build](build)
 - [Distribution](deploy)
 - [Tutorial](tutorial)
+
 
