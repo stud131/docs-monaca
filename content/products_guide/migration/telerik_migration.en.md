@@ -105,7 +105,7 @@ Store-version Monaca Debugger (found in Google play or AppStore) only includes [
 
 ### When using JS/CSS Component page
 
-In Monaca Cloud IDE, there is a GUI page for you to include CSS/JavaScript libraries. You can go there by going to `Config` —> `Manage JS/CSS Components`. Then, the following page will appear. 
+In Monaca Cloud IDE, there is a GUI page for you to include CSS/JavaScript libraries. You can go there by going to {{<menu menu1="Configure" menu2="JS/CSS Component Settings">}}. Then, the following page will appear. 
 
 {{<img src="/images/monaca_ide/manual/10.png">}}
 
