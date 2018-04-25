@@ -1,5 +1,5 @@
 ---
-title: Migration from Other Platforms
+title: Migrating from Other Platforms
 weight: 100
 ---
 
@@ -7,5 +7,6 @@ Monaca is built on top of Cordova. Therefore, any Cordova-like projects can be i
 
 Welcome to Monaca and enjoy the ride!
 
-- [Migration from Telerik Platform](telerik_migration)
+- [Migrating from Telerik Platform](telerik_migration)
+- [Migrating from PhoneGap Platform](phonegap_migration)
 

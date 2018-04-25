@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<!-- saved from url=(0085)https://app.monaca.mobi/en/services/5adff5c2e788857c568b4567/android?hide_headerbar=1 -->
+<html ng-app="monacaServices" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style><style type="text/css">.uib-time input{width:50px;}</style><style type="text/css">[uib-tooltip-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-bottom > .tooltip-arrow,[uib-popover-popup].popover.top-left > .arrow,[uib-popover-popup].popover.top-right > .arrow,[uib-popover-popup].popover.bottom-left > .arrow,[uib-popover-popup].popover.bottom-right > .arrow,[uib-popover-popup].popover.left-top > .arrow,[uib-popover-popup].popover.left-bottom > .arrow,[uib-popover-popup].popover.right-top > .arrow,[uib-popover-popup].popover.right-bottom > .arrow,[uib-popover-html-popup].popover.top-left > .arrow,[uib-popover-html-popup].popover.top-right > .arrow,[uib-popover-html-popup].popover.bottom-left > .arrow,[uib-popover-html-popup].popover.bottom-right > .arrow,[uib-popover-html-popup].popover.left-top > .arrow,[uib-popover-html-popup].popover.left-bottom > .arrow,[uib-popover-html-popup].popover.right-top > .arrow,[uib-popover-html-popup].popover.right-bottom > .arrow,[uib-popover-template-popup].popover.top-left > .arrow,[uib-popover-template-popup].popover.top-right > .arrow,[uib-popover-template-popup].popover.bottom-left > .arrow,[uib-popover-template-popup].popover.bottom-right > .arrow,[uib-popover-template-popup].popover.left-top > .arrow,[uib-popover-template-popup].popover.left-bottom > .arrow,[uib-popover-template-popup].popover.right-top > .arrow,[uib-popover-template-popup].popover.right-bottom > .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-html-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type="text/css">.uib-datepicker-popup.dropdown-menu{display:block;float:none;margin:0;}.uib-button-bar{padding:10px 9px 2px;}</style><style type="text/css">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}</style><style type="text/css">.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-left,.uib-right{width:100%}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+  
+  <title>Monaca Services</title>
+
+  <script type="text/javascript" src="./lib.min(1).js"></script><style type="text/css"></style>
+
+  <script>
+    var config = {
+      lang: 'en',
+      apiToken: '63a38235a694fd29bec7b54ea6eeb22394d44614',
+      projectId: "5adff5c2e788857c568b4567",
+      projectName: "[IMPORT] AdMob Demo",
+      queueId: "",
+      initialTab: 6,
+      initialBuildType: null,
+      initialBuildPurpose: null,
+      ideHost: 'https://ide.monaca.mobi',
+      cdnHost: 'https://cdn.monaca.io',
+      monacaIdeHost: 'https://ide.monaca.mobi',
+      monacaWebHostSsl: 'https://monaca.mobi',
+
+      PROJECT: {
+        framework: ""
+      },
+
+      SERVICE: {
+        security_checker: true,
+        backend_cloud: true,
+        custom_debugger_only: false,
+        pwa_build: false,
+        web_component: true,
+        upload_custom_cordova_plugin_zip: true,
+      },
+    };
+
+    var MONACA_USER_INFO = {
+      'plan': 'power_plugin'
+    };
+  </script>
+
+  <script type="text/javascript" src="./app.min(1).js"></script>
+
+  <link rel="stylesheet" type="text/css" href="./bootstrap.min(1).css">
+  <link rel="stylesheet" type="text/css" href="./ngToast.min(1).css">
+  <link rel="stylesheet" type="text/css" href="./ngToast-animations.min(1).css">
+  <link rel="stylesheet" type="text/css" href="./services.min.css">
+  <link rel="stylesheet" type="text/css" href="./colorpicker.min.css">
+  <link rel="stylesheet" type="text/css" href="./font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./monaca-components.min.css">
+  <link rel="shortcut icon" href="https://app.monaca.mobi/favicon.ico?lang=en&amp;677575bff44bfc10d94a676c1c6810a9">
+
+  
+</head>
+<!-- ngInclude: 'index.html' --><body ng-include="&#39;index.html&#39;" ng-controller="SettingController as settings" id="settings" class="ng-scope"><div class="ng-toast ng-toast--right ng-toast--top ng-toast--animate-slide"><ul class="ng-toast__list"><!-- ngRepeat: message in messages --></ul></div>
+<div class="app-loading ng-scope ng-hide" ng-show="page === &#39;loading&#39;" style="">
+    <spinner s-loading-text="Loading Project Settings..."><div><div class="spinner-loading" role="progressbar" style="position: absolute; width: 0px; z-index: 2000000000; left: 50%; top: 44%;"><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-0-11 1s linear infinite;"><div style="position: absolute; width: 15px; height: 4.2px; background: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(0deg) translate(11.4px, 0px); border-radius: 1px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-1-11 1s linear infinite;"><div style="position: absolute; width: 15px; height: 4.2px; background: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(32deg) translate(11.4px, 0px); border-radius: 1px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-2-11 1s linear infinite;"><div style="position: absolute; width: 15px; height: 4.2px; background: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(65deg) translate(11.4px, 0px); border-radius: 1px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-3-11 1s linear infinite;"><div style="position: absolute; width: 15px; height: 4.2px; background: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(98deg) translate(11.4px, 0px); border-radius: 1px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-4-11 1s linear infinite;"><div style="position: absolute; width: 15px; height: 4.2px; background: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(130deg) translate(11.4px, 0px); border-radius: 1px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-5-11 1s linear infinite;"><div style="position: absolute; width: 15px; height: 4.2px; background: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(163deg) translate(11.4px, 0px); border-radius: 1px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-6-11 1s linear infinite;"><div style="position: absolute; width: 15px; height: 4.2px; background: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(196deg) translate(11.4px, 0px); border-radius: 1px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-7-11 1s linear infinite;"><div style="position: absolute; width: 15px; height: 4.2px; background: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(229deg) translate(11.4px, 0px); border-radius: 1px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-8-11 1s linear infinite;"><div style="position: absolute; width: 15px; height: 4.2px; background: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(261deg) translate(11.4px, 0px); border-radius: 1px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-9-11 1s linear infinite;"><div style="position: absolute; width: 15px; height: 4.2px; background: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(294deg) translate(11.4px, 0px); border-radius: 1px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-10-11 1s linear infinite;"><div style="position: absolute; width: 15px; height: 4.2px; background: rgb(0, 0, 0); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(327deg) translate(11.4px, 0px); border-radius: 1px;"></div></div></div><div class="spinner-loading-text">Loading Project Settings...</div></div></spinner>
+</div>
+
+<header ng-show="!settings.hideHeaderbar" class="ng-scope ng-hide">
+  <img src="./header_logo.svg">
+  <div class="project-name ng-binding">[IMPORT] AdMob Demo</div>
+</header>
+
+<nav ng-show="page !== &#39;loading&#39; &amp;&amp; !settings.hideSidebar" ng-class="{&#39;hide-headerbar&#39;: settings.hideHeaderbar}" class="ng-scope hide-headerbar" style="">
+    <h2 translate=""><span class="ng-scope">Build &amp; Build Settings</span></h2>
+    <ul>
+        <li ng-class="{&#39;selected&#39;: page === settings.Constant.PAGE_ANDROID_BUILD || page === settings.Constant.PAGE_ANDROID_BUILD_SETTINGS}" ng-click="setPage(settings.Constant.PAGE_ANDROID_BUILD)" translate="" class="selected" style=""><span class="ng-scope">Android</span></li>
+        <li ng-class="{&#39;selected&#39;: page === settings.Constant.PAGE_IOS_BUILD || page === settings.Constant.PAGE_IOS_BUILD_SETTINGS}" ng-click="setPage(settings.Constant.PAGE_IOS_BUILD)" translate=""><span class="ng-scope">iOS</span></li>
+        <li ng-hide="isRPGUser || isReactNative" ng-class="{&#39;selected&#39;: page === settings.Constant.PAGE_WINDOWS_BUILD}" ng-click="setPage(settings.Constant.PAGE_WINDOWS_BUILD)" translate="" class=""><span class="ng-scope">Windows</span></li>
+
+        <li ng-show="hasPwaBuildSupport &amp;&amp; !isReactNative" ng-class="{&#39;selected&#39;: page === settings.Constant.PAGE_WEB_BUILD}" ng-click="setPage(settings.Constant.PAGE_WEB_BUILD)" translate="" class="ng-hide"><span class="ng-scope">Web</span></li>
+    </ul>
+
+    <h2 ng-hide="isReactNative" translate="" class=""><span class="ng-scope">App Settings</span></h2>
+    <ul ng-hide="isReactNative" class="">
+        <li ng-class="{&#39;selected&#39;: page === settings.Constant.PAGE_ANDROID_APP_SETTINGS}" ng-click="setPage(settings.Constant.PAGE_ANDROID_APP_SETTINGS)" translate=""><span class="ng-scope">Android</span></li>
+        <li ng-class="{&#39;selected&#39;: page === settings.Constant.PAGE_IOS_APP_SETTINGS}" ng-click="setPage(settings.Constant.PAGE_IOS_APP_SETTINGS)" translate=""><span class="ng-scope">iOS</span></li>
+        <li ng-hide="isRPGUser" ng-class="{&#39;selected&#39;: page === settings.Constant.PAGE_WINDOWS_APP_SETTINGS}" ng-click="setPage(settings.Constant.PAGE_WINDOWS_APP_SETTINGS)" translate="" class=""><span class="ng-scope">Windows</span></li>
+
+        <li ng-show="hasPwaBuildSupport" ng-class="{&#39;selected&#39;: page === settings.Constant.PAGE_WEB_APP_SETTINGS}" ng-click="setPage(settings.Constant.PAGE_WEB_APP_SETTINGS)" translate="" class="ng-hide"><span class="ng-scope">Web</span></li>
+    </ul>
+
+    <h2 translate="" ng-hide="isRPGUser || isReactNative" class=""><span class="ng-scope">Project</span></h2>
+    <ul ng-hide="isRPGUser || isReactNative" class="">
+        <li ng-class="{&#39;selected&#39;: page === settings.Constant.PAGE_CORDOVA_PLUGINS}" ng-click="setPage(settings.Constant.PAGE_CORDOVA_PLUGINS)" translate=""><span class="ng-scope">Cordova Plugins</span></li>
+        <li ng-show="hasWebComponentSupport" ng-class="{&#39;selected&#39;: page === settings.Constant.PAGE_WEB_COMPONENTS}" ng-click="setPage(settings.Constant.PAGE_WEB_COMPONENTS)" translate="" class=""><span class="ng-scope">JS/CSS Components</span></li>
+        <li ng-class="{&#39;selected&#39;: page === settings.Constant.PAGE_SERVICE_INTEGRATION}" ng-click="setPage(settings.Constant.PAGE_SERVICE_INTEGRATION)" translate=""><span class="ng-scope">Service Integrations</span></li>
+    </ul>
+
+    <h2 translate="" ng-hide="fromLocalkit || isRPGUser || isReactNative" class=""><span class="ng-scope">Build</span></h2>
+    <ul ng-hide="fromLocalkit || isRPGUser || isReactNative" class="">
+        <li ng-class="{&#39;selected&#39;: page === settings.Constant.PAGE_CI}" ng-click="setPage(settings.Constant.PAGE_CI)" translate=""><span class="ng-scope">Continuous Integration </span><sup class="beta ng-scope">BETA</sup></li>
+    </ul>
+
+    <h2 ng-hide="fromLocalkit || isRPGUser || isReactNative" translate="" class=""><span class="ng-scope">Service</span></h2>
+    <ul ng-hide="fromLocalkit || isRPGUser || isReactNative" class="">
+        <li ng-class="{&#39;selected&#39;: page === settings.Constant.PAGE_DEPLOY_SERVICE}" ng-click="setPage(settings.Constant.PAGE_DEPLOY_SERVICE)" translate=""><span class="ng-scope">Deploy Services</span><sup class="beta ng-scope">BETA</sup></li>
+    </ul>
+
+    <h2 translate="" ng-show="isRPGUser || isReactNative" class="ng-hide"><span class="ng-scope">Log</span></h2>
+    <ul>
+        <li ng-class="{&#39;selected&#39;: page === settings.Constant.PAGE_BUILD_HISTORY}" ng-click="setPage(settings.Constant.PAGE_BUILD_HISTORY)" translate=""><span class="ng-scope">Build History</span></li>
+    </ul>
+</nav>
+
+<main class="content ng-scope hide-headerbar" ng-show="page != &#39;loading&#39;" ng-class="{&#39;hide-headerbar&#39;: settings.hideHeaderbar, &#39;hide-sidebar&#39;: settings.hideSidebar}" style="">
+    <!-- Settings Page Containers -->
+    <!-- ngIf: page === settings.Constant.PAGE_BUILD_HISTORY -->
+    <!-- ngIf: page === settings.Constant.PAGE_ANDROID_BUILD --><!-- ngInclude: 'AndroidBuild.html' --><div class="build-setting ng-scope" ng-include="&#39;AndroidBuild.html&#39;" ng-if="page === settings.Constant.PAGE_ANDROID_BUILD" style=""><div ng-controller="AndroidBuildController" ng-init="init()" class="ng-scope">
+    <div class="container">
+        <div class="cell-build-panel">
+            <h1 translate=""><span class="ng-scope">Build Android App</span></h1>
+        </div>
+
+        <ul class="category-tabs">
+            <li class="tab-wrapper active" ng-class="{&#39;active&#39;: type === &#39;development&#39;}">
+                <a class="tab" href="https://app.monaca.mobi/en/services/5adff5c2e788857c568b4567/android?hide_headerbar=1#development" data-toggle="tab" ng-click="changeTab(&#39;development&#39;)" translate=""><span class="ng-scope">Build for Debugging</span></a>
+            </li>
+            <li class="tab-wrapper" ng-class="{&#39;active&#39;: type === &#39;production&#39;}">
+                <a class="tab" href="https://app.monaca.mobi/en/services/5adff5c2e788857c568b4567/android?hide_headerbar=1#production" data-toggle="tab" ng-click="changeTab(&#39;production&#39;)" translate=""><span class="ng-scope">Build for Release</span></a>
+            </li>
+        </ul>
+
+        <div class="type-tabs">
+
+            <div class="tab-pane active" ng-class="{&#39;active&#39;: type === &#39;development&#39;}" id="development">
+                <ul class="nav-icon-tabs">
+                    <!-- ngIf: !isRPGUser && !isReactNative --><li ng-if="!isRPGUser &amp;&amp; !isReactNative" ng-class="{&#39;active&#39;: purpose === &#39;debugger&#39;}" class="ng-scope">
+                        <a class="debugger en" href="https://app.monaca.mobi/en/services/5adff5c2e788857c568b4567/android?hide_headerbar=1#development-debugger" data-toggle="tab" alt="Debugger Build" ng-click="changeTab(&#39;development&#39;, &#39;debugger&#39;)"></a>
+                    </li><!-- end ngIf: !isRPGUser && !isReactNative -->
+                    <!-- ngIf: !isRPGUser && !isReactNative --><li ng-if="!isRPGUser &amp;&amp; !isReactNative" class="ng-scope"><div class="vertical-border"></div></li><!-- end ngIf: !isRPGUser && !isReactNative -->
+                    <li ng-class="{&#39;active&#39;: purpose === &#39;debug&#39;}" class="active">
+                        <a class="debug-android en" href="https://app.monaca.mobi/en/services/5adff5c2e788857c568b4567/android?hide_headerbar=1#development-debug" data-toggle="tab" alt="Debug Build" ng-click="changeTab(&#39;development&#39;, &#39;debug&#39;)"></a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" ng-class="{&#39;active&#39;: purpose === &#39;debug&#39;}" id="development-debug">
+                        <div class="cell-build-panel">
+                            <div class="about-container">
+                                <p translate=""><span class="ng-scope">An Android app with a dummy signature will be built. </span><br class="ng-scope"><span class="ng-scope"> A debug-build application has no signature, so it cannot be registered in Google Play. See </span><a href="https://docs.monaca.io/en/monaca_ide/manual/build/build_android/" target="_blank" class="ng-scope">here</a><span class="ng-scope"> for details.</span></p>
+                            </div>
+                            <!-- ngInclude: --><div ng-include="" src="&#39;build-problems&#39;" class="ng-scope">
+        <div class="box-errorarea ng-scope ng-hide" ng-show="!canBuild &amp;&amp; buildProblems.length">
+            <p translate=""><span class="ng-scope">You do not have the necessary setting to build.</span></p>
+            <div class="box-errorCheckPoint">
+                <ul>
+                    <!-- ngRepeat: item in buildProblems --><li ng-repeat="item in buildProblems" class="ng-scope" style="">
+                        <!-- ngIf: !item.value && item.key == 'has_valid_config_xml' -->
+                        <!-- ngIf: !item.value && item.key == 'has_remaining_build_count' -->
+                        <!-- ngIf: !item.value && item.key == 'has_start_file' -->
+                        <!-- ngIf: !item.value && item.key == 'has_assets_encrypt_password' -->
+                        <!-- ngIf: !item.value && item.key == 'has_valid_version_name' -->
+                        <!-- ngIf: !item.value && item.key == 'has_keystore' -->
+                        <!-- ngIf: !item.value && item.key == 'has_crosswalk_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'has_cordova_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'has_plugin_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'is_not_business_trial' -->
+                        <!-- ngIf: !item.value && item.key == 'has_inapp_updater_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'can_release_build' && purpose === 'release' -->
+                    </li><!-- end ngRepeat: item in buildProblems --><li ng-repeat="item in buildProblems" class="ng-scope">
+                        <!-- ngIf: !item.value && item.key == 'has_valid_config_xml' -->
+                        <!-- ngIf: !item.value && item.key == 'has_remaining_build_count' -->
+                        <!-- ngIf: !item.value && item.key == 'has_start_file' -->
+                        <!-- ngIf: !item.value && item.key == 'has_assets_encrypt_password' -->
+                        <!-- ngIf: !item.value && item.key == 'has_valid_version_name' -->
+                        <!-- ngIf: !item.value && item.key == 'has_keystore' -->
+                        <!-- ngIf: !item.value && item.key == 'has_crosswalk_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'has_cordova_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'has_plugin_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'is_not_business_trial' -->
+                        <!-- ngIf: !item.value && item.key == 'has_inapp_updater_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'can_release_build' && purpose === 'release' -->
+                    </li><!-- end ngRepeat: item in buildProblems --><li ng-repeat="item in buildProblems" class="ng-scope">
+                        <!-- ngIf: !item.value && item.key == 'has_valid_config_xml' -->
+                        <!-- ngIf: !item.value && item.key == 'has_remaining_build_count' -->
+                        <!-- ngIf: !item.value && item.key == 'has_start_file' -->
+                        <!-- ngIf: !item.value && item.key == 'has_assets_encrypt_password' -->
+                        <!-- ngIf: !item.value && item.key == 'has_valid_version_name' -->
+                        <!-- ngIf: !item.value && item.key == 'has_keystore' -->
+                        <!-- ngIf: !item.value && item.key == 'has_crosswalk_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'has_cordova_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'has_plugin_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'is_not_business_trial' -->
+                        <!-- ngIf: !item.value && item.key == 'has_inapp_updater_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'can_release_build' && purpose === 'release' -->
+                    </li><!-- end ngRepeat: item in buildProblems --><li ng-repeat="item in buildProblems" class="ng-scope">
+                        <!-- ngIf: !item.value && item.key == 'has_valid_config_xml' -->
+                        <!-- ngIf: !item.value && item.key == 'has_remaining_build_count' -->
+                        <!-- ngIf: !item.value && item.key == 'has_start_file' -->
+                        <!-- ngIf: !item.value && item.key == 'has_assets_encrypt_password' -->
+                        <!-- ngIf: !item.value && item.key == 'has_valid_version_name' -->
+                        <!-- ngIf: !item.value && item.key == 'has_keystore' -->
+                        <!-- ngIf: !item.value && item.key == 'has_crosswalk_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'has_cordova_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'has_plugin_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'is_not_business_trial' -->
+                        <!-- ngIf: !item.value && item.key == 'has_inapp_updater_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'can_release_build' && purpose === 'release' -->
+                    </li><!-- end ngRepeat: item in buildProblems --><li ng-repeat="item in buildProblems" class="ng-scope">
+                        <!-- ngIf: !item.value && item.key == 'has_valid_config_xml' -->
+                        <!-- ngIf: !item.value && item.key == 'has_remaining_build_count' -->
+                        <!-- ngIf: !item.value && item.key == 'has_start_file' -->
+                        <!-- ngIf: !item.value && item.key == 'has_assets_encrypt_password' -->
+                        <!-- ngIf: !item.value && item.key == 'has_valid_version_name' -->
+                        <!-- ngIf: !item.value && item.key == 'has_keystore' -->
+                        <!-- ngIf: !item.value && item.key == 'has_crosswalk_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'has_cordova_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'has_plugin_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'is_not_business_trial' -->
+                        <!-- ngIf: !item.value && item.key == 'has_inapp_updater_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'can_release_build' && purpose === 'release' -->
+                    </li><!-- end ngRepeat: item in buildProblems --><li ng-repeat="item in buildProblems" class="ng-scope">
+                        <!-- ngIf: !item.value && item.key == 'has_valid_config_xml' -->
+                        <!-- ngIf: !item.value && item.key == 'has_remaining_build_count' -->
+                        <!-- ngIf: !item.value && item.key == 'has_start_file' -->
+                        <!-- ngIf: !item.value && item.key == 'has_assets_encrypt_password' -->
+                        <!-- ngIf: !item.value && item.key == 'has_valid_version_name' -->
+                        <!-- ngIf: !item.value && item.key == 'has_keystore' -->
+                        <!-- ngIf: !item.value && item.key == 'has_crosswalk_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'has_cordova_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'has_plugin_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'is_not_business_trial' -->
+                        <!-- ngIf: !item.value && item.key == 'has_inapp_updater_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'can_release_build' && purpose === 'release' -->
+                    </li><!-- end ngRepeat: item in buildProblems --><li ng-repeat="item in buildProblems" class="ng-scope">
+                        <!-- ngIf: !item.value && item.key == 'has_valid_config_xml' -->
+                        <!-- ngIf: !item.value && item.key == 'has_remaining_build_count' -->
+                        <!-- ngIf: !item.value && item.key == 'has_start_file' -->
+                        <!-- ngIf: !item.value && item.key == 'has_assets_encrypt_password' -->
+                        <!-- ngIf: !item.value && item.key == 'has_valid_version_name' -->
+                        <!-- ngIf: !item.value && item.key == 'has_keystore' -->
+                        <!-- ngIf: !item.value && item.key == 'has_crosswalk_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'has_cordova_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'has_plugin_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'is_not_business_trial' -->
+                        <!-- ngIf: !item.value && item.key == 'has_inapp_updater_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'can_release_build' && purpose === 'release' -->
+                    </li><!-- end ngRepeat: item in buildProblems -->
+                </ul>
+            </div>
+            <p translate=""></p>
+        </div>
+    </div>
+
+                            <!-- ngIf: isRPGUser --> <!-- START Show only for RPG User -->
+                            <!-- ngIf: isRPGUser --><!-- END Show only for RPG User -->
+                        </div>
+                    </div>
+                    <div class="tab-pane" ng-class="{&#39;active&#39;: purpose === &#39;debugger&#39;}" id="development-debugger">
+                        <div class="cell-build-panel">
+                            <div class="about-container">
+                                <p translate=""><span class="ng-scope">A debugger including Cordova plugins enabled in the Plugin Management screen can be built.The operation of plugins not included in the store-version debugger, enterprise plugins etc. can be checked. Details </span><a href="https://docs.monaca.io/en/debugger/manual/installation/debugger_android/" target="_blank" class="ng-scope">here</a><span class="ng-scope">.</span></p>
+                            </div>
+                            <!-- ngInclude: --><div ng-include="" src="&#39;build-problems&#39;" class="ng-scope">
+        <div class="box-errorarea ng-scope ng-hide" ng-show="!canBuild &amp;&amp; buildProblems.length">
+            <p translate=""><span class="ng-scope">You do not have the necessary setting to build.</span></p>
+            <div class="box-errorCheckPoint">
+                <ul>
+                    <!-- ngRepeat: item in buildProblems --><li ng-repeat="item in buildProblems" class="ng-scope" style="">
+                        <!-- ngIf: !item.value && item.key == 'has_valid_config_xml' -->
+                        <!-- ngIf: !item.value && item.key == 'has_remaining_build_count' -->
+                        <!-- ngIf: !item.value && item.key == 'has_start_file' -->
+                        <!-- ngIf: !item.value && item.key == 'has_assets_encrypt_password' -->
+                        <!-- ngIf: !item.value && item.key == 'has_valid_version_name' -->
+                        <!-- ngIf: !item.value && item.key == 'has_keystore' -->
+                        <!-- ngIf: !item.value && item.key == 'has_crosswalk_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'has_cordova_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'has_plugin_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'is_not_business_trial' -->
+                        <!-- ngIf: !item.value && item.key == 'has_inapp_updater_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'can_release_build' && purpose === 'release' -->
+                    </li><!-- end ngRepeat: item in buildProblems --><li ng-repeat="item in buildProblems" class="ng-scope">
+                        <!-- ngIf: !item.value && item.key == 'has_valid_config_xml' -->
+                        <!-- ngIf: !item.value && item.key == 'has_remaining_build_count' -->
+                        <!-- ngIf: !item.value && item.key == 'has_start_file' -->
+                        <!-- ngIf: !item.value && item.key == 'has_assets_encrypt_password' -->
+                        <!-- ngIf: !item.value && item.key == 'has_valid_version_name' -->
+                        <!-- ngIf: !item.value && item.key == 'has_keystore' -->
+                        <!-- ngIf: !item.value && item.key == 'has_crosswalk_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'has_cordova_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'has_plugin_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'is_not_business_trial' -->
+                        <!-- ngIf: !item.value && item.key == 'has_inapp_updater_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'can_release_build' && purpose === 'release' -->
+                    </li><!-- end ngRepeat: item in buildProblems --><li ng-repeat="item in buildProblems" class="ng-scope">
+                        <!-- ngIf: !item.value && item.key == 'has_valid_config_xml' -->
+                        <!-- ngIf: !item.value && item.key == 'has_remaining_build_count' -->
+                        <!-- ngIf: !item.value && item.key == 'has_start_file' -->
+                        <!-- ngIf: !item.value && item.key == 'has_assets_encrypt_password' -->
+                        <!-- ngIf: !item.value && item.key == 'has_valid_version_name' -->
+                        <!-- ngIf: !item.value && item.key == 'has_keystore' -->
+                        <!-- ngIf: !item.value && item.key == 'has_crosswalk_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'has_cordova_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'has_plugin_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'is_not_business_trial' -->
+                        <!-- ngIf: !item.value && item.key == 'has_inapp_updater_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'can_release_build' && purpose === 'release' -->
+                    </li><!-- end ngRepeat: item in buildProblems --><li ng-repeat="item in buildProblems" class="ng-scope">
+                        <!-- ngIf: !item.value && item.key == 'has_valid_config_xml' -->
+                        <!-- ngIf: !item.value && item.key == 'has_remaining_build_count' -->
+                        <!-- ngIf: !item.value && item.key == 'has_start_file' -->
+                        <!-- ngIf: !item.value && item.key == 'has_assets_encrypt_password' -->
+                        <!-- ngIf: !item.value && item.key == 'has_valid_version_name' -->
+                        <!-- ngIf: !item.value && item.key == 'has_keystore' -->
+                        <!-- ngIf: !item.value && item.key == 'has_crosswalk_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'has_cordova_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'has_plugin_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'is_not_business_trial' -->
+                        <!-- ngIf: !item.value && item.key == 'has_inapp_updater_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'can_release_build' && purpose === 'release' -->
+                    </li><!-- end ngRepeat: item in buildProblems --><li ng-repeat="item in buildProblems" class="ng-scope">
+                        <!-- ngIf: !item.value && item.key == 'has_valid_config_xml' -->
+                        <!-- ngIf: !item.value && item.key == 'has_remaining_build_count' -->
+                        <!-- ngIf: !item.value && item.key == 'has_start_file' -->
+                        <!-- ngIf: !item.value && item.key == 'has_assets_encrypt_password' -->
+                        <!-- ngIf: !item.value && item.key == 'has_valid_version_name' -->
+                        <!-- ngIf: !item.value && item.key == 'has_keystore' -->
+                        <!-- ngIf: !item.value && item.key == 'has_crosswalk_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'has_cordova_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'has_plugin_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'is_not_business_trial' -->
+                        <!-- ngIf: !item.value && item.key == 'has_inapp_updater_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'can_release_build' && purpose === 'release' -->
+                    </li><!-- end ngRepeat: item in buildProblems --><li ng-repeat="item in buildProblems" class="ng-scope">
+                        <!-- ngIf: !item.value && item.key == 'has_valid_config_xml' -->
+                        <!-- ngIf: !item.value && item.key == 'has_remaining_build_count' -->
+                        <!-- ngIf: !item.value && item.key == 'has_start_file' -->
+                        <!-- ngIf: !item.value && item.key == 'has_assets_encrypt_password' -->
+                        <!-- ngIf: !item.value && item.key == 'has_valid_version_name' -->
+                        <!-- ngIf: !item.value && item.key == 'has_keystore' -->
+                        <!-- ngIf: !item.value && item.key == 'has_crosswalk_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'has_cordova_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'has_plugin_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'is_not_business_trial' -->
+                        <!-- ngIf: !item.value && item.key == 'has_inapp_updater_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'can_release_build' && purpose === 'release' -->
+                    </li><!-- end ngRepeat: item in buildProblems --><li ng-repeat="item in buildProblems" class="ng-scope">
+                        <!-- ngIf: !item.value && item.key == 'has_valid_config_xml' -->
+                        <!-- ngIf: !item.value && item.key == 'has_remaining_build_count' -->
+                        <!-- ngIf: !item.value && item.key == 'has_start_file' -->
+                        <!-- ngIf: !item.value && item.key == 'has_assets_encrypt_password' -->
+                        <!-- ngIf: !item.value && item.key == 'has_valid_version_name' -->
+                        <!-- ngIf: !item.value && item.key == 'has_keystore' -->
+                        <!-- ngIf: !item.value && item.key == 'has_crosswalk_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'has_cordova_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'has_plugin_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'is_not_business_trial' -->
+                        <!-- ngIf: !item.value && item.key == 'has_inapp_updater_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'can_release_build' && purpose === 'release' -->
+                    </li><!-- end ngRepeat: item in buildProblems -->
+                </ul>
+            </div>
+            <p translate=""></p>
+        </div>
+    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="tab-pane" ng-class="{&#39;active&#39;: type === &#39;production&#39;}" id="production">
+                <ul class="nav-icon-tabs">
+                    <li ng-class="{&#39;active&#39;: purpose === &#39;release&#39;}">
+                        <a class="release-android en" href="https://app.monaca.mobi/en/services/5adff5c2e788857c568b4567/android?hide_headerbar=1#production-release" data-toggle="tab" alt="Release Build" ng-click="changeTab(&#39;production&#39;, &#39;release&#39;)"></a>
+                    </li>
+                    <!-- ngIf: !isRPGUser && !isReactNative --><li ng-class="{&#39;active&#39;: purpose === &#39;inappupdater&#39;}" ng-if="!isRPGUser &amp;&amp; !isReactNative" class="ng-scope">
+                        <a class="inappupdater-releaseBuild en" href="https://app.monaca.mobi/en/services/5adff5c2e788857c568b4567/android?hide_headerbar=1#production-inappupdater" data-toggle="tab" alt="In-App Updater update file" ng-click="changeTab(&#39;production&#39;, &#39;inapp_updater&#39;)"></a>
+                    </li><!-- end ngIf: !isRPGUser && !isReactNative -->
+                </ul>
+                <div class="tab-content">
+
+
+                    <div class="tab-pane" ng-class="{&#39;active&#39;: purpose === &#39;release&#39;}" id="production-release">
+                        <div class="cell-build-panel">
+                            <div class="about-container">
+                                <p translate=""><span class="ng-scope">Use KeyStore to build Andoid app. Submission to Google Play is also possible. Details </span><a href="https://docs.monaca.io/en/monaca_ide/manual/build/build_android/" target="_blank" class="ng-scope">here</a><span class="ng-scope">.</span></p>
+                            </div>
+                            <!-- ngInclude: --><div ng-include="" src="&#39;build-problems&#39;" class="ng-scope">
+        <div class="box-errorarea ng-scope ng-hide" ng-show="!canBuild &amp;&amp; buildProblems.length">
+            <p translate=""><span class="ng-scope">You do not have the necessary setting to build.</span></p>
+            <div class="box-errorCheckPoint">
+                <ul>
+                    <!-- ngRepeat: item in buildProblems --><li ng-repeat="item in buildProblems" class="ng-scope" style="">
+                        <!-- ngIf: !item.value && item.key == 'has_valid_config_xml' -->
+                        <!-- ngIf: !item.value && item.key == 'has_remaining_build_count' -->
+                        <!-- ngIf: !item.value && item.key == 'has_start_file' -->
+                        <!-- ngIf: !item.value && item.key == 'has_assets_encrypt_password' -->
+                        <!-- ngIf: !item.value && item.key == 'has_valid_version_name' -->
+                        <!-- ngIf: !item.value && item.key == 'has_keystore' -->
+                        <!-- ngIf: !item.value && item.key == 'has_crosswalk_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'has_cordova_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'has_plugin_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'is_not_business_trial' -->
+                        <!-- ngIf: !item.value && item.key == 'has_inapp_updater_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'can_release_build' && purpose === 'release' -->
+                    </li><!-- end ngRepeat: item in buildProblems --><li ng-repeat="item in buildProblems" class="ng-scope">
+                        <!-- ngIf: !item.value && item.key == 'has_valid_config_xml' -->
+                        <!-- ngIf: !item.value && item.key == 'has_remaining_build_count' -->
+                        <!-- ngIf: !item.value && item.key == 'has_start_file' -->
+                        <!-- ngIf: !item.value && item.key == 'has_assets_encrypt_password' -->
+                        <!-- ngIf: !item.value && item.key == 'has_valid_version_name' -->
+                        <!-- ngIf: !item.value && item.key == 'has_keystore' -->
+                        <!-- ngIf: !item.value && item.key == 'has_crosswalk_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'has_cordova_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'has_plugin_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'is_not_business_trial' -->
+                        <!-- ngIf: !item.value && item.key == 'has_inapp_updater_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'can_release_build' && purpose === 'release' -->
+                    </li><!-- end ngRepeat: item in buildProblems --><li ng-repeat="item in buildProblems" class="ng-scope">
+                        <!-- ngIf: !item.value && item.key == 'has_valid_config_xml' -->
+                        <!-- ngIf: !item.value && item.key == 'has_remaining_build_count' -->
+                        <!-- ngIf: !item.value && item.key == 'has_start_file' -->
+                        <!-- ngIf: !item.value && item.key == 'has_assets_encrypt_password' -->
+                        <!-- ngIf: !item.value && item.key == 'has_valid_version_name' -->
+                        <!-- ngIf: !item.value && item.key == 'has_keystore' -->
+                        <!-- ngIf: !item.value && item.key == 'has_crosswalk_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'has_cordova_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'has_plugin_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'is_not_business_trial' -->
+                        <!-- ngIf: !item.value && item.key == 'has_inapp_updater_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'can_release_build' && purpose === 'release' -->
+                    </li><!-- end ngRepeat: item in buildProblems --><li ng-repeat="item in buildProblems" class="ng-scope">
+                        <!-- ngIf: !item.value && item.key == 'has_valid_config_xml' -->
+                        <!-- ngIf: !item.value && item.key == 'has_remaining_build_count' -->
+                        <!-- ngIf: !item.value && item.key == 'has_start_file' -->
+                        <!-- ngIf: !item.value && item.key == 'has_assets_encrypt_password' -->
+                        <!-- ngIf: !item.value && item.key == 'has_valid_version_name' -->
+                        <!-- ngIf: !item.value && item.key == 'has_keystore' -->
+                        <!-- ngIf: !item.value && item.key == 'has_crosswalk_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'has_cordova_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'has_plugin_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'is_not_business_trial' -->
+                        <!-- ngIf: !item.value && item.key == 'has_inapp_updater_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'can_release_build' && purpose === 'release' -->
+                    </li><!-- end ngRepeat: item in buildProblems --><li ng-repeat="item in buildProblems" class="ng-scope">
+                        <!-- ngIf: !item.value && item.key == 'has_valid_config_xml' -->
+                        <!-- ngIf: !item.value && item.key == 'has_remaining_build_count' -->
+                        <!-- ngIf: !item.value && item.key == 'has_start_file' -->
+                        <!-- ngIf: !item.value && item.key == 'has_assets_encrypt_password' -->
+                        <!-- ngIf: !item.value && item.key == 'has_valid_version_name' -->
+                        <!-- ngIf: !item.value && item.key == 'has_keystore' -->
+                        <!-- ngIf: !item.value && item.key == 'has_crosswalk_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'has_cordova_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'has_plugin_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'is_not_business_trial' -->
+                        <!-- ngIf: !item.value && item.key == 'has_inapp_updater_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'can_release_build' && purpose === 'release' -->
+                    </li><!-- end ngRepeat: item in buildProblems --><li ng-repeat="item in buildProblems" class="ng-scope">
+                        <!-- ngIf: !item.value && item.key == 'has_valid_config_xml' -->
+                        <!-- ngIf: !item.value && item.key == 'has_remaining_build_count' -->
+                        <!-- ngIf: !item.value && item.key == 'has_start_file' -->
+                        <!-- ngIf: !item.value && item.key == 'has_assets_encrypt_password' -->
+                        <!-- ngIf: !item.value && item.key == 'has_valid_version_name' -->
+                        <!-- ngIf: !item.value && item.key == 'has_keystore' -->
+                        <!-- ngIf: !item.value && item.key == 'has_crosswalk_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'has_cordova_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'has_plugin_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'is_not_business_trial' -->
+                        <!-- ngIf: !item.value && item.key == 'has_inapp_updater_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'can_release_build' && purpose === 'release' -->
+                    </li><!-- end ngRepeat: item in buildProblems --><li ng-repeat="item in buildProblems" class="ng-scope">
+                        <!-- ngIf: !item.value && item.key == 'has_valid_config_xml' -->
+                        <!-- ngIf: !item.value && item.key == 'has_remaining_build_count' -->
+                        <!-- ngIf: !item.value && item.key == 'has_start_file' -->
+                        <!-- ngIf: !item.value && item.key == 'has_assets_encrypt_password' -->
+                        <!-- ngIf: !item.value && item.key == 'has_valid_version_name' -->
+                        <!-- ngIf: !item.value && item.key == 'has_keystore' -->
+                        <!-- ngIf: !item.value && item.key == 'has_crosswalk_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'has_cordova_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'has_plugin_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'is_not_business_trial' -->
+                        <!-- ngIf: !item.value && item.key == 'has_inapp_updater_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'can_release_build' && purpose === 'release' -->
+                    </li><!-- end ngRepeat: item in buildProblems -->
+                </ul>
+            </div>
+            <p translate=""></p>
+        </div>
+    </div>
+                            <div class="m-container two-columns-status-l">
+                                <div class="title">
+                                    <div><span translate=""><span class="ng-scope">Setup KeyStore and Alias</span></span></div>
+                                    <div><a class="m-btn m-btn-default-dark" ng-class="{&#39;m-btn-default-dark&#39;: aliasList &amp;&amp; aliasList.length, &#39;m-btn-blue&#39;: !aliasList || !aliasList.length}" ng-click="setPage(settings.Constant.PAGE_ANDROID_BUILD_SETTINGS, true)" translate="" style=""><span class="ng-scope">Manage KeyStore and Alias</span></a></div>
+                                </div>
+                                <div ng-show="aliasList &amp;&amp; !aliasList.length" ng-class="{&#39;m-text&#39;: aliasList.length, &#39;m-text-alert&#39;: !aliasList.length}" class="ng-hide m-text" style="">
+                                    <div>
+                                        <p translate=""><span class="ng-scope">Release build can not continue because the keystore and alias is not created. Please create a keystore and alias from build settings.</span></p>
+                                    </div>
+                                </div>
+                                <div ng-show="aliasList &amp;&amp; aliasList.length" class="" style="">
+                                    <div><span translate=""><span class="ng-scope">Alias</span></span></div>
+                                    <div>
+                                        <div class="m-component-combobox block">
+                                            <select ng-model="alias_name" ng-options="item.alias as item.alias for item in aliasList" ng-change="showDummyPassword()" class="ng-pristine ng-untouched ng-valid ng-not-empty" style=""><option label="vcess.inc@gmail.com" value="string:vcess.inc@gmail.com" selected="selected">vcess.inc@gmail.com</option><option label="khemry" value="string:khemry">khemry</option><option label="test" value="string:test">test</option></select>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <input ng-model="alias_password" type="password" name="alias_password" placeholder="password" ng-change="aliasPasswordChanged()" class="block ng-pristine ng-untouched ng-valid ng-empty">
+                                        <div class="config-error" ng-show="!alias_password" translate=""><span class="ng-scope">Alias password is not specified</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ngIf: isRPGUser -->
+                            <!-- ngIf: isRPGUser -->
+                            <!-- ngIf: isRPGUser -->
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane" ng-class="{&#39;active&#39;: purpose === &#39;inappupdater&#39;}" id="production-inappupdater">
+                        <div class="cell-build-panel">
+                            <div class="about-container">
+                                <p translate=""><span class="ng-scope">A zip file will be created containing HTML5 assets used by the app to allow automatic updating without rebuilding or repacking.  </span><br class="ng-scope"><span class="ng-scope"> For this build, the InAppUpdater plugin must be included in the Cordova Plugin Settings screen. Please deploy the file to your web server.</span></p>
+                            </div>
+                            <!-- ngInclude: --><div ng-include="" src="&#39;build-problems&#39;" ng-show="inAppUpdaterPlugin &amp;&amp; inAppUpdaterPlugin.canUsed" class="ng-scope ng-hide">
+        <div class="box-errorarea ng-scope ng-hide" ng-show="!canBuild &amp;&amp; buildProblems.length">
+            <p translate=""><span class="ng-scope">You do not have the necessary setting to build.</span></p>
+            <div class="box-errorCheckPoint">
+                <ul>
+                    <!-- ngRepeat: item in buildProblems --><li ng-repeat="item in buildProblems" class="ng-scope" style="">
+                        <!-- ngIf: !item.value && item.key == 'has_valid_config_xml' -->
+                        <!-- ngIf: !item.value && item.key == 'has_remaining_build_count' -->
+                        <!-- ngIf: !item.value && item.key == 'has_start_file' -->
+                        <!-- ngIf: !item.value && item.key == 'has_assets_encrypt_password' -->
+                        <!-- ngIf: !item.value && item.key == 'has_valid_version_name' -->
+                        <!-- ngIf: !item.value && item.key == 'has_keystore' -->
+                        <!-- ngIf: !item.value && item.key == 'has_crosswalk_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'has_cordova_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'has_plugin_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'is_not_business_trial' -->
+                        <!-- ngIf: !item.value && item.key == 'has_inapp_updater_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'can_release_build' && purpose === 'release' -->
+                    </li><!-- end ngRepeat: item in buildProblems --><li ng-repeat="item in buildProblems" class="ng-scope">
+                        <!-- ngIf: !item.value && item.key == 'has_valid_config_xml' -->
+                        <!-- ngIf: !item.value && item.key == 'has_remaining_build_count' -->
+                        <!-- ngIf: !item.value && item.key == 'has_start_file' -->
+                        <!-- ngIf: !item.value && item.key == 'has_assets_encrypt_password' -->
+                        <!-- ngIf: !item.value && item.key == 'has_valid_version_name' -->
+                        <!-- ngIf: !item.value && item.key == 'has_keystore' -->
+                        <!-- ngIf: !item.value && item.key == 'has_crosswalk_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'has_cordova_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'has_plugin_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'is_not_business_trial' -->
+                        <!-- ngIf: !item.value && item.key == 'has_inapp_updater_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'can_release_build' && purpose === 'release' -->
+                    </li><!-- end ngRepeat: item in buildProblems --><li ng-repeat="item in buildProblems" class="ng-scope">
+                        <!-- ngIf: !item.value && item.key == 'has_valid_config_xml' -->
+                        <!-- ngIf: !item.value && item.key == 'has_remaining_build_count' -->
+                        <!-- ngIf: !item.value && item.key == 'has_start_file' -->
+                        <!-- ngIf: !item.value && item.key == 'has_assets_encrypt_password' -->
+                        <!-- ngIf: !item.value && item.key == 'has_valid_version_name' -->
+                        <!-- ngIf: !item.value && item.key == 'has_keystore' -->
+                        <!-- ngIf: !item.value && item.key == 'has_crosswalk_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'has_cordova_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'has_plugin_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'is_not_business_trial' -->
+                        <!-- ngIf: !item.value && item.key == 'has_inapp_updater_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'can_release_build' && purpose === 'release' -->
+                    </li><!-- end ngRepeat: item in buildProblems --><li ng-repeat="item in buildProblems" class="ng-scope">
+                        <!-- ngIf: !item.value && item.key == 'has_valid_config_xml' -->
+                        <!-- ngIf: !item.value && item.key == 'has_remaining_build_count' -->
+                        <!-- ngIf: !item.value && item.key == 'has_start_file' -->
+                        <!-- ngIf: !item.value && item.key == 'has_assets_encrypt_password' -->
+                        <!-- ngIf: !item.value && item.key == 'has_valid_version_name' -->
+                        <!-- ngIf: !item.value && item.key == 'has_keystore' -->
+                        <!-- ngIf: !item.value && item.key == 'has_crosswalk_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'has_cordova_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'has_plugin_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'is_not_business_trial' -->
+                        <!-- ngIf: !item.value && item.key == 'has_inapp_updater_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'can_release_build' && purpose === 'release' -->
+                    </li><!-- end ngRepeat: item in buildProblems --><li ng-repeat="item in buildProblems" class="ng-scope">
+                        <!-- ngIf: !item.value && item.key == 'has_valid_config_xml' -->
+                        <!-- ngIf: !item.value && item.key == 'has_remaining_build_count' -->
+                        <!-- ngIf: !item.value && item.key == 'has_start_file' -->
+                        <!-- ngIf: !item.value && item.key == 'has_assets_encrypt_password' -->
+                        <!-- ngIf: !item.value && item.key == 'has_valid_version_name' -->
+                        <!-- ngIf: !item.value && item.key == 'has_keystore' -->
+                        <!-- ngIf: !item.value && item.key == 'has_crosswalk_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'has_cordova_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'has_plugin_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'is_not_business_trial' -->
+                        <!-- ngIf: !item.value && item.key == 'has_inapp_updater_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'can_release_build' && purpose === 'release' -->
+                    </li><!-- end ngRepeat: item in buildProblems --><li ng-repeat="item in buildProblems" class="ng-scope">
+                        <!-- ngIf: !item.value && item.key == 'has_valid_config_xml' -->
+                        <!-- ngIf: !item.value && item.key == 'has_remaining_build_count' -->
+                        <!-- ngIf: !item.value && item.key == 'has_start_file' -->
+                        <!-- ngIf: !item.value && item.key == 'has_assets_encrypt_password' -->
+                        <!-- ngIf: !item.value && item.key == 'has_valid_version_name' -->
+                        <!-- ngIf: !item.value && item.key == 'has_keystore' -->
+                        <!-- ngIf: !item.value && item.key == 'has_crosswalk_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'has_cordova_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'has_plugin_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'is_not_business_trial' -->
+                        <!-- ngIf: !item.value && item.key == 'has_inapp_updater_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'can_release_build' && purpose === 'release' -->
+                    </li><!-- end ngRepeat: item in buildProblems --><li ng-repeat="item in buildProblems" class="ng-scope">
+                        <!-- ngIf: !item.value && item.key == 'has_valid_config_xml' -->
+                        <!-- ngIf: !item.value && item.key == 'has_remaining_build_count' -->
+                        <!-- ngIf: !item.value && item.key == 'has_start_file' -->
+                        <!-- ngIf: !item.value && item.key == 'has_assets_encrypt_password' -->
+                        <!-- ngIf: !item.value && item.key == 'has_valid_version_name' -->
+                        <!-- ngIf: !item.value && item.key == 'has_keystore' -->
+                        <!-- ngIf: !item.value && item.key == 'has_crosswalk_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'has_cordova_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'has_plugin_permission' -->
+                        <!-- ngIf: !item.value && item.key == 'is_not_business_trial' -->
+                        <!-- ngIf: !item.value && item.key == 'has_inapp_updater_setting' -->
+                        <!-- ngIf: !item.value && item.key == 'can_release_build' && purpose === 'release' -->
+                    </li><!-- end ngRepeat: item in buildProblems -->
+                </ul>
+            </div>
+            <p translate=""></p>
+        </div>
+    </div>
+
+                            <section class="error-container ng-hide" ng-show="inAppUpdaterPlugin &amp;&amp; !inAppUpdaterPlugin.canUsed">
+                                <div class="error-message-container">
+                                    <div class="error-icon"><img ng-src="https://cdn.monaca.io/img/0-ico-exclamation.png" src="./0-ico-exclamation.png"></div>
+                                    <div class="error-message" translate=""><span class="ng-scope">To use the In-App Updater update file build, an Corporate Plan upgrade is required. </span><br class="ng-scope"><span class="ng-scope"> The Corporate Plan includes not only the automatic In-App Updater, but also extended features for resource encryption and secure storage. Details </span><a href="https://monaca.io/enterprise.html" target="_blank" class="ng-scope">here</a><span class="ng-scope">.</span></div>
+                                </div>
+                                <div class="error-container-button-area">
+                                    <a class="m-btn m-btn-green m-btn-large" ng-href="https://monaca.io/support/inquiry.html" target="_blank" translate="" href="https://monaca.io/support/inquiry.html"><span class="ng-scope">Apply to Corporate Plan</span></a>
+                                </div>
+                            </section>
+
+                            <section class="error-container ng-hide" ng-show="inAppUpdaterPlugin &amp;&amp; inAppUpdaterPlugin.canUsed &amp;&amp; !inAppUpdaterPlugin.isInstalled">
+                                <div class="error-message-container">
+                                    <div class="error-icon"><img ng-src="https://cdn.monaca.io/img/0-ico-exclamation.png" src="./0-ico-exclamation.png"></div>
+                                    <div class="error-message" translate=""><span class="ng-scope">Please add the InAppUpdater plugin. </span><br class="ng-scope"><span class="ng-scope">It can be added in the Cordova Plugin settings screen.</span></div>
+                                </div>
+                            </section>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="build-start-button-area">
+        <div class="build-start-button">
+            <button class="m-btn m-btn-blue m-btn-large" ng-click="build()" ng-disabled="!canBuild || (purpose === &#39;release&#39; &amp;&amp; !alias_password)" translate=""><span class="ng-scope">Start Build</span></button>
+        </div>
+    </div>
+
+    <script type="text/ng-template" id="build-problems">
+        <div class="box-errorarea" ng-show="!canBuild && buildProblems.length">
+            <p translate>You do not have the necessary setting to build.</p>
+            <div class="box-errorCheckPoint">
+                <ul>
+                    <li ng-repeat="item in buildProblems">
+                        <span ng-if="!item.value && item.key == 'has_valid_config_xml'" translate>An unexpected error has occurred while reading config.xml. Please fix config.xml file.</span>
+                        <span ng-if="!item.value && item.key == 'has_remaining_build_count'" translate>Number of builds per day has reached the maximum.</span>
+                        <span ng-if="!item.value && item.key == 'has_start_file'" translate>App launch page is not saved.</span>
+                        <span ng-if="!item.value && item.key == 'has_assets_encrypt_password'" translate>Encryption plugin password is not set.</span>
+                        <span ng-if="!item.value && item.key == 'has_valid_version_name'" translate>VersionName format is incorrect.</span>
+                        <span ng-if="!item.value && item.key == 'has_keystore'" translate>KeyStore is not set.</span>
+                        <span ng-if="!item.value && item.key == 'has_crosswalk_setting'" translate>Crosswalk Architecture is not set. Please select Architecture in "Crosswalk WebView Engine" Configure in Cordova Plugin page.</span>
+                        <span ng-if="!item.value && item.key == 'has_cordova_permission'" translate>The project's Cordova version is unsupported by your current plan and can not build. Please upgrade your project and try again.</span>
+                        <span ng-if="!item.value && item.key == 'has_plugin_permission'" translate>The project contains unlicensed plugins.</span>
+                        <span ng-if="!item.value && item.key == 'is_not_business_trial'" translate>Businessプランのトライアル期間中はリリースビルドが実行できません。</span>
+                        <span ng-if="!item.value && item.key == 'has_inapp_updater_setting'" translate>In-App Updater settings is not set.</span>
+                        <span ng-if="!item.value && item.key == 'can_release_build' && purpose === 'release'" translate>現在のプランではリリースビルドができません。
+                            <a href="#" onclick="window.open(window.config.monacaWebHostSsl+'/plan/manage', '_blank'); return false;">プラン</a>をご確認ください。</span>
+                    </li>
+                </ul>
+            </div>
+            <p translate></p>
+        </div>
+    </script>
+
+</div>
+</div><!-- end ngIf: page === settings.Constant.PAGE_ANDROID_BUILD -->
+    <!-- ngIf: page === settings.Constant.PAGE_IOS_BUILD -->
+    <!-- ngIf: page === settings.Constant.PAGE_WINDOWS_BUILD -->
+    <!-- ngIf: page === settings.Constant.PAGE_WEB_BUILD -->
+    <!-- ngIf: page === settings.Constant.PAGE_ANDROID_APP_SETTINGS -->
+    <!-- ngIf: page === settings.Constant.PAGE_IOS_APP_SETTINGS -->
+    <!-- ngIf: page === settings.Constant.PAGE_WINDOWS_APP_SETTINGS -->
+    <!-- ngIf: page === settings.Constant.PAGE_WEB_APP_SETTINGS -->
+    <!-- ngIf: page === settings.Constant.PAGE_ANDROID_BUILD_SETTINGS -->
+    <!-- ngIf: page === settings.Constant.PAGE_IOS_BUILD_SETTINGS -->
+    <!-- ngIf: page === settings.Constant.PAGE_BUILD_RESULT -->
+    <!-- ngIf: page === settings.Constant.PAGE_CORDOVA_PLUGINS -->
+    <!-- ngIf: page === settings.Constant.PAGE_WEB_COMPONENTS -->
+    <!-- ngIf: page === settings.Constant.PAGE_SERVICE_INTEGRATION -->
+    <!-- ngIf: page === settings.Constant.PAGE_CI && !fromLocalkit -->
+    <!-- ngIf: page === settings.Constant.PAGE_DEPLOY_SERVICE && !fromLocalkit -->
+</main>
+</body></html>

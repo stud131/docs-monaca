@@ -1,6 +1,6 @@
 ---
-title: Migration from Telerik Platform
-hidden: true
+title: Migrating from Telerik Platform
+weight: 10
 ---
 
 In this page, we will demonstrate a quick and easy steps to migrate a Telerik AppBuilder project into Monaca. After finish this guide, you would be able to run, test/debug and build an app from your telerik project using Monaca! Let's get started!
@@ -105,7 +105,7 @@ Store-version Monaca Debugger (found in Google play or AppStore) only includes [
 
 ### When using JS/CSS Component page
 
-In Monaca Cloud IDE, there is a GUI page for you to include CSS/JavaScript libraries. You can go there by going to `Config` —> `Manage JS/CSS Components`. Then, the following page will appear. 
+In Monaca Cloud IDE, there is a GUI page for you to include CSS/JavaScript libraries. You can go there by going to {{<menu menu1="Config" menu2="Manage JS/CSS Components">}}. Then, the following page will appear. 
 
 {{<img src="/images/monaca_ide/manual/10.png">}}
 
