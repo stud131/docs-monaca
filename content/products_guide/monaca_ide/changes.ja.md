@@ -9,15 +9,17 @@ aliases: /ja/monaca_ide/manual/changes/
 
 新しい Monaca クラウド IDE は、アプリケーション開発を容易にし、開発体験を向上させるための機能を開発者へ提供します。 主な機能は、次のとおりです。
 
-- Integrated terminal: transpiling feature in the Cloud IDE
+- ターミナル機能: クラウドIDEにてトランスパイル処理(コード変換)を実行。
 - Golden Layout: IDE レイアウトの自由度。
 - マルチ プレビューア: テスト効率の向上。
 - Monaco Editor: 開発プロセスをスピードアップする優れたコードエディタ。
 - 新しい Monaca バックエンド: Monaca バックエンドのためのより良い GUI。
 
-## Integrated terminal
+## ターミナル機能
 
-The integrated terminal is the most important change in the Cloud IDE. It expands your ability to create, manage and develop transpilable projects such as React, VueJS, Angular, and more. Not only does it transpile but the Previewer is also launched from the embedded terminal. In other words, projects with hot-loading support is also available in the Cloud IDE. For more information about the Integrated Terminal and its usage, please refer to [Integrated Terminal](../terminal).
+ターミナル機能は、Cloud IDEで最も大きなリニューアルです。 
+この機能により、React、VueJS、Angularなどのトランスパイルが必要となるプロジェクトを作成、管理、開発すること可能となります。
+また、プレビューアもターミナル機能より起動されます。さらに、ホットリローディングに対応するプロジェクトは、Cloud IDEでもその機能を利用できます。ターミナル機能についてと使用法の詳細については、[ターミナル機能](../terminal) を参照してください。
 
 {{<figure src="/images/monaca_ide/manual/changes/terminal.png">}}
 
