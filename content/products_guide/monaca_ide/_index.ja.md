@@ -13,6 +13,7 @@ Monaca クラウド IDE では、プロジェクトの開発からビルドま�
 - [概要](overview)
 - [Integrated Terminal](terminal)
 - [新しい Monaca クラウド IDE の変更点](changes)
+- [ターミナル機能](terminal)
 - [コードエディター](code_editor)
 - [プロジェクトの構成](dependencies)
 - [バージョン管理](version_control)

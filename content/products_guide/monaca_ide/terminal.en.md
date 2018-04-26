@@ -69,7 +69,7 @@ Visual aspects of the terminal can be customized by going to {{<menu menu1="Conf
 
 You might notice that once you are scrolling inside the terminal console, a little message appeares at the top-right corner telling you the current scolling position of the pane. It indicates that you are in the `scroll mode`. When you scroll down to the buttom of the terminal pane, the `scroll mode` will be exited automatically. Otherwise, you can press `Ctrl-C` or `ESC` key to leave from the `scroll mode`.
 
-{{<figure src="/images/monaca_ide/manual/terminal/scroll_mode.png" >}}
+{{<figure src="/images/monaca_ide/manual/terminal/scroll_mode.png">}}
 
 ## FAQ/Troubleshooting
 
@@ -78,6 +78,18 @@ There are several known issues & limitations.
 ### Browser with Ad-Blocker Settings
 
 Integrated Terminal feature is using third-party cookie. Therefore, some Chrome extensions (such as Ad-blockers) or browser's configuration might block the request to the terminal console. For this reason, please disable such extensions or configuration.
+
+### Fail to connect in Safari
+
+If you are receiving the error message regarding cross-site tracking or cookie, please disable them in Safari's settings as follows:
+
+1. From Safari, go to {{<menu menu1="Preferences" menu2="Privacy">}}.
+
+2. The Privacy tab might look differently with different version. Please make sure that the cookies are unblocked and the cross-site tracking is allowed. Here is an example:
+
+{{<figure src="/images/monaca_ide/manual/terminal/safari_1.png" title="Safari v. 11.1.X">}}
+
+{{<figure src="/images/monaca_ide/manual/terminal/safari_2.png" title="Safari v. 11.0.X">}}
 
 ### Limitations
 
