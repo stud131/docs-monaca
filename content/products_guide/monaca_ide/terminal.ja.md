@@ -78,6 +78,18 @@ MonacaクラウドIDEにはターミナル機能が備わっています。タ�
 
 ターミナル機能は、サードパーティCookieを使用しています。そのため、一部のブラウザー拡張（Adブロッカー等）やブラウザーの設定が有効になっていると、ターミナル機能を利用することができません。その場合は、Adブロッカーの設定を無効にし、サードーパーティCookieを有効にしてください。
 
+### Fail to connect in Safari
+
+If you are receiving the error message regarding cross-site tracking or cookie, please disable them in Safari's settings as follows:
+
+1. From Safari, go to {{<menu menu1="Preferences" menu2="Privacy">}}.
+
+2. The Privacy tab might look differently with different version. Please make sure that the cookies are unblocked and the cross-site tracking is allowed. Here is an example:
+
+{{<figure src="/images/monaca_ide/manual/terminal/safari_1.png" title="Safari v. 11.1.X">}}
+
+{{<figure src="/images/monaca_ide/manual/terminal/safari_2.png" title="Safari v. 11.0.X">}}
+
 ### 機能の制限
 
 いくつかのコマンドや操作やセキュリティの理由から制限されています。問題が見つかった場合は、Monacaチームにお問い合わせください。
