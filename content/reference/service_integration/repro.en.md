@@ -8,14 +8,15 @@ of how a user handles an application by recording the user's actions.
 Currently, it supports iOS only.
 
 {{<note>}}
-    This Repro service integration is available for all Monaca users. However, if you want to use the latest Repro plugin via {{<link href="https://github.com/reproio/repro-ios-sdk" title="GitHub">}}, you can {{<link href="/en/products_guide/monaca_ide/dependencies/custom_cordova_plugin/#import-custom-cordova-plugin" title="import">}} it. In order to import this plugin, you need to subscribe to a valid plan. Please refer to {{<link href="https://monaca.mobi/en/pricing" title="Monaca Subscription Plans">}}.
+    This Repro service integration is available for all Monaca users. However, if you want to use the latest Repro plugin via {{<link href="https://github.com/reproio/repro-ios-sdk" title="GitHub">}}, you can {{<link href="/en/products_guide/monaca_ide/dependencies/cordova_plugin/#import-cordova-plugins" title="import">}} it. In order to import this plugin, you need to subscribe to a valid plan. Please refer to {{<link href="https://monaca.mobi/en/pricing" title="Monaca Subscription Plans">}}.
 {{</note>}}
 
 ## Adding Repro Service to Monaca
 
-1.  For Monaca Cloud IDE, go to {{<menu menu1="Config" menu2="Service Integration">}} or go
-    to {{<menu menu1="Build Settings" menu2="Service Integration">}} for Monaca Localkit.
-2.  Click {{<guilabel name="Details">}} button of the *Repro* service.
+1.  For Monaca Cloud IDE, go to {{<menu menu1="Configure" menu2="Service Integration Settings">}}.
+
+2.  Click on {{<guilabel name="Details">}} button of the *Repro* service.
+
 3.  Then, click {{<guilabel name="Install">}} button to add it into your project.
 
     {{<img src="/images/reference/service_integration/repro/2.png" width="500">}}
@@ -65,8 +66,8 @@ function onDeviceReady() {
 
 ## Removing Repro Service from Monaca
 
-1.  For Monaca Cloud IDE, go to {{<menu menu1="Config" menu2="Manage Cordova Plugins">}} or
-    go to {{<menu menu1="Build Settings" menu2="Cordova Plugins">}} for Monaca Localkit.
-2.  Look for *Repro* plugin and click {{<guilabel name="Disable">}} button.
+1.  For Monaca Cloud IDE, go to {{<menu menu1="Configure" menu2="Cordova Plugin Settings">}}.
+
+2.  Under *Enabled Plugins* section, hover over the *Repro* plugin and click {{<guilabel name="Disable">}} button.
 
     {{<img src="/images/reference/service_integration/repro/3.png">}}

@@ -16,11 +16,11 @@ The Android App Settings page allows to set several commonly used
 parameter in Android app. Please follow the following instruction in
 order to access the Android App Setting page in Monaca Cloud IDE:
 
-1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Config" menu2="Android App Settings">}}.
+1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="App Settings for Android">}}.
 
 2.  `Android App Configuration` page will appear as shown below. You can then start your configuration.
 
-    {{<img src="/images/reference/config/android/3.png">}}
+    {{<img src="/images/reference/config/android/settings.png">}}
 
 3.  After finishing the configuration, click {{<guilabel name="Save">}}.
 

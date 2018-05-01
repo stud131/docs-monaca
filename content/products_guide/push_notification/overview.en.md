@@ -32,8 +32,7 @@ are displayed as a pop-up dialogue box.
 
 ## Prerequisite
 
-In order to send push notifications from Monaca Cloud IDE, you need to
-have a Monaca Backend first. If you don't have one yet, please refer to [Monaca Backend Tutorial](/en/tutorials/monaca_ide/adding_backend) or [Getting Started with Monaca Backend](../../backend/control_panel/#backend-control-panel-getting-started).
+Monaca Backend is required in order to send push notifications from Monaca Cloud IDE. In order to add a Monaca Backend to your project, please refer to [Getting Started with Monaca Backend](../../backend/new_backend/getting_started/).
 
 ## How to Enable Push Notification with Monaca
 
@@ -52,18 +51,16 @@ application as follows:
 
 To send push notifications from Monaca Cloud IDE, please proceed as follows:
 
-1.  From Monaca Cloud IDE, click on `Cloud` icon and select `Push Notification`.
-2.  The Push Status & History tab will appear as shown below:
+1.  From Monaca Backend window and select `Push Notification`.
 
-    {{<img src="/images/backend/overview/1.png">}}
+    {{<img src="/images/backend/overview/push_notification.png">}}
 
 3.  From the Push Status & History tab, click {{<guilabel name="Push to App">}}. Then the
-    following screen will appear:
+    Push to App dialog will appear:
 
-    {{<img src="/images/backend/overview/2.png" width="500">}}
+    {{<img src="/images/backend/overview/push_dialog.png" width="500">}}
 
-4.  Choose the intended OS.
-5.  Fill in necessary information regarding the push notification as
+4.  Choose the intended OS and fill in necessary information regarding the push notification as
     shown below:
 
     | Parameter | Description |

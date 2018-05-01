@@ -25,7 +25,8 @@ Monaca Cloud IDE, please do as follows:
 In order to export the private key in Keychain Access, please follow the
 instruction below:
 
-1.  In your Mac OS X, go to `Applications` &rarr; `Utilities` &rarr; `Keychain Access`.
+1.  In your Mac OS X, go to {{<menu menu1="Applications" menu2="Utilities" menu3="Keychain Access">}}.
+
 2.  Select `Certificates` on the left panel of the Keychain Access window.
 
     {{<img src="/images/monaca_ide/manual/build/import_export/1.png">}}
@@ -63,7 +64,7 @@ instruction below:
 In order to import the private key and certificate in Monaca Cloud IDE,
 please follow the instruction below:
 
-1.  From the Monaca Cloud IDE menu, go to `Config` &rarr; `iOS Build Settings`. Then, click on {{<guilabel name="Import">}}.
+1.  From the Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="iOS Build Settings">}}. Then, click on {{<guilabel name="Import">}}.
 
     {{<img src="/images/monaca_ide/manual/build/import_export/6.png">}}
 
@@ -89,7 +90,7 @@ please follow the instruction below:
 In order to export the private key and certificate from Monaca Cloud
 IDE, please follow the instruction below:
 
-1.  From the Monaca Cloud IDE menu, select `Config` &rarr; `iOS Build Settings`.
+1.  From the Monaca Cloud IDE menu, select {{<menu menu1="Configure" menu2="iOS Build Settings">}}.
 2.  In the `Certificates registered in Monaca` section, click on the `Export` icon of the certificate you want.
 
     {{<img src="/images/monaca_ide/manual/build/import_export/9.png">}}

@@ -10,7 +10,7 @@ aliases:
 
 Before getting started, you are required to:
 
--   subscribe to [iOS Developer Program](https://developer.apple.com/programs/ios/).
+-   subscribe to [Apple Developer Program](https://developer.apple.com/programs/ios/).
 -   understand [Types of Build](#types-of-build) and their requirements.
 
 ### Types of Build
@@ -83,7 +83,7 @@ follows:
 
 ###  Configure iOS App Settings
 
-1.  From the Monaca Cloud IDE menu, go to `Config` &rarr; `iOS App Settings`.
+1.  From the Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="App Settings for iOS">}}.
 2.  Fill in the necessary information of your app:
 
     <table class="small">
@@ -116,7 +116,7 @@ follows:
 
 ###  Configure iOS Build Settings
 
-1.  From the Monaca Cloud IDE menu, go to `Config` &rarr; `iOS Build Settings`.
+1.  From the Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="iOS Build Settings">}}.
 
     {{<img src="/images/monaca_ide/manual/build/build_ios/2.png">}}
 
@@ -304,7 +304,8 @@ provisioning profile:
 
 ## Step 3: Start Building
 
-1.  From the Monaca Cloud IDE menu, go to `Build` &rarr; `Build App for iOS`.
+1.  From the Monaca Cloud IDE menu, go to {{<menu menu1="Build" menu2="Build App for iOS">}}.
+
 2.  Select appropriate type of build you want and click {{<guilabel name="Start Build">}}.
 
      {{<img src="/images/monaca_ide/manual/build/build_ios/7.png">}}

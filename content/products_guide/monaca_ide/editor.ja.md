@@ -1,7 +1,9 @@
 ---
 title: エディターのショートカット一覧
-weight: 10
-aliases: /ja/monaca_ide/manual/code_editor/editor
+weight: 30
+aliases: 
+    - /ja/monaca_ide/manual/code_editor/editor
+    - /ja/products_guide/monaca_ide/code_editor/editor
 ---
 
 

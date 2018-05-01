@@ -12,22 +12,30 @@ With a different Cordova version, the file and folder structure of a Monaca proj
 
 | File/Folder Name | Description |
 |------------------|-------------|
-| `android/` | 	Storage folder for Android application settings |
-| `chrome/` | 	Storage folder for Chrome application settings |
-| `ios/` | 	Storage folder for iOS application settings |
-| `www/` | 	Storage folder for the main body of the application |
-| `config.xml` | 	Cordova configuration file |
+| [android/](#android-folder) | Storage folder for Android application settings |
+| [ios/](#ios-folder) | Storage folder for iOS application settings |
+| [www/](#www-folder) | Storage folder for the main body of the application |
+| [config.xml](#config-xml-file) | Cordova configuration file |
 
 
-### For Cordova 6.2 or higher
+### For Cordova 6.2 and 6.5
 
 | File/Folder Name | Description |
 |------------------|-------------|
-| `chrome/` | 	Storage folder for Chrome application settings |
-| `plugins/` | 	Storage folder for additional plugins |
-| `res/` | 	Resources folder for Android, iOS and Winrt |
-| `www/` | 	Storage folder for the main body of the application |
-| `config.xml` | 	Cordova configuration file |
+| [plugins/](#plugins-folder) | Storage folder for additional plugins |
+| `res/` | Resources folder for Android, iOS and Winrt |
+| [www/](#www-folder) | Storage folder for the main body of the application |
+| [config.xml](#config-xml-file) | Application configuration file |
+
+### For Cordova 7.1
+
+| File/Folder Name | Description |
+|------------------|-------------|
+| [plugins/](#plugins-folder) | Storage folder for additional plugins |
+| `res/` | Resources folder for Android, iOS and Winrt |
+| [www/](#www-folder) | Storage folder for the main body of the application |
+| [config.xml](#config-xml-file) | Application configuration file |
+| `package.json` | Cordova plugins management file |
 
 ## android Folder
 
@@ -44,17 +52,6 @@ For more information about how to use this file, please see [Android Configurati
     For Cordova 6.2 or higher, <code>AndroidManifest.xml</code> file is removed from Monaca framework. Therefore, in order to config Android application settings, use {{<link href="/en/reference/third_party_phonegap/custom_config/" title="Cordova Custom Config Plugin">}}.
 {{</note>}}
 
-
-## chrome Folder
-
-Chrome application settings files are stored inside the `chrome` folder.
-
-| File Name | Description |
-|------------------|-------------|
-| `background.js` | 	A JavasSript file used when running Chrome applications |
-| `manifest.json` | 	A Manifest file used when running Chrome applications |
-
-
 ## ios Folder
 
 iOS application settings files are stored inside the `ios` folder.
@@ -62,7 +59,6 @@ iOS application settings files are stored inside the `ios` folder.
 | File Name | Description |
 |------------------|-------------|
 | `MonacaApp-Info.plist` | Info.plist file used when running iOS applications |
-
 
 For more information about how to use this file, please see [iOS Configuration File](/en/reference/config/ios_configuration/).
 
@@ -80,14 +76,7 @@ and folders have special significance.
 | File/Folder Name | Description |
 |------------------|-------------|
 | `index.html` | 	The first page to be displayed when the application starts up. The startup file can be changed. |
-| `components/` | 	The folder created by Monaca for all JS/CSS components used in the project. | 
-
-
-### index.html
-
-The index.html file is the starting point for your application. At
-startup, the information contained in this file is usually the very
-first thing that will be read.
+| [components/](#components-folder) | The folder created by Monaca for all JS/CSS components used in the project. | 
 
 ### components Folder
 
@@ -97,14 +86,22 @@ default regardless of what kinds of components you have added for your
 project.
 
 | File Name | Description |
-|------------------|-------------|
-| `loader.js` | 	A JavaScript file used by Monaca to load the components |
-| `loader.css` | 	A style sheet file used by Monaca for the components |
+|-----------|-------------|
+| `loader.js` | 	A JavaScript file used by Monaca to load JavaScript libraries |
+| `loader.css` | 	A style sheet file used by Monaca to load CSS libraries |
 
 The `loader.js` and `loader.css` files must be read from an HTML file.
 
 Each component will create its own folder within (one level below)
 `www/components/` folder.
+
+{{<note>}}
+    <code>loader.js</code> file also loads <code>cordova.js</code> file.
+{{</note>}}
+
+## plugins Folder
+
+If you import a Cordova plugin using ZIP file, it will be stored inside this folder. However, if you import the plugin using package URL/Plugin ID, the plugin file will be downloaded during build.
 
 ## config.xml File
 

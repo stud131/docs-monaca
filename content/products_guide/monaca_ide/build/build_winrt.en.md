@@ -35,7 +35,8 @@ If you don't have the license, please register
 
 ##  Step 1: Configure Windows App Settings
 
-1.  From the Monaca Cloud IDE menu, go to `Config` &rarr; `Windows App Settings`.
+1.  From the Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="App Settings for Windows">}}.
+
 2.  Fill in the necessary information of your app:
 
     <table class="small">

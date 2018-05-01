@@ -4,126 +4,102 @@ weight: 10
 aliases: /en/monaca_ide/manual/overview/
 ---
 
+Monaca Cloud IDE is a browser-based development environment. Right from your Web browser, all of your Cordova development can be done without any setup.
 
-Monaca Cloud IDE consists of 5 main parts such as:
-
-1. [Menu Bar](#menu-bar)
-2. [Project Panel](#project-panel)
-3. [Debug Panel](#debug-panel)
-4. [Live Preivew](#live-preview)
-5. [Code Editor](#code-editor)
-
-{{< figure src="/images/monaca_ide/manual/overview/1.png" >}}
+In this page, we will explain the Graphic User Inteface (GUI) of Monaca Cloud IDE.
 
 ##  Menu Bar
 
-{{<figure src="/images/monaca_ide/manual/overview/2.png" >}}
+{{<figure src="/images/monaca_ide/manual/overview/menu.png" >}}
 
 In the menu bar, there are several main menus such as:
 
-| Menu | Description|
-|-----|-----|
-| [File](#file) | Opens `File` submenu. |
-| [Edit](#edit)	| Opens `Edit` submenu. |
-| [View](#view)	| Opens `View` submenu. |
-| [Debug](#debug) |	Opens `Debug` submenu. |
-| [Build](#build) |	Opens `Build` submenu. |
-| [Version Control](#version-control) | Manages version control of your project with GitHub. |
-| Save | Saves the file currently openeded. If no file is opened, this function is disable. |
-| [Preview](#live-preview) | Displays the `Preview` window. |
-| Run on Device | Runs the current project in [Monaca Debugger](/en/products_guide/debugger/). |
-| [Share](#share) |	Invites other Monaca users to join the project.
-| [Config](#config) | Opens `Config` submenu. |
+| Menu Item | Description |
+|-----------|-------------|
+| `File` | Shows [File](#file) sumbmenu. |
+| `Edit` | Shows [Edit](#edit) submenu. |
+| `View` | Shows [View](#view) submenu. |
+| `Run `| Shows [Run](#run) submenu. |
+| `Build` |	Shows [Build](#build) submenu. |
+| `Project` | Shows [Project](#project) submenu. |
+| `Configure` | Shows [Configure](#configure) submenu. |
+| `Backend` |	Opens [Monaca Backend](/en/products_guide/backend) in a new window. |
+| `Help` | Shows various ways you can find help during your development. |
 
 ###  File
 
-| Menu Item | Description|
-|-----|-----|
+| Menu Item | Description |
+|-----------|-------------|
 | New File |	Creates a new file. |
-| New Folder |	Creates a new folder. |
 | Save |	Saves the file currently openeded. |
 | Save All |	Saves all the files currently openeded. |
 | Upload |	Uploads the files in the current folder. |
-| Delete |	Deletes the currently selected file/folder. |
-| Rename |	Renames the currently selected file/folder. |
-| Open File | 	Opens the currently selected file. |
-| Copy File |	Makes a copy of the currently selected file. |
-| View Older Version... |	Views older versions of the currently selected file. |
-| Export Project |	Exports Monaca project. |
-| Publish Project |	Makes the current project public (see [Publish Project](#publish-project)). |
-| Editor Configuration |	Configures the appearance of the editor. |
-| Manage JS/CSS Components |	Adds/Removes JavaScript and CSS libraries to/from the current project. |
-| Manage Cordova Plugins |	Adds/Removes Cordova plugins in the current project. |
 
 ###  Edit
 
-| Menu Item | Description|
-|-----|-----|
-| Undo | 	Undoes the latest action. |
-| Redo | 	Redoes the previous action. |
-| Search |	Searches for a string in the currently opened file. |
-| Search Next |	Goes to the next found string. |
-| Search Previous |	Goes to the previously found string. |
+| Menu Item | Description |
+|-----------|-------------|
+| Undo | Undoes the latest action. |
+| Redo | Redoes the previous action. |
+| Search | Searches for a string in the currently opened file. |
 | Replace |	Replaces a found string in the currently opened file. |
-| Replace All |	Replaces all the found strings in the currently opened file. |
-| Comment Out |	Comments out the current line. |
-| Comment In |	Uncomments the current line. |
+| Search All Files | Searches across all project files. |
+| Comment |	Comments out/in the current line. |
 
 ###  View
 
-| Menu Item | Description|
-|-----|-----|
-| Project Tree |	Shows/Hides the project tree. |
-| Maximize Editor |	Switches the ON/OFF of the editor maximization. |
-| Grep |	Searches for files by using Unix command. |
-| Backend |	Goes Monaca Backend settings page. |
+| Menu Item | Description |
+|-----------|-------------|
+| Debugger Tab | Shows/Hides Debugger tab |
+| Reset Layout | Resets the IDE's layout to the default arrangement. |
 
-###  Debug
+###  Run
 
-| Menu Item | Description|
-|-----|-----|
-| Preview |	Opens Preview window. |
-| Run on Device |	Runs the project on Monaca Debugger. |
+| Menu Item | Description |
+|-----------|-------------|
+| Show Preview Tab | Opens Previewer. |
+| Run on Device | Runs the project on Monaca Debugger. |
 | Setup Monaca Debugger | Installs the Monaca Debugger on your device. |
 
 ### Build
 
-| Menu Item | Description|
-|-----|-----|
+| Menu Item | Description |
+|-----------|-------------|
 | Build App for Android |	Builds the app for Android device. |
 | Build App for iOS |	Builds the app for iOS device. |
 | Build App for Windows |	Builds the app for Windows device. |
 | Build History |	Shows all build history of the current project. |
 | CI History |	Shows all Continuous Integration history of the current project. |
 
-###  Version Control
+### Project
 
-| Menu Item | Description|
-|-----|-----|
-| Commit |	Commits local changes. |
-| Push | 	Pushes local changes to remote server. |
-| Pull |	Pulls remote changes. |
-| Show Remote History |	Shows all commits history in remote server. |
+| Menu Item | Description |
+|-----------|-------------|
+| Commit | Commits local changes. |
 | Show Commit History |	Shows all commits history from Monaca Cloud IDE. |
-| Configure	| Configures the remote repository. |
-
+| Pull | Pulls remote changes. |
+| Push | Pushes local changes to remote server. |
+| Show Remote History |	Shows all commits history in remote server. |
+| VSC Configure	| Configures the remote repository. |
+| [Share](#share) | Invites other Monaca users to join the project. |
+| Export | Exports Monaca project. |
+| Publish | Makes the current project public (see [Publish Project](#publish-project)). |
+ 
 For more information to enable vision control on your project, please refer to [Version Control](../version_control).
 
-###  Config
+###  Configure
 
-| Menu Item | Description|
-|-----|-----|
-| Android App Settings | Configures Android app’s information (see [Configure Android App](../build/build_android/#step-1-configure-android-app)). |
-| Android Key Store Settings | Configures Android’s keystore (see [Configure Android Keystore](../build/build_android/#step-2-configure-android-keystore)). |
-| iOS App Settings | Configures iOS App’s information (see [Configure iOS App Settings](../build/ios/build_ios/#configure-ios-app-settings)). |
-| iOS Build Settings | Configures iOS build settings (see [Configure iOS Build Settings](../build/ios/build_ios/#configure-ios-build-settings)). |
-| Windows App Settings | Configures necessary information to build a Windows app (see [Configure Windows App Settings](../build/build_winrt/#step-1-configure-windows-app-settings)). |
-| Manage Cordova Plugins | Enables/Disables Cordova plugins in the current project (see [Cordova Plugins](../dependencies/cordova_plugin/)). |
-| Manage JS/CSS Components | Adds/Removes JavaScript and CSS libraries to/from the current project (see [JS/CSS Components](../dependencies/components/)). |
-| Service Integration | Integrates various services to Monaca projects in the form of plugins (see [Service Integration](/en/reference/service_integration/)). |
+| Menu Item | Description |
+|-----------|-------------|
+| App Settings for Android | Configures Android app’s information (see [Configure Android App](../build/build_android/#step-1-configure-android-app)). |
+| App Settings for iOS | Configures iOS App’s information (see [Configure iOS App Settings](../build/ios/build_ios/#configure-ios-app-settings)). |
+| App Settings for Windows | Configures necessary information to build a Windows app (see [Configure Windows App Settings](../build/build_winrt/#step-1-configure-windows-app-settings)). |
+| Cordova Plugin Settings | Enables/Disables Cordova plugins in the current project (see [Cordova Plugins](../dependencies/cordova_plugin/)). |
+| JS/CSS Component Settings | Adds/Removes JavaScript and CSS libraries to/from the current project (see [JS/CSS Components](../dependencies/components/)). |
+| Service Integration Settings | Integrates various services to Monaca projects in the form of plugins (see [Service Integration](/en/reference/service_integration/)). |
 | Continuous Integration | Automates building and deployment cycles (see [Monaca CI](../monaca_ci/)).|
 | Deploy Service | Adds/Removes deployment services for Monaca CI (see [Deploy Services](../monaca_ci/supported_services/)). |
-| Editor Configuration | Configures the appearance of code editor. |
+| Workspace Configuration | Configures the appearance of code editor. |
 
 ##  Publish Project
 
@@ -136,7 +112,7 @@ there will be no fear of someone messing up the original.
 Publishing your project is really easy and done by following the next
 simple steps:
 
-1.  From Monaca Cloud IDE menu, go to `File` &rarr; `Publish Project`.
+1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Project" menu2="Publish">}}.
 2.  Click on {{<guilabel name="Publish" >}} button.
 
     {{<img src="/images/monaca_ide/manual/overview/14.png" >}}
@@ -157,38 +133,26 @@ a link. Upon accessing the link, the users will be forwarded to the
 following screen (if signed in), whereby just clicking the import button
 the project will be imported into their account.
 
-{{< figure src="/images/monaca_ide/manual/overview/16.png" >}}
+{{<figure src="/images/monaca_ide/manual/overview/16.png">}}
 
-##  Project Panel
-
-In the Project panel, there are 3 main tabs:
-
--   *File Tree*: Displays a list of folders and files existed in the
-    current project. Right-click on a folder or file to see additional
-    functions such as New File, Copy, Rename, Delete, Upload File and so
-    on. To edit a file, select it and then its content will be shown in
-    [Monaca IDE Editor](#code-editor).
--   *Grep*: Searches for files by using Unix command.
--   *Monaca Backend*: Contains the backend settings of the project.
-
-    {{< multi_figures title="File Tree, Grep & Backend" >}}
-        {{< img src="/images/monaca_ide/manual/overview/3.png" >}}
-        {{< img src="/images/monaca_ide/manual/overview/4.png" >}}
-        {{< img src="/images/monaca_ide/manual/overview/5.png" >}}
-    {{< /multi_figures >}}
-
-##  Debug Panel
+## Debugger Tab
 
 Once Monaca Debugger is connected with Monaca Cloud IDE, you can do
 console debugging as well DOM inspection in this panel. For more
 information, please refer to [Monaca Debugger with Monaca Cloud IDE](/en/products_guide/debugger/debug/#monaca-debugger-with-monaca-cloud-ide).
 
-{{< figure src="/images/monaca_ide/manual/overview/6.png" >}}
+{{<figure src="/images/monaca_ide/manual/overview/debugger.png" >}}
 
-##  Live Preview
+## Preview Log Tab
 
-The Live Preview provides an overview of your app in real-time. You can
-also interact with this preview as if it is running on an actual device
+Preview Log tab is a terminal window for running HTTP service for providing content in Previewer.
+
+{{<figure src="/images/monaca_ide/manual/overview/preview_log.png" >}}
+
+## Previewer
+
+The Previewer provides an overview of your app in real-time. You can
+also interact with the Previewer as if it is running on an actual device
 with the limitation of executing the specific device’s functionality
 (such as camera, contact and so on) and cross-origin network AJAX
 request. Along with the Monaca Debugger, you will have effective and
@@ -196,18 +160,18 @@ efficient experiences during app development.
 
 In this tab, you can:
 
--   refresh the Preview window.
+-   refresh the Previewer.
 -   change the display device's screen by clicking on the `Configure` icon
     in that tab. Then, you will see a drop-down list of different
     devices such as iPad, iPhone, and Nexus. You can change the
     orientation of the screen as well.
--   detach/attach the Preview window.
+-   detach/attach the Previewer.
 
-{{< figure src="/images/monaca_ide/manual/overview/7.png" >}}
+{{< figure src="/images/monaca_ide/manual/overview/previewer.png" >}}
 
-###  Live Preivew Limitations
+###  Preivewer Limitations
 
-When using Live Preview, you should be aware of the the following
+When using Previewer, you should be aware of the the following
 limitations:
 
 -   Cordova Plugin APIs are not available.
@@ -221,9 +185,7 @@ limitations:
 ##  Share
 
 {{<note>}}
-
     The usability of this function depends on your Monaca subscription plan. For more information, please refer to {{<link href="https://monaca.mobi/en/pricing" title="Monaca Subscription Plans">}}.
-
 {{</note>}}
 
 The *Share* function allows you to:
@@ -252,53 +214,41 @@ The *Share* function allows you to:
     If you want to join a team and edit the project files, you need to subscribe to a valid plan. Otherwise, you can only join as a tester. Please refer to {{<link href="https://monaca.mobi/en/pricing" title="Monaca Subscription Plans">}}.
 {{</note>}}
 
-You can share your project with other Monaca users. You can also
-add/remove other Monaca users to/from your project. In order to manage
-the members of your project, please do as follows:
+### How to Share Project
 
-1.  Click on {{<guilabel name="Share">}} button in the Menu panel.
-2.  Then, the Team Member Manage screen will appear. To add a member,
+In order to share and manage the members of your project, please do as follows:
+
+1.  From Monaca Cloud IDE, go to {{<menu menu1="Project" menu2="Share">}}.
+
+2.  The Share Project dialog will appear. To add a member,
     input the email(s) of your team member(s). Please enter one email
     address per line. You can also assign the role of each member as
     Developer or Tester by choosing from the drop-down menu. Then, click on
-    {{<guilabel name="Add Member">}}  button to send the invitation to them.
+    {{<guilabel name="Add User">}}  button to send the invitation to them.
 
-    {{<img src="/images/monaca_ide/manual/overview/9.png" width="500">}}
+    {{<img src="/images/monaca_ide/manual/overview/invite_user.png" width="500">}}
 
-3.  To remove a member from the project, you can just click on the `delete` icon at the end of the row of that member's info as shown below:
+3.  To remove a member from the project, you can just click on the `x` icon at the end of the row of that member's info as shown below:
 
-    {{<img src="/images/monaca_ide/manual/overview/10.png" width="500">}}
+    {{<img src="/images/monaca_ide/manual/overview/remove_user.png" width="500">}}
 
 
 ##  Code Editor
 
-Views and edits the selected file from the file tree. Various settings
-such as Preferences is also shown and can be edited here. Once you open
-a file, you can select it from the tab.
+Monaca uses [Monaco editor](https://microsoft.github.io/monaco-editor/) because of various reasons such as:
 
-The editor supports the syntax highlight of JavaScript/HTML5/CSS3. The
-editor also supports JavaScript and CSS autocomplete function.
+- a robust auto-completion system that can be expanded with the use of a Language Server which provides support for TypeScript, HTML, JavaScript and [Onsen UI](https://onsen.io/). And more to come such as React and Vue.
+
+- basic syntax colorization
+
+- rich intelliSense & validation
 
 {{<note>}}
-    Please refer to {{< link href="/en/products_guide/monaca_ide/code_editor/editor/" title="Editor Shortcuts">}} for the list of all shortcuts available in Monaca code editor.
+    Please refer to {{<link href="/en/products_guide/monaca_ide/code_editor/editor/" title="Editor Shortcuts">}} for the list of all shortcuts available in Monaca code editor.
 {{</note>}}
 
-{{< figure src="/images/monaca_ide/manual/overview/12.png" >}}
+{{<figure src="/images/monaca_ide/manual/overview/code_editor.png" >}}
 
-Inside this editor, there is also a small and short menu bar as shown
-below:
+If you want to search within the current editor, press `cmd+f` or `Ctrl+f`. Then, the following dialog will appear:
 
-{{< figure src="/images/monaca_ide/manual/overview/13.png" >}}
-
-
-Within this short menu, you can:
-
--   go to Monaca documentation by clicking on `Help` icon.
--   config the code editor by clicking on `Setting` icon. You will see 3
-    menu items such as:
-    1.  View Older Versions: View older versions of the currently
-        selected file.
-    2.  Editor Configuration: Configure the appearance of the editor.
-    3.  Editor Shortcuts: open the keyboard shortcut references.
--   search for a string inside the currently opened file.
-
+{{<figure src="/images/monaca_ide/manual/overview/find.png" >}}

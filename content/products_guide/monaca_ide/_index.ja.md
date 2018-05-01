@@ -11,9 +11,10 @@ aliases:
 Monaca クラウド IDE では、プロジェクトの開発からビルドまでを、総合的にサポートするインターフェースを提供しています。ここでは、Monaca クラウド IDE の画面構成、エディターの機能、プロジェクトファイルの管理方法について解説します。
 
 - [概要](overview)
+- [ターミナル機能](terminal)
 - [新しい Monaca クラウド IDE の変更点](changes)
 - [ターミナル機能](terminal)
-- [コードエディター](code_editor)
+- [エディターのショートカット一覧](editor)
 - [プロジェクトの構成](dependencies)
 - [バージョン管理](version_control)
 - [Monaca CI](monaca_ci)

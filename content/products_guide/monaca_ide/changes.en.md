@@ -7,7 +7,7 @@ Recently, we are just rolling out the new Monaca Cloud IDE. Even though it is no
 
 The new Monaca Cloud IDE provides developers with some special features that allow them to easily develop applications and improve the user development experience. So, the important question is, what are these new amazing features? The most important ones are the following:
 
-- Integrated terminal: transpiling feature in the Cloud IDE
+- Integrated Terminal: transpiling feature in the Cloud IDE
 - Golden Layout: adapting the Cloud Interface as you prefer
 - Multiple previewers: speeding up testing efficiency
 - Monaco Editor: better code editor to speed up your development process

@@ -28,7 +28,7 @@ Please install Monaca Debugger on your device.
 
     {{<img src="/images/monaca_ide/tutorial/testing_debugging/1.png" width="300">}}
 
-2. The list of projects will appear. All Monaca Cloud IDE projects are listed under `Monaca.io Projects`. To run a project, simply tap on the project name in Monaca Debugger or select {{<guilabel name="Run on Device">}} in Monaca Cloud IDE.
+2. The list of projects will appear. All Monaca Cloud IDE projects are listed under `Monaca.io Projects`. To run a project, simply tap on the project name in Monaca Debugger or select {{<menu menu1="Run" menu2="Run on Device">}} in Monaca Cloud IDE.
 
     {{<img src="/images/monaca_ide/tutorial/testing_debugging/2.png" width="300">}}
 

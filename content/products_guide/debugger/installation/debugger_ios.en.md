@@ -135,33 +135,19 @@ building with the following instruction:
 
 ### Start Building
 
-1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Debug" menu2="Setup Monaca Debugger">}}.
-2.  Select {{<menu menu1="Debugger for iOS" menu2="Build and Install">}}.
 
-    {{<img src="/images/debugger/manual/installation/debugger_ios/2.png" width="500">}}  
+1. From Monaca Cloud IDE menu, go to {{<menu menu1="Build" menu2="Build App for iOS">}}.
 
-3.  Upload the development provisioning profile and click {{<guilabel name="Next">}} button.
-4.  This may take sometimes until your building is completed. The
+2. Select `Custom Debugger Build` and choose Development provisioning profile. Then, click on {{<guilabel name="Start Build">}}.
+
+    {{<img src="/images/debugger/manual/installation/debugger_ios/start_build.png">}}  
+
+3.  This may take sometimes until the build is completed. The
     following screen will appear after the build is successfully
-    completed. Then, you can download the built file to your PC and
-    install it to your iOS device using iTune.
+    completed. Then, you can use the QR code to install the debugger on
+    your device or download the built file to your PC.
 
-    {{<img src="/images/debugger/manual/installation/debugger_ios/3.png" width="500">}}  
-
-5.  After installing the debugger on your device, sign in with your
-    Monaca account. Then, tick `I've installed Monaca Debugger and logged in` and click {{<guilabel name="Next">}}.
-6.  Monaca Cloud IDE will then try looking for the debugger. Once it's
-    found and connected, click {{<guilabel name="Run on Device">}} to start running the
-    current app in your debugger right away.
-
-    {{<img src="/images/debugger/manual/installation/debugger_ios/4.png" width="500">}}  
-
-7.  By now your app should be running in your debugger. Try testing your
-    app in the debugger and making some changes in the IDE. You will be
-    able to see the changes reflected in the debugger once you save the
-    changes.
-
-    {{<img src="/images/debugger/manual/installation/debugger_ios/5.png" width="500">}}  
+    {{<img src="/images/debugger/manual/installation/debugger_ios/result.png">}}  
 
 See Also:
 

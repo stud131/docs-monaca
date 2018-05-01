@@ -15,9 +15,13 @@ You can use external backend services with Monaca. We also provide some
 external services (including backend) you can integrate into your
 project right from Monaca Cloud IDE.
 
-From Monaca Cloud IDE, go to {{<menu menu1="Config" menu2="Service Integration" menu3="Backend">}} to see exisiting external backend services. 
+From Monaca Cloud IDE, go to {{<menu menu1="Configure" menu2="Service Integration Settings" menu3="Backend">}} to see exisiting external backend services. 
 
-If you cannot find the backend service you want there, you can import its SDK into Monaca by going to {{<menu menu1="Config" menu2="Manage Cordova Plugins" menu3="Import Cordova Plugin">}}.
+{{<figure src="/images/faq/backend.png">}}
+
+If you cannot find the backend service you want there, you can import its SDK into Monaca by going to {{<menu menu1="Configure" menu2="Cordova Plugin Settings" menu3="Import Cordova Plugin">}}.
+
+{{<figure src="/images/faq/import.png">}}
 
 ## What kind of features can be used in applications developed using Monaca?
 
@@ -75,7 +79,7 @@ Yes, you can. However, you need to make configuration differently on iOS and And
 
 There are two ways to make an app runs in fullscreen mode:
 
-1. By Android App Configuration panel: From Monaca Cloud IDE, go to {{<menu menu1="Config" menu2="Android App Settings">}}. Then, enable the Fullscreen mode.  
+1. By Android App Configuration panel: From Monaca Cloud IDE, go to {{<menu menu1="Configure" menu2="App Settings for Android">}}. Then, enable the Fullscreen mode.  
 
 2. By `config.xml` file: input the following line within the file: 
 
@@ -192,7 +196,7 @@ Assuming that you already created an Android keystore with Monaca Cloud
 IDE, please follow the instruction below to get a SHA-1 fingerprint of
 the keystore:
 
-1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Config" menu2="Android KeyStore Settings">}}.
+1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="Android KeyStore Settings">}}.
 2.  Click on {{<guilabel name="Export">}} to download your keystore.
 3.  Then, go to your Command prompt and type:
     

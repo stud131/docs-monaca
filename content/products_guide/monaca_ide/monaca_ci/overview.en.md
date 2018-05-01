@@ -4,8 +4,6 @@ weight: 10
 aliases: /en/monaca_ide/manual/monaca_ci/overview
 ---
 
-## Introduction
-
 Monaca CI (Continuous Integration & Deployment) is a service that has
 been integrated within the current Monaca development environment stack
 to automate building and deployment cycles. This automation process is
@@ -25,8 +23,8 @@ In order to use Monaca CI, you will need to integrate GitHub with your
 Monaca account. If you haven't done it, please follow the instruction
 below:
 
-1.  Link your Monaca account to GitHub. Please refer to [GitHub Integration](../../version_control/github_integration).
-2.  Connect your project to your GitHub repository. Please refer to [Version Control Configuration](../../version_control/github_integration#step-2-connecting-monaca-project-with-repository).
+1.  Link your Monaca account to GitHub. Please refer to [GitHub Integration](../../version_control/github_integration#setup).
+2.  Connect your project to your GitHub repository. Please refer to [Version Control Configuration](../../version_control/github_integration#connecting-a-monaca-project-to-new-github-repository).
 
 {{<note>}}
     In order to use Monaca CI, Cordova 6.2 or higher is required.
@@ -37,7 +35,7 @@ below:
 Assuming you have successfully linked a GitHub repository to your
 project, you are now ready to enable Monaca CI. Please do as follows:
 
-1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Config" menu2="Continuous Integration">}}.
+1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="Continuous Integration">}}.
 2.  Under `JSON Settings` section, you will see the following default
     [JSON script](#json-settings-configuration). This script controls the
     automation behaviours of Monaca CI. For example, with this default
@@ -84,13 +82,17 @@ project, you are now ready to enable Monaca CI. Please do as follows:
 You can also automate your app distribution process with Monaca CI. In
 order to do this, please do as follows:
 
-1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Config" menu2="Deploy Services">}}.
+1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="Deploy Services">}}.
+
 2.  Click on {{<guilabel name="Add Deploy Service">}}.
+
 3.  Choose a deploy service and fill in the required information. Then,
     click {{<guilabel name="Add">}}. Here is the information you will need to input:
     
     -   `Config Alias`: a unique identifier for each service
+
     -   `Username (DeployGate only)`: app's owner's username or organization name registered in DeployGate
+    
     -   `API Key` (DeployGate) or `API Token` (HockeyApp): API key provided the deployment service prvider. For more information on how to get the API key for each service, please refer to [How to Get API Key from DeployGate]({{<ref "supported_services.en.md#how-to-get-api-key">}}) and [How to Get API Key from HockeyApp]({{<ref "supported_services.en.md#how-to-get-api-key-1">}}).
 
     {{<figure src="/images/monaca_ide/manual/monaca_ci/overview/1.png" title="DeployGate" width="500">}}

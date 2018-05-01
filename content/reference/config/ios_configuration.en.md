@@ -16,14 +16,12 @@ The iOS App Settings page allows to set several commonly used parameter
 in iOS app. Please follow the following instruction in order to access
 the iOS App Setting page in Monaca Cloud IDE:
 
-1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Config" menu2="iOS App Settings">}}.
-
-    {{<img src="/images/reference/config/ios/ide_1.png">}}
+1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="App Settings for iOS">}}.
 
 2.  `iOS App Configuration` page will appear as shown below. You can
     then start your configuration.
 
-    {{<img src="/images/reference/config/ios/ide_2.png">}}
+    {{<img src="/images/reference/config/ios/settings.png">}}
 
 3.  After finishing the configuration, please click {{<guilabel name="Save">}}.
 

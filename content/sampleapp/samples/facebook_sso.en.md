@@ -72,7 +72,8 @@ The authentication is done by [cordova-plugin-facebook4](https://github.com/jedu
 
 Before starting to use the plugin, you are required to input the `APP_ID` and `APP_NAME` values within the plugin’s configuration as follows:
 
-1. From Monaca Cloud IDE menu, go to {{<menu menu1="Config" menu2="Manage Cordova Plugins">}}.
+1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="Cordova Plugin Settings">}}.
+
 2. Under the E*nabled Plugins* section, hover over `cordova-plugin-facebook4` and click {{<guilabel name="Configure">}} button.
 
     {{<img src="/images/sampleapp/facebook_sso/plugin_config.png">}}

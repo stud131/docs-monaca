@@ -6,6 +6,8 @@ aliases:
     - /en/monaca_localkit/manual
 ---
 
+{{<figure src="/images/monaca_localkit/manual/localkit.png">}}
+
 - [Overview](overview)
 - [Project Dependencies](dependencies)
 - [Pairing and Debugging](pairing_debugging)

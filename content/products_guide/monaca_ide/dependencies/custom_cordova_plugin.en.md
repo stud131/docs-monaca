@@ -13,7 +13,7 @@ Cordova plugin into your Monaca project.
     {{<link href="https://monaca.mobi/en/pricing" title="Monaca Subscription Plans">}}.
 {{</note>}}
 
-Your custom Cordova plugin need to follow the requirements below:
+Your custom Cordova plugin need to follow the requirements:
 
 -   It should be compatible with Cordova 4.2 or higher.
 -   It must have a `plugin.xml` file and is installable with `plugman`
@@ -42,11 +42,10 @@ displayed in bold letters):
 Before getting started, please download the following zip file
 containing sample plugin code.
 
-{{<download  href="/download/cordova_plugin_sample.zip" title="Sample Cordova Plugin">}}
+{{<download href="/download/cordova_plugin_sample.zip" title="Download Sample Cordova Plugin">}}
 
 
-When you extract the package, you will see a directory structure as
-follows:
+When you extract the package, you will see the following files and folders:
 
 {{<figure src="/images/monaca_ide/manual/dependencies/custom_cordova_plugin/1.png">}}
 
@@ -115,8 +114,7 @@ module.exports = helloWorld;
 {{</highlight>}}
 
 For more details about how to write Cordova callback function, please
-refer to [Plugin Development
-Guide](http://cordova.apache.org/docs/en/latest/guide/hybrid/plugins/index.html).
+refer to [Plugin Development Guide](http://cordova.apache.org/docs/en/latest/guide/hybrid/plugins/index.html).
 
 ### iOS and Android Native Code
 
@@ -134,18 +132,17 @@ Here are the guides about native code development.
 
 ##  Import Custom Cordova Plugin
 
-To import a custom Cordova plugin into your Monaca project, please do as
-follows:
+To import a custom Cordova plugin, please do as follows:
 
-1.  Compress your custom Cordov plugin files as a zip file.
-2.  From Monaca Cloud IDE, go to {{<menu menu1="Config" menu2="Manage Cordova plugin">}}.
-3.  Then, `Manage Cordova Plugins` page will be shown. Click on {{<guilabel name="Import Cordova Plugin">}} button.
+1.  From Monaca Cloud IDE, go to {{<menu menu1="Configure" menu2="Cordova plugin Settings">}}.
 
-    {{<img src="/images/monaca_ide/manual/dependencies/custom_cordova_plugin/2.png">}}
+2.  The Cordova Plugins page will be shown. Click {{<guilabel name="Import Cordova Plugin">}} button.
 
-4.  Then, browse your plugin file (zip file) and click {{<guilabel name="Import">}}.
+    {{<img src="/images/monaca_ide/manual/dependencies/custom_cordova_plugin/import.png">}}
 
-    {{<img src="/images/monaca_ide/manual/dependencies/custom_cordova_plugin/3.png">}}
+3.  Then, browse your plugin file (zip file) and click {{<guilabel name="OK">}}.
+
+    {{<img src="/images/monaca_ide/manual/dependencies/custom_cordova_plugin/upload.png">}}
 
 ##  Monaca Debugger with Custom Cordova Plugin
 
@@ -164,8 +161,8 @@ Cordova plugins. Please refer to the following links on how to build
 custom built debugger and the differences between the standard and
 custom built debugger:
 
-- [Monaca Debugger for iOS](/en/products_guide/debugger/installation/debugger_ios/)
-- [Monaca Debugger for Android](/en/products_guide/debugger/installation/debugger_android/)
+- [Custom Monaca Debugger for iOS](/en/products_guide/debugger/installation/debugger_ios/#how-to-build-custom-monaca-debugger)
+- [Custom Monaca Debugger for Android](/en/products_guide/debugger/installation/debugger_android/#build-and-install-custom-monaca-debugger)
 
 {{<note>}}
     Please make sure to import the custom or external third-party Cordova plugins before building the custom built debugger.
@@ -196,12 +193,12 @@ custom Cordova Plugin. Please contact our support team
     {{</highlight>}}
 
 4.  Now, run the project in the standard Monaca Debugger. You will see
-    that the message dialog will not be shown.
-5.  Build a custom built Monaca Debugger. Please refer to the following
-    links on how to build a custom built Monaca Debugger:
+    that the message dialog will not be shown because the custom Cordova plugin is not existed in the standard debugger. 
 
-    - [How to Build Custom Monaca Debugger for iOS]({{<ref "debugger_ios.en.md#how-to-build-custom-monaca-debugger">}})
-    - [Build and Install Custom Monaca Debugger for Android]({{<ref "debugger_android.en.md#build-and-install-custom-monaca-debugger">}})
+5.  Build a custom built Monaca Debugger. Please refer to the following links on how to build a custom built Monaca Debugger:
+
+    - [Custom Monaca Debugger for iOS](/en/products_guide/debugger/installation/debugger_ios/#how-to-build-custom-monaca-debugger)
+    - [Custom Monaca Debugger for Android](/en/products_guide/debugger/installation/debugger_android/#build-and-install-custom-monaca-debugger)
 
 6.  Install the custom built Monaca Debugger.
 7.  Open the debugger and check the debuggers' information by clicking

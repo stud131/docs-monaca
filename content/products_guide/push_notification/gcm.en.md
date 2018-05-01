@@ -49,13 +49,15 @@ follows:
 
 ## Step 2: Configure FCM Parameters in Monaca
 
-1.  From the Backend Panel in Monaca Cloud IDE, go to {{<menu menu1="Push Notification" menu2="Backend Settings" menu3="Push Configuration">}}.
+1.  From Monaca Backend window, go to {{<guilabel name="Push Notification">}}.
 
-    {{<img src="/images/backend/gcm/5.png">}}
+2.  On the top-right-corner, click on `Gear` icon and select {{<guilabel name="Push Configuration">}}.
+    
+    {{<img src="/images/backend/gcm/settings.png">}}
 
-2.  Under `Android` section, input the `Sender ID` and `Server API Key` and
+3.  Under `Android` section, input the `Sender ID` and `Server API Key` and
     click on {{<guilabel name="Save">}}. Now, the Android push notification is enabled and
     ready to use.
 
-    {{<img src="/images/backend/gcm/6.png">}}
+    {{<img src="/images/backend/gcm/android_settings.png">}}
 

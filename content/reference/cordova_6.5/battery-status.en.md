@@ -30,7 +30,7 @@ cordova-plugin-battery-status
 Adding the Plugin
 ---------------------------
 
-In order to use this plugin, please [enable]({{<ref "cordova_plugin.en.md#add-import-cordova-plugins">}}) `Battery` plugin in Monaca Cloud IDE.
+In order to use this plugin, please [enable]({{<ref "cordova_plugin.en.md#import-cordova-plugins">}}) `Battery` plugin in Monaca Cloud IDE.
 
 API Reference
 -------------

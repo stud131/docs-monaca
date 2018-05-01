@@ -16,7 +16,7 @@ Monaca クラウドサービスでアプリのビルド ( ローカル環境用�
 1.  Monaca クラウド IDE のメニューから、{{<menu menu1="Build" menu2="ビルド履歴一覧">}}.
 2.  次のように、ビルド履歴が表示されます。
 
-    {{<img src="/images/monaca_ide/manual/build/history/1.png" width="600">}}
+    {{<img src="/images/monaca_ide/manual/build/history/history.png">}}
 
 3.  ビルド情報を削除する場合には、一覧上で対象のビルドの 削除
     ボタンをクリックします。いったん削除をしてしまうと、復旧できませんので、ご注意ください。また、ビルドしたアプリをダウンロードする場合には、一覧上で対象のビルドの

@@ -10,26 +10,26 @@ on.
 
 In order to add a JavaScript/CSS library, please do as follows:
 
-1.  From Monaca Cloud IDE, go to {{<menu menu1="Config" menu2="Manage JS/CSS Components">}}.
-2.  Then, `Add or Remove JS/CSS Components` page will be shown. You can see several libraries listed there. If you can't find the library you want, input the library's name in a search box to find it.
+1.  From Monaca Cloud IDE, go to {{<menu menu1="Configure" menu2="JS/CSS Component Settings">}}.
+2.  Then, `JS/CSS Components` page will be shown. You can see several libraries listed there. If you can't find the library you want, input the library's name in a search box to find it.
 
-    {{<img src="/images/monaca_ide/manual/dependencies/components/1.png">}}
+    {{<img src="/images/monaca_ide/manual/dependencies/components/components.png">}}
 
-3.  Assuming you are searching for Angular, a list of matched libraries will be shown. Click {{<guilabel name="Add">}} to include the library to your project.
+3.  Assuming you are searching for Angular, a list of matched libraries will be shown after clicking on {{<guilabel name="Search">}} button.
 
-    {{<img src="/images/monaca_ide/manual/dependencies/components/2.png">}}
+    {{<img src="/images/monaca_ide/manual/dependencies/components/search_component.png">}}
 
-4.  Then, you can choose which version of the library to include in your project.
+4. Click on {{<guilabel name="Add">}} button to include the library you prefer. Then, you can choose which version of the library to include in your project.
 
-    {{<img src="/images/monaca_ide/manual/dependencies/components/3.png">}}
+    {{<img src="/images/monaca_ide/manual/dependencies/components/select_version.png" width="500px">}}>}}
 
-5.  Next, select which files of the library you want to include and click {{<guilabel name="OK">}}.
+5.  Next, select which files of the library you want to include and click {{<guilabel name="Save">}}.
 
-    {{<img src="/images/monaca_ide/manual/dependencies/components/4.png">}}
+    {{<img src="/images/monaca_ide/manual/dependencies/components/select_file.png" width="500px">}}
 
-6.  After that, you will find your newly added library in the list. Click on {{<guilabel name="Configure">}} button when you want to change the library's version and selected files.
+6.  After that, you will find your newly added library in the list. Click on {{<guilabel name="Configure">}} button when you want to change the library's version and selected file(s).
 
-    {{<img src="/images/monaca_ide/manual/dependencies/components/5.png">}}
+    {{<img src="/images/monaca_ide/manual/dependencies/components/configure_component.png">}}
 
 When a library is added, its files are added into `www/components`
 folder. The following JavaScript and CSS files will also be
@@ -37,11 +37,11 @@ automatically updated. These files will always be presented regardless
 of which libraries are added into your project.
 
 | File Name | Description |
-|------------------|-------------|
-| `components/loader.js` | 	A JavaScript file to load for all active libraries |
-| `components/loader.css` | 	A Style sheet file for all active libraries |
+|-----------|-------------|
+| `loader.js` | 	A JavaScript file used by Monaca to load JavaScript libraries |
+| `loader.css` | 	A style sheet file used by Monaca to load CSS libraries |
 
-{{<figure src="/images/monaca_ide/manual/dependencies/components/6.png">}}
+{{<figure src="/images/monaca_ide/manual/dependencies/components/component_files.png">}}
 
 Therefore, libraries can be loaded by simply referencing the two files
 (as shown above) in the HMTL file. More specifically, all you need to do
@@ -53,6 +53,10 @@ file.
 <link rel="stylesheet" href="components/loader.css">
 {{</highlight>}}
 
+
+{{<note>}}
+    <code>loader.js</code> file also loads <code>cordova.js</code> file.
+{{</note>}}
 
 {{<note>}}
 If you would like to use images within your libraries, you can directly load those image files from the <code>components</code> folder.

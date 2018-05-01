@@ -23,10 +23,9 @@ application is uninstalled, saved data will also be deleted.
 
 # Adding the Plugin in Monaca Cloud IDE
 
-1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Config" menu2="Manage Cordova Plugins">}}.
+1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="Cordova Plugin Settings">}}.
 
-2.  Click {{<guilabel name="Enable">}} button of the `SecureStorage` to add it into
-    your project.
+2.  Under *Available Plugins* section, hover over the the `SecureStorage` plugin and click {{<guilabel name="Enable">}} button.
 
     {{<img src="/images/reference/power_plugins/secure_storage/1.png">}}
 

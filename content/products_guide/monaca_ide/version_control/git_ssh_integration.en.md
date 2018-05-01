@@ -23,7 +23,6 @@ Prerequisites
 In order to use version control in Monaca Cloud IDE, you will need:
 
 -   an account from any Git services with SSH support
--   a [Monaca](https://monaca.mobi/en/register/start) account
 
 Setup
 -----
@@ -56,7 +55,7 @@ your Git services' documentation for support.
 
 4.  Then, click on {{<guilabel name="Add SSH key">}} button.
 
-Connecting Existing Monaca Project to New Git Repository
+Connecting a Monaca Project to New Git Repository
 --------------------------------------------------------
 
 ### Step 1: Creating a New Empty Repository
@@ -76,7 +75,7 @@ are creating a new repository in GitHub as follows:
 
 1.  From Monaca Dashboard, open a project you want to connect to a
     repository.
-2.  From Monaca Cloud IDE menu, go to {{<menu menu1="Version Control" menu2="Configure">}}.
+2.  From Monaca Cloud IDE menu, go to {{<menu menu1="Project" menu2="VCS Configure">}}.
 3.  Select the `Git SSH` option as shown below:
 
     {{<img src="/images/monaca_ide/manual/version_control/16.png" width="500">}}
@@ -92,16 +91,15 @@ are creating a new repository in GitHub as follows:
 
 5.  Click on {{<guilabel name="Initialize">}} button.
 6.  Your project is then being uploaded to your new repository. By
-    default, your working branch will be configured as master. If you
-    want to switch to another working branch, please go to Version
-    Control Configuration page ({{<menu menu1="Version Control" menu2="Configure">}}).
+    default, your working branch will be configured as `master`. If you
+    want to switch to another working branch, please go to {{<menu menu1="Project" menu2="VCS Configure">}}.
 
-Import Existing Project from Git Repository into Monaca
+Importing a Project from Git Repository into Monaca
 -------------------------------------------------------
 
 1.  Log into [Monaca Cloud IDE](https://monaca.mobi/en/login) with your
     Monaca account.
-2.  From Dashboard, go to {{<guilabel name="Import Project">}}.
+2.  From Dashboard, go to {{<guilabel name="Import">}}.
 3.  In Import Project dialog, fill in the necessary information and
     choose `Import from Git Repository`. Then, input the
     `Repository URL` and click on {{<guilabel name="Import">}} button.
@@ -109,9 +107,9 @@ Import Existing Project from Git Repository into Monaca
     {{<img src="/images/monaca_ide/manual/version_control/21.png" width="500">}}
 
 4.  If the import is successful, the new project will be added to Monaca
-    Dashboard. By default, master branch will be applied to the imported
-    project. You can switch the current working branch in the Version
-    Control Configuration page ({{<menu menu1="Version Control" menu2="Configure">}}).
+    Dashboard. By
+    default, your working branch will be configured as `master`. If you
+    want to switch to another working branch, please go to {{<menu menu1="Project" menu2="VCS Configure">}}.
 
 Working with Remotes
 --------------------
@@ -129,7 +127,7 @@ can still perform some basic Git commands directly from the IDE.
 If you have more than one branch and want to switch the current working
 branch, please do as follows:
 
-1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Version Control" menu2="Configure">}}.
+1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Project" menu2="VCS Configure">}}.
 2.  Choose the branch you want to switch to from current working branch,
     and click {{<guilabel name="Clear Cache & Save">}} button.
 
@@ -143,7 +141,7 @@ branch, please do as follows:
 
 If you are familiar with Git commands, retrieve changes from remotes
 here refers to `git pull` command. In order to retrieve the changes from
-remotes, from Monaca Cloud IDE menu, go to {{<menu menu1="Version Control" menu2="Pull">}}. If
+remotes, from Monaca Cloud IDE menu, go to {{<menu menu1="Project" menu2="Pull">}}. If
 there are changes in your remotes, you will receive those updates in
 your working branch.
 
@@ -157,11 +155,11 @@ After making changes in the current working branch, you are able to
 commit them back to your remote repository. To commit your changes,
 please do as follows:
 
-1.  From Monaca Cloud IDE menu, go to Version {{<menu menu1="Control" menu2="Commit">}}.
+1.  From Monaca Cloud IDE menu, go to Version {{<menu menu1="Project" menu2="Commit">}}.
 2.  Fill in your commit message and check files you want to commit.
     Then, click on {{<guilabel name="Commit">}} button.
 3.  Once you are ready to push those updates to the remote repository,
-    select {{<menu menu1="Version Control" menu2="Push">}}. Once it is successfully pushed,
+    select {{<menu menu1="Project" menu2="Push">}}. Once it is successfully pushed,
     your remotes will contain latest changes made in Monaca Cloud IDE.
 
 ### Show Remote Commit History
@@ -171,7 +169,7 @@ please do as follows:
 {{</note>}}
 
 In order to see full history of your previous commits in remote
-repository, go to {{<menu menu1="Version Control" menu2="Show Remote History">}}. You will be
+repository, go to {{<menu menu1="Project" menu2="Show Remote History">}}. You will be
 redirected to the remote Git service provider's website showing a commit
 history of your current branch.
 
@@ -179,5 +177,5 @@ history of your current branch.
 
 Every commit you made in your Monaca Cloud IDE is called Local Commit.
 You are able to view your local commit history through
-{{<menu menu1="Version Control" menu2="Show Commit History">}}. To view the changes in each
+{{<menu menu1="Project" menu2="Show Commit History">}}. To view the changes in each
 commit, click on the commit on the left panel.

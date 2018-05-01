@@ -9,9 +9,7 @@ distribution through the App Store.
 
 ## Prerequisite
 
-You are required to have a [Team Agent
-account](https://developer.apple.com/support/roles/) under [iOS
-Developer Program](https://developer.apple.com/).
+You are required to have a [Team Agent account](https://developer.apple.com/support/roles/) under [Apple Developer Program](https://developer.apple.com/programs/ios/).
 
 ##  Registering the App
 
@@ -71,13 +69,7 @@ submission. However, since August 2012, a Mac environment has become
 necessary as the Application Loader is needed to upload the apps to
 iTunes Connect and it is only compatible with Mac.
 
-Fortunately, Monaca allows you to upload your app to iTunes Connect
-right from Monaca IDE. In other words, you don't need a Mac to upload
-your apps anymore.
-
-{{<note>}}
-    For more information on how to use this upload feature, please refer to {{<link href="../../appstore/app_submission" title="Monaca Upload Feature">}}.
-{{</note>}}
+Fortunately, Monaca offers [iOS App Upload feature](../../appstore/app_submission) which allows you to upload your app to iTunes Connect right from Monaca IDE without using a Mac. 
 
 Alternatively, you can use the Application Loader as described below:
 

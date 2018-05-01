@@ -1,15 +1,15 @@
 ---
-title: Monaca Upload Feature
+title: iOS App Upload Feature
 weight: 20
 aliases: /en/monaca_ide/manual/deploy/appstore/itunes_connect
 ---
 
 {{<note>}}
-    In order to use this upload feature, you are required to subscribe to a valid plan. Please refer to {{<link href="https://monaca.mobi/en/pricing" title="Monaca Subscription Plans">}}.
+    In order to use iOS App Upload feature, you are required to subscribe to a valid plan. Please refer to {{<link href="https://monaca.mobi/en/pricing" title="Monaca Subscription Plans">}}.
 {{</note>}}
 
 {{<note>}}
-    For shared projects, only project owner can use Monaca Upload Feature.
+    For shared projects, only project owner can use iOS App Upload feature.
 {{</note>}}
 
 {{<warning>}}
@@ -22,10 +22,10 @@ IDE. In order to do this, please do as follows:
 1.  Create a release build version of your app through Monaca. Please
     refer to [Building an iOS App](../../../build/ios/build_ios).
 2.  When you successfully build a release version of your app, the
-    following screen will appear. Click on the `Upload` icon as shown in
+    following screen will appear. Click on the `AppStore` icon as shown in
     the screen below.
 
-    {{<img src="/images/monaca_ide/manual/deploy/app_submission/1.png" width="500">}}
+    {{<img src="/images/monaca_ide/manual/deploy/app_submission/upload.png">}}
 
 3.  Then, the App Upload window will appear. Click {{<guilabel name="Next">}}.
 

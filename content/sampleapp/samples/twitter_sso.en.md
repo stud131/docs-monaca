@@ -75,7 +75,8 @@ the user’s basic information will be displayed.
 Before starting to use this plugin, you are required to input the
 `FABRIC_KEY` value within the plugin's configuration as follows:
 
-1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Config" menu2="Manage Cordova Plugins">}}.
+1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="Cordova Plugin Settings">}}.
+
 2.  Under the *Enabled Plugins* section, hover over `twitter-connect-plugin` and click {{<guilabel name="Configure">}} button.
 
     {{<img src="/images/sampleapp/twitter_sso/twitter_plugin_config.png">}}

@@ -39,9 +39,9 @@ The plugin for Cordova 6.2 projects has two additional features:
 
 ### Adding the Plugin in Monaca Cloud IDE
 
-1.  From Monaca Cloud IDE menu, go to {{<menu menu1="File" menu2="Manage Cordova Plugins">}}
-    or {{<menu menu1="Config" menu2="Manage Cordova Plugins">}}.
-2.  Click {{<guilabel name="Enable">}} button of the `Encrypt` plugin.
+1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="Cordova Plugin Settings">}}.
+
+2.  Under *Available Plugins* section, hover over the the `Encrypt` plugin and click {{<guilabel name="Enable">}} button.
 
     {{<img src="/images/reference/power_plugins/html5_resource_encryption/5.png">}}
 
@@ -142,9 +142,9 @@ shown in the screenshot below:
 
 ### Enabling the Plugin in Monaca Cloud IDE
 
-1.  From Monaca Cloud IDE menu, go to {{<menu menu1="File" menu2="Manage Cordova Plugins">}}
-    or {{<menu menu1="Config" menu2="Manage Cordova Plugins">}}.
-2.  Click {{<guilabel name="Enable">}} button of the `Encrypt` plugin.
+1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="Cordova Plugin Settings">}}.
+
+2.  Under *Available Plugins* section, hover over the the `Encrypt` plugin and click {{<guilabel name="Enable">}} button.
 
     {{<img src="/images/reference/power_plugins/html5_resource_encryption/1.png">}}
 
