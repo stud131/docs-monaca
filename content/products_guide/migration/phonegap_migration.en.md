@@ -128,49 +128,9 @@ Please use this `<script>` tag instead:
 <script src="components/loader.js"></script>
 {{</highlight>}}
 
-#### 2. Splash Screen and Icon Files
+#### 2. Cordova Plugins Management
 
-After importing the project, the content of your `config.xml` file will be replaced with Monaca's default settings. Therefore, all of your configurations such as splash screens, icons and plugins will be overrided. 
-
-If you want to keep using the same splash screen and icon files originally used in your project, please do as follows:
-
-1. Open the `config.xml` file.
-
-2. You can see that all splash screen and icon files are pointed to the newly created `res` folder in the root folder. You can change them to your original files insides `www/res` folder. For example, here is the current icon definition for Android in `config.xml` file:
-
-    {{<highlight xml>}}
-...
-<platform name="android">
-    <icon src="/res/android/icon/ldpi.png" density="ldpi"/>
-    <icon src="/res/android/icon/mdpi.png" density="mdpi"/>
-    <icon src="/res/android/icon/hdpi.png" density="hdpi"/>
-    <icon src="/res/android/icon/xhdpi.png" density="xhdpi"/>
-    <icon src="/res/android/icon/xxhdpi.png" density="xxhdpi"/>
-    <icon src="/res/android/icon/xxxhdpi.png" density="xxxhdpi"/>
-    ...
-</platform>
-...{{</highlight>}}
-
-    To change it to your original icon definition, the above configuration should be replaced as follows:
-
-    {{<highlight xml>}}
-...
-<platform name="android">
-    <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
-    <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
-    <icon density="hdpi" src="www/res/icon/android/drawable-hdpi-icon.png" />
-    <icon density="xhdpi" src="www/res/icon/android/drawable-xhdpi-icon.png" />
-    <icon density="xxhdpi" src="www/res/icon/android/drawable-xxhdpi-icon.png" />
-    <icon density="xxxhdpi" src="www/res/icon/android/drawable-xxxhdpi-icon.png" />
-    ...
-</platform>
-...{{</highlight>}}
-
-3. Make changes in the same way for splash screen files. After you are done, save the changes. Now, your original plash screen and icon files will be used. 
-
-#### 3. Cordova Plugins Management
-
-After importing the project, a `package.json` file is created in the root folder. This file is used to manage Cordova plugins in Monaca project. Since the content of your `config.xml` file is replaced, all of Cordova plugins configurations (if any) are removed. You will need to add them back one by one as follows:
+After importing the project, a `package.json` file is created in the root folder. This file is used to manage Cordova plugins in Monaca project. You will need to add them back one by one as follows:
 
 1. From Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="Cordova Plugin Settings">}}.
 
