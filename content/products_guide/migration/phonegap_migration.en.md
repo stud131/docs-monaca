@@ -84,7 +84,7 @@ For more information on build environment for lower Cordova version, pleaser ref
 
 [Sign in with PhoneGap ID]
 
-### Importing PhoneGap project into Monaca Cloud IDE
+### Step 1: Importing PhoneGap project into Monaca Cloud IDE
 
 1. Zip your PhoneGap project. 
 
@@ -108,26 +108,15 @@ For more information on build environment for lower Cordova version, pleaser ref
         The views or operations in the Preview window might not work properly when Ajax requests or Cordova APIs are used. Read more on {{<link title="Live Preview Limitations" href="https://docs.monaca.io/en/products_guide/monaca_ide/overview/#live-preivew-limitations">}}. In this case, you can test/debug your project with Monaca Debugger (we will talk about this in the next section).
     {{</note>}}
 
-### Adjusting the Changes
+### Step 2: Adjusting the Changes
 
 As mentioned in [File/Folder structure](#file-folder-structure), your project's file/folder will be changes after importing into Monaca. In this section, we will explain you about the changes and how you can adjust them to your original configurations.
 
-After importing here are the changes that occurred in your project:
+#### 1. Including `cordova.js` File with Monaca
 
-- a new `res` folder is added in the root folder. This new `res` folder stores default splash screen and icon files used in Monaca project.
+After importing the project, a new `components` folder is added in `www` folder. This folder is used to store JS/CSS libraries which you can add using [JS/CSS Components page]({{ref "components.en.md"}}). `components/loader.js` and `components/loader.css` file are used to load the added JavaScript and CSS libraries, respectively. 
 
-- a new `components` folder is added in `www` folder. This folder is used to store JS/CSS libraries which you can add using [JS/CSS Components page]({{ref "components.en.md"}}). `components/loader.js` and `components/loader.css` file are used to load the added JavaScript and CSS libraries, respectively. 
-
-- a `package.json` file is created in the root folder. This file is used to manage Cordova plugins in Monaca project.
-
-- the content of your `config.xml` file will be replaced with Monaca's default settings. Therefore, all of your configurations such as splash screens, icons and plugins will be overrided. 
-
-It seems like there are many changes and some of your configurations are lost, right? Don't panic. It is okay. We will help you to adjust these changes so you can have all of your configurations again. 
-
-
-#### Including `cordova.js` File with Monaca
-
-In Monaca, `components/loader.js` is not only used to load JavaScript libraries but also `cordova.js` file. For this reason, instead of having the following `<script>` tag:
+`components/loader.js` is not only used to load JavaScript libraries but also `cordova.js` file. For this reason, instead of having the following `<script>` tag:
 
 {{<highlight html>}}
 <script type="text/javascript" src="cordova.js"></script>
@@ -139,7 +128,9 @@ Please use this `<script>` tag instead:
 <script src="components/loader.js"></script>
 {{</highlight>}}
 
-#### Splash Screen and Icon Files
+#### 2. Splash Screen and Icon Files
+
+After importing the project, the content of your `config.xml` file will be replaced with Monaca's default settings. Therefore, all of your configurations such as splash screens, icons and plugins will be overrided. 
 
 If you want to keep using the same splash screen and icon files originally used in your project, please do as follows:
 
@@ -177,9 +168,9 @@ If you want to keep using the same splash screen and icon files originally used 
 
 3. Make changes in the same way for splash screen files. After you are done, save the changes. Now, your original plash screen and icon files will be used. 
 
-#### Cordova Plugins
+#### 3. Cordova Plugins Management
 
-Since the content of your `config.xml` file is replaced, all of Cordova plugins configurations (if any) are removed. You will need to add them back one by one as follows:
+After importing the project, a `package.json` file is created in the root folder. This file is used to manage Cordova plugins in Monaca project. Since the content of your `config.xml` file is replaced, all of Cordova plugins configurations (if any) are removed. You will need to add them back one by one as follows:
 
 1. From Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="Cordova Plugin Settings">}}.
 
