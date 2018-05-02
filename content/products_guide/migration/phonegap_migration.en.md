@@ -82,7 +82,7 @@ For more information on build environment for lower Cordova version, pleaser ref
 
 ### Before Start Migrating
 
-[Sign in with PhoneGap ID]
+[Create Monaca Account with PhoneGap ID](https://monaca.mobi/en/oauth/phonegap/authorize)
 
 ### Step 1: Importing PhoneGap project into Monaca Cloud IDE
 
