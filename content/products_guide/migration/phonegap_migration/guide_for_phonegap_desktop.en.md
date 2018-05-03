@@ -47,6 +47,6 @@ That's it! With just that you've succesfully built the migrated project with Mon
 
 To learn more about Monaca, please refer to the following materials:
 
-- [Monaca Localkit tutorials](/en/tutorials/monaca_localkit/)
-- [Monaca Localkit manual](/en/products_guide/monaca_localkit/)
+- [Monaca Localkit Tutorial](/en/tutorials/monaca_localkit/)
+- [Monaca Localkit Manual](/en/products_guide/monaca_localkit/)
 - [Sample Apps](/en/sampleapp/samples/)
