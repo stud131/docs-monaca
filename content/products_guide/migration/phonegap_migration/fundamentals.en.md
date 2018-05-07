@@ -47,7 +47,9 @@ Project
     └── index.html
 {{</highlight>}}
 
-The main differences are `res` folder location and `package.json` file. In Monaca project, `res` folder is stored in the root folder. Moreover, `package.json` file is required and used for managing Cordova plugins. 
+The main differences are `res` folder location and `package.json` file.   
+In Monaca project, the default `res` folder is stored in the root folder. But your project's config.xml attributes `src` is set correctly, the default `res` folder is not used.   
+Moreover, `package.json` file is required and used for managing Cordova plugins. 
 
 Because of these differences, when importing a PhoneGap project into Monaca, some files and folders will be changed but don't worry. We will help you adjusting these changes as easy as possible. 
 
@@ -104,6 +106,13 @@ Please note that `loader.js` file is also loaded `cordova.js` file. Therefore, i
 {{<highlight html>}}
 <script src="cordova.js"></script>
 {{</highlight>}}
+
+### Installed Plugins are not displayed
+
+In Monaca, Plugins are managed by `package.json`. 
+If plugin informations are defined in config.xml, it is necessary to add it again.
+
+[Import Cordova Plugins](/en/products_guide/monaca_ide/dependencies/cordova_plugin/#add-import-cordova-plugins)
 
 ## Where to go from here
 
