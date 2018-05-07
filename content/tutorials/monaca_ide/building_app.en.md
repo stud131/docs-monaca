@@ -15,10 +15,6 @@ platforms, please refer to [Build](/en/products_guide/monaca_ide/build).
 
 ## Building a Monaca App for iOS
 
-{{<note>}}
-Starting from April 2018, Apple {{<link title="announces" href="https://developer.apple.com/ios/submit/">}} that all new iOS apps submitted to the App Store must be built with the iOS 11 SDK. All new apps for iPhone, including universal apps, must support the Super Retina display of iPhone X. For this reason, in order to publish Monaca apps to the AppStore, you must use Cordova 7.1 or higher in your projects. 
-{{</note>}}
-
 This section will cover an instruction of how to create a Debug Build
 version of your app for iOS which will be installed on the development
 device. For more information about other types of build, please refer to [Types of Build](/en/products_guide/monaca_ide/build/ios/build_ios/#types-of-build).
