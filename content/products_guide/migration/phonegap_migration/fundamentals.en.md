@@ -11,8 +11,7 @@ In this page, we will demonstrate a quick and easy steps to migrate a PhoneGap p
 
 File and folder structure of Monaca and PhoneGap project are quite different. Please see the following examples of PhoneGap and Monaca projects:
 
-#### PhoneGap
-
+##### [PhoneGap]
 {{<highlight javascript>}}
 Project
 ├── config.xml
@@ -31,7 +30,7 @@ Project
     └── spec.html
 {{</highlight>}}
 
-#### Monaca
+##### [Monaca]
 
 {{<highlight javascript>}}
 Project
@@ -76,11 +75,6 @@ Build environment for Cordova 7.1:
 - Xcode: `9`
 
 For more information on build environment for lower Cordova version, pleaser refer to [Build Environment](/en/environment/).
-
-
-## Migration Guides
-
-
 
 ## Remarks
 
