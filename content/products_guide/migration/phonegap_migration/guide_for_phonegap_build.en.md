@@ -3,14 +3,14 @@ title: Guide for PhoneGap Build Users
 weight: 20
 ---
 
-In this page, we will demonstrate a quick and easy steps to migrate a PhoneGap project into Monaca. After finish this guide, you would be able to run, test/debug and build an app from your PhoneGap project using Monaca! Let's get started!
+In this page, we will demonstrate a quick and easy steps to migrate a PhoneGap project into Monaca Cloud IDE. After finish this guide, you would be able to run, test/debug and build an app from your PhoneGap project using Monaca! Let's get started!
 
 
-## Before Start Migrating
+## Prerequisite
 
-1. [Differences Between PhoneGap & Monaca Project](/en/products_guide/migration/phonegap_migration/fundamentals/)  
+Before starting the migration process, please make sure to read about the [Migration Concept](/en/products_guide/migration/phonegap_migration/introduction/) in order to have a seamless migration.   
 
-2. [Create Monaca Account with PhoneGap ID](/en/oauth/phonegap/authorize)
+It is also possible to create a Monaca account with PhoneGap ID. Please go to [sign in with PhoneGap ID](/en/oauth/phonegap/authorize)
 
 ## Importing PhoneGap project into Monaca Cloud IDE
 

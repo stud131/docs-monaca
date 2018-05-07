@@ -1,9 +1,9 @@
 ---
-title: Fundamentals of Migration
-weight: 20
+title: Migration Concept
+weight: 10
 ---
 
-In this page, we will demonstrate a quick and easy steps to migrate a PhoneGap project into Monaca. After finish this guide, you would be able to run, test/debug and build an app from your PhoneGap project using Monaca! Let's get started!
+Before starting to migrate your PhoneGap projects into Monaca, there are some differences and remarks you should be aware of. Please read them through in order to have a seamless migration. 
 
 ## Differences between PhoneGap & Monaca project
 
@@ -78,6 +78,10 @@ For more information on build environment for lower Cordova version, pleaser ref
 
 When migrating a project into Monaca, there are a few things you should be aware of such as:
 
+### When Installed Plugins are disappeared
+
+In Monaca, Cordova plugins are managed by `package.json` file. If your plugin information is defined in `config.xml` file, you will need to import them again into Monaca. Please refer to [Import Cordova Plugins](/en/products_guide/monaca_ide/dependencies/cordova_plugin/#import-cordova-plugins).
+
 ### When using third-party Cordova plugins
 
 Store-version Monaca Debugger (found in Google play or AppStore) only includes [Core Cordova plugins](/en/reference/cordova_6.5/). If your project contains any third-party Cordova plugins besides the Core Cordova plugins, you will need to build custom debugger to test this kind of project. Custom debugger will only include the plugins used in the project. Please refer to:
@@ -87,7 +91,7 @@ Store-version Monaca Debugger (found in Google play or AppStore) only includes [
 
 ### When using JS/CSS Component page
 
-In Monaca Cloud IDE, there is a GUI page for you to include CSS/JavaScript libraries. You can go there by going to {{<menu menu1="Config" menu2="Manage JS/CSS Components">}}. Then, the following page will appear. 
+In Monaca Cloud IDE, there is a GUI page for you to include CSS/JavaScript libraries. You can go there by going to {{<menu menu1="Configure" menu2="JS/CSS Component Settings">}}. Then, the following page will appear. 
 
 {{<img src="/images/migration/phonegap/13.png">}}
 
@@ -107,16 +111,7 @@ Please note that `loader.js` file is also loaded `cordova.js` file. Therefore, i
 <script src="cordova.js"></script>
 {{</highlight>}}
 
-### Installed Plugins are not displayed
-
-In Monaca, Plugins are managed by `package.json`. 
-If plugin informations are defined in config.xml, it is necessary to add it again.
-
-[Import Cordova Plugins](/en/products_guide/monaca_ide/dependencies/cordova_plugin/#add-import-cordova-plugins)
-
-## Where to go from here
-
-To learn more about Monaca, please refer to the following materials:
+**See Also:**
 
 - [Guide for PhoneGap Build Users](/en/products_guide/migration/phonegap_migration/guide_for_phonegap_build/)
 - [Guide for PhoneGap CLI Users](/en/products_guide/migration/phonegap_migration/guide_for_phonegap_cli/)
