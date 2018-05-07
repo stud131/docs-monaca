@@ -25,10 +25,21 @@ In this page, we will demonstrate a quick and easy steps to migrate a PhoneGap p
 
 ### Import and Build PhoneGap Project
 
-1. Move to your PhoneGap project directory, upload it to Monaca Cloud.
+#### Use Only CLI
+1. Move to your PhoneGap project directory.
 {{<highlight js>}}
   $ cd <project dir>
-  $ monaca upload
+{{</highlight>}}
+
+2. Start Android Debug Build  
+{{<highlight js>}}
+  $ monaca remote build android --build-type=debug
+{{</highlight>}}
+
+#### Use CLI and GUI
+1. Move to your PhoneGap project directory.
+{{<highlight js>}}
+  $ cd <project dir>
 {{</highlight>}}
 
 2. Start build
@@ -36,7 +47,7 @@ In this page, we will demonstrate a quick and easy steps to migrate a PhoneGap p
   $ monaca remote build --browser
 {{</highlight>}}
 
-3. The debug build is selected by default. Click {{<guilabel name="Start Build">}}. 
+2. The debug build is selected by default. Click {{<guilabel name="Start Build">}}. 
 
 	{{<img src="/images/migration/phonegap/cli_remote_build.png" width="400">}}
 
