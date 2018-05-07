@@ -18,7 +18,7 @@ In this page, we will demonstrate a quick and easy steps to migrate a PhoneGap p
   $ npm install -g monaca
 {{</highlight>}}
 
-4. Login new account
+4. Login new Monaca account
 {{<highlight js>}}
   $ monaca login
 {{</highlight>}}
@@ -35,6 +35,10 @@ In this page, we will demonstrate a quick and easy steps to migrate a PhoneGap p
 {{<highlight js>}}
   $ monaca remote build --browser
 {{</highlight>}}
+
+3. The debug build is selected by default. Click {{<guilabel name="Start Build">}}. 
+
+	{{<img src="/images/migration/phonegap/cli_remote_build.png" width="400">}}
 
 
 ## Where to go from here
