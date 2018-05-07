@@ -66,13 +66,9 @@ Before getting started with the migration, you may want to know about the suppor
 
 All newly created projects in Monaca will be using the latest supported Cordova version (currently, <b>Cordova 7.1</b>) by default. If you want to use a lower version, please [contact us](https://monaca.io/service/index.html).
 
-<br />
-Build environment for Cordova 7.1:
-
-- Cordova Android platform: `6.4.0` (API level 26)
-- Gradle version: `4.3.1`
-- Cordova iOS platform: `4.5.4` 
-- Xcode: `9`
+|Monaca |Android platform|iOS platform|Windows platform|
+|:-:|:-:|:-:|:-:|
+| **cli-7.1.0** |**6.4.0** |**4.5.4** |**5.0.0**|
 
 For more information on build environment for lower Cordova version, pleaser refer to [Build Environment](/en/environment/).
 
