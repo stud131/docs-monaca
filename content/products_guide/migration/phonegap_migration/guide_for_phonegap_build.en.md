@@ -8,9 +8,9 @@ In this page, we will demonstrate a quick and easy steps to migrate a PhoneGap p
 
 ## Prerequisite
 
-Before starting the migration process, please make sure to read about the [Migration Concept](/en/products_guide/migration/phonegap_migration/introduction/) in order to have a seamless migration.   
+1. Before starting the migration process, please make sure to read about the [Migration Concept](/en/products_guide/migration/phonegap_migration/introduction/) in order to have a seamless migration.   
 
-It is also possible to create a Monaca account with PhoneGap ID. Please go to [sign in with PhoneGap ID](/en/oauth/phonegap/authorize)
+2. If you want to create a Monaca account with PhoneGap ID, please go to [sign in with PhoneGap ID](/en/oauth/phonegap/authorize)
 
 ## Importing PhoneGap project into Monaca Cloud IDE
 
