@@ -12,10 +12,9 @@ This plugin is available only to Android platform.
 
 ## Enable Plugin in Monaca
 
-1.  From the IDE menu, go to {{<menu menu1="Config" menu2="Manage Cordova Plugins">}}.
+1.  From the IDE menu, go to {{<menu menu1="Configure" menu2="Cordova Plugin Settings">}}.
 
-2.  Click {{<guilabel name="Enable">}} button of the `Share` plugin to add it into your
-    project.
+2.  Under *Available Plugins* section, hover over the the `Share` plugin and click {{<guilabel name="Enable">}} button.
 
     {{<img src="/images/reference/third_party_phonegap/share/1.png">}}
 

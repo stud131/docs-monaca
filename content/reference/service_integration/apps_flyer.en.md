@@ -27,10 +27,9 @@ required to have the following two information such as:
 
 ## Adding AppsFlyer to Monaca Project
 
-1.  For Monaca Cloud IDE, go to {{<menu menu1="Config" menu2="Service Integration">}} or go
-    to {{<menu menu1="Build Settings" menu2="Service Integration">}} for Monaca Localkit.
+1.  For Monaca Cloud IDE, go to {{<menu menu1="Configure" menu2="Service Integration Settings">}}.
 
-2.  Click {{<guilabel name="Details">}} button of *AppsFlyer* service.
+2.  Click on {{<guilabel name="Details">}} button of *AppsFlyer* service.
 
 3.  Then, click {{<guilabel name="Install">}} button to add it into your project.
 
@@ -39,7 +38,7 @@ required to have the following two information such as:
 4.  You will be asked to confirm the setup. Click {{<guilabel name="OK">}} to start the
     installation.
 
-## Using AppsFlyer with Cordova Version 6 or Higher
+## Using Cordova 6.2 or Higher
 
 ### Configuration
 
@@ -289,7 +288,7 @@ var handleOpenURL = function(url) {
 }
 {{</highlight>}}
 
-## Using AppsFlyer with Cordova Version Lower than 6
+## Using Cordova 5.2 or Lower
 
 ### Configuration
 
@@ -459,8 +458,8 @@ document.addEventListener('onInstallConversionDataLoaded', function(e){
 
 ## Removing AppsFlyer from Monaca
 
-1.  For Monaca Cloud IDE, go to {{<menu menu1="Config" menu2="Manage Cordova Plugins">}} or
-    go to {{<menu menu1="Build Settings" menu2="Cordova Plugins">}} for Monaca Localkit.
+1.  For Monaca Cloud IDE, go to {{<menu menu1="Configure" menu2="Cordova Plugin Settings">}}.
+
 2.  Under *Enabled Plugins* section, hover over *AppsFlyer* plugin and click {{<guilabel name="Disable">}} button.
 
     {{<img src="/images/reference/service_integration/apps_flyer/2.png">}}

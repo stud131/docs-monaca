@@ -18,10 +18,7 @@ please go [here](https://play.google.com/apps/publish/).
 
 ## Create a Release Build of the App
 
-Using Monaca Cloud IDE build feature, you can build a release version of
-your app and upload it to Google Play.
-
-Follow the steps in [Building for Android](../../build/build_android) to build a release build of the app. Then, download the built app (APK file).
+Create and download a release build version of your app through Monaca. Please refer to [Building for Android](../../build/build_android) to build a release build of the app. Then, download the built app (APK file).
 
 ## Register the Apps in Google Play
 
@@ -31,7 +28,7 @@ Follow the steps in [Building for Android](../../build/build_android) to build a
 
 3. Choose a default language and enter a title for your app. Then, click {{<guilabel name="CREATE">}}. Then, you will be forwarded to `Store listing` page.
 
-    {{<img src="/images/monaca_ide/manual/deploy/google_play/2.png">}}
+    {{<img src="/images/monaca_ide/manual/deploy/google_play/2.png" width="500px">}}
 
 4. In this page, you will need to fill in the following necessary information and click {{<guilabel name="SAVE DRAFT">}}.
 
@@ -77,7 +74,7 @@ In this section, we will start uploading the APK file and finalize the release i
 
 5. Review your app’s release information one more time and click on {{<guilabel name="START ROLLOUT TO PRODUCTION">}} button to submit your app to the Play Store. Please note that you can’t submit your app if you don’t configure your app properly. In other words, the {{<guilabel name="START ROLLOUT TO PRODUCTION">}} button is disable unless the required information is completed properly.
 
-    {{<img src="/images/monaca_ide/manual/deploy/google_play/9.png" width="600">}}
+    {{<img src="/images/monaca_ide/manual/deploy/google_play/9.png">}}
 
 See Also: 
 

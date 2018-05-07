@@ -26,10 +26,9 @@ project:
 
 ### Adding the Plugin in Monaca Cloud IDE
 
-1.  From Monaca Cloud IDE menu, go to {{<menu menu1="File" menu2="Manage Cordova Plugins">}}
-    or {{<menu menu1="Config" menu2="Manage Cordova Plugins">}}.
+1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="Cordova Plugin Settings">}}.
 
-2.  Under *Available Plugins* section, find `InAppUpdater` plugin. Hover it and click on {{<guilabel name="Enable">}} button.
+2.  Under *Available Plugins* section, hover over the the `InAppUpdater` plugin and click {{<guilabel name="Enable">}} button.
 
     {{<img src="/images/reference/power_plugins/inapp_updater/8.png">}}
 
@@ -732,8 +731,9 @@ monaca.InAppUpdater.autoUpdate( {
 
 ### Adding the Plugin in Monaca Cloud IDE
 
-1.  From Monaca Cloud IDE menu, go to {{<menu menu1="File" menu2="Manage Cordova Plugins">}} or {{<menu menu1="Config" menu2="Manage Cordova Plugins">}}.
-2.  Click {{<guilabel name="Enable">}} button of the `Monaca In-App Updater (Version 2.x.x)` to add it into your project.
+1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="Cordova Plugin Settings">}}.
+
+2.  Under *Available Plugins* section, hover over the the `InAppUpdater` plugin and click {{<guilabel name="Enable">}} button.
 
     {{<img src="/images/reference/power_plugins/inapp_updater/1.png">}}
 
@@ -805,8 +805,8 @@ update file is created.
 
 You can update the version of the update file by the following steps:
 
-1.  From Monaca Cloud IDE, go to {{<menu menu1="Config" menu2="iOS App Settings">}} for iOS
-    or go to {{<menu menu1="Config" menu2="Android App Settings">}} for Android.
+1.  From Monaca Cloud IDE, go to {{<menu menu1="Configure" menu2="App Settings for iOS">}} for iOS
+    or go to {{<menu menu1="Configure" menu2="App Settings for Android">}} for Android.
 
 2.  Enter the version number and click {{<guilabel name="Save">}} button.
 
@@ -814,13 +814,15 @@ You can update the version of the update file by the following steps:
 {{<figure src="/images/reference/power_plugins/inapp_updater/7.png" title="iOS">}}
 
 {{<note>}}
-The Android and iOS version do not have be the same.
+The Android and iOS versions do not have be the same.
 {{</note>}}
 
 After you are done configuring the app's information, you can start
 building the package file for each platform. Please do as follows:
 
-1.  Go to *iOS* or *Android* Build screen.
+1.  From Monaca Cloud IDE, go to {{<menu menu1="Build" menu2="Build App for iOS">}} for iOS
+    or {{<menu menu1="Build" menu2="Build App for Android">}} for Android.
+
 2.  Select {{<menu menu1="Build for Release" menu2="Create a package for In-App Updater">}}.
 
     {{<img src="/images/reference/power_plugins/inapp_updater/4.png">}}

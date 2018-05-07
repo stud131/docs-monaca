@@ -35,7 +35,7 @@ Portal after enrolling Apple Developer Program:
 
 ### Step 1: Configuring iOS App Settings
 
-1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Config" menu2="iOS App Settings...">}}.
+1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="App Settings for iOS">}}.
 
 2.  Fill in the necessary information of your app:
 
@@ -57,7 +57,7 @@ Portal after enrolling Apple Developer Program:
 
 ### Step 2: Configuring iOS Build Settings
 
-1. From Monaca Cloud IDE menu, go to {{<menu menu1="Config" menu2="iOS Build Settings...">}}.
+1. From Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="iOS Build Settings">}}.
 
 2. You can either create a new private key or [import an existing one](/en/products_guide/monaca_ide/build/ios/import_export/#step-2-import-private-key-and-certificate-into-monaca). For this tutorial, we will show how to create a new private key. Therefore, let's click on {{<guilabel name="Generate Key and CSR">}} button.
 
@@ -102,7 +102,7 @@ of build, please refer to [Types of Build](/en/products_guide/monaca_ide/build/b
 
 ### Step 1: Configuring Android App Settings
 
-1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Config" menu2="Android App Settings...">}}.
+1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="App Settings for Android">}}.
 
 2.  Fill in the necessary information of your app:
 
@@ -130,7 +130,7 @@ for code-sign an application.
 
 In order to configure Android KeyStore in Monaca, please do as follows:
 
-1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Config" menu2="Android KeyStore Settings...">}}.
+1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="Android KeyStore Settings">}}.
 2.  You will need to generate a new KeyStore if you haven't created
     one yet. The KeyStore can either be created or imported. In this
     tutorial, we assume that you need to create a new KeyStore.

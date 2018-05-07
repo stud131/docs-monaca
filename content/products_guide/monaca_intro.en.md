@@ -5,8 +5,6 @@ weight: 10
 
 ## What is Monaca?
 
-<img src="/images/monaca_intro/ide.png" data-action="zoom">
-
 Monaca is a development environment for smartphone and tablet applications provided by Asial Corporation. Monaca does not only provide you with a development environment at your fingertips but also allows anyone to be able to develop smartphone applications easier.
 
 Monaca makes HTML5 [hybrid mobile app](#characteristics-of-hybrid-apps) development with PhoneGap/Cordova simple and easy. Monaca is the most open hybrid app development platform avaiable and ready to be immediately plugged into your existing workflow and development environment. From Cloud IDE, CLI to debugger and remote online build, everything you need for your hybrid app development is here.

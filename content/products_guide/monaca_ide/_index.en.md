@@ -8,14 +8,10 @@ aliases:
 
 {{<figure src="/images/monaca_ide/manual/1.png">}}
 
-Monaca IDE comprises of the interface to work from the development of
-the project to the build consistently. Here, we will describe about
-screen structure, editor's shortcuts and project files management.
-
 - [Overview](overview)
 - [Changes in the New Cloud IDE](changes)
 - [Integrated Terminal](terminal)
-- [Code Editor](code_editor)
+- [Editor Shortcut](editor)
 - [Project Dependencies](dependencies)
 - [Version Control](version_control)
 - [Monaca CI](monaca_ci)

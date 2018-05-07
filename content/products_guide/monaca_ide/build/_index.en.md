@@ -4,7 +4,7 @@ weight: 70
 aliases: /en/monaca_ide/manual/build/
 ---
 
-*Build Environment*
+## Build Environment
 
 <table>
     <tr>

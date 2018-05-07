@@ -36,7 +36,7 @@ cordova-plugin-vibration
 Adding the Plugin in Monaca
 ---------------------------
 
-In order to use this plugin, please [enable]({{<ref "cordova_plugin.en.md#add-import-cordova-plugins">}})
+In order to use this plugin, please [enable]({{<ref "cordova_plugin.en.md#import-cordova-plugins">}})
 `Vibration` plugin in Monaca Cloud IDE.
 
 Supported Platforms

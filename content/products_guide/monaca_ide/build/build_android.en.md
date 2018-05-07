@@ -45,7 +45,7 @@ version. The differences between these types of build are as follows:
 
 ##  Step 1: Configure Android App
 
-1.  From the Monaca Cloud IDE menu, go to {{<menu menu1="Config" menu2="Android App Settings">}}.
+1.  From the Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="App Settings for Android">}}.
 2.  Fill in the necessary information of your app:
 
     - General settings:
@@ -132,7 +132,8 @@ Android app. In Monaca, you can either create a new keystore or import
 an existing one. In order to create a new keystore, please do as
 follows:
 
-1.  From the Monaca Cloud IDE menu, go to `Config` &rarr; `Android KeyStore Settings`.
+1.  From the Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="Android KeyStore Settings">}}.
+
 2.  Then, Manage KeyStore and Alias page will appear.
 
     {{<img src="/images/monaca_ide/manual/build/android/2.png">}}

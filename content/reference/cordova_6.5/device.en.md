@@ -30,7 +30,7 @@ cordova-plugin-device
 Adding the Plugin in Monaca
 ---------------------------
 
-In order to use this plugin, please [enable]({{<ref "cordova_plugin.en.md#add-import-cordova-plugins">}}) `Device`
+In order to use this plugin, please [enable]({{<ref "cordova_plugin.en.md#import-cordova-plugins">}}) `Device`
 plugin in Monaca Cloud IDE.
 
 Properties

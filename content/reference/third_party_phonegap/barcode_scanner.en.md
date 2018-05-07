@@ -12,9 +12,9 @@ In order to import this plugin, you need to subscribe to a valid plan. Please re
 
 ## Enable Plugin in Monaca
 
-1.  From the IDE menu, go to {{<menu menu1="Config" menu2="Manage Cordova Plugins">}}.
-2.  Click {{<guilabel name="Enable">}} button of the `BarcodeScanner` plugin to add it into your
-    project.
+1.  From the IDE menu, go to {{<menu menu1="Configure" menu2="Cordova Plugin Settings">}}.
+
+2.  Under *Available Plugins* section, hover over the the `BarcodeScanner` plugin and click {{<guilabel name="Enable">}} button.
 
     {{<img src="/images/reference/third_party_phonegap/barcode_scanner/1.png">}}
 
