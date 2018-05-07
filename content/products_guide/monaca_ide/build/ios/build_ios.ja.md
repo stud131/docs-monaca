@@ -6,6 +6,10 @@ aliases:
     - /ja/manual/build/ios/build_ios
 ---
 
+{{<note>}}
+Appleは2018年4月から、App Storeに提出されたすべての新しいiOSアプリケーションはiOS 11 SDKで構築する必要があると {{<link title="アナウンス" href="https://developer.apple.com/ios/submit/">}}がありました。また、ユニバーサルアプリを含むすべてのiPhoneアプリは、iPhone XのSuper Retinaディスプレイをサポートする必要があります。このため、MonacaアプリをAppStoreに公開するには、Cordova 7.1以降をプロジェクトで利用する必要があります。
+{{</note>}}
+
 事前準備
 --------
 
