@@ -119,6 +119,7 @@ Please note that `loader.js` file is also loaded `cordova.js` file. Therefore, i
 
 To learn more about Monaca, please refer to the following materials:
 
-- [Monaca Cloud IDE tutorials](/en/tutorials/monaca_ide/)
-- [Monaca Cloud IDE manual](/en/products_guide/monaca_ide/)
+- [Guide for PhoneGap Build Users](/en/products_guide/migration/phonegap_migration/guide_for_phonegap_build/)
+- [Guide for PhoneGap CLI Users](/en/products_guide/migration/phonegap_migration/guide_for_phonegap_cli/)
+- [Guide for PhoneGap Desktop App Users](/en/products_guide/migration/phonegap_migration/guide_for_phonegap_desktop/)
 - [Sample Apps](/en/sampleapp/samples/)

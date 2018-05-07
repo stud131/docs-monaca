@@ -10,13 +10,15 @@ In this page, we will demonstrate a quick and easy steps to migrate a PhoneGap p
 
 ### Before Start Migrating
 
-1. [Create Monaca Account with PhoneGap ID](https://monaca.mobi/en/oauth/phonegap/authorize)
-2. Install Monaca CLI globally with npm
+1. [Differences Between PhoneGap & Monaca Project](/en/products_guide/migration/phonegap_migration/fundamentals/)  
+
+2. [Create Monaca Account with PhoneGap ID](/en/oauth/phonegap/authorize)  
+3. Install Monaca CLI globally with npm
 {{<highlight js>}}
   $ npm install -g monaca
 {{</highlight>}}
 
-3. Login new account
+4. Login new account
 {{<highlight js>}}
   $ monaca login
 {{</highlight>}}

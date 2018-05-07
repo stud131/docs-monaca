@@ -1,5 +1,5 @@
 ---
-title: Guide for PhoneGap Desktop app Users
+title: Guide for PhoneGap Desktop App Users
 weight: 20
 ---
 
@@ -8,9 +8,11 @@ In this page, we will demonstrate a quick and easy steps to migrate a PhoneGap p
 
 ## Before Start Migrating
 
-1. [Create Monaca Account with PhoneGap ID](https://monaca.mobi/en/oauth/phonegap/authorize)
-2. Download the latest version of Monaca Localkit [here](https://monaca.io/localkit.html). 
-3. Open Monaca Localkit and then sign in using Monaca account.
+1. [Differences Between PhoneGap & Monaca Project](/en/products_guide/migration/phonegap_migration/fundamentals/)  
+2. [Create Monaca Account with PhoneGap ID](/en/oauth/phonegap/authorize)  
+
+3. Download the latest version of Monaca Localkit [here](https://monaca.io/localkit.html).   
+4. Open Monaca Localkit and then sign in using Monaca account.  
 
 	{{<img src="/images/monaca_localkit/manual/overview/1.png" width="400">}}
     
