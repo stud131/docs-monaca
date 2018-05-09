@@ -18,7 +18,7 @@ template into Monaca CLI.
 Open a Command Prompt window (for Windows) or Terminal window (for Mac)
 and type the following command:
 
-{{<highlight bash>}}
+{{<highlight js>}}
 npm install -g vue-cli
 {{</highlight>}}
 
@@ -27,11 +27,11 @@ npm install -g vue-cli
 
 1.  Create a new project based on the template by using the command below:
 
-    {{<highlight bash>}}vue init OnsenUI/vue-cordova-webpack projectName{{</highlight>}}
+    {{<highlight js>}}vue init OnsenUI/vue-cordova-webpack projectName{{</highlight>}}
 
 2.  Navigate to the project folder and run `npm install`
 
-    {{<highlight bash>}}
+    {{<highlight js>}}
 cd projectName
 npm install{{</highlight>}}
 
@@ -49,7 +49,7 @@ With Monaca CLI, you can:
 
 If you haven't install Monaca CLI yet, please run the following command:
 
-{{<highlight bash>}}
+{{<highlight js>}}
 npm install -g monaca
 {{</highlight>}}
 
@@ -62,17 +62,17 @@ advantage of Monaca's features:
 
 1.  Build the template for production and generate `www` files:
 
-    {{<highlight bash>}}npm run build{{</highlight>}}
+    {{<highlight js>}}npm run build{{</highlight>}}
 
 2.  Run in development mode and load the bundles in memory with hot module replacement:
 
-    {{<highlight bash>}}npm run dev{{</highlight>}}
+    {{<highlight js>}}npm run dev{{</highlight>}}
 
     {{<img src="/images/monaca_cli/samples/vue_onsen/1.png">}}
 
     Or use `monaca demo` to preview your project in iOS and Android simultaneously in a browser:
 
-    {{<highlight bash>}}
+    {{<highlight js>}}
 npm run build:watch  // In a different terminal
 monaca demo{{</highlight>}}
 
@@ -80,7 +80,7 @@ monaca demo{{</highlight>}}
 
 3.  Want to test your template on a real device? Install [Monaca Debugger](https://monaca.io/debugger.html) and run the following command:
 
-    {{<highlight bash>}}
+    {{<highlight js>}}
 npm run build:watch  // In a different terminal
 monaca debug{{</highlight>}}
 
@@ -89,7 +89,7 @@ monaca debug{{</highlight>}}
 
 4.  Then, you can build your template for either iOS and Android easily with this command:
 
-    {{<highlight bash>}}monaca remote build --browser{{</highlight>}}
+    {{<highlight js>}}monaca remote build --browser{{</highlight>}}
 
     {{<img src="/images/monaca_cli/samples/vue_onsen/4.png">}}
 
