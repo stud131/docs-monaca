@@ -10,30 +10,27 @@ JS・CSS コンポーネントとは、プロジェクトにインクルード (
 
 JavaScript/CSS ライブラリーを追加する場合、次の手順に従います。
 
-1.  From Monaca Cloud IDE, go to {{<menu menu1="Config" menu2="JS/CSS コンポーネントの追加と削除">}}.
-2.  [ JS/CSS コンポーネントの追加と削除 ]
-    ページが表示されます。ページ上では、複数のライブラリーが一覧化されています。必要なライブラリーを見つけられない場合には、検索ボックスを使用します。
+1.  Monaca クラウド IDEから {{<menu menu1="設定" menu2="JS/CSS コンポーネントの追加と削除">}} を選択します。
 
-    {{<img src="/images/monaca_ide/manual/dependencies/components/1.png">}}
+2.  `JS/CSS コンポーネントの追加と削除` 画面が表示されます。画面上では、複数のライブラリーが一覧化されています。必要なライブラリーを見つけられない場合には、検索ボックスを使用します。
 
-3.  ここでは、Angular
-    ライブラリーを検索してみます。検索後、条件に一致するライブラリーが一覧表示されます。対象のライブラリーの
-    {{<guilabel name="追加">}} をクリックして、プロジェクトに追加します。
+    {{<img src="/images/monaca_ide/manual/dependencies/components/components.png">}}
 
-    {{<img src="/images/monaca_ide/manual/dependencies/components/2.png">}}
+3.  Angularを検索する場合、{{<guilabel name="検索">}} ボタンをクリックすると、一致するライブラリのリストが表示されます。
 
-4.  プロジェクトに追加するライブラリーのバージョンを選択します。
+    {{<img src="/images/monaca_ide/manual/dependencies/components/search_component.png">}}
 
-    {{<img src="/images/monaca_ide/manual/dependencies/components/3.png">}}
+4.  {{<guilabel name="追加">}} ボタンをクリックし、対象のライブラリを追加します。 次に、プロジェクトに追加するライブラリのバージョンを選択できます。
 
-5.  インクルード ( include ) するファイル ( 対象のライブラリー内 )
-    を選択して、{{<guilabel name="OK">}} をクリックします。
+    {{<img src="/images/monaca_ide/manual/dependencies/components/select_version.png" width="500px">}}>}}
 
-    {{<img src="/images/monaca_ide/manual/dependencies/components/4.png">}}
+5.  追加するライブラリのファイルを選択し、{{<guilabel name="インストール">}} をクリックします。
 
-6.  追加したライブラリーが一覧上に表示されていることを確認します。ライブラリーのバージョンと選択したファイルを変更する場合には、{{<guilabel name="設定">}} をクリックします。
+    {{<img src="/images/monaca_ide/manual/dependencies/components/select_file.png" width="500px">}}
 
-    {{<img src="/images/monaca_ide/manual/dependencies/components/5.png">}}
+6.  追加したライブラリーが一覧上に表示されていることを確認します。ライブラリのバージョンと選択したファイルを変更する場合には、{{<guilabel name="設定">}} をクリックします。
+
+    {{<img src="/images/monaca_ide/manual/dependencies/components/configure_component.png">}}
 
 ライブラリーを追加すると、そのファイルは、`www/components`
 フォルダーに追加されます。また、次の JavaScript ファイルと CSS
@@ -41,18 +38,17 @@ JavaScript/CSS ライブラリーを追加する場合、次の手順に従い�
 
 | ファイル名 | 説明 |
 |----------|-------------|
-| `components/loader.js` | 使用可能なすべてのライブラリーを読み込むための JavaScript ファイル |
-| `components/loader.css` | 使用可能なすべてのライブラリーに適用するスタイルシートのファイル |
+| `loader.js` | Monaca が JavaScript ライブラリを読み込むために使用する JavaScript ファイル |
+| `loader.css` | Monaca が CSS ライブラリを読み込むために使用するスタイルシートファイル |
 
-{{<figure src="/images/monaca_ide/manual/dependencies/components/6.png">}}
+{{<figure src="/images/monaca_ide/manual/dependencies/components/component_files.png">}}
 
 HTML ファイルから、 上記の 2 つのファイルを参照するだけで、ライブラリーの読み込みが行えます。記述例を次に記します。HTML
 ファイルの `<head>` タグ内で、次の記述を行うだけで、ライブラリーが使用できます。
 
-{{<highlight html>}}
-<script src="components/loader.js"></script>
-<link rel="stylesheet" href="components/loader.css">
-{{</highlight>}}
+{{<note>}}
+    <code>loader.js</code> file also loads <code>cordova.js</code> file.
+{{</note>}}
 
 {{<note>}}
 ライブラリー内の画像を使用する場合、 <code>components</code>

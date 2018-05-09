@@ -33,7 +33,7 @@ Monaca デバッガーのインストール方法 ( プラットフォーム別 
 
     {{<img src="/images/monaca_ide/tutorial/testing_debugging/1.png" width="300">}}
 
-2.  プロジェクトのリストが表示されます。 Monaca クラウド IDE 上のプロジェクトは、`Monaca.io プロジェクト` に表示されます。 プロジェクトを実行するには、Monaca デバッガーでプロジェクト名をタップするか、Monaca クラウド IDE のメニューから {{<guilabel name="実機デバッグ">}} をクリックします。
+2.  プロジェクトのリストが表示されます。 Monaca クラウド IDE 上のプロジェクトは、`Monaca.io プロジェクト` に表示されます。 プロジェクトを実行するには、Monaca デバッガーでプロジェクト名をタップするか、Monaca クラウド IDE から {{<menu menu1="実行" menu2="実機で実行">}} をクリックします。
 
     {{<img src="/images/monaca_ide/tutorial/testing_debugging/4.png" width="300">}}
 

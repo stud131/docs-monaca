@@ -29,15 +29,13 @@ Cordova 6.2 向けのプロジェクトで使用する場合
 
 ### プラグインの追加方法
 
-1.  Monaca クラウド IDE メニュー上で、 {{<menu menu1="ファイル" menu2="Cordova プラグインの管理...">}} または
-    {{<menu menu1="設定" menu2="Cordova プラグインの管理...">}} を選択します。
+1.  Monaca クラウド IDE から {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} を選択します。
 
-2.  `Monaca In-App Updater ( version 4.0.0 )` の {{<guilabel name="有効">}} ボタンをクリックして、プロジェクトへ追加します。
+2.  *利用可能なプラグイン* 項目の `Encrypt` プラグインにカーソルを置き、{{<guilabel name="有効">}} ボタンをクリックします。
 
     {{<img src="/images/reference/power_plugins/inapp_updater/8.png">}}
 
-3.  プラグインの設定を行います。*有効なプラグイン*
-    欄へ行き、先ほど追加したプラグイン上に、マウスポインターを持っていきます。表示された画面上で、 {{<guilabel name="設定">}} ボタンをクリックします。
+3.  次に、*有効なプラグイン* 項目へ行き、先ほど追加したプラグイン上に、カーソルを置き、{{<guilabel name="設定">}} ボタンをクリックします。
 
     {{<img src="/images/reference/power_plugins/inapp_updater/9.png">}}
 
@@ -730,16 +728,13 @@ Cordova 5.2 向け、または、それ以前のバージョンを使用した�
 
 ### プラグインの追加方法
 
-1.  Monaca クラウド IDE メニュー上で、
-    {{<menu menu1="ファイル" menu2="Cordova プラグインの管理...">}} または
-    {{<menu menu1="設定" menu2="Cordova プラグインの管理...">}} を選択します。
+1.  Monaca クラウド IDE から {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} を選択します。
 
-2.  `Monaca In-App Updater ( version 2.x.x )` の {{<guilabel name="有効">}} ボタンをクリックして、プロジェクトへ追加します。
+2.  *利用可能なプラグイン* 項目の `Encrypt` プラグインにカーソルを置き、{{<guilabel name="有効">}} ボタンをクリックします。
 
     {{<img src="/images/reference/power_plugins/inapp_updater/1.png">}}
 
-3.  プラグインの設定を行います。*有効なプラグイン*
-    欄へ行き、先ほど追加したプラグイン上に、マウスポインターを持っていきます。表示された画面上で、 {{<guilabel name="設定">}} ボタンをクリックします。
+3.  プラグインの設定を行います。*有効なプラグイン* 項目へ行き、先ほど追加したプラグイン上に、カーソルを置き、{{<guilabel name="設定">}} ボタンをクリックします。
 
     {{<img src="/images/reference/power_plugins/inapp_updater/2.png">}}
 
@@ -800,7 +795,7 @@ Cordova 5.2 向け、または、それ以前のバージョンを使用した�
 
 更新用ファイルのバージョン番号は、次の手順で変更できます。
 
-1.  Monaca クラウド IDE メニュー上で、 {{<menu menu1="設定" menu2="iOS アプリ設定">}} ( iOS
+1.  Monaca クラウド IDE から、 {{<menu menu1="設定" menu2="iOS アプリ設定">}} ( iOS
     の場合 )、または、 {{<menu menu1="設定" menu2="Android アプリ設定">}} ( Android の場合 ) を、選択します。
 
 2.  バージョン番号を入力して、 {{<guilabel name="保存する">}} ボタンをクリックします。
@@ -814,8 +809,9 @@ Android と iOS のバージョン番号には、それぞれ、異なる番号�
 
 アプリ情報の設定後、プラットフォーム別に、パッケージファイルのビルドを行います。次の手順に従います。
 
-1.  「 iOS アプリのビルド 」 画面、または、「 Android アプリのビルド 」
-    画面に行きます。
+1.  Monaca クラウド IDE から、 {{<menu menu1="ビルド" menu2="iOS アプリのビルド">}} ( iOS
+    の場合 )、または、 {{<menu menu1="ビルド" menu2="Android アプリのビルド">}} ( Android の場合 ) を、選択します。
+
 2.  {{<menu menu1="リリース向けビルド/リリースビルド" menu2="In-App Updater用更新ファイル">}} を選択します。
 
     {{<img src="/images/reference/power_plugins/inapp_updater/4.png">}}

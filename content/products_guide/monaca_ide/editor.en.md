@@ -25,8 +25,8 @@ Monaca uses [Monaco editor](https://microsoft.github.io/monaco-editor/) in the n
 | Redo |	Ctrl + Y |	Shift + Command + Z or Command + Y |
 | Increase font size |	Ctrl + . |	Command + . |
 | Decrease font size |	Ctrl + , |	Command + , |
-| Show previous tab |	Ctrl + [ |	Command + [ |
-| Show next tab	| Ctrl + ] |	Command + ] |
+| Decrease Indent |	Ctrl + [ |	Command + [ |
+| Increase Indent	| Ctrl + ] |	Command + ] |
 | Move the line down |	Alt + Down |	Option + Down |
 | Move the line up |	Alt + Up |	Option + Up |
 | Replace |	Ctrl + F | 	Command + Alt + F |

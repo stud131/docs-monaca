@@ -13,10 +13,9 @@ Debuggerの両方ともに含まれていません。
 {{</note>}}
 
 {{<note>}}
-    <ol>Cordova 5.2 より前のバージョンを実装したプロジェクトを、Monaca デバッガー 5 系上で実行する場合、不具合が生じることがあります。修復方法を次に記します。
-        <li>プロジェクトに実装されている<a href="/ja/products_guide/monaca_ide/dependencies/cordova_plugin/#changing-cordova-version">Cordova のバージョンを更新</a></li>
-        <li><a href="#custom-debugger-ios">カスタムビルド版 Monaca デバッガー</a> を使用する ( 旧バージョンの Cordova に対応するため )</li>
-    </ol>
+    Cordova 5.2 より前のバージョンを実装したプロジェクトを、Monaca デバッガー 5 系上で実行する場合、不具合が生じることがあります。修復方法を次に記します。
+    <li>プロジェクトに実装されている<a href="/ja/products_guide/monaca_ide/dependencies/cordova_plugin/#cordova-のバージョン変更">Cordova のバージョンを更新</a></li>
+    <li><a href="#カスタムビルド版-monaca-デバッガーのビルド方法">カスタムビルド版 Monaca デバッガー</a> を使用する ( 旧バージョンの Cordova に対応するため )</li>
 {{</note>}}
 
 <table class="small">
@@ -38,7 +37,7 @@ Debuggerの両方ともに含まれていません。
         <td><a href="#カスタムビルド版-monaca-デバッガーのビルド方法">カスタムビルド版 Monaca デバッガーのビルドとインストール</a> を参照のこと</td>
     </tr>
         <tr>
-        <td><a href="#cordova-ios">Cordova プラグイン</a></td>
+        <td><a href="#cordova-プラグイン">Cordova プラグイン</a></td>
         <td>基本 Cordova プラグインおよび複数のサードパーティー製 Cordova プラグインがあらかじめ実装されています。</td>
         <td>基本 Cordova プラグインやサードパーティー製 プラグインに加えて、ユーザー自作の プラグインなどを組み込むことができます。</td>
     </tr>
@@ -58,17 +57,17 @@ Debuggerの両方ともに含まれていません。
         <td>ユーザー側で設定</td>
     </tr>
     <tr>
-        <td><a href="#usb-ios">USB デバッグ</a></td>
+        <td><a href="#usb-デバッグ">USB デバッグ</a></td>
         <td>不可</td>
         <td>可 ( Safari の Web インスペクタ )</td>
     </tr>
     <tr>
-        <td><a href="#localkit-ios">Localkit のインスぺクタ機能</a></td>
+        <td><a href="#localkit-のインスぺクタ機能">Localkit のインスぺクタ機能</a></td>
         <td>不可</td>
         <td>可</td>
     </tr>
     <tr>
-        <td><a href="#network-ios">ネットワーク インストール</a></td>
+        <td><a href="#ネットワーク-インストール">ネットワーク インストール</a></td>
         <td>不可</td>
         <td>可</td>
     </tr>
@@ -95,7 +94,7 @@ API、住所録の取得 API、端末情報の取得 API
 Monaca デバッガーを使用します。カスタムビルド版も、ストア版も、どちらも
 Monaca デバッガーですが、カスタムビルド版のデバッガーは、Monaca クラウド
 IDE 上で 「 ビルド 」 して、端末にインストールします ( Monaca
-デバッガーは、アプリです )。詳細は、[カスタムビルド版 Monaca デバッガーのビルドとインストール](#custom-debugger-android)
+デバッガーは、アプリです )。詳細は、[カスタムビルド版 Monaca デバッガーのビルドとインストール](#カスタムビルド版-monaca-デバッガーのビルド方法)
 をご確認ください。
 
 ## USB デバッグ
@@ -112,7 +111,7 @@ Safari
     パフォーマンスのプロファイリング、分析ポイント ( ブレークポイント )
     のセット、実行処理の制御を行います。
 
-詳細は、[iOS アプリのデバッグ方法 ( Monaca デバッガーと USB デバッグを使用 )]({{<ref "debug.ja.md#usb-debugging-ios">}})
+詳細は、[iOS アプリのデバッグ方法 ( Monaca デバッガーと USB デバッグを使用 )]({{<ref "debug.ja.md#safari-のリモートデバッグ機能-ios-と-mac-が対象">}})
 をご確認ください。
 
 ## Localkit のインスぺクタ機能
@@ -123,7 +122,7 @@ Windows と Mac OS の両方で、このインスペクタ機能を使用でき�
 
 iOS 向けの Monaca デバッガーでは、デバッガー経由で、ビルド済みのアプリ (
 デバッグビルド版のみ ) をインストールできます。詳細は、
-[ネットワーク インストール ( [ インスト ] の解説  )]({{<ref "features.ja.md#debugger-project-options">}})
+[ネットワーク インストール]({{<ref "features.ja.md#プロジェクトオプション">}})
 機能を、ご確認ください。
 
 {{<note>}}
@@ -145,38 +144,19 @@ App Store から入手した iOS 向けの Monaca
 
 ### アプリのビルド
 
-1.  Monaca クラウド IDE メニューから、
-    {{<menu menu1="デバッグ" menu2="デバッガーの説明とインストール">}} を選択します。
-2.  {{<menu menu1="iOS 向けデバッガー インストール" menu2="ビルドしてインストール">}}  を選択します。
+1.  Monaca クラウド IDE メニューから、{{<menu menu1="ビルド" menu2="iOSアプリのビルド">}} を選択します。
 
-    {{<img src="/images/debugger/manual/installation/debugger_ios/2.png" width="500">}}  
+2. `カスタムビルドデバッガー` を選択し、{{<guilabel name="ビルドを開始する">}} をクリックします。
 
-3.  開発用 プロビジョニング プロファイルをアップロードします。 {{<guilabel name="次へ">}}
-    ボタンをクリックします。
-4.  ビルドが完了するまでには、しばらくかかります。ビルドが完了すると、次の画面が表示されます。ビルドしたアプリは、iTune
-    を使用して、端末にインストールするか、または、ファイルを PC
-    へダウンロードすることができます。
+    {{<img src="/images/debugger/manual/installation/debugger_ios/start_build.png">}}  
 
-    {{<img src="/images/debugger/manual/installation/debugger_ios/3.png" width="500">}}  
+3.  ビルドが完了するまで、時間がかかる場合があります。ビルドが完了する  と、次の画面が表示されます。ビルドしたアプリは、QR コードを使用して、端末にインストールするか、または、ファイルを PC へダウンロードすることができます。 
 
-5.  デバッガーを端末へインストールした後、Monaca
-    アカウントを使用して、デバッガーにログインします。次に、IDE
-    の画面に戻り、`Monaca デバッガーをインストールして、ログインしました。`
-    にチェックを入れ、{{<guilabel name="次へ">}} をクリックします。
-6.  Monaca クラウド IDE
-    とデバッガー間が接続されます。接続後、{{<guilabel name="実機デバッグ">}}
-    をクリックすると、デバッガー上でアプリが同期・実行されます。
-
-    {{<img src="/images/debugger/manual/installation/debugger_ios/4.png" width="500">}}  
-
-7.  デバッガー上でアプリが実行されていることを確認します。この状態で、アプリの検証を行えます。また、IDE
-    に一度戻り、アプリを修正・保存してみましょう。修正箇所は、保存後、直ちにデバッガー側にも反映されます。
-
-    {{<img src="/images/debugger/manual/installation/debugger_ios/5.png" width="500">}}  
+    {{<img src="/images/debugger/manual/installation/debugger_ios/result.png">}}  
 
 参考ページ
 
-- [エミュレーター上へのデバッガーのインストール]({{<ref "debugger_emulator.ja.md">}})
-- [Android 向けの Monaca デバッガー]({{<ref "debugger_android.ja.md">}})
-- [機能の概要]({{<ref "features.ja.md">}})
-- [使用例]({{<ref "debug.ja.md">}})
+- [エミュレーター上へのデバッガーのインストール](../debugger_emulator)
+- [Android 向けの Monaca デバッガー](../debugger_android)
+- [機能の概要](../../features)
+- [使用例](../../debug)

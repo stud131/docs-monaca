@@ -7,18 +7,15 @@ weight: 10
 BarcodeScannerプラグイン(MonacaのクラウドIDEに組み込まれているプラグイン)は、Androidバージョン6以上では動作しません。また、プロジェクトのCordovaバージョンが6.5の場合、iOSでは動作しない場合があります。プラグインが動作しない場合は、{{<link href="https://github.com/phonegap/phonegap-plugin-barcodescanner" title="PhoneGap Plugin BarcodeScanner">}} をご使用下さい。また、こちらのプラグインを使用する場合には、対応するプランへ加入する必要があります。詳細は、{{<link href="https://monaca.mobi/en/pricing" title="料金プラン">}} をご確認ください。
 {{</note>}}
 
-プラグインの追加方法 ( Monaca 上での処理 )
-------------------------------------------
+## プラグインの追加方法 ( Monaca 上での処理 )
 
-1.  IDE メニュー上で、 {{<menu menu1="ファイル" menu2="Cordova プラグインの管理">}} または
-    {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} を選択します。
+1.  Monaca クラウド IDE から {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} を選択します。
 
-2.  BarcodeScanner の {{<guilabel name="有効">}} ボタンをクリックして、プロジェクトへ追加します。
+2.  *利用可能なプラグイン* 項目の `BarcodeScanner` プラグインにカーソルを置き、{{<guilabel name="有効">}} ボタンをクリックします。
 
     {{<img src="/images/reference/third_party_phonegap/barcode_scanner/1.png">}}
 
-BarcodeScanner プラグインのデモ
--------------------------------
+## BarcodeScanner プラグインのデモ
 
 BarcodeScanner プラグインの使用例を、次に記します。
 

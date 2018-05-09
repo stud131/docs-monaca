@@ -4,7 +4,7 @@ weight: 70
 aliases: /ja/monaca_ide/manual/build/
 ---
 
-*ビルド Environment*
+## ビルド Environment
 
 <table>
     <tr>
@@ -17,7 +17,6 @@ aliases: /ja/monaca_ide/manual/build/
         <td>
             <ul>
                 <li>AndroidSDK バージョン : 26</li>
-                <li>Crosswalk バージョン : <a href="/en/reference/cordova_6.5/crosswalk/">Crosswalk Plugin</a> に依存します</li>
             </ul>
         </td>
         <td>Xcode バージョン : 9</td>
@@ -27,7 +26,7 @@ aliases: /ja/monaca_ide/manual/build/
         <td>
             <ul>
                 <li>AndroidSDK バージョン : 25</li>
-                <li>Crosswalk バージョン : <a href="/en/reference/cordova_6.5/crosswalk/">Crosswalk Plugin</a> に依存します</li>
+                <li>Crosswalk バージョン : <a href="/ja/reference/cordova_6.5/crosswalk/">Crosswalk Plugin</a> に依存します</li>
             </ul>
         </td>
         <td>Xcode バージョン : 8</td>
@@ -37,7 +36,7 @@ aliases: /ja/monaca_ide/manual/build/
         <td>
             <ul>
                 <li>AndroidSDK バージョン : 23</li>
-                <li>Crosswalk バージョン : <a href="/en/reference/cordova_6.2/crosswalk/">Crosswalk Plugin</a> に依存します</li>
+                <li>Crosswalk バージョン : <a href="/ja/reference/cordova_6.2/crosswalk/">Crosswalk Plugin</a> に依存します</li>
             </ul>
         </td>
         <td>Xcode バージョン : 7</td>
@@ -47,7 +46,7 @@ aliases: /ja/monaca_ide/manual/build/
         <td>
             <ul>
                 <li>AndroidSDK バージョン : 22</li>
-                <li>Crosswalk バージョン : <a href="/en/reference/cordova_5.2/crosswalk/">Crosswalk Plugin</a> に依存します</li>
+                <li>Crosswalk バージョン : <a href="/ja/reference/cordova_5.2/crosswalk/">Crosswalk Plugin</a> に依存します</li>
             </ul>
         </td>
         <td>Xcode バージョン : 6.4</td>

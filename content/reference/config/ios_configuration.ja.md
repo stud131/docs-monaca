@@ -17,13 +17,11 @@ iOS アプリの設定画面では、iOS
 アプリに適用するパラメーターを設定できます。次の手順に従い、Monaca
 クラウド IDE の iOS アプリの設定画面を表示します。
 
-1.  Monaca クラウド IDE メニュー上で、 {{<menu menu1="設定" menu2="iOS アプリ設定">}} を選択します。
-
-    {{<img src="/images/reference/config/ios/ide_1.png">}}
+1.  Monaca クラウド IDE のメニューから、 {{<menu menu1="設定" menu2="iOS アプリ設定">}} を選択します。
 
 2.  `iOS アプリ設定` 画面が、次のように表示されます。こちらの画面で設定を行います。
 
-    {{<img src="/images/reference/config/ios/ide_2.png">}}
+    {{<img src="/images/reference/config/ios/settings.png">}}
 
 3.  設定後、 {{<guilabel name="保存する">}} ボタンをクリックします。
 

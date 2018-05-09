@@ -11,10 +11,9 @@ aliases: /en/debugger/manual/installation/debugger_ios
 {{</note>}}
 
 {{<note>}}
-    <ol>If the Cordova version of your project is lower than 5.2, it might not work properly with Monaca Debugger 5.X.X. There are two ways to fix this issue:
-        <li><a href="/en/products_guide/monaca_ide/dependencies/cordova_plugin/#changing-cordova-version">upgrade Cordova version</a> of your project</li>
-        <li>use <a href="#custom-debugger-ios">Custom Monaca Debugger</a>.</li>
-    </ol>
+    If the Cordova version of your project is lower than 5.2, it might not work properly with Monaca Debugger 5.X.X. There are two ways to fix this issue:
+    <li><a href="/en/products_guide/monaca_ide/dependencies/cordova_plugin/#changing-cordova-version">upgrade Cordova version</a> of your project</li>
+    <li>use <a href="#custom-debugger-ios">Custom Monaca Debugger</a>.</li>
 {{</note>}}
 
 <table class="small">
@@ -35,7 +34,7 @@ aliases: /en/debugger/manual/installation/debugger_ios
         <td>Refer to <a href="#how-to-build-custom-monaca-debugger">Build and Install Custom Monaca Debugger</a></td>
     </tr>
         <tr>
-        <td><a href="#cordova-ios">Cordova Plugins</a></td>
+        <td><a href="#cordova-plugins">Cordova Plugins</a></td>
         <td>Core and some third-party Cordova plugins are automatically included.</td>
         <td>In addition to the core and third-party Cordova plugins, user submitted plugins (of the current project) are included.</td>
     </tr>
@@ -55,17 +54,17 @@ aliases: /en/debugger/manual/installation/debugger_ios
         <td>Version set by a user</td>
     </tr>
         <tr>
-        <td><a href="#usb-ios">USB Debugging</a></td>
+        <td><a href="#usb-debugging">USB Debugging</a></td>
         <td>Not Available</td>
         <td>Available (Safari’s Web Inspector)</td>
     </tr>
     <tr>
-        <td><a href="#localkit-ios">Localkit Inspector Function</a></td>
+        <td><a href="#localkit-inspector-function">Localkit Inspector Function</a></td>
         <td>Not Available</td>
         <td>Available</td>
     </tr>
     <tr>
-        <td><a href="#network-ios">Network Install</a></td>
+        <td><a href="#network-install">Network Install</a></td>
         <td>Not Available</td>
         <td>Available</td>
     </tr>

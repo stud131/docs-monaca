@@ -4,8 +4,7 @@ weight: 30
 aliases: /ja/monaca_ide/manual/build/build_winrt
 ---
 
-Windows ストアアプリ
---------------------
+## Windows ストアアプリ
 
 Windows ストアアプリは、HTML5 と JavaScript で作成され、WinRT
 アーキテクチャー上で、ネイティブと同じように実行されます。また、Monaca
@@ -29,16 +28,14 @@ Windows ストアアプリは、HTML5 と JavaScript で作成され、WinRT
     difference](http://msdn.microsoft.com/en-us/library/windows/apps/hh465380.aspx)
     」 ( 外部サイト ) をご確認ください。
 
-事前準備
---------
+## 事前準備
 
 Windows アプリの構築には、Microsoft
 社が発行する、有効な開発者用ライセンスが必要です。ライセンス自体は無料ですが、Microsoft
 アカウントが必要です。ライセンスを取得する場合には、最初に
 [こちら](https://dev.windows.com/en-us/programs/join) で登録をします。
 
-ステップ 1 : Windows アプリの設定
----------------------------------
+## ステップ 1 : Windows アプリの設定
 
 1.  Monaca クラウド IDE のメニューから、
     {{<menu menu1="設定" menu2="Windows アプリ設定">}} を選択します。
@@ -87,8 +84,7 @@ Windows アプリの構築には、Microsoft
 
 3.  設定後、{{<guilabel name="保存する">}} をクリックします。
 
-ステップ 2 : アプリのビルド
----------------------------
+## ステップ 2 : アプリのビルド
 
 1.  Monaca クラウド IDE のメニューから、
     {{<menu menu1="ビルド" menu2="Windows アプリのビルド">}} を選択します。
@@ -98,8 +94,7 @@ Windows アプリの構築には、Microsoft
 
 3.  ビルド後、zip ファイルをダウンロードします。
 
-ステップ 3 : アプリのインストール
----------------------------------
+## ステップ 3 : アプリのインストール
 
 1.  先ほどダウンロードした zip ファイルを解凍します。
 2.  解凍したフォルダー内の `Add-AppDevPackage.ps1`

@@ -7,16 +7,11 @@ aliases: /ja/monaca_ide/manual/deploy/appstore/app_submission
 App Store にアプリを提出する場合には、iTunes Connect
 を使用します。ここでは、その使用方法を解説します。
 
-事前準備
---------
+## 事前準備
 
-[iOS Developer Program](https://developer.apple.com/) 上で、
-[チームエージェント ( Team Agent ) の役割 ( Role
-)](https://developer.apple.com/support/roles/)
-を持つアカウントを用意します。
+[Apple Developer Program](https://developer.apple.com/programs/ios/) の [Team Agent account](https://developer.apple.com/support/roles/) が必要になります。
 
-アプリの登録
-------------
+## アプリの登録
 
 次に手順に従い、iTunes Connect へアプリを登録します。
 
@@ -40,8 +35,7 @@ App Store にアプリを提出する場合には、iTunes Connect
 
     {{<img src="/images/monaca_ide/manual/deploy/itunes_connect/2.png">}}
 
-5.  {{<guilabel name="作成">}} ボタンをクリックします。次に、\[ App 情報 \]
-    ページに遷移します。
+5.  {{<guilabel name="作成">}} ボタンをクリックします。次に、\[ App 情報 \] ページに遷移します。
 6.  \[ App 情報 \] ページ上で、アプリの \[ カテゴリ \]
     を適宜選択して、{{<guilabel name="保存">}} ボタンをクリックします。
 
@@ -67,31 +61,18 @@ App Store にアプリを提出する場合には、iTunes Connect
 
 9.  設定後、{{<guilabel name="保存">}} ボタンをクリックします。
 
-アプリのアップロード
---------------------
+## アプリのアップロード
 
-アプリのアップロード時、Mac
-環境を必要としない時期も過去にはありましたが、2012年8月時点では、同環境が必須となっています。これは、iTunes
-Connect へアプリをアップロードするとき、Application Uploader ( Mac 専用
-) を使用することが要件に加わったためです。
+アプリのアップロード時、Mac 環境を必要としない時期も過去にはありましたが、2012年8月時点では、同環境が必須となっています。これは、iTunes
+Connect へアプリをアップロードするとき、Application Uploader ( Mac 専用 ) を使用することが要件に加わったためです。
 
-この制約を取り除くため、Monaca では、Monaca クラウド IDE から iTunes
-Connect
-にアプリを直接アップロードできる機能をリリースしました。これにより、アプリのアップロードのために、Mac
-環境をわざわざ用意する必要がなくなりました。
+Monaca では、Monaca クラウド IDEから iTunes Connect アプリをアップロードできる [iOS アプリ アップロード機能](../../appstore/app_submission) を提供しています。
 
-{{<note>}}
-この機能の詳細は、{{<link title="Monaca 提供のアップロード機能" href="../app_submission">}} をご確認ください。
-{{</note>}}
+前述の Monaca 提供のアップロード機能とは別に、今までどおり Application Loader も、次のように使用できます。
 
-前述の Monaca 提供のアップロード機能とは別に、今までどおり Application
-Loader も、次のように使用できます。
+1.  リリースビルド版のアプリを Monaca 上で作成して、ダウンロードします。詳細は、[iOS アプリのビルド](../../../build/ios/build_ios/) をご確認ください。
 
-1.  リリースビルド版のアプリを Monaca
-    上で作成して、ダウンロードします。詳細は、[iOS アプリのビルド]({{<ref "build_ios.ja.md">}})
-    をご確認ください。
-2.  iTunes Connect から Application Uploader
-    をダウンロードして、インストールします。
+2.  iTunes Connect から Application Uploader をダウンロードして、インストールします。
 
     {{<img src="/images/monaca_ide/manual/deploy/itunes_connect/10.png">}}
 
@@ -105,17 +86,13 @@ Loader も、次のように使用できます。
 
     {{<img src="/images/monaca_ide/manual/deploy/itunes_connect/6.png" width="500">}}
 
-6.  アップロード後、{{<guilabel name="次へ">}} ボタンをクリックして、次に、{{<guilabel name="終了">}}
-    ボタンをクリックします。iTunes Connect
-    上にアプリが表示されていることを確認します (
-    しばらく時間がかかる場合があります )。
+6.  アップロード後、{{<guilabel name="次へ">}} ボタンをクリックして、次に、{{<guilabel name="終了">}} ボタンをクリックします。iTunes Connect 上にアプリが表示されていることを確認します ( しばらく時間がかかる場合があります )。
 
 {{<note>}} 
-バージョンが異なる同一アプリをアップロードする場合、ファイル内のバージョン情報を、対応するバージョンに変更しておく必要があります。それ以外の場合、アップロードが失敗します。
+    バージョンが異なる同一アプリをアップロードする場合、ファイル内のバージョン情報を、対応するバージョンに変更しておく必要があります。それ以外の場合、アップロードが失敗します。
 {{</note>}}
 
-アップロード後に行うアプリの設定
---------------------------------
+## アップロード後に行うアプリの設定
 
 iTunes Connect へアプリをアップロードした後、App Store へ提出する 「
 ビルド 」 を選択します。次の手順に従います。
@@ -131,8 +108,7 @@ iTunes Connect へアプリをアップロードした後、App Store へ提出�
 
 3. {{<guilabel name="保存する">}} ボタンをクリックします。
 
-アプリの提出
-------------
+## アプリの提出
 
 ここまでの手順で、申請に必要な設定が完了しました。次は、申請に向け、アプリを実際に提出します。
 
@@ -143,13 +119,18 @@ iTunes Connect へアプリをアップロードした後、App Store へ提出�
 Store での配布基準に適合しているかが審査されます。レビューには、2
 週間ほど、通常かかります。
 
-アプリの配布
-------------
+## アプリの配布
 
 審査の通過後、App Store 上にて、アプリの配布が開始されます。
 
 {{<note>}}
-大きいサイズのアプリ用アイコンは、以前は必要ありませんでしたが、現在は、申請要件の
-1
-つとなっています。また、周知のとおり、申請に必要な要件は随時更新されています。申請がうまくいかない場合には、最新の要件を確認して、適切に対応する必要があります。
+    大きいサイズのアプリ用アイコンは、以前は必要ありませんでしたが、現在は、申請要件の 1 つとなっています。また、周知のとおり、申請に必要な要件は随時更新されています。申請がうまくいかない場合には、最新の要件を確認して、適切に対応する必要があります。
 {{</note>}}
+
+参考ページ:
+
+- [iOS アプリ アップロード機能](../app_submission)
+- [iOS アプリのビルド](../../../build/ios/build_ios/#building-for-ios)
+- [Google Play での配布](../../google_play)
+- [公式ストア経由以外での配布](../../non_market_deploy)
+- [Amazon アプリストア での配布](../../amazon_store)

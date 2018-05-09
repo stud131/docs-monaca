@@ -79,10 +79,9 @@ iOS アプリ上での SSO
 このプラグインを使用する前に、次のように、\[ Cordova プラグイン \]
 画面上で `FABRIC_KEY` 値を設定する必要があります。
 
-1.  Monaca クラウド IDE のメニューから、
-    {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} を選択します。
-2.  *有効なプラグイン* 欄に行きます。`twitter-connect-plugin`
-    上にマウスポインターを持っていき、{{<guilabel name="設定">}} ボタンをクリックします。
+1.  Monaca クラウド IDE から {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} を選択します。
+
+2.  *利用可能なプラグイン* 項目の `twitter-connect-plugin` プラグインにカーソルを置き、{{<guilabel name="有効">}} ボタンをクリックします。
 
     {{<img src="/images/sampleapp/twitter_sso/twitter_plugin_config.png">}}
 

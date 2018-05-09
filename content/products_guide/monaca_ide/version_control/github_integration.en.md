@@ -21,18 +21,18 @@ GitHub account. Please proceed as follows:
     account before being redirected to GitHub's Authorize Application
     page.
 
-    {{< figure src="/images/monaca_ide/manual/version_control/2.png" >}}
+    {{<figure src="/images/monaca_ide/manual/version_control/2.png" >}}
 
 3.  In the Authorize Application page, you will be asked to authorize
     the application in order to link Monaca account to GitHub. Click on
     {{<guilabel name="Authorize application">}} to proceed.
 
-    {{< figure src="/images/monaca_ide/manual/version_control/3.png" >}}
+    {{<figure src="/images/monaca_ide/manual/version_control/3.png" >}}
 
 4.  Now your Monaca account is successfully linked to your GitHub
     account.
     
-    {{< figure src="/images/monaca_ide/manual/version_control/4.png" >}}
+    {{<figure src="/images/monaca_ide/manual/version_control/4.png" >}}
 
 {{<warning>}}
     Please note that you can only link one GitHub account to a Monaca account. If you try to link with multiple accounts, you will encounter an error.
@@ -59,7 +59,7 @@ in order to connect your project to your repository:
     
     {{<img src="/images/monaca_ide/manual/version_control/git_service.png" width="500px">}}
 
-3.  Select your remote empty repository. Then, click on {{<guilabel name="Initialize">}}
+4.  Select your remote empty repository. Then, click on {{<guilabel name="Initialize">}}
     button to save the configuration.
 
     {{<img src="/images/monaca_ide/manual/version_control/initialization.png" width="500px">}}
@@ -162,7 +162,7 @@ In order to to unlink your Monaca account from GitHub, please do as follows:
 
 2. Click on {{<guilabel name="Unlink">}} button.
 
-{{< figure src="/images/monaca_ide/manual/version_control/4.png" >}}
+{{<figure src="/images/monaca_ide/manual/version_control/4.png" >}}
 
 ## Unable to Re-link to GitHub
 
@@ -170,7 +170,7 @@ If you accidentally revoke Monaca access with Github account, attempt to
 re-link with the steps described in [Setup](#setup) will not be
 possible. You will see the following error:
 
-{{< figure src="/images/monaca_ide/manual/version_control/14.png" >}}
+{{<figure src="/images/monaca_ide/manual/version_control/14.png" >}}
 
 Therefore, in order to re-link your account in this case, please do as
 follows:
@@ -179,17 +179,17 @@ follows:
 2.  Go to [Monaca Login](https://monaca.mobi/en/login) page and choose
     {{<guilabel name="Sign in with GitHub">}}.
 
-    {{< figure src="/images/monaca_ide/manual/version_control/15.png" >}}
+    {{<figure src="/images/monaca_ide/manual/version_control/15.png" >}}
 
 3.  Fill in your GitHub account information.
 4.  Then, you will be redirected to GitHub's Authorize Application page.
     Click on {{<guilabel name="Authorize application">}} to proceed.
 
-    {{< figure src="/images/monaca_ide/manual/version_control/3.png" >}}
+    {{<figure src="/images/monaca_ide/manual/version_control/3.png" >}}
 
 5.  After this, your Monaca account should be successfully linked to
     GitHub account. You can confirm in the Link to GitHub page. It
     should appear like this:
 
-    {{< figure src="/images/monaca_ide/manual/version_control/4.png" >}}
+    {{<figure src="/images/monaca_ide/manual/version_control/4.png" >}}
 

@@ -22,10 +22,9 @@ Web SQL API とほぼ変わりません。
 プラグインの追加方法
 --------------------
 
-1.  Monaca クラウド IDE のメニューから、
-    {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} を選択します。
+1.  Monaca クラウド IDE から {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} を選択します。
 
-2.  `SQLCipher Adapter` の {{<guilabel name="有効">}} ボタンをクリックして、プロジェクトにプラグインを追加します。
+2.  *利用可能なプラグイン* 項目の `SqlCipher` プラグインにカーソルを置き、{{<guilabel name="有効">}} ボタンをクリックします。
 
     {{<img src="/images/reference/power_plugins/sqlcipher/1.png">}}
 
