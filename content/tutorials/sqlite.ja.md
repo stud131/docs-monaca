@@ -1,5 +1,5 @@
 ---
-title: "Cordova Sqlite Storage Plugin"
+title: "Cordova Sqlite Storage プラグイン"
 weight: 50
 ---
 

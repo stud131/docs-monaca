@@ -63,13 +63,13 @@ Monaca CI を使用すれば、アプリの配信/配布処理を自動化する
 
 2.  {{<guilabel name="新しく追加する">}} をクリックします。
 
-3.  デプロイサービスを選択して、詳細設定を入力します。入力後、{{<guilabel name="追加">}} をクリックします。詳細設定で入力する項目は、次のとおりです。
+3.  デプロイサービスを選択して、以下のような詳細設定を入力します。
 
     - エイリアス名 : 各サービスの管理に使用する、一意の識別子を入力します。
 
     - ユーザー名 ( DeployGate 専用 ) : アプリ所有者のユーザー名または組織名を入力します。
 
-    - API キー ( DeployGate の場合 ) または API トークン ( HockeyApp の場合 ) : API キー ( または API トークン ) は、デプロイサービスのプロバイダーから入手できます。入手方法に関しては、[DeployGate からの API キーの入手方法]({{<ref "supported_services.ja.md#api-キーの取得方法">}}) または [HockeyApp からの API トークンの入手方法]({{<ref "supported_services.ja.md#api-トークンの取得方法">}}) をご確認ください。
+    - API キー ( DeployGate の場合 ) または API トークン ( HockeyApp/Appetize の場合 ) : API キー ( または API トークン ) は、デプロイサービスのプロバイダーから入手できます。各サービスの API キー等を取得する方法の詳細については、 [アプリ配信/配布支援サービス (デプロイサービス)]({{<ref "supported_services.ja.md">}}) を参照してください）。
 
     {{<figure src="/images/monaca_ide/manual/monaca_ci/overview/1.png" title="DeployGate" width="500">}}
     {{<figure src="/images/monaca_ide/manual/monaca_ci/overview/1_1.png" title="HockeyApp" width="500">}}
@@ -275,4 +275,4 @@ Monaca CI では、JSON のレシピ ( アプリの設定に使用する、JSON
 
 参考ページ:
 
-- [検証版アプリなどの配信/配布支援サービス ( デプロイサービス )](../supported_services)
+- [アプリ配信/配布支援サービス (デプロイサービス)](../supported_services)

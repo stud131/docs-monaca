@@ -1,5 +1,5 @@
 ---
-title: Push Notification
+title: プッシュ通知
 weight: 20
 ---
 
@@ -7,13 +7,13 @@ weight: 20
     <div class="item">
         <a href="https://medium.com/the-web-tub/unlimited-free-push-notifications-with-onesignal-and-cordova-1a415fcc6e1b">
             <h3>OneSignal</h3>
-            <p>A sample app using OneSignal push notification feature with Angular 1 and Onsen UI</p>
+            <p>Angular 1 と Onsen UI の OneSignal プッシュ通知機能を使用したサンプルアプリです。</p>
         </a>
     </div>
     <div class="item">
         <a href="/ja/tutorials/firebase/">
             <h3>Firebase</h3>
-            <p>A demo app with push notification feature using Cordova Firebase plugin</p>
+            <p>Cordova Firebase プラグインを使用したプッシュ通知を行うサンプルアプリです。</p>
         </a>
     </div>
 </div>

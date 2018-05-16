@@ -1,5 +1,5 @@
 ---
-title: SNS Authentication
+title: SNS 認証
 weight: 20
 ---
 
@@ -7,12 +7,12 @@ weight: 20
     <div class="item">
         <a href="/ja/sampleapp/samples/twitter_sso">
         <h3>Twitter</h3>
-        <p>A sample app using Native Twitter authentication with Angular 1 and Onsen UI</p>
+        <p>Angular 1 と Onsen UI のネイティブ Twitter 認証を使用したサンプルアプリです。</p>
     </div>
     <div class="item">
         <a href="/ja/sampleapp/samples/facebook_sso">
             <h3>Facebook</h3>
-            <p>A sample app using Native Facebook authentication with Angular 1 and Onsen UI</p>
+            <p>Angular 1 と Onsen UI のネイティブ Facebook 認証を使用するサンプルアプリです。</p>
         </a>
     </div>
 </div>

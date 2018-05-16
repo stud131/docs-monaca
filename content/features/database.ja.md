@@ -1,18 +1,18 @@
 ---
-title: Database
+title: データベース
 weight: 30
 ---
 
 <div class="container">
     <div class="item">
         <a href="/ja/sampleapp/samples/backend_memo/">
-        <h3>Monaca Backend</h3>
-        <p>A sample application allowing a user to create a memo app using Monaca Backend API</p>
+        <h3>Monaca バックエンド</h3>
+        <p>Monaca バックエンド API を使用してメモアプリを作成するためのサンプルアプリです。</p>
     </div>
     <div class="item">
         <a href="/ja/tutorials/sqlite/">
             <h3>Web SQL</h3>
-            <p>Adding a Web SQL database to your app using Cordova Sqlite Storage plugin</p>
+            <p>Cordova Sqlite Storage プラグインを使用して Web SQL データベースをアプリに追加します。</p>
         </a>
     </div>
 </div>

@@ -1,31 +1,31 @@
 ---
-title: Features
+title: 機能
 weight: 45
 ---
 
 <div class="container">
     <div class="item">
         <a href="push">
-            <h3>Push Notification</h3>
-            <p>Adding push notification feature to your app using popular push notification services such as OneSignal, Firebase, etc</p>
+            <h3>プッシュ通知</h3>
+            <p>OneSignal、Firebase などのプッシュ通知サービスを使用してプッシュ通知機能をアプリに追加します。</p>
         </a>
     </div>
     <div class="item">
         <a href="sns">
-            <h3>SNS Authentication</h3>
-            <p>Authenticating your users using popular SNS services such as Twitter, Facebook, etc</p>
+            <h3>SNS 認証</h3>
+            <p>Twitter、Facebook などの SNS サービスを使用してユーザーを認証します。</p>
         </a>
     </div>
     <div class="item">
         <a href="https://medium.com/the-web-tub/creating-google-maps-sample-app-with-angularjs-and-onsen-ui-c1325139781e">
             <h3>Google Maps</h3>
-            <p>Adding Google maps to your app using Google Maps JavaScript API</p>
+            <p>Google Maps JavaScript API を使用してアプリにGoogle マップを追加します。</p>
         </a>
     </div>
     <div class="item">
         <a href="https://medium.com/the-web-tub/adding-payment-service-to-cordova-app-with-square-304bea8ad1f7">        
-            <h3>Payment</h3>
-            <p>Adding payment feature to your app using Squre service</p>
+            <h3>支払い</h3>
+            <p>Square サービスを使用してアプリに支払い機能を追加します。</p>
         </a>
     </div>
     <!-- <div class="item">
@@ -36,38 +36,38 @@ weight: 45
     </div> -->
     <div class="item">
         <a href="https://medium.com/the-web-tub/integrating-monaca-with-api-ai-f9f294c5382a">
-            <h3>Chat</h3>
-            <p>Adding a chat bot feature using Google's api.ai</p>    
+            <h3>チャット</h3>
+            <p>Google の api.ai を使用してチャットボット機能を追加します。</p>    
         </a>
     </div>
     <div class="item">
         <a href="/ja/sampleapp/samples/admob/">
-            <h3>Ads</h3>
-            <p>Adding ads to your app using mobile ads networking called AdMob with Monaca</p>
+            <h3>広告</h3>
+            <p>Monaca で AdMob を使用してアプリに広告を追加します。</p>
         </a>
     </div>
     <div class="item">
         <a href="database">
-            <h3>Database</h3>
-            <p>Adding a database into your app using Monaca Backend, Web SQL, etc</p>
+            <h3>データベース</h3>
+            <p>Monaca Backend、Web SQL などを使用してアプリにデータベースを追加します。</p>
         </a>
     </div>
     <div class="item">
         <a href="/ja/sampleapp/samples/sample_rss_reader/">
             <h3>RSS</h3>
-            <p>Adding RSS feature to your app with jQuery Mobile</p>
+            <p>jQuery Mobile で RSS 機能をアプリに追加します。</p>
         </a>
     </div>
     <div class="item">
         <a href="https://medium.com/the-web-tub/love-pok%C3%A9mon-go-create-your-own-ar-app-in-monaca-with-wikitude-4fe8dbcacc5d">
-            <h3>Augmented Reality (AR)</h3>
-            <p>Adding AR feature into your app with Cordova Wikitude plugin</p>
+            <h3>拡張現実 (AR)</h3>
+            <p>Cordova Wikitude プラグインを使用してアプリに AR 機能を追加します。</p>
         </a>
     </div>
     <div class="item">
         <a href="/ja/tutorials/in-app_purchase/">
-            <h3>In-app Purchase</h3>
-            <p>Adding in-app purchase feature to your app using Cordova In-app Purchase plugin</p>
+            <h3>アプリ内課金</h3>
+            <p>Cordova In-App Purchase プラグインを使用してアプリにアプリ内購入機能を追加します。</p>
         </a>
     </div>
 </div>
