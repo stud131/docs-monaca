@@ -192,7 +192,7 @@ Monaca CI では、次のパラメーターをサポートしています ( JSON
 
 #### Monaca へのサービスの追加
 
-API トークンを取得後、Appetize.io を Monaca する方法は、以下になります。
+API トークンを取得後、Appetize.io を Monaca に追加する方法は、以下になります。
 
 1.  Monaca クラウド IDE メニューの {{<menu menu1="設定" menu2="デプロイサービス">}} を選択します。
 
