@@ -87,7 +87,7 @@ Monaca では、デバッグビルド、テストビルド ( Ad Hoc )、リリ�
         <td>
             <ul>
                 <li>Xcodeでシュミュレーション</li>
-                <li>ブラウザ上でシュミュレーション(<a href="https://docs.monaca.io/ja/products_guide/monaca_ide/monaca_ci/supported_services/#appetize-io">外部サービス利用</a>)</li>
+                <li><a href="/ja/products_guide/monaca_ide/monaca_ci/supported_services/#appetize-io">ブラウザ上でシュミュレーション</a></li>
             </ul>
         </td>
     </tr>

@@ -86,17 +86,15 @@ order to do this, please do as follows:
 
 2.  Click on {{<guilabel name="Add Deploy Service">}}.
 
-3.  Choose a deploy service and fill in the required information. Then,
-    click {{<guilabel name="Add">}}. Here is the information you will need to input:
+3.  Choose a deploy service and fill in the required information such as:
     
     -   `Config Alias`: a unique identifier for each service
 
     -   `Username (DeployGate only)`: app's owner's username or organization name registered in DeployGate
     
-    -   `API Key` (DeployGate) or `API Token` (HockeyApp): API key provided the deployment service prvider. For more information on how to get the API key for each service, please refer to [How to Get API Key from DeployGate]({{<ref "supported_services.en.md#how-to-get-api-key">}}) and [How to Get API Key from HockeyApp]({{<ref "supported_services.en.md#how-to-get-api-key-1">}}).
+    -   `API Key` (DeployGate) or `API Token` (HockeyApp/Appetize): API key provided by the deployment service provider. For more information on how to get the API key for each service, please refer to [Deploy Services]({{<ref "supported_services.en.md">}}).
 
     {{<figure src="/images/monaca_ide/manual/monaca_ci/overview/1.png" title="DeployGate" width="500">}}
-    {{<figure src="/images/monaca_ide/manual/monaca_ci/overview/1_1.png" title="HockeyApp" width="500">}}
 
 4.  Go to `Continuous Integration` panel, you will see your newly added
     service under `Configured Deploy Services` section.
