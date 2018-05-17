@@ -1,115 +1,112 @@
 ---
-title: Migration from Telerik Platform
+title: Telerik プラットフォームからの移行
 hidden: true
 ---
 
-In this page, we will demonstrate a quick and easy steps to migrate a Telerik AppBuilder project into Monaca. After finish this guide, you would be able to run, test/debug and build an app from your telerik project using Monaca! Let's get started!
+このページでは、Telerik AppBuilder プロジェクトを Monaca に移行するための簡単な手順を解説します。Monaca を使って telerik プロジェクトの実行、テスト、デバッグ、ビルドを行うことができます。
 
-## Cordova version & Build Environment
+## Cordova バージョンとビルド環境
 
-Before getting started with the migration, you may want to know about the supported Cordova version and build environment in Monaca.
-
-All newly created projects in Monaca will be using the latest supported Cordova version (currently, <b>Cordova 7.1</b>) by default. If you want to use a lower version, please [contact us](https://monaca.io/service/index.html).
+移行を開始する前に、Monaca で新しく作成されたプロジェクトは、すべてデフォルトでサポートされている最新の Cordova バージョン (現在は <b>Cordova 7.1</b>) を使用します。下位バージョンを使用する場合は、[問い合わせ窓口](https://ja.monaca.io/service/index.html) までご連絡ください。
 
 <br />
-Build environment for Cordova 7.1:
+Cordova 7.1 のビルド環境:
 
 - Cordova Android platform: `6.4.0` (API level 26)
 - Gradle version: `4.3.1`
 - Cordova iOS platform: `4.5.4` 
 - Xcode: `9`
 
-For more information on build environment for lower Cordova version, pleaser refer to [Build Environment](/ja/environment/).
+下位の Cordova バージョンの対応環境については、[対応環境](/ja/environment/) を参照してください。
 
-## Step 1: Preparation
+## ステップ 1: 準備
 
-Use Telerik tool to convert your project to Cordova CLI. This will convert your project into a Cordova project. Then, zip your project.
+Telerik ツールを使用してプロジェクトを Cordova プロジェクトに変換します。 次に、プロジェクトを ZIP ファイルに圧縮します。
 
-## Step 2: Importing to Monaca Cloud IDE
+## ステップ 2: Monaca クラウド IDE へのインポート
 
-1. From Monaca [Dashboard](https://monaca.mobi/en/dashboard), select {{<guilabel name="Import">}}.
+1. Monaca [ダッシュボード](https://monaca.mobi/ja/dashboard)から、 {{<guilabel name="インポート">}} を選択します。
 
-2. Enter a project name and choose `Upload Project Package` option. Then, browse your project ZIP file. 
+2. プロジェクト名を入力し、`プロジェクトのパッケージをアップロード` オプションを選択します。 次に、プロジェクトの ZIP ファイルを参照します。
 
     {{<img src="/images/monaca_ide/manual/2.png" width="500px">}}
 
-3. Click {{<guilabel name="Import">}} to import the project into Monaca.
+3. {{<guilabel name="インポート">}} をクリックして、プロジェクトをMonaca にインポートします。
 
-4. Click {{<guilabel name="Open">}} to open your project in Monaca Cloud IDE.
+4. Monaca クラウド IDE でプロジェクトを開くには、{{<guilabel name="開く">}} をクリックします。
 
     {{<img src="/images/monaca_ide/manual/3.png" width="400px">}}
 
-5. When the IDE appears, you can view your app in the [Preview window](https://docs.monaca.io/ja/products_guide/monaca_ide/overview/#live-preview). 
+5. IDE が表示されたら、[プレビュー](https://docs.monaca.io/ja/products_guide/monaca_ide/overview/#プレビュー) でアプリを表示できます。
 
     {{<img src="/images/monaca_ide/manual/4.png">}}
 
     {{<note>}}
-        The views or operations in the Preview window might not work properly when Ajax requests or Cordova APIs are used. Read more on {{<link title="Live Preview Limitations" href="https://docs.monaca.io/ja/products_guide/monaca_ide/overview/#live-preivew-limitations">}}. In this case, you can test/debug your project with Monaca Debugger (we will talk about this in the next section).
+        Ajax リクエストまたは Cordova API が使用されている場合、プレビューウィンドウの表示や操作が正しく機能しないことがあります。詳しくは、{{<link title="プレビューの制限" href="https://docs.monaca.io/ja/products_guide/monaca_ide/overview/#プレビューの制限">}} を参照してください。 この場合は、Monaca デバッガーを使用してプロジェクトを テスト/デバッグ することができます (次の項目で解説します) 。
     {{</note>}}
 
-## Step 3: Debugging with Monaca
+## ステップ 3: Monaca でのデバッグ
 
-[Monaca Debugger](/ja/products_guide/debugger/) is an application for testing and debugging your Monaca apps on real devices in real-time. When developing Monaca apps in the Cloud IDE, all changes made to your project file(s) will be synced with your Monaca Debugger in real-time as soon as you save them. 
+[Monaca デバッガー](/ja/products_guide/debugger/) は、端末上で Monaca アプリをリアルタイムでテスト、デバッグするためのアプリケーションです。Monaca クラウド IDE で Monaca アプリを開発する場合、プロジェクトファイルに加えられた変更は、保存後すぐに Monaca デバッガーに同期されます。
 
-Let's get started with Monaca Debugger as follows:
+Monaca デバッガーの使い方は、以下になります。
 
-1. Install Monaca Debugger app on your device from Google Play or AppStore.
+1. Google Play または App Store から端末に Monaca デバッガーをインストールします。
 
     {{<img src="/images/monaca_ide/tutorial/testing_debugging/App_Store.jpg" width="100" link="https://itunes.apple.com/us/app/monaca/id550941371?mt=8">}}
     {{<img src="/images/monaca_ide/tutorial/testing_debugging/Google_play.png" width="100" link="https://play.google.com/store/apps/details?id=mobi.monaca.debugger&hl=en">}}
 
     {{<note>}}
-        If you want to install Monaca Debugger on Android emulator, please refer to {{<link href="/ja/products_guide/debugger/installation/debugger_emulator/" title="Monaca Debugger for Android Emulator">}}.
+        Android エミュレータに Monaca デバッガーをインストールする場合は、 {{<link href="/ja/products_guide/debugger/installation/debugger_emulator/" title="Android エミュレーター向け Monaca デバッガー">}} を参照してください。
     {{</note>}}
 
-2. Launch Monaca Debugger app and sign in with your Monaca account. Make sure you are using the same account for Monaca Cloud IDE.
+2. Monaca デバッガーを起動し、Monaca アカウントでサインインします。 Monaca クラウド IDE と同じアカウントを使用していることを確認してください。
 
     {{<img src="/images/monaca_ide/manual/5.png" width="350px">}}
 
-3. To run a project, simply tap on the project name in Monaca Debugger or click on {{<guilabel name="Run on Device">}} in Monaca Cloud IDE.
+3. プロジェクトを実行するには、Monaca デバッガーのプロジェクト名をタップするか、Monaca クラウド IDE の {{<guilabel name="実機で実行">}} をクリックします。
 
     {{<img src="/images/monaca_ide/manual/6.png" width="350px">}}
 
-4. Your project should now be running in the debugger. Go ahead and try out the various operations of your project!
+4. プロジェクトが Monaca デバッガーで実行されているはずです。 プロジェクトのさまざまな操作を試してみてください。
 
-5. Let's make some code changes in your project in the Cloud IDE and save them. Then, you should see the changes reflected in the debugger. 
+5. Monaca クラウド IDE からプロジェクトのソースコードを変更し、保存します。 Monaca デバッガーに変更が反映されます。
 
-## Step 4: Building the app
+## ステップ 4: アプリのビルド
 
-After knowing how to debug your app, let's start building it. For simplicity, we only show how to create a debug build for Android in this guide. 
+デバッグの次は、ビルドを行います。このステップでは、Android 用デバッグビルドについて解説します。
 
-1. From Monaca Cloud IDE, go to {{<menu menu1="Build" menu2="Build App for Android">}}.
+1. Monaca クラウド IDE から {{<menu menu1="ビルド" menu2="Androidアプリのビルド">}} を選択します。
 
     {{<img src="/images/monaca_ide/manual/7.png">}}
 
-2. The debug build is selected by default. Click {{<guilabel name="Start Build">}}. Then, the build window will be opened in a new tab.
+2. デフォルトでは、デバッグビルドが選択されています。{{<guilabel name="ビルドを開始する">}} をクリックすると、ビルド画面が新しいタブで開かれます。
 
     {{<img src="/images/monaca_ide/manual/8.png">}}
 
-3. It may take several minutes for the build to complete. Please wait. The following screen will appear after the build is successfully completed. You can then choose various ways to install the build app into your device. 
+3. ビルドが完了するまでに数分かかる場合があります。ビルドが正常に完了すると、次の画面が表示されます。ビルドアプリを端末にインストールするさまざまな方法を選択することができます。
 
     {{<img src="/images/monaca_ide/manual/9.png">}}
 
-That's it! With just that you've succesfully built the migrated project with Monaca! That's easy, right? 
 
-## Remarks
+## 備考
 
-When migrating a project into Monaca, there are a few things you should be aware of such as:
+プロジェクトを Monaca に移行する際には、次のような注意点があります。
 
-### When using third-party Cordova plugins
+### サードパーティー製 Cordova プラグインを使用する場合
 
-Store-version Monaca Debugger (found in Google play or AppStore) only includes [Core Cordova plugins](/ja/reference/cordova_6.5/). If your project contains any third-party Cordova plugins besides the Core Cordova plugins, you will need to build custom debugger to test this kind of project. Custom debugger will only include the plugins used in the project. Please refer to:
+Google Play または App Store で公開されているストア版 Monaca デバッガーには、[基本 Cordova プラグイン ( Cordova のコア プラグイン )](/ja/reference/cordova_6.5/) のみが含まれています。プロジェクトに 基本 Cordova プラグイン以外のサードパーティー製 Cordova プラグインが含まれている場合は、プロジェクトをテストするカスタムデバッガーをビルドする必要があります。カスタムデバッガーには、プロジェクトで使用されているプラグインのみが含まれます。 詳しくは、以下を参照してください。
 
-- [Build custom debugger for iOS]({{<ref "debugger_ios.ja.md#how-to-build-custom-monaca-debugger">}})
-- [Build custom debugger for Android]({{<ref "debugger_android.ja.md#build-and-install-custom-monaca-debugger">}})
+- [カスタムビルド版 Monaca デバッガーのビルド方法 ( iOS )]({{<ref "debugger_ios.ja.md#カスタムビルド版-monaca-デバッガーのビルド方法">}})
+- [カスタムビルド版 Monaca デバッガーのビルドとインストール ( Android )]({{<ref "debugger_android.ja.md#カスタムビルド版-monaca-デバッガーのビルドとインストール">}})
 
-### When using JS/CSS Component page
+### JS/CSS コンポーネントページを使用する場合
 
-In Monaca Cloud IDE, there is a GUI page for you to include CSS/JavaScript libraries. You can go there by going to {{<menu menu1="Configure" menu2="JS/CSS Component Settings">}}. Then, the following page will appear. 
+Monaca クラウド IDE には、CSS/JavaScript ライブラリを追加するためのページがあります。{{<menu menu1="設定" menu2="JS/CSSコンポーネントの追加と削除">}} を選択すると、次のページが表示されます。
 
 {{<img src="/images/monaca_ide/manual/10.png">}}
 
-You can then add various CSS/JavaScript libraries. However, this is only working if you include the following 2 lines into your `index.html` file:
+このページでは、さまざまな CSS/JavaScript ライブラリを追加することができますが、実際にプロジェクトで利用するためには、`index.html` ファイルに、次の 2 行を記述する必要があります。
 
 {{<highlight html>}}
 <!--Load selected JavaScript libraries-->
@@ -119,16 +116,16 @@ You can then add various CSS/JavaScript libraries. However, this is only working
 {{</highlight>}}
 
 
-Please note that `loader.js` file is also loaded `cordova.js` file. Therefore, if you are going to include the above lines, you can remove this line: 
+`loader.js` ファイルには、 `cordova.js` ファイルをロードするための設定が追加されているため、上記を追加した場合は、次の行を削除することができます。
 
 {{<highlight html>}}
 <script src="cordova.js"></script>
 {{</highlight>}}
 
-## Where to go from here
+## さらに詳しく
 
-To learn more about Monaca, please refer to the following materials:
+Monaca の詳細については、以下を参照してください。
 
-- [Monaca Cloud IDE tutorials](/ja/tutorials/monaca_ide/)
-- [Monaca Cloud IDE manual](/ja/products_guide/monaca_ide/)
-- [Sample Apps](/ja/sampleapp/samples/)
+- [Monaca クラウド IDE チュートリアル](/ja/tutorials/monaca_ide/)
+- [Monaca クラウド IDE](/ja/products_guide/monaca_ide/)
+- [サンプルアプリ & テンプレート](/ja/sampleapp/samples/)

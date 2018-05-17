@@ -1,11 +1,11 @@
 ---
-title: Migration from Other Platforms
+title: 他のプラットフォームからの移行
 weight: 100
 ---
 
-Monaca is built on top of Cordova. Therefore, any Cordova-like projects can be imported into Monaca. This page provides guides on how to migrate your existing projects from various platforms into Monaca. In addition to the migration procedure, each guide assists you to quickly get started with Monaca from when you start importing the existing project to building an app from it. 
+Monaca は、Cordova 上に構築されています。そのため、Cordova のようなプロジェクトは、Monaca にインポートすることができます。このページでは、既存のプロジェクトを Monaca に移行する方法について解説します。移行手順に加え、各ガイドでは、既存のプロジェクトをインポートした後のアプリケーションの構築について解説を行なっています。
 
-Welcome to Monaca and enjoy the ride!
+Monaca へようこそ！
 
-- [Migration from Telerik Platform](telerik_migration)
+- [Telerik プラットフォームからの移行](telerik_migration)
 
