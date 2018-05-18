@@ -1,6 +1,6 @@
 ---
 title: Migration from Telerik Platform
-hidden: true
+aliases: /en/products_guide/telerik_migration
 ---
 
 In this page, we will demonstrate a quick and easy steps to migrate a Telerik AppBuilder project into Monaca. After finish this guide, you would be able to run, test/debug and build an app from your telerik project using Monaca! Let's get started!

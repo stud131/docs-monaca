@@ -1,6 +1,6 @@
 ---
 title: Telerik プラットフォームからの移行
-hidden: true
+aliases: /ja/products_guide/telerik_migration
 ---
 
 このページでは、Telerik AppBuilder プロジェクトを Monaca に移行するための簡単な手順を解説します。Monaca を使って telerik プロジェクトの実行、テスト、デバッグ、ビルドを行うことができます。
