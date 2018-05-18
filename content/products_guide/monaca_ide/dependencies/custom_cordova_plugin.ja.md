@@ -12,15 +12,14 @@ Cordova プラグインの作成方法とプロジェクトへの組み込み方
 プラグインのご利用には、対応するプランへの加入が必要です ( {{<link href="https://ja.monaca.io/pricing.html" title="料金プラン">}} を参照のこと )。
 {{</note>}}
 
-ユーザー Cordova プラグインの使用に必要な要件を、次に記します。
+ユーザー Cordova プラグインは、以下の要件を満たす必要があります。
 
 -   Cordova 4.2 以上との互換性
 -   `plugin.xml` ファイルを使用すること、および、`plugman` ( コマンド
     ライン ツール ) を使用してインストールができること
 -   iOS と Android のサポート
 
-さまざまな Cordova
-プラグインをインターネット上で見つけることができますが、メンテナンスが不十分だったり、バージョンが古い場合があります。そのため、ここでは、プラグインを最初から自作する方法について解説します。
+さまざまな Cordova プラグインをインターネット上で見つけることができますが、メンテナンスが不十分だったり、バージョンが古い場合があります。そのため、ここでは、プラグインを最初から自作する方法について解説します。
 
 ## ユーザー Cordova プラグインの構成
 
@@ -39,7 +38,7 @@ Cordova プラグインの典型的なディレクトリー構成を、次に記
 最初にサンプルプラグインのコードを、次のリンクからダウンロードします (
 zip ファイル )。
 
-{{<download  href="/download/cordova_plugin_sample.zip" title="Cordovaプラグインのサンプル">}}
+{{<download href="/download/cordova_plugin_sample.zip" title="サンプル Cordova プラグインのダウンロード">}}
 
 パッケージを解凍すると、次のようなディレクトリー構成が表示されます。
 
@@ -109,8 +108,7 @@ var helloWorld = new HelloWorld();
 module.exports = helloWorld;
 {{</highlight>}}
 
-Cordova のコールバック関数の記法については、[プラグインの開発ガイド (英語サイト)](http://cordova.apache.org/docs/en/latest/guide/hybrid/plugins/index.html)
-をご確認ください。
+Cordova のコールバック関数の記法については、[プラグインの開発ガイド (英語サイト)](http://cordova.apache.org/docs/en/latest/guide/hybrid/plugins/index.html) をご確認ください。
 
 ### iOS と Android のネイティブコード
 
@@ -125,22 +123,17 @@ Java になります。関数名は、JavaScript
 
 ## ユーザー Cordova プラグインのインポート
 
-ユーザー Cordova プラグインをプロジェクトに追加する場合、次の手順に従います。
+ユーザー Cordova プラグインをインポートする場合、次の手順に従います。
 
-1.  ユーザー Cordova プラグインのファイルを、zip
-    形式のファイルに圧縮します。
-2.  Monaca クラウド IDE のメニューから、
-    {{<menu menu1="設定" menu2="Cordova プラグインの管理...">}} を選択します。
-3.  [ Cordova とプラグインの管理 ]
-    ページが表示されます。次に、{{<guilabel name="Cordova プラグインのインポート">}}
-    ボタンをクリックします。
+1.  Monaca クラウド IDE のメニューから、{{<menu menu1="設定" menu2="Cordova プラグインの管理">}} を選択します。
 
-    {{<img src="/images/monaca_ide/manual/dependencies/custom_cordova_plugin/2.png">}}
+2.  Cordova プラグインページが表示されます。{{<guilabel name="Cordova プラグインのインポート">}} ボタンをクリックします。
 
-4.  プラグインファイル ( zip ファイル ) を参照して、{{<guilabel name="インポート">}}
-    ボタンをクリックします。
+    {{<img src="/images/monaca_ide/manual/dependencies/custom_cordova_plugin/import.png">}}
 
-    {{<img src="/images/monaca_ide/manual/dependencies/custom_cordova_plugin/3.png">}}
+3.  プラグインファイル ( zip ファイル ) を選択し、{{<guilabel name="OK">}} をクリックします。
+
+    {{<img src="/images/monaca_ide/manual/dependencies/custom_cordova_plugin/upload.png">}}
 
 ## ユーザー Cordova プラグインと Monaca デバッガー
 
@@ -160,8 +153,8 @@ App Store または Google Play で入手できる Monaca
 Cordova プラグインを組み込んだプロジェクトを使用してビルドします
 )。カスタムビルド版デバッガーのビルド方法、および、通常版とカスタムビルド版のデバッガーの相違に関しては、次のリンク先をご確認ください。
 
-- [iOS 向け Monaca デバッガー]({{<ref "debugger_ios.ja.md">}})
-- [Android 向けの Monaca デバッガー]({{<ref "debugger_android.ja.md">}})
+- [iOS 用カスタムビルド版 Monaca デバッガーのビルド方法](/ja/products_guide/debugger/installation/debugger_ios/#カスタムビルド版-monaca-デバッガーのビルド方法)
+- [Android 用カスタムビルド版 Monaca デバッガーのビルドとインストール](/ja/products_guide/debugger/installation/debugger_android/#カスタムビルド版-monaca-デバッガーのビルドとインストール)
 
 {{<note>}}
 カスタムビルド版デバッガーをビルドする前に、ユーザー Cordova
@@ -193,13 +186,12 @@ Cordova プラグインを組み込んだプロジェクトを使用してビル
 </script>
     {{</highlight>}}
 
-4.  通常版の Monaca
-    デバッガー上でプロジェクトを実行してみましょう。通常版では、メッセージダイアログが表示されません。
-5.  カスタムビルド版 Monaca
-    デバッガーをビルドします。詳細は、次のリンク先をご確認ください。
+4.  通常版の Monaca デバッガー上でプロジェクトを実行してみましょう。ユーザー Cordova プラグインが標準デバッガーに存在しないため、メッセージダイアログは表示されません。
 
-    - [iOS 向けのカスタムビルド版 Monaca デバッガーのビルド]({{<ref "debugger_ios.ja.md#カスタムビルド版-monaca-デバッガーのビルド方法">}})
-    - [Android 向けのカスタムビルド版 Monaca デバッガーのビルド]({{<ref "debugger_android.ja.md#カスタムビルド版-monaca-デバッガーのビルドとインストール">}}))
+5.  カスタムビルド版 Monaca デバッガーをビルドします。ビルド方法につきましては、次のリンク先をご確認ください。
+
+    - [iOS 用カスタムビルド版 Monaca デバッガーのビルド方法](/ja/products_guide/debugger/installation/debugger_ios/#カスタムビルド版-monaca-デバッガーのビルド方法)
+    - [Android 用カスタムビルド版 Monaca デバッガーのビルドとインストール](/ja/products_guide/debugger/installation/debugger_android/#カスタムビルド版-monaca-デバッガーのビルドとインストール)
 
 6.  カスタムビルド版 Monaca デバッガーをインストールします。
 7.  デバッガーを起動させ、ログイン画面上で {{<guilabel name="デバッガー情報">}}

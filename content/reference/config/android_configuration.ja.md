@@ -21,7 +21,7 @@ Android アプリの設定画面 では、Android
 
 2.  `Android アプリ設定` 画面が、次のように表示されます。こちらの画面で各種設定を行います。
 
-    {{<img src="/images/reference/config/android/3.png">}}
+    {{<img src="/images/reference/config/android/settings.png">}}
 
 3.  設定後、 {{<guilabel name="保存する">}} ボタンをクリックします。
 

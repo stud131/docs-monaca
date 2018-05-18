@@ -180,7 +180,7 @@ Let's try experiencing Appetize.io's services with [this demo](https://appetize.
 
 {{<img src="/images/monaca_ide/manual/monaca_ci/supported_services/appetize_demo.png">}}
 
-#### How to Get API Key
+#### How to Get API Token
 
 1. Register and log into [Appetize.io](https://appetize.io/).
 
@@ -188,6 +188,22 @@ Let's try experiencing Appetize.io's services with [this demo](https://appetize.
 
     {{<img src="/images/monaca_ide/manual/monaca_ci/supported_services/appetize_get_api_token.png" width="450">}}
 
+#### Adding the Service to Monaca
+
+After getting the API Token, you are ready to add Appetize.io to Monaca. Please do as follows:
+
+1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="Deploy Services">}}.
+
+2.  Click on {{<guilabel name="Add Deploy Service">}}.
+
+3.  Select `AppetizeIo` and fill in the required information such as
+    
+    -   `Config Alias`: a unique identifier for each service
+    -   `API Token`: API Token provided by Appetize.io
+
+    {{<figure src="/images/monaca_ide/manual/monaca_ci/overview/appetize.png" width="500">}}
+
+4. Then, click on {{<guilabel name="Add">}}. That's it. You can now use Appetize's simulator to install your build apps.
 
 #### Parameters
 

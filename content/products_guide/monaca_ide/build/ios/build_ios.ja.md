@@ -10,8 +10,7 @@ aliases:
 Appleは2018年4月から、App Storeに提出されたすべての新しいiOSアプリケーションはiOS 11 SDKで構築する必要があると {{<link title="アナウンス" href="https://developer.apple.com/ios/submit/">}}がありました。また、ユニバーサルアプリを含むすべてのiPhoneアプリは、iPhone XのSuper Retinaディスプレイをサポートする必要があります。このため、MonacaアプリをAppStoreに公開するには、Cordova 7.1以降をプロジェクトで利用する必要があります。
 {{</note>}}
 
-事前準備
---------
+## 事前準備
 
 事前準備として、次の内容を行います。
 
@@ -88,7 +87,7 @@ Monaca では、デバッグビルド、テストビルド ( Ad Hoc )、リリ�
         <td>
             <ul>
                 <li>Xcodeでシュミュレーション</li>
-                <li>ブラウザ上でシュミュレーション(<a href="https://docs.monaca.io/ja/products_guide/monaca_ide/monaca_ci/supported_services/#appetize-io">外部サービス利用</a>)</li>
+                <li><a href="/ja/products_guide/monaca_ide/monaca_ci/supported_services/#appetize-io">ブラウザ上でシュミュレーション</a></li>
             </ul>
         </td>
     </tr>
@@ -103,8 +102,7 @@ Ad Hoc 配布とは、App Store
 形式で配布できます。ただし、アプリの配布先は、開発関係者に限定されます。
 {{</note>}}
 
-ステップ 1 : Monaca 上での iOS アプリ設定
------------------------------------------
+## ステップ 1 : Monaca 上での iOS アプリ設定
 
 ### iOS アプリの設定
 
@@ -172,8 +170,7 @@ Ad Hoc 配布とは、App Store
         Monoaca のビルド設定上では、証明書とそれに対応するプロビジョニングプロファイルを、複数個、アップロード・保管しておくことができます。
     {{</note>}}
 
-ステップ 2 : iOS Dev Center 上での iOS アプリ設定
--------------------------------------------------
+## ステップ 2 : iOS Dev Center 上での iOS アプリ設定
 
 1.  [Apple Developer ページ](https://developer.apple.com/) へ行き、`メンバーセンター ( Account )` をクリックします。
 2.  Apple Developer Program に登録した、Apple ID
@@ -323,8 +320,7 @@ App ID の登録を、次の手順で行います。
 配布用 プロビジョニング プロファイルの作成も、ほぼ同様の手順で行えます。
 {{</note>}}
 
-ステップ 3 : アプリのビルド
----------------------------
+## ステップ 3 : アプリのビルド
 
 1.  Monaca クラウド IDE のメニューから、
     {{<menu menu1="ビルド" menu2="iOS アプリのビルド">}} を選択します。

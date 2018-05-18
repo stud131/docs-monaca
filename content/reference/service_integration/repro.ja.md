@@ -8,16 +8,15 @@ weight: 10
 のみサポートしています。
 
 {{<note>}}
-    どのプランをご利用の場合でも、こちらの Repro サービスをご利用いただけます。最新の Repro プラグインを使用する場合 ( {{<link href="https://github.com/reproio/repro-ios-sdk" title="GitHub">}} 経由で入手 ) には、こちらの  {{<link href="/ja/products_guide/monaca_ide/dependencies/custom_cordova_plugin/#ユーザー-cordova-プラグインのインポート" title="インポート">}} 機能をご利用ください。なお、プラグインのインポートには、対応するプランへの加入が必要です。プランの詳細は、 {{<link href="https://ja.monaca.io/pricing.html" title="こちら">}} をご確認ください。.
+    どのプランをご利用の場合でも、こちらの Repro サービスをご利用いただけます。最新の Repro プラグインを使用する場合 ( {{<link href="https://github.com/reproio/repro-ios-sdk" title="GitHub">}} 経由で入手 ) には、こちらの  {{<link href="/ja/products_guide/monaca_ide/dependencies/cordova_plugin/#cordova-プラグイン-のインポート" title="インポート">}} 機能をご利用ください。なお、プラグインのインポートには、対応するプランへの加入が必要です。プランの詳細は、 {{<link href="https://ja.monaca.io/pricing.html" title="こちら">}} をご確認ください。.
 {{</note>}}
 
-Repro サービスの追加
---------------------
+## Repro サービスの追加
 
-1.  Monaca クラウド IDE から設定する場合、 {{<menu menu1="設定" menu2="外部サービス連携">}}
-    を選択するか、または、Monaca Localkit から設定する場合、
-    {{<menu menu1="ビルド設定" menu2="外部サービス連携 ( 左パネル )">}} を選択します。
-2.  Repro サービスの {{<guilabel name="詳細を見る">}} ボタンをクリックします。
+1.  Monaca クラウド IDE から、 {{<menu menu1="設定" menu2="外部サービス連携">}} を選択します。
+
+2.  *Repro* サービスの {{<guilabel name="詳細を見る">}} ボタンをクリックします。
+
 3.  {{<guilabel name="インストール">}} ボタンをクリックします。
 
     {{<img src="/images/reference/service_integration/repro/2.png" width="500">}}
@@ -25,8 +24,7 @@ Repro サービスの追加
 4.  インストールを継続するか確認する画面が表示されます。 {{<guilabel name="OK">}}
     をクリックして、インストールを開始します。
 
-Repro サービスの設定
---------------------
+## Repro サービスの設定
 
 Repro の使用には、アプリの 「 トークン 」 が必要です。トークンの確認手順を、次に記します。
 
@@ -50,8 +48,7 @@ function onDeviceReady() {
     Repro の使用方法の詳細は、[Repro のドキュメント {{<link href="http://docs.repro.io/ja/" title="外部サイト">}} をご確認ください。
 {{</note>}}
 
-設定
-----
+## 設定
 
 {{<note>}}
 Repro を使用して行動を録画するためには、端末上で、実際に、アプリを実行する必要があります。
@@ -69,11 +66,10 @@ Repro を使用して行動を録画するためには、端末上で、実際�
 
 4.  Repro 側から送信される電子メールを受信して、記載されている、録画ビデオのリンク先を確認します。
 
-Repro サービスの削除
---------------------
+## Repro サービスの削除
 
-1.  Monaca クラウド IDE から行う場合、 {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} を選択するか、または、Monaca Localkit から行う場合、 {{<menu menu1="ビルド設定" menu2="Cordova プラグイン ( 左パネル )">}} を選択します。
+1.  Monaca クラウド IDE から、{{<menu menu1="設定" menu2="Cordova プラグインの管理">}} を選択します。
 
-2.  Repro プラグイン上にカーソルを置き、 {{<guilabel name="無効">}} ボタンをクリックします。
+2.  `有効なプラグイン` 項目へ移動し、*Repro* プラグイン上にカーソルを置き、 {{<guilabel name="無効">}} ボタンをクリックします。
 
     {{<img src="/images/reference/service_integration/repro/3.png">}}

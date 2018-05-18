@@ -1,5 +1,5 @@
 ---
-title: "Cordova In-app Purchase Plugin"
+title: "Cordova In-app Purchase プラグイン"
 weight: 100
 ---
 

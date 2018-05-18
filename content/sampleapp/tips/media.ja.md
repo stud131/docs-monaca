@@ -51,7 +51,7 @@ HTML5 `<audio>` タグは、Monacaプロジェクト内に配置された音源�
 Media プラグインでは、開始、一時停止、停止、再開、音量の設定など、音源ファイルの再生方法を制御する機能があります。
 
 {{<note>}}
-    はじめに、Monaca クラウドIDE で <code>Media</code> プラグインを {{<link href="/ja/products_guide/monaca_ide/dependencies/cordova_plugin/#cordova-プラグイン-の追加とインポート" title="有効">}} にする必要があります。
+    はじめに、Monaca クラウドIDE で <code>Media</code> プラグインを {{<link href="/ja/products_guide/monaca_ide/dependencies/cordova_plugin/#cordova-プラグイン-のインポート" title="有効">}} にする必要があります。
 {{</note>}}
 
 ### 音の再生 ( 外部の音源を使用 )

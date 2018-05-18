@@ -14,10 +14,9 @@ WebIntent
 プラグインの追加方法 ( Monaca 上での処理 )
 ------------------------------------------
 
-1.  IDE メニュー上で、 {{<menu menu1="ファイル" menu2="Cordova プラグインの管理">}} または
-    {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} を選択します。
+1.  Monaca クラウド IDE から {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} を選択します。
 
-2.  WebIntent の {{<guilabel name="有効">}} ボタンをクリックして、プロジェクトへ追加します。
+2.  *利用可能なプラグイン* 項目の `WebIntent` プラグインにカーソルを置き、{{<guilabel name="有効">}} ボタンをクリックします。
 
     {{<img src="/images/reference/third_party_phonegap/webintent/1.png">}}
 

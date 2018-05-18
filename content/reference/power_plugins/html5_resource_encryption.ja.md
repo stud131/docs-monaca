@@ -17,8 +17,7 @@ weight: 10
 - [Cordova 6.2 向けのプロジェクトで使用する場合](#cordova-6-2-向けのプロジェクトで使用する場合)
 - [Cordova 5.2 向け、または、それ以前のバージョンを使用したプロジェクトで使用する場合](#cordova-5-2-向け-または-それ以前のバージョンを使用したプロジェクトで使用する場合)
 
-Cordova 6.2 向けのプロジェクトで使用する場合
---------------------------------------------
+## Cordova 6.2 向けのプロジェクトで使用する場合
 
 Cordova 6.2 向けのプロジェクトで、このプラグインを使用する場合、次の機能が追加されます。
 
@@ -41,15 +40,13 @@ Cordova 6.2 向けのプロジェクトで、このプラグインを使用す�
 
 ### プラグインの追加方法
 
-1.  Monaca クラウド IDE メニュー上で、
-    {{<menu menu1="ファイル" menu2="Cordova プラグインの管理...">}} または
-    {{<menu menu1="設定" menu2="Cordova プラグインの管理...">}} を選択します。
+1.  Monaca クラウド IDE から {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} を選択します。
 
-2.  `Encrypt` プラグインの {{<guilabel name="有効">}} ボタンをクリックします。
+2.  *利用可能なプラグイン* 項目の `Encrypt` プラグインにカーソルを置き、{{<guilabel name="有効">}} ボタンをクリックします。
 
     {{<img src="/images/reference/power_plugins/html5_resource_encryption/5.png">}}
 
-3.  次に、*有効なプラグイン* 欄へ行き、先ほど追加したプラグイン上に、マウスポインターを持っていきます。表示された画面上で、 {{<guilabel name="設定">}} ボタンをクリックします。
+3.  次に、*有効なプラグイン* 項目へ行き、先ほど追加したプラグイン上に、カーソルを置き、{{<guilabel name="設定">}} ボタンをクリックします。
 
     {{<img src="/images/reference/power_plugins/html5_resource_encryption/6.png">}}
 
@@ -142,14 +139,13 @@ Compliance 上の 2 つの質問に対して、次のように、「 Yes 」 で
 
 ### プラグインの追加方法 ( Monaca クラウド IDE 上での処理 )
 
-1.  Monaca クラウド IDE メニュー上で、
-    {{<menu menu1="ファイル" menu2="Cordova プラグインの管理...">}} または
-    {{<menu menu1="設定" menu2="Cordova プラグインの管理...">}} を選択します。
-2.  `Encrypt` プラグインの {{<guilabel name="有効">}} ボタンをクリックします。
+1.  Monaca クラウド IDE から {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} を選択します。
+
+2.  *利用可能なプラグイン* 項目の `Encrypt` プラグインにカーソルを置き、{{<guilabel name="有効">}} ボタンをクリックします。
 
     {{<img src="/images/reference/power_plugins/html5_resource_encryption/1.png">}}
 
-3.  暗号化用のパスワードを設定します。 *有効なプラグイン* 欄へ行き、先ほど追加したプラグイン上に、マウスポインターを持っていきます。表示された画面上で、 {{<guilabel name="設定">}} ボタンをクリックします。
+3.  暗号化用のパスワードを設定します。 *有効なプラグイン* 項目へ行き、先ほど追加したプラグイン上に、カーソルを置き、{{<guilabel name="設定">}} ボタンをクリックします。
 
     {{<img src="/images/reference/power_plugins/html5_resource_encryption/2.png">}}
 

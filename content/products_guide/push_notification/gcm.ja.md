@@ -20,8 +20,7 @@ Monaca では、FCM ( Firebase Cloud Messaging )
 ここでは、Google アカウントを使用します。
 {{</note>}}
 
-ステップ 1 : API Key の取得 ( Firebase Console 上 )
----------------------------------------------------
+## ステップ 1 : API Key の取得 ( Firebase Console 上 )
 
 Firebase Console ページ上で `サーバーキー` と `送信者 ID`
 を確認します。FCM と Monaca
@@ -50,17 +49,16 @@ Firebase Console ページ上で `サーバーキー` と `送信者 ID`
 
     {{<img src="/images/backend/gcm/4.png">}}
 
-ステップ 2 : FCM 関連のパラメーター設定 ( Monaca 上 )
------------------------------------------------------
+## ステップ 2 : FCM 関連のパラメーター設定 ( Monaca 上 )
 
-1.  Monaca クラウド IDE
-    のバックエンド管理パネルから、{{<menu menu1="プッシュ通知 ( 左側のメニュー )" menu2="詳細メニュー ( 画面右上のアイコン )" menu3="プッシュ通知設定 ( ドロップダウンリスト上 )">}}
-    を選択します。
+1.  Monaca Backend ウィンドウから、{{<guilabel name="プッシュ通知">}} を選択します。
 
-    {{<img src="/images/backend/gcm/5.png">}}
+2.  右上隅にある `歯車` アイコンをクリックし、{{<guilabel name="プッシュ通知設定">}} を選択します。
 
-2.  [ Android ] 項目上の Sender ID と Server API Key に、先ほどの
+    {{<img src="/images/backend/gcm/settings.png">}}
+
+3.  [ Android ] 項目上の Sender ID と Server API Key に、先ほどの
     `送信者 ID` と `サーバーキー` を、それぞれ入力して、{{<guilabel name="保存する">}}
     ボタンをクリックします。ここまでの手順で、Android 向けプッシュ通知の準備が整いました。
 
-    {{<img src="/images/backend/gcm/6.png">}}
+    {{<img src="/images/backend/gcm/android_settings.png">}}

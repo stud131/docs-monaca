@@ -190,6 +190,24 @@ Monaca CI では、次のパラメーターをサポートしています ( JSON
 
     {{<img src="/images/monaca_ide/manual/monaca_ci/supported_services/appetize_get_api_token.png" width="450">}}
 
+#### Monaca へのサービスの追加
+
+API トークンを取得後、Appetize.io を Monaca に追加する方法は、以下になります。
+
+1.  Monaca クラウド IDE メニューの {{<menu menu1="設定" menu2="デプロイサービス">}} を選択します。
+
+2.  {{<guilabel name="新しく追加する">}} をクリックします。
+
+3.  `AppetizeIo` を選択し、以下の必要情報を入力します。
+    
+    -   `エイリアス名`: 各サービスの一意の識別子
+    -   `API トークン`: Appetize.io から取得した API トークン
+
+    {{<figure src="/images/monaca_ide/manual/monaca_ci/overview/appetize.png" width="500">}}
+
+4. {{<guilabel name="追加">}} をクリックします。
+
+以上で、Appetize のシミュレータを使用してビルドアプリをインストールできるようになります。
 
 #### 設定パラーメーター
 

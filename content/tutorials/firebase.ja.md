@@ -1,5 +1,5 @@
 ---
-title: "Cordova Firebase Plugin"
+title: "Cordova Firebase プラグイン"
 weight: 90
 ---
 

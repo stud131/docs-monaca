@@ -64,19 +64,19 @@ weight: 20
 
         {{<img src="/images/sampleapp/facebook_sso/ios_setting.png">}}
 
-## Importing the Project to Monaca Cloud IDE                                 
+## Monaca クラウド IDE へのプロジェクトのインポート                                 
 
 {{<import pid="591abc668034513c335e2ecf" title="Facebook Single Sign-on App">}}                               
 
-## Configuring the Plugin                                                                          
+## プラグインの設定                                                                          
 
 認証処理には、[cordova-plugin-facebook4](https://github.com/jeduan/cordova-plugin-facebook4) プラグインを使用します。このプラグインでは、[ 以下の文は現在確認中 ] シングルサインオンには、ネイティブの Facebook アプリを使用します。標準的なダイアログを使用した認証方法の場合、サインオンの処理が著しく遅くなります。
 
 プラグインを使用する前に、次のように、[ Cordova プラグイン ] 画面上で `APP_ID ( アプリ ID )` と `APP_NAME ( 表示名 )` を設定する必要があります。
 
-1. Monaca クラウド IDE のメニューから、{{<menu menu1="設定" menu2="Cordova プラグインの管理">}} を選択します。
+1.  Monaca クラウド IDE から {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} を選択します。
 
-2. *有効なプラグイン* 欄に行きます。`cordova-plugin-facebook4` 上にマウスポインターを持っていき、{{<guilabel name="設定">}} ボタンをクリックします。
+2.  *利用可能なプラグイン* 項目の `cordova-plugin-facebook4` プラグインにカーソルを置き、{{<guilabel name="有効">}} ボタンをクリックします。
 
     {{<img src="/images/sampleapp/facebook_sso/plugin_config.png">}}
 
@@ -86,7 +86,7 @@ weight: 20
 
 4. {{<guilabel name="OK">}} ボタンをクリックして、設定を保存します。
 
-## Application Explanation
+## アプリの解説
 
 ### ファイル構成
 

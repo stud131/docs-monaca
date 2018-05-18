@@ -26,9 +26,7 @@ weight: 30
 プラグインの追加方法
 --------------------
 
-1.  Monaca クラウド IDE メニュー上で、
-    {{<menu menu1="ファイル" menu2="Cordova プラグインの管理...">}} または
-    {{<menu menu1="設定" menu2="Cordova プラグインの管理...">}} を選択します。
+1.  Monaca クラウド IDE から {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} を選択します。
 
 2.  `Monaca Secure Storage` の {{<guilabel name="有効">}} ボタンをクリックして、プロジェクトへ追加します。
 

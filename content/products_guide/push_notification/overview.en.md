@@ -68,7 +68,7 @@ To send push notifications from Monaca Cloud IDE, please proceed as follows:
     | Title | [Android only] a title of a notification |
     | Message | the text content of a notification |
     | Badge | [iOS only] If you enable this option and set its value to an Integer of 1 or greater, the number will be displayed on the top right corner of the app icon. |
-    | JSON Data | [Optional] Once the user opens the notification, the application will receive the JSON data. Please refer to [How to Receive JSON Data](#receive-json-data). |
+    | JSON Data | [Optional] Once the user opens the notification, the application will receive the JSON data. Please refer to [How to Receive JSON Data](#how-to-receive-json-data). |
 
 6.  Click on {{<guilabel name="Add">}} button to send the push notification. It will be queued
     first and sent afterward. The delivery might delay if there is high
@@ -91,7 +91,7 @@ each push notification such as:
 
 {{<figure src="/images/backend/overview/3.png">}}
 
-## <a name="receive-json-data"></a> How to Receive JSON Data
+## How to Receive JSON Data
 
 JSON data within a push notification can be received by
 `monaca.cloud.Push.setHandler` function. The JSON data will be passed to

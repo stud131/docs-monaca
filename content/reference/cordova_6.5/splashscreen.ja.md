@@ -22,7 +22,7 @@ cordova-plugin-splashscreen
 プラグインの追加方法 ( Monaca 上での処理 )
 ------------------------------------------
 
-このプラグインを使用する場合には、Monaca クラウド IDE の [ Cordova プラグインの管理 ] 上で、`Splashscreen` プラグインを [有効]({{<ref "cordova_plugin.ja.md#cordova-プラグイン-の追加とインポート">}}) にします。
+このプラグインを使用する場合には、Monaca クラウド IDE の [ Cordova プラグインの管理 ] 上で、`Splashscreen` プラグインを [有効]({{<ref "cordova_plugin.ja.md#cordova-プラグイン-のインポート">}}) にします。
 
 サポート対象のプラットフォーム
 ------------------------------

@@ -11,10 +11,9 @@ aliases: /en/debugger/manual/installation/debugger_android
 {{</note>}}
 
 {{<note>}}
-    <ol>If the Cordova version of your project is lower than 5.2, it might not work properly with Monaca Debugger 5.X.X. There are two ways to fix this issue:
-        <li><a href="/en/products_guide/monaca_ide/dependencies/cordova_plugin/#changing-cordova-version">upgrade Cordova version</a> of your project</li>
-        <li>use <a href="#custom-debugger-and">Custom Monaca Debugger</a>.</li>
-    </ol>
+    If the Cordova version of your project is lower than 5.2, it might not work properly with Monaca Debugger 5.X.X. There are two ways to fix this issue:
+    <li><a href="/en/products_guide/monaca_ide/dependencies/cordova_plugin/#changing-cordova-version">upgrade Cordova version</a> of your project</li>
+    <li>use <a href="#custom-debugger-and">Custom Monaca Debugger</a>.</li>
 {{</note>}}
 
 <table class="small">
@@ -39,7 +38,7 @@ aliases: /en/debugger/manual/installation/debugger_android
         <td>Refer to <a href="#build-and-install-custom-monaca-debugger">Build and Install Custom Monaca Debugger</a></td>
     </tr>
         <tr>
-        <td><a href="#cordova-and">Cordova Plugins</a></td>
+        <td><a href="#cordova-plugins">Cordova Plugins</a></td>
         <td>Core and some third-party Cordova plugins are automatically included.</td>
         <td>In addition to the core and third-party Cordova plugins, user submitted plugins (of the current project) are included.</td>
     </tr>
@@ -59,22 +58,22 @@ aliases: /en/debugger/manual/installation/debugger_android
         <td>Version set by a user</td>
     </tr>
         <tr>
-        <td><a href="#usb-and">USB Debugging</a></td>
+        <td><a href="#usb-debugging">USB Debugging</a></td>
         <td>Available (Chrome Dev Tools)</td>
         <td>Available (Chrome Dev Tools)</td>
     </tr>
     <tr>
-        <td><a href="#localkit-and">Localkit Inspector Function</a></td>
+        <td><a href="#localkit-inspector-function">Localkit Inspector Function</a></td>
         <td>Available</td>
         <td>Available</td>
     </tr>
     <tr>
-        <td><a href="#webview-and">WebView</a></td>
+        <td><a href="#webview">WebView</a></td>
         <td>Stock and Crosswalk</td>
         <td>Stock and Crosswalk</td>
     </tr>
     <tr>
-        <td><a href="#network-and">Network Install</a></td>
+        <td><a href="#network-install">Network Install</a></td>
         <td>Available</td>
         <td>Available</td>
     </tr>

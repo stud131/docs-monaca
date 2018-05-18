@@ -20,22 +20,18 @@ AppsFlyer
 提供の API
 を使用すれば、他のアプリ/プラットフォームと連携することができます。
 
-事前準備
---------
+## 事前準備
 
 AppsFlyer を使用した監視・追跡を行う前に、次の情報が必要となります。
 
 1.  `devKey`: AppsFlyer 提供の devKey です。
 2.  `appId`: ( iOS の場合 ) App Store で使用する App ID です。
 
-Monaca プロジェクトに AppsFlyer を追加する方法
-----------------------------------------------
+## Monaca プロジェクトに AppsFlyer を追加する方法
 
-1.  Monaca クラウド IDE から設定する場合、 {{<menu menu1="設定" menu2="外部サービス連携">}}
-    を選択するか、または、Monaca Localkit から設定する場合、
-    {{<menu menu1="ビルド設定" menu2="外部サービス連携 ( 左パネル )">}} を選択します。
+1.  Monaca クラウド IDE から、 {{<menu menu1="設定" menu2="外部サービス連携">}} を選択します。
 
-2.  AppsFlyer サービスの {{<guilabel name="詳細を見る">}} ボタンをクリックします。
+2.  *AppsFlyer* サービスの {{<guilabel name="詳細を見る">}} ボタンをクリックします。
 
 3.  {{<guilabel name="インストール">}} ボタンをクリックします。
 
@@ -44,8 +40,7 @@ Monaca プロジェクトに AppsFlyer を追加する方法
 4.  インストールを継続するか確認する画面が表示されます。 {{<guilabel name="OK">}}
     をクリックして、インストールを開始します。
 
-AppsFlyer の使用方法 ( Cordova バージョン 6 以降の場合 )
---------------------------------------------------------
+## AppsFlyer の使用方法 ( Cordova バージョン 6.2 以降の場合 )
 
 ### 設定
 
@@ -300,8 +295,7 @@ var handleOpenURL = function(url) {
 }
 {{</highlight>}}
 
-AppsFlyer の使用方法 ( Cordova バージョン 5 系以前の場合 )
-----------------------------------------------------------
+## AppsFlyer の使用方法 ( Cordova バージョン 5.2以下の場合 )
 
 ### 設定
 
@@ -466,15 +460,10 @@ document.addEventListener('onInstallConversionDataLoaded', function(e){
 }, false);
 {{</highlight>}}
 
-Monaca から AppsFlyer を削除する方法
-------------------------------------
+## Monaca から AppsFlyer を削除する方法
 
-1.  Monaca クラウド IDE から行う場合、
-    {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} を選択するか、または、Monaca
-    Localkit から行う場合、 {{<menu menu1="ビルド設定" menu2="Cordova プラグイン ( 左パネル )">}} を選択します。
+1.  Monaca クラウド IDE から、{{<menu menu1="設定" menu2="Cordova プラグインの管理">}} を選択します。
 
-2.  `有効なプラグイン` 欄へ移動します。AppsFlyer
-    プラグイン上にマウスポインターを持っていき、 {{<guilabel name="無効">}}
-    ボタンをクリックします。
+2.  `有効なプラグイン` 項目へ移動し、*AppsFlyer* プラグイン上にカーソルを置き、 {{<guilabel name="無効">}} ボタンをクリックします。
 
     {{<img src="/images/reference/service_integration/apps_flyer/2.png">}}

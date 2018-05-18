@@ -77,6 +77,21 @@ follows:
             </ul>
         </td>
     </tr>
+    <tr>
+        <td><b>Simulator Build</b></td>
+        <td>Building the app for testing on iOS simulator</td>
+        <td>
+            <ul>
+                <li>N/A</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Xcode Simulator</li>
+                <li>[Simulator on browser](/en/products_guide/monaca_ide/monaca_ci/supported_services/#appetize-io)</li>
+            </ul>
+        </td>
+    </tr>
 </table>
 
 {{<note>}}

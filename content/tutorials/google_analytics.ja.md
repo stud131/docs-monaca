@@ -1,5 +1,5 @@
 ---
-title: "Cordova Google Analytics Plugin"
+title: "Cordova Google Analytics プラグイン"
 weight: 70
 ---
 
