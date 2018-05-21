@@ -8,7 +8,7 @@ In this page, we will demonstrate a quick and easy steps to migrate a PhoneGap p
 
 ## Prerequisite
 
-1. Before starting the migration process, please make sure to read about the [Migration Concept](/en/products_guide/migration/phonegap_migration/introduction/) in order to have a seamless migration.   
+1. Before starting the migration process, please make sure to read about the [Key Differences](/en/products_guide/migration/phonegap_migration/introduction/) in order to have a seamless migration.   
 
 2. If you want to create a Monaca account with PhoneGap ID, please go to [sign in with PhoneGap ID](/en/oauth/phonegap/authorize)
 
@@ -36,6 +36,31 @@ In this page, we will demonstrate a quick and easy steps to migrate a PhoneGap p
         The views or operations in the Preview window might not work properly when Ajax requests or Cordova APIs are used. Read more on {{<link title="Live Preview Limitations" href="https://docs.monaca.io/en/products_guide/monaca_ide/overview/#live-preivew-limitations">}}. In this case, you can test/debug your project with Monaca Debugger (we will talk about this in the next section).
     {{</note>}}
 
+
+## Debugging with Monaca
+
+[Monaca Debugger](/en/products_guide/debugger/) is an application for testing and debugging your Monaca apps on real devices in real-time. When developing Monaca apps in the Cloud IDE, all changes made to your project file(s) will be synced with your Monaca Debugger in real-time as soon as you save them. 
+
+Let's get started with Monaca Debugger as follows:
+
+1. Install Monaca Debugger app on your device from Google Play or AppStore.
+
+    {{<img src="/images/monaca_ide/tutorial/testing_debugging/App_Store.jpg" width="100" link="https://itunes.apple.com/us/app/monaca/id550941371?mt=8">}}
+    {{<img src="/images/monaca_ide/tutorial/testing_debugging/Google_play.png" width="100" link="https://play.google.com/store/apps/details?id=mobi.monaca.debugger&hl=en">}}
+
+    {{<note>}}
+        If you want to install Monaca Debugger on Android emulator, please refer to {{<link href="/en/products_guide/debugger/installation/debugger_emulator/" title="Monaca Debugger for Android Emulator">}}.
+    {{</note>}}
+
+2. Launch Monaca Debugger app and sign in with your Monaca account. Make sure you are using the same account for Monaca Cloud IDE.
+
+    {{<img src="/images/migration/telerik/5.png" width="350px">}}
+
+3. To run a project, simply tap on the project name in Monaca Debugger or click on {{<guilabel name="Run on Device">}} in Monaca Cloud IDE.
+
+    {{<img src="/images/migration/phonegap/debugger_ide.png" width="350px">}}
+
+4. Your project should now be running in the debugger. Go ahead and try out the various operations of your project! After that, try making some code changes and save them. Then, you should see the changes reflected in the debugger. 
 
 ## Building the app
 

@@ -1,17 +1,15 @@
 ---
-title: Migration Concept
+title: Key Differences
 weight: 10
 ---
 
-Before starting to migrate your PhoneGap projects into Monaca, there are some differences and remarks you should be aware of. Please read them through in order to have a seamless migration. 
+Before starting to migrate your PhoneGap projects into Monaca, there are some key differences between PhoneGap and Monaca projects. Please read them through in order to have a seamless migration. 
 
-## Differences between PhoneGap & Monaca project
-
-### File/Folder structure	
+## File/Folder structure	
 
 File and folder structure of Monaca and PhoneGap project are quite different. Please see the following examples of PhoneGap and Monaca projects:
 
-##### [PhoneGap]
+### PhoneGap Project Structure
 {{<highlight javascript>}}
 Project
 ├── config.xml
@@ -30,7 +28,7 @@ Project
     └── spec.html
 {{</highlight>}}
 
-##### [Monaca]
+### Monaca Project Structure
 
 {{<highlight javascript>}}
 Project
@@ -53,16 +51,7 @@ Moreover, `package.json` file is required and used for managing Cordova plugins.
 
 Because of these differences, when importing a PhoneGap project into Monaca, some files and folders will be changed but don't worry. We will help you adjusting these changes as easy as possible. 
 
-### Development Environment
-
-Monaca development eco-system is quite similar to PhoneGap. For this reason, the following Monaca development tools can be used as alternatives to some PhoneGap development tools such as:
-
-- Phonegap Build &rarr; [Monaca Cloud IDE](/en/products_guide/monaca_ide/)
-- Phonegap CLI &rarr; [Monaca CLI](/en/products_guide/monaca_cli/)
-- Phonegap Desktop app &rarr; [Monaca Localkit](/en/products_guide/monaca_localkit/)
-- PhoneGap Developer app &rarr; [Monaca Debugger](/en/products_guide/debugger/)
-
-### Build environment    
+## Build environment    
 
 Before getting started with the migration, you may want to know about the supported Cordova version and build environment in Monaca.
 
@@ -78,18 +67,18 @@ For more information on build environment for lower Cordova version, pleaser ref
 
 When migrating a project into Monaca, there are a few things you should be aware of such as:
 
-### When Installed Plugins are disappeared
+### When Installed Plugins are Disappeared
 
 In Monaca, Cordova plugins are managed by `package.json` file. If your plugin information is defined in `config.xml` file, you will need to import them again into Monaca. Please refer to [Import Cordova Plugins](/en/products_guide/monaca_ide/dependencies/cordova_plugin/#import-cordova-plugins).
 
-### When using third-party Cordova plugins
+### When Using 3rd-party Cordova Plugins
 
 Store-version Monaca Debugger (found in Google play or AppStore) only includes [Core Cordova plugins](/en/reference/cordova_6.5/). If your project contains any third-party Cordova plugins besides the Core Cordova plugins, you will need to build custom debugger to test this kind of project. Custom debugger will only include the plugins used in the project. Please refer to:
 
 - [Build custom debugger for iOS]({{<ref "debugger_ios.en.md#how-to-build-custom-monaca-debugger">}})
 - [Build custom debugger for Android]({{<ref "debugger_android.en.md#build-and-install-custom-monaca-debugger">}})
 
-### When using JS/CSS Component page
+### When Using JS/CSS Component Page
 
 In Monaca Cloud IDE, there is a GUI page for you to include CSS/JavaScript libraries. You can go there by going to {{<menu menu1="Configure" menu2="JS/CSS Component Settings">}}. Then, the following page will appear. 
 
