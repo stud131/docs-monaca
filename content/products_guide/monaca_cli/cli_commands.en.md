@@ -192,7 +192,7 @@ done in one of the following ways:
     only changed and new files will be uploaded.
 
 {{<note>}}
-    For ReactJS and Angular2 projects, <code>monaca upload</code> command will transpile the project before uploading them.
+    For transpilable projects, <code>monaca upload</code> command will transpile the project before uploading them.
 {{</note>}}
 
 {{<highlight bash>}}
@@ -264,7 +264,7 @@ watch the file system for changes and reload the browser when a change
 occurs.
 
 {{<note>}}
-    For ReactJS and Angular2 projects, <code>monaca preview</code> command will transpile the project in memory before launching the previewer. Additionally, if the preview is still running and you make a change, the transpile process should be triggered and the previewer will be served with the new files.
+    For transpilable projects, <code>monaca preview</code> command will transpile the project in memory before launching the previewer. Additionally, if the preview is still running and you make a change, the transpile process should be triggered and the previewer will be served with the new files.
 {{</note>}}
 
 {{<highlight bash>}}
@@ -321,7 +321,7 @@ the local network to connect to it. When a debugger is connected, it
 will send file system changes to the debugger.
 
 {{<note>}}
-    For ReactJS and Angular2 projects, <code>monaca debug</code> command will transpile the project before serving the files to Monaca Debugger. Additionally, if the debug is still running and you make a change, the transpile process should be triggered and the debugger will be served with the new files.
+    For transpilable projects, <code>monaca debug</code> command will transpile the project before serving the files to Monaca Debugger. Additionally, if the debug is still running and you make a change, the transpile process should be triggered and the debugger will be served with the new files.
 {{</note>}}
 
 {{<highlight bash>}}
@@ -361,7 +361,7 @@ network connection (see the screenshots). Otherwise, please refer to [Fail to Pa
 
 ## monaca transpile
 
-Transpiles projects that are transpilable such as ReactJS and Angular2
+Transpiles projects that are transpilable such as ReactJS, VueJS and Angular2
 projects. For transpilable projects, the transpiling process is
 automatically included in some commands such as `monaca upload`,
 `monaca preview`, `monaca debug` and `monaca remote build`.
