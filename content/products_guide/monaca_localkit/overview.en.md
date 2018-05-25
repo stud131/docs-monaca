@@ -89,7 +89,7 @@ You can create a new project based on templates provided by Monaca.
 
 ###  Importing a Project
 
-There are two types of projects you can import into Monaca Localkit:
+There are 3 types of projects you can import into Monaca Localkit:
 
 1.  `From Cloud IDE`: projects you have in your Monaca Cloud IDE.
 2.  `From Local Cordova Project`: Cordova projects you have on your PC.
