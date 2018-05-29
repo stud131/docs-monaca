@@ -4,14 +4,16 @@ weight: 40
 aliases: /en/monaca_ide/manual/dependencies/custom_cordova_plugin
 ---
 
+{{%excerpt%}}
+<!-- using full HTML code for other shortcodes otherwise `excerpt` shortcode will break them -->
+
 Cordova Plugin provides a simple way to write a native code onto your
 program. In this page, we will describe how to create and add a custom
 Cordova plugin into your Monaca project.
 
-{{<note>}}
-    You need to subscribe to a valid plan in order to use custom Cordova plugins. Please refer to 
-    {{<link href="https://monaca.mobi/en/pricing" title="Monaca Subscription Plans">}}.
-{{</note>}}
+<div class="admonition note">
+    You need to subscribe to a valid plan in order to use custom Cordova plugins. Please refer to <a href="https://monaca.mobi/en/pricing">Monaca Subscription Plans</a>.
+</div>
 
 Your custom Cordova plugin need to follow the requirements:
 
@@ -42,12 +44,19 @@ displayed in bold letters):
 Before getting started, please download the following zip file
 containing sample plugin code.
 
-{{<download href="/download/cordova_plugin_sample.zip" title="Download Sample Cordova Plugin">}}
-
+<div class="download">
+    <a class="reference internal" href="/download/cordova_plugin_sample.zip" download="">
+        Download Sample Cordova Plugin
+    </a>
+</div>
 
 When you extract the package, you will see the following files and folders:
 
-{{<figure src="/images/monaca_ide/manual/dependencies/custom_cordova_plugin/1.png">}}
+<figure>
+    <img data-action="zoom" src="/images/monaca_ide/manual/dependencies/custom_cordova_plugin/1.png" width="">
+    <figcaption>
+    </figcaption>
+</figure>
 
 
 ### plugin.xml file
@@ -58,7 +67,7 @@ Specification](http://cordova.apache.org/docs/en/latest/plugin_ref/spec.html).
 
 Below is a `plugin.xml` file from the downloaded sample plugin.
 
-{{<highlight xml>}}
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
   id="jp.co.asial.helloworld"
@@ -94,7 +103,7 @@ Below is a `plugin.xml` file from the downloaded sample plugin.
     </platform>
 
 </plugin>
-{{</highlight>}}
+```
 
 ### hello_world.js file
 
@@ -102,7 +111,7 @@ Below is a `plugin.xml` file from the downloaded sample plugin.
 will be automatically loaded by `cordova.js`, which is included in
 `loader.js`.
 
-{{<highlight javascript>}}
+```javascript
 var HelloWorld = function() {};
 
 HelloWorld.prototype.say = function(success, fail) {
@@ -111,7 +120,7 @@ HelloWorld.prototype.say = function(success, fail) {
 
 var helloWorld = new HelloWorld();
 module.exports = helloWorld;
-{{</highlight>}}
+```
 
 For more details about how to write Cordova callback function, please
 refer to [Plugin Development Guide](http://cordova.apache.org/docs/en/latest/guide/hybrid/plugins/index.html).
@@ -134,15 +143,16 @@ Here are the guides about native code development.
 
 To import a custom Cordova plugin, please do as follows:
 
-1.  From Monaca Cloud IDE, go to {{<menu menu1="Configure" menu2="Cordova plugin Settings">}}.
+1.  From Monaca Cloud IDE, go to <span class="guilabel"><b>
+Configure → Cordova plugin Settings</b></span>.
 
-2.  The Cordova Plugins page will be shown. Click {{<guilabel name="Import Cordova Plugin">}} button.
+2.  The Cordova Plugins page will be shown. Click <span class="guilabel">Import Cordova Plugin</span> button.
 
-    {{<img src="/images/monaca_ide/manual/dependencies/custom_cordova_plugin/import.png">}}
+    <img src="/images/monaca_ide/manual/dependencies/custom_cordova_plugin/import.png" width="" class="single_img">
 
-3.  Then, browse your plugin file (zip file) and click {{<guilabel name="OK">}}.
+3.  Then, browse your plugin file (zip file) and click <span class="guilabel">OK</span>.
 
-    {{<img src="/images/monaca_ide/manual/dependencies/custom_cordova_plugin/upload.png">}}
+    <img src="/images/monaca_ide/manual/dependencies/custom_cordova_plugin/upload.png" width="" class="single_img">
 
 ##  Monaca Debugger with Custom Cordova Plugin
 
@@ -164,9 +174,9 @@ custom built debugger:
 - [Custom Monaca Debugger for iOS](/en/products_guide/debugger/installation/debugger_ios/#how-to-build-custom-monaca-debugger)
 - [Custom Monaca Debugger for Android](/en/products_guide/debugger/installation/debugger_android/#build-and-install-custom-monaca-debugger)
 
-{{<note>}}
+<div class="admonition note">
     Please make sure to import the custom or external third-party Cordova plugins before building the custom built debugger.
-{{</note>}}
+</div>
 
 We also offer technical support (fee required) for developing your
 custom Cordova Plugin. Please contact our support team
@@ -175,12 +185,14 @@ custom Cordova Plugin. Please contact our support team
 ## Testing Custom Cordova Plugin
 
 1.  Create a project in Monaca Cloud IDE using the `Minimum Project Template`.
+
 2.  Import a sample custom Cordova plugin you downloaded earlier in [Structure of a Cordova Plugin](#structure-of-a-cordova-plugin).
+
 3.  Then, add the following snippet into `index.html` file. The code below
     is simply just to show a message dialog using the sample custom
     Cordova plugin:
 
-    {{<highlight javascript>}}
+    ```javascript
 <script>
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
@@ -190,7 +202,7 @@ custom Cordova Plugin. Please contact our support team
         );
     }
 </script>
-    {{</highlight>}}
+    ```
 
 4.  Now, run the project in the standard Monaca Debugger. You will see
     that the message dialog will not be shown because the custom Cordova plugin is not existed in the standard debugger. 
@@ -201,19 +213,36 @@ custom Cordova Plugin. Please contact our support team
     - [Custom Monaca Debugger for Android](/en/products_guide/debugger/installation/debugger_android/#build-and-install-custom-monaca-debugger)
 
 6.  Install the custom built Monaca Debugger.
-7.  Open the debugger and check the debuggers' information by clicking
-    on {{<guilabel name="About this debugger">}} button.
 
-    {{<figure src="/images/monaca_ide/manual/dependencies/custom_cordova_plugin/4.png" width="350">}}
+7.  Open the debugger and check the debuggers' information by clicking
+    on <span class="guilabel">About this debugger</span> button.
+
+    <figure>
+        <img data-action="zoom" src="/images/monaca_ide/manual/dependencies/custom_cordova_plugin/4.png" width="350">
+        <figcaption>
+                
+        </figcaption>
+    </figure>
 
 8.  You should be able to find the custom Cordova plugin in there as
     shown in the screenshot below:
 
-    {{<figure src="/images/monaca_ide/manual/dependencies/custom_cordova_plugin/5.png" width="350">}}
+    <figure>
+        <img data-action="zoom" src="/images/monaca_ide/manual/dependencies/custom_cordova_plugin/5.png" width="350">
+        <figcaption>
+                
+        </figcaption>
+    </figure>
 
 9.  Login to the debugger and run the project containing the custom
     Cordova plugin. The message dialog should be shown if the project is
     run properly.
 
-    {{<figure src="/images/monaca_ide/manual/dependencies/custom_cordova_plugin/6.png" width="350">}}
+    <figure>
+        <img data-action="zoom" src="/images/monaca_ide/manual/dependencies/custom_cordova_plugin/6.png" width="350">
+        <figcaption>
+                
+        </figcaption>
+    </figure>
 
+{{%/excerpt%}}
