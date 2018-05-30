@@ -4,6 +4,9 @@ weight: 10
 aliases: /ja/monaca_ide/manual/dependencies/file_dir
 ---
 
+{{%excerpt%}}
+<!-- using full HTML code for other shortcodes otherwise `excerpt` shortcode will break them -->
+
 ## Cordova バージョン
 
 Cordova バージョンによっては、Monaca プロジェクトのファイルとフォルダ構造が異なる場合があります。
@@ -47,13 +50,12 @@ Android アプリの設定ファイルを、`android` フォルダーに保存�
 
 このファイルの使用方法の詳細については、[Android Configuration File]({{<ref "android_configuration.ja.md">}}) を参照してください。
 
-{{<note>}}
+<div class="admonition note">
 Cordova 6.2 以降をサポートする Monaca
 フレームワークでは、<code>AndroidManifest.xml</code>
 ファイルを使用しないように、仕様が変更されました。よって、Android
-アプリの設定をカスタマイズする場合には、{{<link href="/ja/reference/third_party_phonegap/custom_config/" title="Custom Config プラグイン">}}
-を使用する必要があります。
-{{</note>}}
+アプリの設定をカスタマイズする場合には、<a href="/ja/reference/third_party_phonegap/custom_config/">Custom Config プラグイン</a>を使用する必要があります。
+</div>
 
 ## ios フォルダー
 
@@ -65,13 +67,14 @@ iOS アプリの設定ファイルを、 `ios` フォルダーに保存します
 
 このファイルの使用方法の詳細については、[iOS Configuration File]({{<ref "ios_configuration.ja.md">}}) を参照してください。
 
-{{<note>}}
+<div class="admonition note">
 Cordova 6.2 以降をサポートする Monaca
 フレームワークでは、<code>MonacaApp-Info.plist</code>
 ファイルを使用しないように、仕様が変更されました。よって、iOS
-アプリの設定をカスタマイズする場合には、{{<link href="/ja/reference/third_party_phonegap/custom_config/" title="Custom Config プラグイン">}}
-を使用する必要があります。
-{{</note>}}
+アプリの設定をカスタマイズする場合には、<a href="/ja/reference/third_party_phonegap/custom_config/">
+Custom Config プラグイン
+</a>を使用する必要があります。
+</div>
 
 ## www フォルダー
 
@@ -99,9 +102,9 @@ JS・CSS コンポーネントを格納します。次の 2
 各コンポーネントのフォルダーは、`www/components/`
 フォルダーのサブフォルダーとして作成されます。
 
-{{<note>}}
+<div class="admonition note">
     <code>loader.js</code> file also loads <code>cordova.js</code> file.
-{{</note>}}
+</div>
 
 ## plugins フォルダー
 
@@ -117,13 +120,16 @@ ZIP ファイルを使用して Cordova プラグインをインポートした�
 -   [Android 向けの config.xml の設定]({{<ref "android_configuration.ja.md#config-xml">}})
 -   [iOS 向けの config.xml の設定]({{<ref "ios_configuration.ja.md#config-xml">}})
 
-{{<note>}}
+<div class="admonition note">
 Cordova 6.2 以降では、Android アプリまたは iOS
 アプリの挙動を制御するときには、<code>config.xml</code>
-が使用されます。詳細は、{{<link href="/ja/reference/third_party_phonegap/custom_config/" title="Custom Config プラグイン">}} をご確認ください。
-{{</note>}}
+が使用されます。詳細は、<a href="/ja/reference/third_party_phonegap/custom_config/">
+Custom Config プラグイン</a> をご確認ください。
+</div>
 
 参考ページ
 
 - [サードパーティー製 Cordova プラグイン](/ja/reference/third_party_phonegap/)
 - [基本 Cordova プラグイン ( Cordova のコア プラグイン )](/ja/reference/cordova_6.5/)
+
+{{%/excerpt%}}

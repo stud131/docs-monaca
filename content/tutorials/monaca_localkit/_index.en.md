@@ -4,15 +4,16 @@ weight: 20
 aliases: /en/monaca_localkit/tutorial/
 ---
 
-{{<note>}}
-You are required to have a valid plan in order to use Monaca Localkit. Otherwise, it will run in an evaluation mode for 30 days after the first login. Please refer to {{<link href="https://monaca.mobi/en/pricing" title="Monaca Subscription Plans">}} for more details.
-{{</note>}}
-
-{{<note>}}
-Please note that {{<link href="/en/products_guide/backend" title="Backend">}} as well as {{<link href="/en/products_guide/push_notification" title="Push Notification">}} are currently not available in Monaca Localkit yet.
-{{</note>}}
-
 {{%excerpt%}}
+<!-- using full HTML code for other shortcodes otherwise `excerpt` shortcode will break them -->
+
+<div class="admonition note">
+    You are required to have a valid plan in order to use Monaca Localkit. Otherwise, it will run in an evaluation mode for 30 days after the first login. Please refer to <a href="https://monaca.mobi/en/pricing">Monaca Subscription Plans</a> for more details.
+</div>
+
+<div class="admonition note">
+    Please note that <a href="/en/products_guide/backend">Backend</a> as well as <a href="/en/products_guide/push_notification">Push Notification</a> are currently not available in Monaca Localkit yet.
+</div>
 
 Monaca Localkit is a local development environment tool for Monaca apps.
 It can be used with various development tools including editors, source
