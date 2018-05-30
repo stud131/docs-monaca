@@ -12,6 +12,7 @@ aliases:
 - [ペアリングとデバッグ](pairing_debugging)
 - [リモートビルドと配布申請](build_publish)
 - [トラブルシューティング ガイド](troubleshooting)
+- [チュートリアル](tutorial)
 
 
 
