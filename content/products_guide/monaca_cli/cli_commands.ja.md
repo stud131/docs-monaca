@@ -14,7 +14,7 @@ aliases: /ja/monaca_cli/manual/cli_commands
 | [monaca import](#monaca-import) |	Monaca クラウドから、プロジェクトをインポートします。|
 | [monaca download](#monaca-download) |	Monaca クラウドから、プロジェクトをダウンロードします。|
 | [monaca upload](#monaca-upload) |	Monaca クラウドへ、プロジェクトをアップロードします。|
-| [monaca signing](#monaca-signing) | Manage signing configurations for iOS and Android builds. |
+| [monaca signing](#monaca-signing) | iOS と Android のビルド用の署名設定を管理します。 |
 | [monaca remote build](#monaca-remote-build) |	Monaca クラウド上で、プロジェクトをリモートビルドします。|
 | [monaca preview](#monaca-preview) | ローカル上で Web サーバーを起動させます。|
 | [monaca demo](#monaca-demo) |	ブラウザ上でiOSとAndroid用のプレビューを行います。|
@@ -25,13 +25,12 @@ aliases: /ja/monaca_cli/manual/cli_commands
 | [monaca plugin](#monaca-plugin) |	Cordova プラグインの管理 |
 | [monaca docs](#monaca-docs) |	Monaca CLI, Onsen UI, チュートリアルを表示します。|
 
-monaca login
-------------
+## monaca login
 
 Monaca クラウドにサインインします。Monaca
 アカウント登録時のユーザー名とパスワードを入力します。
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca login [options]
 {{</highlight>}}
 
@@ -41,42 +40,39 @@ $ monaca login [options]
     
 **【具体例】**
 
-Monaca CLI を使用して、Monaca クラウドへログインする例を、次に示します。
+Monaca CLI を使用して、Monaca クラウドへログインします。
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca login
 $ monaca login me@monaca.io
 $ echo "mypass" | monaca login me@monaca.io
 {{</highlight>}}
 
-monaca logout
--------------
+## monaca logout
 
-Monaca クラウドからサインアウトして、保持していたログイントークン (
-login token ) を削除します。
+Monaca クラウドからサインアウトして、保持していたログイントークンを削除します。
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca logout
 {{</highlight>}}
 
 **【具体例】**
 
-Monaca CLI を使用して、Monaca クラウドからログアウトする例を、次に記します。
+Monaca CLI を使用して、Monaca クラウドからログアウトします。
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca logout
 Signing out from Monaca Cloud...
 You have been signed out.
 Removed Monaca Debugger pairing information.
 {{</highlight>}}
 
-monaca signup
--------------
+## monaca signup
 
-Monaca Cloud にサインアップします。
+Monaca クラウド にサインアップします。
 ユーザーの資格情報を要求する画面が表示されます。
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca signup [options]
 {{</highlight>}}
 
@@ -86,22 +82,21 @@ $ monaca signup [options]
 
 **【具体例】**
 
-コマンドの使用方法を、次に示します。
+Monaca CLI を使用して、Monaca クラウドサインアップします。
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca signup
 $ monaca signup me@monaca.io
 {{</highlight>}}
 
-monaca create
--------------
+## monaca create
 
 指定したパスのテンプレートから新しいローカル Monaca
 プロジェクトを作成します。 Monaca
 クラウドが提供しているテンプレートの中から、使用するテンプレートを選択します。
 指定された保存場所に、選択されたテンプレートが置かれます。
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca create [options]
 {{</highlight>}}
 
@@ -112,57 +107,52 @@ $ monaca create [options]
     
 **【具体例】**
 
-Monaca CLI を使用して、Monaca クラウドへログインする例を、次に示します。
+Monaca CLI を使用して、Monaca プロジェクトを作成します。
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca create MyProject/Demo
 $ monaca create MyProject/Demo --url http://github.com/me/myproject/archive/master.zip
 {{</highlight>}}
 
-monaca clone
-------------
+## monaca clone
 
-Monaca クラウド上に置かれているプロジェクトを、ローカルへクローン (
-Clone ) します。Monaca
+Monaca クラウド上に置かれているプロジェクトを、ローカルへクローンします。Monaca
 クラウド上に置かれているプロジェクトの一覧が表示されます。プロジェクトを選択し、次に、保存先を指定します。
 
 {{<note>}}
     Monaca クラウドからローカル PC にプロジェクトをクローンする場合には、クローンしたプロジェクトに関する「 クラウド同期情報 」 が作成 ・ 保持されます。この情報が作成 ・ 保持されている場合、プロジェクトをローカルで修正した後、Monaca クラウドにアップロード (  {{<link href="#monaca-upload" title="monaca upload">}} を使用 ) したときには、同一プロジェクト内の古いファイルが、上書きされます。
 {{</note>}}
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca clone
 {{</highlight>}}
 
 **【具体例】**
 
-次の例では、Monaca クラウド上のプロジェクト 「 `Memo Application` 」を、ローカルの "CloneMemoProject" フォルダーへクローンしています。
+次の例では、Monaca クラウド上のプロジェクト「 `Memo Application` 」を、ローカルの「 `CloneMemoProjectn` 」フォルダーへクローンしています。
 
 {{<figure src="/images/monaca_cli/manual/cli_commands/clone.png" width="600">}}
 
-monaca import
--------------
+## monaca import
 
-Monaca クラウド上に置かれているプロジェクトをインポート ( Import )
-します。Monaca
+Monaca クラウド上に置かれているプロジェクトをインポートします。Monaca
 クラウド上に置かれているプロジェクトの一覧が表示されます。プロジェクトを選択し、次に、保存先を指定します。
 
 {{<note>}}
     Monaca クラウドからローカル PC にプロジェクトをインポートする場合には、インポートしたプロジェクトに関する 「 クラウド同期情報 」 は作成されません。この情報が作成されない場合、プロジェクトをローカルで修正した後、Monaca クラウドにアップロード ( {{<link href="#monaca-upload" title="monaca upload">}} を使用 ) したときには、アップロードしたプロジェクトは、新規のプロジェクトとして、取り扱われます。
 {{</note>}}
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca import
 {{</highlight>}}
 
 **【具体例】**
 
-次の例では、Monaca クラウド上のプロジェクト 「 `Memo Application` 」を、ローカルの `ImportedMemoApplication` フォルダーへインポートしています。
+次の例では、Monaca クラウド上のプロジェクト「 `Memo Application` 」を、ローカルの「 `ImportedMemoApplication` 」フォルダーへインポートしています。
 
 {{<figure src="/images/monaca_cli/manual/cli_commands/import.png" width="600">}}
 
-monaca download
----------------
+## monaca download
 
 Monaca
 クラウド上で同期対象のプロジェクトに対して行った更新・修正箇所をダウンロードします。
@@ -171,7 +161,7 @@ Monaca
     このコマンドを実行すると、ローカルのプロジェクトに、変更を反映できます。Monaca クラウド上に存在するプロジェクトと同一のプロジェクトが、ローカルに存在しない場合、このコマンドは使用できません。
 {{</note>}}
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca download [options]
 {{</highlight>}}
 
@@ -183,24 +173,21 @@ $ monaca download [options]
     
 **【具体例】**
 
-プロジェクトフォルダーに移動して、次に、さまざまな**オプション**を使用して `monaca download` コマンドを実行し、出力を確認してみましょう。
+プロジェクトフォルダーへ移動して、次に、さまざまな**オプション**を使用して `monaca download` コマンドを実行し、出力を確認してみましょう。
 
 {{<figure src="/images/monaca_cli/manual/cli_commands/download.png" width="600">}}
 
-monaca upload
--------------
+## monaca upload
 
 ローカルのプロジェクトを Monaca クラウドへアップロードします (
 プロジェクトが置かれたディレクトリーのルートへ移動して、コマンドを実行します
 )。ローカルとクラウド間 ( 既存のファイルがクラウド上にあれば )
-のファイルは比較され、新規ファイルまたは更新ファイルがあれば、そのファイルのみアップロードされます。アップロード処理は、プロジェクトの種類により異なりますので、その詳細を、次に記します。
+のファイルは比較され、新規ファイルまたは更新ファイルがあれば、そのファイルのみアップロードされます。アップロード処理は、プロジェクトの種類により、下記のように異なります。
 
 1.  アップロード対象のプロジェクトが 「 新規プロジェクト」 または 「
-    インポートしたプロジェクト 」 ( 上記コマンド )
-    の場合、新規のプロジェクトとして、関連するファイルのすべてが Monaca
+    インポートしたプロジェクト 」の場合、新規のプロジェクトとして、関連するファイルのすべてが Monaca
     クラウドへアップロードされます。
-2.  アップロード対象のプロジェクトが 「 クローンしたプロジェクト 」 (
-    上記コマンド ) の場合、Monaca
+2.  アップロード対象のプロジェクトが 「 クローンしたプロジェクト 」場合、Monaca
     クラウド上に置かれている、クローン元のプロジェクトが上書きされます (
     新規ファイルまたは更新ファイルのみ、アップロードされます )。
 
@@ -208,7 +195,7 @@ monaca upload
     トランスパイルが必要なプロジェクトに関しては、<code>monaca upload</code> コマンドの実行時、アップロード処理が始まる前に、プロジェクトがコード変換 ( トランスパイル / Transpile ) されます。
 {{</note>}}
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca upload [options]
 {{</highlight>}}
 
@@ -220,13 +207,13 @@ $ monaca upload [options]
     
 **【具体例】**
 
-プロジェクトフォルダーへ移動後、さまざまな オプション を組み合わせて、`monaca upload` コマンドを実行し、出力を確認してみましょう。
+プロジェクトフォルダーへ移動して、さまざまな オプション を組み合わせて、`monaca upload` コマンドを実行し、出力を確認してみましょう。
 
 {{<figure src="/images/monaca_cli/manual/cli_commands/upload.png" width="600">}}
 
 ## monaca signing
 
-Manages signing configurations for iOS and Android builds.
+iOS および Android ビルド用の署名設定を管理します。
 
 {{<highlight javascript>}}
 $ monaca signing <action> <item>
@@ -234,28 +221,28 @@ $ monaca signing <action> <item>
 
 **action**
 
-- `generate`: can be used with `keystore` or `pkcsr`.
-- `upload`: can be used with`keystore`, `pkcs12`, `certificate` or `provisioning`.
-- `add`: can be used with `alias`.
-- `remove`: can be used with `alias`, `pkcs12`, `certificate` or `provisioning`.
-- `export`: can be used with `keystore` or `pkcsr`.
+- `generate`:  `keystore` や `pkcsr` で使うことができます。
+- `upload`: `keystore`、`pkcs12`、`certificate`、`provisioning` で使うことができます。
+- `add`: `alias` で使うことができます。
+- `remove`: `alias`、`pkcs12`、`certificate`、`provisioning` で使うことができます。
+- `export`: `keystore`、`pkcsr` で使うことができます。
 
 **item**
 
-- `alias`: alias within a keystore file
-- `keystore`: Android keystore
-- `pkcsr`: CSR (Certificate Signing Request) file
-- `pkcs12`: private key with certificate
-- `certificate`: iOS certificate
-- `provisioning`: iOS provisioning profile
+- `alias`: キーストアファイル内のエイリアス。
+- `keystore`: Android キーストア。
+- `pkcsr`: CSR ( 証明書署名要求 ) ファイル。
+- `pkcs12`: 証明書付きの秘密鍵。
+- `certificate`: iOS 証明書。
+- `provisioning`: iOS プロビジョニングプロファイル。
 
 {{<note>}}
-    For more information on how to sign or create iOS and Android build settings (involving keystore, private key, certificate & provisioning profile), please refer to {{<link title="Configure iOS Build Settings" href="/en/products_guide/monaca_ide/build/ios/build_ios/#configure-ios-build-settings">}} and {{<link title="Configure Android Keystore" href="/en/products_guide/monaca_ide/build/build_android/#step-2-configure-android-keystore">}}, respectively. 
+    iOS および Android のビルド設定 ( キーストア、秘密鍵、証明書およびプロビジョニングプロファイルを含む ) の署名または作成方法の詳細については、{{<link title="iOS のビルド設定" href="/ja/products_guide/monaca_ide/build/ios/build_ios/#ios-のビルド設定">}} と {{<link title="Android キーストア ( KeyStore ) の設定" href="/ja/products_guide/monaca_ide/build/build_android/#ステップ-2-android-キーストア-keystore-の設定">}} を参照してください。
 {{</note>}}
     
-**Example**
+**【具体例】**
 
-Navigate to your project folder and try to use these commands:
+プロジェクトフォルダーへ移動して、次のようにコマンドを使用します。
 
 {{<highlight javascript>}}
 $ monaca signing generate keystore
@@ -273,8 +260,7 @@ $ monaca signing remove certificate
 $ monaca signing remove provisioning
 {{</highlight>}}
 
-monaca remote build
--------------------
+## monaca remote build
 
 Monaca クラウド上でプロジェクトをビルドします。Monaca
 クラウド上に、対象のプロジェクトが存在しない場合、ビルドを開始する前に、対象のプロジェクトが自動的にアップロードされます。一方、Monaca
@@ -288,7 +274,7 @@ Monaca クラウド上でプロジェクトをビルドします。Monaca
 -   各プラットフォーム向けアプリのビルド方法
 -   ビルド済みアプリの入手方法・インストール方法
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca remote build <platform> [options]
 {{</highlight>}}
 
@@ -308,9 +294,9 @@ $ monaca remote build <platform> [options]
 
 **【具体例】**
 
-プロジェクトの保存先フォルダーへ移動し、さまざまなオプションを組み合わせて、このコマンドを実行してみましょう。
+プロジェクトフォルダーへ移動して、さまざまなオプションを組み合わせてコマンドを実行してみましょう。
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca remote build ios
 $ monaca remote build ios --build-type=debug
 $ monaca remote build android --build-type=debug --android_webview=crosswalk --android_arch=arm
@@ -319,8 +305,7 @@ $ monaca remote build --browser
 
 {{<figure src="/images/monaca_cli/manual/cli_commands/build_window.png">}}
 
-monaca preview
---------------
+## monaca preview
 
 ローカル上で Web サーバーを起動後、ブラウザー上でアプリを起動させます (
 `www` 下のアセットがブラウザー上で使用できる状態になります
@@ -331,7 +316,7 @@ monaca preview
 コマンドの実行時、プレビュー画面の起動前に、メモリー上でプロジェクトがコード変換されます。また、プレビュー画面を起動させた状態で、プロジェクトファイルを修正したときにも、コード変換処理が行われ、修正されたファイルの内容がプレビュー画面上に反映されます。
 {{</note>}}
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca preview [options]
 {{</highlight>}}
 
@@ -342,7 +327,7 @@ $ monaca preview [options]
 
 **【具体例】**
 
-プロジェクトフォルダーへ移動して、`monaca preview` コマンドを実行します。実行後、ブラウザーが起動して、プロジェクトが実行されます。
+プロジェクトフォルダーへ移動して、`monaca preview` コマンドを実行します。実行後、ブラウザーが起動してプロジェクトが実行されます。
 
 {{<figure src="/images/monaca_cli/manual/cli_commands/preview.png" width="600">}}
 {{<figure src="/images/monaca_cli/manual/cli_commands/preview_window.png" width="600" title="プレビュー用のウィンドウ">}}
@@ -351,13 +336,12 @@ $ monaca preview [options]
     <code>monaca preview</code> の処理を停止する場合には、<code>Ctrl+c</code> を押します。
 {{</note>}}
 
-monaca demo
------------
+## monaca demo
 
-`www` 下のアセットを Android と iOS へ同時に提供するローカル Web
+`www` 配下のアセットを Android と iOS へ同時に提供するローカル Web
 サーバーを開始します。ファイルシステムの変更が監視され、ファイルが変更された場合には、ブラウザー上にも即反映されます。
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca demo [options]
 {{</highlight>}}
 
@@ -367,17 +351,16 @@ $ monaca demo [options]
     
 **【具体例】**
 
-プロジェクトフォルダーへ移動して、`monaca demo` コマンドを実行します。実行後、ブラウザーが起動して、プロジェクトが実行されます。
+プロジェクトフォルダーへ移動して、`monaca demo` コマンドを実行します。実行後、ブラウザーが起動してプロジェクトが実行されます。
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca demo
 $ monaca demo -p 8001
 {{</highlight>}}
 
 {{<figure src="/images/monaca_cli/manual/cli_commands/monaca_demo.png">}}
 
-monaca debug
-------------
+## monaca debug
 
 端末上でアプリをデバッグするためのコマンドです。ローカルで行った、ファイルへの変更は、デバッガー上にも即反映されます。このコマンドを実行すると、Web
 サーバーが起動され、Monaca
@@ -391,7 +374,7 @@ monaca debug
 されます。また、デバッガーを実行している状態で、プロジェクトファイルを修正したときにも、コード変換処理が行われ、修正されたファイルの内容がデバッガー上に反映されます。
 {{</note>}}
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca debug [options]
 {{</highlight>}}
 
@@ -404,7 +387,7 @@ $ monaca debug [options]
 
 プロジェクトフォルダーへ移動して、`monaca debug` コマンドを実行します。実行後、Monaca デバッガーの *ローカルプロジェクト* 下に対象のプロジェクトが表示されていることを確認し、プロジェクトをタップして実行してみましょう。次に、プロジェクトに変更を加え、保存して、プロジェクトに変更点が即反映されることを確認してみましょう。
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ cd MyProjectFolder/ImportRssProject
 $ monaca debug
 {{</highlight>}}
@@ -420,13 +403,12 @@ $ monaca debug
     <code>monaca debug</code> の処理を停止する場合には、<code>Ctrl+c</code> を押します。
 {{</note>}}
     
-monaca transpile
-----------------
+## monaca transpile
 
 プロジェクトをコード変換 ( トランスパイル / Transpile ) します。コード変換可能なプロジェクトには、React.js、VueJS、Angular2 プロジェクトがあります。なお、コード変換可能なプロジェクトに関しては、各種コマンド
 ( `monaca upload`、 `monaca preview`、 `monaca debug`、 `monaca remote build` ) の実行時に、自動でコード変換が行われます。
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca transpile [options]
 {{</highlight>}}
 
@@ -439,7 +421,7 @@ $ monaca transpile [options]
 
 対象のプロジェクトフォルダーへ移動して、`monaca transpile` コマンドを実行します ( コード変換が可能なプロジェクトであること )。実行後、コード変換が実行されます。
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca transpile
 
 Running Transpiler...
@@ -448,12 +430,11 @@ Build completed in 71.835s
 ....
 {{</highlight>}}
 
-monaca config
--------------
+## monaca config
 
 プロキシおよび API エンドポイントの設定内容を管理できます。
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca config [options]
 {{</highlight>}}
 
@@ -466,9 +447,9 @@ $ monaca config [options]
 
 **【具体例】**
 
-使用方法は、次のとおりです。
+プロジェクトフォルダーへ移動して、次のようにコマンドを使用します。
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca config --help
 $ monaca config proxy
 $ monaca config proxy http://my.proxy.com:8080
@@ -479,14 +460,13 @@ $ monaca config endpoint my.endpoint.com
 $ monaca config endpoint --reset
 {{</highlight>}}
 
-monaca reconfigure
-------------------
+## monaca reconfigure
 
 設定ファイルを復旧 ( 再作成 )
-します。オプションを指定しない場合、該当するファイルのすべてを復旧します。該当するファイルに関しては、下の
-「 オプション 」 欄をご確認ください。
+します。オプションを指定しない場合、該当するファイルのすべてを復旧します。該当するファイルに関しては、下記の
+「 オプション 」 をご確認ください。
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca reconfigure [options]
 {{</highlight>}}
 
@@ -498,19 +478,18 @@ $ monaca reconfigure [options]
 
 **【具体例】**
 
-対象のプロジェクトフォルダーへ移動し、**オプション**を組み合わせて、`monaca reconfigure` コマンドを実行してみましょう ( 対象のプロジェクトは、コード変換が可能なプロジェクトであること )。
+プロジェクトフォルダーへ移動して、**オプション**を組み合わせて、`monaca reconfigure` コマンドを実行してみましょう ( 対象のプロジェクトは、コード変換が可能なプロジェクトであること )。
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca reconfigure
 $ monaca reconfigure --transpile --components
 {{</highlight>}}
 
-monaca plugin
--------------
+## monaca plugin
 
-プロジェクトで使用するプラグインを管理します。プラグインの新規追加、ならびに、既存プラグインの一覧化と削除を行えます。
+プロジェクトで使用するプラグインを管理します。プラグインの追加、削除、インストール済みのプラグイン一覧を行うことができます。
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca plugin [options]
 {{</highlight>}}
 
@@ -523,21 +502,20 @@ $ monaca plugin [options]
 
 **【具体例】**
 
-プロジェクトフォルダーに移動して、次のコマンドを実行します。
+プロジェクトフォルダーへ移動して、次のようにコマンドを使用します。
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca plugin add org.apache.cordova.camera
 $ monaca plugin rm org.apache.cordova.camera
 $ monaca plugin search keyboard
 $ monaca plugin ls
 {{</highlight>}}
 
-monaca docs
------------
+## monaca docs
 
 Monaca CLI 、Onsen UI 、チュートリアルのドキュメントを表示します。
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca docs [options]
 {{</highlight>}}
 
@@ -549,9 +527,9 @@ $ monaca docs [options]
     
 **【具体例】**
 
-使用方法は、次のとおりです。
+プロジェクトフォルダーへ移動して、次のようにコマンドを使用します。
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca docs onsen
 $ monaca docs tutorial
 $ monaca docs usage
