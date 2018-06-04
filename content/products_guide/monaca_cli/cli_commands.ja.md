@@ -9,21 +9,21 @@ aliases: /ja/monaca_cli/manual/cli_commands
 | [monaca login](#monaca-login) |	Monaca へのサインインします。|
 | [monaca logout](#monaca-logout) |	Monaca からサインアウトします。|
 | [monaca signup](#monaca-signup) |	Monaca のアカウント登録を行います。|
-| [monaca create](#monaca-create) |	テンプレートを使用して、ローカルに、Monaca プロジェクトを新規作成します。|
-| [monaca clone](#monaca-clone) | Monaca クラウドから、プロジェクトをクローン ( clone ) します。|
-| [monaca import](#monaca-import) |	Monaca クラウドから、プロジェクトをインポートします。|
-| [monaca download](#monaca-download) |	Monaca クラウドから、プロジェクトをダウンロードします。|
-| [monaca upload](#monaca-upload) |	Monaca クラウドへ、プロジェクトをアップロードします。|
+| [monaca create](#monaca-create) |	テンプレートを使用して、ローカルに Monaca プロジェクトを新規作成します。|
+| [monaca clone](#monaca-clone) | Monaca クラウドからプロジェクトをクローンします。|
+| [monaca import](#monaca-import) |	Monaca クラウドからプロジェクトをインポートします。|
+| [monaca download](#monaca-download) |	Monaca クラウドからプロジェクトをダウンロードします。|
+| [monaca upload](#monaca-upload) |	Monaca クラウドへプロジェクトをアップロードします。|
 | [monaca signing](#monaca-signing) | iOS と Android のビルド用の署名設定を管理します。 |
 | [monaca remote build](#monaca-remote-build) |	Monaca クラウド上で、プロジェクトをリモートビルドします。|
 | [monaca preview](#monaca-preview) | ローカル上で Web サーバーを起動させます。|
-| [monaca demo](#monaca-demo) |	ブラウザ上でiOSとAndroid用のプレビューを行います。|
-| [monaca debug](#monaca-debug) | Monaca デバッガー上で、プロジェクトを実行します。|
-| [monaca transpile](#monaca-transpile) | ソースコードをコード変換 ( トランスパイル/Transpile ) します。| 
-| [monaca config](#monaca-config) |	Monaca CLIの設定内容を管理できます。| 
+| [monaca demo](#monaca-demo) |	ブラウザ上で iOS と Android 用のプレビューを行います。|
+| [monaca debug](#monaca-debug) | Monaca デバッガー上でプロジェクトを実行します。|
+| [monaca transpile](#monaca-transpile) | ソースコードをコード変換 ( トランスパイル ) します。| 
+| [monaca config](#monaca-config) |	Monaca CLI の設定内容を管理できます。| 
 | [monaca reconfigure](#monaca-reconfigure) | 設定ファイルを再作成します。|
-| [monaca plugin](#monaca-plugin) |	Cordova プラグインの管理 |
-| [monaca docs](#monaca-docs) |	Monaca CLI, Onsen UI, チュートリアルを表示します。|
+| [monaca plugin](#monaca-plugin) |	Cordova プラグインを管理します。 |
+| [monaca docs](#monaca-docs) |	Monaca CLI、Onsen UI、チュートリアルを表示します。|
 
 ## monaca login
 
