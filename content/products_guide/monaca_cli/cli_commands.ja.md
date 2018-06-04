@@ -14,6 +14,7 @@ aliases: /ja/monaca_cli/manual/cli_commands
 | [monaca import](#monaca-import) |	Monaca クラウドから、プロジェクトをインポートします。|
 | [monaca download](#monaca-download) |	Monaca クラウドから、プロジェクトをダウンロードします。|
 | [monaca upload](#monaca-upload) |	Monaca クラウドへ、プロジェクトをアップロードします。|
+| [monaca signing](#monaca-signing) | Manage signing configurations for iOS and Android builds. |
 | [monaca remote build](#monaca-remote-build) |	Monaca クラウド上で、プロジェクトをリモートビルドします。|
 | [monaca preview](#monaca-preview) | ローカル上で Web サーバーを起動させます。|
 | [monaca demo](#monaca-demo) |	ブラウザ上でiOSとAndroid用のプレビューを行います。|
@@ -222,6 +223,55 @@ $ monaca upload [options]
 プロジェクトフォルダーへ移動後、さまざまな オプション を組み合わせて、`monaca upload` コマンドを実行し、出力を確認してみましょう。
 
 {{<figure src="/images/monaca_cli/manual/cli_commands/upload.png" width="600">}}
+
+## monaca signing
+
+Manages signing configurations for iOS and Android builds.
+
+{{<highlight javascript>}}
+$ monaca signing <action> <item>
+{{</highlight>}}
+
+**action**
+
+- `generate`: can be used with `keystore` or `pkcsr`.
+- `upload`: can be used with`keystore`, `pkcs12`, `certificate` or `provisioning`.
+- `add`: can be used with `alias`.
+- `remove`: can be used with `alias`, `pkcs12`, `certificate` or `provisioning`.
+- `export`: can be used with `keystore` or `pkcsr`.
+
+**item**
+
+- `alias`: alias within a keystore file
+- `keystore`: Android keystore
+- `pkcsr`: CSR (Certificate Signing Request) file
+- `pkcs12`: private key with certificate
+- `certificate`: iOS certificate
+- `provisioning`: iOS provisioning profile
+
+{{<note>}}
+    For more information on how to sign or create iOS and Android build settings (involving keystore, private key, certificate & provisioning profile), please refer to {{<link title="Configure iOS Build Settings" href="/en/products_guide/monaca_ide/build/ios/build_ios/#configure-ios-build-settings">}} and {{<link title="Configure Android Keystore" href="/en/products_guide/monaca_ide/build/build_android/#step-2-configure-android-keystore">}}, respectively. 
+{{</note>}}
+    
+**Example**
+
+Navigate to your project folder and try to use these commands:
+
+{{<highlight javascript>}}
+$ monaca signing generate keystore
+$ monaca signing generate pkcsr
+$ monaca signing add alias
+$ monaca signing upload keystore
+$ monaca signing upload pkcs12
+$ monaca signing upload certificate
+$ monaca signing upload provisioning
+$ monaca signing export keystore
+$ monaca signing export pkcsr
+$ monaca signing remove alias
+$ monaca signing remove pkcs12
+$ monaca signing remove certificate
+$ monaca signing remove provisioning
+{{</highlight>}}
 
 monaca remote build
 -------------------

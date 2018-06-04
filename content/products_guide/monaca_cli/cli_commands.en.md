@@ -14,6 +14,7 @@ aliases: /en/monaca_cli/manual/cli_commands
 | [monaca import](#monaca-import) |	Import a project from Monaca Cloud. |
 | [monaca download](#monaca-download) |	Download a project from Monaca Cloud. |
 | [monaca upload](#monaca-upload) |	Upload a project to Monaca Cloud. |
+| [monaca signing](#monaca-signing) | Manage signing configurations for iOS and Android builds. |
 | [monaca remote build](#monaca-remote-build) |	Build a project on Monaca Cloud. |
 | [monaca preview](#monaca-preview) |	Run a local web server for preview .|
 | [monaca demo](#monaca-demo) |	Display the app appereance on iOS and Android. |
@@ -29,7 +30,7 @@ aliases: /en/monaca_cli/manual/cli_commands
 Signs in to Monaca Cloud. You will be prompted to input your Monaca
 account information (username and password).
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca login [options]
 {{</highlight>}}
 
@@ -41,7 +42,7 @@ $ monaca login [options]
 
 Here is an example of how to login to Monaca Cloud with Monaca CLI:
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca login
 $ monaca login me@monaca.io
 $ echo "mypass" | monaca login me@monaca.io
@@ -51,7 +52,7 @@ $ echo "mypass" | monaca login me@monaca.io
 
 Signs out from Monaca Cloud and removes stored login token.
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca logout
 {{</highlight>}}
 
@@ -59,7 +60,7 @@ $ monaca logout
 
 Here is an example of how you logout from Monaca Cloud with Monaca CLI:
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca logout
 Signing out from Monaca Cloud...
 You have been signed out.
@@ -70,7 +71,7 @@ Removed Monaca Debugger pairing information.
 
 Signs up for Monaca Cloud. Will display a prompt that asks for user credentials.
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca signup [options]
 {{</highlight>}}
 
@@ -82,7 +83,7 @@ $ monaca signup [options]
 
 Here is an example of how you use this command:
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca signup
 $ monaca signup me@monaca.io
 {{</highlight>}}
@@ -94,7 +95,7 @@ You will be asked to choose a project template from a list of available
 templates provided by Monaca Cloud. The selected template will be
 created at the specified location.
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca create [options]
 {{</highlight>}}
 
@@ -107,7 +108,7 @@ $ monaca create [options]
 
 Here is an example of how to login to Monaca Cloud with Monaca CLI:
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca create MyProject/Demo
 $ monaca create MyProject/Demo --url http://github.com/me/myproject/archive/master.zip
 {{</highlight>}}
@@ -123,7 +124,7 @@ downloaded project.
     If you clone a project into your local PC from Monaca Cloud, the cloned project keeps cloud synced information. In other words, if you make changes to this project locally and upload (using {{<link href="#monaca-upload" title="monaca upload">}}) them to Monaca Cloud, they will overwrite older files of the same project.
 {{</note>}}
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca clone
 {{</highlight>}}
 
@@ -143,7 +144,7 @@ specify a location for the downloaded project.
     If you import a project into your local PC from Monaca Cloud, the imported project doesn’t keep cloud synced information. In other words, if you make changes to this project locally and upload (using {{<link href="#monaca-upload" title="monaca upload">}}) them to Monaca Cloud, this project will be uploaded as a new project in Monaca Cloud.
 {{</note>}}
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca import
 {{</highlight>}}
 
@@ -162,7 +163,7 @@ Monaca Cloud into the local project.
     This command will overwrite the changes into the local project. If your local project does not exist in Monaca Cloud, you can’t use this command.
 {{</note>}}
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca download [options]
 {{</highlight>}}
     
@@ -195,7 +196,7 @@ done in one of the following ways:
     For transpilable projects, <code>monaca upload</code> command will transpile the project before uploading them.
 {{</note>}}
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca upload [options]
 {{</highlight>}}
 
@@ -210,6 +211,55 @@ $ monaca upload [options]
 Navigate to your project folder. Then, type `monaca upload` command with various options and see how it works.
 
 {{<figure src="/images/monaca_cli/manual/cli_commands/upload.png" width="600">}}
+
+## monaca signing
+
+Manages signing configurations for iOS and Android builds.
+
+{{<highlight javascript>}}
+$ monaca signing <action> <item>
+{{</highlight>}}
+
+**action**
+
+- `generate`: can be used with `keystore` or `pkcsr`.
+- `upload`: can be used with`keystore`, `pkcs12`, `certificate` or `provisioning`.
+- `add`: can be used with `alias`.
+- `remove`: can be used with `alias`, `pkcs12`, `certificate` or `provisioning`.
+- `export`: can be used with `keystore` or `pkcsr`.
+
+**item**
+
+- `alias`: alias within a keystore file
+- `keystore`: Android keystore
+- `pkcsr`: CSR (Certificate Signing Request) file
+- `pkcs12`: private key with certificate
+- `certificate`: iOS certificate
+- `provisioning`: iOS provisioning profile
+
+{{<note>}}
+    For more information on how to sign or create iOS and Android build settings (involving keystore, private key, certificate & provisioning profile), please refer to {{<link title="Configure iOS Build Settings" href="/en/products_guide/monaca_ide/build/ios/build_ios/#configure-ios-build-settings">}} and {{<link title="Configure Android Keystore" href="/en/products_guide/monaca_ide/build/build_android/#step-2-configure-android-keystore">}}, respectively. 
+{{</note>}}
+    
+**Example**
+
+Navigate to your project folder and try to use these commands:
+
+{{<highlight javascript>}}
+$ monaca signing generate keystore
+$ monaca signing generate pkcsr
+$ monaca signing add alias
+$ monaca signing upload keystore
+$ monaca signing upload pkcs12
+$ monaca signing upload certificate
+$ monaca signing upload provisioning
+$ monaca signing export keystore
+$ monaca signing export pkcsr
+$ monaca signing remove alias
+$ monaca signing remove pkcs12
+$ monaca signing remove certificate
+$ monaca signing remove provisioning
+{{</highlight>}}
 
 ##  monaca remote build
 
@@ -226,7 +276,7 @@ Please refer to [Build](/en/products_guide/monaca_ide/build) for more informatio
 -   build the application for each platform
 -   get/install the built apps
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca remote build <platform> [options]
 {{</highlight>}}
 
@@ -248,7 +298,7 @@ $ monaca remote build <platform> [options]
 
 Navigate to your project folder and try to use this command with different options:
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca remote build ios
 $ monaca remote build ios --build-type=debug
 $ monaca remote build android --build-type=debug --android_webview=crosswalk --android_arch=arm
@@ -267,7 +317,7 @@ occurs.
     For transpilable projects, <code>monaca preview</code> command will transpile the project in memory before launching the previewer. Additionally, if the preview is still running and you make a change, the transpile process should be triggered and the previewer will be served with the new files.
 {{</note>}}
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca preview [options]
 {{</highlight>}}
 
@@ -293,7 +343,7 @@ Starts a local web server that serves the `www` assets on special views
 for Android and iOS simultaneously. The file-system is watched for
 changes and the browser is reloaded when a change occurs.
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca demo [options]
 {{</highlight>}}
 
@@ -305,7 +355,7 @@ $ monaca demo [options]
 
 Navigate to your project folder and use `monaca demo` command. Then, a browser will be opened running your project.
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca demo
 $ monaca demo -p 8001
 {{</highlight>}}
@@ -324,7 +374,7 @@ will send file system changes to the debugger.
     For transpilable projects, <code>monaca debug</code> command will transpile the project before serving the files to Monaca Debugger. Additionally, if the debug is still running and you make a change, the transpile process should be triggered and the debugger will be served with the new files.
 {{</note>}}
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca debug [options]
 {{</highlight>}}
 
@@ -341,7 +391,7 @@ under `Local Projects` section. Click on that project in order to
 run it. Please try to make some changes to the project and save
 them. You should be able to see those changes reflect instantly.
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ cd MyProjectFolder/ImportRssProject
 $ monaca debug
 {{</highlight>}}
@@ -366,7 +416,7 @@ projects. For transpilable projects, the transpiling process is
 automatically included in some commands such as `monaca upload`,
 `monaca preview`, `monaca debug` and `monaca remote build`.
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca transpile [options]
 {{</highlight>}}
 
@@ -379,7 +429,7 @@ $ monaca transpile [options]
 
 Navigate to your transpilable project folder and use `monaca transpile` command. Then, the transpiling will begin.
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca transpile
 
 Running Transpiler...
@@ -392,7 +442,7 @@ Build completed in 71.835s
 
 Manages proxy and API endpoint configuration.
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca config [options]
 {{</highlight>}}
 
@@ -407,7 +457,7 @@ $ monaca config [options]
 
 Here are examples of how to use this command:
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca config --help
 $ monaca config proxy
 $ monaca config proxy http://my.proxy.com:8080
@@ -423,7 +473,7 @@ $ monaca config endpoint --reset
 Generates default project configurations and files. Running it without
 arguments will generate everything.
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca reconfigure [options]
 {{</highlight>}}
 
@@ -437,7 +487,7 @@ $ monaca reconfigure [options]
 
 Navigate to your transpilable project folder and try `monaca reconfigure` command with various parameters.
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca reconfigure
 $ monaca reconfigure --transpile --components
 {{</highlight>}}
@@ -447,7 +497,7 @@ $ monaca reconfigure --transpile --components
 Manages plugins of a project such as adding new plugins, listing and
 removing installed plugins.
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca plugin [options]
 {{</highlight>}}
 
@@ -462,7 +512,7 @@ $ monaca plugin [options]
 
 Navigate to your project folder and type the command below and see how it works:
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca plugin add org.apache.cordova.camera
 $ monaca plugin rm org.apache.cordova.camera
 $ monaca plugin search keyboard
@@ -473,7 +523,7 @@ $ monaca plugin ls
 
 Displays docs for Monaca CLI, Onsen UI and Tutorials.
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca docs [options]
 {{</highlight>}}
 
@@ -487,7 +537,7 @@ $ monaca docs [options]
 
 Here is an example of how to use this command:
 
-{{<highlight bash>}}
+{{<highlight javascript>}}
 $ monaca docs onsen
 $ monaca docs tutorial
 $ monaca docs usage
