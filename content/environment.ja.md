@@ -28,67 +28,13 @@ title: 対応環境
 | Cordova 6.5 | 4.1 or higher| 9 or higher  |
 | Cordova 6.2 | 4.1 ~ 7      | 8 ~ 10       |
 
-## Cordova 7.1 ビルド環境
+## ビルド環境
 
-### Android
-
-- AndroidSDK バージョン: `26`
-
-### iOS
-
-- Xcode バージョン : `9`
-
-## Cordova 6.5 ビルド環境
-
-### Android
-
-- AndroidSDK バージョン: `25`
-- Crosswalk バージョン : [プラグイン](http://docs.monaca.io/en/reference/cordova_6.5/crosswalk/)に依存します
-
-### iOS
-
-- Xcode バージョン : `8`
-
-## Cordova 6.2 ビルド環境
-
-### Android
-
-- AndroidSDK バージョン: `23`
-- Crosswalk バージョン : [プラグイン](http://docs.monaca.io/en/reference/cordova_6.2/crosswalk/)に依存します
-
-### iOS
-
-- Xcode バージョン : `7`
-
-## Cordova 5.2 ビルド環境
-
-### Android
-
-- AndroidSDK バージョン: `22`
-- Crosswalk バージョン : [プラグイン](http://docs.monaca.io/en/reference/cordova_5.2/crosswalk/)に依存します
-
-### iOS
-
-- Xcode バージョン : `6.4`
-
-## Cordova 4.1 ビルド環境
-
-### Android
-
-- AndroidSDK バージョン: `21`
-- Crosswalk バージョン : `13.42.319.11`
-
-### iOS
-
-- Xcode バージョン : `6.2`
-
-## Cordova 3.5 ビルド環境
-
-### Android
-
-- AndroidSDK バージョン : `19`
-- Crosswalk バージョン : `7.36.154.15`
-
-### iOS
-
-- Xcode バージョン : `6.0.1`
+| Cordovaバージョン | Android  (SDKバージョン)| iOS (Xcodeバージョン)|
+|:------------|:-------------------:|:--------------------:|
+| Cordova 7.1 | 26 | 9 |
+| Cordova 6.5 | 25 | 8 |
+| Cordova 6.2 | 23 | 7 |
+| Cordova 5.2 | 22 | 6.4 |
+| Cordova 4.1 | 21 | 6.2 |
+| Cordova 3.5 | 19 | 6.0.1 |
