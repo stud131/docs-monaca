@@ -14,24 +14,26 @@ title: Supported Environment
 - Android 4.0 or higher
 - Wi-Fi connection is preferred
 
-## Built App (Cordova6.5 or higher)
+## Built App 
 
-- iOS 9 or higher
-- Android 4.1 or higher
-- Windows 8.1
+| Built App | Android | iOS | Windows|
+|:------------|:-------:|:--:|:------:|
+| Cordova6.5 or higher | 4.1 or higher | 9 or higher | 8.1 |
+| Cordova6.2 or lower | 4.0 or higher | 8 or higher | 8.1 |
 
-## Built App (Cordova6.2 or lower)
+## Custom Debugger
 
-- iOS 8 or higher
-- Android 4.0 or higher
-- Windows 8.1
+| Custom Debugger | Android      | iOS          |
+|:-----------|:------------:|:------------:|
+| Cordova　7.1 | 4.1 or higher| 9 or higher  |
+| Cordova　6.5 | 4.1 or higher| 9 or higher  |
+| Cordova　6.2 | 4.1 ~ 7      | 8 ~ 10       |
 
 ## Cordova 7.1 Build Environment
 
 ### Android
 
 - AndroidSDK version : `26`
-- Crosswalk version : It depends on [Crosswalk Plugin](http://docs.monaca.io/en/reference/cordova_6.5/crosswalk/)
 
 ### iOS
 

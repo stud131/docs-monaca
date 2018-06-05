@@ -13,24 +13,26 @@ title: 対応環境
 - Android 4.0以上
 - Wi-Fi接続を推奨します
 
-## ビルドアプリ(Cordova6.5以降)
+## ビルドアプリ
 
-- iOS 9以上
-- Android 4.1以上
-- Windows 8.1
+| ビルドアプリ | Android | iOS | Windows|
+|:------------|:-------:|:--:|:------:|
+| Cordova6.5以降 | 4.1 以上 | 9 以上 | 8.1 |
+| Cordova6.2以前 | 4.0 以上 | 8 以上 | 8.1 |
 
-## ビルドアプリ(Cordova6.2以前)
+## カスタムデバッガー	
 
-- iOS 8以上
-- Android 4.0以上
-- Windows 8.1
+| カスタムデバッガー| Android      | iOS          |
+|:-----------|:------------:|:------------:|
+| Cordova 7.1 | 4.1 or higher| 9 or higher  |
+| Cordova 6.5 | 4.1 or higher| 9 or higher  |
+| Cordova 6.2 | 4.1 ~ 7      | 8 ~ 10       |
 
 ## Cordova 7.1 ビルド環境
 
 ### Android
 
 - AndroidSDK バージョン: `26`
-- Crosswalk バージョン : [プラグイン](http://docs.monaca.io/en/reference/cordova_6.5/crosswalk/)に依存します
 
 ### iOS
 
