@@ -24,9 +24,9 @@ title: 対応環境
 
 | カスタムデバッガー| Android      | iOS          |
 |:-----------|:------------:|:------------:|
-| Cordova 7.1 | 4.1 or higher| 9 or higher  |
-| Cordova 6.5 | 4.1 or higher| 9 or higher  |
-| Cordova 6.2 | 4.1 ~ 7      | 8 ~ 10       |
+| Cordova 7.1 | 4.1以上 | 9以上  |
+| Cordova 6.5 | 4.1以上 | 9以上 |
+| Cordova 6.2 | 4.1 ~ 7 | 8 ~ 10       |
 
 ## ビルド環境
 
