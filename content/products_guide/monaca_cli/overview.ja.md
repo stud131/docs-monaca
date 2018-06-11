@@ -26,6 +26,40 @@ Monaca CLI は、ローカル環境用の開発ツールです。Monaca
 -   プロジェクトのリモートビルド (
     ローカル上での各種セットアップは必要ありません ) 。
 
+事前準備
+--------
+
+### 要件
+
+Monaca CLI のご利用には、[Node.js](https://nodejs.org/) が必要です (
+事前に、PC にインストールされていること )。
+
+### ステップ 1 : CLI のインストール
+
+次のコマンドを使用して、Monaca CLI をインストールします。
+
+{{<highlight javascript>}}
+$ npm install -g monaca
+{{</highlight>}}
+
+いくつかのシステムでは、インストールする権限が必要になるため、コマンドの前に
+sudo を追加する必要があります。
+
+{{<highlight javascript>}}
+$ sudo npm install -g monaca
+{{</highlight>}}
+
+{{<note>}}
+現在インストールされている Monaca CLI のバージョンを確認する場合には、
+<code>monaca</code> コマンドを使用します。また、最新の Monaca CLI
+にアップグレードする場合には、上記のコマンドを使用して、再度、インストールを行います。
+{{</note>}}
+
+### ステップ 2 : チュートリアルの確認
+
+Monaca CLI のインストール後は、こちらの [Monaca CLI チュートリアル](../tutorial)
+の内容に沿って、Monaca CLI を使用してみましょう。
+
 トランスパイル処理 ( コード変換 )
 ---------------------------------
 
@@ -43,36 +77,15 @@ WebViewで実行可能なネイティブJavaScriptコードに変換します。
     オプション付きのプレビューです。このコマンドを実行すると、HTTP
     サーバーが起動し、アプリのコンテンツを表示してくれます。
 
-事前準備
---------
+## アップロードの制御
 
-### 要件
+特定のファイルやフォルダを無視/除外して Monaca クラウドにアップロードしたくない場合があります。 この場合、 `.monacaignore` ファイルが自動的に作成され、React Native プロジェクトのルートディレクトリに置かれます。 ファイルを編集して、特定のファイルやフォルダを追加または削除することができます。 `.monacaignore` ファイルのデフォルト設定は次のとおりです。
 
-Monaca CLI のご利用には、[Node.js](https://nodejs.org/) が必要です (
-事前に、PC にインストールされていること )。
-
-### ステップ 1 : CLI のインストール
-
-次のコマンドを使用して、Monaca CLI をインストールします。
-
-{{<highlight bash>}}
-$ npm install -g monaca
+{{<highlight javascript>}}
+/node_modules/**
+/android/build/**
+/ios/build/**
+*/.DS_Store
+*/.git/**
 {{</highlight>}}
 
-いくつかのシステムでは、インストールする権限が必要になるため、コマンドの前に
-sudo を追加する必要があります。
-
-{{<highlight bash>}}
-$ sudo npm install -g monaca
-{{</highlight>}}
-
-{{<note>}}
-現在インストールされている Monaca CLI のバージョンを確認する場合には、
-<code>monaca</code> コマンドを使用します。また、最新の Monaca CLI
-にアップグレードする場合には、上記のコマンドを使用して、再度、インストールを行います。
-{{</note>}}
-
-### ステップ 2 : チュートリアルの確認
-
-Monaca CLI のインストール後は、こちらの [Monaca CLI チュートリアル](../tutorial)
-の内容に沿って、Monaca CLI を使用してみましょう。

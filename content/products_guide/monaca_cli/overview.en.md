@@ -19,6 +19,36 @@ you can:
     and Angular2 projects.
 -   Remote build your projects without any setups locally.
 
+## Getting Started
+
+### Prerequisite
+
+You are required to have [Node.js](https://nodejs.org/) installed on
+your PC in order to install Monaca CLI.
+
+### Step 1: CLI Installation
+
+Use the following command to install Monaca CLI:
+
+{{<highlight javascript>}}
+$ npm install -g monaca
+{{</highlight>}}
+
+On some systems you may have to prefix the command with `sudo` because
+of permission issue:
+
+{{<highlight javascript>}}
+$ sudo npm install -g monaca
+{{</highlight>}}
+
+{{<note>}}
+    In order to check the currently installed Monaca CLI’s version, use <code>monaca</code> command. Moreover, if you want to update Monaca CLI, just re-install it using the above command.
+{{</note>}}
+
+### Step 2: Following CLI Tutorial
+
+After successfully installed Monaca CLI, please follow our simple and easy tutorial on [how to use Monaca CLI](../tutorial).
+
 ## Transpiling in Monaca CLI
 
 Some of the modern frameworks have created their own languages in order
@@ -38,35 +68,24 @@ can be triggered in two ways:
 2.  `monaca preview`: runs the transpiler in watch mode and starts an
     HTTP Server in order to display the app’s content.
 
-## Getting Started
+## Upload Control
 
-### Prerequisite
+There are cases where you want ignore/exclude specific files and folders
+from uploading to Monaca Cloud. In this case, the `.monacaignore` file
+will be automatically created and placed under the root directory of the
+React Native projects. You can edit the file to add or remove specific
+files and folders. Here is the default settings within the
+`.monacaignore` file:
 
-You are required to have [Node.js](https://nodejs.org/) installed on
-your PC in order to install Monaca CLI.
-
-### Step 1: CLI Installation
-
-Use the following command to install Monaca CLI:
-
-{{<highlight bash>}}
-$ npm install -g monaca
+{{<highlight javascript>}}
+/node_modules/**
+/android/build/**
+/ios/build/**
+*/.DS_Store
+*/.git/**
 {{</highlight>}}
 
-On some systems you may have to prefix the command with `sudo` because
-of permission issue:
 
-{{<highlight bash>}}
-$ sudo npm install -g monaca
-{{</highlight>}}
-
-{{<note>}}
-    In order to check the currently installed Monaca CLI’s version, use <code>monaca</code> command. Moreover, if you want to update Monaca CLI, just re-install it using the above command.
-{{</note>}}
-
-### Step 2: Following CLI Tutorial
-
-After successfully installed Monaca CLI, please follow our simple and easy tutorial on [how to use Monaca CLI](../tutorial).
 
 See Also:
 
