@@ -11,5 +11,6 @@ weight: 10
 - [Monaca Debugger](debugger)
 - [Monaca Backend](backend)
 - [Push Notification](push_notification)
+- [Team Dashboard](team_dashboard)
 - [Onsen UI](onsenui)
 - [Migration from Other Platforms](migration)
