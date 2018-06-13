@@ -11,6 +11,6 @@ weight: 10
 - [Monaca デバッガー](debugger)
 - [Monaca バックエンド](backend)
 - [プッシュ通知機能](push_notification)
-- [Team Dashboard](team_dashboard)
+- [チーム ダッシュボード](team_dashboard)
 - [Onsen UI](onsenui)
 - [他のプラットフォームからの移行](migration)

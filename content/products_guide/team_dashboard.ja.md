@@ -3,275 +3,275 @@ title: Team Dashboard
 weight: 85
 ---
 
-## Monaca Dashboard
+## Monaca ダッシュボード
 
-There are two types of dashboards in Monaca:
+Monaca には 2 種類のダッシュボードがあります。
 
-1. Developer Dashboard: is used by Developer accounts to develop and manage projects.
+1. 開発者ダッシュボード：プロジェクトの開発や管理をするために、開発者アカウントで使用されます。
 
-    {{<figure src="/images/team_dashboard/developer_dashboard.png" title="Example of Developer Dashboard">}}
+    {{<figure src="/images/team_dashboard/developer_dashboard.png" title="開発者ダッシュボードの例">}}
 
-2. Team Dashboard: is used by Administrator accounts to manage developer team and various licenses as well as tickets in a company. 
+2. チームダッシュボード：開発チームおよび各種ライセンスやチケットを管理するために、管理者アカウントで使用されます。
 
-    {{<figure src="/images/team_dashboard/team_dashboard.png" title="Example of Team Dashboard">}}
+    {{<figure src="/images/team_dashboard/team_dashboard.png" title="チームダッシュボードの例">}}
 
 {{<note>}}
-In order to access the Team Dashboard, you are required to subscribe to a valid plan. Please refer to {{<link title="Pricing" href="https://monaca.io/pricing.html">}}.
+チームダッシュボードにアクセスするには、対象のプランに加入する必要があります。詳しくは、{{<link title="料金プラン" href="https://ja.monaca.io/pricing.html">}} を参照してください。
 {{</note>}}
 
-## Account Types
+## アカウントの種類
 
-There are two types of Enterprise or Business accounts:
+管理者アカウントと 開発者アカウントの 2 種類があります。
 
-1. Administrator account
+1. 管理者アカウント
 
-    - This is an account for managing developer accounts and licenses, plugin licenses, support & CI tickets and contract information. 
+    - 管理者アカウントは、開発者アカウントとライセンス、プラグインライセンス、サポートチケットや CI チケット、契約情報を管理するためのアカウントです。
 
-    - It is used for management only, independent of the general Monaca developer accounts. In other words, it can only be used to log into [Team Dashboard](https://enterprise.monaca.mobi/en/). 
+    - 管理者アカウントは、開発者のアカウント ( Monaca アカウント ) とは異なり、チーム管理のみに使用され、[チームダッシュボード](https://enterprise.monaca.mobi/ja/) にログインするために使用します。
 
-    - If your account is both Developer and Administrator account, you can access Team Dashboard directly from [Developer Dashboard](https://monaca.mobi/en/dashboard) and vice versa.
+    - 開発者アカウントと管理者アカウントが同じ場合は、 [開発者ダッシュボード](https://monaca.mobi/ja/dashboard) から直接チームダッシュボードにアクセスすることができます。
 
-2. Developer account
+2. 開発者アカウント
 
-    - This is an account for logging into [Developer Dashboard](https://monaca.mobi/en/dashboard) and developing Monaca projects.
+    - 開発者アカウントは、[開発者ダッシュボード](https://monaca.mobi/ja/dashboard)にログインし、Monaca プロジェクトを開発するためのアカウントです。
 
-    - In the dashboard, the plan name is displayed as `Enterprise (company name)` or `Business (company name)`.
+    - ダッシュボードでは、プラン名は `Enterprise (会社名) ` または `Business (会社名) ` として表示されます。
 
-    - Enterprise users can use any [Power plugins](/en/reference/power_plugins/) for FREE while Business users need to pay for each Power plugin. The plugins can be acquired through Team Dashboard (please refer to [Purchasing Plugin Licenses](#purchasing-plugin-licenses)).
+    - Enterprise ユーザーは、[エンタープライズ プラグイン](/ja/reference/power_plugins/) を無料で使用することができます。Business ユーザーは、有料になります。エンタープライズ プラグインは、チームダッシュボードをから取得することができます。 ( 詳しくは [プラグインライセンスの購入](#purchasing-plugin-licenses) を参照してください。)
 
-## Overview of Team Dashboard
+## チームダッシュボードの概要
 
-In a company, administrators can log into the Team Dashboard to perform various tasks such as managing a developer team, purchasing and assigning developer licenses, purchasing and using support tickets, changing contract type and so on.
+チームダッシュボードでは、管理者は、開発チームの管理、開発者ライセンスの購入と割り当て、サポートチケットの購入、契約タイプの変更など、さまざまな処理を行うことができます。
 
-In the Team Dashboard, administrators are mainly doing the following tasks:
+チームダッシュボードでは、管理者は主に次の処理を行います。
 
-- Developer management: invite/remove developers to/from the team.
+- 開発者管理: 開発者をチームに割り当てまたは解除。
 
-- Licenses management: purchase and manage developer and Power plugin licenses.
+- ライセンス管理: 開発者およびエンタープライズ プラグインライセンスの購入と管理。
 
-- Ticket management: purchase and manage support and CI (Continuous Integration) tickets, view ticket usage history and check the remaining number of tickets.
+- チケット管理: サポートおよび CI（ 継続的インテグレーション ）チケットの購入と管理、チケットの使用履歴や残りのチケット数の確認。
 
-- Access restriction management: limit the access to Team and Developer Dashboard by using IP address restriction.
+- アクセス制限管理: IP アドレス制限を使用して、チームおよび開発者ダッシュボードへのアクセス制限。
 
-- Contract management: view/update contract information, change contract type and delete the team.
+- 契約管理: 契約情報の表示や更新、契約タイプの変更、チームの削除。
 
-- Support request: contact Monaca support team for various assistances.
+- サポート リクエスト: Monaca サポートチームへの各種お問い合わせ。
 
-## Prerequisites
+## 前提条件
 
-Once you have successfully registered and logged in as an Administrator in the Team Dashboard, you should complete the following tasks first before you can start using the Team Dashboard properly:
+チームダッシュボードに管理者として登録し、ログインした際には、チームダッシュボードの使用を開始する前に、次の処理を行う必要があります。
 
-1. [Register the company's information](#team-information)
-2. [Invite developer(s) into the team](#managing-developer)
+1. [チーム情報を登録する](#team-information)
+2. [開発者をチームに割り当てる](#managing-developer)
 
-## Undestanding Top page
+## トップページの解説
 
-{{<figure src="/images/team_dashboard/top_page.png" title="Top page in the Team Dashboard">}}
+{{<figure src="/images/team_dashboard/top_page.png" title="チームダッシュボードのトップページ">}}
 
-In this page, you will be able to see the summary of the whole administration tasks such as current contract type, number of licenses and tickets, orders in progress and so on.
+このページでは、現在の契約タイプ、ライセンスとチケットの数、申請中の手続きなどチーム全体の概要を確認することができます。
 
-There are 5 main parts of this top page:
+トップページには、5 つのパートがあります。
 
-1. showing contract type of the administrator
+1. 現在の契約プラン
 
-2. navigation menu
+2. ナビゲーション メニュー
 
-3. listing what needs to be done after the administrator registration (as shown in [Prerequisites](#prerequisites))
+3. 必要な設定項目の一覧 ( [前提条件](#prerequisites) を参照 )
 
-4. displaying information about numbers of developer licenses, Power plugin licenses, support & CI tickets and other usages
+4. 開発者ライセンス、エンタープライズ プラグインライセンス、サポート / CI チケット、その他の用途に関する情報
 
-5. displaying information about various orders in progress. This is available when orders are made using billing method. In other words, it shows how many orders are still waiting for the payment to be settled/completed. 
+5. 申請中の手続きに関する情報。これは、請求書払いで申請が行われた場合に利用できます。
 
-## Team Account
+## チーム アカウント
 
-In this page, you can manage developers and administrators in your team. 
+このページでは、チームの開発者と管理者を管理できます。
 
 {{<figure src="/images/team_dashboard/manage_team_account.png">}}
 
-### Managing Developer
+### 開発者の管理
 
-In order to add a developer into your team, click on {{<guilabel name="Invite a developer">}} button. Then, you will be asked to input the email of new member. 
+チームに開発者を追加するには、{{<guilabel name="開発者アカウントを追加する">}} ボタンをクリックします。 次に、追加する開発者のメールアドレスを入力します。
 
-{{<figure src="/images/team_dashboard/add_developer.png" title="Inviting a developer to the team">}}
+{{<figure src="/images/team_dashboard/add_developer.png" title="開発者をチームに追加する">}}
 
-The new member could be one of the following types of users:
+追加する開発者には、次のようなタイプがあります。
 
-1. the member is a Free Monaca user: this member can be added to the team right away.
+1. Free プランの場合: 開発者として追加することができます。
 
-2. the member is a paid Monaca user: this member will need to cancel his currently contracted plan first before adding to the team.
+2. 有料プランの場合: 開発者として追加する前に、現在契約しているプランをキャンセルし、Free プランへ移行する必要があります。
 
-3. the member is not a Monaca user: an email will be sent to the member to register with Monaca first and then being added to the team. 
+3. Monaca に登録していない場合: はじめに Monaca に登録することで、開発者として追加することができます。
 
-After adding a developer to the team, the added developer will be automatically in a trial state of the same plan as the administrator. For example, if the administrator is under a Business plan, the added developer will be in a trial state of the Business plan. 
-
-{{<note>}}
-    While in a trial state, the developer can use any Monaca services belonged to the assigned plan except building a release build.
-{{</note>}}
-
-### Managing Administrator
-
-In order to add an admin into your team, click on {{<guilabel name="Add an administrator">}} button. Then, you will be asked to input the following information about the new admin. 
-
-{{<figure src="/images/team_dashboard/add_admin.png" title="Adding an admin to the team">}}
+開発者をチームに追加すると、追加された開発者は、自動的に管理者と同じプランになります。 管理者が Business プランの場合は、追加された開発者は Business プランになります。
 
 {{<note>}}
-    For Business plan user, you can not add any administrator because only one administrator is allowed in this plan. However, Enterprise user can have multiple administrators. 
+    開発者は、割り当てられたプランの Monaca サービスを利用することができますが、トライアル期間中は、リリースビルドでビルド制限が発生します。
 {{</note>}}
 
-## Developer License
+### 管理者の管理
 
-In this page, you can manage developer license for your team. There are 3 types of Developer licenses:
+チームに管理者を追加するには、 {{<guilabel name="管理者アカウントを追加する">}} ボタンをクリックします。 次に、新しい管理者の情報を入力します。
 
-1. Bundled licenses: full licenses coming with your contract
-
-2. Trial licenses: trial licenses for evaluation purposes
-
-3. Purchased licenses: additional licenses that you purchase
-
-{{<figure src="/images/team_dashboard/manage_licenses.png" title="Example of Manage License page">}}
-
-### Modifying License Key Usage
-
-In this page, you can modify the usage of each license key:
-
-- assign/remove licenses to/from developers
-- modify the auto-renewal option for the license key
-- modify the license period
-
+{{<figure src="/images/team_dashboard/add_admin.png" title="チームへの管理者の追加">}}
 
 {{<note>}}
-    Only developers who are already belonged to the team can be assigned here. Otherwise, you will need to invite them to the team first. Please refer to {{<link title="Manage Developer" href="#manage-developer">}}
+    Business プランの場合は、管理者は 1 人となるため、管理者を追加することはできません。 Enterprise プランの場合は、複数の管理者を持つことができます。
 {{</note>}}
 
-{{<figure src="/images/team_dashboard/modify_license.png" title="Modifying a license usage">}}
+## 開発者ライセンス
 
-### Purchasing Additional Licenses
+このページでは、チームの開発者ライセンスを管理することができます。 開発者ライセンスには 3 種類あります。
 
-You can purchase additional developer licenses separately. Each license period is handled separately from the contract term. The usage period is counted after the purchasing is completed. 
+1. バンドル ライセンス: プランに付随するフルライセンス
 
-In order to purchase additional licenses, click on {{<guilabel name="Purchase developer license">}} button. Then, you will be asked to input the following information. After that, follow the purchasing wizard to complete the process. 
+2. トライアル ライセンス: 評価目的の試用ライセンス
 
-{{<figure src="/images/team_dashboard/purchase_license.png" title="Example of the Purchase additional licenses page">}}
+3. 購入したライセンス: 追加購入したライセンス
 
-## Power Plugin License
+{{<figure src="/images/team_dashboard/manage_licenses.png" title="ライセンス管理ページの例">}}
 
-For Business plan users, you can use Power plugins by purchasing the plugin license. However, Enterprise users can use Power plugins for free. 
+### ライセンスキーの使用変更
 
-If there are valid Power plugin licenses, all developers within the team can use the plugins (for a trial period). However, only the developer who actually has been assigned the plugin license to can build a release build. 
+このページでは、各ライセンスキーの使用を変更することができます。
 
-{{<figure src="/images/team_dashboard/plugin_list.png" title="Power Plugin License page">}}
-
-### Plugin Settings
-
-In order to assign the plugin license to a developer, please do as follows:
-
-1. Click on {{<guilabel name="Configure">}} button of the plugin you want to assign to open the Plugin Settings page. 
-
-2. Then, you will be able to select a developer from the Developer list.
-
-3. After that, select the project which you want to assign the plugin license to. 
-
-4. Click {{<guilabel name="Register">}} button to complete this assigning process.
-
-{{<figure src="/images/team_dashboard/plugin_setting.png" title="Plugin Setting page">}}
-
-### Purchasing Plugin Licenses
-
-If you are on trial, you cannot buy plugin license. Please register a full contract first. 
-Moreover, each plugin license is valid for one year after a complete purchasing.
-
-{{<figure src="/images/team_dashboard/purchase_plugin_license.png" title="Purchasing Plugin License">}}
-
-## Support & CI Tickets
-
-In this page, you will be able to see various information related to support and CI tickets such as number of available tickets, expiration date of the tickets and usage history of each ticket. 
-
-{{<figure src="/images/team_dashboard/manage_tickets.png" title="Support & CI Tickets page">}}
-
-### Purchasing Additional Tickets
-
-After a valid contract registration, a certain numbers of support and CI tickets are awarded monthly. However, you can purchase additional tickets and use them separately. 
-
-{{<figure src="/images/team_dashboard/purchase_support_ticket.png" title="Purchasing Additional Support Tickets">}}
-
-{{<figure src="/images/team_dashboard/purchase_ci_ticket.png" title="Purchasing Additional CI Tickets">}}
-
-## Access Restriction 
-
-In this page, you can limit accesses to either Developer Dashboard or Team Dashboard by using IP address restrictions. By default, there is no access restriction to both dashboards. 
-
-{{<figure src="/images/team_dashboard/access_restriction.png" title="Access Restrictions page">}}
-
-### Chaning Access Restrictions
-
-You can change the access restriction to each dashboard as follows:
-
-1. Click on {{<guilabel name="Change">}} button. 
-
-2. Select `Filter by IP address range` option.
-
-3. Input the IP addresses which you want to allow to access the dashboard. You can input one IP address per line. You can also specify IP address range. Any texts after the white space will be considered as the note/description (see the example below).
-
-    {{<figure src="/images/team_dashboard/limit_access.png" title="Changing Access Restrictions">}}
-
-{{<note>}}
-    For Team Dashboard's access restriction, you are required to input your current IP address in addition to other IP addresses. This is to prevent restricting yourself.
-{{</note>}}
-
-## Team Information
-
-In this page, you can view and update your team information. 
-
-{{<note>}}
-    <b>Remarks</b> column is used to store some information for Monaca Support team such as invoice request.
-{{</note>}}
-
-{{<figure src="/images/team_dashboard/team_info.png" title="Team Information page">}}
-
-## Contract Information
-
-In this page, you can view and update your contract information. 
-
-If you are on trial, you will be able to see your trial period in the top page of the dashboard.
-
-{{<figure src="/images/team_dashboard/contract_trial.png" title="Contract information when you are on trial">}}
-
-### Registering the Contract
-
-You can either end the trial or wait until it is over to start registering for a full contract. When registering a full contract, you will be asked to fill in the following information:
-
-{{<figure src="/images/team_dashboard/register_contract.png" title="Contract Registration page">}}
-
-After filling in the contract information, you will need to fill in the payment information:
-
-{{<figure src="/images/team_dashboard/payment_info.png" title="Payment Information page">}}
+- 開発者ライセンスの割り当てまたは解除
+- ライセンスキーの自動更新オプションの変更
+- ライセンス期間の変更
 
 
 {{<note>}}
-    If you choose <code>Credit Card</code> as your payment method, your contract plan will be effective immediately after completing the registration. However, if you choose <code>Invoice Payment</code>, your contract plan will be effective after the payment is settled/completed.
+    既にチームに追加されている開発者のみ設定を変更することができます。それ以外の場合は、最初に開発者をチームに追加する必要があります。開発者の追加については、{{<link title="開発者の管理" href="#manage-developer">}} を参照してください。
 {{</note>}}
 
-Once a valid payment information is filled, you will be asked to confirm your contract registration one last time before completing the process. Then, your Contract Information page will look something like this:
+{{<figure src="/images/team_dashboard/modify_license.png" title="ライセンスキーの使用変更">}}
 
-{{<figure src="/images/team_dashboard/contract_info.png" title="Contract Information page">}}
+### 追加ライセンスの購入
 
-## Invoice & Receipt
+追加の開発者ライセンスを別途購入することができます。 各ライセンス期間は、契約期間とは別に処理されます。 使用期間は、購入が完了した後にカウントされます。
 
-In this page, you can view the history of your previous settlements. You can also issue and download invoices of each settlement. 
+追加のライセンスを購入するには、{{<guilabel name="開発者ライセンス購入">}} ボタンをクリックします。 次に、以下の情報を入力します。以降、手順に従い手続きを完了します。
+
+{{<figure src="/images/team_dashboard/purchase_license.png" title="追加ライセンスの購入ページの例">}}
+
+## エンタープライズ プラグインライセンス
+
+Business プランの場合は、プラグインライセンスを購入することで、エンタープライズ プラグインを使用することができます。Enterprise プランの場合は、エンタープライズ プラグインを無料で使用することができます。
+
+有効なエンタープライズ プラグインライセンスがある場合、チーム内のすべての開発者はプラグインを使用できます ( トライアル期間中 ) 。リリースビルドを行う場合は、プラグインライセンスをプロジェクトに割り当てる必要があります。
+
+{{<figure src="/images/team_dashboard/plugin_list.png" title="エンタープライズ プラグインライセンスページ">}}
+
+### プラグインの設定
+
+プラグインライセンスをプロジェクトへ割り当てる手順は、以下になります。
+
+1. 割り当てるプラグインの {{<guilabel name="設定">}} ボタンをクリックして、プラグインライセンス プロジェクト設定ページを開きます。
+
+2. 開発者リストから開発者を選択します。
+
+3. プラグインライセンスを割り当てるプロジェクトを選択します。
+
+4. {{<guilabel name="登録する">}} ボタンをクリックします。
+
+{{<figure src="/images/team_dashboard/plugin_setting.png" title="プラグインの設定ページ">}}
+
+### プラグインライセンスの購入
+
+トライアル期間中の場合は、プラグインライセンスを購入することはできません。
+購入後のプラグインライセンスは、1 年間有効です。
+
+{{<figure src="/images/team_dashboard/purchase_plugin_license.png" title="プラグインライセンスの購入">}}
+
+## サポート / CI チケット
+
+このページでは、利用可能なチケットの数、チケットの有効期限、各チケットの使用履歴など、サポート / CI チケットに関する情報を確認することができます。
+
+{{<figure src="/images/team_dashboard/manage_tickets.png" title="サポート / CI チケットのページ">}}
+
+### 追加チケットの購入
+
+プラン登録後は、一定数のサポートチケットと CI チケットが毎月付与されます。追加のチケットを購入して使用することもできます。
+
+{{<figure src="/images/team_dashboard/purchase_support_ticket.png" title="追加サポートチケットの購入">}}
+
+{{<figure src="/images/team_dashboard/purchase_ci_ticket.png" title="追加 CI チケットの購入">}}
+
+## アクセス制限
+
+このページでは、開発者ダッシュボードまたはチームダッシュボードへのアクセスを、IPアドレス制限を使用して制限することができます。デフォルトでは、両方のダッシュボードへのアクセス制限はありません。
+
+{{<figure src="/images/team_dashboard/access_restriction.png" title="アクセス制限ページ">}}
+
+### アクセス制限の変更
+
+次のように、各ダッシュボードへのアクセス制限を変更することができます。
+
+1. {{<guilabel name="変更">}} ボタンをクリックします。
+
+2. `開発者向けIPアドレス制限の変更` オプションを選択します。
+
+3. ダッシュボードへのアクセスを許可するIPアドレスを入力します。1 行に 1 つの IP アドレスを入力することができます。IP アドレス範囲を指定することもできます。空白文字の後のテキストは、メモとして使用することができます。 ( 下の例を参照 )
+
+    {{<figure src="/images/team_dashboard/limit_access.png" title="アクセス制限の変更">}}
+
+{{<note>}}
+    チームダッシュボードのアクセス制限については、チームダッシュボードへアクセスできなくなる可能性があるため、現在のIPアドレスと他のIPアドレスを入力する必要があります。
+{{</note>}}
+
+## チーム情報
+
+このページでは、チーム情報の表示や更新を行うことができます。
+
+{{<note>}}
+    <b>備考</b> は、請求書リクエストなどの Monaca サポートチームの情報を保存するために使用されます。
+{{</note>}}
+
+{{<figure src="/images/team_dashboard/team_info.png" title="チーム情報ページ">}}
+
+## 契約情報
+
+このページでは、契約情報を表示および更新を行うことができます。
+
+トライアル期間中の場合は、ダッシュボードのトップページにトライアル期間が表示されます。
+
+{{<figure src="/images/team_dashboard/contract_trial.png" title="トライアル中の契約情報">}}
+
+### プラン契約の登録
+
+プラン契約を登録する場合は、次の情報を入力する必要があります。
+
+{{<figure src="/images/team_dashboard/register_contract.png" title="契約登録ページ">}}
+
+プラン契約情報の入力後、お支払い情報を入力する必要があります。
+
+{{<figure src="/images/team_dashboard/payment_info.png" title="お支払い情報ページ">}}
+
+
+{{<note>}}
+    お支払い方法として <code>クレジットカード</code> を選択した場合は、契約プランは登録完了後すぐに有効になります。<code>請求書払い</code> を選択した場合は、必要手続きが完了後に契約プランが有効になります。
+{{</note>}}
+
+お支払い情報を入力後、最後に契約登録内容を確認します。契約情報ページは次のようになります。
+
+{{<figure src="/images/team_dashboard/contract_info.png" title="契約情報ページ">}}
+
+## 決済履歴・領収書
+
+このページでは、以前の決済の履歴を表示することができます。各決済の領収書を発行してダウンロードすることができます。
 
 {{<warning>}}
-    When issuing an invoice, you will be asked to specify the receipt address. This address can not be changed later. Therefore, please fill in the right receipt address.
+    領収書を発行する際に、領収書の宛名を指定するよう求められます。この領収書の宛名は、後で変更することはできません。
 {{</warning>}}
 
 {{<note>}}
-    Invoices can only be issued from credit card settlement. 
+    領収書は、クレジットカード決済からのみ発行することができます。
 {{</note>}}
 
-{{<figure src="/images/team_dashboard/invoice.png" title="Invoice & Receipt page">}}
+{{<figure src="/images/team_dashboard/invoice.png" title="決済履歴・領収書ページ">}}
 
-## Support Inquiry
+## サポートへのお問い合わせ
 
-If you have any questions about the usage of the Team Dashboard, contract registration, changing payment method and so on, please contact us directly from this Support Inquiry page.
+チームダッシュボードの使用、契約登録、お支払い方法の変更などについて、ご不明な点がございましたら、サポートお問い合わせページからご連絡ください。
 
-{{<figure src="/images/team_dashboard/support.png" title="Support Inquiry Form">}}
+{{<figure src="/images/team_dashboard/support.png" title="サポートお問い合わせフォーム">}}
 
