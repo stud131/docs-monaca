@@ -1,5 +1,5 @@
 ---
-title: Team Dashboard
+title: チームダッシュボード
 weight: 85
 ---
 
