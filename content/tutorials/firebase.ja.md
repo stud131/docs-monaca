@@ -15,6 +15,8 @@ weight: 90
 
 {{<figure src="/images/samples/firebase.png">}}
 
+{{%excerpt%}}
+
 ## iOSの準備
 
 iOS向けのプッシュ通知を使用する場合は、APNs の認証キーまたは APNs 証明書が必要になります。 ここでは、iOS デバッグビルド用の Development APNs 署名書の作成方法を説明します。
@@ -126,6 +128,8 @@ iOS向けのプッシュ通知を使用する場合は、APNs の認証キーま
 5. [Firebase SDK の追加] では、Monacaで開発するアプリは、ネイティブアプリではないため、 {{<guilabel name="続行">}} をクリックします。 次に、{{<guilabel name="終了">}} をクリックして設定を完了します。その後、Firebase の概要ページに iOS アプリが表示されます。
     
     {{<img src="/images/tutorials/10.png">}}
+
+{{%/excerpt%}}
 
 ## Monaca クラウド IDE にプラグインを追加する
 

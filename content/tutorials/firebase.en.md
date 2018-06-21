@@ -15,6 +15,8 @@ This Cordova plugin brings push notifications, analytics, event tracking, crash 
 
 {{<figure src="/images/samples/firebase.png">}}
 
+{{%excerpt%}}
+
 ## Preparation for iOS
 
 When working with push notification for iOS, APNs authentication key or APNs certificate is required. For this reason, we will need to create one of them first. In this page, we will show you how to create Development APNs cerficate for testing on iOS Debug build. 
@@ -125,6 +127,8 @@ That's it! Now, you are done with iOS configuration.
 5. You will see instructions on how to add the Firebase SDK into our project. However, we are not developing the app natively, we can skip this step. So just click click {{<guilabel name="FINISH">}} to complete the configuration. After that, you should see your Android app in the Firebase overview page.
     
     {{<img src="/images/tutorials/10.png">}}
+
+{{%/excerpt%}}
 
 ## Adding the Plugin in Monaca IDE
 
