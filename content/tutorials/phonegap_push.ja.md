@@ -1,31 +1,31 @@
 ---
-title: "Phonegap Push Plugin"
+title: "Phonegap Push プラグイン"
 weight: 140
 ---
 
-This Cordova plugin is used to register and receive push notifications.
+この Cordova プラグインでは、プッシュ通知の登録と受信を行います。
 
 - Repo: https://github.com/phonegap/phonegap-plugin-push
 - Plugin ID/Package Name: `phonegap-plugin-push`
 - Tested Version: `2.2.3`
 
-## Demo 
+## デモ  
 
-{{<import pid="5b2b3b4ce788850e4fdba6d4" title="Phonegap Push Demo">}}
+{{<import pid="5b2b3b4ce788850e4fdba6d4" title="Phonegap Push デモ">}}
 
 {{<figure src="/images/samples/phonegap_push.png">}}
 
 {{%excerpt-include filename="tutorials/firebase.ja.md" /%}}
 
-## Adding the Plugin in Monaca IDE
+## Monaca クラウド IDE でプラグインを有効にする
 
-1.  From the IDE menu, go to {{<menu menu1="Config" menu2="Manage Cordova Plugins">}}.
+1. IDE メニューから {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} へ移動します。
 
-2.  Click on {{<guilabel name="Import Cordova Plugin">}} button. Then, you can choose to import the plugin using a ZIP file or URL/Package Name. 
+2. {{<guilabel name="Cordova プラグインのインポート">}}  ボタンをクリックします。 次に、[ZIP ファイル] または [パッケージ名 / URL] を使用してプラグインをインポートします。
 
-## Usage
+## 使い方
 
-After importing the plugin into the project, you can start initialize the push notification. Please make sure to call the plugin API after the Cordova is loaded. For example:
+プラグインをプロジェクトにインポート後、プッシュ通知の初期化を行います。 deviceready イベント後、プラグイン API 使用します。 例：
 
 {{<highlight javascript>}}
 document.addEventListener("deviceready", onDeviceReady, false);        
@@ -50,61 +50,62 @@ function onDeviceReady() {
 }
 {{</highlight>}}
 
-## API References
+## API リファレンス
 
-In this page, we only describe some main APIs used in our [Demo](https://monaca.mobi/directimport?pid=5b2b3b4ce788850e4fdba6d4). For a complete API references, please refer to [here](https://github.com/phonegap/phonegap-plugin-push).
+このページでは、[デモ](https://monaca.mobi/directimport?pid=5b2b3b4ce788850e4fdba6d4) で使用されている主な API についてのみ説明します。API リファレンスについては、[こちら](https://github.com/phonegap/phonegap-plugin-push) を参照してください。
 
 ### init()
 
-Initialize push notifications.
+プッシュ通知の初期化を行います。
 
 {{<highlight javascript>}}
 PushNotification.init(options)
 {{</highlight>}}
 
-**Parameter**
+**パラメーター**
 
-Name | Type | Description
+パラメーター名 | 型 | 説明
 -----|------|-------------
-`options` | Object | An object describing relevant specific options for all target platforms.
+`options` | Object | すべての対象プラットフォームの関連する固有のオプションを記述するオブジェクト。
 
-- iOS
+- iOS の場合
 
 {{<note>}}
-    All iOS <code>Boolean</code> options can also be specified as <code>String</code>.
+    すべての iOS の <code>Boolean</code> オプションは、<code>String</code> として指定することもできます。
 {{</note>}}
 
-Attribute | Type | Default | Description
+属性 | 型 | 標準値 | 説明
 ----------|------|---------|------------------
-`ios.voip`| Boolean| `false` | [optional] If set to `true`, the device will be set up to receive VoIP Push notifications and the other options will be ignored since VoIP notifications are silent notifications that should be handled in the `notification` event.
-`ios.alert` | Boolean | `false` | [optional] If set to `true`, the device shows an alert on receipt of notification.*
-`ios.badge` | Boolean | `false` | [optional] If set to `true`, the device sets the badge number on receipt of notification.*
-`ios.sound` | Boolean | `false` | [optional] If set to `true`, the device plays a sound on receipt of notification.*
-`ios.clearBadge` | Boolean | `false` | [optional] If set to `true`, the badge will be cleared on app startup.
-`ios.categories` | Object| `{}` | [optional] The data required in order to enabled Action Buttons for iOS. See [Action Buttons on iOS](https://github.com/phonegap/phonegap-plugin-push/blob/master/docs/PAYLOAD.md#action-buttons-1) for more details.
+`ios.voip`| Boolean| `false` | [オプション]  `true`に設定されている場合、VoIP プッシュ通知を受信するように端末が設定され、VoIP 通知は、`notification` イベントで処理されるサイレント通知のため、他のオプションは無視されます。
+`ios.alert` | Boolean | `false` | [オプション]  `true` に設定されている場合、端末は通知の受信時にアラートを表示します。*
+`ios.badge` | Boolean | `false` | [オプション]  `true` に設定されている場合、端末は通知の受信時にバッジ番号を設定します。*
+`ios.sound` | Boolean | `false` | [オプション]  `true` に設定されている場合、端末は通知の受信時に音声を再生します。*
+`ios.clearBadge` | Boolean | `false` | [オプション]  `true` に設定されている場合、アプリの起動時にバッジがクリアされます。
+`ios.categories` | Object| `{}` | [オプション]  iOS のアクションボタンを有効にするために必要なデータです。詳細については、[Action Buttons on iOS](https://github.com/phonegap/phonegap-plugin-push/blob/master/docs/PAYLOAD.md#action-buttons-1) を参照してください。
 
-`*`: Please note that the value you set this option to the first time you call the init method will be how the application always acts. Once this is set programmatically in the init method it can only be changed manually by the user in {{<menu menu1="Settings" menu2="Notifications" menu3="App Name">}}. This is normal iOS behaviour.
+`*`: init メソッドが初めて実行されるときに設定されるオプションの値によって、アプリがどのように動作するかが決まります。
+init メソッドで値が設定された場合でも、{{<menu menu1="設定" menu2="通知" menu3="アプリ名">}} からユーザが手動で設定を変更することができます。これは通常のiOSの動作になります。
 
-- Android
+- Android の場合
 
-Attribute | Type | Default | Description
+属性 | 型 | 標準値 | 説明
 ----------|------|---------|------------------
-`android.icon` | String | |	[Optional] The name of a drawable resource to use as the small-icon. The name should not include the extension.
-`android.iconColor` | String | | [Optional] Sets the background color of the small icon on Android 5.0 and greater. [Supported Formats](http://developer.android.com/reference/android/graphics/Color.html#parseColor(java.lang.String))
-`android.sound` | Boolean | `true` | [Optional] If set to `true`, it plays the sound specified in the push data or the default system sound.
-`android.vibrate` | Boolean | `true` | [Optional] If set to `true` the device vibrates on receipt of notification.
-`android.clearBadge` | Boolean | `false` | [Optional] If set to `true` the icon badge will be cleared on init and before push messages are processed.
-`android.clearNotifications` | Boolean | `true` | [Optional] If set to `true`, the app clears all pending notifications when it is closed.
-`android.forceShow` | Boolean | `false` | [Optional] Controls the behavior of the notification when app is in foreground. If true and app is in foreground, it will show a notification in the notification drawer, the same way as when the app is in background (and on('notification') callback will be called only when the user clicks the notification). When false and app is in foreground, the on('notification') callback will be called immediately.
-`android.topics` | Array  | `[]` | [Optional] If the array contains one or more strings each string will be used to subscribe to a FcmPubSub topic.
-`android.messageKey` | String | `message` | [Optional] The key to search for text of notification
-`android.titleKey` | String | `title` | [Optional] The key to search for title of notification
+`android.icon` | String | |	[オプション]  small-icon として使用する画像リソース名。 リソース名には、拡張子は含まれません。
+`android.iconColor` | String | | [オプション]  Android 5.0 以降の small-icon の背景色を設定します。 [サポートされている形式](http://developer.android.com/reference/android/graphics/Color.html#parseColor(java.lang.String))
+`android.sound` | Boolean | `true` | [オプション]  `true` に設定されている場合、プッシュデータで指定された音声またはデフォルトのシステム音が再生されます。
+`android.vibrate` | Boolean | `true` | [オプション]  `true` に設定されている場合、端末は通知を受け取ると振動します。
+`android.clearBadge` | Boolean | `false` | [オプション]  `true` に設定されている場合、アイコンバッジは初期化時にクリアされ、プッシュメッセージが処理される前にクリアされます。
+`android.clearNotifications` | Boolean | `true` | [オプション]  `true` に設定されている場合、アプリが閉じられたときに保留中の通知をすべてクリアします。
+`android.forceShow` | Boolean | `false` | [オプション]  アプリがフォアグラウンドにあるときの通知動作を制御します。true の場合、アプリがフォアグラウンドになると、アプリがバックグラウンドのときと同じように、通知領域に通知が表示されます ( on('notification') コールバックは、ユーザーが通知をクリックしたときにのみ実行されます )。false で、アプリがフォアグラウンドの場合、on('notification') コールバックが実行されます。
+`android.topics` | Array  | `[]` | [オプション]  配列 に1 つ以上の文字列が含まれている場合、各文字列は FcmPubSub トピックの購読に使用されます。
+`android.messageKey` | String | `message` | [オプション]  通知のテキストを検索するためのキー。
+`android.titleKey` | String | `title` | [オプション]  通知のタイトルを検索するためのキー。
 
-**Return Value**
+**戻り値**
 
 - `pushObject`
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 const push = PushNotification.init({
@@ -123,31 +124,31 @@ const push = PushNotification.init({
 
 ### hasPermission()
 
-Check whether the push notification permission has been granted on the device.
+プッシュ通知許可が端末で許可されているか確認します。
 
 {{<highlight javascript>}}
 PushNotification.hasPermission(successHandler)
 {{</highlight>}}
 
-**Parameter**
+**パラメーター**
 
-Name | Type | Description
+パラメーター名 | 型 | 説明
 -----|------|-------------
-`successHandler` | Function | Is called when the api successfully retrieves the details on the permission.
+`successHandler` | Function | API がアクセス許可を正常に取得した際に実行されます。
 
-**Callback Parameters**
+**Callback パラメーター**
 
 - successHandler
 
-Name | Type	| Description
+パラメーター名 | 型	| 説明
 -----|------|-------------
-`data.isEnabled` | Boolean | Whether the permission for push notifications has been granted.
+`data.isEnabled` | Boolean | プッシュ通知の許可の状態を取得します。
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 PushNotification.hasPermission(data => {
@@ -160,32 +161,32 @@ PushNotification.hasPermission(data => {
 
 ### getApplicationIconBadgeNumber()
 
-Get the current badge count visible when the app is not running
+アプリが実行されていないときに表示されている現在のバッジの数を取得します。
 
 {{<highlight javascript>}}
 push.getApplicationIconBadgeNumber(successHandler, errorHandler)
 {{</highlight>}}
 
-**Parameter**
+**パラメーター**
 
-Name | Type | Description
+パラメーター名 | 型 | 説明
 -----|------|-------------
-`successHandler` | Function | Is called when the api successfully retrieves the icon badge number.
-`errorHandler` | Function | Is called when the api encounters an error while trying to retrieve the icon badge number.
+`successHandler` | Function | API がアイコンバッジ番号を正常に取得した際に実行されます。
+`errorHandler` | Function | アイコンのバッジ番号を取得する際に API がエラーを検出したときに実行されます。
 
-**Callback Parameters**
+**Callback パラメーター**
 
 - successHandler
 
-Name | Type	| Description
+パラメーター名 | 型	| 説明
 -----|------|-------------
-`n` | Number | An integer which is the current badge count
+`n` | Number | 現在のバッジカウントの整数。
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 push.getApplicationIconBadgeNumber(
@@ -201,25 +202,25 @@ push.getApplicationIconBadgeNumber(
 
 ### setApplicationIconBadgeNumber()
 
-Set the badge count visible when the app is not running.
+アプリが実行されていないときに表示されるバッジの数を設定します。
 
 {{<highlight javascript>}}
 push.setApplicationIconBadgeNumber(successHandler, errorHandler, count) 
 {{</highlight>}}
 
-**Parameter**
+**パラメーター**
 
-Name | Type | Description
+パラメーター名 | 型 | 説明
 -----|------|-------------
-`successHandler` | Function | Is called when the api successfully retrieves the icon badge number.
-`errorHandler` | Function | Is called when the api encounters an error while trying to retrieve the icon badge number.
-`count` | Number | Indicates what number should show up in the badge. Passing `0` will clear the badge. Each `notification` event contains a data.count value which can be used to set the badge to correct number.
+`successHandler` | Function | API がアイコンバッジ番号を正常に取得した際に実行されます。
+`errorHandler` | Function | アイコンのバッジ番号を取得する際に API がエラーを検出したときに実行されます。
+`count` | Number | バッジに表示する数を指定します。`0` を指定した場合は、バッジがクリアされます。 各 `notification` イベントには、バッジを正しい数に設定するために使用できる data.count の値が含まれています。
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 push.setApplicationIconBadgeNumber(
@@ -236,32 +237,32 @@ push.setApplicationIconBadgeNumber(
 
 ### push.on()
 
-The event `notification` will be triggered each time a push notification is received by a 3rd party push service on the device.
+`notification` イベントは、プッシュ通知サービスから送信されたプッシュ通知を受信した際に実行されます。
 
 {{<highlight javascript>}}
 push.on('notification', callback)
 {{</highlight>}}
 
-**Callback Parameters**
+**Callback パラメーター**
 
-Name | Type | Description
+パラメーター名 | 型 | 説明
 -----|------|-------------
-`data.message` | String | The text of the push message sent from the 3rd party service
-`data.title` | String | [optional] The title of the push message sent from the 3rd party service
-`data.count` | String | The number of messages to be displayed in the badge in iOS/Android or message count in the notification shade in Android. For windows, it represents the value in the badge notification which could be a number or a status glyph.
-`data.sound` | String | The name of the sound file to be played upon receipt of the notification
-`data.image` | String | The path of the image file to be displayed in the notification
-`data.launchArgs` | String | The args to be passed to the application on launch from push notification. This works when notification is received in background. (Windows Only)
-`data.additionalData` | Object | [optional] A collection of data sent by the 3rd party push service that does not fit in the above properties
-`data.additionalData.foreground` | Boolean | Whether the notification was received while the app was in the foreground
-`data.additionalData.coldstart` | Boolean | Will be true if the application is started by clicking on the push notification, false if the app is already started.
-`data.additionalData.dismissed` | Boolean | Is set to true if the notification was dismissed by the user
+`data.message` | String | プッシュ通知サービスから送信されたプッシュメッセージのテキスト。
+`data.title` | String | [オプション]  プッシュ通知サービスから送信されたプッシュメッセージのタイトル。
+`data.count` | String | iOS / Android のバッジに表示されるメッセージ数、または Android の通知領域のメッセージ数。Windows の場合、数またはステータスグリフのバッジ通知の値を表します。
+`data.sound` | String | 通知の受信時に再生される音声ファイルの名前。
+`data.image` | String | 通知に表示されるイメージファイルのパス。
+`data.launchArgs` | String | プッシュ通知からの起動時にアプリに渡される引数。これは通知がバックグラウンドで受信されたときに機能します。( Windows のみ )
+`data.additionalData` | Object | [オプション]  上記のプロパティに適合しないプッシュ通知サービスによって送信されたデータのコレクション。
+`data.additionalData.foreground` | Boolean | アプリがフォアグラウンドでプッシュ通知を受け取ったかどうか。
+`data.additionalData.coldstart` | Boolean | プッシュ通知をクリックしてアプリを起動する場合は true、アプリがすでに起動されている場合は false になります。
+`data.additionalData.dismissed` | Boolean | プッシュ通知がユーザによって却下された場合は true が設定されます。
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 push.on('notification', data => {

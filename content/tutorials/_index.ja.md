@@ -61,26 +61,26 @@ weight: 20
     </div>
     <div class="item">
         <a href="app_version">
-            <h3>Cordova AppVersion Plugin</h3>
-            <p>Adding AppVersion plugin to your app</p>
+            <h3>Cordova AppVersion プラグイン</h3>
+            <p>Cordova AppVersion プラグインを使用してアプリ情報を取得します。</p>
         </a>
     </div>
     <div class="item">
         <a href="ionic_keyboard">
-            <h3>Cordova Ionic Keyboard Plugin</h3>
-            <p>Adding Ionic keyboard to your app</p>
+            <h3>Cordova Ionic Keyboard プラグイン</h3>
+            <p>Cordova Ionic Keyboard プラグインを使用してキーボードを操作します。</p>
         </a>
     </div>
     <div class="item">
         <a href="social_sharing">
-            <h3>Cordova Social Sharing Plugin</h3>
-            <p>Adding social sharing feature to your app</p>
+            <h3>Cordova Social Sharing プラグイン</h3>
+            <p>Cordova Social Sharing プラグインを使用してアプリにソーシャルシェアリング機能を追加します。</p>
         </a>
     </div>
     <div class="item">
         <a href="phonegap_push">
-            <h3>Phonegap Push Plugin</h3>
-            <p>Adding push notification feature to your app using Phonegap Push plugin</p>
+            <h3>Phonegap Push プラグイン</h3>
+            <p>Phonegap Push プラグインを使用してアプリにプッシュ通知機能を追加します。</p>
         </a>
     </div>
 </div> 

@@ -1,44 +1,43 @@
 ---
-title: "Cordova AppVersion Plugin"
+title: "Cordova AppVersion プラグイン"
 weight: 110
 ---
 
-This Cordova/PhoneGap plugin reads the version of your app from the target build settings.
+この Cordova/PhoneGap プラグインは、対象のビルド設定からアプリ情報を取得します。
 
 - Repo: https://github.com/whiteoctober/cordova-plugin-app-version
 - Plugin ID/Package Name: `cordova-plugin-app-version`
 - Tested Version: 0.1.9
 
-## Demo 
+## デモ 
 
-
-{{<import pid="5b29c488e78885f330dba6cf" title="AppVersion Plugin Demo">}}
+{{<import pid="5b29c488e78885f330dba6cf" title="AppVersion Plugin デモ">}}
 
 {{<figure src="/images/samples/app_version.png">}}
 
-## Enable the Plugin in Monaca IDE
+## Monaca クラウド IDE でプラグインを有効にする
 
-1.  From the IDE menu, go to {{<menu menu1="Config" menu2="Manage Cordova Plugins">}}.
+1. IDE メニューから {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} へ移動します。
 
-2.  Click on {{<guilabel name="Import Cordova Plugin">}} button. Then, you can choose to import the plugin using a ZIP file or URL/Package Name. 
+2. {{<guilabel name="Cordova プラグインのインポート">}}  ボタンをクリックします。 次に、[ZIP ファイル] または [パッケージ名 / URL] を使用してプラグインをインポートします。
 
-## API References
+## API リファレンス
 
-In this page, we only describe some main APIs used in our [Demo](https://monaca.mobi/directimport?pid=5b29c488e78885f330dba6cf). For a complete API references, please refer to [here](https://github.com/whiteoctober/cordova-plugin-app-version).
+このページでは、[デモ](https://monaca.mobi/directimport?pid=5b29c488e78885f330dba6cf) で使用されている主な API についてのみ説明します。API リファレンスについては、[こちら](https://github.com/whiteoctober/cordova-plugin-app-version) を参照してください。
 
 ### getAppName()
 
-Get the name of the app.
+アプリの名前を取得します。
 
 {{<highlight javascript>}}
 cordova.getAppVersion.getAppName()
 {{</highlight>}}
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 cordova.getAppVersion.getAppName(function (appName) {
@@ -48,17 +47,17 @@ cordova.getAppVersion.getAppName(function (appName) {
 
 ### getPackageName()
 
-Get the package name of the app.
+アプリのパッケージ名を取得します。
 
 {{<highlight javascript>}}
 cordova.getAppVersion.getPackageName()
 {{</highlight>}}
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 cordova.getAppVersion.getPackageName(function (packName) {
@@ -68,17 +67,17 @@ cordova.getAppVersion.getPackageName(function (packName) {
 
 ### getVersionCode()
 
-Get the build identifier of the app.
+アプリのバージョンコードを取得します。
 
 {{<highlight javascript>}}
 cordova.getAppVersion.getVersionCode()
 {{</highlight>}}
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 cordova.getAppVersion.getVersionCode(function (verCode) {
@@ -88,17 +87,17 @@ cordova.getAppVersion.getVersionCode(function (verCode) {
 
 ### alertVersionNum()
 
-Get the version number of the app.
+アプリのバージョン番号を取得します。
 
 {{<highlight javascript>}}
 cordova.getAppVersion.alertVersionNum()
 {{</highlight>}}
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 cordova.getAppVersion.getVersionNumber(function (versionNum) {

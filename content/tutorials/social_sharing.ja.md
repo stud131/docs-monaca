@@ -1,55 +1,55 @@
 ---
-title: "Cordova Social Sharing Plugin"
+title: "Cordova Social Sharing プラグイン"
 weight: 130
 ---
 
-This Cordova plugin is used share text, files, images, and links via social networks, sms, and email.
+この Cordova プラグインでは、ソーシャルネットワーク、SMS、電子メール経由のテキスト、ファイル、画像、リンクを共有を行います。
 
 - Repo: https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin
 - Plugin ID/Package Name: `cordova-plugin-x-socialsharing`
 - Tested Version: `5.4.0`
 
-## Demo 
+## デモ  
 
 {{<import pid="5b29ede3e788853905dba6d9" title="Social Sharing Demo">}}
 
 {{<figure src="/images/samples/social_sharing.png">}}
 
-## Enable the Plugin in Monaca IDE
+## Monaca クラウド IDE でプラグインを有効にする
 
-1.  From the IDE menu, go to {{<menu menu1="Config" menu2="Manage Cordova Plugins">}}.
+1. IDE メニューから {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} へ移動します。
 
-2.  Click on {{<guilabel name="Import Cordova Plugin">}} button. Then, you can choose to import the plugin using a ZIP file or URL/Package Name. 
+2. {{<guilabel name="Cordova プラグインのインポート">}}  ボタンをクリックします。 次に、[ZIP ファイル] または [パッケージ名 / URL] を使用してプラグインをインポートします。
 
-## API References
+## API リファレンス
 
-In this page, we only describe some main APIs used in our [Demo](https://monaca.mobi/directimport?pid=5b29ede3e788853905dba6d9). For a complete API references, please refer to [here](https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin).
+このページでは、[デモ](https://monaca.mobi/directimport?pid=5b29ede3e788853905dba6d9) で使用されている主な API についてのみ説明します。API リファレンスについては、[こちら](https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin) を参照してください。
 
 ### shareViaFacebook()
 
-Share to Facebook. 
+Facebook に共有する。
 
 {{<highlight javascript>}}
 window.plugins.socialsharing.shareViaFacebook(message, image, url)
 {{</highlight>}}
 
 {{<note>}}
-    A valid authentication on Facebook app on the device is required to use this function. 
+    この機能を使用するには、端末の Facebook アプリで有効な認証が必要です。
 {{</note>}}
 
-**Parameter**
+**パラメーター**
 
-Name | Type | Description
+パラメーター名 | 型 | 説明
 -----|------|-------------
-`message` | String | Message
-`image` | String | Image's source
-`url` | String | website url
+`message` | String | メッセージ
+`image` | String | 画像のソース
+`url` | String | Web サイトのURL
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
   window.plugins.socialsharing.shareViaFacebook(
@@ -61,29 +61,29 @@ Name | Type | Description
 
 ### shareViaTwitter()
 
-Share to Twitter. 
+Twitter に共有する。
 
 {{<highlight javascript>}}
 window.plugins.socialsharing.shareViaTwitter(message, image, url)
 {{</highlight>}}
 
 {{<note>}}
-    A valid authentication on Twitter app on the device is required to use this function. 
+    この機能を使用するには、端末の Twitter アプリで有効な認証が必要です。
 {{</note>}}
 
-**Parameter**
+**パラメーター**
 
-Name | Type | Description
+パラメーター名 | 型 | 説明
 -----|------|-------------
-`message` | String | Message
-`image` | String | Image's source
-`url` | String | website url
+`message` | String | メッセージ
+`image` | String | 画像のソース
+`url` | String | Web サイトのURL
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
   window.plugins.socialsharing.shareViaTwitter(
@@ -95,28 +95,28 @@ Name | Type | Description
 
 ### shareViaInstagram()
 
-Share to Instagram. 
+Instagram に共有する。
 
 {{<highlight javascript>}}
 window.plugins.socialsharing.shareViaInstagram(message, image)
 {{</highlight>}}
 
 {{<note>}}
-    A valid authentication on Instagram app on the device is required to use this function. 
+    この機能を使用するには、端末の Instagram アプリに対する有効な認証が必要です。
 {{</note>}}
 
-**Parameter**
+**パラメーター**
 
-Name | Type | Description
+パラメーター名 | 型 | 説明
 -----|------|-------------
-`message` | String | Message
-`image` | String | Image's source
+`message` | String | メッセージ
+`image` | String | 画像のソース
 
-**Return Value**
+**戻り値**
 
 - `Promise`
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
   window.plugins.socialsharing.shareViaInstagram(

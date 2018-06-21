@@ -1,43 +1,43 @@
 ---
-title: "Cordova Ionic Keyboard Plugin"
+title: "Cordova Ionic Keyboard プラグイン"
 weight: 120
 ---
 
-Keyboard plugin for Cordova apps.
+Cordova アプリ用のキーボードプラグインです。
 
 - Repo: https://github.com/ionic-team/cordova-plugin-ionic-keyboard
 - Plugin ID/Package Name: `cordova-plugin-ionic-keyboard`
 - Tested Version: `2.1.2`
 
-## Demo 
+## デモ 
 
 {{<import pid="5b29e4e1e788857854dba6d9" title="Ionic Keyboard Demo">}}
 
 {{<figure src="/images/samples/ionic_keyboard.png">}}
 
-## Enable the Plugin in Monaca IDE
+## Monaca クラウド IDE でプラグインを有効にする
 
-1.  From the IDE menu, go to {{<menu menu1="Config" menu2="Manage Cordova Plugins">}}.
+1. IDE メニューから {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} へ移動します。
 
-2.  Click on {{<guilabel name="Import Cordova Plugin">}} button. Then, you can choose to import the plugin using a ZIP file or URL/Package Name. 
+2. {{<guilabel name="Cordova プラグインのインポート">}}  ボタンをクリックします。 次に、[ZIP ファイル] または [パッケージ名 / URL] を使用してプラグインをインポートします。
 
-## API References
+## API リファレンス
 
-In this page, we only describe some main APIs used in our [Demo](https://monaca.mobi/directimport?pid=5b29e4e1e788857854dba6d9). For a complete API references, please refer to [here](https://github.com/ionic-team/cordova-plugin-ionic-keyboard).
+このページでは、[デモ](https://monaca.mobi/directimport?pid=5b29e4e1e788857854dba6d9) で使用されている主な API についてのみ説明します。APIリファレンスについては、[こちら](https://github.com/ionic-team/cordova-plugin-ionic-keyboard) を参照してください。
 
 ### show()
 
-Show the keyboard.
+キーボードを表示します。
 
 {{<highlight javascript>}}
 Keyboard.show();
 {{</highlight>}}
 
 {{<note>}}
-    <code>Keyboard.show()</code> is not supported in iOS due to platform limitations. Therefore, please use <code>focus()</code> of <code>input</code> element instead.
+    <code>Keyboard.show()</code> は、プラットフォームの制限により、iOS ではサポートされていません。 代わりに <code>input</code> エレメントの <code>focus()</code> を使用してください。
 {{</note>}}    
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 
@@ -51,13 +51,13 @@ inputElement.focus();
 
 ### hide()
 
-Hide the keyboard.
+キーボードを非表示にします。
 
 {{<highlight javascript>}}
 Keyboard.hide();
 {{</highlight>}}
 
-**Example**
+**例**
 
 {{<highlight javascript>}}
 Keyboard.hide();
