@@ -21,9 +21,9 @@ weight: 90
 
 iOS向けのプッシュ通知を使用する場合は、APNs の認証キーまたは APNs 証明書が必要になります。 ここでは、iOS デバッグビルド用の Development APNs 署名書の作成方法を説明します。
 
-{{<note>}}
+<div class="admonition note">
 リリースビルドでは、Production APNs 証明書が必要になります。
-{{</note>}}
+</div>
 
 既に [Apple Developer Program](https://developer.apple.com/programs/) をお持ちの場合は、以下の手順に従って Development APNs 証明書を作成してください。
 
@@ -31,37 +31,36 @@ iOS向けのプッシュ通知を使用する場合は、APNs の認証キーま
 
 2. `Certificates, Identifiers & Profiles` を選択します。
 
-    {{<img src="/images/tutorials/11.png">}}
+    <img src="/images/tutorials/11.png" width="" class="single_img">
 
 3. APNs 証明書を作成する場合は、プッシュ通知を有効にした App ID が必要になります。`Identifiers` 項目の `App IDs` 選択し、右上隅の `+` ボタンをクリックします。
 
-    {{<img src="/images/tutorials/14.png">}}
+    <img src="/images/tutorials/14.png" width="" class="single_img">
 
 4. 次のような App ID 情報を入力します。
 
     - `App Description`: アプリ名を入力します (例：Cordova Firebase Demo)
     - `Explicit ID`: プッシュ通知では、ワイルドカードの App ID を使用できないため、このオプションを選択します。 アプリの固有の識別子（io.monaca.firebaseなど）を入力します。
 
-    {{<img src="/images/tutorials/15.png">}}
+    <img src="/images/tutorials/15.png" width="" class="single_img">
 
-5. `App Services` 項目の `Push Notifications` オプションをチェックし、{{<guilabel name="Continue">}} をクリックします。
+5. `App Services` 項目の `Push Notifications` オプションをチェックし、<span class="guilabel">Continue</span> をクリックします。
 
-    {{<img src="/images/tutorials/16.png">}}
+    <img src="/images/tutorials/16.png" width="" class="single_img">
 
-6. `Confirm your App ID` ページにリダイレクトされます。 {{<guilabel name="Register">}} をクリックします。
+6. `Confirm your App ID` ページにリダイレクトされます。 <span class="guilabel">Register</span> をクリックします。
 
-7. iOS App IDs ページで作成した App ID を選択し、{{<guilabel name="Edit">}} をクリックします。
+7. iOS App IDs ページで作成した App ID を選択し、<span class="guilabel">Edit</span> をクリックします。
 
-8. Scroll down to `Push Notifications` section, click on {{<guilabel name="Create Cerficate">}} under `Development SSL Certificate`. 
-`Push Notifications` 項目にある `Development SSL Certificate` の {{<guilabel name="Create Cerficate">}} をクリックします。
+8. Scroll down to `Push Notifications` section, click on <span class="guilabel">Create Cerficate</span> under `Development SSL Certificate`. `Push Notifications` 項目にある `Development SSL Certificate` の <span class="guilabel">Create Cerficate</span> をクリックします。
 
-    {{<img src="/images/tutorials/17.png">}}
+    <img src="/images/tutorials/17.png" width="" class="single_img">
 
-9. {{<guilabel name="Continue">}} をクリックします。
+9. <span class="guilabel">Continue</span> をクリックします。
 
-10. {{<guilabel name="Choose File">}} をクリックし、CSR ファイルを選択します。 CSR ファイルは、Monaca クラウド IDE の {{<menu menu1="設定" menu2="iOS ビルド設定">}} から取得することができます。 {{<guilabel name="秘密鍵と CSR の生成">}}をクリックし、CRSファイルを作成後 {{<guilabel name="エクスポート">}} ボタンをクリックしてダウンロードします。
+10. <span class="guilabel">Choose File</span> をクリックし、CSR ファイルを選択します。 CSR ファイルは、Monaca クラウド IDE の <span class="guilabel"><b>設定 &rarr; iOS ビルド設定</b></span> から取得することができます。 <span class="guilabel">秘密鍵と CSR の生成</span> をクリックし、CRSファイルを作成後 <span class="guilabel">エクスポート</span> ボタンをクリックしてダウンロードします。
 
-11. 次に、{{<guilabel name="Continue">}} をクリックします。 証明書の準備でき、ダウンロード可能になったら証明書をダウンロードします。次の項目の Firebase の設定に必要になります。
+11. 次に、<span class="guilabel">Continue</span> をクリックします。 証明書の準備でき、ダウンロード可能になったら証明書をダウンロードします。次の項目の Firebase の設定に必要になります。
 
 ## Firebase (プッシュ通知) の設定
 
@@ -69,13 +68,13 @@ iOS向けのプッシュ通知を使用する場合は、APNs の認証キーま
 
 2. Firebase console にログインします。
 
-3. {{<guilabel name="プロジェクトを追加">}} をクリックします。
+3. <span class="guilabel">プロジェクトを追加</span> をクリックします。
 
-    {{<img src="/images/tutorials/1.png">}}
+    <img src="/images/tutorials/1.png" width="" class="single_img">
 
-4. プロジェクト情報を入力し、 {{<guilabel name="プロジェクトを作成">}} をクリックします。 その後、プロジェクト概要ページにリダイレクトされます。
+4. プロジェクト情報を入力し、 <span class="guilabel">プロジェクトを作成</span> をクリックします。 その後、プロジェクト概要ページにリダイレクトされます。
 
-    {{<img src="/images/tutorials/2.png">}}
+    <img src="/images/tutorials/2.png" width="" class="single_img">
 
 プロジェクトを作成後、各プラットフォーム用プッシュ通知の設定を行うことができます。
 
@@ -83,29 +82,29 @@ iOS向けのプッシュ通知を使用する場合は、APNs の認証キーま
 
 1. `プロジェクトの設定`　を選択します。
 
-    {{<img src="/images/tutorials/3.png">}}
+    <img src="/images/tutorials/3.png" width="" class="single_img">
 
-2. [全般] 項目で {{<guilabel name="アプリを追加">}} をクリックし、`iOS` を選択します。
+2. [全般] 項目で <span class="guilabel">アプリを追加</span> をクリックし、`iOS` を選択します。
 
-3. iOS のバンドルID を入力します。( {{<menu menu1="設定" menu2="iOS アプリ設定">}} ) で確認することができます)。 次に、{{<guilabel name="アプリの登録">}} をクリックします。
+3. iOS のバンドルID を入力します。( <span class="guilabel"><b>設定 &rarr; iOS アプリ設定</b></span> ) で確認することができます)。 次に、<span class="guilabel">アプリの登録</span> をクリックします。
 
-    {{<img src="/images/tutorials/4.png">}}
+    <img src="/images/tutorials/4.png" width="" class="single_img">
 
-4. `GoogleService-Info.plist` ファイルをダウンロードし、プロジェクトのルートフォルダに配置します。 次に、 {{<guilabel name="続行">}} をクリックします。
+4. `GoogleService-Info.plist` ファイルをダウンロードし、プロジェクトのルートフォルダに配置します。 次に、 <span class="guilabel">続行</span> をクリックします。
 
-    {{<img src="/images/tutorials/5.png">}}
+    <img src="/images/tutorials/5.png" width="" class="single_img">
 
-5. [Firebase SDK の追加] では、Monacaで開発するアプリは、ネイティブアプリではないため、 {{<guilabel name="続行">}} をクリックします。 次に、{{<guilabel name="終了">}} をクリックして設定を完了します。その後、Firebase の概要ページに iOS アプリが表示されます。
+5. [Firebase SDK の追加] では、Monacaで開発するアプリは、ネイティブアプリではないため、 <span class="guilabel">続行</span>  をクリックします。 次に、<span class="guilabel">終了</span> をクリックして設定を完了します。その後、Firebase の概要ページに iOS アプリが表示されます。
     
-    {{<img src="/images/tutorials/6.png">}}
+    <img src="/images/tutorials/6.png" width="" class="single_img">
 
 6. 作成したプロジェクトに APNs 証明書を追加します。 `プロジェクトの設定` に移動し、  `クラウド メッセージング`を選択します。
 
-    {{<img src="/images/tutorials/3.png">}}
+    <img src="/images/tutorials/3.png" width="" class="single_img">
 
 7. **iOS アプリの設定** 項目で、APNs 認証キーまたは APNs 証明書をアップロードします。
 
-    {{<img src="/images/tutorials/7.png">}}
+    <img src="/images/tutorials/7.png" width="" class="single_img">
 
 以上で、iOS 用の設定は完了です。
 
@@ -113,21 +112,21 @@ iOS向けのプッシュ通知を使用する場合は、APNs の認証キーま
 
 1. `プロジェクトの設定`　を選択します。
 
-    {{<img src="/images/tutorials/3.png">}}
+    <img src="/images/tutorials/3.png" width="" class="single_img">
 
-2. [全般] 項目で {{<guilabel name="アプリを追加">}} をクリックし、`Android` を選択します。
+2. [全般] 項目で <span class="guilabel">アプリを追加</span> をクリックし、`Android` を選択します。
 
-3. パッケージ名を入力します ( {{<menu menu1="設定" menu2="Android アプリ設定">}} で確認することができます) 。 次に、{{<guilabel name="アプリの登録">}} をクリックします。
+3. パッケージ名を入力します ( <span class="guilabel"><b>設定 &rarr; Android アプリ設定</b></span> で確認することができます) 。 次に、<span class="guilabel">アプリの登録</span> をクリックします。
 
-    {{<img src="/images/tutorials/8.png">}}
+    <img src="/images/tutorials/8.png" width="" class="single_img">
 
-4. `google-services.json` ファイルをダウンロードし、プロジェクトのルートフォルダに配置します。 次に、 {{<guilabel name="続行">}} をクリックします。
+4. `google-services.json` ファイルをダウンロードし、プロジェクトのルートフォルダに配置します。 次に、 <span class="guilabel">続行</span> をクリックします。
 
-    {{<img src="/images/tutorials/9.png">}}
+    <img src="/images/tutorials/9.png" width="" class="single_img">
 
-5. [Firebase SDK の追加] では、Monacaで開発するアプリは、ネイティブアプリではないため、 {{<guilabel name="続行">}} をクリックします。 次に、{{<guilabel name="終了">}} をクリックして設定を完了します。その後、Firebase の概要ページに iOS アプリが表示されます。
+5. [Firebase SDK の追加] では、Monacaで開発するアプリは、ネイティブアプリではないため、 <span class="guilabel">続行</span>  をクリックします。 次に、<span class="guilabel">終了</span> をクリックして設定を完了します。その後、Firebase の概要ページに iOS アプリが表示されます。
     
-    {{<img src="/images/tutorials/10.png">}}
+    <img src="/images/tutorials/10.png" width="" class="single_img">
 
 {{%/excerpt%}}
 
