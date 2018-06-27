@@ -3,7 +3,7 @@ title: InAppBrowser Plugin
 weight: 130
 ---
 
-Tested Version: [1.7.1](https://github.com/apache/cordova-plugin-inappbrowser/releases/tag/1.7.1)
+Tested Version: [2.0.1](https://github.com/apache/cordova-plugin-inappbrowser/releases/tag/2.0.1)
 
 {{<note>}}
 This document is based on the original Cordova docs available at {{<link title="Cordova Docs" href="https://github.com/apache/cordova-plugin-inappbrowser">}}.
@@ -41,7 +41,7 @@ future major release. Until the hook is removed from the plugin, apps
 can manually restore the default behaviour:
 
 {{<highlight javascript>}}
-delete window.open // Reverts the call back to it's prototype's default
+delete window.open // Reverts the call back to its prototype's default
 {{</highlight>}}
 
 Although `window.open` is in the global scope, InAppBrowser is not
@@ -90,46 +90,45 @@ var ref = cordova.InAppBrowser.open(url, target, options);
     -   `_system`: Opens in the system's web browser.
 
 -   **options**: Options for the `InAppBrowser`. Optional, defaulting
-    to: `location=yes`. *(String)* The `options` string must not contain
-    any blank space, and each feature's name/value pairs must be
-    separated by a comma. Feature names are case insensitive. All
-    platforms support the value below:
+    to: `location=yes`. *(String)* The `options` string must not contain any blank space, and each feature's name/value pairs must be separated by a comma. Feature names are case insensitive.
+    
+All platforms support the value below:
 
-    -   **location**: Set to `yes` or `no` to turn the `InAppBrowser`'s location bar on or off.
+-   **location**: Set to `yes` or `no` to turn the `InAppBrowser`'s location bar on or off.
     
-    Android only:
+Android supports these additional options:
     
-    -   **hidden**: set to `yes` to create the browser and load the page, but not show it. The loadstop event fires when loading is complete. Omit or set to `no` (default) to have the browser open and load normally.
-    -   **clearcache**: set to `yes` to have the browser's cookie cache cleared before the new window is opened
-    -   **clearsessioncache**: set to `yes` to have the session cookie cache cleared before the new window is opened
-    -   **zoom**: set to `yes` to show Android browser's zoom controls, set to `no` to hide them. Default value is `yes`.
-    -   **hardwareback**: set to `yes` to use the hardware back button to navigate backwards through the `InAppBrowser`'s history. If there is no previous page, the `InAppBrowser` will close. The default value is `yes`, so you must set it to `no` if you want the back button to simply close the InAppBrowser.
-    -   **mediaPlaybackRequiresUserAction**: Set to `yes` to prevent HTML5 audio or video from autoplaying (defaults to `no`).
-    -   **shouldPauseOnSuspend**: Set to `yes` to make InAppBrowser WebView to pause/resume with the app to stop background audio (this may be required to avoid Google Play issues like described in [CB-11013](https://issues.apache.org/jira/browse/CB-11013)).
-    -   **useWideViewPort**: Sets whether the WebView should enable support for the "viewport" HTML meta tag or should use a wide viewport. When the value of the setting is `no`, the layout width is always set to the width of the WebView control in device-independent (CSS) pixels. When the value is `yes` and the page contains the viewport meta tag, the value of the width specified in the tag is used. If the page does not contain the tag or does not provide a width, then a wide viewport will be used. (defaults to `yes`).
+-   **hidden**: set to `yes` to create the browser and load the page, but not show it. The loadstop event fires when loading is complete. Omit or set to `no` (default) to have the browser open and load normally.
+-   **clearcache**: set to `yes` to have the browser's cookie cache cleared before the new window is opened
+-   **clearsessioncache**: set to `yes` to have the session cookie cache cleared before the new window is opened
+-   **hardwareback**: set to `yes` to use the hardware back button to navigate backwards through the `InAppBrowser`'s history. If there is no previous page, the `InAppBrowser` will close. The default value is `yes`, so you must set it to `no` if you want the back button to simply close the InAppBrowser.
+-   **zoom**: set to `yes` to show Android browser's zoom controls, set to `no` to hide them.  Default value is `yes`.
+-   **mediaPlaybackRequiresUserAction**: Set to `yes` to prevent HTML5 audio or video from autoplaying (defaults to `no`).
+-   **shouldPauseOnSuspend**: Set to `yes` to make InAppBrowser WebView to pause/resume with the app to stop background audio (this may be required to avoid Google Play issues like described in [CB-11013](https://issues.apache.org/jira/browse/CB-11013)).
+-   **useWideViewPort**: Sets whether the WebView should enable support for the "viewport" HTML meta tag or should use a wide viewport. When the value of the setting is `no`, the layout width is always set to the width of the WebView control in device-independent (CSS) pixels. When the value is `yes` and the page contains the viewport meta tag, the value of the width specified in the tag is used. If the page does not contain the tag or does not provide a width, then a wide viewport will be used. (defaults to `yes`).
 
-    iOS only:
-    
-    -   **closebuttoncaption**: set to a string to use as the **Done** button's caption. Note that you need to localize this value yourself.
-    -   **disallowoverscroll**: Set to `yes` or `no` (default is `no`). Turns on/off the UIWebViewBounce property.
-    -   **hidden**: set to `yes` to create the browser and load the page, but not show it. The loadstop event fires when loading is complete. Omit or set to `no` (default) to have the browser open and load normally.
-    -   **clearcache**: set to `yes` to have the browser's cookie cache cleared before the new window is opened
-    -   **clearsessioncache**: set to `yes` to have the session cookie cache cleared before the new window is opened
-    -   **toolbar**: set to `yes` or `no` to turn the toolbar on or off for the InAppBrowser (defaults to `yes`)
-    -   **enableViewportScale**: Set to `yes` or `no` to prevent viewport scaling through a meta tag (defaults to `no`).
-    -   **mediaPlaybackRequiresUserAction**: Set to `yes` to prevent HTML5 audio or video from autoplaying (defaults to `no`).
-    -   **allowInlineMediaPlayback**: Set to `yes` or `no` to allow in-line HTML5 media playback, displaying within the browser window rather than a device-specific playback interface. The HTML's `video` element must also include the `webkit-playsinline` attribute (defaults to `no`)
-    -   **keyboardDisplayRequiresUserAction**: Set to `yes` or `no` to open the keyboard when form elements receive focus via JavaScript's `focus()` call (defaults to `yes`).
-    -   **suppressesIncrementalRendering**: Set to `yes` or `no` to wait until all new view content is received before being rendered (defaults to `no`).
-    -   **presentationstyle**: Set to `pagesheet`, `formsheet` or `fullscreen` to set the [presentation style](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIViewController_Class/Reference/Reference.html#//apple_ref/occ/instp/UIViewController/modalPresentationStyle) (defaults to `fullscreen`).
-    -   **transitionstyle**: Set to `fliphorizontal`, `crossdissolve` or `coververtical` to set the [transition style](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIViewController_Class/Reference/Reference.html#//apple_ref/occ/instp/UIViewController/modalTransitionStyle) (defaults to `coververtical`).
-    -   **toolbarposition**: Set to `top` or `bottom` (default is `bottom`). Causes the toolbar to be at the top or bottom of the window.
-    
-    Windows only:
-    
-    -   **hidden**: set to `yes` to create the browser and load the page, but not show it. The loadstop event fires when loading is complete. Omit or set to `no` (default) to have the browser open and load normally.
-    -   **fullscreen**: set to `yes` to create the browser control without a border around it. Please note that if **location=no** is also specified, there will be no control presented to user to close IAB window.
-    -   **hardwareback**: works the same way as on Android platform.
+iOS supports these additional options:
+
+-   **hidden**: set to `yes` to create the browser and load the page, but not show it. The loadstop event fires when loading is complete. Omit or set to `no` (default) to have the browser open and load normally.
+-   **clearcache**: set to `yes` to have the browser's cookie cache cleared before the new window is opened
+-   **clearsessioncache**: set to `yes` to have the session cookie cache cleared before the new window is opened    
+-   **closebuttoncaption**: set to a string to use as the __Done__ button's caption. Note that you need to localize this value yourself.
+-    **disallowoverscroll**: Set to `yes` or `no` (default is `no`). Turns on/off the UIWebViewBounce property.
+-   **toolbar**: set to `yes` or `no` to turn the toolbar on or off for the InAppBrowser (defaults to `yes`)
+-   **enableViewportScale**: Set to `yes` or `no` to prevent viewport scaling through a meta tag (defaults to `no`).
+-   **mediaPlaybackRequiresUserAction**: Set to `yes` to prevent HTML5 audio or video from autoplaying (defaults to `no`).
+-   **allowInlineMediaPlayback**: Set to `yes` or `no` to allow in-line HTML5 media playback, displaying within the browser window rather than a device-specific playback interface. The HTML's `video` element must also include the `webkit-playsinline` attribute (defaults to `no`)
+-   **keyboardDisplayRequiresUserAction**: Set to `yes` or `no` to open the keyboard when form elements receive focus via JavaScript's `focus()` call (defaults to `yes`).
+-   **suppressesIncrementalRendering**: Set to `yes` or `no` to wait until all new view content is received before being rendered (defaults to `no`).
+-   **presentationstyle**: Set to `pagesheet`, `formsheet` or `fullscreen` to set the [presentation style](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIViewController_Class/Reference/Reference.html#//apple_ref/occ/instp/UIViewController/modalPresentationStyle) (defaults to `fullscreen`).
+-   **transitionstyle**: Set to `fliphorizontal`, `crossdissolve` or `coververtical` to set the [transition style](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIViewController_Class/Reference/Reference.html#//apple_ref/occ/instp/UIViewController/modalTransitionStyle) (defaults to `coververtical`).
+-   **toolbarposition**: Set to `top` or `bottom` (default is `bottom`). Causes the toolbar to be at the top or bottom of the window.
+
+Windows supports these additional options:
+
+-   **hidden**: set to `yes` to create the browser and load the page, but not show it. The loadstop event fires when loading is complete. Omit or set to `no` (default) to have the browser open and load normally.
+-   **hardwareback**: works the same way as on Android platform.
+-   **fullscreen**: set to `yes` to create the browser control without a border around it. Please note that if **location=no** is also specified, there will be no control presented to user to close IAB window.
 
 #### Supported Platforms
 
@@ -142,19 +141,6 @@ var ref = cordova.InAppBrowser.open(url, target, options);
 var ref = cordova.InAppBrowser.open('http://apache.org', '_blank', 'location=yes');
 var ref2 = cordova.InAppBrowser.open(encodeURI('http://ja.m.wikipedia.org/wiki/ハングル'), '_blank', 'location=yes');
 {{</highlight>}}
-
-#### Windows Quirks
-
-Windows 8.0, 8.1 and Windows Phone 8.1 don't support remote urls to be
-opened in the Cordova WebView so remote urls are always showed in the
-system's web browser if opened with `target='_self'`.
-
-On Windows 10 if the URL is NOT in the white list and is opened with
-`target='_self'` it will be showed in the system's web browser instead
-of InAppBrowser popup.
-
-Similar to Firefox OS IAB window visual behaviour can be overridden via
-`inAppBrowserWrap`/inAppBrowserWrapFullscreen CSS classes.
 
 ### InAppBrowser
 

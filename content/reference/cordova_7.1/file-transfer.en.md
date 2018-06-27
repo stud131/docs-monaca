@@ -3,7 +3,7 @@ title: File Transfer Plugin
 weight: 100
 ---
 
-Tested Version: [1.6.3](https://github.com/apache/cordova-plugin-file-transfer/releases/tag/1.6.3)
+Tested Version: [1.7.0](https://github.com/apache/cordova-plugin-file-transfer/releases/tag/1.7.0)
 
 {{<note>}}
 This document is based on the original Cordova docs available at {{<link title="Cordova Docs" href="https://github.com/apache/cordova-plugin-file-transfer">}}.
@@ -21,6 +21,10 @@ function onDeviceReady() {
     console.log(FileTransfer);
 }
 {{</highlight>}}
+
+## Deprecated
+
+With the new features introduced in [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest), this plugin is not needed any more. Migrating from this plugin to using the new features of [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest), is explained in this [Cordova blog post](https://cordova.apache.org/blog/2017/10/18/from-filetransfer-to-xhr2.html).
 
 Plugin ID
 ---------
@@ -89,10 +93,10 @@ multi-part POST or PUT request, and to download files.
     `mimeType` | The mime type of the data to upload. Defaults to image/jpeg. (DOMString)
     `params` | A set of optional key/value pairs to pass in the HTTP request. (Object)
     `chunkedMode` | Whether to upload the data in chunked streaming mode. Defaults to true. (Boolean)
-    `headers` | A map of header name/header values. Use an array to specify more than one value. On iOS, FireOS, and Android, if a header named Content-Type is present, multipart form data will NOT be used. (Object)
+    `headers` | A map of header name/header values. Use a hash to specify one or more than one value. On iOS and Android, if a header named Content-Type is present, multipart form data will NOT be used. (Object)
     
     
--   **trustAllHosts**: [Optional] defaults to `false`. If set to `true`, it accepts all security certificates. This is useful since Android rejects self-signed security certificates. Not recommended for production use. Supported on Android and iOS. *(boolean)*
+-   **trustAllHosts**: [Optional] defaults to `false`. If set to `true`, it accepts all security certificates. Not recommended for production use. Supported on Android and iOS. *(boolean)*
 
 ##### Example
 
@@ -149,7 +153,7 @@ options.fileKey="file";
 options.fileName=fileURL.substr(fileURL.lastIndexOf('/')+1);
 options.mimeType="text/plain";
 
-var headers={'headerParam':'headerValue'};
+var headers={'headerParam':'headerValue', 'headerParam2':'headerValue2'};
 
 options.headers = headers;
 
@@ -180,8 +184,7 @@ ft.upload(fileURL, uri, win, fail, options);
     retrieving the `FileEntry`. Invoked with a `FileTransferError`
     object. *(Function)*
 -   **trustAllHosts**: Optional parameter, defaults to `false`. If set
-    to `true`, it accepts all security certificates. This is useful
-    because Android rejects self-signed security certificates. Not
+    to `true`, it accepts all security certificates. Not
     recommended for production use. Supported on Android and iOS.
     *(boolean)*
 -   **options**: Optional parameters, currently only supports headers
@@ -292,6 +295,10 @@ error occurs.
 -   **body** Response body. This attribute is only available when a
     response is received from the HTTP connection. (String)
 -   **exception**: Either `e.getMessage` or `e.toString` (String)
+
+#### iOS Quirks
+
+**exception** is never defined.
 
 #### Constants
 

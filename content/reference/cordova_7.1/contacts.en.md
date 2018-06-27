@@ -3,7 +3,7 @@ title: Contacts Plugin
 weight: 30
 ---
 
-Tested Version: [2.3.1](https://github.com/apache/cordova-plugin-contacts/releases/tag/2.3.1)
+Tested Version: [3.0.1](https://github.com/apache/cordova-plugin-contacts/releases/tag/3.0.1)
 
 {{<note>}}
 This document is based on the original Cordova docs available at {{<link title="Cordova Docs" href="https://github.com/apache/cordova-plugin-contacts">}}.
@@ -40,6 +40,10 @@ confusion and perceived misuse of contact data. For more information,
 please see the {{<link href="http://cordova.apache.org/docs/en/latest/guide/appdev/privacy/index.html" title="Privacy Guide">}}.
 {{</warning>}}
 
+## Deprecation Notice
+
+This plugin is being deprecated. No more work will be done on this plugin by the Cordova development community. You can continue to use this plugin and it should work as-is in the future but any more arising issues will not be fixed by the Cordova community.
+
 Plugin ID
 ---------
 
@@ -57,23 +61,19 @@ Quirks
 
 ### iOS Quirks
 
-Since iOS 10, it's mandatory to add a `NSContactsUsageDescription` entry
-in the `info.plist`.
+Since iOS 10, it's mandatory to provide an usage description in the `info.plist` if trying to access privacy-sensitive data. When the system prompts the user to allow access, this usage description string will displayed as part of the permission dialog box, but if you didn't provide the usage description, the app will crash before showing the dialog. Also, Apple will reject apps that access private data but don't provide an usage description.
 
-`NSContactsUsageDescription` describes the reason that the app accesses
-the user’s contacts. When the system prompts the user to allow access,
-this string is displayed as part of the dialog box. To add this entry
-you can pass the variable `CONTACTS_USAGE_DESCRIPTION` on plugin
-install.
+This plugins requires the following usage description:
 
-Example:
+- `NSContactsUsageDescription` describes the reason that the app accesses the user's contacts.
 
-{{<highlight bash>}}
-cordova plugin add cordova-plugin-contacts --variable CONTACTS_USAGE_DESCRIPTION="your usage message"
+To add this entry into the `info.plist`, you can use the `<edit-config>` tag in the `config.xml` file like this:
+
+{{<highlight xml>}}
+<edit-config target="NSContactsUsageDescription" file="*-Info.plist" mode="merge">
+    <string>need contacts access to search friends</string>
+</edit-config>
 {{</highlight>}}
-
-If you don't pass the variable, the plugin will add an empty string as
-value.
 
 ### Windows Quirks
 

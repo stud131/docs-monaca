@@ -3,7 +3,7 @@ title: StatusBar Plugin
 weight: 190
 ---
 
-Tested Version: [2.2.3](https://github.com/apache/cordova-plugin-statusbar/releases/tag/2.2.3)
+Tested Version: [2.4.1](https://github.com/apache/cordova-plugin-statusbar/releases/tag/2.4.1)
 
 {{<note>}}
 This document is based on the original Cordova docs available at {{<link title="Cordova Docs" href="https://github.com/apache/cordova-plugin-statusbar">}}.
@@ -47,6 +47,10 @@ Preferences
     lightcontent, blacktranslucent, blackopaque.
 
     {{<highlight xml>}}<preference name="StatusBarStyle" value="lightcontent" />{{</highlight>}}
+
+-   **StatusBarDefaultScrollToTop** (boolean, defaults to false). On iOS 7, allows the Cordova WebView to use default scroll-to-top behavior. Defaults to false so you can listen to the "statusTap" event (described below) and customize the behavior instead.
+
+    {{<highlight xml>}}<preference name="StatusBarDefaultScrollToTop" value="false" />{{</highlight>}}
 
 ### Android Quirks
 
@@ -138,7 +142,8 @@ Use the default statusbar (dark text, for light backgrounds).
 
 #### Supported Platforms
 
--   iOS
+- iOS
+- Android 6+
 
 ### StatusBar.styleLightContent
 
@@ -151,6 +156,7 @@ Use the lightContent statusbar (light text, for dark backgrounds).
 #### Supported Platforms
 
 -   iOS
+-   Android 6+
 
 ### StatusBar.styleBlackTranslucent
 
@@ -163,6 +169,7 @@ Use the blackTranslucent statusbar (light text, for dark backgrounds).
 #### Supported Platforms
 
 -   iOS
+-   Android 6+
 
 ### StatusBar.styleBlackOpaque
 
@@ -175,6 +182,7 @@ Use the blackOpaque statusbar (light text, for dark backgrounds).
 #### Supported Platforms
 
 -   iOS
+-   Android 6+
 
 ### StatusBar.backgroundColorByName
 

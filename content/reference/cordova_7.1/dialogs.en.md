@@ -3,7 +3,7 @@ title: Dialogs Plugin
 weight: 80
 ---
 
-Tested Version: [1.3.3](https://github.com/apache/cordova-plugin-dialogs/releases/tag/1.3.3)
+Tested Version: [2.0.1](https://github.com/apache/cordova-plugin-dialogs/releases/tag/2.0.1)
 
 {{<note>}}
 This document is based on the original Cordova docs available at {{<link title="Cordova Docs" href="https://github.com/apache/cordova-plugin-dialogs">}}.
@@ -124,6 +124,10 @@ navigator.notification.confirm(
 -   Android
 -   iOS
 -   Windows
+
+#### Android Quirks
+
+- Android supports a maximum of three buttons, and ignores any more than that.
 
 #### Windows Quirks
 

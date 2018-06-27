@@ -3,7 +3,7 @@ title: File Plugin
 weight: 90
 ---
 
-Tested Version: [4.3.3](https://github.com/apache/cordova-plugin-file/releases/tag/4.3.3)
+Tested Version: [5.0.0](https://github.com/apache/cordova-plugin-file/releases/tag/5.0.0)
 
 {{<note>}}
 This document is based on the original Cordova docs available at {{<link title="Cordova Docs" href="https://github.com/apache/cordova-plugin-file">}}.
@@ -728,7 +728,7 @@ When you get file system access using `requestFileSystem`, access is
 granted for the sandboxed file system only (the sandbox limits access to
 the app itself), not for general access to any file system location on
 the device. (To access file system locations outside the sandboxed
-storage, use other methods such as window.requestLocalFileSystemURL,
+storage, use other methods such as `window.resolveLocalFileSystemURL`,
 which support platform-specific locations. For one example of this, see
 *Append a File*.)
 

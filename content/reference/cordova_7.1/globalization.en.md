@@ -3,7 +3,7 @@ title: Globalization Plugin
 weight: 120
 ---
 
-Tested Version: [1.0.7](https://github.com/apache/cordova-plugin-globalization/releases/tag/1.0.7)
+Tested Version: [1.0.9](https://github.com/apache/cordova-plugin-globalization/releases/tag/1.0.9)
 
 {{<note>}}
 This document is based on the original Cordova docs available at {{<link title="Cordova Docs" href="https://github.com/apache/cordova-plugin-globalization">}}.
@@ -30,6 +30,10 @@ function onDeviceReady() {
     console.log(navigator.globalization);
 }
 {{</highlight>}}
+
+## Deprecation Notice
+
+With the [ECMA Internationalization API](https://www.ecma-international.org/ecma-402/1.0/) now supported on iOS, Android and Windows devices, this plugin is not required any more. Migrating from this plugin to the [ECMA Internationalization API](https://www.ecma-international.org/ecma-402/1.0/) is explained in this [Cordova blog post](https://cordova.apache.org/news/2017/11/20/migrate-from-cordova-globalization-plugin.html).
 
 Plugin ID
 ---------

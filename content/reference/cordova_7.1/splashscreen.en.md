@@ -3,7 +3,7 @@ title: Splashscreen Plugin
 weight: 170
 ---
 
-Tested Version: [4.0.3](https://github.com/apache/cordova-plugin-splashscreen/releases/tag/4.0.3)
+Tested Version: [5.0.1](https://github.com/apache/cordova-plugin-splashscreen/releases/tag/5.0.1)
 
 {{<note>}}
 This document is based on the original Cordova docs available at {{<link title="Cordova Docs" href="https://github.com/apache/cordova-plugin-splashscreen">}}.
@@ -143,6 +143,7 @@ In your `config.xml`, you can add the following preferences:
 {{<highlight xml>}}
 <preference name="SplashMaintainAspectRatio" value="true|false" />
 <preference name="SplashShowOnlyFirstTime" value="true|false" />
+<preference name="SplashScreenSpinnerColor" value="white" />
 {{</highlight>}}
 
 "SplashMaintainAspectRatio" preference is optional. If set to true,
@@ -162,6 +163,8 @@ launch. However, if you plan to use `navigator.app.exitApp()` to close
 application and force splash screen appear on next launch, you should
 set this property to `false` (this also applies to closing the App with
 Back button).
+
+"SplashScreenSpinnerColor" preference is also optional and is ignored when not set. Setting it to a valid color name or HEX color code will change the color of the spinner on Android 5.0+ devices.
 
 ### Windows Quirks
 
@@ -189,6 +192,16 @@ Dismiss the splash screen.
 
 {{<highlight javascript>}}
 navigator.splashscreen.hide();
+{{</highlight>}}
+
+#### iOS Quirk
+
+The `config.xml` file's `AutoHideSplashScreen` setting must be false. To delay hiding the splash screen for two seconds, add a timer such as the following in the deviceready event handler:
+
+{{<highlight javascript>}}
+setTimeout(function() {
+    navigator.splashscreen.hide();
+}, 2000);
 {{</highlight>}}
 
 ### splashscreen.show

@@ -3,7 +3,7 @@ title: Battery Status Plugin
 weight: 10
 ---
 
-Tested Version: [1.2.4](https://github.com/apache/cordova-plugin-battery-status/releases/tag/1.2.4)
+Tested Version: [2.0.1](https://github.com/apache/cordova-plugin-battery-status/releases/tag/2.0.1)
 
 {{<note>}}
     This document is based on the original Cordova docs available at {{<link title="Cordova Docs" href="https://github.com/apache/cordova-plugin-battery-status">}}.

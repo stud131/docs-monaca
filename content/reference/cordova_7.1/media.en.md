@@ -3,7 +3,7 @@ title: Media Plugin
 weight: 140
 ---
 
-Tested Version: [3.0.1](https://github.com/apache/cordova-plugin-media/releases/tag/3.0.1)
+Tested Version: [4.0.0](https://github.com/apache/cordova-plugin-media/releases/tag/4.0.0)
 
 {{<note>}}
 This document is based on the original Cordova docs available at {{<link title="Cordova Docs" href="https://github.com/apache/cordova-plugin-media">}}.
@@ -94,7 +94,7 @@ The following constants are reported as the only parameter to the
 
 ### Methods
 
--   `media.getCurrentAmplitude`: Returns the current position within an
+-   `media.getCurrentAmplitude`: Returns the current amplitude within an
     audio file.
 -   `media.getCurrentPosition`: Returns the current position within an
     audio file.
@@ -113,7 +113,7 @@ The following constants are reported as the only parameter to the
 
 #### media.getCurrentAmplitude
 
-Returns the current amplitude of the current recording.
+Returns the current amplitude within an audio file.
 
 {{<highlight javascript>}}
 media.getCurrentAmplitude(mediaSuccess, [mediaError]);
@@ -566,17 +566,19 @@ function recordAudio() {
 
     {{<highlight javascript>}}var myMedia = new Media("documents://beer.mp3"){{</highlight>}}
 
--   Since iOS 10 it's mandatory to add a `NSMicrophoneUsageDescription`
-    entry in the info.plist.
+-   Since iOS 10 it's mandatory to provide an usage description in the `info.plist` if trying to access privacy-sensitive data. When the system prompts the user to allow access, this usage description string will displayed as part of the permission dialog box, but if you didn't provide the usage description, the app will crash before showing the dialog. Also, Apple will reject apps that access private data but don't provide an usage description.
 
-NSMicrophoneUsageDescription describes the reason that the app accesses
-the user’s microphone. When the system prompts the user to allow access,
-this string is displayed as part of the dialog box. To add this entry
-you can pass the variable `MICROPHONE_USAGE_DESCRIPTION` on plugin
-install.
+This plugins requires the following usage description:
 
-If you don't pass the variable, the plugin will add an empty string as
-value.
+- `NSMicrophoneUsageDescription` describes the reason that the app accesses the user's microphone. 
+
+To add this entry into the `info.plist`, you can use the `edit-config` tag in the `config.xml` like this:
+
+{{<highlight xml>}}
+<edit-config target="NSMicrophoneUsageDescription" file="*-Info.plist" mode="merge">
+    <string>need microphone access to record sounds</string>
+</edit-config>
+{{</highlight>}}
 
 ##### Windows Quirks
 
