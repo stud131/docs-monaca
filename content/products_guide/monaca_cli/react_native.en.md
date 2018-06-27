@@ -331,20 +331,27 @@ projects such as:
 
     {{<figure src="/images/monaca_cli/react_native/6.png" title="Build History">}}
 
-## Upload Control
+## Upload/Download Control
 
 There are cases where you want ignore/exclude specific files and folders
 from uploading to Monaca Cloud. In this case, the `.monacaignore` file
 will be automatically created and placed under the root directory of the
 React Native projects. You can edit the file to add or remove specific
-files and folders. Here is the default settings within the
-`.monacaignore` file:
+files and folders. 
+
+{{<note>}}
+    <code>.monacaignore</code> is using the same pattern as <code>.gitignore</code>.
+{{</note>}}
+
+Here is the default settings within the `.monacaignore` file:
 
 {{<highlight bash>}}
-/node_modules/**
-/android/build/**
-/ios/build/**
-*/.DS_Store
-*/.git/**
+node_modules
+.git
+.monaca/*
+!.monaca/project_info.json
+android/build
+ios/build
+build
+.DS_Store
 {{</highlight>}}
-

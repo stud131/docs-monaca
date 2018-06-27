@@ -68,21 +68,29 @@ can be triggered in two ways:
 2.  `monaca preview`: runs the transpiler in watch mode and starts an
     HTTP Server in order to display the app’s content.
 
-## Upload Control
+## Upload/Download Control
 
 There are cases where you want ignore/exclude specific files and folders
 from uploading to Monaca Cloud. In this case, the `.monacaignore` file
 will be automatically created and placed under the root directory of the
 React Native projects. You can edit the file to add or remove specific
-files and folders. Here is the default settings within the
-`.monacaignore` file:
+files and folders. 
 
-{{<highlight javascript>}}
-/node_modules/**
-/android/build/**
-/ios/build/**
-*/.DS_Store
-*/.git/**
+{{<note>}}
+    <code>.monacaignore</code> is using the same pattern as <code>.gitignore</code>.
+{{</note>}}
+
+Here is the default settings within the `.monacaignore` file:
+
+{{<highlight bash>}}
+node_modules
+.git
+.monaca/*
+!.monaca/project_info.json
+android/build
+ios/build
+build
+.DS_Store
 {{</highlight>}}
 
 
