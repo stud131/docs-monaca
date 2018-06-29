@@ -77,12 +77,12 @@ WebViewで実行可能なネイティブJavaScriptコードに変換します。
     オプション付きのプレビューです。このコマンドを実行すると、HTTP
     サーバーが起動し、アプリのコンテンツを表示してくれます。
 
-## Upload/Download Control
+## アップロードとダウンロードの制御
 
-特定のファイルやフォルダを無視/除外して Monaca クラウドにアップロードしたくない場合があります。 この場合、 `.monacaignore` ファイルが自動的に作成され、React Native プロジェクトのルートディレクトリに置かれます。 ファイルを編集して、特定のファイルやフォルダを追加または削除することができます。
+特定のファイルやフォルダを無視/除外して Monaca クラウドにアップロードしたくない場合があります。 この場合、 `.monacaignore` ファイルが自動的に作成され、プロジェクトのルートディレクトリに置かれます。 ファイルを編集して、特定のファイルやフォルダを追加または削除することができます。
 
 {{<note>}}
-    <code>.monacaignore</code> is using the same pattern as <code>.gitignore</code>.
+    <code>.monacaignore</code> は、<code>.gitignore</code> と同じパターンを使用しています。
 {{</note>}}
 
 `.monacaignore` ファイルのデフォルト設定は次のとおりです。
