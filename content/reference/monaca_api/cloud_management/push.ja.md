@@ -34,7 +34,7 @@ Push.send()
 `title` | 文字列 | タイトルです ( Android のみ )。
 `message` | 文字列 | 送信されるメッセージです。
 `badge` | 数値 | バッジ ( iOS のみ ) です。
-`json` | JSON オブジェクト | JSON データです。
+`extra_json` | JSON オブジェクト | JSON データです。
 `userOidList` | 文字列の配列 | ユーザー ID を使用して、対象となるユーザーを絞り込みます ( 任意 )。 <ul><li>Javascript 側では、これらの ID の値は、 [monaca.cloud.User.oid](../../cloud/user/#user-oid) となります。</li><li>[バックエンド マネジメント API](../../cloud_management) に記載されているように、これらの ID は、 [User.list()](../user/#user-list) 関数で取得した各データの `"_id"` プロパティーの値です。</li></ul>
 `userQuery` | String | ユーザーのプロパティーと [MonaQL]({{<ref "criteria.ja.md#monaca-クエリー言語">}}) クエリーを使用して、対象となるユーザを絞り込みます ( 任意 )。 例 `country == "US" && age > 20`
 `userQueryBindParams` | 配列 | userQuery 内にプレースホルダーがある場合には、値に置き換えます ( 任意 )。 例 userQuery が `country == ? && age > ?` の場合、`["US", 20]` になります。

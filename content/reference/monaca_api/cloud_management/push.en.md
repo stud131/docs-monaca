@@ -33,7 +33,7 @@ Name | Type | Description
 `title` | String | Title (Android only)
 `message` | String | Message to send
 `badge` | Number | Badge (iOS only)
-`json` | JSON Object | JSON Data
+`extra_json` | JSON Object | JSON Data
 `userOidList` | Array of String | [Optional] Filter target users by their IDs. <ul><li>In Javascript, these IDs are the values of [monaca.cloud.User.oid](../../cloud/user/#user-oid)</li><li>In [Backend Management API](../../cloud_management), there IDs are the values of `"_id"` property of each data from the [User.list()](../user/#user-list) function.</li></ul>
 `userQuery` | String | [Optional] Filter target users by a [MonaQL](../../cloud/criteria/#monaca-query-language) query for user properties. For example: `'country == "US" && age = 20'`.
 `userQueryBindParams` | Array | [Optional] Replace the placeholders in userQuery by its values. For example: `["US", 20]` when `userQuery` is `'country == ? && age = ?'`.
