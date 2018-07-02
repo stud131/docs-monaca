@@ -7,7 +7,7 @@ weight: 140
 
 - Repo: https://github.com/phonegap/phonegap-plugin-push
 - Plugin ID/Package Name: `phonegap-plugin-push`
-- Tested Version: `2.2.3`
+- Tested Version: `2.1.3`
 
 ## デモ  
 
