@@ -1,5 +1,5 @@
 ---
-title: JS・CSS コンポーネント
+title: JS/CSS コンポーネント
 weight: 20
 ---
 

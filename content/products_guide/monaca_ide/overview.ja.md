@@ -96,7 +96,7 @@ Monaca クラウド IDE は、ブラウザベースの開発環境です。 Web 
 | iOS ビルド設定 | iOS 向けのビルド設定を行います。詳細は、 [iOS ビルド設定](../build/ios/build_ios/#ios-のビルド設定) をご確認ください。|
 | Windows アプリ設定 | Windows アプリのビルドに必要な情報を設定します。詳細は、[Windows アプリのビルド](../build/build_winrt/#ステップ-1-windows-アプリの設定) をご確認ください。|
 | Cordova プラグインの管理 | Cordova プラグインを有効化・無効化します ( 対象は、現在開いているプロジェクトです )。詳細は、[Cordova プラグイン](../dependencies/cordova_plugin/) をご確認ください。|
-| JS/CSS コンポーネントの追加と削除 | JavaScript と CSS ライブラリーを追加または削除します ( 対象は、現在開いているプロジェクトです )。詳細は、[JS・CSS コンポーネント](../dependencies/components/) をご確認ください。|
+| JS/CSS コンポーネントの追加と削除 | JavaScript と CSS ライブラリーを追加または削除します ( 対象は、現在開いているプロジェクトです )。詳細は、[JS/CSS コンポーネント](../dependencies/components/) をご確認ください。|
 | 外部サービスとの連携 | Monaca プロジェクトに組み込める、サードパーティー製の各種サービスを確認できます ( プラグインとして、プロジェクトに追加します )。詳細は、[外部サービスとの連携](/ja/reference/service_integration/) をご確認ください。|
 | 継続的インテグレーション | ビルド処理と配信/配布 ( デプロイ ) 処理のサイクルを自動化します ( [Monaca CI](../monaca_ci) を参照のこと ) |
 | デプロイサービス | デプロイ支援サービスを Monaca CI 用に追加または削除します ( [検証版アプリなどの配信/配布支援サービス ( デプロイサービス )](../monaca_ci/supported_services/)) を参照のこと )。|

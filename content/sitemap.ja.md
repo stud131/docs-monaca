@@ -13,7 +13,7 @@ title: サイトマップ
                 - [エディターのショートカット一覧](/ja/products_guide/monaca_ide/code_editor/editor)
             - [プロジェクトの構成](/ja/products_guide/monaca_ide/dependencies)
                 - [ファイル・フォルダー構成](/ja/products_guide/monaca_ide/dependencies/file_dir)
-                - [JS・CSS コンポーネント](/ja/products_guide/monaca_ide/dependencies/components)
+                - [JS/CSS コンポーネント](/ja/products_guide/monaca_ide/dependencies/components)
                 - [Cordova プラグイン](/ja/products_guide/monaca_ide/dependencies/cordova_plugin)
                 - [ユーザー Cordova プラグイン](/ja/products_guide/monaca_ide/dependencies/custom_cordova_plugin)
             - [バージョン管理](/ja/products_guide/monaca_ide/version_control)

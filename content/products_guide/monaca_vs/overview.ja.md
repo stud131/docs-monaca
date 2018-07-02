@@ -166,7 +166,7 @@ Monaca クラウド IDE に実装されている各プラットフォーム向�
 ( 加えて、アプリ設定も行えます )。
 
 - [Cordova プラグイン](/ja/products_guide/monaca_ide/dependencies/cordova_plugin)
-- [JS・CSS コンポーネント](/ja/products_guide/monaca_ide/dependencies/components)
+- [JS/CSS コンポーネント](/ja/products_guide/monaca_ide/dependencies/components)
 - [外部サービスとの連携](/ja/reference/service_integration)
 - [Android アプリ設定 と キーストア設定](/ja/products_guide/monaca_ide/build/build_android)
 - [iOS アプリ設定 と ビルド設定](/ja/products_guide/monaca_ide/build/ios/build_ios)

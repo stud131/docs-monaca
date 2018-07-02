@@ -1,5 +1,5 @@
 ---
-title: JS・CSS コンポーネント
+title: JS/CSS コンポーネント
 weight: 20
 aliases: /ja/monaca_ide/manual/dependencies/components
 ---
@@ -7,8 +7,7 @@ aliases: /ja/monaca_ide/manual/dependencies/components
 {{%excerpt%}}
 <!-- using full HTML code for other shortcodes otherwise `excerpt` shortcode will break them -->
 
-JS・CSS コンポーネントとは、プロジェクトにインクルード ( include )
-する、JavaScript と CSS ライブラリー群 ( jQuery、jQuery mobile、Onsen UI
+JS/CSS コンポーネントとは、プロジェクトに追加する JavaScript と CSS ライブラリー群 ( jQuery、jQuery mobile、Onsen UI
 など ) を指します。
 
 JavaScript/CSS ライブラリーを追加する場合、次の手順に従います。
@@ -52,17 +51,21 @@ JavaScript/CSS ライブラリーを追加する場合、次の手順に従い�
     </figcaption>
 </figure>
 
-HTML ファイルから、 上記の 2 つのファイルを参照するだけで、ライブラリーの読み込みが行えます。記述例を次に記します。HTML
-ファイルの `<head>` タグ内で、次の記述を行うだけで、ライブラリーが使用できます。
+HTML ファイルから、上記の 2 つのファイルを参照するだけで、ライブラリーの読み込みを行うことができます。HTML
+ファイルの `<head>` タグ内で、次の記述を行うことで、ライブラリーを使用することができます。
 
+```html
+<script src="components/loader.js"></script>
+<link rel="stylesheet" href="components/loader.css">
+```
 
 <div class="admonition note">
-    <code>loader.js</code> file also loads <code>cordova.js</code> file.
+    <code>loader.js</code> ファイルから <code>cordova.js</code> ファイルがロードされます。
 </div>
 
 <div class="admonition note">
-ライブラリー内の画像を使用する場合、 <code>components</code>
-フォルダーから対象の画像ファイルを、直接、読み込めます。
+ライブラリー内の画像を使用する場合は、<code>components</code>
+フォルダーから対象の画像ファイルを直接読み込めます。
 </div>
 
 {{%/excerpt%}}
