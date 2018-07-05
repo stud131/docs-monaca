@@ -3,8 +3,7 @@ title: ダイアログの制御 プラグイン
 weight: 80
 ---
 
-テスト環境 ( バージョン番号 ) :
-[1.3.3](https://github.com/apache/cordova-plugin-dialogs/releases/tag/1.3.3)
+テスト環境 ( バージョン番号 ) :[2.0.1](https://github.com/apache/cordova-plugin-dialogs/releases/tag/2.0.1)
 
 {{<note>}}
 このプラグインの詳細は、 {{<link title="こちらの原文 ( GitHub )" href="https://github.com/apache/cordova-plugin-dialogs">}} をご確認ください。
@@ -130,6 +129,10 @@ navigator.notification.confirm(
 -   iOS
 -   Windows
 
+#### Android 特有の動作
+
+- Android は、最大3つのボタンをサポートしていますが、それ以上は無視されます。
+
 #### Windows 特有の動作
 
 -   Windows 8 or 8.1 では、MessageDialog のインスタンスに、4
@@ -228,3 +231,7 @@ navigator.notification.beep(2);
 
 -   Android では、デフォルトの **着信音** を鳴らします [ **設定/音と通知 ( または、ディスプレイ )** 画面で設定 ]。
 
+関連項目:
+
+- [サードパーティー製 Cordova プラグイン](../../third_party_phonegap)
+- [基本 Cordova プラグイン ( Cordova のコア プラグイン )](../../cordova_7.1)

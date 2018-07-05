@@ -3,7 +3,7 @@ title: 住所録の取得 プラグイン
 weight: 30
 ---
 
-テスト環境 ( バージョン番号 ) : [2.3.1](https://github.com/apache/cordova-plugin-contacts/releases/tag/2.3.1)
+テスト環境 ( バージョン番号 ) : [3.0.1](https://github.com/apache/cordova-plugin-contacts/releases/tag/3.0.1)
 
 {{<note>}}
 このプラグインの詳細は、 {{<link title="こちらの原文 ( GitHub )" href="https://github.com/apache/cordova-plugin-contacts">}} をご確認ください。
@@ -31,6 +31,10 @@ document.addEventListener("deviceready", onDeviceReady, false);
 )。また、住所録へアクセスする前に、ユーザーへの通知および許諾を得ることを配布の条件とする、アプリのマーケットプレースも一部に存在します。住所録データの取り扱いの説明に関しては、ユーザーの不安や困惑を取り除くため、内容を明快に理解できるよう、考慮が求められます。詳細は、 {{<link href="http://cordova.apache.org/docs/ja/6.x/guide/appdev/privacy/index.html" title="プライバシーガイド">}} をご確認ください。
 {{</warning>}}
 
+## 廃止通知
+
+このプラグインは廃止予定です。 このプラグインは、Cordova 開発コミュニティによって、これ以上の作業は行われません。このプラグインは引き続き使用できますが、問題が発生しても Cordova 開発コミュニティでの修正は行われません。
+
 プラグイン ID
 -------------
 
@@ -48,21 +52,19 @@ cordova-plugin-contacts
 
 ### iOS 特有の動作
 
-iOS 10以降は、 `info.plist` に `NSContactsUsageDescription`
-を追加する必要があります。
+iOS 10以降、プライバシーに関連するデータにアクセスする場合は、 `info.plist` に使用の説明を設定することが必須になります。アクセスを許可するようにシステムに指示すると、この使用の説明はアクセス許可ダイアログボックスの一部として表示されますが、使用の説明を入力しない場合は、ダイアログが表示される前にアプリが強制終了します。また、Apple は個人データにアクセスするアプリをリジェクトしますが、使用の説明は提供していません。
 
-`NSContactsUsageDescription`
-は、アプリがユーザーの連絡先にアクセスする理由を記述します。
-システムがアクセス許可をユーザに求めた際、この文字列がダイアログボックスの一部として表示されます。このエントリを追加するには、プラグインのインストール時に変数
-`CONTACTS_USAGE_DESCRIPTION` で追加することができます。
+このプラグインでは、次の使用の説明が必要になります。
 
-例 :
+- `NSContactsUsageDescription` では、アプリがユーザーの連絡先にアクセスする理由を記述します。
 
-{{<highlight bash>}}
-cordova plugin add cordova-plugin-contacts --variable CONTACTS_USAGE_DESCRIPTION="your usage message"
+これらの設定を `info.plist` に追加するには、`config.xml` ファイルの `<edit-config>` タグに以下のように設定します。
+
+{{<highlight xml>}}
+<edit-config target="NSContactsUsageDescription" file="*-Info.plist" mode="merge">
+    <string>need contacts access to search friends</string>
+</edit-config>
 {{</highlight>}}
-
-変数を渡さない場合は、プラグインは空の文字列を値として追加します。
 
 ### Windows 特有の動作
 
@@ -733,3 +735,7 @@ navigator.contacts.find(filter, onSuccess, onError, options);
 -   `navigator.contacts.fieldType.title`
 -   `navigator.contacts.fieldType.urls`
 
+関連項目:
+
+- [サードパーティー製 Cordova プラグイン](../../third_party_phonegap)
+- [基本 Cordova プラグイン ( Cordova のコア プラグイン )](../../cordova_7.1)

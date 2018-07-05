@@ -3,8 +3,7 @@ title: ファイル転送 プラグイン
 weight: 100
 ---
 
-テスト環境 ( バージョン番号 ) :
-[1.6.3](https://github.com/apache/cordova-plugin-file-transfer/releases/tag/1.6.3)
+テスト環境 ( バージョン番号 ) :[1.7.0](https://github.com/apache/cordova-plugin-file-transfer/releases/tag/1.7.0)
 
 {{<note>}}
 このプラグインの詳細は、 {{<link title="こちらの原文 ( GitHub )" href="https://github.com/apache/cordova-plugin-file-transfer">}} をご確認ください。
@@ -23,6 +22,10 @@ function onDeviceReady() {
     console.log(FileTransfer);
 }
 {{</highlight>}}
+
+##廃止予定
+
+[XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) で導入された新機能により、このプラグインは必要ありません。このプラグインから [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) の新機能へ移行する方法については、[Cordova blog post](https://cordova.apache.org/blog/2017/10/18/from-filetransfer-to-xhr2.html) を参照してください。
 
 プラグイン ID
 -------------
@@ -99,16 +102,10 @@ MultiPart POST/PUT リクエストを使用 ) とダウンロードを行いま�
     を使用して、データのアップロードを行うか否かの設定。デフォルトは、`true`
     です。 (Boolean)
 -   **headers**:
-    ヘッダーのプロパティー名とその値の組み合わせ。値が複数ある場合には、配列を使用します。iOS、FireOS、Android
-    では、Content-Type
-    が記述されている場合には、マルチパートフォームデータ形式 ( multipart
+    ヘッダーのプロパティー名とその値の組み合わせ。値が複数ある場合には、ハッシュを使用します。iOS、Android では、Content-Type が記述されている場合には、マルチパートフォームデータ形式 ( multipart
     form data ) は使用されません。 (Object)
 -   **trustAllHosts**: 任意のパラメーター。デフォルトは `false`
-    です。`true`
-    に設定した場合、すべてのセキュリティー証明書を許可します。Android
-    では、自己署名 ( self-signed )
-    したセキュリティー証明書を拒否するので、この方法は有用です。正式リリース版または商用のアプリには推奨しません。Android
-    と iOS で使用できます。 *(boolean)*
+    です。`true` に設定した場合、すべてのセキュリティー証明書を許可します。正式リリース版または商用のアプリには推奨しません。Android と iOS で使用できます。 *(boolean)*
 
 ##### 例
 
@@ -165,7 +162,7 @@ options.fileKey="file";
 options.fileName=fileURL.substr(fileURL.lastIndexOf('/')+1);
 options.mimeType="text/plain";
 
-var headers={'headerParam':'headerValue'};
+var headers={'headerParam':'headerValue', 'headerParam2':'headerValue2'};
 
 options.headers = headers;
 
@@ -198,11 +195,7 @@ ft.upload(fileURL, uri, win, fail, options);
     の取得時にエラーが発生した場合に実行されるコールバック。
     `FileTransferError` オブジェクトを渡して実行します。 *(Function)*
 -   **trustAllHosts**: 任意のパラメーター。デフォルトは `false`
-    です。`true`
-    に設定した場合、すべてのセキュリティー証明書を許可します。Android
-    では、自己署名 ( self-signed )
-    したセキュリティー証明書を拒否するので、この方法は有用です。正式リリース版または商用のアプリには推奨しません。Android
-    と iOS で使用できます。 *(boolean)*
+    です。`true` に設定した場合、すべてのセキュリティー証明書を許可します。正式リリース版または商用のアプリには推奨しません。Android と iOS で使用できます。 *(boolean)*
 -   **options**: 任意のパラメーター。現時点では、headers
     のみ使用できます ( BASIC 認証などを指定できる Authorization
     ヘッダーなどを設定できます )。
@@ -316,6 +309,10 @@ ft.abort();
 -   **body** : レスポンスのボディー。HTTP
     接続の状態を示すレスポンスコードを受け取った場合のみ、この属性を使用できます。(String)
 -   **exception**: `e.getMessage` または `e.toString` のいずれか (String)
+
+#### iOS 特有の動作
+
+**exception** は、定義されません。
 
 #### 定数
 
@@ -669,3 +666,8 @@ function readFile(fileEntry) {
     }, onErrorReadFile);
 }
 {{</highlight>}}
+
+関連項目:
+
+- [サードパーティー製 Cordova プラグイン](../../third_party_phonegap)
+- [基本 Cordova プラグイン ( Cordova のコア プラグイン )](../../cordova_7.1)

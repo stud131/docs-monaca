@@ -3,7 +3,7 @@ title: メディアキャプチャー プラグイン
 weight: 150
 ---
 
-テスト環境 ( バージョン番号 ) : [1.4.3](https://github.com/apache/cordova-plugin-media-capture/releases/tag/1.4.3)
+テスト環境 ( バージョン番号 ) : [2.0.0](https://github.com/apache/cordova-plugin-media-capture/releases/tag/2.0.0)
 
 {{<note>}}
 このプラグインの詳細は、 {{<link title="こちらの原文 ( GitHub )" href="https://github.com/apache/cordova-plugin-media-capture">}} をご確認ください。
@@ -452,9 +452,9 @@ navigator.device.capture.captureImage(
 
 ##### iOS 特有の動作
 
-iOS 10以降は、info.plist に `NSCameraUsageDescription` と
-`NSMicrophoneUsageDescription` と `NSPhotoLibraryUsageDescriptionentry`
-を追加する必要があります。
+iOS 10以降、プライバシーに関連するデータにアクセスする場合は、 `info.plist` に使用の説明を設定することが必須になります。アクセスを許可するようにシステムに指示すると、この使用の説明はアクセス許可ダイアログボックスの一部として表示されますが、使用の説明を入力しない場合は、ダイアログが表示される前にアプリが強制終了します。また、Apple は個人データにアクセスするアプリをリジェクトしますが、使用の説明は提供していません。
+
+このプラグインでは、次の使用の説明が必要になります。
 
 -   `NSCameraUsageDescription`
     には、アプリがユーザーのカメラにアクセスする理由を記述します。
@@ -463,16 +463,21 @@ iOS 10以降は、info.plist に `NSCameraUsageDescription` と
 -   `NSPhotoLibraryUsageDescriptionentry`
     は、アプリケーションがユーザの写真ライブラリにアクセスする理由を記述します。
 
-システムがアクセス許可をユーザに求めた際、この文字列がダイアログボックスの一部として表示されます。
+これらの設定を `info.plist` に追加するには、`config.xml` ファイルの `<edit-config>` タグに以下のように設定します。
 
-このエントリを追加するには、プラグインのインストール時に次の変数を渡すことができます。
+{{<highlight xml>}}
+<edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
+    <string>need camera access to take pictures</string>
+</edit-config>
 
--   `CAMERA_USAGE_DESCRIPTION` for `NSCameraUsageDescription`
--   `MICROPHONE_USAGE_DESCRIPTION` for `NSMicrophoneUsageDescription`
--   `PHOTOLIBRARY_USAGE_DESCRIPTION` for
-    `NSPhotoLibraryUsageDescriptionentry`
+<edit-config target="NSMicrophoneUsageDescription" file="*-Info.plist" mode="merge">
+    <string>need microphone access to record sounds</string>
+</edit-config>
 
-変数を渡さない場合は、プラグインは空の文字列を値として追加します。
+<edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
+    <string>need to photo library access to get pictures from there</string>
+</edit-config>
+{{</highlight>}}
 
 ##### 例
 
@@ -642,3 +647,8 @@ document.addEventListener('deviceready', onDeviceReady);
 イベントで適宜行うことが必要です。なお、これらのイベントは、Android
 プラットフォーム上でのみ使用でき、加えて、キャプチャー実行時、WebView
 が強制終了された場合のみ使用できます。
+
+関連項目:
+
+- [サードパーティー製 Cordova プラグイン](../../third_party_phonegap)
+- [基本 Cordova プラグイン ( Cordova のコア プラグイン )](../../cordova_7.1)

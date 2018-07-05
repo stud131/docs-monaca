@@ -3,8 +3,7 @@ title: ファイル操作 プラグイン
 weight: 90
 ---
 
-テスト環境 ( バージョン番号 ) :
-[4.3.3](https://github.com/apache/cordova-plugin-file/releases/tag/4.3.3)
+テスト環境 ( バージョン番号 ) :[5.0.0](https://github.com/apache/cordova-plugin-file/releases/tag/5.0.0)
 
 {{<note>}}
 このプラグインの詳細は、 {{<link title="こちらの原文 ( GitHub )" href="https://github.com/apache/cordova-plugin-file">}} をご確認ください。
@@ -552,8 +551,7 @@ files 」 ファイルシステム内の 「 /Documents/ 」 のサブディレ�
 `requestFileSystem`
 を使用してファイルシステムへアクセスした場合、サンドボックス化されたファイルシステムへのアクセスのみ許可され
 ( サンドボックス化した場合、対象のアプリのみ、ストレージにアクセス可能
-)、端末上の他のファイルシステムへのアクセスはできません。サンドボックス化されたストレージ以外へアクセスする場合には、window.requestLocalFileSystemURL
-などのメソッドを使用します ( 参考として、下の 「 *ファイルへの追記* 」
+)、端末上の他のファイルシステムへのアクセスはできません。サンドボックス化されたストレージ以外へアクセスする場合には、`window.resolveLocalFileSystemURL` などのメソッドを使用します ( 参考として、下の 「 *ファイルへの追記* 」
 を参照のこと )。
 
 次のコードでは、永続的なストレージを作成しています ( PERSISTENT を指定
@@ -916,3 +914,8 @@ function createDirectory(rootDirEntry) {
 {{</highlight>}}
 
 サブディレクトリーを作成する場合には、上記のコードのように、各フォルダーをそれぞれ作成する必要があります。
+
+関連項目:
+
+- [サードパーティー製 Cordova プラグイン](../../third_party_phonegap)
+- [基本 Cordova プラグイン ( Cordova のコア プラグイン )](../../cordova_7.1)

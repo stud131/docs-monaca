@@ -183,3 +183,7 @@ navigator.accelerometer.clearWatch(watchID);
 -   **タイムスタンプ**: データ取得時のタイムスタンプ ( ミリ秒単位 )
     *(DOMTimeStamp)*
 
+関連項目:
+
+- [サードパーティー製 Cordova プラグイン](../../third_party_phonegap)
+- [基本 Cordova プラグイン ( Cordova のコア プラグイン )](../../cordova_7.1)

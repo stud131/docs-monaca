@@ -6,7 +6,6 @@ weight: 20
 - [Battery Status Plugin](battery-status)
 - [Camera Plugin](camera)
 - [Contacts Plugin](contacts)
-- [Crosswalk Plugin (Android Only)](crosswalk)
 - [Device Plugin](device)
 - [Device Motion Plugin](device-motion)
 - [Device Orientation Plugin](device-orientation)

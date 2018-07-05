@@ -121,3 +121,8 @@ function onBatteryCritical(status) {
 -   iOS
 -   Android
 -   Windows ( Windows Phone 8.1 と Windows 10 )
+
+関連項目:
+
+- [サードパーティー製 Cordova プラグイン](../../third_party_phonegap)
+- [基本 Cordova プラグイン ( Cordova のコア プラグイン )](../../cordova_7.1)

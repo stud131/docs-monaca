@@ -3,7 +3,7 @@ title: メディア操作 プラグイン
 weight: 140
 ---
 
-テスト環境 ( バージョン番号 ) : [3.0.1](https://github.com/apache/cordova-plugin-media/releases/tag/3.0.1)
+テスト環境 ( バージョン番号 ) : [4.0.0](https://github.com/apache/cordova-plugin-media/releases/tag/4.0.0)
 
 {{<note>}}
 このプラグインの詳細は、 {{<link title="こちらの原文 ( GitHub )" href="https://github.com/apache/cordova-plugin-media">}} をご確認ください。
@@ -95,8 +95,8 @@ var my_media = new Media('cdvfile://localhost/temporary/recording.mp3', ...);
 
 ### メソッド
 
--   `media.getCurrentPosition`:
-    オーディオファイル内の現在の再生位置を返します。
+-   `media.getCurrentAmplitude`:
+    オーディオファイル内の現在の振幅を返します。
 -   `media.getCurrentPosition`:
     オーディオファイル内の現在の再生位置を返します。
 -   `media.getDuration`: オーディオファイルの再生時間を返します。
@@ -566,13 +566,19 @@ function recordAudio() {
 
     {{<highlight javascript>}}var myMedia = new Media("documents://beer.mp3"){{</highlight>}}
 
--   iOS 10以降は、 `info.plist` に `NSMicrophoneUsageDescription`
-    を追加する必要があります。
+-   iOS 10以降、プライバシーに関連するデータにアクセスする場合は、 `info.plist` に使用の説明を設定することが必須になります。アクセスを許可するようにシステムに指示すると、この使用の説明はアクセス許可ダイアログボックスの一部として表示されますが、使用の説明を入力しない場合は、ダイアログが表示される前にアプリが強制終了します。また、Apple は個人データにアクセスするアプリをリジェクトしますが、使用の説明は提供していません。
+
+このプラグインでは、次の使用の説明が必要になります。
 
 `NSMicrophoneUsageDescription` は、アプリがユーザーのマイクにアクセスする理由を記述します。
-システムがアクセス許可をユーザに求めた際、この文字列がダイアログボックスの一部として表示されます。このエントリを追加するには、プラグインのインストール時に変数 `MICROPHONE_USAGE_DESCRIPTION` で追加することができます。
 
-変数を渡さない場合は、プラグインは空の文字列を値として追加します。
+これらの設定を `info.plist` に追加するには、`config.xml` ファイルの `<edit-config>` タグに以下のように設定します。
+
+{{<highlight xml>}}
+<edit-config target="NSMicrophoneUsageDescription" file="*-Info.plist" mode="merge">
+    <string>need microphone access to record sounds</string>
+</edit-config>
+{{</highlight>}}
 
 ##### Windows 特有の動作
 
@@ -686,3 +692,7 @@ MediaError Object
 -   `MediaError.MEDIA_ERR_DECODE` = 3
 -   `MediaError.MEDIA_ERR_NONE_SUPPORTED` = 4
 
+関連項目:
+
+- [サードパーティー製 Cordova プラグイン](../../third_party_phonegap)
+- [基本 Cordova プラグイン ( Cordova のコア プラグイン )](../../cordova_7.1)

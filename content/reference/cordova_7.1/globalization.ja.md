@@ -3,7 +3,7 @@ title: 表記の国際化対応 プラグイン
 weight: 120
 ---
 
-テスト環境 ( バージョン番号 ) : [1.0.7](https://github.com/apache/cordova-plugin-globalization/releases/tag/1.0.7)
+テスト環境 ( バージョン番号 ) : [1.0.9](https://github.com/apache/cordova-plugin-globalization/releases/tag/1.0.9)
 
 {{<note>}}
 このプラグインの詳細は、 {{<link title="こちらの原文 ( GitHub )" href="https://github.com/apache/cordova-plugin-globalization">}} をご確認ください。
@@ -30,6 +30,10 @@ function onDeviceReady() {
     console.log(navigator.globalization);
 }
 {{</highlight>}}
+
+## 廃止通知
+
+[ECMA Internationalization API](https://www.ecma-international.org/ecma-402/1.0/) は、iOS、Android、Windowsデバイスでサポートされるようになりました。このプラグインは、必要ありません。このプラグインから [ECMA Internationalization API](https://www.ecma-international.org/ecma-402/1.0/) への移行については、[Cordova blog post](https://cordova.apache.org/news/2017/11/20/migrate-from-cordova-globalization-plugin.html) を参照してください。
 
 プラグイン ID
 -------------
@@ -908,3 +912,8 @@ function errorCallback(error) {
             'message: ' + error.message + '\n');
 };
 {{</highlight>}}
+
+関連項目:
+
+- [サードパーティー製 Cordova プラグイン](../../third_party_phonegap)
+- [基本 Cordova プラグイン ( Cordova のコア プラグイン )](../../cordova_7.1)

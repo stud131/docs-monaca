@@ -190,3 +190,7 @@ CSP 宣言の例を、次に記します ( `.html` ページに記述 )。
     <!-- Allow iframe to https://cordova.apache.org/ -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; frame-src 'self' https://cordova.apache.org">
 {{</highlight>}}
+関連項目:
+
+- [サードパーティー製 Cordova プラグイン](../../third_party_phonegap)
+- [基本 Cordova プラグイン ( Cordova のコア プラグイン )](../../cordova_7.1)

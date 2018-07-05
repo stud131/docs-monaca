@@ -211,3 +211,8 @@ navigator.notification.vibrateWithPattern([0, 100, 100, 200, 100, 400, 100, 800]
 {{<note>}}
 * 注意 - 星印の付いたメソッドは、廃止予定です ( w3c の勧告に準拠するため )。
 {{</note>}}
+
+関連項目:
+
+- [サードパーティー製 Cordova プラグイン](../../third_party_phonegap)
+- [基本 Cordova プラグイン ( Cordova のコア プラグイン )](../../cordova_7.1)

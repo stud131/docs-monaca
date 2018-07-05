@@ -4,7 +4,7 @@ weight: 190
 ---
 
 テスト環境 ( バージョン番号 ) :
-[2.2.3](https://github.com/apache/cordova-plugin-statusbar/releases/tag/2.2.3)
+[2.4.1](https://github.com/apache/cordova-plugin-statusbar/releases/tag/2.4.1)
 
 {{<note>}}
 このプラグインの詳細は、 {{<link title="こちらの原文 ( GitHub )" href="https://github.com/apache/cordova-plugin-statusbar">}} をご確認ください。
@@ -54,6 +54,10 @@ peference を使用したカスタマイズ設定
     のいずれかを設定できます。iOS 7 が対象です。
 
     {{<highlight xml>}}<preference name="StatusBarStyle" value="lightcontent" />{{</highlight>}}
+
+-   **StatusBarDefaultScrollToTop** ( ブール値、デフォルトは false ) 。iOS 7 では、Cordova WebView は、デフォルトの scroll-to-top 動作を使用できます。 デフォルトでは　false　に設定されているため、 "statusTap" イベント（後述）を使用し、動作をカスタマイズすることができます。
+
+    {{<highlight xml>}}<preference name="StatusBarDefaultScrollToTop" value="false" />{{</highlight>}}
 
 ### Android 特有の動作
 
@@ -151,7 +155,8 @@ iOS 7 のステータスバーを、iOS 6 のように表示したい場合、fa
 
 #### サポート対象のプラットフォーム
 
--   iOS
+- iOS
+- Android 6+
 
 ### StatusBar.styleLightContent
 
@@ -164,6 +169,7 @@ lightContent のステータスバーを使用します ( 白の文字、黒の�
 #### サポート対象のプラットフォーム
 
 -   iOS
+-   Android 6+
 
 ### StatusBar.styleBlackTranslucent
 
@@ -190,6 +196,7 @@ blackOpaque のステータスバーを使用します ( 白の文字、不透�
 #### サポート対象のプラットフォーム
 
 -   iOS
+-   Android 6+
 
 ### StatusBar.backgroundColorByName
 
@@ -306,3 +313,8 @@ StatusBar.statusBarOverlaysWebView を false にした場合 ( iOS 7 上で iOS
         <param name="ios-package" value="CDVStatusBar" onload="true" />
     </feature>
 {{</highlight>}}
+
+関連項目:
+
+- [サードパーティー製 Cordova プラグイン](../../third_party_phonegap)
+- [基本 Cordova プラグイン ( Cordova のコア プラグイン )](../../cordova_7.1)

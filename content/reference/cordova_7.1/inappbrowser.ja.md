@@ -3,7 +3,7 @@ title: InAppBrowser プラグイン
 weight: 130
 ---
 
-テスト環境 ( バージョン番号 ) : [1.7.1](https://github.com/apache/cordova-plugin-inappbrowser/releases/tag/1.7.1)
+テスト環境 ( バージョン番号 ) : [2.0.1](https://github.com/apache/cordova-plugin-inappbrowser/releases/tag/2.0.1)
 
 {{<note>}}
 このプラグインの詳細は、 {{<link title="こちらの原文 ( GitHub )" href="https://github.com/apache/cordova-plugin-inappbrowser">}} をご確認ください。
@@ -49,7 +49,7 @@ hook ) しています。ただし、`window.open`
 へのフックは、将来的には廃止される予定ですが、それまでは、次のようにして、手動でも、デフォルトの挙動に戻すことができます。
 
 {{<highlight javascript>}}
-delete window.open // Reverts the call back to it's prototype's default
+delete window.open // Reverts the call back to its prototype's default
 {{</highlight>}}
 
 `window.open` は、グローバルスコープに属していますが、InAppBrowser
@@ -104,43 +104,45 @@ var ref = cordova.InAppBrowser.open(url, target, options);
     となります。 *(String)* `options`
     で使用する文字列に、空白は使用できません。また、各設定 (
     名前と値の組み合わせ )
-    の間を、コンマで区切る必要があります。各設定の名前では、大文字・小文字を区別しません。次の値は、すべてのプラットフォームでサポートされています。
+    の間を、コンマで区切る必要があります。各設定の名前では、大文字・小文字を区別しません。
 
-    -   **location**: `yes` または `no` を設定すると、`InAppBrowser` のロケーションバーを、それぞれ、表示または非表示にできます。
-    
-    Android 専用 :
-    
-    -   **hidden**: `yes` に設定した場合、ブラウザーの 「 作成 」 とページの読み込みを行いますが、表示はしません。読み込みが完了すると、loadstop イベントが発火します。省略または `no` ( デフォルト ) に設定した場合、通常通り、ブラウザーを開き、読み込みを行います。
-    -   **clearcache**: `yes` に設定した場合、新規のウィンドウを開く前に、ブラウザーの cookie とキャッシュを削除します。
-    -   **clearsessioncache**: `yes` に設定した場合、新規のウィンドウを開く前に、セッションの cookie とキャッシュを削除します。
-    -   **zoom**: `yes` に設定した場合、Android ブラウザーのズームコントロール ( 制御バー ) が表示されます。`no` に設定した場合、非表示になります。デフォルト値は、`yes` です。
-    -   **hardwareback**: `yes` に設定した場合、ハードウェア標準の 「 戻る 」 ボタンを使用して、前のページに戻ります ( `InAppBrowser` に記録されているページ遷移の履歴を使用 )。「 前のページ 」 が存在しない場合には、`InAppBrowser` が閉じます。デフォルト値は、`yes` です。「 戻る 」 ボタンを使用して、InAppBrowser を閉じたい場合には、`no` に設定します。
-    -   **mediaPlaybackRequiresUserAction**: `yes` または `no` に設定して、 HTML5 の audio または video の自動再生を、有効または無効にします ( デフォルトでは `no` )。
-    -   **shouldPauseOnSuspend**: InAppBrowser WebViewでのバックグラウンドオーディオを停止するためにアプリで一時停止/再開させるには `yes` に設定します。（これは、 [CB-11013](https://issues.apache.org/jira/browse/CB-11013) のようなGoogle Playの問題を避けるために必要な場合があります。）
-    -   **useWideViewPort**: WebViewが、 "viewport" タグのサポートを有効にするか、wide viewport を使用するかを設定します。設定の値が `no` の場合、レイアウト幅は常に端末非依存（CSS）ピクセルのWebViewコントロールの幅に設定されます。値が `yes` で、ページに viewport タグが含まれている場合、タグで指定された幅の値が使用されます。ページにタグが含まれていないか、幅が指定されていない場合は、wide viewport が使用されます。（デフォルトは `yes` です）。
-    
-    iOS 専用 :
-    
-    -   **closebuttoncaption**: **Done** ボタンのラベルに使用する文字列を設定します。この値は、各自でローカライズする必要があります。
-    -   **disallowoverscroll**: `yes` または `no` に設定すると ( デフォルトでは `no` )、UIWebViewBounce プロパティーを、それぞれ、オンまたはオフにします。
-    -   **hidden**: `yes` に設定した場合、ブラウザーの 「 作成 」 とページの読み込みを行いますが、表示はしません。読み込みが完了すると、loadstop イベントが発火します。省略または `no` ( デフォルト ) に設定した場合、通常通り、ブラウザーを開き、読み込みを行います。
-    -   **clearcache**: `yes` に設定した場合、新規のウィンドウを開く前に、ブラウザーの cookie とキャッシュを削除します。
-    -   **clearsessioncache**: `yes` に設定した場合、新規のウィンドウを開く前に、セッションの cookie とキャッシュを削除します。
-    -   **toolbar**: `yes` または `no` に設定すると、`InAppBrowser` のツールバーを、それぞれ、表示または非表示にします ( デフォルトでは `yes` )。
-    -   **enableViewportScale**: meta タグを使用した、ビューポート ( viewport ) の尺度変更を、有効 ( `yes` ) または無効 ( `no` ) にします ( デフォルトでは `no` )。
-    -   **mediaPlaybackRequiresUserAction**: `yes` または `no` に設定して、 HTML5 の audio または video の自動再生を、有効または無効にします ( デフォルトでは `no` )。
-    -   **allowInlineMediaPlayback**: `yes` または `no` に設定して、端末標準のメディア再生用インターフェイスではなく、ブラウザーウィンドウ内でのインライン再生を許可するか設定します。HTML の `video` 要素には `webkit-playsinline` 属性を指定する必要があります ( デフォルトは `no` )。
-    -   **keyboardDisplayRequiresUserAction**: JavaScript の `focus()` を使用して、form 要素がフォーカスされたとき、キーボードを表示するかを、`yes` または `no` で設定します ( デフォルトは `yes` )。
-    -   **suppressesIncrementalRendering**: レンダリング処理の開始時期を設定します。表示するコンテンツをすべて受け取った後に行うのであれば `yes` に設定します ( デフォルトは `no` )。
-    -   **presentationstyle**: [presentation style ( Apple 社のページ )](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIViewController_Class/Reference/Reference.html#//apple_ref/occ/instp/UIViewController/modalPresentationStyle) を設定します。`pagesheet`、`formsheet`、`fullscreen` のいずれかを設定します ( デフォルトは、`fullscreen` )。
-    -   **transitionstyle**: [transition style ( Apple 社のページ )](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIViewController_Class/Reference/Reference.html#//apple_ref/occ/instp/UIViewController/modalTransitionStyle) を設定します。`fliphorizontal`、`crossdissolve`、`coververtical` のいずれかを設定します ( デフォルトは `coververtical` )。
-    -   **toolbarposition**: `top` または `bottom` に設定して、ツールバーの表示位置 ( ウィンドウの上・下 ) を指定します ( デフォルトは `bottom` )。
-    
-    Windows 専用 :
+すべてのプラットフォームは、以下の値をサポートしています。
 
-    -   **hidden**: `yes` に設定した場合、ブラウザーの 「 作成 」 とページの読み込みを行いますが、表示はしません。読み込みが完了すると、loadstop イベントが発火します。省略または `no` ( デフォルト ) に設定した場合、通常通り、ブラウザーを開き、読み込みを行います。
-    -   **fullscreen**: `yes` に設定した場合、枠なしのブラウザー コントロール ( 制御メニュー ) が作成されます。なお、**location=no** が設定されている場合、InAppBrowser ウィンドウを閉じるメニューは表示されなくなります。
-    -   **hardwareback**: Androidプラットフォームと同じように動作します。
+-   **location**: `yes` または `no` を設定すると、`InAppBrowser` のロケーションバーを、それぞれ、表示または非表示にできます。
+    
+Android 専用 :
+
+-   **hidden**: `yes` に設定した場合、ブラウザーの 「 作成 」 とページの読み込みを行いますが、表示はしません。読み込みが完了すると、loadstop イベントが発火します。省略または `no` ( デフォルト ) に設定した場合、通常通り、ブラウザーを開き、読み込みを行います。
+-   **clearcache**: `yes` に設定した場合、新規のウィンドウを開く前に、ブラウザーの cookie とキャッシュを削除します。
+-   **clearsessioncache**: `yes` に設定した場合、新規のウィンドウを開く前に、セッションの cookie とキャッシュを削除します。
+-   **zoom**: `yes` に設定した場合、Android ブラウザーのズームコントロール ( 制御バー ) が表示されます。`no` に設定した場合、非表示になります。デフォルト値は、`yes` です。
+-   **hardwareback**: `yes` に設定した場合、ハードウェア標準の 「 戻る 」 ボタンを使用して、前のページに戻ります ( `InAppBrowser` に記録されているページ遷移の履歴を使用 )。「 前のページ 」 が存在しない場合には、`InAppBrowser` が閉じます。デフォルト値は、`yes` です。「 戻る 」 ボタンを使用して、InAppBrowser を閉じたい場合には、`no` に設定します。
+-   **mediaPlaybackRequiresUserAction**: `yes` または `no` に設定して、 HTML5 の audio または video の自動再生を、有効または無効にします ( デフォルトでは `no` )。
+-   **shouldPauseOnSuspend**: InAppBrowser WebViewでのバックグラウンドオーディオを停止するためにアプリで一時停止/再開させるには `yes` に設定します。（これは、 [CB-11013](https://issues.apache.org/jira/browse/CB-11013) のようなGoogle Playの問題を避けるために必要な場合があります。）
+-   **useWideViewPort**: WebViewが、 "viewport" タグのサポートを有効にするか、wide viewport を使用するかを設定します。設定の値が `no` の場合、レイアウト幅は常に端末非依存（CSS）ピクセルのWebViewコントロールの幅に設定されます。値が `yes` で、ページに viewport タグが含まれている場合、タグで指定された幅の値が使用されます。ページにタグが含まれていないか、幅が指定されていない場合は、wide viewport が使用されます。（デフォルトは `yes` です）。
+    
+iOS 専用 :
+
+-   **closebuttoncaption**: **Done** ボタンのラベルに使用する文字列を設定します。この値は、各自でローカライズする必要があります。
+-   **disallowoverscroll**: `yes` または `no` に設定すると ( デフォルトでは `no` )、UIWebViewBounce プロパティーを、それぞれ、オンまたはオフにします。
+-   **hidden**: `yes` に設定した場合、ブラウザーの 「 作成 」 とページの読み込みを行いますが、表示はしません。読み込みが完了すると、loadstop イベントが発火します。省略または `no` ( デフォルト ) に設定した場合、通常通り、ブラウザーを開き、読み込みを行います。
+-   **clearcache**: `yes` に設定した場合、新規のウィンドウを開く前に、ブラウザーの cookie とキャッシュを削除します。
+-   **clearsessioncache**: `yes` に設定した場合、新規のウィンドウを開く前に、セッションの cookie とキャッシュを削除します。
+-   **toolbar**: `yes` または `no` に設定すると、`InAppBrowser` のツールバーを、それぞれ、表示または非表示にします ( デフォルトでは `yes` )。
+-   **enableViewportScale**: meta タグを使用した、ビューポート ( viewport ) の尺度変更を、有効 ( `yes` ) または無効 ( `no` ) にします ( デフォルトでは `no` )。
+-   **mediaPlaybackRequiresUserAction**: `yes` または `no` に設定して、 HTML5 の audio または video の自動再生を、有効または無効にします ( デフォルトでは `no` )。
+-   **allowInlineMediaPlayback**: `yes` または `no` に設定して、端末標準のメディア再生用インターフェイスではなく、ブラウザーウィンドウ内でのインライン再生を許可するか設定します。HTML の `video` 要素には `webkit-playsinline` 属性を指定する必要があります ( デフォルトは `no` )。
+-   **keyboardDisplayRequiresUserAction**: JavaScript の `focus()` を使用して、form 要素がフォーカスされたとき、キーボードを表示するかを、`yes` または `no` で設定します ( デフォルトは `yes` )。
+-   **suppressesIncrementalRendering**: レンダリング処理の開始時期を設定します。表示するコンテンツをすべて受け取った後に行うのであれば `yes` に設定します ( デフォルトは `no` )。
+-   **presentationstyle**: [presentation style ( Apple 社のページ )](http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIViewController_Class/Reference/Reference.html#//apple_ref/occ/instp/UIViewController/modalPresentationStyle) を設定します。`pagesheet`、`formsheet`、`fullscreen` のいずれかを設定します ( デフォルトは、`fullscreen` )。
+-   **transitionstyle**: [transition style ( Apple 社のページ )](http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIViewController_Class/Reference/Reference.html#//apple_ref/occ/instp/UIViewController/modalTransitionStyle) を設定します。`fliphorizontal`、`crossdissolve`、`coververtical` のいずれかを設定します ( デフォルトは `coververtical` )。
+-   **toolbarposition**: `top` または `bottom` に設定して、ツールバーの表示位置 ( ウィンドウの上・下 ) を指定します ( デフォルトは `bottom` )。
+    
+Windows 専用 :
+
+-   **hidden**: `yes` に設定した場合、ブラウザーの 「 作成 」 とページの読み込みを行いますが、表示はしません。読み込みが完了すると、loadstop イベントが発火します。省略または `no` ( デフォルト ) に設定した場合、通常通り、ブラウザーを開き、読み込みを行います。
+-   **fullscreen**: `yes` に設定した場合、枠なしのブラウザー コントロール ( 制御メニュー ) が作成されます。なお、**location=no** が設定されている場合、InAppBrowser ウィンドウを閉じるメニューは表示されなくなります。
+-   **hardwareback**: Androidプラットフォームと同じように動作します。
 
 #### サポート対象のプラットフォーム
 
@@ -153,21 +155,6 @@ var ref = cordova.InAppBrowser.open(url, target, options);
 var ref = cordova.InAppBrowser.open('http://apache.org', '_blank', 'location=yes');
 var ref2 = cordova.InAppBrowser.open(encodeURI('http://ja.m.wikipedia.org/wiki/ハングル'), '_blank', 'location=yes');
 {{</highlight>}}
-
-#### Windows 特有の動作
-
-Windows 8.0/8.1 および Windows Phone 8.1 では、Cordova WebView
-上で外部の URL ( Remote URL ) を開くことができません。`target='_self'`
-を設定しているのであれば、外部の URL ( Remote URL ) は、システム標準の
-Web ブラウザー上で常に開かれます。
-
-Windows 10 では、ホワイトリストに URL
-が登録されていない場合、加えて、`target='_self'` の場合、InAppBrowser
-の代わりに、システム標準の Web ブラウザー上で、URL が表示されます。
-
-Firefox OS 同様に、InAppBrowser
-ウィンドウの挙動は、`inAppBrowserWrap`/inAppBrowserWrapFullscreen ( CSS
-クラス ) を使用すれば、オーバーライド ( override ) できます。
 
 ### InAppBrowser
 
@@ -679,3 +666,8 @@ iab.open('http://url-that-fails-whitelist.com', '_blank');        // loads in th
 iab.open('http://url-that-fails-whitelist.com', 'random_string'); // loads in the InAppBrowser
 iab.open('http://url-that-fails-whitelist.com', 'random_string', 'location=no'); // loads in the InAppBrowser, no location bar
 {{</highlight>}}
+
+関連項目:
+
+- [サードパーティー製 Cordova プラグイン](../../third_party_phonegap)
+- [基本 Cordova プラグイン ( Cordova のコア プラグイン )](../../cordova_7.1)

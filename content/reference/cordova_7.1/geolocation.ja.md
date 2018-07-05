@@ -3,8 +3,7 @@ title: 位置情報の取得 プラグイン
 weight: 110
 ---
 
-テスト環境 ( バージョン番号 ) :
-[2.4.3](https://github.com/apache/cordova-plugin-geolocation/releases/tag/2.4.3)
+テスト環境 ( バージョン番号 ) :[4.0.1](https://github.com/apache/cordova-plugin-geolocation/releases/tag/4.0.1)
 
 {{<note>}}
 このプラグインの詳細は、 {{<link title="こちらの原文 ( GitHub )" href="https://github.com/apache/cordova-plugin-geolocation">}} をご確認ください。
@@ -117,15 +116,19 @@ navigator.geolocation.getCurrentPosition(onSuccess, onError);
 
 ##### iOS 特有の動作
 
-iOS 10以降は、 `info.plist` に `NSLocationWhenInUseUsageDescription`
-を追加する必要があります。
+iOS 10以降、プライバシーに関連するデータにアクセスする場合は、 `info.plist` に使用の説明を設定することが必須になります。アクセスを許可するようにシステムに指示すると、この使用の説明はアクセス許可ダイアログボックスの一部として表示されますが、使用の説明を入力しない場合は、ダイアログが表示される前にアプリが強制終了します。また、Apple は個人データにアクセスするアプリをリジェクトしますが、使用の説明は提供していません。
 
-`NSLocationWhenInUseUsageDescription`
-は、アプリがユーザーの場所にアクセスする理由を記述します。
-システムがアクセス許可をユーザに求めた際、この文字列がダイアログボックスの一部として表示されます。このエントリを追加するには、プラグインのインストール時に変数
-`GEOLOCATION_USAGE_DESCRIPTION` で追加することができます。
+このプラグインでは、次の使用の説明が必要になります。
 
-変数を渡さない場合は、プラグインは空の文字列を値として追加します。
+- `NSLocationWhenInUseUsageDescription` では、アプリがユーザーの場所にアクセスする理由を記述します。
+
+これらの設定を `info.plist` に追加するには、`config.xml` ファイルの `<edit-config>` タグに以下のように設定します。
+
+{{<highlight xml>}}
+<edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+    <string>need location access to find things nearby</string>
+</edit-config>
+{{</highlight>}}
 
 ##### Android 特有の動作
 
@@ -737,3 +740,8 @@ function watchPicturePosition() {
     (onPicturesWatchSuccess, onPicturesError, { enableHighAccuracy: true });
 }
 {{</highlight>}}
+
+関連項目:
+
+- [サードパーティー製 Cordova プラグイン](../../third_party_phonegap)
+- [基本 Cordova プラグイン ( Cordova のコア プラグイン )](../../cordova_7.1)

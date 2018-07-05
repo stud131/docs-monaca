@@ -3,7 +3,7 @@ title: スプラッシュスクリーンの制御 プラグイン
 weight: 170
 ---
 
-テスト環境 ( バージョン番号 ) : [4.0.3](https://github.com/apache/cordova-plugin-splashscreen/releases/tag/4.0.3)
+テスト環境 ( バージョン番号 ) : [5.0.1](https://github.com/apache/cordova-plugin-splashscreen/releases/tag/5.0.1)
 
 {{<note>}}
 このプラグインの詳細は、 {{<link title="こちらの原文 ( GitHub )" href="https://github.com/apache/cordova-plugin-splashscreen">}} をご確認ください。
@@ -139,6 +139,7 @@ window.setTimeout(function () {
 {{<highlight xml>}}
 <preference name="SplashMaintainAspectRatio" value="true|false" />
 <preference name="SplashShowOnlyFirstTime" value="true|false" />
+<preference name="SplashScreenSpinnerColor" value="white" />
 {{</highlight>}}
 
 preference 「 `SplashMaintainAspectRatio` 」 は、任意の設定です。true
@@ -157,6 +158,8 @@ preference 「 `SplashMaintainAspectRatio` 」 は、任意の設定です。tru
 を使用してアプリケーションを終了し、次の起動時にスプラッシュスクリーンを表示させる場合は、このプロパティを
 `false` に設定する必要があります
 （これは、「戻る」ボタンを使ってアプリケーションを終了する場合にも適用されます）。
+
+"SplashScreenSpinnerColor" プリファレンスはオプションで、設定されていない場合は無視されます。 有効な色名または 16 進数の色コードに設定すると、Android 5.0 以降の端末でスピナーの色が変更されます。
 
 ### Windows 特有の動作
 
@@ -186,6 +189,16 @@ preference 「 `SplashMaintainAspectRatio` 」 は、任意の設定です。tru
 
 {{<highlight javascript>}}
 navigator.splashscreen.hide();
+{{</highlight>}}
+
+#### iOS 特有の動作
+
+`config.xml` ファイルの `AutoHideSplashScreen` 設定は false にする必要があります。 スプラッシュ画面を 2 秒間表示しないようにするには、deviceready イベントハンドラに、次のようなタイマーを追加します。
+
+{{<highlight javascript>}}
+setTimeout(function() {
+    navigator.splashscreen.hide();
+}, 2000);
 {{</highlight>}}
 
 ### splashscreen.show
@@ -372,3 +385,8 @@ Studioソリューションを再度開く必要があるかもしれません�
 
 <preference name="SplashScreenDelay" value="10000" />
 {{</highlight>}}
+
+関連項目:
+
+- [サードパーティー製 Cordova プラグイン](../../third_party_phonegap)
+- [基本 Cordova プラグイン ( Cordova のコア プラグイン )](../../cordova_7.1)

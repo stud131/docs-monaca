@@ -3,7 +3,7 @@ title: カメラ操作 プラグイン
 weight: 20
 ---
 
-テスト環境 ( バージョン番号 ) : [2.4.1](https://github.com/apache/cordova-plugin-camera/releases/tag/2.4.1)
+テスト環境 ( バージョン番号 ) : [4.0.1](https://github.com/apache/cordova-plugin-camera/releases/tag/4.0.1)
 
 {{<note>}}
 このプラグインの詳細は、{{<link title="こちら ( GitHub )" href="https://github.com/apache/cordova-plugin-camera">}} をご確認ください。
@@ -32,25 +32,34 @@ cordova-plugin-camera
 
 ## iOS 特有の動作
 
-iOS 10以降は、`info.plist` に `NSCameraUsageDescription` と `NSPhotoLibraryUsageDescription` を追加する必要があります。
+iOS 10以降、プライバシーに関連するデータにアクセスする場合は、 `info.plist` に使用の説明を設定することが必須になります。アクセスを許可するようにシステムに指示すると、この使用の説明はアクセス許可ダイアログボックスの一部として表示されますが、使用の説明を入力しない場合は、ダイアログが表示される前にアプリが強制終了します。また、Apple は個人データにアクセスするアプリをリジェクトしますが、使用の説明は提供していません。
+
+このプラグインでは、次の使用の説明が必要になります。
 
 - `NSCameraUsageDescription` には、アプリがユーザーのカメラにアクセスする理由を記述します。
 - `NSPhotoLibraryUsageDescription` には、アプリがユーザーの写真ライブラリにアクセスする理由を記述します。
+- `NSLocationWhenInUseUsageDescription` には、アプリがユーザーの位置情報にアクセスする理由を記述します。 (CameraUsesGeolocation が true に設定されている場合に設定します)
+- `NSPhotoLibraryAddUsageDescription` には、アプリがユーザーの写真ライブラリに書き込みアクセスを許可する理由を記述します。
 
-システムがアクセス許可をユーザに求めた際、この文字列がダイアログボックスの一部として表示されます。
+これらの設定を `info.plist` に追加するには、`config.xml` ファイルの `<edit-config>` タグに以下のように設定します。
 
-このエントリを追加するには、プラグインのインストール時に次の変数を渡すことができます。
+{{<highlight xml>}}
+<edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
+    <string>need camera access to take pictures</string>
+</edit-config>
 
--   `CAMERA_USAGE_DESCRIPTION` : `NSCameraUsageDescription`
--   `PHOTOLIBRARY_USAGE_DESCRIPTION` : `NSPhotoLibraryUsageDescription`
+<edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
+    <string>need to photo library access to get pictures from there</string>
+</edit-config>
 
-例 :
+<edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+    <string>need location access to find things nearby</string>
+</edit-config>
 
-{{<highlight bash>}}
-cordova plugin add cordova-plugin-camera --variable CAMERA_USAGE_DESCRIPTION="your usage message" --variable PHOTOLIBRARY_USAGE_DESCRIPTION="your usage message"
+<edit-config target="NSPhotoLibraryAddUsageDescription" file="*-Info.plist" mode="merge">
+    <string>need to photo library access to save pictures there</string>
+</edit-config>
 {{</highlight>}}
-
-変数を渡さない場合は、プラグインは空の文字列を値として追加します。
 
 ## API の解説
 
@@ -620,7 +629,7 @@ function createNewFileEntry(imgUri) {
 }
 {{</highlight>}}
 
-See Also:
+関連項目:
 
-- [Third-party Cordova Plugins](../../third_party_phonegap)
-- [Core Cordova Plugins](../../cordova_6.5)
+- [サードパーティー製 Cordova プラグイン](../../third_party_phonegap)
+- [基本 Cordova プラグイン ( Cordova のコア プラグイン )](../../cordova_7.1)
