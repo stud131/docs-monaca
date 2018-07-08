@@ -40,7 +40,7 @@ monaca.cloud.User.register(username: String, password: String, [properties: Obje
 `properties` | 文字列 | ユーザーに関する追加のプロパティーです。 このオブジェクトには、有効な JSON を使用します。キーの最初の文字にアンダースコアは使えません。このパラメーターの定義は任意です。 | キーの名前には、 `[a-zA-Z0-9]` の文字のみ使用します。また、 `[a-zA-Z]` で始めます。 データーサイズは、`500 KB` を超えてはいけません。
 
 {{<note>}}
-<code>X</code> and <code>Y</code> values can be set in Backend Setting page under Security section on Monaca Cloud IDE.
+<code>X</code> と <code>Y</code> の値は、Monaca クラウド IDE の {{<menu menu1="バックエンド" menu2="バックエンド設定" menu3="セキュリティ設定">}} で設定することができます。
 {{</note>}}
 
 **戻り値**
@@ -49,7 +49,7 @@ monaca.cloud.User.register(username: String, password: String, [properties: Obje
 -----|--------------------------
 [$.Promise](../other/#promise) オブジェクト | 結果の処理には、 `done()`、 `fail()` 、 `always()` メソッドを使用します。
 
-Within the `done()` callback, there is a `user` JSON Object which has the following properties:
+`done()` コールバック内には、次のプロパティを持つユーザー JSON オブジェクトがあります。
 
 - `_id` : {String}
 - `_username` : {String}
