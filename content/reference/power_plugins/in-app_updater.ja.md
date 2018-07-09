@@ -310,7 +310,7 @@ monaca.InAppUpdater.download(args: JSON object): Promise
 **例**
 
 {{<highlight javascript>}}
-monaca.InAppUpdater.download( { version : targetVersion, buildNumber : targetBuildNumber, url : url } ).then(
+monaca.InAppUpdater.download( { version : targetVersion, updateNumber : targetBuildNumber, url : url } ).then(
     function(json) { alert( JSON.stringify(json) ); } ,
     function(fail) { alert( JSON.stringify(fail) ); } ,
     function(json) { console.log( json.count + "/" + json.total + " are done." ); }
