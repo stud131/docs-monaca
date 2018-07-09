@@ -188,7 +188,7 @@ monaca.InAppUpdater.getServerVersion([args: JSON object]): Promise
     `myVersion` | 文字列 | アプリの現バージョン
     `latestUpdateNumber` | 文字列 | アプリの現バージョンに適用できる最新の更新番号
     `myUpdateNumber` | 文字列 | アプリの現バージョンが使用している現在の更新番号
-    `updateInfo` | JSON オブジェクト | サーバー側にて更新番号の次に記載した内容となります。たとえば、サーバー側の応答が次のようになっているとします。 {{<highlight javascript>}}{
+    `updateInfo` | JSON オブジェクト | サーバー側の設定が、次のようになっている場合、{{<highlight javascript>}}{
   "ios": {
     "2.1.0": {　// app version
       "1": { // update number
@@ -197,7 +197,7 @@ monaca.InAppUpdater.getServerVersion([args: JSON object]): Promise
       }
     }
   }
-}{{</highlight>}} その場合、`updateInfo` は以下の内容となります。 {{<highlight javascript>}}updateInfo = {
+}{{</highlight>}} `updateInfo` は、以下の内容となります。 {{<highlight javascript>}}updateInfo = {
   "date": 20170113,
   "url": "https://hogehoge.com/app/ios-v2.1.0.zip"
 }{{</highlight>}}
