@@ -170,11 +170,11 @@ monaca.InAppUpdater.getServerVersion([args: JSON object]): Promise
 
 プロパティ | 型 | 解説
 ----------|------|----------------
-`connectDelay` | Integer | サーバー接続を開始するまでの待機時間 ( ミリ秒単位 )
-`connectTimeout` | Integer | ( Android 専用 ) サーバー接続時に適用するタイムアウト時間 ( ミリ秒単位 )
-`readTimeout` | Integer  | ( Android 専用 ) サーバーからのレスポンス受信時に適用するタイムアウト時間 ( すべてのレスポンスを受け取るまでの時間、ミリ秒単位 )
-`timeoutForRequest` | Integer | ( iOS 専用 ) サーバーへのリクエスト送信時に適用するタイムアウト時間。タイムアウトが発生した場合でも、リクエストは自動的に再送信されます。エラーは出力されません。
-`timeoutForResponse` | Integer | ( iOS 専用 ) サーバーからのレスポンス受信時に適用するタイムアウト時間 ( すべてのレスポンスを受け取るまでの時間、ミリ秒単位 )
+`connectDelay` | 数値 | サーバー接続を開始するまでの待機時間 ( ミリ秒単位 )
+`connectTimeout` | 数値 | ( Android 専用 ) サーバー接続時に適用するタイムアウト時間 ( ミリ秒単位 )
+`readTimeout` | 数値  | ( Android 専用 ) サーバーからのレスポンス受信時に適用するタイムアウト時間 ( すべてのレスポンスを受け取るまでの時間、ミリ秒単位 )
+`timeoutForRequest` | 数値 | ( iOS 専用 ) サーバーへのリクエスト送信時に適用するタイムアウト時間。タイムアウトが発生した場合でも、リクエストは自動的に再送信されます。エラーは出力されません。
+`timeoutForResponse` | 数値 | ( iOS 専用 ) サーバーからのレスポンス受信時に適用するタイムアウト時間 ( すべてのレスポンスを受け取るまでの時間、ミリ秒単位 )
 
 **戻り値 (Promise)**
 
@@ -285,14 +285,15 @@ monaca.InAppUpdater.download(args: JSON object): Promise
 
 プロパティ | 型 | 解説
 ----------|------|----------------
-`updateNumber` | Integer | 更新番号
-`bufferSize` | Integer | ( Android 専用 ) バッファーサイズ ( バイト単位 )。デフォルト値は `8192` です。
+`version` | 数値 | 対象のアプリバージョン
+`updateNumber` | 数値 | 更新番号
+`bufferSize` | 数値 | ( Android 専用 ) バッファーサイズ ( バイト単位 )。デフォルト値は `8192` です。
 `url` | 文字列 | こちらに設定された URL から Zip ファイルをダウンロードします。この値を設定しない場合には、`config.xml` 内の `monaca:updater_DownloadUrl` 値が代わりに使用されます
-`connectDelay` | Integer | サーバー接続を開始するまでの待機時間 ( ミリ秒単位 )
-`connectTimeout` | Integer | ( Android 専用 ) サーバー接続時に適用するタイムアウト時間 ( ミリ秒単位 )
-`readTimeout` | Integer | ( Android 専用 ) サーバーからのレスポンス受信時に適用するタイムアウト時間 ( すべてのレスポンスを受け取るまでの時間、ミリ秒単位 )
-`timeoutForRequest` | Integer | ( iOS 専用 ) サーバーへのリクエスト送信時に適用するタイムアウト時間。タイムアウトが発生した場合でも、リクエストは自動的に再送信されます。エラーは出力されません。
-`timeoutForResponse` | Integer | ( iOS 専用 ) サーバーからのレスポンス受信時に適用するタイムアウト時間 ( すべてのレスポンスを受け取るまでの時間、ミリ秒単位 )
+`connectDelay` | 数値 | サーバー接続を開始するまでの待機時間 ( ミリ秒単位 )
+`connectTimeout` | 数値 | ( Android 専用 ) サーバー接続時に適用するタイムアウト時間 ( ミリ秒単位 )
+`readTimeout` | 数値 | ( Android 専用 ) サーバーからのレスポンス受信時に適用するタイムアウト時間 ( すべてのレスポンスを受け取るまでの時間、ミリ秒単位 )
+`timeoutForRequest` | 数値 | ( iOS 専用 ) サーバーへのリクエスト送信時に適用するタイムアウト時間。タイムアウトが発生した場合でも、リクエストは自動的に再送信されます。エラーは出力されません。
+`timeoutForResponse` | 数値 | ( iOS 専用 ) サーバーからのレスポンス受信時に適用するタイムアウト時間 ( すべてのレスポンスを受け取るまでの時間、ミリ秒単位 )
 
 **戻り値 (Promise)**
 
@@ -304,8 +305,8 @@ monaca.InAppUpdater.download(args: JSON object): Promise
 
     名前 | 型 | 解説
     -----|-----------|----------------------
-    `count` | Integer | これまでにダウンロードされたファイルのサイズ
-    `total` | Integer | ダウンロードされるファイルの予想サイズ
+    `count` | 数値 | これまでにダウンロードされたファイルのサイズ
+    `total` | 数値 | ダウンロードされるファイルの予想サイズ
 
 **例**
 
@@ -365,8 +366,8 @@ monaca.InAppUpdater.updateAndRestart(): Promise
 
     名前  | 型 | 解説
     -----|-----------|----------------------
-    `count` | Integer | Zip ファイルを展開して得られた、現在までのファイル数
-    `total` | Integer | 展開予定の更新ファイル数
+    `count` | 数値 | Zip ファイルを展開して得られた、現在までのファイル数
+    `total` | 数値 | 展開予定の更新ファイル数
 
 **例**
 
@@ -497,8 +498,8 @@ monaca.InAppUpdater.showProgressDialog(args: JSON object): Promise
 ----------|------|----------------
 `title` | 文字列 | ダイアログのタイトル
 `message` | 文字列 | メッセージ本文
-`max` | Integer | カウンターの最大値です。ファイルをダウンロードする場合には、ファイル総数となります。
-`progress` | Integer | 進捗を示す値です。ファイルをダウンロードする場合には、ダウンロード済みのファイル総数となります。
+`max` | 数値 | カウンターの最大値です。ファイルをダウンロードする場合には、ファイル総数となります。
+`progress` | 数値 | 進捗を示す値です。ファイルをダウンロードする場合には、ダウンロード済みのファイル総数となります。
 `cancel` | JSON オブジェクト | キャンセルボタンは、次の 2 つの要素で構成されます。 <ul><li>`label`: [ 文字列 ] キャンセルボタンのラベル</li><li>`handler`: キャンセルボタンがクリックされたときに呼ばれる関数</li></ul>例 : {{<highlight javascript>}}{
     label : "Close",
     handler : function() { alert("Close is clicked"); }
@@ -542,7 +543,7 @@ monaca.InAppUpdater.changeProgressDialog(args: JSON object): Promise
 
 プロパティ | 型 | 解説
 ----------|------|----------------
-`progress` | Integer | 進捗を示す値です。こちらの値を更新/変更します。
+`progress` | 数値 | 進捗を示す値です。こちらの値を更新/変更します。
 
 **戻り値 (Promise)**
 
@@ -671,7 +672,7 @@ monaca.InAppUpdater.autoUpdate(options: JSON object): Promise
 
 プロパティ | 型 | 解説
 ----------|------|----------------
-`connectDelay` | Integer | サーバー接続を開始するまでの待機時間 ( ミリ秒単位 )
+`connectDelay` | 数値 | サーバー接続を開始するまでの待機時間 ( ミリ秒単位 )
 `dialogMessages` | JSON オブジェクト | アプリの更新時に表示されるダイアログ。次の変数が使用できます。 <ul><li>`confirm3G`: [ 文字列 ] 更新ファイルのダウンロード時に、WiFi の代わりに通信事業者のネットワークを使用している場合に表示されるテキストです。</li><li>`prepare`:  [ JSON オブジェクト ] 2 つの変数を格納したオブジェクトです。変数は、 `title` と `message` です。更新ファイルのダウンロードを開始 ( 準備 ) するときに表示されます。</li><li>`download`: [ JSON オブジェクト ] 2 つの変数を格納したオブジェクトです。変数は、 `title` と `message` です。更新ファイルをダウンロードしているときに表示されます。</li></ul>例 : {{<highlight javascript>}}{
     confirm3G : 'These updates will be downloaded with your mobile data.',
     prepare : {
