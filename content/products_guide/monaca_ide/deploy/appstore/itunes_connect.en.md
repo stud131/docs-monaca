@@ -1,10 +1,10 @@
 ---
-title: iTunes Connect Guide
+title: App Store Connect Guide
 weight: 10
 aliases: /en/monaca_ide/manual/deploy/appstore/app_submission
 ---
 
-This document describes how to use iTunes Connect to submit an app for
+This document describes how to use App Store Connect to submit an app for
 distribution through the App Store.
 
 ## Prerequisite
@@ -13,9 +13,9 @@ You are required to have a [Team Agent account](https://developer.apple.com/supp
 
 ##  Registering the App
 
-In order to register your app in iTunes Connect, please do as follows:
+In order to register your app in App Store Connect, please do as follows:
 
-1.  Login to [iTunes Connect](https://itunesconnect.apple.com/) with your Team Agent account.
+1.  Login to [App Store Connect](https://itunesconnect.apple.com/) with your Team Agent account.
 2.  Go to `My Apps`.
 3.  Select {{<menu menu1="+" menu2="New App">}}.
 
@@ -67,15 +67,15 @@ In order to register your app in iTunes Connect, please do as follows:
 In the past, it was not necessary to have a Mac environment for
 submission. However, since August 2012, a Mac environment has become
 necessary as the Application Loader is needed to upload the apps to
-iTunes Connect and it is only compatible with Mac.
+App Store Connect and it is only compatible with Mac.
 
-Fortunately, Monaca offers [iOS App Upload feature](../../appstore/app_submission) which allows you to upload your app to iTunes Connect right from Monaca IDE without using a Mac. 
+Fortunately, Monaca offers [iOS App Upload feature](../../appstore/app_submission) which allows you to upload your app to App Store Connect right from Monaca IDE without using a Mac. 
 
 Alternatively, you can use the Application Loader as described below:
 
 1.  Create and download a release build version of your app through
     Monaca. Please refer to [Building an iOS App](../../../build/ios/build_ios/).
-2.  From iTunes Connect, download and install Application Uploader.
+2.  From App Store Connect, download and install Application Uploader.
 
     {{<img src="/images/monaca_ide/manual/deploy/itunes_connect/10.png">}}
 
@@ -89,7 +89,7 @@ Alternatively, you can use the Application Loader as described below:
 
     {{<img src="/images/monaca_ide/manual/deploy/itunes_connect/6.png" width="500">}}
 
-6.  Once, the uploading is completed, click {{<guilabel name="Next">}} and {{<guilabel name="Done">}}. It may take sometimes until the app shows up in the iTunes Connect.
+6.  Once, the uploading is completed, click {{<guilabel name="Next">}} and {{<guilabel name="Done">}}. It may take sometimes until the app shows up in the App Store Connect.
 
 {{<note>}}
     If you upload multiple versions of the app, please make sure that each app file has different version number. Otherwise, the upload will fail.
@@ -97,10 +97,10 @@ Alternatively, you can use the Application Loader as described below:
 
 ##  Selecting the Uploaded App
 
-Once you successfully uploaded your app to iTunes Connect, it can be
+Once you successfully uploaded your app to App Store Connect, it can be
 selected to submit to the App Store. Please do as follows:
 
-1.  From iTunes Connect, go to `Prepare for Submission`. Under `Build` section, click {{<guilabel name="+">}}.
+1.  From App Store Connect, go to `Prepare for Submission`. Under `Build` section, click {{<guilabel name="+">}}.
 
     {{<img src="/images/monaca_ide/manual/deploy/itunes_connect/7.png">}}
 
@@ -115,7 +115,7 @@ selected to submit to the App Store. Please do as follows:
 Now that you have completed the necessary configurations, your app is
 ready to be submitted.
 
-1.  From iTune Connect, go to `Prepare for Submission`.
+1.  From App Store Connect, go to `Prepare for Submission`.
 2.  Click {{<guilabel name="Submit for Review">}}.
 
 After you've successfully submitted the app, you will need to wait for

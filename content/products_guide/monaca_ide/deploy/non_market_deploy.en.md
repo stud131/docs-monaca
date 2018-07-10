@@ -32,7 +32,7 @@ For more information about the differences between the two programs, please refe
 
 There are two ways to distribute your pre-release apps for testing:
 
-1. using iTunes Connect: it’s required iOS Developer Account and takes time since it needs approval from Apple Review prior to the distribution.
+1. using App Store Connect: it’s required iOS Developer Account and takes time since it needs approval from Apple Review prior to the distribution.
 2. using Ad Hoc distribution: it can be done with either iOS Developer and iOS Developer Enterprise accounts. Plus, it doesn’t require the approval from Apple Review.
 
 In-house distribution is to securely distribute your iOS apps to your employees. In other words, you can distribute your app to any company devices. However, if you want someone outside of your company to test your app or restrict distribution to specific devices, you can use Ad Hoc distribution.

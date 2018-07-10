@@ -52,7 +52,7 @@ iPad is selected.
 
 ## How to upload the built app for App Store submission?
 
-There are two ways to upload the built app to iTunes Connect for App
+There are two ways to upload the built app to App Store Connect for App
 Store submission:
 
 1.  using [Monaca Upload](/en/products_guide/monaca_ide/deploy/appstore/app_submission) (requires [a valid subscription plan](https://monaca.io/pricing.html))

@@ -43,7 +43,7 @@ Portal after enrolling Apple Developer Program:
 
     - `App ID`: a unique ID representing your app. It is recommended to use reverse-domain style (for example, mobi.monaca.appname) for App ID. Only alphanumeric characters and periods (at least one period must be used) are allowed. Each segment separated by a period should begin with an alphabetic character.
 
-    - `Version Number`: a number representing the version of your app which will be required when uploading (publishing process) your application via iTunes Connect later. It needs 3 numbers separated by dots (for example, 1.10.2). Each number should be in \[0-99\].
+    - `Version Number`: a number representing the version of your app which will be required when uploading (publishing process) your application via App Store Connect later. It needs 3 numbers separated by dots (for example, 1.10.2). Each number should be in \[0-99\].
     
     - The remaining information is optional. You can configure icon, splash screen and other configurations in the page.
 

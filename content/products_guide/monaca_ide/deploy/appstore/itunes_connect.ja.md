@@ -1,10 +1,10 @@
 ---
-title: iTunes Connect ガイド
+title: App Store Connect ガイド
 weight: 10
 aliases: /ja/monaca_ide/manual/deploy/appstore/app_submission
 ---
 
-App Store にアプリを提出する場合には、iTunes Connect
+App Store にアプリを提出する場合には、App Store Connect
 を使用します。ここでは、その使用方法を解説します。
 
 ## 事前準備
@@ -13,7 +13,7 @@ App Store にアプリを提出する場合には、iTunes Connect
 
 ## アプリの登録
 
-次に手順に従い、iTunes Connect へアプリを登録します。
+次に手順に従い、App Store Connect へアプリを登録します。
 
 1.  チームエージェントのアカウントを使用して、[iTunes
     Connect](https://itunesconnect.apple.com/) にログインします。
@@ -66,13 +66,13 @@ App Store にアプリを提出する場合には、iTunes Connect
 アプリのアップロード時、Mac 環境を必要としない時期も過去にはありましたが、2012年8月時点では、同環境が必須となっています。これは、iTunes
 Connect へアプリをアップロードするとき、Application Uploader ( Mac 専用 ) を使用することが要件に加わったためです。
 
-Monaca では、Monaca クラウド IDEから iTunes Connect アプリをアップロードできる [iOS アプリ アップロード機能](../../appstore/app_submission) を提供しています。
+Monaca では、Monaca クラウド IDEから App Store Connect アプリをアップロードできる [iOS アプリ アップロード機能](../../appstore/app_submission) を提供しています。
 
 前述の Monaca 提供のアップロード機能とは別に、今までどおり Application Loader も、次のように使用できます。
 
 1.  リリースビルド版のアプリを Monaca 上で作成して、ダウンロードします。詳細は、[iOS アプリのビルド](../../../build/ios/build_ios/) をご確認ください。
 
-2.  iTunes Connect から Application Uploader をダウンロードして、インストールします。
+2.  App Store Connect から Application Uploader をダウンロードして、インストールします。
 
     {{<img src="/images/monaca_ide/manual/deploy/itunes_connect/10.png">}}
 
@@ -86,7 +86,7 @@ Monaca では、Monaca クラウド IDEから iTunes Connect アプリをアッ�
 
     {{<img src="/images/monaca_ide/manual/deploy/itunes_connect/6.png" width="500">}}
 
-6.  アップロード後、{{<guilabel name="次へ">}} ボタンをクリックして、次に、{{<guilabel name="終了">}} ボタンをクリックします。iTunes Connect 上にアプリが表示されていることを確認します ( しばらく時間がかかる場合があります )。
+6.  アップロード後、{{<guilabel name="次へ">}} ボタンをクリックして、次に、{{<guilabel name="終了">}} ボタンをクリックします。App Store Connect 上にアプリが表示されていることを確認します ( しばらく時間がかかる場合があります )。
 
 {{<note>}} 
     バージョンが異なる同一アプリをアップロードする場合、ファイル内のバージョン情報を、対応するバージョンに変更しておく必要があります。それ以外の場合、アップロードが失敗します。
@@ -94,10 +94,10 @@ Monaca では、Monaca クラウド IDEから iTunes Connect アプリをアッ�
 
 ## アップロード後に行うアプリの設定
 
-iTunes Connect へアプリをアップロードした後、App Store へ提出する 「
+App Store Connect へアプリをアップロードした後、App Store へ提出する 「
 ビルド 」 を選択します。次の手順に従います。
 
-1.  iTunes Connect 上の `提出準備中` へ移動して、\[ ビルド \]
+1.  App Store Connect 上の `提出準備中` へ移動して、\[ ビルド \]
     項目へ行き、{{<guilabel name="+">}} をクリックします。
 
     {{<img src="/images/monaca_ide/manual/deploy/itunes_connect/7.png">}}
@@ -112,7 +112,7 @@ iTunes Connect へアプリをアップロードした後、App Store へ提出�
 
 ここまでの手順で、申請に必要な設定が完了しました。次は、申請に向け、アプリを実際に提出します。
 
-1.  iTune Connect 上の `提出準備中` へ移動します。
+1.  App Store Connect 上の `提出準備中` へ移動します。
 2.  {{<guilabel name="レビュー審査のために送信">}} をクリックします。
 
 アプリの登録申請後、Apple による審査が行われます。この過程では、App
