@@ -15,7 +15,7 @@ App Store にアプリを提出する場合には、App Store Connect
 
 次に手順に従い、App Store Connect へアプリを登録します。
 
-1.  チームエージェントのアカウントを使用して、[App Store Connect](https://itunesconnect.apple.com/)
+1.  チームエージェントのアカウントを使用して、[App Store Connect](https://developer.apple.com/app-store-connect/)
     にログインします。
 2.  `マイ App` を選択します。
 3.  {{<menu menu1="+" menu2="新規 App">}} を選択します。
