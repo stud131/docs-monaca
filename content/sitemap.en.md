@@ -33,7 +33,7 @@ title: Sitemap
                 - [Build History](/en/products_guide/monaca_ide/build/build_history)
             - [Distribution](/en/products_guide/monaca_ide/deploy)
                 - [App Store Distribution](/en/products_guide/monaca_ide/deploy/appstore)
-                    - [App Store Connect Guide](/en/products_guide/monaca_ide/deploy/appstore/itunes_connect)
+                    - [App Store Connect Guide](/en/products_guide/monaca_ide/deploy/appstore/app_store_connect)
                     - [Monaca Upload Feature](/en/products_guide/monaca_ide/deploy/appstore/app_submission)
                 - [Google Play Distribution](/en/products_guide/monaca_ide/deploy/google_play)
                 - [Amazon Appstore Distribution](/en/products_guide/monaca_ide/deploy/amazon_store)

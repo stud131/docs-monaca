@@ -69,7 +69,7 @@ submission. However, since August 2012, a Mac environment has become
 necessary as the Application Loader is needed to upload the apps to
 App Store Connect and it is only compatible with Mac.
 
-Fortunately, Monaca offers [iOS App Upload feature](../../appstore/app_submission) which allows you to upload your app to App Store Connect right from Monaca IDE without using a Mac. 
+Fortunately, Monaca offers [iOS App Upload feature](../../appstore/app_submission) which allows you to upload your app to App Store Connect right from Monaca IDE without using a Mac.
 
 Alternatively, you can use the Application Loader as described below:
 
@@ -131,7 +131,7 @@ When your app is accepted by Apple, it will be up in the App Store.
     The large app icon, which was not necessary before, is now required for the submission. In fact, the required environment and information have changed in the submission procedure for the registration. If a registration/submission is not successful, please make sure you complete necessary configurations properly.
 {{</note>}}
 
-See Also: 
+See Also:
 
 - [Monaca Upload Feature](../app_submission)
 - [Building an iOS App](../../../build/ios/build_ios/#building-for-ios)

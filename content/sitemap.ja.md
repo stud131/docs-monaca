@@ -33,7 +33,7 @@ title: サイトマップ
                 - [ビルド履歴一覧](/ja/products_guide/monaca_ide/build/build_history)
             - [配布方法](/ja/products_guide/monaca_ide/deploy)
                 - [App Store での配布](/ja/products_guide/monaca_ide/deploy/appstore)
-                    - [App Store Connect ガイド](/ja/products_guide/monaca_ide/deploy/appstore/itunes_connect)
+                    - [App Store Connect ガイド](/ja/products_guide/monaca_ide/deploy/appstore/app_store_connect)
                     - [Monaca 提供のアップロード機能](/ja/products_guide/monaca_ide/deploy/appstore/app_submission)
                 - [Google Play での配布](/ja/products_guide/monaca_ide/deploy/google_play)
                 - [Amazon アプリストア での配布](/ja/products_guide/monaca_ide/deploy/amazon_store)

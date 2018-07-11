@@ -1,7 +1,7 @@
 ---
 title: iOS App Upload Feature
 weight: 20
-aliases: /en/monaca_ide/manual/deploy/appstore/itunes_connect
+aliases: /en/monaca_ide/manual/deploy/appstore/app_store_connect
 ---
 
 {{<note>}}
@@ -35,7 +35,7 @@ IDE. In order to do this, please do as follows:
 
     {{<img src="/images/monaca_ide/manual/deploy/app_submission/3.png">}}
 
-5.  Make sure you've [registered this app with App Store Connect](../itunes_connect/#registering-the-app) before uploading your app. Then, tick `We've registered the application with App Store Connect.`. Click {{<guilabel name="Upload">}}.
+5.  Make sure you've [registered this app with App Store Connect](../app_store_connect/#registering-the-app) before uploading your app. Then, tick `We've registered the application with App Store Connect.`. Click {{<guilabel name="Upload">}}.
 
     {{<img src="/images/monaca_ide/manual/deploy/app_submission/4.png">}}
 
@@ -56,13 +56,10 @@ IDE. In order to do this, please do as follows:
         Sometimes Monaca is successfully uploaded your app to App Store Connect but Apple may find error(s) on their end and report to you via email. If this happens, please see the report and fix the error(s) appropriately. Then, re-upload your app.
     {{</note>}}
 
-8.  Now that you successfully uploaded your app, you can start selecting it in App Store Connect. Please refer to [Selecting the Uploaded App](../itunes_connect/#selecting-the-uploaded-app).
+8.  Now that you successfully uploaded your app, you can start selecting it in App Store Connect. Please refer to [Selecting the Uploaded App](../app_store_connect/#selecting-the-uploaded-app).
 
 
-See Also: 
+See Also:
 
 - [App Store Distribution](../)
-- [App Store Connect Guide](../itunes_connect)
-
-
-
+- [App Store Connect Guide](../app_store_connect)
