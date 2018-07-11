@@ -41,7 +41,7 @@ follows:
         </td>
         <td>
             <ul>
-                <li>iTune</li>
+                <li>iTunes</li>
                 <li><a href="/en/products_guide/debugger/features/#project-options">Network Install</a></li>
             </ul>
         </td>
@@ -57,7 +57,7 @@ follows:
         </td>
         <td>
             <ul>
-                <li>iTune</li>
+                <li>iTunes</li>
                 <li>QR Code</li>
             </ul>
         </td>

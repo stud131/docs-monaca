@@ -40,7 +40,7 @@ Monaca では、デバッグビルド、テストビルド ( Ad Hoc )、リリ�
         </td>
         <td>
             <ul>
-                <li>iTune を使用</li>
+                <li>iTunes を使用</li>
                 <li><a href="/ja/products_guide/debugger/features/#プロジェクトオプション">ネットワーク インストール</a></li>
             </ul>
         </td>
@@ -56,7 +56,7 @@ Monaca では、デバッグビルド、テストビルド ( Ad Hoc )、リリ�
         </td>
         <td>
             <ul>
-                <li>iTune を使用</li>
+                <li>iTunes を使用</li>
                 <li>QR コード</li>
             </ul>
         </td>
@@ -339,4 +339,3 @@ App ID の登録を、次の手順で行います。
 - [Windows アプリのビルド](../../build_winrt)
 - [App Store での配布](../../../deploy/appstore)
 - [ビルド履歴一覧](../../build_history)
-
