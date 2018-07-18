@@ -3,8 +3,7 @@ title: Hello World アプリ
 weight: 40
 ---
 
-このサンプルアプリは、基本 Cordova
-プラグインのデモ用アプリですす。デモとして、複数の端末機能 ( カメラ、連絡帳、コンパスなど ) を実装させています。
+このサンプルアプリは、基本プラグインのデモ用アプリですす。デモとして、複数の端末機能 ( カメラ、連絡帳、コンパスなど ) を実装させています。
 
 {{<import pid="59239fcc013eb0bc28683312" title="Hello World App">}}
 
@@ -22,9 +21,9 @@ weight: 40
  ファイル | 説明 
 ------|-------------
 `index.html` | スタート画面のページ
-`phonegap-demo.html` | 基本 Cordova プラグイン デモ画面ページ
-`phonegap-demo/master.css` | 基本 Cordova プラグイン デモ画面ページのスタイルシート
-`phonegap-demo/main.js` | 基本 Cordova プラグイン デモ画面ページ上の一連の処理を行う JavaScript ファイル
+`phonegap-demo.html` | 基本プラグイン デモ画面ページ
+`phonegap-demo/master.css` | 基本プラグイン デモ画面ページのスタイルシート
+`phonegap-demo/main.js` | 基本プラグイン デモ画面ページ上の一連の処理を行う JavaScript ファイル
 `css/style.css` | アプリに適用する共通スタイルシート
 `img/icon/*.png` | アイコン用のファイル
 
@@ -52,7 +51,7 @@ weight: 40
 
 ### phonegap-demo.html
 
-`phonegap-demo.html` を使用して、携帯端末の基本情報と次に列挙した機能を、基本 Cordova プラグイン デモ画面ページに表示します。
+`phonegap-demo.html` を使用して、携帯端末の基本情報と次に列挙した機能を、基本プラグイン デモ画面ページに表示します。
 
 -   *加速度センサーの切り替え*: 携帯端末の加速度の計測の開始と停止
 -   *位置情報の取得*: 携帯端末の現在の位置情報の取得
@@ -73,8 +72,7 @@ weight: 40
 JavaScript の解説
 -----------------
 
-`main.js` は、基本 Cordova プラグイン
-デモ画面ページで使用する一連の処理を記述した JavaScript
+`main.js` は、基本プラグイン デモ画面ページで使用する一連の処理を記述した JavaScript
 ファイルです。このファイルでは、前述した 8 個の機能を記述しています。
 
 ### 加速度センサーの切り替え

@@ -129,7 +129,7 @@ Custom Config プラグイン</a> をご確認ください。
 
 参考ページ
 
-- [サードパーティー製 Cordova プラグイン](/ja/reference/third_party_phonegap/)
-- [基本 Cordova プラグイン ( Cordova のコア プラグイン )](/ja/reference/cordova_6.5/)
+- [サードパーティー製プラグイン](/ja/reference/third_party_phonegap/)
+- [基本プラグイン](/ja/reference/cordova_6.5/)
 
 {{%/excerpt%}}

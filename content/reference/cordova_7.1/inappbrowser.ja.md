@@ -669,5 +669,5 @@ iab.open('http://url-that-fails-whitelist.com', 'random_string', 'location=no');
 
 関連項目:
 
-- [サードパーティー製 Cordova プラグイン](../../third_party_phonegap)
-- [基本 Cordova プラグイン ( Cordova のコア プラグイン )](../../cordova_7.1)
+- [サードパーティー製プラグイン](../../third_party_phonegap)
+- [基本プラグイン](../../cordova_7.1)

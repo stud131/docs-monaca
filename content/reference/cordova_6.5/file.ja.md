@@ -438,8 +438,7 @@ resolveLocalFileSystemURL(nativePath, function(entry) {
 }
 {{</highlight>}}
 
-**基本 Cordova プラグイン ( Cordova コアプラグイン ) で cdvfile
-を使用する場合**
+**基本プラグインで cdvfile を使用する場合**
 
 {{<highlight javascript>}}
 fileTransfer.download(uri, 'cdvfile://localhost/temporary/path/to/file.mp3', function (entry) { ...
