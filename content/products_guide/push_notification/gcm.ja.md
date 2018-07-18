@@ -1,5 +1,5 @@
 ---
-title: Androidのプッシュ通知設定
+title: Android のプッシュ通知設定
 weight: 20
 aliases: /ja/push_notification/manual/gcm
 ---
@@ -8,16 +8,16 @@ aliases: /ja/push_notification/manual/gcm
 経由でプッシュ通知を行っています。FCM とは、Google 社が提供する Firebase
 ( MBaas の一種 )を基盤とした、クロスプラットフォーム向けのメッセージングサービスです。  
 
-　このサービスを利用すると、費用をかけずに、通知タイプ (プッシュ通知、案内メールなど ) およびデータ転送タイプ (ペイロードサイズの上限は 4 KB )
-のメッセージを、クライアント側アプリに対して配信できます (通知とデータを併せて使用することもできます )。
+　このサービスを利用すると、費用をかけずに、通知タイプ ( プッシュ通知、案内メールなど ) およびデータ転送タイプ ( ペイロードサイズの上限は 4 KB )
+のメッセージを、クライアント側アプリに対して配信できます ( 通知とデータを併せて使用することもできます )。
 
 ここでは、Android アプリ向けにプッシュ通知を行うための手順を解説します。
 
 {{<note>}}
-    事前準備としてGoogle アカウントが必要となります。
+    事前準備として Google アカウントが必要となります。
 {{</note>}}
 
-## 1. サーバーキーの取得 (Firebase Console上)
+## 1. サーバーキーの取得 ( Firebase Console 上 )
 
 Firebase Console ページ上で `サーバーキー`を確認します。
 
@@ -37,31 +37,31 @@ Firebase Console ページ上で `サーバーキー`を確認します。
     {{<img src="/images/backend/gcm/3.png">}}
 
 5.  設定画面上で、`クラウドメッセージング` タブを選択し、`サーバーキー`を確認します。
-    `サーバーキー` は、この後Monaca 側の Server API Key に使用します。
+    `サーバーキー` は、この後 Monaca 側の `Server Key` に使用します。
 
     {{<img src="/images/backend/gcm/4.png">}}
 
-## 2. 構成ファイルの取得 (Firebase Console上)
+## 2. 構成ファイルの取得 ( Firebase Console 上 )
 
-1. Firebase Console ページ上で構成ファイル`google-services.json`をダウンロードします。  
+1. Firebase Console ページ上で構成ファイル `google-services.json` をダウンロードします。  
 
     {{<img src="/images/backend/gcm/download_google_services_json.png">}}
 
 
-## 3. FCM 関連のパラメーター設定 (Monaca上)
+## 3. FCM 関連のパラメーター設定 ( Monaca 上 )
 
 1.  Monaca Backend ウィンドウから、{{<guilabel name="プッシュ通知">}} を選択します。
 2.  右上隅にある `歯車` アイコンをクリックし、{{<guilabel name="プッシュ通知設定">}} を選択します。
 
     {{<img src="/images/backend/gcm/settings.png">}}
 
-3.  プッシュ通知設定の[ Android ] エリアの FCMを設定する場合の
-    {{<guilabel name="設置">}}ボタンをクリックします。
+3.  プッシュ通知設定の [ Android ] エリアの FCMを設定する場合の
+    {{<guilabel name="設置">}} ボタンをクリックします。
 
     {{<img src="/images/backend/gcm/select_fcm_setting.png">}}
 
-4.  FCMの設定フォーム上の`google-services.json`には、先程取得した構成ファイルを、
-    `Server Key`には`サーバーキー` を入力して、{{<guilabel name="保存する">}}
+4.  FCM の設定フォーム上の `google-services.json` には、先程取得した構成ファイルを、
+    `Server Key` には `サーバーキー` を入力して、{{<guilabel name="保存する">}}
     ボタンをクリックします。  
 
     {{<img src="/images/backend/gcm/fcm_setting_form.png">}}
