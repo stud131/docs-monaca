@@ -1,5 +1,5 @@
 ---
-title: Config.xml
+title: config.xml
 weight: 20
 ---
 
