@@ -35,7 +35,8 @@ jobs:
             - ~/project/public
 
   deploy-stg:
-    machine: true
+    docker:
+      - image: cibuilds/hugo:0.44
     working_directory: ~/project
     steps:
       - restore_cache:
@@ -46,7 +47,8 @@ jobs:
           command: aws s3 sync ~/project/public s3://s.docs.monaca.io --delete
 
   deploy-prod:
-    machine: true
+    docker:
+      - image: cibuilds/hugo:0.44
     working_directory: ~/project
     steps:
       - restore_cache:
