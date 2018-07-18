@@ -111,3 +111,13 @@ Preference Name | Type | Default Value | Description
     ...
 </widget>{{</highlight>}}
 
+### Specify the target API level
+
+You can specify any target API level by using `android-targetSdkVersion` in the `<preference>` tag.
+{{<highlight xml>}}
+<platform name="android">
+    ...
+    <preference name="android-targetSdkVersion" value="26" />
+    ...
+</platform>
+{{</highlight>}}
