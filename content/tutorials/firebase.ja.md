@@ -3,7 +3,7 @@ title: "Cordova Firebase プラグイン"
 weight: 90
 ---
 
-このCordovaプラグインは、プッシュ通知、分析、イベントトラッキング、クラッシュレポートなどを Google Firebase から アプリへ提供します。
+この Cordova プラグインは、プッシュ通知、分析、イベントトラッキング、クラッシュレポートなどを Google Firebase から アプリへ提供します。
 
 - Repo: https://github.com/arnesson/cordova-plugin-firebase
 - Plugin ID/Package Name: `cordova-plugin-firebase`
@@ -19,7 +19,7 @@ weight: 90
 
 ## iOSの準備
 
-iOS向けのプッシュ通知を使用する場合は、APNs の認証キーまたは APNs 証明書が必要になります。 ここでは、iOS デバッグビルド用の Development APNs 署名書の作成方法を説明します。
+iOS 向けのプッシュ通知を使用する場合は、APNs の認証キーまたは APNs 証明書が必要になります。 ここでは、iOS デバッグビルド用の Development APNs 署名書の作成方法を説明します。
 
 <div class="admonition note">
 リリースビルドでは、Production APNs 証明書が必要になります。
@@ -39,8 +39,8 @@ iOS向けのプッシュ通知を使用する場合は、APNs の認証キーま
 
 4. 次のような App ID 情報を入力します。
 
-    - `App Description`: アプリ名を入力します (例：Cordova Firebase Demo)
-    - `Explicit ID`: プッシュ通知では、ワイルドカードの App ID を使用できないため、このオプションを選択します。 アプリの固有の識別子（io.monaca.firebaseなど）を入力します。
+    - `App Description`: アプリ名を入力します ( 例：Cordova Firebase Demo )
+    - `Explicit ID`: プッシュ通知では、ワイルドカードの App ID を使用できないため、このオプションを選択します。 アプリの固有の識別子（ io.monaca.firebase など ）を入力します。
 
     <img src="/images/tutorials/15.png" width="" class="single_img">
 
@@ -52,7 +52,7 @@ iOS向けのプッシュ通知を使用する場合は、APNs の認証キーま
 
 7. iOS App IDs ページで作成した App ID を選択し、<span class="guilabel">Edit</span> をクリックします。
 
-8. Scroll down to `Push Notifications` section, click on <span class="guilabel">Create Cerficate</span> under `Development SSL Certificate`. `Push Notifications` 項目にある `Development SSL Certificate` の <span class="guilabel">Create Cerficate</span> をクリックします。
+8. `Push Notifications` 項目にある `Development SSL Certificate` の <span class="guilabel">Create Cerficate</span> をクリックします。
 
     <img src="/images/tutorials/17.png" width="" class="single_img">
 
@@ -62,7 +62,7 @@ iOS向けのプッシュ通知を使用する場合は、APNs の認証キーま
 
 11. 次に、<span class="guilabel">Continue</span> をクリックします。 証明書の準備でき、ダウンロード可能になったら証明書をダウンロードします。次の項目の Firebase の設定に必要になります。
 
-## Firebase (プッシュ通知) の設定
+## Firebase ( プッシュ通知 ) の設定
 
 1. [Firebase console](https://firebase.google.com/) にアクセスします。
 
@@ -86,7 +86,7 @@ iOS向けのプッシュ通知を使用する場合は、APNs の認証キーま
 
 2. [全般] 項目で <span class="guilabel">アプリを追加</span> をクリックし、`iOS` を選択します。
 
-3. iOS のバンドルID を入力します。( <span class="guilabel"><b>設定 &rarr; iOS アプリ設定</b></span> ) で確認することができます)。 次に、<span class="guilabel">アプリの登録</span> をクリックします。
+3. iOS のバンドル ID を入力します。( <span class="guilabel"><b>設定 &rarr; iOS アプリ設定</b></span> ) で確認することができます)。 次に、<span class="guilabel">アプリの登録</span> をクリックします。
 
     <img src="/images/tutorials/4.png" width="" class="single_img">
 

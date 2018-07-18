@@ -3,7 +3,7 @@ title: "Cordova Google Analytics プラグイン"
 weight: 70
 ---
 
-このCordovaプラグインは、Google のユニバーサルアナリティクス SDK に接続するために使用されます。
+この Cordova プラグインは、Google のユニバーサルアナリティクス SDK に接続するために使用されます。
 
 - Repo: https://github.com/danwilson/google-analytics-plugin
 - Plugin ID/Package Name: `cordova-plugin-google-analytics`

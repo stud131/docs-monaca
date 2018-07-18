@@ -3,7 +3,7 @@ title: "Cordova AppVersion プラグイン"
 weight: 110
 ---
 
-この Cordova/PhoneGap プラグインは、対象のビルド設定からアプリ情報を取得します。
+この Cordova プラグインは、対象のビルド設定からアプリ情報を取得します。
 
 - Repo: https://github.com/whiteoctober/cordova-plugin-app-version
 - Plugin ID/Package Name: `cordova-plugin-app-version`

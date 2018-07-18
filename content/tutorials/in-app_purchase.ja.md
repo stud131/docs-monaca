@@ -3,7 +3,7 @@ title: "Cordova In-app Purchase プラグイン"
 weight: 100
 ---
 
-このCordova/PhoneGap プラグインは、iOS、Android、Windows アプリでのアプリ内課金に使用されます。
+この Cordova プラグインは、iOS、Android、Windows アプリでのアプリ内課金に使用されます。
 
 - Repo: https://github.com/j3k0/cordova-plugin-purchase
 - Plugin ID/Package Name: `cc.fovea.cordova.purchase`
@@ -45,7 +45,6 @@ etc.
 
 ### store.verbosity
 
-The `verbosity` property defines how much you want `store.js` to write on the console. Available values are as follows:
 `verbosity` プロパティは、 `store.js` のコンソール出力の種類を定義します。 使用可能な設定は、次のとおりです。
 
 - `store.QUIET` または `0` すべてのログを無効にします。 (デフォルト)
