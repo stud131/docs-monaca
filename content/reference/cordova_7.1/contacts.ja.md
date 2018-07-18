@@ -737,5 +737,5 @@ navigator.contacts.find(filter, onSuccess, onError, options);
 
 関連項目:
 
-- [サードパーティー製 Cordova プラグイン](../../third_party_phonegap)
-- [基本 Cordova プラグイン ( Cordova のコア プラグイン )](../../cordova_7.1)
+- [サードパーティー製プラグイン](../../third_party_phonegap)
+- [基本プラグイン](../../cordova_7.1)

@@ -150,9 +150,8 @@ Java になります。関数名は、JavaScript
 
 App Store または Google Play で入手できる Monaca
 デバッガーは、通常版のデバッガーです。こちらの通常版 Monaca
-デバッガーには、基本 Cordova プラグイン ( Cordova コアプラグイン )
-とサードパーティー製の Cordova プラグイン ( Monaca
-側であらかじめ提供しているサードパーティー製のプラグインとその詳細は、[サードパーティー製 Cordova プラグイン](/ja/reference/third_party_phonegap/) を参照のこと )
+デバッガーには、基本プラグインとサードパーティー製プラグイン ( Monaca
+側であらかじめ提供しているサードパーティー製のプラグインとその詳細は、[サードパーティー製プラグイン](/ja/reference/third_party_phonegap/) を参照のこと )
 のみが実装されています。このため、デフォルトの状態では、ユーザー Cordova
 プラグインまたは外部の Cordova プラグイン ( 第三者が提供する、Monaca
 側で用意しているプラグイン以外 )

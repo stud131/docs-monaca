@@ -93,11 +93,11 @@ Cordova が完全に読み込まれる前に、デバイス API (Cordova プラ�
 
 ## Monaca 側で用意している Cordova プラグイン
 
-Monaca クラウド IDE の Cordova プラグインページから直接、「 基本 Cordova プラグイン 」と、いくつかの「 サードパーティー製 Cordova プラグイン」を簡単に有効にすることができます。
+Monaca クラウド IDE の Cordova プラグインページから直接、「 基本プラグイン 」と、いくつかの「 サードパーティー製プラグイン」を簡単に有効にすることができます。
 
--   基本 Cordova プラグインとは、バッテリー情報の取得 API、カメラ API、住所録の取得 API、端末情報の取得 API など、以前から Cordova 側で提供していた API を指します。詳細は、 [ 基本 Cordova プラグイン ( Cordova のコア プラグイン ) ](/ja/reference/cordova_6.5/) をご確認ください。
+-   基本プラグインとは、バッテリー情報の取得 API、カメラ API、住所録の取得 API、端末情報の取得 API など、以前から Cordova 側で提供していた API を指します。詳細は、 [ 基本プラグイン ](/ja/reference/cordova_6.5/) をご確認ください。
 
--   サードパーティー製 Cordova プラグインとは、上記以外の Cordova プラグインを指します。Monaca クラウド IDE でも、複数の [サードパーティー製の Cordova プラグイン](/ja/reference/third_party_phonegap/) を提供しており、プロジェクトに追加することができます。
+-   サードパーティー製プラグインとは、上記以外の Cordova プラグインを指します。Monaca クラウド IDE でも、複数の [サードパーティー製プラグイン](/ja/reference/third_party_phonegap/) を提供しており、プロジェクトに追加することができます。
 
 <figure>
     <img data-action="zoom" src="/images/monaca_ide/manual/dependencies/cordova_plugin/built-in_plugins.png" width="">
@@ -113,7 +113,7 @@ Monaca クラウド IDE の Cordova プラグインページから直接、「 �
 1.  Monaca クラウド IDE 上で、 <span class="guilabel"><b>
 設定 → Cordova プラグインの管理</b></span> を選択します。
 
-2.  [ Cordova プラグイン ] ページが表示されます。ここでは、基本 Cordova プラグインとサードパーティー製の Cordova プラグインが一覧表示されます。プロジェクトにプラグインを追加する場合には、対象プラグインの横に表示された <span class="guilabel">有効</span> ボタンをクリックします ( 対象のプラグインのアイコン上に、マウスを持ってきます )。希望するプラグインが一覧上にない場合には、<span class="guilabel">Cordova プラグインのインポート</span> ボタンをクリックして、サードパーティー製の Cordova プラグインもインポートできます。なお、サードパーティー製の Cordova プラグインを追加したプロジェクトを、Monaca デバッガー上で実行する場合には、カスタムビルド版の Monaca デバッガーが必要になります。詳細は、[ユーザー Cordova プラグインと Monaca デバッガー ]({{<ref "custom_cordova_plugin.ja.md#ユーザー-cordova-プラグインと-monaca-デバッガー">}}) をご確認ください。
+2.  [ Cordova プラグイン ] ページが表示されます。ここでは、基本プラグインとサードパーティー製プラグインが一覧表示されます。プロジェクトにプラグインを追加する場合には、対象プラグインの横に表示された <span class="guilabel">有効</span> ボタンをクリックします ( 対象のプラグインのアイコン上に、マウスを持ってきます )。希望するプラグインが一覧上にない場合には、<span class="guilabel">Cordova プラグインのインポート</span> ボタンをクリックして、サードパーティー製ラグインもインポートできます。なお、サードパーティー製プラグインを追加したプロジェクトを、Monaca デバッガー上で実行する場合には、カスタムビルド版の Monaca デバッガーが必要になります。詳細は、[ユーザー Cordova プラグインと Monaca デバッガー ]({{<ref "custom_cordova_plugin.ja.md#ユーザー-cordova-プラグインと-monaca-デバッガー">}}) をご確認ください。
 
     <img src="/images/monaca_ide/manual/dependencies/cordova_plugin/1.png" width="" class="single_img">
 

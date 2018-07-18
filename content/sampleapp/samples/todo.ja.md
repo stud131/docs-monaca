@@ -99,7 +99,7 @@ function addTodo(camera_url) {
 つの関数を定義しています。前者は写真撮影とデータの保存を行い、後者はデータの保存のみ行います
 ( コードを参照のこと )。
 
-`addTodoPicture` 関数では、`navigator.camera.getPicture` 関数を使用して、写真撮影を行います。この関数 ( `getPicture` ) は、基本 Cordova プラグイン提供のものです。カメラの起動・撮影に成功した場合、`*addTodo`
+`addTodoPicture` 関数では、`navigator.camera.getPicture` 関数を使用して、写真撮影を行います。この関数 ( `getPicture` ) は、基本プラグイン提供のものです。カメラの起動・撮影に成功した場合、`*addTodo`
 関数を実行し、失敗の場合には、警告メッセージを表示します。また、撮影オプションとして、画像サイズの指定および戻り値の型を指定しています。
 
 `addTodo` 関数は、 `camera_url` を引数として取ります。`navigator.camera.getPicture`

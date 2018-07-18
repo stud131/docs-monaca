@@ -42,8 +42,8 @@ Debuggerの両方ともに含まれていません。
     </tr>
         <tr>
         <td><a href="#cordova-プラグイン">Cordova プラグイン</a></td>
-        <td>基本 Cordova プラグインおよび複数のサードパーティー製 Cordova プラグインがあらかじめ実装されています。</td>
-        <td>基本 Cordova プラグインやサードパーティー製 プラグインに加えて、ユーザー自作の プラグインなどを組み込むことができます。</td>
+        <td>基本プラグインおよび複数のサードパーティー製プラグインがあらかじめ実装されています。</td>
+        <td>基本プラグインやサードパーティー製プラグインに加えて、ユーザー自作の プラグインなどを組み込むことができます。</td>
     </tr>
     <tr>
         <td>パッケージ名 (<code>Android:PackageName</code>)</td>
@@ -84,17 +84,15 @@ Debuggerの両方ともに含まれていません。
 
 ## Cordova プラグイン
 
-Monaca デバッガーには、「 基本 Cordova プラグイン 」 および 「
-サードパーティー製 Cordova プラグイン 」
+Monaca デバッガーには、「 基本プラグイン 」 および 「 サードパーティー製プラグイン 」
 が、あらかじめ実装されています。
 
-基本 Cordova プラグインとは、バッテリー情報の取得 API、カメラ
+基本プラグインとは、バッテリー情報の取得 API、カメラ
 API、住所録の取得 API、端末情報の取得 API
-などを指します。詳細は、[基本 Cordova プラグイン ( Cordova のコア プラグイン )](/ja/reference/cordova_6.5) をご確認ください。
+などを指します。詳細は、[基本プラグイン](/ja/reference/cordova_6.5) をご確認ください。
 
-また、DatePicker、BarcodeScanner など、サードパーティー製 ( 第三者提供 )
-の Cordova プラグインも、Monaca に実装されています。詳細は、
-[サードパーティー製 Cordova プラグイン](/ja/reference/third_party_phonegap) をご確認ください。
+また、DatePicker、BarcodeScanner など、サードパーティー製プラグインも、Monaca に実装されています。詳細は、
+[サードパーティー製プラグイン](/ja/reference/third_party_phonegap) をご確認ください。
 
 これ以外の第三者提供 ( 「 外部の Cordova プラグイン 」 )
 または自作のプラグイン ( 「[ユーザー Cordova プラグイン]({{<ref "custom_cordova_plugin.ja.md">}})」 )
