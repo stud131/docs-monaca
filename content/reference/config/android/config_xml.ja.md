@@ -115,7 +115,7 @@ Preference 名 | 型 | デフォルト値 | 解説
 </widget>
     {{</highlight>}}
 
-#### ターゲットAPIレベルの指定
+### ターゲットAPIレベルの指定
 
 `<preference>` タグに `android-targetSdkVersion` を指定することで任意のターゲットAPIレベルを指定できます。
 {{<highlight xml>}}

@@ -1,5 +1,5 @@
 ---
-title: 他のプラグイン ( Monaca 提供のプラグイン )
+title: Monaca提供プラグイン
 weight: 40
 ---
 
