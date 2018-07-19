@@ -19,10 +19,10 @@ Android applications with Monaca.
     You are required to have a Google account for this configuration.
 {{</note>}}
 
-## Step 1: Get API Key from Firebase Console
+## 1. Get Server Key from Firebase Console
 
-`Server API key` and `Sender ID` from Firebase console is required to
-integrate FCM with Monaca. To get this API key, please proceed as
+`Server key` from Firebase console is required to
+integrate FCM with Monaca. To get this key, please proceed as
 follows:
 
 1.  Go to [Firebase Console](https://console.firebase.google.com/) and sign in with a valid Google account.
@@ -41,13 +41,19 @@ follows:
     {{<img src="/images/backend/gcm/3.png">}}
 
 5.  In the Settings page, go to `CLOUD MESSAGING`. Then, you will be able
-    to see the `Server Key` and `Sender ID` which will be used in Monaca
+    to see the `Server Key` which will be used in Monaca
     push notification settings later. The `Server Key` is Server API key
-    for the push notification and the `Sender ID` represents a sender.
+    for the push notification.
 
     {{<img src="/images/backend/gcm/4.png">}}
 
-## Step 2: Configure FCM Parameters in Monaca
+## 2. Get FCM configuration file from Firebase Console
+
+1. Download the configuration file `google-services.json` on the Firebase Console page.
+
+    {{<img src="/images/backend/gcm/download_google_services_json.png">}}
+
+## 3. Configure FCM Parameters in Monaca
 
 1.  From Monaca Backend window, go to {{<guilabel name="Push Notification">}}.
 
@@ -55,9 +61,13 @@ follows:
     
     {{<img src="/images/backend/gcm/settings.png">}}
 
-3.  Under `Android` section, input the `Sender ID` and `Server API Key` and
+3.  Click {{<guilabel name="Config">}} Button in the FCM SetUp Area.
+
+    {{<img src="/images/backend/gcm/select_fcm_setting_en.png">}}
+
+4.  Input `google-services.json` and the `Server Key` and
     click on {{<guilabel name="Save">}}. Now, the Android push notification is enabled and
     ready to use.
 
-    {{<img src="/images/backend/gcm/android_settings.png">}}
+    {{<img src="/images/backend/gcm/fcm_setting_form_en.png">}}
 
