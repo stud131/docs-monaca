@@ -43,10 +43,27 @@ Firebase Console ページ上で `サーバーキー`を確認します。
 
 ## 2. 構成ファイルの取得 ( Firebase Console 上 )
 
-1. Firebase Console ページ上で構成ファイル `google-services.json` をダウンロードします。  
+1. 対象のプロジェクトを開きます。
+
+2. `Android アプリに Firebase を追加` をクリックします。
+
+    {{<img src="/images/backend/gcm/add_andrpid_app.png">}}
+
+3. `アプリの登録` 項目の `Android パッケージ名` に、Monacaプロジェクトの `パッケージ名` を入力して `アプリを登録` をクリックします。
+
+    {{<img src="/images/backend/gcm/register_app.png">}}
+
+4. `設定ファイルのダウンロード` 項目の `google-service.json　をダウンロード` をクリックして、`google-service.json` をダウンロードし、`次へ` をクリックします。
+
+    {{<img src="/images/backend/gcm/download_config_file.png">}}
+
+5. `Firebase SDK の追加`項目では、`次へ` をクリックします。
+
+6. `アプリを実行してインストールを確認` 項目では、`このステップをスキップ` をクリックします。
+
+7. `google-service.json` ファイルは、コンソール画面の `歯車アイコン` をクリックし、{{<menu menu1="プロジェクトの設定" menu2="全般">}} からもダウンロードすることができます。
 
     {{<img src="/images/backend/gcm/download_google_services_json.png">}}
-
 
 ## 3. FCM 関連のパラメーター設定 ( Monaca 上 )
 
