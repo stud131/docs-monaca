@@ -6,18 +6,6 @@ aliases: /ja/debugger/manual/installation/debugger_ios
 
 {{<figure src="/images/debugger/manual/installation/debugger_ios/1.png" title="iOS 向け Monaca デバッガー" width="300">}}  
 
-{{<note>}}
-Monacaバックエンドプラグインは、Monaca
-Debugger（ストアバージョン）とカスタム版Monaca
-Debuggerの両方ともに含まれていません。
-{{</note>}}
-
-{{<note>}}
-    Cordova 5.2 より前のバージョンを実装したプロジェクトを、Monaca デバッガー 5 系上で実行する場合、不具合が生じることがあります。修復方法を次に記します。
-    <li>プロジェクトに実装されている<a href="/ja/products_guide/monaca_ide/dependencies/cordova_plugin/#cordova-のバージョン変更">Cordova のバージョンを更新</a></li>
-    <li><a href="#カスタムビルド版-monaca-デバッガーのビルド方法">カスタムビルド版 Monaca デバッガー</a> を使用する ( 旧バージョンの Cordova に対応するため )</li>
-{{</note>}}
-
 <table class="small">
     <tr>
         <th width="25%"></th>
@@ -72,6 +60,27 @@ Debuggerの両方ともに含まれていません。
         <td>可</td>
     </tr>
 </table>
+
+{{<warning>}}
+下のプラグインは、ストア版およびカスタム版デバッガーの両方ともにインストールされません。<br>
+利用する際は、デバッグビルドかリリースビルドにてご利用ください。
+<ul style="margin:5px;">
+    <li>Monacaバックエンドプラグイン</li>
+    <li>プッシュ通知に関するプラグイン
+        <ul>
+            <li>phonegap-plugin-push</li>
+            <li>onesignal-cordova-plugin</li>
+            <li>cordova-plugin-firebase</li>
+        </ul>
+    </li>
+</ul>
+{{</warning>}}
+
+{{<note>}}
+    Cordova 5.2 より前のバージョンを実装したプロジェクトを、Monaca デバッガー 5 系上で実行する場合、不具合が生じることがあります。修復方法を次に記します。
+    <li>プロジェクトに実装されている<a href="/ja/products_guide/monaca_ide/dependencies/cordova_plugin/#cordova-のバージョン変更">Cordova のバージョンを更新</a></li>
+    <li><a href="#カスタムビルド版-monaca-デバッガーのビルド方法">カスタムビルド版 Monaca デバッガー</a> を使用する ( 旧バージョンの Cordova に対応するため )</li>
+{{</note>}}
 
 ## Cordova プラグイン
 

@@ -6,16 +6,6 @@ aliases: /en/debugger/manual/installation/debugger_ios
 
 {{<figure src="/images/debugger/manual/installation/debugger_ios/1.png" title="Monaca Debugger for iOS" width="300">}}  
 
-{{<note>}}
-    Monaca Backend plugin is not included in both Monaca Debugger (store version) and Custom Monaca Debugger.
-{{</note>}}
-
-{{<note>}}
-    If the Cordova version of your project is lower than 5.2, it might not work properly with Monaca Debugger 5.X.X. There are two ways to fix this issue:
-    <li><a href="/en/products_guide/monaca_ide/dependencies/cordova_plugin/#changing-cordova-version">upgrade Cordova version</a> of your project</li>
-    <li>use <a href="#custom-debugger-ios">Custom Monaca Debugger</a>.</li>
-{{</note>}}
-
 <table class="small">
     <tr>
         <th width="37%"></th>
@@ -69,6 +59,27 @@ aliases: /en/debugger/manual/installation/debugger_ios
         <td>Available</td>
     </tr>
 </table>
+
+{{<warning>}}
+    The plugin below will not be installed on both the store version and the custom Monaca Debugger.<br>
+You can use these plugins in debug build or release build.
+<ul style="margin:5px;">
+    <li>Monaca Backend plugin</li>
+    <li>Plugin for push notification
+        <ul>
+            <li>phonegap-plugin-push</li>
+            <li>onesignal-cordova-plugin</li>
+            <li>cordova-plugin-firebase</li>
+        </ul>
+    </li>
+</ul>
+{{</warning>}}
+
+{{<note>}}
+    If the Cordova version of your project is lower than 5.2, it might not work properly with Monaca Debugger 5.X.X. There are two ways to fix this issue:
+    <li><a href="/en/products_guide/monaca_ide/dependencies/cordova_plugin/#changing-cordova-version">upgrade Cordova version</a> of your project</li>
+    <li>use <a href="#custom-debugger-ios">Custom Monaca Debugger</a>.</li>
+{{</note>}}
 
 ##  Cordova Plugins
 
