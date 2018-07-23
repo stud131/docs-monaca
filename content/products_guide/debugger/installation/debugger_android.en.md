@@ -6,16 +6,6 @@ aliases: /en/debugger/manual/installation/debugger_android
 
 {{<figure src="/images/debugger/manual/installation/debugger_android/3.png" title="Monaca Debugger for Android" width="300">}}  
 
-{{<note>}}
-    Monaca Backend plugin is not included in both Monaca Debugger (store version) and Custom Monaca Debugger.
-{{</note>}}
-
-{{<note>}}
-    If the Cordova version of your project is lower than 5.2, it might not work properly with Monaca Debugger 5.X.X. There are two ways to fix this issue:
-    <li><a href="/en/products_guide/monaca_ide/dependencies/cordova_plugin/#changing-cordova-version">upgrade Cordova version</a> of your project</li>
-    <li>use <a href="#custom-debugger-and">Custom Monaca Debugger</a>.</li>
-{{</note>}}
-
 <table class="small">
     <tr>
         <th width="25%"></th>
@@ -30,10 +20,10 @@ aliases: /en/debugger/manual/installation/debugger_android
     <tr>
         <td>Installation</td>
         <td>
-            <ol>
+            <ul>
                 <li><a href="https://play.google.com/store/apps/details?id=mobi.monaca.debugger&hl=en">Play Store</a></li>
-                <li><a href="http://www.amazon.com/Asial-Corporation-Monaca-Debugger/dp/B00H1M1518">Amazon App Store</a></li>
-            </ol>
+                <li><a href="https://itunes.apple.com/us/app/monaca/id550941371?mt=8">App Store</a></li>
+            </ul>
         </td>
         <td>Refer to <a href="#build-and-install-custom-monaca-debugger">Build and Install Custom Monaca Debugger</a></td>
     </tr>
@@ -49,12 +39,12 @@ aliases: /en/debugger/manual/installation/debugger_android
     </tr>
         <tr>
         <td>Version Name (<code>Android:versionName</code>)</td>
-        <td>Fixed (currently <code>6.0.1</code>)</td>
+        <td>Fixed</td>
         <td>Display version name set by a user</td>
     </tr>
     <tr>
         <td>App Version (<code>Android:versionCode</code>)</td>
-        <td>Fixed (currently <code>600012</code>)</td>
+        <td>Fixed</td>
         <td>Version set by a user</td>
     </tr>
         <tr>
@@ -78,6 +68,28 @@ aliases: /en/debugger/manual/installation/debugger_android
         <td>Available</td>
     </tr>
 </table>
+
+
+{{<warning>}}
+    The plugin below will not be installed on both the store version and the custom Monaca Debugger.<br>
+You can use these plugins in debug build or release build.
+<ul style="margin:5px;">
+    <li>Monaca Backend plugin</li>
+    <li>Plugin for push notification
+        <ul>
+            <li>phonegap-plugin-push</li>
+            <li>onesignal-cordova-plugin</li>
+            <li>cordova-plugin-firebase</li>
+        </ul>
+    </li>
+</ul>
+{{</warning>}}
+
+{{<note>}}
+    If the Cordova version of your project is lower than 5.2, it might not work properly with Monaca Debugger 5.X.X. There are two ways to fix this issue:
+    <li><a href="/en/products_guide/monaca_ide/dependencies/cordova_plugin/#changing-cordova-version">upgrade Cordova version</a> of your project</li>
+    <li>use <a href="#custom-debugger-and">Custom Monaca Debugger</a>.</li>
+{{</note>}}
 
 ##  Cordova Plugins
 
