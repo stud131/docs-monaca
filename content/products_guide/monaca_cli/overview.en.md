@@ -83,14 +83,15 @@ files and folders.
 Here is the default settings within the `.monacaignore` file:
 
 {{<highlight bash>}}
+/.monaca/*
+!/.monaca/project_info.json
+/platforms
+.DS_Store
+*.swp
+.vscode/
+typings/
 node_modules
 .git
-.monaca/*
-!.monaca/project_info.json
-android/build
-ios/build
-build
-.DS_Store
 {{</highlight>}}
 
 

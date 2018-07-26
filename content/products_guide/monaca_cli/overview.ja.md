@@ -4,8 +4,7 @@ weight: 10
 aliases: /ja/monaca_cli/manual/overview/
 ---
 
-はじめに
---------
+## はじめに
 
 Monaca CLI は、ローカル環境用の開発ツールです。Monaca
 アプリをローカルで開発するときに使用できます。Monaca CLI
@@ -26,8 +25,7 @@ Monaca CLI は、ローカル環境用の開発ツールです。Monaca
 -   プロジェクトのリモートビルド (
     ローカル上での各種セットアップは必要ありません ) 。
 
-事前準備
---------
+## 事前準備
 
 ### 要件
 
@@ -60,8 +58,7 @@ $ sudo npm install -g monaca
 Monaca CLI のインストール後は、こちらの [Monaca CLI チュートリアル](../tutorial)
 の内容に沿って、Monaca CLI を使用してみましょう。
 
-トランスパイル処理 ( コード変換 )
----------------------------------
+## トランスパイル処理 ( コード変換 )
 
 最新のJSフレームワークの中には、JSXなどとのやり取りを行うために独自の言語を作成したものや、ネイティブJavaScriptで利用できない拡張機能（TypeScriptなど）を統合したものがあります。トランスパイル処理では、これらの言語で書かれたコードを最新のブラウザ/
 WebViewで実行可能なネイティブJavaScriptコードに変換します。トラインスパイル処理は、WebPackを利用して実行しています。
@@ -79,7 +76,7 @@ WebViewで実行可能なネイティブJavaScriptコードに変換します。
 
 ## アップロードとダウンロードの制御
 
-特定のファイルやフォルダを無視/除外して Monaca クラウドにアップロードしたくない場合があります。 この場合、 `.monacaignore` ファイルが自動的に作成され、プロジェクトのルートディレクトリに置かれます。 ファイルを編集して、特定のファイルやフォルダを追加または削除することができます。
+特定のファイルやフォルダを除外して Monaca クラウドにアップロードしたくない場合があります。 この場合は、プロジェクトのルートディレクトリにある `.monacaignore` ファイルを編集して、特定のファイルやフォルダを設定することができます。
 
 {{<note>}}
     <code>.monacaignore</code> は、<code>.gitignore</code> と同じパターンを使用しています。
@@ -88,13 +85,23 @@ WebViewで実行可能なネイティブJavaScriptコードに変換します。
 `.monacaignore` ファイルのデフォルト設定は次のとおりです。
 
 {{<highlight bash>}}
+/.monaca/*
+!/.monaca/project_info.json
+/platforms
+.DS_Store
+*.swp
+.vscode/
+typings/
 node_modules
 .git
-.monaca/*
-!.monaca/project_info.json
-android/build
-ios/build
-build
-.DS_Store
 {{</highlight>}}
 
+
+参考ページ
+
+- [チュートリアル](../tutorial)
+- [Monaca CLI コマンド](../cli_commands)
+- [プロジェクトの構成](../dependencies)
+- [ペアリングとデバッグ](../pairing_debugging)
+- [リモートビルドと配布申請](../build_publish)
+- [トラブルシューティング ガイド](../troubleshooting)
