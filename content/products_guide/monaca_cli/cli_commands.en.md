@@ -16,6 +16,7 @@ aliases: /en/monaca_cli/manual/cli_commands
 | [monaca upload](#monaca-upload) |	Upload a project to Monaca Cloud. |
 | [monaca signing](#monaca-signing) | Manage signing configurations for iOS and Android builds. |
 | [monaca remote build](#monaca-remote-build) |	Build a project on Monaca Cloud. |
+| [monaca remote config](#monaca-remote-config) |   Open the project configuration on Monaca Cloud. |
 | [monaca preview](#monaca-preview) |	Run a local web server for preview .|
 | [monaca demo](#monaca-demo) |	Display the app appereance on iOS and Android. |
 | [monaca debug](#monaca-debug) |	Run app on device using Monaca Debugger. |
@@ -306,6 +307,23 @@ $ monaca remote build --browser
 {{</highlight>}}
 
 {{<figure src="/images/monaca_cli/manual/cli_commands/build_window.png">}}
+
+##  monaca remote config
+
+Open the project configuration on Monaca Cloud. Once the configuration has been performed, execute `monaca download` to get the changes locally.
+
+{{<highlight javascript>}}
+$ monaca remote config
+{{</highlight>}}
+
+**Use Case**
+
+Navigate to your project folder and try to execute these commands:
+
+{{<highlight javascript>}}
+$ monaca remote config
+$ monaca download
+{{</highlight>}}
 
 ## monaca preview
 
