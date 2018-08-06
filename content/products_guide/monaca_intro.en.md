@@ -139,30 +139,6 @@ account has a basic plan. You can upgrade it later when you want. For
 detailed information of Monaca account types and theirs usages, please
 refer to [Monaca Pricing](https://monaca.io/pricing.html).
 
-### Monthly Plan
-
-- Free trial for the first 14 days
-- You can switch to another monthly plan in the trial period for free. But the trial period will not be extended.
-- 14 days after the subscription, you will be charged unless you switch to Basic plan. The first charge is calculated on a daily basis.
-- After that, you will be charged monthly price on every first day of the month.
-
-### Annual Plan
-
--   There is no trial period for annual plans.
--   You will be charged annual price when starting the subscription.
--   Your next charge will be on the first day of the 13th month after
-    your admission unless you switch to Basic plan. For example, you
-    subscribe to annual plan on July 20th, 2016. Then, your next charge
-    will be on August 1st, 2017.
-
-If you use Activation Code:
-
--   If you want to upgrade plan or extend the expiration date, please
-    contact us with preferred plan name and term of months.
--   On the expiration date, your plan will be switched to Basic
-    automatically.
-
-
 ## Characteristics of hybrid apps
 
 - The apps consist of the Web and native characteristics. (See the picture below)
