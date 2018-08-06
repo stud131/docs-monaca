@@ -133,11 +133,14 @@ Power up your Cordova app. The Resource Encryption Plugin provides extra protect
 
 ## Monaca Subscription Plans
 
-Monaca provides various account types to match with your needs ranging
-from basic (FREE) to enterprise plan. After registration, your default
-account has a basic plan. You can upgrade it later when you want. For
-detailed information of Monaca account types and theirs usages, please
+Monaca provides various account types to match with your needs ranging from free to enterprise plan. After registration, 14 days free trial starts. For detailed information of Monaca account types and theirs usages, please
 refer to [Monaca Pricing](https://monaca.io/pricing.html).
+
+### If you use Activation Code:
+
+ -   If you want to upgrade plan or extend the expiration date, please
+    contact us with preferred plan name and term of months.
+-   On the expiration date, your plan will be switched to Free automatically.
 
 ## Characteristics of hybrid apps
 
