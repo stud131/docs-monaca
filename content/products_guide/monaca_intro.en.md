@@ -133,7 +133,7 @@ Power up your Cordova app. The Resource Encryption Plugin provides extra protect
 
 ## Monaca Subscription Plans
 
-Monaca provides various account types to match with your needs ranging from free to enterprise plan. After registration, A 14-day free trial will start. For detailed information of Monaca account types and theirs usages, please
+Monaca provides various account types to match with your needs ranging from free to enterprise plan. After registration, a 14-day free trial will start. For detailed information of Monaca account types and theirs usages, please
 refer to [Monaca Pricing](https://monaca.io/pricing.html).
 
 ### If you use Activation Code:
