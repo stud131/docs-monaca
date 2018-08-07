@@ -9,6 +9,7 @@ weight: 100
     デモアプリを動作させるためには、App Store Connect でアプリ内課金の設定が必要になります。
 {{</note>}}
 
+
 - Repo: https://github.com/j3k0/cordova-plugin-purchase
 - Plugin ID/Package Name: `cc.fovea.cordova.purchase`
 - Tested Version: 7.1.3
