@@ -308,13 +308,14 @@ $ monaca remote build --browser
 
 ##  monaca remote config
 
-Monaca クラウド上でプロジェクト設定を開きます。設定が完了したら、 `monaca download` を実行して変更した設定内容をローカルに反映します。
+Monaca クラウド上でプロジェクト設定を開きます。  
+設定が完了したら、 `monaca download` を実行して変更した設定内容をローカルに反映してください。
 
 {{<highlight javascript>}}
 $ monaca remote config
 {{</highlight>}}
 
-**ユースケース**
+**【具体例】**  
 
 対象のプロジェクトフォルダに移動し、次のコマンドを実行してください：
 
