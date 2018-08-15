@@ -95,16 +95,19 @@ each push notification such as:
 
 JSON data within a push notification can be received by
 `monaca.cloud.Push.setHandler` function. The JSON data will be passed to
-`data` variable within the callback. Here is an example of how to use
+`data1` and `data3` variable within the callback. Here is an example of how to use
 this function:
 
 {{<highlight javascript>}}
-monaca.cloud.Push.setHandler(function(data) {
+monaca.cloud.Push.setHandler(function(data1, data2, data3) {
   // JSON data within push notification
-  console.log(data);
-  console.log(data.item)
+  console.log(JSON.stringify(data1));
+  console.log(JSON.stringify(data2));
+  console.log(JSON.stringify(data3));
 });
 {{</highlight>}}
+
+The `data2` and `data3` can get `coldstart` and `foreground` information to check the reception status of push notifications.
 
 {{<note>}}
     The callback function will be called after the page is loaded; However, there may be some time lag. Therefore, please be cautious about this.

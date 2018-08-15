@@ -23,7 +23,7 @@ monaca.cloud.Push.setHandler(callback: Function) : void
 
 Name | Type | Description
 -----|------|------------------
-`callback` | Function | Callback function to handle incoming push notification. Additional data will be set at the first argument.
+`callback` | Function | Callback function to handle incoming push notification. Additional data will be set at the first, second and third argument.
 
 **Return Value**
 
@@ -34,9 +34,11 @@ Name | Type | Description
 The following code shows a simple function to display the data received from the push notification in the `console.log`.
 
 {{<highlight javascript>}}
-monaca.cloud.Push.setHandler(function(data) {
-  console.log(data.item_a);
-  console.log(data.item_b);
+monaca.cloud.Push.setHandler(function(data1, data2, data3) {
+  // JSON data within push notification
+  console.log(JSON.stringify(data1));
+  console.log(JSON.stringify(data2));
+  console.log(JSON.stringify(data3));
 });
 {{</highlight>}}
 
