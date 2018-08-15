@@ -23,7 +23,7 @@ monaca.cloud.Push.setHandler(callback: Function) : void
 
 Name | Type | Description
 -----|------|------------------
-`callback` | Function | Callback function to handle incoming push notification. Additional data will be set at the first, second and third argument.
+`callback` | Function | Callback function to handle incoming push notification. Additional JSON data will be set at the first and third argument.
 
 **Return Value**
 
