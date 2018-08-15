@@ -80,7 +80,7 @@ UI
 -   iOS では、スプラッシュスクリーンの画像は、「 Launch Image 」
     と呼ばれています。iOS では、画像は必須となります。
 
-`ios` プラットフォーム上で、スプラッシュスクリーンを無効にする場合には、上記の他に、`<preference name=\"FadeSplashScreenDuration\" value=\"0\"/>` を `config.xml` に追加します。
+`ios` プラットフォーム上で、スプラッシュスクリーンを無効にする場合には、上記の他に、`<preference name="FadeSplashScreenDuration" value="0"/>` を `config.xml` に追加します。
 
 -   `FadeSplashScreen` ( 真偽値、デフォルトでは `true` ):
     画面の状態が切り替わるときに、スプラッシュスクリーンがフェードイン・フェードアウト
@@ -247,7 +247,7 @@ Windows固有の情報
 スプラッシュスクリーンは [MRT](https://cordova.apache.org/docs/en/dev/config_ref/images.html#windows) コンセプトを使って定義できます。 `src="res/windows/splashscreen.png"` を指定すると、以下のファイルがアプリケーションのimagesフォルダにコピーされます。
 
 {{<highlight bash>}}
-``res/windows/splashscreen.png`` | ``res/windows/splashscreen.scale-100.png``, ``res/windows/splashscreen.scale-125.png``, etc.
+res/windows/splashscreen.png | res/windows/splashscreen.scale-100.png, res/windows/splashscreen.scale-125.png, etc.
 {{</highlight>}}
 
 以下がサポートされています：

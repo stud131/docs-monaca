@@ -257,7 +257,7 @@ concept. If you specify `src="res/windows/splashscreen.png"` the
 following files will be copied into the application's images folder: :
 
 {{<highlight bash>}}
-``res/windows/splashscreen.png`` | ``res/windows/splashscreen.scale-100.png``, ``res/windows/splashscreen.scale-125.png``, etc.
+res/windows/splashscreen.png | res/windows/splashscreen.scale-100.png, res/windows/splashscreen.scale-125.png, etc.
 {{</highlight>}}
 
 The following are supported:
