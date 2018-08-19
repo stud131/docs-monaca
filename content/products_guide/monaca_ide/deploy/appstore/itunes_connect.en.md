@@ -15,7 +15,7 @@ You are required to have a [Team Agent account](https://developer.apple.com/supp
 
 In order to register your app in App Store Connect, please do as follows:
 
-1.  Login to [App Store Connect](https://itunesconnect.apple.com/) with your Team Agent account.
+1.  Login to [App Store Connect](https://appstoreconnect.apple.com/) with your Team Agent account.
 2.  Go to `My Apps`.
 3.  Select {{<menu menu1="+" menu2="New App">}}.
 
