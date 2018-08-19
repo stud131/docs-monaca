@@ -4,7 +4,7 @@ weight: 40
 aliases: /ja/monaca_ide/manual/build/build_error
 ---
 
-ビルドまたは iTunes Connect
+ビルドまたは App Store Connect
 にアップロードする際の一般的なエラーのリストを次に示します。
 
 minSdkVersion
@@ -127,14 +127,14 @@ Cordova 6.2 プロジェクトでは、 `Crosswalk WebView Engine`
 1.  プラグインバージョン: 1.7.2 / Crosswalk のバージョン (標準設定)
 2.  プラグインバージョン: 2.1.0 / Crosswalk のバージョン: 21.51.546.7
 
-iTunes Connect
+App Store Connect
 --------------
 
 {{<highlight bash>}}
 Unable to validate your application. Your Apple ID or password was entered incorrectly.
 {{</highlight>}}
 
-iTunes Connect へのアップロード時に使用される`Apple ID` または
+App Store Connect へのアップロード時に使用される`Apple ID` または
 `Password` が、正しく入力されていない可能性があります。 `Apple ID` と
 `Password` が、正しく入力されている確認してください。
 
@@ -142,7 +142,7 @@ iTunes Connect へのアップロード時に使用される`Apple ID` または
 Unable to validate your application. Please sign in with an app-specific password. You can create one at appleid.apple.com.
 {{</highlight>}}
 
-iTunes Connect へアップロードする際に使用している「Apple ID」が、2
+App Store Connect へアップロードする際に使用している「Apple ID」が、2
 ファクタ認証を利用している場合は、App
 用パスワードをお試しください。詳しくは [App
 用パスワードを使う](https://support.apple.com/ja-jp/HT204397)
@@ -152,14 +152,14 @@ iTunes Connect へアップロードする際に使用している「Apple ID」
 No suitable application records were found. Verify your bundle identifier 'com.example.xxx' is correct.
 {{</highlight>}}
 
-iTunes Connect
+App Store Connect
 に「com.example.xxx」アプリが登録されているか確認してください。
 
 {{<highlight bash>}}
 There already exists a binary upload with build version '1.0.0' for train '1.0.0'
 {{</highlight>}}
 
-iTunes Connect
+App Store Connect
 に同じビルドバージョンのアプリがあります。対象プロジェクトのビルドバージョンを確認してください。
 
 {{<highlight bash>}}

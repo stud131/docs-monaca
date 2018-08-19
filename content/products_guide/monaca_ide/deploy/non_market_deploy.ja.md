@@ -41,7 +41,7 @@ TestFlight Beta Testing ( Beta 版アプリの検証アプリ ) | 可 | 不可
 プレリリース ( pre-release ) 版アプリの配布方法 ( 検証目的 ) は、2
 通りあります。
 
--   iTunes Connect を使用 : iOS Developer Program
+-   App Store Connect を使用 : iOS Developer Program
     アカウントの登録およびアプリの審査 ( Apple Review )
     が、事前に必要です。
 -   Ad Hoc 配布 : iOS Developer Program または iOS Developer Enterprise
