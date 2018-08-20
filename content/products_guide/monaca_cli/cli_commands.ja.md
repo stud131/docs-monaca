@@ -16,6 +16,7 @@ aliases: /ja/monaca_cli/manual/cli_commands
 | [monaca upload](#monaca-upload) |	Monaca クラウドへプロジェクトをアップロードします。|
 | [monaca signing](#monaca-signing) | iOS と Android のビルド用の署名設定を管理します。 |
 | [monaca remote build](#monaca-remote-build) |	Monaca クラウド上で、プロジェクトをリモートビルドします。|
+| [monaca remote config](#monaca-remote-config) | Monaca クラウド上で、プロジェクト設定を開きます。|
 | [monaca preview](#monaca-preview) | ローカル上で Web サーバーを起動させます。|
 | [monaca demo](#monaca-demo) |	ブラウザ上で iOS と Android 用のプレビューを行います。|
 | [monaca debug](#monaca-debug) | Monaca デバッガー上でプロジェクトを実行します。|
@@ -304,6 +305,24 @@ $ monaca remote build --browser
 {{</highlight>}}
 
 {{<figure src="/images/monaca_cli/manual/cli_commands/build_window.png">}}
+
+##  monaca remote config
+
+Monaca クラウド上でプロジェクト設定を開きます。  
+設定が完了したら、 `monaca download` を実行して変更した設定内容をローカルに反映してください。
+
+{{<highlight javascript>}}
+$ monaca remote config
+{{</highlight>}}
+
+**【具体例】**  
+
+対象のプロジェクトフォルダに移動し、次のコマンドを実行してください：
+
+{{<highlight javascript>}}
+$ monaca remote config
+$ monaca download
+{{</highlight>}}
 
 ## monaca preview
 
