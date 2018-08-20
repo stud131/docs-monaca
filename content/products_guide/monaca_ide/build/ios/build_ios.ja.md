@@ -40,7 +40,7 @@ Monaca では、デバッグビルド、テストビルド ( Ad Hoc )、リリ�
         </td>
         <td>
             <ul>
-                <li>iTune を使用</li>
+                <li>iTunes を使用</li>
                 <li><a href="/ja/products_guide/debugger/features/#プロジェクトオプション">ネットワーク インストール</a></li>
             </ul>
         </td>
@@ -56,7 +56,7 @@ Monaca では、デバッグビルド、テストビルド ( Ad Hoc )、リリ�
         </td>
         <td>
             <ul>
-                <li>iTune を使用</li>
+                <li>iTunes を使用</li>
                 <li>QR コード</li>
             </ul>
         </td>
@@ -120,7 +120,7 @@ Ad Hoc 配布とは、App Store
         </tr>
         <tr>
             <td>バージョン</td>
-            <td>アプリのバージョン番号です。iTune Connect 経由で、アプリをアップロードするとき ( 配布する場合 ) に必要となります。3 つの節を、それぞれドットで区切ります ( 例 : 1.10.2 )。各節の数字には、<code>[0-99]</code> を使用します。</td>
+            <td>アプリのバージョン番号です。App Store Connect 経由で、アプリをアップロードするとき ( 配布する場合 ) に必要となります。3 つの節を、それぞれドットで区切ります ( 例 : 1.10.2 )。各節の数字には、<code>[0-99]</code> を使用します。</td>
         </tr>
     </table>
 
@@ -339,4 +339,3 @@ App ID の登録を、次の手順で行います。
 - [Windows アプリのビルド](../../build_winrt)
 - [App Store での配布](../../../deploy/appstore)
 - [ビルド履歴一覧](../../build_history)
-

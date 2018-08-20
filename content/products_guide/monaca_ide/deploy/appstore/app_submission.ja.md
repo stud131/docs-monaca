@@ -1,7 +1,7 @@
 ---
 title: iOS アプリ アップロード機能
 weight: 20
-aliases: /ja/monaca_ide/manual/deploy/appstore/itunes_connect
+aliases: /ja/monaca_ide/manual/deploy/appstore/app_store_connect
 ---
 
 {{<note>}}
@@ -26,7 +26,7 @@ App Store Connect
 2.  リリースビルド版アプリの作成後、次のページが表示されます。次に、`AppStore` ボタン ( 下のスクリーンショットの赤枠部分 ) をクリックします。
 
     {{<img src="/images/monaca_ide/manual/deploy/app_submission/upload.png">}}
-    
+
 3.  アプリのアップロード用のウィンドウが表示されます。{{<guilabel name="次へ">}} をクリックします。
 
     {{<img src="/images/monaca_ide/manual/deploy/app_submission/2.png">}}
@@ -55,5 +55,4 @@ App Store Connect
         App Store Connect へのアップロード時、Apple 側でなんらかのエラーを出力する場合があります ( アカウントに登録しているメールアドレス宛にもエラー通知が送信されます )。その場合には、エラー内容を確認して、適切に対処してください。エラーの解消後、再度、アプリをアップロードします。
     {{</note>}}
 
-8.  これで、アプリのアップロードが完了しました。この後に、App Store Connect 上にて、申請に向けた手続きがありますので、詳細は、[アップロード後に行うアプリの設定](../itunes_connect/#アップロード後に行うアプリの設定) をご確認ください。
-
+8.  これで、アプリのアップロードが完了しました。この後に、App Store Connect 上にて、申請に向けた手続きがありますので、詳細は、[アップロード後に行うアプリの設定](../app_store_connect/#アップロード後に行うアプリの設定) をご確認ください。

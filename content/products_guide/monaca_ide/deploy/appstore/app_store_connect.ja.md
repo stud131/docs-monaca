@@ -44,7 +44,7 @@ App Store にアプリを提出する場合には、App Store Connect
     価格表、配信地域、割引設定など ) を設定し、{{<guilabel name="Save">}}
     ボタンをクリックします。
 
-    {{<img src="/images/monaca_ide/manual/deploy/itunes_connect/4.png">}} 
+    {{<img src="/images/monaca_ide/manual/deploy/itunes_connect/4.png">}}
 
 8.  `提出準備中` へ移動して、次の情報を入力します。
 
@@ -87,7 +87,7 @@ Monaca では、Monaca クラウド IDEから App Store Connect アプリをア�
 
 6.  アップロード後、{{<guilabel name="次へ">}} ボタンをクリックして、次に、{{<guilabel name="終了">}} ボタンをクリックします。App Store Connect 上にアプリが表示されていることを確認します ( しばらく時間がかかる場合があります )。
 
-{{<note>}} 
+{{<note>}}
     バージョンが異なる同一アプリをアップロードする場合、ファイル内のバージョン情報を、対応するバージョンに変更しておく必要があります。それ以外の場合、アップロードが失敗します。
 {{</note>}}
 
@@ -111,7 +111,7 @@ App Store Connect へアプリをアップロードした後、App Store へ提�
 
 ここまでの手順で、申請に必要な設定が完了しました。次は、申請に向け、アプリを実際に提出します。
 
-1.  iTune Connect 上の `提出準備中` へ移動します。
+1.  App Store Connect 上の `提出準備中` へ移動します。
 2.  {{<guilabel name="レビュー審査のために送信">}} をクリックします。
 
 アプリの登録申請後、Apple による審査が行われます。この過程では、App

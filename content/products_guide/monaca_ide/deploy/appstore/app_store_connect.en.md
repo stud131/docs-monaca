@@ -15,7 +15,7 @@ You are required to have a [Team Agent account](https://developer.apple.com/supp
 
 In order to register your app in App Store Connect, please do as follows:
 
-1.  Login to [App Store Connect](https://appstoreconnect.apple.com/) with your Team Agent account.
+1.  Login to [App Store Connect](https://developer.apple.com/app-store-connect/) with your Team Agent account.
 2.  Go to `My Apps`.
 3.  Select {{<menu menu1="+" menu2="New App">}}.
 
@@ -69,7 +69,7 @@ submission. However, since August 2012, a Mac environment has become
 necessary as the Application Loader is needed to upload the apps to
 App Store Connect and it is only compatible with Mac.
 
-Fortunately, Monaca offers [iOS App Upload feature](../../appstore/app_submission) which allows you to upload your app to App Store Connect right from Monaca IDE without using a Mac. 
+Fortunately, Monaca offers [iOS App Upload feature](../../appstore/app_submission) which allows you to upload your app to App Store Connect right from Monaca IDE without using a Mac.
 
 Alternatively, you can use the Application Loader as described below:
 
@@ -115,7 +115,7 @@ selected to submit to the App Store. Please do as follows:
 Now that you have completed the necessary configurations, your app is
 ready to be submitted.
 
-1.  From iTune Connect, go to `Prepare for Submission`.
+1.  From App Store Connect, go to `Prepare for Submission`.
 2.  Click {{<guilabel name="Submit for Review">}}.
 
 After you've successfully submitted the app, you will need to wait for
@@ -131,7 +131,7 @@ When your app is accepted by Apple, it will be up in the App Store.
     The large app icon, which was not necessary before, is now required for the submission. In fact, the required environment and information have changed in the submission procedure for the registration. If a registration/submission is not successful, please make sure you complete necessary configurations properly.
 {{</note>}}
 
-See Also: 
+See Also:
 
 - [Monaca Upload Feature](../app_submission)
 - [Building an iOS App](../../../build/ios/build_ios/#building-for-ios)
