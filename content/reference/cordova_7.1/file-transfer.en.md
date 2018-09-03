@@ -36,7 +36,7 @@ cordova-plugin-file-transfer
 Adding the Plugin in Monaca
 ---------------------------
 
-In order to use this plugin, please [enable]({{<ref "cordova_plugin.en.md#import-cordova-plugins">}}) both `File Transfer` and `File` plugins in Monaca Cloud IDE because `File Transfer` plugin is depending on `File` plugin.
+In order to use this plugin, please [enable]({{<ref "/products_guide/monaca_ide/dependencies/cordova_plugin.en.md#add-import-cordova-plugins">}}) both `File Transfer` and `File` plugins in Monaca Cloud IDE because `File Transfer` plugin is depending on `File` plugin.
 
 Supported Platforms
 -------------------

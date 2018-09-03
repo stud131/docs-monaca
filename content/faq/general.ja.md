@@ -30,7 +30,7 @@ Monaca を初めてお使いになる場合には、こちらから
 社が開発に着手して、その後、Adobe 社が継続して開発を行っています (
 Nitobi 社は、Adobe 社に吸収されました )。Monaca では、JavaScript
 を使用して、基本プラグイン経由で、スマートフォン搭載の機能にアクセスします。Monaca
-における 基本プラグインの使用方法に関しては、[概要]({{<ref "cordova_plugin.ja.md">}}) と
+における 基本プラグインの使用方法に関しては、[概要]({{<ref "/products_guide/monaca_ide/dependencies/cordova_plugin.ja.md">}}) と
 [こちら](https://cordova.apache.org/docs/en/latest/) をご確認ください。
 
 Monaca で商用のスマートフォン向けアプリを開発しても良いですか？
@@ -99,7 +99,7 @@ Free プランでも、Monacaで提供している Cordova プラグイン (
 をご確認ください。また、自作のユーザー Cordova
 プラグインを使用する場合には、Pro プラン または
 企業向けプランが必要となります。ユーザー Cordova
-プラグインの追加方法に関しては、 [ユーザー Cordova プラグイン]({{<ref "custom_cordova_plugin.ja.md">}})
+プラグインの追加方法に関しては、 [ユーザー Cordova プラグイン]({{<ref "/products_guide/monaca_ide/dependencies/custom_cordova_plugin.ja.md">}})
 をご確認ください。
 
 Monaca の退会方法を教えてください。

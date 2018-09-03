@@ -12,7 +12,7 @@ aliases: /ja/monaca_localkit/manual/build_publish
     に、アプリの設定を行えます。
 -   ビルド/ビルド設定 : プラットフォーム毎 ( iOS、Android、Windows )
     に、ビルドの設定を行えます。
--   プロジェクト : [Cordova プラグイン]({{<ref "cordova_plugin.ja.md">}})、 [JS/CSS コンポーネント]({{<ref "components.ja.md">}})、外部サービス連携など、プロジェクトの依存関係に関する設定を行えます。
+-   プロジェクト : [Cordova プラグイン]({{<ref "/products_guide/monaca_ide/dependencies/cordova_plugin.ja.md">}})、 [JS/CSS コンポーネント]({{<ref "/products_guide/monaca_ide/dependencies/components.ja.md">}})、外部サービス連携など、プロジェクトの依存関係に関する設定を行えます。
 
 各プラットフォーム向けアプリのビルド方法と配布申請に関しては、次の解説をご確認ください。
 

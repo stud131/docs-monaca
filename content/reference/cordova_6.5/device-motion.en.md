@@ -36,7 +36,7 @@ cordova-plugin-device-motion
 Adding the Plugin in Monaca
 ---------------------------
 
-In order to use this plugin, please [enable]({{<ref "cordova_plugin.en.md#import-cordova-plugins">}})
+In order to use this plugin, please [enable]({{<ref "/products_guide/monaca_ide/dependencies/cordova_plugin.en.md#add-import-cordova-plugins">}})
 `Device Motion` plugin in Monaca Cloud IDE.
 
 Supported Platforms

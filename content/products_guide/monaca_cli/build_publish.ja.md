@@ -12,7 +12,7 @@ aliases: /ja/monaca_cli/manual/build_publish
 -   ビルド設定 :
     アプリおよび各プラットフォーム向けのビルドに必要な設定をします。
 -   依存関係の設定 : 必要なプラグイン （
-    [Cordova プラグイン]({{<ref "cordova_plugin.ja.md">}}) 、[JS/CSS コンポーネント]({{<ref "components.ja.md">}})
+    [Cordova プラグイン]({{<ref "/products_guide/monaca_ide/dependencies/cordova_plugin.ja.md">}}) 、[JS/CSS コンポーネント]({{<ref "/products_guide/monaca_ide/dependencies/components.ja.md">}})
     、[外部サービス連携](/ja/reference/service_integration/) など ） を設定します。
 
 ここまでの手順で、アプリの開発工程のすべてが完了しました。次の工程では、アプリのビルド、端末へのインストールなど、配布に向けた準備をします。これらの工程まで行えば、マーケットで配布できるアプリが完成します。なお、実際に、マーケット

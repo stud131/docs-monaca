@@ -28,7 +28,7 @@ cordova-plugin-camera
 
 ## プラグインの追加方法 ( Monaca 上での処理 )
 
-このプラグインを使用する場合には、Monaca クラウド IDE の [ Cordova プラグインの管理 ] 上で、`Camera` プラグインを [有効]({{<ref "cordova_plugin.ja.md#cordova-プラグイン-のインポート">}}) にします。
+このプラグインを使用する場合には、Monaca クラウド IDE の [ Cordova プラグインの管理 ] 上で、`Camera` プラグインを [有効]({{<ref "/products_guide/monaca_ide/dependencies/cordova_plugin.ja.md#cordova-プラグイン-のインポート">}}) にします。
 
 ## iOS 特有の動作
 

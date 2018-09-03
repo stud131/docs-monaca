@@ -99,7 +99,7 @@ API、住所録の取得 API、端末情報の取得 API
 [サードパーティー製プラグイン](/ja/reference/third_party_phonegap) をご確認ください。
 
 これ以外の第三者提供 ( 「 外部の Cordova プラグイン 」 )
-または自作のプラグイン ( 「[ユーザー Cordova プラグイン]({{<ref "custom_cordova_plugin.ja.md">}})」 )
+または自作のプラグイン ( 「[ユーザー Cordova プラグイン]({{<ref "/products_guide/monaca_ide/dependencies/custom_cordova_plugin.ja.md">}})」 )
 をプロジェクトに追加することもできます。ストア版の Monaca
 デバッガーには、これらのプラグインはデフォルトでは実装されていないため、このデバッガー上でアプリをそのまま実行しても、正しく動作しません。そこで、ストア版のデバッガーの代わりに、カスタムビルド版の
 Monaca デバッガーを使用します。カスタムビルド版も、ストア版も、どちらも

@@ -38,7 +38,7 @@ cordova-plugin-file-transfer
 ------------------------------------------
 
 `ファイル転送 プラグイン` は、 `ファイル操作プラグイン` に依存しているため、はじめに Monaca クラウド IDEで、`File` プラグインを
-[有効]({{<ref "cordova_plugin.ja.md#cordova-プラグイン-のインポート">}}) にし、 次に `File Transfe` プラグインを有効にしてください。
+[有効]({{<ref "/products_guide/monaca_ide/dependencies/cordova_plugin.ja.md#cordova-プラグイン-のインポート">}}) にし、 次に `File Transfe` プラグインを有効にしてください。
 
 サポート対象のプラットフォーム
 ------------------------------

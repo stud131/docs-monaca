@@ -32,7 +32,7 @@ cordova-plugin-dialogs
 Adding the Plugin in Monaca
 ---------------------------
 
-In order to use this plugin, please [enable]({{<ref "cordova_plugin.en.md#add-import-cordova-plugins">}})
+In order to use this plugin, please [enable]({{<ref "/products_guide/monaca_ide/dependencies/cordova_plugin.en.md#add-import-cordova-plugins">}})
 `Notification` plugin in Monaca Cloud IDE.
 
 API Reference
