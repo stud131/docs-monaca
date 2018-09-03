@@ -1,18 +1,31 @@
-body, h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans', 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic ProN W3','Hiragino Kaku Gothic ProN','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
 }
 
 body {
   font-size: 16px !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-align: left;
   text-transform: none;
   color: #333;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   border-bottom: 1px solid #ccc;
 }
 
@@ -33,11 +46,11 @@ h4 {
   border: 0;
 }
 
-h5, h6 {
+h5,
+h6 {
   font-size: 1rem;
   border: 0;
 }
-
 
 #sidebar {
   background-color: #f2f2f2;
@@ -64,14 +77,15 @@ h5, h6 {
   overflow-x: hidden;
 }
 
-#sidebar .topics > li > a {
+#sidebar .topics>li>a {
   display: block;
   text-decoration: none;
   font-size: 15px;
   font-weight: 700;
 }
 
-#sidebar .topics a, #sidebar .topics li.active a {
+#sidebar .topics a,
+#sidebar .topics li.active a {
   padding: .4rem 1rem .4rem .5rem;
 }
 
@@ -80,7 +94,7 @@ h5, h6 {
   padding: 0;
 }
 
-#sidebar ul.topics > li {
+#sidebar ul.topics>li {
   padding: 0 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   margin-left: -1rem;
@@ -98,7 +112,7 @@ h5, h6 {
   padding-left: 1rem;
 }
 
-#sidebar ul > li li a {
+#sidebar ul>li li a {
   display: block;
   text-decoration: none;
   font-size: 14px;
@@ -109,24 +123,31 @@ h5, h6 {
   font-size: 13px;
 }
 
-#sidebar ul.topics > li.parent, #sidebar ul.topics > li.active {
+#sidebar ul.topics>li.parent,
+#sidebar ul.topics>li.active {
   background: transparent;
 }
 
-#sidebar a, #sidebar ul.topics > li.parent a, #sidebar ul.topics > li.active a {
+#sidebar a,
+#sidebar ul.topics>li.parent a,
+#sidebar ul.topics>li.active a {
   color: #555;
 }
 
-#sidebar a:hover, #sidebar ul.topics > li.parent a:hover, #sidebar ul.topics > li.active a:hover {
+#sidebar a:hover,
+#sidebar ul.topics>li.parent a:hover,
+#sidebar ul.topics>li.active a:hover {
   color: #222;
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-#sidebar ul ul li, #sidebar .parent li, #sidebar .active li {
+#sidebar ul ul li,
+#sidebar .parent li,
+#sidebar .active li {
   border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-#sidebar ul li.parent > a {
+#sidebar ul li.parent>a {
   background-color: transparent;
   color: #444 !important;
   border-left: 3px solid #5d89cb;
@@ -134,18 +155,18 @@ h5, h6 {
   font-weight: 700;
 }
 
-#sidebar ul li.parent > a span {
+#sidebar ul li.parent>a span {
   margin-left: -3px;
 }
 
-#sidebar .topics li.active > a {
+#sidebar .topics li.active>a {
   background-color: #5d89cb;
   color: #fff !important;
   margin-left: -.5rem;
   padding-left: 1rem;
 }
 
-#sidebar ul li.active > a .category-icon {
+#sidebar ul li.active>a .category-icon {
   color: #fff !important;
 }
 
@@ -163,9 +184,6 @@ h5, h6 {
   padding-right: .5rem;
 }
 
-
-
-
 #sidebar .searchbox {
   border: 0;
   background: transparent;
@@ -173,8 +191,8 @@ h5, h6 {
 
 #sidebar .searchbox input {
   background-color: #ededed;
-    border: solid 1px #ccc;
-    color: #333;
+  border: solid 1px #ccc;
+  color: #333;
 }
 
 #sidebar .searchbox label {
@@ -186,21 +204,24 @@ h5, h6 {
 }
 
 .searchbox input::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.6); }
+  color: rgba(0, 0, 0, 0.6);
+}
 
 .searchbox input::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.6); }
+  color: rgba(0, 0, 0, 0.6);
+}
 
 .searchbox input:-moz-placeholder {
-  color: rgba(0, 0, 0, 0.6); }
+  color: rgba(0, 0, 0, 0.6);
+}
 
 .searchbox input:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.6); }
+  color: rgba(0, 0, 0, 0.6);
+}
 
 #sidebar hr {
   display: none;
 }
-
 
 .admonition {
   clear: both;
@@ -220,9 +241,9 @@ h5, h6 {
 }
 
 .admonition.warning {
-    color: #a42d2d;
-    border: 1px solid #a42d2d;
-    background: #fae8e8 url(/images/common/icon_warning.png) 20px center no-repeat;
+  color: #a42d2d;
+  border: 1px solid #a42d2d;
+  background: #fae8e8 url(/images/common/icon_warning.png) 20px center no-repeat;
 }
 
 blockquote p {
@@ -233,4 +254,3 @@ blockquote p {
 .footline {
   display: none;
 }
-
