@@ -5,6 +5,11 @@ weight: 100
 
 This Cordova/PhoneGap plugin is used for In-App Purchase on iOS, Android and Windows apps.
 
+{{<note>}}
+    In order to work demo apps, in-app billing setup is necessary in App Store Connect.
+{{</note>}}
+
+
 - Repo: https://github.com/j3k0/cordova-plugin-purchase
 - Plugin ID/Package Name: `cc.fovea.cordova.purchase`
 - Tested Version: 7.1.3

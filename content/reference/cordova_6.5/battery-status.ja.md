@@ -29,7 +29,7 @@ cordova-plugin-battery-status
 ------------------------------------------
 
 このプラグインを使用する場合には、Monaca クラウド IDE の [ Cordova プラグインの管理 ] 上で、`Battery` プラグインを
-[有効]({{<ref "cordova_plugin.ja.md#cordova-プラグイン-のインポート">}}) にします。
+[有効]({{<ref "/products_guide/monaca_ide/dependencies/cordova_plugin.ja.md#cordova-プラグイン-のインポート">}}) にします。
 
 API の解説
 ----------

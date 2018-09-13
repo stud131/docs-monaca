@@ -5,7 +5,7 @@ aliases: /en/monaca_ide/manual/build/build_error
 ---
 
 Here is a list of commom errors you may face while building or uploading
-the application to iTunes Connect:
+the application to App Store Connect:
 
 ## minSdkVersion
 
@@ -125,14 +125,14 @@ For Cordova 6.2 projects, the following configurations for
     configuration)
 2.  Plug-in version: `2.1.0` with Crosswalk version: `21.51.546.7`
 
-## iTunes Connect
+## App Store Connect
 
 {{<highlight bash>}}
 Unable to validate your application. Your Apple ID or password was entered incorrectly.
 {{</highlight>}}
 
 
-`Apple ID` or `Password` used when uploading the app to iTunes Connect
+`Apple ID` or `Password` used when uploading the app to App Store Connect
 has not been entered correctly. Please make sure to use the right
 `Apple ID` and corresponded `Password`.
 
@@ -141,7 +141,7 @@ Unable to validate your application. Please sign in with an app-specific passwor
 {{</highlight>}}
 
 
-If the `Apple ID` used when uploading the app to iTunes Connect is using
+If the `Apple ID` used when uploading the app to App Store Connect is using
 2-factor authentication, please try using the app-specific password. For
 more information, please refer to [App-specific
 Password](https://support.apple.com/en-us/HT204397).
@@ -151,13 +151,13 @@ No suitable application records were found. Verify your bundle identifier 'com.e
 {{</highlight>}}
 
 
-Please make sure "com.example.xxx" is registered in iTunes Connect.
+Please make sure "com.example.xxx" is registered in App Store Connect.
 
 {{<highlight bash>}}
 There already exists a binary upload with build version '1.0.0' for train '1.0.0'
 {{</highlight>}}
 
-There is an application of the same build version in iTunes Connect.
+There is an application of the same build version in App Store Connect.
 Please build the app again with a different version number.
 
 {{<highlight bash>}}

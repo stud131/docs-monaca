@@ -292,6 +292,7 @@ monaca.InAppUpdater.download(args: JSON object): Promise
 
 Name | Data Type | Description
 -----|-----------|----------------------
+`version` | String | The target app version
 `updateNumber` | Integer | The update number
 `bufferSize` | Integer | (Android only) Buffer size in bytes. The default value is `8192`.
 `url` | String | The URL where you download the ZIP file from. If this value is not existed, the value of `monaca:updater_DownloadUrl` in `config.xml` is used instead.
@@ -317,7 +318,7 @@ Name | Data Type | Description
 **Example**
 
 {{<highlight javascript>}}
-monaca.InAppUpdater.download( { version : targetVersion, buildNumber : targetBuildNumber, url : url } ).then(
+monaca.InAppUpdater.download( { version : targetVersion, updateNumber : targetBuildNumber, url : url } ).then(
     function(json) { alert( JSON.stringify(json) ); } ,
     function(fail) { alert( JSON.stringify(fail) ); } ,
     function(json) { console.log( json.count + "/" + json.total + " are done." ); }

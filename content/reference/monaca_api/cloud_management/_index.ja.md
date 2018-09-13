@@ -20,7 +20,7 @@ Monaca バックエンド マネジメント API
 
 ## JSON-RPC Endpoint
 
-エンドポイント URL は、Monaca クラウド IDE の [ マネジメント API ] 画面から取得できます。同画面上の **マネジメント API のエンドポイント URL** 欄をご確認ください ( [バックエンド マネジメント API キー]({{<ref "control_panel.ja.md#バックエンド-マネジメント-api-キー">}}) を参照のこと )。
+エンドポイント URL は、Monaca クラウド IDE の [ マネジメント API ] 画面から取得できます。同画面上の **マネジメント API のエンドポイント URL** 欄をご確認ください ( [バックエンド マネジメント API キー]({{<ref "/products_guide/backend/new_backend/control_panel.ja.md#バックエンド-マネジメント-api-キー">}}) を参照のこと )。
 
 ## JSON-RPC Request
 

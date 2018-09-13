@@ -89,7 +89,7 @@ You can create a new project based on templates provided by Monaca.
 
 ###  Importing a Project
 
-There are two types of projects you can import into Monaca Localkit:
+There are 3 types of projects you can import into Monaca Localkit:
 
 1.  `From Cloud IDE`: projects you have in your Monaca Cloud IDE.
 2.  `From Local Cordova Project`: Cordova projects you have on your PC.
@@ -241,6 +241,33 @@ do all the magic!
     {{<img src="/images/monaca_localkit/manual/overview/12.png">}}
 
 3.  Save the settings.
+
+
+### Upload/Download Control
+
+There are cases where you want ignore/exclude specific files and folders
+from uploading to Monaca Cloud. In this case, the `.monacaignore` file
+will be automatically created and placed under the root directory of the
+React Native projects. You can edit the file to add or remove specific
+files and folders. 
+
+{{<note>}}
+    <code>.monacaignore</code> is using the same pattern as <code>.gitignore</code>.
+{{</note>}}
+
+Here is the default settings within the `.monacaignore` file:
+
+{{<highlight bash>}}
+/.monaca/*
+!/.monaca/project_info.json
+/platforms
+.DS_Store
+*.swp
+.vscode/
+typings/
+node_modules
+.git
+{{</highlight>}}
 
 
 See Also:

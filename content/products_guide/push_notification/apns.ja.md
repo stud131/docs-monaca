@@ -1,5 +1,5 @@
 ---
-title: iOS アプリへのプッシュ通知設定
+title: iOS のプッシュ通知設定
 weight: 30
 aliases: /ja/push_notification/manual/apns
 ---
@@ -12,7 +12,7 @@ APNs ( Apple Push Notification Service ) とは、Apple 社が提供する、iOS
     iOS アプリのビルドとプッシュ通知には、{{<link href="https://developer.apple.com/programs/" title="Apple Developer Program">}} への登録が必要です。
 {{</note>}}
 
-## ステップ 1 : CSR ファイルの作成 ( Monaca クラウド IDE 上 )
+## 1. CSR ファイルの作成 ( Monaca 上 )
 
 1.  Monaca Backend ウィンドウから、{{<guilabel name="プッシュ通知">}} を選択します。
 
@@ -31,7 +31,7 @@ APNs ( Apple Push Notification Service ) とは、Apple 社が提供する、iOS
 
 5.  生成後、CSR ファイルをダウンロードします。
 
-## ステップ 2 : プッシュ証明書の作成 ( iOS Dev Center 上 )
+## 2. プッシュ証明書の作成 ( iOS Dev Center 上 )
 
 iOS Dev Center では、2 種類のプッシュ証明書を発行できます。
 
@@ -74,7 +74,7 @@ iOS Dev Center では、2 種類のプッシュ証明書を発行できます。
 8.  発行後、その証明書をダウンロードします。このファイルは、後ほど、Monaca
     クラウド IDE へアップロードして使用します。
 
-## ステップ 3 : プッシュ証明書のアップロード ( Monaca クラウド IDE 上 )
+## 3. プッシュ証明書のアップロード ( Monaca 上 )
 
 1.  Monaca Backend ウィンドウから、{{<guilabel name="プッシュ通知">}} を選択します。
 

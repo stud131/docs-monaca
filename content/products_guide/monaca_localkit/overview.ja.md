@@ -233,6 +233,30 @@ Localkit
 
 3.  設定を保存します。
 
+
+### アップロードとダウンロードの制御
+
+特定のファイルやフォルダを除外して Monaca クラウドにアップロードしたくない場合があります。 この場合は、プロジェクトのルートディレクトリにある `.monacaignore` ファイルを編集して、特定のファイルやフォルダを設定することができます。
+
+{{<note>}}
+    <code>.monacaignore</code> は、<code>.gitignore</code> と同じパターンを使用しています。
+{{</note>}}
+
+`.monacaignore` ファイルのデフォルト設定は次のとおりです。
+
+{{<highlight bash>}}
+/.monaca/*
+!/.monaca/project_info.json
+/platforms
+.DS_Store
+*.swp
+.vscode/
+typings/
+node_modules
+.git
+{{</highlight>}}
+
+
 参考ページ
 
 - [チュートリアル](../tutorial)

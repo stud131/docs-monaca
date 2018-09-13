@@ -22,7 +22,9 @@ CLI は、コマンドライン形式のインターフェイスであり、Mona
 
 - 次のコマンド ([詳細はこちら](/ja/products_guide/monaca_cli/overview/#step-1-cli-installation)) を使用して Monaca CLI をインストールします。
     
-    {{<highlight bash>}}$ npm install -g monaca{{</highlight>}}
+    ```javascript
+    $ npm install -g monaca
+    ```
 
 - [オプション] 端末でテストする場合は、対象端末 (iOS または Androi) をご用意ください。
 

@@ -16,8 +16,8 @@ CodeでMonacaアプリを開発するための機能拡張を開発していま�
     Apps、Windows ) を選択します。
 -   ビルド設定 :
     アプリおよび各プラットフォーム向けのビルドに必要な設定をします。
--   依存関係の設定 : 必要なプラグイン （ [Cordova プラグイン](/ja/products_guide/monaca_ide/dependencies/cordova_plugin/) 、 [JS・CSS コンポーネント]({{<ref "components.ja.md">}})
-    、[外部サービスとの連携](/ja/reference/service_integration) など ） を設定します。
+-   依存関係の設定 : 必要なプラグイン （ [Cordova プラグイン](/ja/products_guide/monaca_ide/dependencies/cordova_plugin/) 、 []({{<ref "/products_guide/monaca_ide/dependencies/components.ja.md">}})
+    、[外部サービス連携](/ja/reference/service_integration) など ） を設定します。
 
 ここまでの手順で、アプリの開発工程のすべてが完了しました。次の工程では、アプリのビルド、端末へのインストールなど、配布に向けた準備をします。これらの工程まで行えば、マーケットで配布できるアプリが完成します。なお、実際に、マーケット
 ( App Store、Google Play など )

@@ -1,5 +1,5 @@
 ---
-title: 基本 Cordova プラグイン ( Cordova のコア プラグイン )
+title: 基本プラグイン
 hidden: true
 aliases: 
     - /ja/reference/cordova_5.2/

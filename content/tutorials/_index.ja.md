@@ -59,6 +59,30 @@ weight: 20
             <p>Cordova In-App Purchase プラグインを使用してアプリにアプリ内購入機能を追加します。</p>
         </a>
     </div>
+    <div class="item">
+        <a href="app_version">
+            <h3>Cordova AppVersion プラグイン</h3>
+            <p>Cordova AppVersion プラグインを使用してアプリ情報を取得します。</p>
+        </a>
+    </div>
+    <div class="item">
+        <a href="ionic_keyboard">
+            <h3>Cordova Ionic Keyboard プラグイン</h3>
+            <p>Cordova Ionic Keyboard プラグインを使用してキーボードを操作します。</p>
+        </a>
+    </div>
+    <div class="item">
+        <a href="social_sharing">
+            <h3>Cordova Social Sharing プラグイン</h3>
+            <p>Cordova Social Sharing プラグインを使用してアプリにソーシャルシェアリング機能を追加します。</p>
+        </a>
+    </div>
+    <div class="item">
+        <a href="phonegap_push">
+            <h3>Phonegap Push プラグイン</h3>
+            <p>Phonegap Push プラグインを使用してアプリにプッシュ通知機能を追加します。</p>
+        </a>
+    </div>
 </div> 
 
 <style>

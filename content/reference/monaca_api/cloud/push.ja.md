@@ -21,7 +21,7 @@ monaca.cloud.Push.setHandler(callback: Function) : void
 
 パラメーター | 型 | 解説
 -----|------|------------------
-`callback` | 関数 | プッシュ通知を処理するコールバック関数です。第一引数に追加のデータを設定できます。
+`callback` | 関数 | プッシュ通知を処理するコールバック関数です。送信された JSON データは、第 1、第 3 引数に設定されます。
 
 **戻り値**
 
@@ -32,9 +32,11 @@ monaca.cloud.Push.setHandler(callback: Function) : void
 次のサンプルコードでは、プッシュ通知から受け取ったデータを、`Console` ( コンソール ) に表示しています。
 
 {{<highlight javascript>}}
-monaca.cloud.Push.setHandler(function(data) {
-  console.log(data.item_a);
-  console.log(data.item_b);
+monaca.cloud.Push.setHandler(function(data1, data2, data3) {
+  // JSON data within push notification
+  console.log(JSON.stringify(data1));
+  console.log(JSON.stringify(data2));
+  console.log(JSON.stringify(data3));
 });
 {{</highlight>}}
 

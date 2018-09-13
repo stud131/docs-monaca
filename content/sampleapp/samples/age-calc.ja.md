@@ -73,8 +73,7 @@ JavaScript の解説
 という変数にメッセージの内容をセットし、`navigator.notification.alert`
 関数を呼び出し、ポップアップ形式で表示します。
 
-この `navigator.notification.alert` 関数は、基本 Cordova
-プラグインの関数です。実行すると、画面上にポップアップダイアログを表示します。今回は、第三引数に
+この `navigator.notification.alert` 関数は、基本プラグインの関数です。実行すると、画面上にポップアップダイアログを表示します。今回は、第三引数に
 「 Monaca へようこそ！ 」
 を指定して、ダイアログのタイトルに表示しています。
 

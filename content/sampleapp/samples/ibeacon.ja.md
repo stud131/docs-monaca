@@ -23,7 +23,7 @@ UUID が画面上に表示されます ( このサンプルでは、アプリが
 
 ## 事前準備
 
-1. iBeacon プラグインを [こちら](https://github.com/petermetz/cordova-plugin-ibeacon.git) からダウンロードして、Monaca クラウド IDE 上にインポートします。詳細は、 [ユーザー Cordova プラグインのインポート]({{<ref "custom_cordova_plugin.ja.md#ユーザー-cordova-プラグインのインポート">}}) をご確認ください。
+1. iBeacon プラグインを [こちら](https://github.com/petermetz/cordova-plugin-ibeacon.git) からダウンロードして、Monaca クラウド IDE 上にインポートします。詳細は、 [ユーザー Cordova プラグインのインポート]({{<ref "/products_guide/monaca_ide/dependencies/custom_cordova_plugin.ja.md#ユーザー-cordova-プラグインのインポート">}}) をご確認ください。
 
 2. 対象とする iBeacon 発信機を決めます ( 最低限 1 つ )。
 

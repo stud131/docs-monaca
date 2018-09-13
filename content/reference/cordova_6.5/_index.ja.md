@@ -1,6 +1,7 @@
 ---
-title: 基本 Cordova プラグイン ( Cordova のコア プラグイン )
+title: 基本プラグイン
 weight: 20
+hidden: true
 ---
 
 - [バッテリー情報の取得 プラグイン](battery-status)

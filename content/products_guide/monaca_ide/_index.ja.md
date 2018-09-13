@@ -1,7 +1,7 @@
 ---
 title: Monaca クラウド IDE
 weight: 20
-aliases: 
+aliases:
     - /ja/monaca_ide/
     - /ja/monaca_ide/manual/
 ---
@@ -13,7 +13,6 @@ Monaca クラウド IDE では、プロジェクトの開発からビルドま�
 - [概要](overview)
 - [ターミナル機能](terminal)
 - [新しい Monaca クラウド IDE の変更点](changes)
-- [ターミナル機能](terminal)
 - [エディターのショートカット一覧](editor)
 - [プロジェクトの構成](dependencies)
 - [バージョン管理](version_control)

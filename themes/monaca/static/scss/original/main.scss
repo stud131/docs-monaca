@@ -5,6 +5,7 @@
 
 $toc_width: 15vw;
 $toc_breakpoint: 1080px;
+$primary_color: #5d89cb;
 
 #body-inner {
 	width: calc(100% - #{$toc_width});
@@ -27,10 +28,16 @@ $toc_breakpoint: 1080px;
 	border-left: 2px solid $primary_color;
 }
 
-#TableOfContents ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
+#TableOfContents {
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		li {
+			margin-bottom: 10px;
+		}
+	}
 }
 
 #TableOfContents a {
@@ -51,7 +58,7 @@ $toc_breakpoint: 1080px;
 }
 
 #TableOfContents > ul > li > ul > li > a {
-	font-weight: bold;
+	// font-weight: bold;
 }
 
 #TableOfContents > ul > li > ul > li > ul > li > ul > li > ul > li  {
@@ -127,7 +134,7 @@ $toc_breakpoint: 1080px;
 }
 
 body {
-	font-size: 16px !important;
+	font-size: 14px !important;
 	color: $main_text_color !important;
 }
 
@@ -521,10 +528,11 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
 }
 
 body {
-	font-family: 'Open Sans', 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic ProN W3','Hiragino Kaku Gothic ProN','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
 	font-weight: normal;
 	line-height: 1.6;
-	font-size: 14px !important;
+	font-size: 16px;
+	font-family: "Avenir Next", "Helvetica Neue", Helvetica, sans-serif;
+	color:#34495e;
 	strong {
 		font-weight: bold;
 	}
@@ -543,7 +551,19 @@ h1, h2, h3 {
 
 h1 {
 	color: $main_title_text_color;
-	font-weight: 200;
+	font-weight: 600;
+	font-size: 26px; 
+}
+
+h2 {
+	font-weight: 600;
+	font-size: 24px; 
+}
+
+p {
+	line-height: 1.9em;
+	// letter-spacing: 0.05em;
+	// word-spacing: 0.05em;
 }
 
 blockquote {

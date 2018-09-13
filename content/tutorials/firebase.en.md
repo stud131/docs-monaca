@@ -15,13 +15,15 @@ This Cordova plugin brings push notifications, analytics, event tracking, crash 
 
 {{<figure src="/images/samples/firebase.png">}}
 
+{{%excerpt%}}
+
 ## Preparation for iOS
 
 When working with push notification for iOS, APNs authentication key or APNs certificate is required. For this reason, we will need to create one of them first. In this page, we will show you how to create Development APNs cerficate for testing on iOS Debug build. 
 
-{{<note>}}
+<div class="admonition note">
 For release build, Production APNs Certificate is required. 
-{{</note>}}
+</div>
 
 Assuming that you have already [Apple Developer Program](https://developer.apple.com/programs/), please follow the instruction below on how to create a Development APNs certificate. 
 
@@ -29,36 +31,36 @@ Assuming that you have already [Apple Developer Program](https://developer.apple
 
 2. Select `Certificates, Identifiers & Profiles`.
 
-    {{<img src="/images/tutorials/11.png">}}
+    <img src="/images/tutorials/11.png" width="" class="single_img">
 
 3. An App ID with push notification enabled is required when creating an APNs certificate. Therefore, let's start creating one. Under `Identifiers` section, go to `App IDs` and click on `+` button in the upper-right corner.
 
-    {{<img src="/images/tutorials/14.png">}}
+    <img src="/images/tutorials/14.png" width="" class="single_img">
 
 4. Fill in the following information for the App ID such as:
 
     - `App Description`: Input your app name here (e.g. Cordova Firebase Demo)
     - `Explicit ID`: Select this option because Wildcard App ID is not allowed for push notification. Input a unique identifier for your app (e.g. io.monaca.firebase).
 
-    {{<img src="/images/tutorials/15.png">}}
+    <img src="/images/tutorials/15.png" width="" class="single_img">
 
-5. Scroll down to `App Services` section and tick `Push Notifications` option. Then, click {{<guilabel name="Continue">}}.
+5. Scroll down to `App Services` section and tick `Push Notifications` option. Then, click <span class="guilabel">Continue</span>.
 
-    {{<img src="/images/tutorials/16.png">}}
+    <img src="/images/tutorials/16.png" width="" class="single_img">
 
-6. After that, you will be redirected to a `Confirm your App ID` page. click {{<guilabel name="Register">}} to complete this process.
+6. After that, you will be redirected to a `Confirm your App ID` page. click <span class="guilabel">Register</span> to complete this process.
 
-7. Now, you should be back to the iOS App IDs page. Select on the App ID you've just created and click {{<guilabel name="Edit">}}.
+7. Now, you should be back to the iOS App IDs page. Select on the App ID you've just created and click <span class="guilabel">Edit</span>.
 
-8. Scroll down to `Push Notifications` section, click on {{<guilabel name="Create Cerficate">}} under `Development SSL Certificate`. 
+8. Scroll down to `Push Notifications` section, click on <span class="guilabel">Create Cerficate</span> under `Development SSL Certificate`. 
 
-    {{<img src="/images/tutorials/17.png">}}
+    <img src="/images/tutorials/17.png" width="" class="single_img">
 
-9. Click {{<guilabel name="Continue">}}. 
+9. Click <span class="guilabel">Continue</span>. 
 
-10. After that, click {{<guilabel name="Choose File">}} to browse your CSR file. You can get this file from Monaca Cloud IDE by going to {{<menu menu1="Config" menu2="iOS Build Settings">}}. Then, click on {{<guilabel name="Generate Key and CSR">}}. After creating the CRS file, download it by clicking on {{<guilabel name="Export">}} button.
+10. After that, click <span class="guilabel">Choose File</span> to browse your CSR file. You can get this file from Monaca Cloud IDE by going to <span class="guilabel"><b>Config &rarr; iOS Build Settings</b></span>. Then, click on <span class="guilabel">Generate Key and CSR</span>. After creating the CRS file, download it by clicking on <span class="guilabel">Export</span> button.
 
-11. Next, click {{<guilabel name="Continue">}} again. When the certificate is ready, you can start downloading it. Keep the file, we will need it for Firebase configuration in the upcoming section. 
+11. Next, click <span class="guilabel">Continue</span> again. When the certificate is ready, you can start downloading it. Keep the file, we will need it for Firebase configuration in the upcoming section. 
 
 ## Configuring Firebase for Push Notification
 
@@ -66,13 +68,13 @@ Assuming that you have already [Apple Developer Program](https://developer.apple
 
 2. Sign in with your Google account to enter the console.
 
-3. Click on {{<guilabel name="Add project">}}.
+3. Click on <span class="guilabel">Add project</span>.
 
-    {{<img src="/images/tutorials/1.png">}}
+    <img src="/images/tutorials/1.png" width="" class="single_img">
 
-4. Fill in the project information and click {{<guilabel name="CREATE PROJECT">}}. Then, you will be redirected to the Project Overview page.
+4. Fill in the project information and click <span class="guilabel">CREATE PROJECT</span>. Then, you will be redirected to the Project Overview page.
 
-    {{<img src="/images/tutorials/2.png">}}
+    <img src="/images/tutorials/2.png" width="" class="single_img">
 
 After project creation, we can start configuring the push notification the project for specific platform. 
 
@@ -80,29 +82,29 @@ After project creation, we can start configuring the push notification the proje
 
 1. Go to `Project setting`.
 
-    {{<img src="/images/tutorials/3.png">}}
+    <img src="/images/tutorials/3.png" width="" class="single_img">
 
-2. Under General section, click {{<guilabel name="ADD APP">}} and select `iOS`.
+2. Under General section, click <span class="guilabel">ADD APP</span> and select `iOS`.
 
-3. Enter your iOS Bundle ID (You can find that by going to {{<menu menu1="Config" menu2="iOS App Settings">}} ). Then, click {{<guilabel name="REGISTER APP">}}.
+3. Enter your iOS Bundle ID (You can find that by going to <span class="guilabel"><b>Config &rarr; iOS App Settings</b></span>). Then, click <span class="guilabel">REGISTER APP</span>.
 
-    {{<img src="/images/tutorials/4.png">}}
+    <img src="/images/tutorials/4.png" width="" class="single_img">
 
-4. Download `GoogleService-Info.plist` file and place it in the root folder of your project. After that, click {{<guilabel name="CONTINUE">}}.
+4. Download `GoogleService-Info.plist` file and place it in the root folder of your project. After that, click <span class="guilabel">CONTINUE</span>.
 
-    {{<img src="/images/tutorials/5.png">}}
+    <img src="/images/tutorials/5.png" width="" class="single_img">
 
-5. You will see instructions on how to add the Firebase SDK into our project. However, we are not developing the app natively, we can skip this step. So just click click {{<guilabel name="CONTINUE">}} to proceed. Then, click click {{<guilabel name="FINISH">}} to complete the configuration. After that, you should see your iOS app in the Firebase overview page.
-    
-    {{<img src="/images/tutorials/6.png">}}
+5. You will see instructions on how to add the Firebase SDK into our project. However, we are not developing the app natively, we can skip this step. So just click click <span class="guilabel">CONTINUE</span> to proceed. Then, click click <span class="guilabel">FINISH</span> to complete the configuration. After that, you should see your iOS app in the Firebase overview page.
+
+    <img src="/images/tutorials/6.png" width="" class="single_img">
 
 6. Now, it's time to add APNs certificates into this project. Go to `Project setting` and select `CLOUD MESSAGING`.
 
-    {{<img src="/images/tutorials/3.png">}}
+    <img src="/images/tutorials/3.png" width="" class="single_img">
 
 7. Scroll down to **iOS app configuration** section and upload APNs authentication key or APNs certificates.
 
-    {{<img src="/images/tutorials/7.png">}}
+    <img src="/images/tutorials/7.png" width="" class="single_img">
 
 That's it! Now, you are done with iOS configuration. 
 
@@ -110,21 +112,23 @@ That's it! Now, you are done with iOS configuration.
 
 1. Go to `Project setting`.
 
-    {{<img src="/images/tutorials/3.png">}}
+    <img src="/images/tutorials/3.png" width="" class="single_img">
 
-2. Under General section, click {{<guilabel name="ADD APP">}} and select `Android`.
+2. Under General section, click <span class="guilabel">ADD APP</span> and select `Android`.
 
-3. Enter your package name (You can find that by going to {{<menu menu1="Config" menu2="Android App Settings">}} ). Then, click {{<guilabel name="REGISTER APP">}}.
+3. Enter your package name (You can find that by going to <span class="guilabel"><b>Config &rarr; Android App Settings</b></span>). Then, click <span class="guilabel">REGISTER APP</span>.
 
-    {{<img src="/images/tutorials/8.png">}}
+    <img src="/images/tutorials/8.png" width="" class="single_img">
 
-4. Download `google-services.json` file and place it in the root folder of your project. After that, click {{<guilabel name="CONTINUE">}}.
+4. Download `google-services.json` file and place it in the root folder of your project. After that, click <span class="guilabel">CONTINUE</span>.
 
-    {{<img src="/images/tutorials/9.png">}}
+    <img src="/images/tutorials/9.png" width="" class="single_img">
 
-5. You will see instructions on how to add the Firebase SDK into our project. However, we are not developing the app natively, we can skip this step. So just click click {{<guilabel name="FINISH">}} to complete the configuration. After that, you should see your Android app in the Firebase overview page.
+5. You will see instructions on how to add the Firebase SDK into our project. However, we are not developing the app natively, we can skip this step. So just click click <span class="guilabel">FINISH</span> to complete the configuration. After that, you should see your Android app in the Firebase overview page.
     
-    {{<img src="/images/tutorials/10.png">}}
+    <img src="/images/tutorials/10.png" width="" class="single_img">
+
+{{%/excerpt%}}
 
 ## Adding the Plugin in Monaca IDE
 

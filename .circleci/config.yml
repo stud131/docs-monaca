@@ -1,19 +1,17 @@
 version: 2
 jobs:
   build:
-    machine: true
+    docker:
+      - image: cibuilds/hugo:0.44
     working_directory: ~/project
     steps:
+      # install git
+      - run: apk update && apk add git
+      # checkout the repository
       - checkout
       - run:
-          name: Install hugo
-          command: go get -v github.com/gohugoio/hugo 
-      - run:
-          name: Install pip
-          command: pip install --upgrade pip
-      - run: 
-          name: install AWS CLI
-          command: pip install awscli --upgrade --user
+          name: Install node 
+          command: apk add --update nodejs nodejs-npm
       - run: 
           name: Install NPM dependency
           command: npm install
@@ -32,23 +30,35 @@ jobs:
             - ~/project/public
 
   deploy-stg:
-    machine: true
+    docker:
+      - image: cibuilds/hugo:0.44
     working_directory: ~/project
     steps:
       - restore_cache:
           keys:
             - docs
       - run:
+          name: install AWS CLI (first install pip, the Python package manager)
+          command: |
+            apk add --update python python-dev py-pip build-base
+            pip install awscli
+      - run:
           name: Deploy to stg 
           command: aws s3 sync ~/project/public s3://s.docs.monaca.io --delete
 
   deploy-prod:
-    machine: true
+    docker:
+      - image: cibuilds/hugo:0.44
     working_directory: ~/project
     steps:
       - restore_cache:
           keys:
             - docs
+      - run:
+          name: install AWS CLI (first install pip, the Python package manager)
+          command: |
+            apk add --update python python-dev py-pip build-base
+            pip install awscli
       - run:
           name: Deploy to production
           command: aws s3 sync ~/project/public s3://docs.monaca.io --delete

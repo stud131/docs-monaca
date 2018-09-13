@@ -1,6 +1,7 @@
 ---
 title: Core Cordova Plugins
 weight: 20
+hidden: true
 ---
 
 - [Battery Status Plugin](battery-status)

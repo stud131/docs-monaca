@@ -3,7 +3,7 @@ title: "Cordova Sqlite Storage プラグイン"
 weight: 50
 ---
 
-この Cordova/PhoneGap プラグインは、HTML5/Web SQL API を使用して Android、iOS、Windows 上で sqlite データベースを開き、使用します。
+この Cordova プラグインは、HTML5/Web SQL API を使用して Android、iOS、Windows 上で sqlite データベースを開き、使用します。
 
 - Repo: https://github.com/litehelpers/Cordova-sqlite-storage
 - Plugin ID/Package Name: `cordova-sqlite-storage`
@@ -19,7 +19,7 @@ weight: 50
 
 1. IDE メニューから {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} へ移動します。
 
-2. {{<guilabel name="Cordova プラグインのインポート">}}  ボタンをクリッククリックします。 次に、[ZIP ファイル] または [パッケージ名 / URL] を使用してプラグインをインポートします。
+2. {{<guilabel name="Cordova プラグインのインポート">}}  ボタンをクリックします。 次に、[ZIP ファイル] または [パッケージ名 / URL] を使用してプラグインをインポートします。
 
 ## 使い方
 

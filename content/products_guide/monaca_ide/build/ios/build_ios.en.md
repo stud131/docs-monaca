@@ -41,7 +41,7 @@ follows:
         </td>
         <td>
             <ul>
-                <li>iTune</li>
+                <li>iTunes</li>
                 <li><a href="/en/products_guide/debugger/features/#project-options">Network Install</a></li>
             </ul>
         </td>
@@ -57,7 +57,7 @@ follows:
         </td>
         <td>
             <ul>
-                <li>iTune</li>
+                <li>iTunes</li>
                 <li>QR Code</li>
             </ul>
         </td>
@@ -116,7 +116,7 @@ follows:
         </tr>
         <tr>
             <td>Version Number</td>
-            <td>A number representing the version of your app which will be required when uploading (publishing process) your application via iTune Connect later. It needs 3 numbers separated by dots (for example, 1.10.2). Each number should be in <code>[0-99]</code>.</td>
+            <td>A number representing the version of your app which will be required when uploading (publishing process) your application via App Store Connect later. It needs 3 numbers separated by dots (for example, 1.10.2). Each number should be in <code>[0-99]</code>.</td>
         </tr>
     </table>
 

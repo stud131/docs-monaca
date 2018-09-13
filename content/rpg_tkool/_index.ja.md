@@ -1,6 +1,7 @@
 ---
 title: Monaca for RPGツクール MV
 weight: 50
+hidden: true
 ---
 
 - [プロジェクトをアップロードするには](how_to_upload_rpg_project)

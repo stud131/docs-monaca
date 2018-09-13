@@ -1,7 +1,7 @@
 ---
 title: iOS App Upload Feature
 weight: 20
-aliases: /en/monaca_ide/manual/deploy/appstore/itunes_connect
+aliases: /en/monaca_ide/manual/deploy/appstore/app_store_connect
 ---
 
 {{<note>}}
@@ -16,7 +16,7 @@ aliases: /en/monaca_ide/manual/deploy/appstore/itunes_connect
     If you use activation code to upgrade your account, you can use Monaca upload feature in case your plan supports this feature. Please {{<link href="https://monaca.io/service/index.html" title="contact us">}} for more details.
 {{</warning>}}
 
-Monaca allows you to upload your app to iTunes Connect right from Monaca
+Monaca allows you to upload your app to App Store Connect right from Monaca
 IDE. In order to do this, please do as follows:
 
 1.  Create a release build version of your app through Monaca. Please
@@ -35,7 +35,7 @@ IDE. In order to do this, please do as follows:
 
     {{<img src="/images/monaca_ide/manual/deploy/app_submission/3.png">}}
 
-5.  Make sure you've [registered this app with iTunes Connect](../itunes_connect/#registering-the-app) before uploading your app. Then, tick `We've registered the application with iTunes Connect.`. Click {{<guilabel name="Upload">}}.
+5.  Make sure you've [registered this app with App Store Connect](../app_store_connect/#registering-the-app) before uploading your app. Then, tick `We've registered the application with App Store Connect.`. Click {{<guilabel name="Upload">}}.
 
     {{<img src="/images/monaca_ide/manual/deploy/app_submission/4.png">}}
 
@@ -48,21 +48,18 @@ IDE. In order to do this, please do as follows:
     {{<img src="/images/monaca_ide/manual/deploy/app_submission/5.png">}}
 
 7.  If your upload is successful, the following screen will appear. It
-    may take sometimes until the app shows up in the iTunes Connect.
+    may take sometimes until the app shows up in the App Store Connect.
 
     {{<img src="/images/monaca_ide/manual/deploy/app_submission/6.png">}}
 
     {{<note>}}
-        Sometimes Monaca is successfully uploaded your app to iTunes Connect but Apple may find error(s) on their end and report to you via email. If this happens, please see the report and fix the error(s) appropriately. Then, re-upload your app.
+        Sometimes Monaca is successfully uploaded your app to App Store Connect but Apple may find error(s) on their end and report to you via email. If this happens, please see the report and fix the error(s) appropriately. Then, re-upload your app.
     {{</note>}}
 
-8.  Now that you successfully uploaded your app, you can start selecting it in iTunes Connect. Please refer to [Selecting the Uploaded App](../itunes_connect/#selecting-the-uploaded-app).
+8.  Now that you successfully uploaded your app, you can start selecting it in App Store Connect. Please refer to [Selecting the Uploaded App](../app_store_connect/#selecting-the-uploaded-app).
 
 
-See Also: 
+See Also:
 
 - [App Store Distribution](../)
-- [iTunes Connect Guide](../itunes_connect)
-
-
-
+- [App Store Connect Guide](../app_store_connect)

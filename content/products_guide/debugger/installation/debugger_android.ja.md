@@ -5,13 +5,80 @@ aliases: /ja/debugger/manual/installation/debugger_android
 ---
 
 {{<figure src="/images/debugger/manual/installation/debugger_android/3.png" title="Android 向けの Monaca デバッガー" width="300">}}  
- 
 
-{{<note>}}
-Monacaバックエンドプラグインは、Monaca
-Debugger（ストアバージョン）とカスタム版Monaca
-Debuggerの両方ともに含まれていません。
-{{</note>}}
+<table class="small">
+    <tr>
+        <th width="25%">Monaca デバッガー</th>
+        <th>ストア版</th>
+        <th>カスタムビルド版</th>
+    </tr>
+    <tr>
+        <td>説明</td>
+        <td>GooglePlayストアやAppStoreで配布されているMonaca デバッガー</td>
+        <td>Monaca クラウド IDE にて、ビルドして作成するMonaca デバッガー</td>
+    </tr>
+    <tr>
+        <td>インストール方法</td>
+        <td>
+            <ul>
+                <li><a href="https://play.google.com/store/apps/details?id=mobi.monaca.debugger&hl=ja">Google Playストア</a></li>
+                <li><a href="https://itunes.apple.com/jp/app/monaca/id550941371">App Store</a></li>
+            </ul>
+        </td>
+        <td><a href="#カスタムビルド版-monaca-デバッガーのビルドとインストール">カスタムビルド版 Monaca デバッガーのビルドとインストール</a> </td>
+    </tr>
+        <tr>
+        <td><a href="#cordova-プラグイン">Cordova プラグイン</a></td>
+        <td>基本プラグインおよび複数のサードパーティー製プラグインがあらかじめ実装されています。</td>
+        <td>基本プラグインやサードパーティー製プラグインに加えて、ユーザー自作の プラグインなどを組み込むことができます。</td>
+    </tr>
+    <tr>
+        <td>パッケージ名<br>(<code>Android:PackageName</code>)</td>
+        <td><code>mobi.monaca.debugger</code</td>
+        <td>設定画面にてユーザー側で設定</td>
+    </tr>
+        <tr>
+        <td>アプリのリリース番号<br>(<code>Android:versionName</code>)<br> (表示用) </td>
+        <td>固定 (ユーザー設定不可)</td>
+        <td>ユーザー側で設定</td>
+    </tr>
+    <tr>
+        <td>アプリのビルド番号<br>(<code>Android:versionCode</code>)<br> (内部処理用) </td>
+        <td>固定 (ユーザー設定不可)</td>
+        <td>ユーザー側で設定</td>
+    </tr>
+        <tr>
+        <td><a href="#usb-デバッグ">USB デバッグ</a></td>
+        <td colspan="2">利用可 ( Chrome DevTools )</td>
+    </tr>
+    <tr>
+        <td><a href="#localkit-のインスぺクタ機能">Localkit のインスぺクタ機能</a></td>
+        <td colspan="2">利用可</td>
+    </tr>
+    <tr>
+        <td><a href="#webview">WebView</a></td>
+        <td colspan="2">Stock と Crosswalk</td>
+    </tr>
+    <tr>
+        <td><a href="#ネットワーク-インストール">ネットワーク インストール</a></td>
+        <td colspan="2">利用可</td>
+    </tr>
+</table>
+
+{{<warning>}}
+下のプラグインは、ストア版およびカスタム版デバッガーの両方ともにインストールされません。<br>
+利用する際は、デバッグビルドかリリースビルドにてご利用ください。
+<ul style="margin:5px;">
+    <li>Monacaバックエンドプラグイン</li>
+    <li>プッシュ通知に関するプラグイン
+        <ul>
+            <li>phonegap-plugin-push</li>
+            <li>onesignal-cordova-plugin</li>
+            <li>cordova-plugin-firebase</li>
+        </ul>
+    </li>
+</ul>
+{{</warning>}}
 
 {{<note>}}
     Cordova 5.2 より前のバージョンを実装したプロジェクトを、Monaca デバッガー 5 系上で実行する場合、不具合が生じることがあります。修復方法を次に記します。
@@ -19,85 +86,20 @@ Debuggerの両方ともに含まれていません。
     <li><a href="#カスタムビルド版-monaca-デバッガーのビルドとインストール">カスタムビルド版 Monaca デバッガー</a> を使用 ( 旧バージョンの Cordova に対応するため )</li>
 {{</note>}}
 
-<table class="small">
-    <tr>
-        <th width="25%"></th>
-        <th>ストア版 Monaca デバッガー</th>
-        <th>カスタムビルド版Monacaデバッガー</th>
-    </tr>
-    <tr>
-        <td>説明</td>
-        <td>ストア版 Monaca デバッガー</td>
-        <td>Monaca クラウド IDE にて、ビルドして作成する Monaca デバッガー</td>
-    </tr>
-    <tr>
-        <td>インストール方法</td>
-        <td>
-            <ol>
-                <li><a href="https://play.google.com/store/apps/details?id=mobi.monaca.debugger&hl=ja">Play Store</a></li>
-                <li><a href="http://www.amazon.com/Asial-Corporation-Monaca-Debugger/dp/B00H1M1518">Amazon App Store</a></li>
-            </ol>
-        </td>
-        <td><a href="#カスタムビルド版-monaca-デバッガーのビルドとインストール">カスタムビルド版 Monaca デバッガーのビルドとインストール</a> を参照のこと</td>
-    </tr>
-        <tr>
-        <td><a href="#cordova-プラグイン">Cordova プラグイン</a></td>
-        <td>基本 Cordova プラグインおよび複数のサードパーティー製 Cordova プラグインがあらかじめ実装されています。</td>
-        <td>基本 Cordova プラグインやサードパーティー製 プラグインに加えて、ユーザー自作の プラグインなどを組み込むことができます。</td>
-    </tr>
-    <tr>
-        <td>パッケージ名 (<code>Android:PackageName</code>)</td>
-        <td><code>mobi.monaca.debugger</code</td>
-        <td>設定画面にてユーザー側で設定</td>
-    </tr>
-        <tr>
-        <td>アプリのリリース番号 ( 表示用 /<code>Android:versionName</code>)</td>
-        <td>固定 ( 現在は <code>6.0.1</code>)</td>
-        <td>ユーザー側で設定</td>
-    </tr>
-    <tr>
-        <td>アプリのビルド番号 ( 内部処理用 / <code>Android:versionCode</code>)</td>
-        <td>固定 ( 現在は <code>600012</code>)</td>
-        <td>ユーザー側で設定</td>
-    </tr>
-        <tr>
-        <td><a href="#usb-デバッグ">USB デバッグ</a></td>
-        <td>利用可 ( Chrome DevTools )</td>
-        <td>利用可 ( Chrome DevTools )</td>
-    </tr>
-    <tr>
-        <td><a href="#localkit-のインスぺクタ機能">Localkit のインスぺクタ機能</a></td>
-        <td>可</td>
-        <td>可</td>
-    </tr>
-    <tr>
-        <td><a href="#webview">WebView</a></td>
-        <td>Stock と Crosswalk</td>
-        <td>Stock と Crosswalk</td>
-    </tr>
-    <tr>
-        <td><a href="#ネットワーク-インストール">ネットワーク インストール</a></td>
-        <td>可</td>
-        <td>可</td>
-    </tr>
-</table>
-
 ## Cordova プラグイン
 
-Monaca デバッガーには、「 基本 Cordova プラグイン 」 および 「
-サードパーティー製 Cordova プラグイン 」
+Monaca デバッガーには、「 基本プラグイン 」 および 「 サードパーティー製プラグイン 」
 が、あらかじめ実装されています。
 
-基本 Cordova プラグインとは、バッテリー情報の取得 API、カメラ
+基本プラグインとは、バッテリー情報の取得 API、カメラ
 API、住所録の取得 API、端末情報の取得 API
-などを指します。詳細は、[基本 Cordova プラグイン ( Cordova のコア プラグイン )](/ja/reference/cordova_6.5) をご確認ください。
+などを指します。詳細は、[基本プラグイン](/ja/reference/cordova_6.5) をご確認ください。
 
-また、DatePicker、BarcodeScanner など、サードパーティー製 ( 第三者提供 )
-の Cordova プラグインも、Monaca に実装されています。詳細は、
-[サードパーティー製 Cordova プラグイン](/ja/reference/third_party_phonegap) をご確認ください。
+また、DatePicker、BarcodeScanner など、サードパーティー製プラグインも、Monaca に実装されています。詳細は、
+[サードパーティー製プラグイン](/ja/reference/third_party_phonegap) をご確認ください。
 
 これ以外の第三者提供 ( 「 外部の Cordova プラグイン 」 )
-または自作のプラグイン ( 「[ユーザー Cordova プラグイン]({{<ref "custom_cordova_plugin.ja.md">}})」 )
+または自作のプラグイン ( 「[ユーザー Cordova プラグイン]({{<ref "/products_guide/monaca_ide/dependencies/custom_cordova_plugin.ja.md">}})」 )
 をプロジェクトに追加することもできます。ストア版の Monaca
 デバッガーには、これらのプラグインはデフォルトでは実装されていないため、このデバッガー上でアプリをそのまま実行しても、正しく動作しません。そこで、ストア版のデバッガーの代わりに、カスタムビルド版の
 Monaca デバッガーを使用します。カスタムビルド版も、ストア版も、どちらも

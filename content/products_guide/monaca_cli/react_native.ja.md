@@ -315,15 +315,24 @@ React Nativeプロジェクトに対し、Monaca ダッシュボードからは�
 
     {{<figure src="/images/monaca_cli/react_native/6.png" title="ビルド履歴一覧">}}
 
-## アップロードの制御
+## Upload/Download Control
 
-特定のファイルやフォルダを無視/除外して Monaca クラウドにアップロードしたくない場合があります。 この場合、 `.monacaignore` ファイルが自動的に作成され、React Native プロジェクトのルートディレクトリに置かれます。 ファイルを編集して、特定のファイルやフォルダを追加または削除することができます。 `.monacaignore` ファイルのデフォルト設定は次のとおりです。
+特定のファイルやフォルダを無視/除外して Monaca クラウドにアップロードしたくない場合があります。 この場合、 `.monacaignore` ファイルが自動的に作成され、React Native プロジェクトのルートディレクトリに置かれます。 ファイルを編集して、特定のファイルやフォルダを追加または削除することができます。
+
+{{<note>}}
+    <code>.monacaignore</code> is using the same pattern as <code>.gitignore</code>.
+{{</note>}}
+
+`.monacaignore` ファイルのデフォルト設定は次のとおりです。
 
 {{<highlight bash>}}
-/node_modules/**
-/android/build/**
-/ios/build/**
-*/.DS_Store
-*/.git/**
+node_modules
+.git
+.monaca/*
+!.monaca/project_info.json
+android/build
+ios/build
+build
+.DS_Store
 {{</highlight>}}
 

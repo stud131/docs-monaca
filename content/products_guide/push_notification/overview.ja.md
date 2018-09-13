@@ -43,8 +43,8 @@ Monaca クラウド IDE からプッシュ通知を送信するには、Monaca �
 \[ プッシュ通知設定 \]
 上で行う必要があります。次のリンク先をご確認ください。
 
-- [iOS アプリへのプッシュ通知設定]({{< ref "apns.ja.md" >}})
-- [Android アプリへのプッシュ通知設定]({{< ref "gcm.ja.md" >}})
+- [iOS のプッシュ通知設定]({{< ref "apns.ja.md" >}})
+- [Android のプッシュ通知設定]({{< ref "gcm.ja.md" >}})
 
 {{<note>}}
 Monaca デバッガー上では、プッシュ通知は受け取れません。プッシュ通知の検証時には、アプリを実際にビルドする必要があります。
@@ -58,7 +58,7 @@ Monaca クラウド IDE からプッシュ通知を行うときは、次の手�
 
     {{<img src="/images/backend/overview/push_notification.png">}}
 
-2.  [ プッシュ通知履歴 ] タブが表示されます。{<guilabel name="アプリ宛に作成">}} をクリックすると、プッシュ通知を作成するダイアログが表示されます。
+2.  [ プッシュ通知履歴 ] タブが表示されます。{{<guilabel name="アプリ宛に作成">}} をクリックすると、プッシュ通知を作成するダイアログが表示されます。
 
     {{<img src="/images/backend/overview/push_dialog.png" width="500">}}
 
@@ -89,18 +89,21 @@ Monaca クラウド IDE からプッシュ通知を行うときは、次の手�
 
 ## JSON データの受信方法について
 
-プッシュ通知とともに、JSON データも送信できます。 JSON
+プッシュ通知とともに、JSON データも送信できます。JSON
 データは、`monaca.cloud.Push.setHandler`
-関数を使用して処理できます。JSON データは、`data`
+関数を使用して処理できます。送信された JSON データは、`data1` と `data3`
 変数に代入されコールバック側へ渡されます。処理の例は次のとおりです。
 
 {{<highlight javascript>}}
-monaca.cloud.Push.setHandler(function(data) {
+monaca.cloud.Push.setHandler(function(data1, data2, data3) {
   // JSON data within push notification
-  console.log(data);
-  console.log(data.item)
+  console.log(JSON.stringify(data1));
+  console.log(JSON.stringify(data2));
+  console.log(JSON.stringify(data3));
 });
 {{</highlight>}}
+
+`data2` と `data3` では、プッシュ通知の受信状況を判断する `coldstart` と `foreground` 情報を取得することができます。
 
 {{<note>}}
 コールバック関数は、ページが読み込まれた後に呼び出されます。呼び出しには、多少の時間がかかるため、この点を留意ください。

@@ -21,18 +21,16 @@ Monaca を初めてお使いになる場合には、こちらから
 [登録](https://monaca.mobi/ja/register/start)
 を行ってください。無料アカウントをご利用できます。
 
-基本 Cordova プラグイン ( Cordova コアプラグイン ) とは何ですか？
+基本プラグイン とは何ですか？
 -----------------------------------------------------------------
 
-基本 Cordova プラグイン ( 別名 「 Cordova コアプラグイン 」 )
+基本プラグイン ( 別名 「 Cordova コアプラグイン 」 )
 とは、Apache Cordova
 プロジェクト提供のオープンソースを基礎とした、モバイルアプリ開発用のフレームワークです。Nitobi
 社が開発に着手して、その後、Adobe 社が継続して開発を行っています (
 Nitobi 社は、Adobe 社に吸収されました )。Monaca では、JavaScript
-を使用して、基本 Cordova
-プラグイン経由で、スマートフォン搭載の機能にアクセスします。Monaca
-における 基本 Cordova
-プラグインの使用方法に関しては、[概要]({{<ref "cordova_plugin.ja.md">}}) と
+を使用して、基本プラグイン経由で、スマートフォン搭載の機能にアクセスします。Monaca
+における 基本プラグインの使用方法に関しては、[概要]({{<ref "/products_guide/monaca_ide/dependencies/cordova_plugin.ja.md">}}) と
 [こちら](https://cordova.apache.org/docs/en/latest/) をご確認ください。
 
 Monaca で商用のスマートフォン向けアプリを開発しても良いですか？
@@ -97,12 +95,11 @@ Free プランでもCordova プラグインは使えますか？
 
 Free プランでも、Monacaで提供している Cordova プラグイン (
 基本プラグイン、サードパーティー製プラグイン など )
-をご利用いただけます。Monaca でご利用いただけるサードパーティー製の
-Cordova プラグインに関しては、 [サードパーティー製 Cordova プラグイン](/ja/reference/third_party_phonegap)
+をご利用いただけます。Monaca でご利用いただけるサードパーティー製プラグインに関しては、 [サードパーティー製プラグイン](/ja/reference/third_party_phonegap)
 をご確認ください。また、自作のユーザー Cordova
 プラグインを使用する場合には、Pro プラン または
 企業向けプランが必要となります。ユーザー Cordova
-プラグインの追加方法に関しては、 [ユーザー Cordova プラグイン]({{<ref "custom_cordova_plugin.ja.md">}})
+プラグインの追加方法に関しては、 [ユーザー Cordova プラグイン]({{<ref "/products_guide/monaca_ide/dependencies/custom_cordova_plugin.ja.md">}})
 をご確認ください。
 
 Monaca の退会方法を教えてください。

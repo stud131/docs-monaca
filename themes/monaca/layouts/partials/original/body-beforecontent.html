@@ -96,6 +96,7 @@
 
     <div class="cordova-select-wrapper">
       {{T "cordova-version"}}
+      
       <select id="cordova-version-select">
         {{range $pg := .Site.Pages}}
           {{ $pgCordovaVersion := (replaceRE $cordovaUrlRegex "$1" $pg.URL) }}
@@ -111,11 +112,16 @@
           {{ $isSamePluginPage := (eq $currentUrlEnd $pgUrlEnd) }}
 
           {{ if and ($isCordovaPage) ($isSamePluginPage) }}
-            <option value="{{$pgCordovaVersion}}"
-              {{if eq $currentPageCordovaVersion $pgCordovaVersion}} selected {{ end }} 
-            >{{$pgCordovaVersion}}</option>
+              {{ $.Scratch.SetInMap "version" $pgCordovaVersion $pgCordovaVersion }}
           {{end}}
         {{end}}
+        
+        {{ $cordovaVersion := $.Scratch.Get "version"}}
+        {{ range sort $cordovaVersion }}
+          <option value="{{.}}"
+              {{if eq $currentPageCordovaVersion .}} selected {{ end }} 
+            >{{.}}</option>
+        {{ end }}
       </select>
     </div>
   {{ end }}

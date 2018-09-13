@@ -3,7 +3,7 @@ title: "Cordova Google Analytics プラグイン"
 weight: 70
 ---
 
-このCordovaプラグインは、Google のユニバーサルアナリティクス SDK に接続するために使用されます。
+この Cordova プラグインは、Google のユニバーサルアナリティクス SDK に接続するために使用されます。
 
 - Repo: https://github.com/danwilson/google-analytics-plugin
 - Plugin ID/Package Name: `cordova-plugin-google-analytics`
@@ -19,7 +19,7 @@ weight: 70
 
 1. IDE メニューから {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} へ移動します。
 
-2. {{<guilabel name="Cordova プラグインのインポート">}}  ボタンをクリッククリックします。 次に、[ZIP ファイル] または [パッケージ名 / URL] を使用してプラグインをインポートします。
+2. {{<guilabel name="Cordova プラグインのインポート">}}  ボタンをクリックします。 次に、[ZIP ファイル] または [パッケージ名 / URL] を使用してプラグインをインポートします。
 
 ## 使い方
 

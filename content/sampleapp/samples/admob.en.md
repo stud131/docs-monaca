@@ -232,7 +232,7 @@ if( /(android)/i.test(navigator.userAgent) ) {
     };
 } else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
     admobid = { // for iOS
-        banner: 'ca-app-pub-3940256099942544/4480807092',
+        banner: 'ca-app-pub-3940256099942544/2934735716',
         interstitial: 'ca-app-pub-3940256099942544/4411468910',
         rewardvideo: 'ca-app-pub-3940256099942544/1712485313',
     };
