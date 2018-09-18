@@ -3,7 +3,7 @@ title: Sitemap
 ---
 
 - [Top page](/en)
-
+    - [Release Notes](/en/release_notes)
     - [Products Guide](/en/products_guide)
         - [Monaca Development Overview](/en/products_guide/monaca_intro)
         - [Monaca Cloud IDE](/en/products_guide/monaca_ide)

@@ -8,7 +8,7 @@ $toc_breakpoint: 1080px;
 $primary_color: #5d89cb;
 
 #body-inner {
-	width: calc(100% - #{$toc_width});
+	width: calc(100% - 17vw);
 	position: relative;
 }
 
@@ -433,7 +433,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
 
 #body {
 	position: relative;
-	margin-left: 300px;
+	margin-left: 230px;
 	min-height: 100%;
 }
 
@@ -467,7 +467,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
 }
 
 #body .padding {
-	padding: 1rem 4rem;
+	padding: 1rem 2rem;
 }
 
 // responsive

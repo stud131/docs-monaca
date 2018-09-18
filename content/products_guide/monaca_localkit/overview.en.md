@@ -214,17 +214,6 @@ The displayed information includes:
 Moreover, the Console can be easily resized and hidden, in case the
 developer is not interested in displaying the generated log.
 
-#### *Transpiler Reconfiguration*
-
-A new `Reconfigure Transpiler` option has been implemented. We know that
-situations in which your global transpiling dependencies have been
-“mysteriously” deleted may occur, that’s why we decided to provide an
-option to reconfigure them in the easiest way possible.
-
-From now on, if the transpiling process fails because of some global
-dependencies missing, just push the reconfigure button and Localkit will
-do all the magic!
-
 ###  Preference Dialog
 
 1.  From Monaca Localkit menu, go to {{<guilabel name="Preferences">}} (for Mac) or go to {{<menu menu1="File" menu2="Preferences">}} (for Windows).

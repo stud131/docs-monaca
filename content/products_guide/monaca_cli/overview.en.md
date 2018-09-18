@@ -62,9 +62,7 @@ transpiling operations.
 Currently, it is available for the Vue, React and Angular2 templates. It
 can be triggered in two ways:
 
-1.  `monaca transpile`: runs the transpiler on the current project. If
-    the `--watch` argument is given, the transpiler will automatically
-    run every time the source code is updated (and saved).
+1.  `monaca transpile`: runs the transpiler on the current project.
 2.  `monaca preview`: runs the transpiler in watch mode and starts an
     HTTP Server in order to display the app’s content.
 

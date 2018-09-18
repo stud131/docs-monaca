@@ -1,5 +1,6 @@
 ---
-title: Migration from Telerik Platform
+title: Migrating from Telerik Platform
+weight: 100
 aliases: /en/products_guide/telerik_migration
 ---
 
@@ -31,17 +32,17 @@ Use Telerik tool to convert your project to Cordova CLI. This will convert your 
 
 2. Enter a project name and choose `Upload Project Package` option. Then, browse your project ZIP file. 
 
-    {{<img src="/images/monaca_ide/manual/2.png" width="500px">}}
+    {{<img src="/images/migration/telerik/2.png" width="500px">}}
 
 3. Click {{<guilabel name="Import">}} to import the project into Monaca.
 
 4. Click {{<guilabel name="Open">}} to open your project in Monaca Cloud IDE.
 
-    {{<img src="/images/monaca_ide/manual/3.png" width="400px">}}
+    {{<img src="/images/migration/telerik/3.png" width="400px">}}
 
 5. When the IDE appears, you can view your app in the [Preview window](https://docs.monaca.io/en/products_guide/monaca_ide/overview/#live-preview). 
 
-    {{<img src="/images/monaca_ide/manual/4.png">}}
+    {{<img src="/images/migration/telerik/4.png">}}
 
     {{<note>}}
         The views or operations in the Preview window might not work properly when Ajax requests or Cordova APIs are used. Read more on {{<link title="Live Preview Limitations" href="https://docs.monaca.io/en/products_guide/monaca_ide/overview/#live-preivew-limitations">}}. In this case, you can test/debug your project with Monaca Debugger (we will talk about this in the next section).
@@ -64,11 +65,11 @@ Let's get started with Monaca Debugger as follows:
 
 2. Launch Monaca Debugger app and sign in with your Monaca account. Make sure you are using the same account for Monaca Cloud IDE.
 
-    {{<img src="/images/monaca_ide/manual/5.png" width="350px">}}
+    {{<img src="/images/migration/telerik/5.png" width="350px">}}
 
 3. To run a project, simply tap on the project name in Monaca Debugger or click on {{<guilabel name="Run on Device">}} in Monaca Cloud IDE.
 
-    {{<img src="/images/monaca_ide/manual/6.png" width="350px">}}
+    {{<img src="/images/migration/telerik/6.png" width="350px">}}
 
 4. Your project should now be running in the debugger. Go ahead and try out the various operations of your project!
 
@@ -80,15 +81,15 @@ After knowing how to debug your app, let's start building it. For simplicity, we
 
 1. From Monaca Cloud IDE, go to {{<menu menu1="Build" menu2="Build App for Android">}}.
 
-    {{<img src="/images/monaca_ide/manual/7.png">}}
+    {{<img src="/images/migration/telerik/7.png">}}
 
 2. The debug build is selected by default. Click {{<guilabel name="Start Build">}}. Then, the build window will be opened in a new tab.
 
-    {{<img src="/images/monaca_ide/manual/8.png">}}
+    {{<img src="/images/migration/telerik/8.png">}}
 
 3. It may take several minutes for the build to complete. Please wait. The following screen will appear after the build is successfully completed. You can then choose various ways to install the build app into your device. 
 
-    {{<img src="/images/monaca_ide/manual/9.png">}}
+    {{<img src="/images/migration/telerik/9.png">}}
 
 That's it! With just that you've succesfully built the migrated project with Monaca! That's easy, right? 
 
@@ -107,7 +108,7 @@ Store-version Monaca Debugger (found in Google play or AppStore) only includes [
 
 In Monaca Cloud IDE, there is a GUI page for you to include CSS/JavaScript libraries. You can go there by going to {{<menu menu1="Configure" menu2="JS/CSS Component Settings">}}. Then, the following page will appear. 
 
-{{<img src="/images/monaca_ide/manual/10.png">}}
+{{<img src="/images/migration/telerik/10.png">}}
 
 You can then add various CSS/JavaScript libraries. However, this is only working if you include the following 2 lines into your `index.html` file:
 

@@ -1,5 +1,6 @@
 ---
-title: Telerik プラットフォームからの移行
+title: Telerik からの移行
+weight: 100
 aliases: /ja/products_guide/telerik_migration
 ---
 

@@ -13,11 +13,11 @@ The new Monaca Cloud IDE provides developers with some special features that all
 - Monaco Editor: better code editor to speed up your development process
 - New Monaca Backend: better GUI for Monaca Backend
 
-## Integrated terminal
+## Integrated Terminal
 
 The integrated terminal is the most important change in the Cloud IDE. It expands your ability to create, manage and develop transpilable projects such as React, VueJS, Angular, and more. Not only does it transpile but the Previewer is also launched from the embedded terminal. In other words, projects with hot-loading support is also available in the Cloud IDE. For more information about the Integrated Terminal and its usage, please refer to [Integrated Terminal](../terminal).
 
-{{<figure src="/images/monaca_ide/manual/changes/terminal.png" >}}
+{{<figure src="/images/monaca_ide/manual/changes/terminal.png">}}
 
 ## Golden Layout
 

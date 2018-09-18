@@ -39,23 +39,31 @@ When the project is opened in Monaca Cloud IDE for the first time, it will perfo
 
 - When the project is equipped with `package.json`, it will execute `npm install` to install required NPM dependencies.
 
-- When the project is configured as a transpilable project, it will execute `monaca reconfigure` to install build dependencies to your home directory.
+- When the `monaca:preview` script is missing from the `package.json` file, the update dialog is displayed and it will execute `monaca update` to update the project structure.
 
 ### Preview Log and Preview Server
 
-Preview Log tab shows the output from the Preview server for each project. By default, `monaca preview` command is used. You can change to your own Preview server by clicking the gear icon.
+Preview Log tab shows the output from the Preview server for each project. The Preview Server runs `monaca preview` command which executes `monaca:preview` script of the `package.json` file. As you can see in this picture that the preview server is running `browser-sync` as it is defined in the script. Previewer will connect to the Preview server once it is accepting HTTP request. The default port number is `8080` but you can change it by clicking the gear icon.
 
 {{<figure src="/images/monaca_ide/manual/terminal/gear_icon.png" >}}
 
-Previewer will connect to the Preview server once it is accepting HTTP request. The default port number is `8080` but it can be changed to any numbers between `8081-8084` in the configuration dialog.
+The port number is available between `8080-8084` in the configuration dialog.
 
 {{<figure src="/images/monaca_ide/manual/terminal/settings.png" >}}
+
+{{<note>}}
+    When you change the port number in the Preview Server Settings dialog, you might as well need to change the port number in the package.json file and other config files manually.
+{{</note>}}
 
 ### Open New Terminal
 
 To open a terminal, you can click the plus sign next to your tabs then choose {{<guilabel name="New Terminal">}}.
 
 {{<figure src="/images/monaca_ide/manual/terminal/open_new_terminal.png" >}}
+
+{{<note>}}
+    This feature is not available for free-plan users.
+{{</note>}}
 
 ### Customizing the Terminal
 

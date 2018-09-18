@@ -8,6 +8,8 @@ aliases: /en/monaca_cli/manual/cli_commands
 |----------|----------------|
 | [monaca login](#monaca-login) |	Sign in to Monaca Cloud. |
 | [monaca logout](#monaca-logout) |	Sign out from Monaca Cloud. |
+| [monaca update](#monaca-update) |	Update projects created with CLI 2.x to the latest Monaca project structure. |
+| [monaca init](#monaca-init) |	Initialize projects created using other CLI tools to be able to execute with Monaca. |
 | [monaca signup](#monaca-signup) |	Register a new Monaca account. |
 | [monaca create](#monaca-create) |	Create a new local Monaca project from a template. |
 | [monaca clone](#monaca-clone) |	Clone a project from Monaca Cloud. |
@@ -18,11 +20,9 @@ aliases: /en/monaca_cli/manual/cli_commands
 | [monaca remote build](#monaca-remote-build) |	Build a project on Monaca Cloud. |
 | [monaca remote config](#monaca-remote-config) |   Open the project configuration on Monaca Cloud. |
 | [monaca preview](#monaca-preview) |	Run a local web server for preview .|
-| [monaca demo](#monaca-demo) |	Display the app appereance on iOS and Android. |
 | [monaca debug](#monaca-debug) |	Run app on device using Monaca Debugger. |
 | [monaca transpile](#monaca-transpile) |	Transpile project source code. |
 | [monaca config](#monaca-config) |	Manage Monaca CLI configuration. |
-| [monaca reconfigure](#monaca-reconfigure) |	Generate default project configurations. |
 | [monaca plugin](#monaca-plugin) |	Manage Cordova plugins of a project. |
 | [monaca docs](#monaca-docs) |	Display docs for Monaca CLI, Onsen UI and Tutorials. |
 
@@ -66,6 +66,67 @@ $ monaca logout
 Signing out from Monaca Cloud...
 You have been signed out.
 Removed Monaca Debugger pairing information.
+{{</highlight>}}
+
+## monaca update
+
+This command is available from Monaca CLI 3.x. It is used to update old projects created with Monaca CLI 2.x.
+
+**Non-transpile Project**
+
+The `package.json` will be created/modified with the following changes:
+
+- A `monaca:preview` command will be added to the `script` property.
+- A `dev` command will be added to the script unless it already exists.
+ - `"dev": "browser-sync start -s www/ --watch --port 8080 --ui-port 8081"`
+- `Browser-sync` and `Cordova` will be added as `devDependencies`.
+
+**Transpile Projects**
+
+The `package.json` will be modified with the following changes:
+
+- `monaca:preview`, `monaca:transpile` and `monaca:debug` commands will be added to the `script` property.
+- `dev`, `build`, and `watch` commands will be added to the script unless they already exist.
+- Required packages including `Webpack` and `Cordova` will be added as `devDependencies`.
+
+{{<highlight javascript>}}
+$ monaca update [options]
+{{</highlight>}}
+
+**Options**
+
+- `--force`: Accept default.
+- `--createPackageJson`: Create a basic package.json file with name and description for project doesn't have `package.json` file.
+
+**Example**
+
+Here is an example of how to use this command:
+
+{{<highlight javascript>}}
+$ monaca update
+$ monaca update --force --createPackageJson
+{{</highlight>}}
+
+## monaca init
+
+This command is available from Monaca CLI 3.x. Initialize projects created using other CLI tool to be able to execute it with Monaca (Monaca CLI, Monaca Cloud IDE, Monaca Localkit). The following resources will be added to the project.
+
+- `www/components`: Monaca loaders needed to use the GUI page to include CSS/JavaScript libraries into the project.
+- `config.xml`: global configuration file that controls many aspects of a cordova application's behavior.
+- `res`: Android, iOS and Window Icons and Splashes (users can remove it after the init process).
+- `cordova`: Cordova 7.1 is installed as a dev dependency in case the project does not have it.
+- `.monaca/project_info.json`: A JSON file with some information such as cordova version and framework_version.
+
+{{<highlight javascript>}}
+$ monaca init
+{{</highlight>}}
+
+**Example**
+
+Here is an example of how to use this command:
+
+{{<highlight javascript>}}
+$ monaca init
 {{</highlight>}}
 
 ## monaca signup
@@ -329,20 +390,15 @@ $ monaca download
 
 Starts a local web server that serves the `www` assets. The command will
 watch the file system for changes and reload the browser when a change
-occurs.
+occurs. It will execute `npm run monaca:preview` defined in package.json.
 
 {{<note>}}
     For transpilable projects, <code>monaca preview</code> command will transpile the project in memory before launching the previewer. Additionally, if the preview is still running and you make a change, the transpile process should be triggered and the previewer will be served with the new files.
 {{</note>}}
 
 {{<highlight javascript>}}
-$ monaca preview [options]
+$ monaca preview
 {{</highlight>}}
-
-**Options**
-
-- `--port`, `-p`: HTTP port to listen to (default value is 8000)
-- `--no-open`: Starts a local web server without opening a browser.
 
 **Example**
 
@@ -355,38 +411,13 @@ Navigate to your project folder and use `monaca preview` command. Then, a browse
     In order to stop <code>monaca preview</code> process, press <code>Ctrl+c</code>.
 {{</note>}}
 
-## monaca demo
-
-Starts a local web server that serves the `www` assets on special views
-for Android and iOS simultaneously. The file-system is watched for
-changes and the browser is reloaded when a change occurs.
-
-{{<highlight javascript>}}
-$ monaca demo [options]
-{{</highlight>}}
-
-**Options**
-
-- `--port`, `-p`: Port number (default is 8000)
-    
-**Example**
-
-Navigate to your project folder and use `monaca demo` command. Then, a browser will be opened running your project.
-
-{{<highlight javascript>}}
-$ monaca demo
-$ monaca demo -p 8001
-{{</highlight>}}
-
-{{<figure src="/images/monaca_cli/manual/cli_commands/monaca_demo.png">}}
-
 ##  monaca debug
 
 Debugs one or more applications on a device and receives code changes
 instantly. This command starts a web server for Monaca Debugger to
 connect to. It also starts broadcasting messages to tell debuggers in
 the local network to connect to it. When a debugger is connected, it
-will send file system changes to the debugger.
+will send file system changes to the debugger. It will execute `npm run monaca:debug` defined in package.json.
 
 {{<note>}}
     For transpilable projects, <code>monaca debug</code> command will transpile the project before serving the files to Monaca Debugger. Additionally, if the debug is still running and you make a change, the transpile process should be triggered and the debugger will be served with the new files.
@@ -429,19 +460,12 @@ network connection (see the screenshots). Otherwise, please refer to [Fail to Pa
 
 ## monaca transpile
 
-Transpiles projects that are transpilable such as ReactJS, VueJS and Angular2
-projects. For transpilable projects, the transpiling process is
-automatically included in some commands such as `monaca upload`,
-`monaca preview`, `monaca debug` and `monaca remote build`.
+Transpiles projects that are transpilable such as ReactJS, VueJS and Angular
+projects. It will execute `npm run monaca:transpile` defined in package.json.
 
 {{<highlight javascript>}}
-$ monaca transpile [options]
+$ monaca transpile
 {{</highlight>}}
-
-**Options**
-
-- `--generate-config`: Creates transpile configuration files for transpilable projects, in case they are missing.
-- `--install-dependencies`: Installs the missing dependencies needed for transpiling.
     
 **Example**
 
@@ -484,30 +508,6 @@ $ monaca config proxy --reset
 $ monaca config endpoint
 $ monaca config endpoint my.endpoint.com
 $ monaca config endpoint --reset
-{{</highlight>}}
-
-## monaca reconfigure
-
-Generates default project configurations and files. Running it without
-arguments will generate everything.
-
-{{<highlight javascript>}}
-$ monaca reconfigure [options]
-{{</highlight>}}
-
-**Options**
-
-- `--transpile`: Generates transpile configuration files (for both dev and prod).
-- `--dependencies`: Installs required build dependencies.
-- `--components`: Generates `components` folder.
-
-**Example**
-
-Navigate to your transpilable project folder and try `monaca reconfigure` command with various parameters.
-
-{{<highlight javascript>}}
-$ monaca reconfigure
-$ monaca reconfigure --transpile --components
 {{</highlight>}}
 
 ## monaca plugin

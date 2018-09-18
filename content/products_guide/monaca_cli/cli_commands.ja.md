@@ -8,6 +8,8 @@ aliases: /ja/monaca_cli/manual/cli_commands
 |---------|----------------|
 | [monaca login](#monaca-login) |	Monaca へのサインインします。|
 | [monaca logout](#monaca-logout) |	Monaca からサインアウトします。|
+| [monaca update](#monaca-update) |	CLI 2.x で作成したプロジェクトを最新の Monaca プロジェクト構成に更新します。 |
+| [monaca init](#monaca-init) |	他の CLI ツールを使用して作成したプロジェクトを初期化して、Monaca で実行できるようにします。 |
 | [monaca signup](#monaca-signup) |	Monaca のアカウント登録を行います。|
 | [monaca create](#monaca-create) |	テンプレートを使用して、ローカルに Monaca プロジェクトを新規作成します。|
 | [monaca clone](#monaca-clone) | Monaca クラウドからプロジェクトをクローンします。|
@@ -18,11 +20,9 @@ aliases: /ja/monaca_cli/manual/cli_commands
 | [monaca remote build](#monaca-remote-build) |	Monaca クラウド上で、プロジェクトをリモートビルドします。|
 | [monaca remote config](#monaca-remote-config) | Monaca クラウド上で、プロジェクト設定を開きます。|
 | [monaca preview](#monaca-preview) | ローカル上で Web サーバーを起動させます。|
-| [monaca demo](#monaca-demo) |	ブラウザ上で iOS と Android 用のプレビューを行います。|
 | [monaca debug](#monaca-debug) | Monaca デバッガー上でプロジェクトを実行します。|
 | [monaca transpile](#monaca-transpile) | ソースコードをコード変換 ( トランスパイル ) します。| 
 | [monaca config](#monaca-config) |	Monaca CLI の設定内容を管理できます。| 
-| [monaca reconfigure](#monaca-reconfigure) | 設定ファイルを再作成します。|
 | [monaca plugin](#monaca-plugin) |	Cordova プラグインを管理します。 |
 | [monaca docs](#monaca-docs) |	Monaca CLI、Onsen UI、チュートリアルを表示します。|
 
@@ -66,6 +66,67 @@ $ monaca logout
 Signing out from Monaca Cloud...
 You have been signed out.
 Removed Monaca Debugger pairing information.
+{{</highlight>}}
+
+## monaca update
+
+このコマンドは、Monaca CLI 3.x から利用できます。 Monaca CLI 2.x で作成した旧プロジェクトを更新するために使用されます。
+
+**非トランスパイル プロジェクト**
+
+`package.json` には、以下の設定が追加されます。
+
+- `monaca:preview` コマンドが、`script` プロパティに追加されます。
+- `dev` コマンドが存在していない場合は、以下のコマンドが `script` プロパティに追加されます。
+ - `"dev": "browser-sync start -s www/ --watch --port 8080 --ui-port 8081"`
+- `browser-sync` と `bordova`が、`devDependencies` として追加されます。
+
+**トランスパイル プロジェクト**
+
+`package.json` には、以下の設定が追加されます。
+
+- `monaca:preview`、`monaca:transpile`、`monaca:debug` コマンドが、`script` プロパティに追加されます。
+- `dev`、`build`、`watch` コマンドが存在していない場合は、`script` プロパティに追加されます。
+- `webpack` と `cordova` を含む必須パッケージが、`devDependencies`として追加されます。
+
+{{<highlight javascript>}}
+$ monaca update [options]
+{{</highlight>}}
+
+**Options**
+
+- `--force`: デフォルト設定で実行します。
+- `--createPackageJson`: プロジェクトに `package.json`ファイルがない場合は、名前と説明を含む基本的な package.json ファイルを作成します。
+
+**Example**
+
+このコマンドの使用例です。
+
+{{<highlight javascript>}}
+$ monaca update
+$ monaca update --force --createPackageJson
+{{</highlight>}}
+
+## monaca init
+
+このコマンドは、Monaca CLI 3.x から利用できます。 Monaca（ Monaca CLI、Monaca Cloud IDE、Monaca Localkit ）で実行できるように、他の CLI ツールを使用して作成したプロジェクトを初期化します。 以下のリソースがプロジェクトに追加されます。
+
+- `www/components`: JS/CSS コンポーネント用フォルダーとリソースファイル。
+- `config.xml`: Cordova アプリ用グローバル設定ファイル。
+- `res`: Android、iOS、Window 用アイコンとスプラッシュ画像用フォルダーとリソースファイル。
+- `cordova`: Cordova 7.1 では、プロジェクトの package.json に cordova の設定がない場合は、devDependencies としてインストールされます。
+- `.monaca/project_info.json`: Cordova バージョンとフレームワークバージョンなどの情報を含む JSON ファイル。
+
+{{<highlight javascript>}}
+$ monaca init
+{{</highlight>}}
+
+**Example**
+
+このコマンドの使用例です。
+
+{{<highlight javascript>}}
+$ monaca init
 {{</highlight>}}
 
 ## monaca signup
@@ -328,7 +389,7 @@ $ monaca download
 
 ローカル上で Web サーバーを起動後、ブラウザー上でアプリを起動させます (
 `www` 下のアセットがブラウザー上で使用できる状態になります
-)。このコマンドを実行すると、ファイルシステム上のファイルを監視し、ファイルが変更された場合には、ブラウザー上にも即反映させます。
+)。このコマンドを実行すると、ファイルシステム上のファイルを監視し、ファイルが変更された場合には、ブラウザー上にも即反映させます。package.json で定義された `npm run monaca:preview` を実行します。
 
 {{<note>}}
 トランスパイルが必要なプロジェクトに関しては、<code>monaca preview</code>
@@ -336,13 +397,8 @@ $ monaca download
 {{</note>}}
 
 {{<highlight javascript>}}
-$ monaca preview [options]
+$ monaca preview
 {{</highlight>}}
-
-**オプション**:
-
-- `--port` または `-p`: HTTP の待ち受けポート番号 ( デフォルトは、`8000` )
-- `--no-open`: ローカル上で Web サーバーを起動させます ( ブラウザーは起動させません )。
 
 **【具体例】**
 
@@ -355,35 +411,11 @@ $ monaca preview [options]
     <code>monaca preview</code> の処理を停止する場合には、<code>Ctrl+c</code> を押します。
 {{</note>}}
 
-## monaca demo
-
-`www` 配下のアセットを Android と iOS へ同時に提供するローカル Web
-サーバーを開始します。ファイルシステムの変更が監視され、ファイルが変更された場合には、ブラウザー上にも即反映されます。
-
-{{<highlight javascript>}}
-$ monaca demo [options]
-{{</highlight>}}
-
-**オプション**
-
-- `--port` または `-p`: HTTP の待ち受けポート番号 ( デフォルトは、`8000` )
-    
-**【具体例】**
-
-プロジェクトフォルダーへ移動して、`monaca demo` コマンドを実行します。実行後、ブラウザーが起動してプロジェクトが実行されます。
-
-{{<highlight javascript>}}
-$ monaca demo
-$ monaca demo -p 8001
-{{</highlight>}}
-
-{{<figure src="/images/monaca_cli/manual/cli_commands/monaca_demo.png">}}
-
 ## monaca debug
 
 端末上でアプリをデバッグするためのコマンドです。ローカルで行った、ファイルへの変更は、デバッガー上にも即反映されます。このコマンドを実行すると、Web
 サーバーが起動され、Monaca
-デバッガーからの接続を待ち受けます。また、同時に、対象のローカルネットワーク上に接続されているデバッガーに対して、接続するか確認するメッセージが送信されます。
+デバッガーからの接続を待ち受けます。また、同時に、対象のローカルネットワーク上に接続されているデバッガーに対して、接続するか確認するメッセージが送信されます。package.json で定義された `npm run monaca:debug` を実行します。
 
 {{<note>}}
 トランスパイルが必要なプロジェクトに関しては、<code>monaca debug</code>
@@ -424,18 +456,12 @@ $ monaca debug
     
 ## monaca transpile
 
-プロジェクトをコード変換 ( トランスパイル / Transpile ) します。コード変換可能なプロジェクトには、React.js、VueJS、Angular2 プロジェクトがあります。なお、コード変換可能なプロジェクトに関しては、各種コマンド
-( `monaca upload`、 `monaca preview`、 `monaca debug`、 `monaca remote build` ) の実行時に、自動でコード変換が行われます。
+ReactJS、VueJS、Angular プロジェクトなど、トランスパイルが必要なプロジェクトをトランスパイルします。package.json で定義された `npm run monaca:transpile` を実行します。
 
 {{<highlight javascript>}}
-$ monaca transpile [options]
+$ monaca transpile
 {{</highlight>}}
 
-**オプション**
-
--   `--generate-config`: コード変換用の設定ファイルが存在しない場合、これらのファイルを作成します。
--   `--install-dependencies`: コード変換時に必要となる依存関係をインストールします。
-    
 **【具体例】**
 
 対象のプロジェクトフォルダーへ移動して、`monaca transpile` コマンドを実行します ( コード変換が可能なプロジェクトであること )。実行後、コード変換が実行されます。
@@ -477,31 +503,6 @@ $ monaca config proxy --reset
 $ monaca config endpoint
 $ monaca config endpoint my.endpoint.com
 $ monaca config endpoint --reset
-{{</highlight>}}
-
-## monaca reconfigure
-
-設定ファイルを復旧 ( 再作成 )
-します。オプションを指定しない場合、該当するファイルのすべてを復旧します。該当するファイルに関しては、下記の
-「 オプション 」 をご確認ください。
-
-{{<highlight javascript>}}
-$ monaca reconfigure [options]
-{{</highlight>}}
-
-**オプション**:
-
-- `--transpile`: コード変換用の設定ファイルを再作成/復旧します ( webpack.dev.config ファイルと webpack.prod.config ファイルが対象 )。
-- `--dependencies`: 依存関係のあるパッケージをインストールします。
-- `--components`: `components` フォルダーを再作成/復旧します。
-
-**【具体例】**
-
-プロジェクトフォルダーへ移動して、**オプション**を組み合わせて、`monaca reconfigure` コマンドを実行してみましょう ( 対象のプロジェクトは、コード変換が可能なプロジェクトであること )。
-
-{{<highlight javascript>}}
-$ monaca reconfigure
-$ monaca reconfigure --transpile --components
 {{</highlight>}}
 
 ## monaca plugin
