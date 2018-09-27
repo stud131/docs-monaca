@@ -16,7 +16,7 @@
     div#top-bar > img {
         float: left;
         margin: 0;
-        padding: 10px 0 0 20px;   
+        padding: 13px 0 0 20px;   
     }
     
     div#top-bar > img:hover {
@@ -24,7 +24,14 @@
         opacity: 0.8;
     }
     
+    .header-logo {
+      width: 15vw;
+    }
+
     @media only all and (max-width: 770px) {
+        .header-logo { 
+          width: auto;
+        }
         nav#top-bar {
             display: none;
         }
@@ -299,7 +306,7 @@
     <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
       <i class="fa fa-bars"></i>
     </a>
-    <img src="/images/common/header_logo_docs.png">
+    <img src="/images/common/header_logo_docs.png" class="header-logo">
     <nav id="top-bar">
         <ul>
             <li><a href="https://teratail.com/tags/monaca">
