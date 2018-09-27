@@ -9,4 +9,4 @@ Released new Monaca CLI and Localkit, along with the updates to Monaca Cloud IDE
 
 #### Sep 11, 2018
 
-PWA build feature is released with the deployment options to Firebase. This feature is experimental, and your feedback is greatly appreciated.
+PWA build feature is released with the deployment options to Firebase. This feature is experimental, and your feedback is greatly appreciated. For details, see [here](/en/products_guide/monaca_ide/build/build_pwa/)

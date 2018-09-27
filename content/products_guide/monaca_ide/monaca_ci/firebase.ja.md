@@ -50,3 +50,7 @@ Firebaseへの配信は、[Firebase Hosting機能](https://firebase.google.com/d
 3. ビルド結果画面からデプロイを実行します。画面下部に登録したデプロイサービスが表示されますので、クリックし配信を開始します。
 
     {{<img src="/images/monaca_ide/manual/monaca_ci/firebase/start_deploy.png" width="650">}}
+
+参考ページ  
+
+  - [PWA アプリのビルド](/ja/products_guide/monaca_ide/build/build_pwa/)

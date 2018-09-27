@@ -12,3 +12,4 @@ Monaca Cloud IDEのアップデートとともに、新しいMonaca CLIとLocalk
 #### 2018年 09月 11日
 
 PWAビルド機能は、デプロイサービスのFirebase機能と同時にリリースされます。この機能はベータ版としてリリースされています。
+詳細は[こちら](/ja/products_guide/monaca_ide/build/build_pwa/)を参照してください。

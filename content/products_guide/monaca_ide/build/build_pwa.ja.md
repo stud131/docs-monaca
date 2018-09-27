@@ -81,3 +81,8 @@ weight: 20
 
 3.  ビルドが完了するまで、しばらく待ちます。ビルドが成功した場合には、次のような画面が表示されます。ビルドの完了後、ダウンロードやデプロイサービスでの配布ができます。
     {{<img src="/images/monaca_ide/manual/build/pwa/build_result.png">}}
+
+
+参考ページ  
+
+  - [Firebase への配信](/ja/products_guide/monaca_ide/monaca_ci/firebase/)
