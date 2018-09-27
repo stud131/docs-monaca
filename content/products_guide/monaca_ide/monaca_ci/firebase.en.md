@@ -3,11 +3,10 @@ title: Deploy to Firebase
 weight: 30
 ---
 
-Deploy to Firebase uses [Firebase Hosting](https://firebase.google.com/docs/hosting/quickstart).  
 Deploy to Firebase is available only for PWA-built applications.
 
 ## Preparation
-As preparation for deoloy, you need to prepare `project ID` and` API token `.
+For deployment, you need to prepare `project ID` and` API token `.
 
 ### How to get Project ID
 
@@ -33,7 +32,7 @@ You are ready to add Firebase infomation to Monaca. Please do as follows:
 
 3.  Select `Firebase` and fill in the required information such as
     
-    -   `Config Alias`: a unique identifier for each service
+    -   `Config Alias`: a unique identifier for each service.
     -   `API Token`: API Token provided by Firebase.
     -   `Project ID`: Project ID displayed on Firebase console.
 
@@ -41,12 +40,12 @@ You are ready to add Firebase infomation to Monaca. Please do as follows:
 
 ## Start Deployment
 
-Using the registered deployment service, We can start to deploy built app to Firebase.
+Using the registered deployment service, We can start deploying the build app to Firebase.
 
 1. Please refer to [Building for PWA](/en/products_guide/monaca_ide/build/build_pwa/) for the build procedure.
 
 2. After the build is completed, navigate to the build result page.
 
-3. Execute the deployment from the build result page. Since the deploy service registered show up at the bottom of the page, click to start distribution.
+3. Execute the deployment from the build result page. Since the registered deployment services show up at the bottom of the page, click any services of your choices to start the distribution process.
 
     {{<img src="/images/monaca_ide/manual/monaca_ci/firebase/start_deploy.png" width="650">}}
