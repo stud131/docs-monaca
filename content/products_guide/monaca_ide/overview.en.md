@@ -197,7 +197,7 @@ The *Share* function allows you to:
         function. Then, two or more people can open the same project in
         different Monaca Cloud IDEs. However, if there is any conflict
         while updating the project, the previous version of the project
-        will be overwritten (but it still remains in the file history).
+        will be overwritten.
     2.  Another way is to set up a version control system and do the
         local development using [Monaca Localkit](/en/products_guide/monaca_localkit/) or
         [Monaca CLI](/en/products_guide/monaca_cli/). This requires a higher
