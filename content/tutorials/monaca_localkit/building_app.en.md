@@ -93,9 +93,9 @@ more information about other types of build, please refer to [Types of Build]({{
 
 There are 3 ways to install the debug built app such as:
 
-1.  downloading the built app and using iTunes to install the built app on your iOS device
-2.  installing via QR code
-3.  installing via [configured deployment services](/en/products_guide/monaca_ide/monaca_ci/supported_services).
+1.  Download the built app and use Apple Configurator 2 to install the built app on your iOS device. (Mac Only)
+2.  Install via QR code.
+3.  Install via [cofigured deployment services](/en/products_guide/monaca_ide/monaca_ci/supported_services).
 
 ##  Building a Monaca App for Android
 
