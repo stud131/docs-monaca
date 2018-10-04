@@ -6,7 +6,9 @@ theme = "monaca"
 disablePathToLower = true 
 
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = true 
+
+enableRobotsTXT = true
 
 [params]
 disableNavChevron = true
