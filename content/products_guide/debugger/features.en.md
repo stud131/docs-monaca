@@ -77,7 +77,6 @@ documentations:
 
 - [Pairing Monaca Debugger with Monaca Localkit](/en/products_guide/monaca_localkit/pairing_debugging)
 - [Pairing Monaca Debugger with Monaca CLI](/en/products_guide/monaca_cli/pairing_debugging)
-- [Pairing Monaca Debugger with Monaca for Visual Studio](/en/products_guide/monaca_vs/pairing_debugging)
 
 {{<figure src="/images/debugger/manual/features/10.png" width="300">}}  
 

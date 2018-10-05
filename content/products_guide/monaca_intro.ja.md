@@ -66,19 +66,6 @@ Monaca CLI は、コマンドライン形式のインターフェイスです。
 を介して、Monaca がクラウドで提供しているサービスを利用できます。CLI
 を使用して、たとえば、デバッガーとの接続、インスペクタとの連携、プロジェクトの作成、プロジェクトのリモートビルドなど、多岐にわたる処理を行えます。また、クラウド上に保存されているプロジェクトをローカルにインポートできます。このインポート機能は、クラウドからローカルへ環境を切り替える場合に有用です。[詳細はこちら](../monaca_cli)
 
-### Monaca for Visual Studio
-
-{{<warning>}}
-    Monaca for Visual Studio の開発及びメンテナンスは終了する予定です。現在、Visual Studio Code で Monaca アプリを開発するための機能拡張を開発しています。詳細につきましては、サイトのお知らせ、ニュースレター等で別途お知らせ致します。
-{{</warning>}}
-
-Monaca for Visual Studio は、Monaca
-が提供する、もう一つのローカル環境用の開発ツールです。こちらのツールを使用すれば、開発環境として、Visual
-Studio を利用して、アプリを開発できます。また、Visual Studio Community
-のユーザーであれば、無料で使用できます。[詳細はこちら](../monaca_vs)
-
-{{< figure src="/images/monaca_intro/vs.png" title="Monaca for Visual Studio の画面" >}}
-
 ## Monaca デバッガー
 
 上述のような多様な開発環境の提供に加えて、Monaca では、Monaca
@@ -98,7 +85,7 @@ Monaca 使用時のデバッグ方法の概要を、表と図で記します ( �
     <tr>
         <th width="22%">Monaca 提供の開発ツール</th>
         <th>Monaca クラウド IDE</th>
-        <th width="38%">Monaca CLI/Monaca Localkit/Monaca for Visual Studio</th>
+        <th width="38%">Monaca CLI/Monaca Localkit</th>
     </tr>
     <tr>
         <td><b>必要事項</b></td>

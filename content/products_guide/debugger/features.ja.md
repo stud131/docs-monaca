@@ -80,7 +80,6 @@ Locakit または Monaca CLI
 
 - [Monaca Localkit と Monaca デバッガーのペアリング方法](/ja/products_guide/monaca_localkit/pairing_debugging)
 - [Monaca CLI  と Monaca デバッガーのペアリング方法](/ja/products_guide/monaca_cli/pairing_debugging)
-- [Monaca for Visual Studio と Monaca デバッガーのペアリング方法](/ja/products_guide/monaca_vs/pairing_debugging)
 
 {{<figure src="/images/debugger/manual/features/10.png" width="300">}}  
 

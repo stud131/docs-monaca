@@ -5,7 +5,7 @@ aliases: /ja/debugger/manual/debug
 ---
 
 Monaca 提供の各種開発ツール ( Monaca クラウド IDE、Monaca
-Localkit、Monaca CLI、Monaca for Visual Studio ) と Monaca
+Localkit、Monaca CLI) と Monaca
 デバッガーの連携方法に関して、ここでは解説します。
 
 - [Monaca クラウド IDE と Monaca デバッガーとの連携 ( Web 経由 )](#monaca-クラウド-ide-と-monaca-デバッガーとの連携-web-経由)
@@ -200,7 +200,7 @@ USB デバッグ使用時に利用できるデバッグ方法は、次のとお�
 ## Monaca 提供のローカル環境用の開発ツールと Monaca デバッガーとの連携
 
 Monaca 提供のローカル環境用の開発ツールには、Monaca CLI、Monaca
-Localkit、Monaca for Visual Studio があります。
+Localkit があります。
 
 ### USB デバッグの事前準備
 
@@ -250,12 +250,11 @@ Localkit、Monaca for Visual Studio があります。
 
 1.  Monaca デバッガーとホスト PC をペアリングします。ホスト PC
     とは、Monaca 提供のローカル環境用の開発ツール ( Monaca
-    Localkit、Monaca CLI、Monaca for Visual Studio ) を実行している PC
+    Localkit、Monaca CLI ) を実行している PC
     を指します。各開発ツール上でのペアリング方法は、次のリンク先をご確認ください。
 
     -   [Monaca Localkit 上でのペアリング方法](/ja/products_guide/monaca_localkit/pairing_debugging)
     -   [Monaca CLI 上でのペアリング方法](/ja/products_guide/monaca_cli/pairing_debugging)
-    -   [Monaca for Visual Studio 上でのペアリング方法](/ja/products_guide/monaca_vs/pairing_debugging)
 
 2.  実行するプロジェクトを選択します。
 3.  下のスクリーンショット内で、赤色で示された、デバッガーのメニューをクリックします。

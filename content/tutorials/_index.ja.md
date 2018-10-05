@@ -24,12 +24,6 @@ weight: 20
             <p>Monaca CLI のチュートリアルでは、プロジェクトの作成からアプリのデプロイまでを行います。</p>
         </a>
     </div>
-    <div class="item">
-        <a href="monaca_vs">
-            <h3>Monaca for Visual Studio</h3>
-            <p>Monaca for Visual Studio のチュートリアルでは、プロジェクトの作成からアプリのデプロイまでを行います。</p>
-        </a>
-    </div>
 </div> 
 
 ## Cordova プラグイン チュートリアル

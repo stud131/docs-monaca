@@ -187,10 +187,6 @@ Monaca デバッガーと Monaca クラウド IDE の接続後、このパネル
     2.  2つ目の協同開発方法として、[Monaca Localkit](/ja/products_guide/monaca_localkit)
         または [Monaca CLI](/ja/products_guide/monaca_cli)
         を使用して、ローカルで開発を行い、バージョン管理システム上で、共有を行います。バージョン管理システムなどの知識が必要になりますが、協同開発の方法としては、導入しやすいかと思います。
-    3.  3つ目の協同開発方法として、[Monaca for Visual Studio](/ja/products_guide/monaca_vs)
-        を使用します。この場合、Visual Studio に実装されている 「 チームエクスプローラー 」
-        機能を使用して、ファイルを管理します。Git、TFS、Visual Studio Online
-        など、サポートされているバージョン管理システムであれば、併用もできます。
 -   プロジェクトを協同で検証。参加メンバーには、権限として、「 テスター 」 を割り当てる必要があります。
 
 {{<note>}}

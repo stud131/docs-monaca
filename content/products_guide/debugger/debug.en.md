@@ -6,10 +6,18 @@ aliases: /en/debugger/manual/debug
 
 In this page, we will describe how to use Monaca Debugger with Monaca
 Cloud IDE and other Monaca local development tools such as Monaca
-Localkit, Monaca CLI and Monaca for Visual Studio:
+Localkit and Monaca CLI :
 
 - [Monaca Debugger with Monaca Cloud IDE](#monaca-debugger-with-monaca-cloud-ide)
+  - [Monaca Debug Panel](#monaca-debug-panel)
+    - [Console Debugging](#console-debugging)
+    - [DOM Inspection](#dom-inspection)
+  - [USB Debugging](#usb-debugging)
+    - [Safari Remote Debugging (for iOS and Mac only)](#safari-remote-debugging-for-ios-and-mac-only)
+    - [Chrome Remote Debugging (for Android with Google Chrome Browser)](#chrome-remote-debugging-for-android-with-google-chrome-browser)
 - [Monaca Debugger with Monaca Local Development Tools](#monaca-debugger-with-monaca-local-development-tools)
+  - [Prerequisite for USB Debugging with Monaca](#prerequisite-for-usb-debugging-with-monaca)
+  - [USB Debugging with Monaca Local Development Tools](#usb-debugging-with-monaca-local-development-tools)
 
 {{<note>}}
     Before starting, please install Monaca Debugger on your device or emulator. Please refer to {{<link href="../installation" title="How to Install Monaca Debugger">}} for more information.
@@ -178,8 +186,7 @@ device you use:
 
 ##  Monaca Debugger with Monaca Local Development Tools
 
-Monaca local development tools are Monaca CLI, Monaca Localkit and
-Monaca for Visual Studio.
+Monaca local development tools are Monaca CLI, and Monaca Localkit.
 
 ### Prerequisite for USB Debugging with Monaca
 
@@ -228,12 +235,11 @@ Monaca for Visual Studio.
 In order to start this debugging, please do as follows:
 
 1.  Pair Monaca Debugger with the host PC (running Monaca local tool
-    such as Monaca Localkit, Monaca CLI or Monaca for Visual Studio).
+    such as Monaca Localkit, Monaca CLI).
     You may want to refer to:
 
     -   [Pairing in Monaca Localkit](/en/products_guide/monaca_localkit/pairing_debugging)
     -   [Pairing in Monaca CLI](/en/products_guide/monaca_cli/pairing_debugging)
-    -   [Pairing in Monaca for Visual Studio](/en/products_guide/monaca_vs/pairing_debugging)
 
 2.  Choose a project to run.
 3.  Click on the debugger menu as shown below:

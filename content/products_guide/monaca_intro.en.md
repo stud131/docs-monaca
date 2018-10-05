@@ -65,22 +65,6 @@ features the debugger connection, inspector integration, project
 creation and remote building. You can also import projects that exist in
 the cloud when you want to switch your environment to local. [Read more](../monaca_cli/)
 
-
-### Monaca for Visual Studio
-
-{{<warning>}}
-Monaca for Visual Studio has been discontinued and will no longer be supported or maintained. We are developing a new extension that will be for Visual Studio Code. We will inform you of the release date on our site and mailing list.
-{{</warning>}}
-
-Monaca for Visual Studio is another local development tool provided by
-Monaca. With this tool, Monaca users are able to develop an app using
-Visual Studio as the development environment. It’s free if you are a
-Visual Studio Community user. [Read more](../monaca_vs/)
-
-
-{{< figure src="/images/monaca_intro/vs.png" title="Overview of Monaca for Visual Studio" >}}
-
-
 ## Monaca Debugger
 
 On top of the flexibility in the development environment, Monaca also
@@ -103,7 +87,7 @@ refer to [Debugging Monaca Apps](/en/products_guide/debugger/debug/).
     <tr>
         <th width="22%">Monaca Development Tools</th>
         <th>Monaca Cloud IDE</th>
-        <th width="38%">Monaca CLI/Monaca Localkit/Monaca for Visual Studio</th>
+        <th width="38%">Monaca CLI/Monaca Localkit</th>
     </tr>
     <tr>
         <td><b>Requirement</b></td>

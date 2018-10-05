@@ -53,8 +53,7 @@ Monaca デバッガーと ホスト PC
 Monaca デバッガーと ホスト PC を接続する場合、IP
 アドレスとポート番号が必要です。IP アドレスは、ホスト PC
 の識別に使用するもので、ポート番号 ( デフォルトでは、8001 ) は、Monaca
-提供のローカル環境用の開発ツール ( Monaca CLI、Monaca Localkit、Monaca
-for Visual Studio など )
+提供のローカル環境用の開発ツール ( Monaca CLI、Monaca Localkit など )
 側が通信に使用するものです。また、ポートは、未使用であること (
 競合していないこと
 )、開放されていることが必要です。これ以外の場合、通信は確立できません。

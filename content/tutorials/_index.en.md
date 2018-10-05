@@ -24,12 +24,6 @@ weight: 20
             <p>Step-by-step tutorials for Monaca CLI starting from creating a project to deploying your app</p>
         </a>
     </div>
-    <div class="item">
-        <a href="monaca_vs">
-            <h3>Monaca for Visual Studio</h3>
-            <p>Step-by-step tutorials of Monaca for Visual Studio starting from creating a project to deploying your app</p>
-        </a>
-    </div>
 </div> 
 
 ## Plugins Tutorials 

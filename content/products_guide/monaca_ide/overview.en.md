@@ -202,11 +202,6 @@ The *Share* function allows you to:
         local development using [Monaca Localkit](/en/products_guide/monaca_localkit/) or
         [Monaca CLI](/en/products_guide/monaca_cli/). This requires a higher
         skill set, but more collaborative.
-    3.  The last option is to use
-        [Monaca for Visual Studio](/en/products_guide/monaca_vs/). In this
-        case, files can be managed by Visual Studio's built-in Team
-        Explorer function. Git, TFS, Visual Studio Online and other
-        supported version control system can be used in this case.
 -   let multiple people to test the project (members are assigned as
     Testers).
 
