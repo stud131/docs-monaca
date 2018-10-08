@@ -90,17 +90,6 @@ top of the page of Monaca Cloud IDE.
 
 For the changes to the Splash screen, you can configure from the `Splash Screen Settings` in [Configure iOS App Settings](/en/products_guide/monaca_ide/build/ios/build_ios/#configure-ios-app-settings) and [Configure Android App](/en/products_guide/monaca_ide/build/build_android/#step-1-configure-android-app) for iOS and Android, respectively.
 
-## How do I check my storage usage, backend, API requests and number of push notifications?
-
-1.  Go to [User Dashboard](https://monaca.mobi/en/dashboard).
-2.  At the bottom of the page, please click on `Manage Account and Plan`.
-
-    {{<img src="/images/faq/1.png">}}
-
-3.  Then, the following page will appear.
-
-    {{<img src="/images/faq/2.png">}}
-
 ## Splash screen is not showing on Monaca Debugger.
 
 Splash screen can only appear properly on a build app. It may not appear
@@ -130,7 +119,3 @@ resetting Monaca Localkit as follows:
 {{<note>}}
     Resetting Monaca Localkit will clear the project list that had been imported to Monaca Localkit earlier. Therefore, you need to import all projects again.
 {{</note>}}
-
-## My storage usage information is not updated.
-
-Usually, it will take up to `24 hours` for the storage usage information to be updated.
