@@ -16,6 +16,7 @@ The followings are pre-configured third-party Cordova plugins provided
 by Monaca:
 
 - [BarcodeScanner Plugin](barcode_scanner)
+- [PhoneGap BarcodeScanner Plugin](phonegap_plugin_barcodescanner)
 - [Cordova Custom Config Plugin](custom_config)
 - [DatePicker Plugin](datepicker)
 - [Share Plugin (Android)](share)
