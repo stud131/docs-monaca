@@ -128,22 +128,22 @@ Onsen UIアプリではSPA (シングルページアプリケーション)
     <link rel="stylesheet" href="css/style.css">
     <script>
       ons.bootstrap();
-      var nend  ( ネンド広告 )_params = {"media":xxxx,"site":xxxx,"spot":xxxx,"type":xxxx,"oriented":xxxx};
+      var nend_params = {"media":xxxx,"site":xxxx,"spot":xxxx,"type":xxxx,"oriented":xxxx};
       ons.ready(function() {
-          var nend  ( ネンド広告 )OriginalElem = angular.element(document.querySelector('#nend  ( ネンド広告 )_wrapper'));
-          var nend  ( ネンド広告 )InjectElem1 = angular.element(document.querySelector('#new_nend  ( ネンド広告 )_wrapper'));
-          nend  ( ネンド広告 )InjectElem1.replaceWith(nend  ( ネンド広告 )OriginalElem.clone());
+          var nendOriginalElem = angular.element(document.querySelector('#nend_wrapper'));
+          var nendInjectElem1 = angular.element(document.querySelector('#new_nend_wrapper'));
+          nendInjectElem1.replaceWith(nendOriginalElem.clone());
       });
     </script>
   </head>
   <body>
     <ons-navigator var="myNavigator" page="page1.html"></ons-navigator>
-    <div id="nend  ( ネンド広告 )_wrapper"><script type="text/javascript" src="http://js1.nend  ( ネンド広告 ).net/js/nend  ( ネンド広告 )AdLoader.js"></script></div>
+    <div id="nend_wrapper"><script type="text/javascript" src="http://js1.nend.net/js/nendAdLoader.js"></script></div>
   </body>
 </html>
 
 <!-- page1.html -->
 <ons-page>
-  <div id="new_nend  ( ネンド広告 )_wrapper"></div>
+  <div id="new_nend_wrapper"></div>
 </ons-page>
 {{</highlight>}}
