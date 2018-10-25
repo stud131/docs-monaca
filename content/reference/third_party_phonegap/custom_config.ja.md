@@ -21,8 +21,36 @@ Android の両方に使用可 ) を使用すると、フック用のスクリプ
 ファイル内に、カスタマイズ用の preference または/および config-file
 ブロックを記述し、このスクリプト経由で、プラットフォーム側の設定に適用します。
 
-プラグインの有効化 ( Monaca 上での処理 )
-----------------------------------------
+## Custom Config プラグイン v5 の変更点
+
+Cordova 7以降では、Android プロジェクトの構造に後方互換性のない変更が導入されました。
+この変更をサポートするために、Custom Config プラグイン v5 がリリースされました。
+
+注意すべき事項は次のとおりです。
+
+1. Custom Config プラグイン v5 では、プロジェクトの Android プラットフォームのバージョンを検出し、正しいパスを使用する必要があります。
+
+2. `config.xml` でサポートされているすべてのカスタム設定要素には、 Custom Config プラグイン v5 で使用するためのプレフィックス `custom-` を付ける必要があります。
+    - `<config-file>` => `<custom-config-file>`
+    - `<preference>` => `<custom-preference>`
+    - `<resource>` => `<custom-resource>`
+    - これは、Android プラットフォーム v7 が、config.xml 内の `<config-file>` ブロックを解析しようとするためです。Custom Config プラグインが解析する `<config-file>` ブロックは、Cordova でも解析されるため、ビルドエラーが発生する可能性があります。(詳細は[こちら](https://github.com/dpa99c/cordova-custom-config/issues/135) を参照してください。)
+    - ただし、[プラグインの制御 ( preference を使用 )](#プラグインの制御-preference-を使用)は、`<preference>` として指定する必要があります。
+
+    {{<highlight xml>}}
+<preference name="cordova-custom-config-autorestore" value="true" />
+    {{</highlight>}}
+
+    - Custom Config プラグイン v5 では、Android プラットフォームが v7か、v6（またはそれ以下）かどうかを検出します。
+        - Android プラットフォーム v6 の場合、デフォルトではプレフィックスのないカスタム設定要素をサポートします。
+        - Android プラットフォーム v7 の場合、デフォルトではプレフィックスのないカスタム設定要素をサポートしません。
+        - `parse_unprefixed` プリファレンスを明示的に設定することによってオーバーライドできます。
+        
+        {{<highlight xml>}}
+<preference name="cordova-custom-config-parse_unprefixed" value="true" />
+        {{</highlight>}}
+
+## プラグインの有効化 ( Monaca 上での処理 )
 
 1.  Monaca クラウド IDE から {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} を選択します。
 
@@ -30,8 +58,7 @@ Android の両方に使用可 ) を使用すると、フック用のスクリプ
 
     {{<img src="/images/reference/third_party_phonegap/custom_config/1.png">}}
 
-設定
-----
+## 設定
 
 このプラグインには、実行ファイルのようなものはありません。代わりに、フック用のスクリプトを使用して、各プラットフォームの設定ファイルに対して、`config.xml`
 ファイル内に設定した preference を適用 ( 上書きまたは追加 )
@@ -49,8 +76,7 @@ preference を使用して、元に戻せるように設定することもでき
 <preference name="cordova-custom-config-autorestore" value="true" />
 {{</highlight>}}
 
-peference を使用したカスタマイズ設定
-------------------------------------
+## peference を使用したカスタマイズ設定
 
 preference は、`config.xml` ファイル内で、`<preference>`
 要素を使用し設定します。
@@ -71,8 +97,7 @@ preference を設定する場合には、次の点に、注意が必要です。
     は、プラットフォーム名が指定された `<platform>` 要素 ( 例 :
     name="ios-somepref" ) のブロック内に置きます。
 
-config-file を使用したカスタマイズ設定
---------------------------------------
+## config-file を使用したカスタマイズ設定
 
 `<config-file>`
 ブロックを使用すれば、プラットフォーム別のカスタマイズ設定 ( 群 )
@@ -104,12 +129,11 @@ config-file の設定時には、次の点に注意が必要です。
     内に定義されている要素が重複している場合、最後に定義されている要素が適用されます。ただし、`<uses-permission>`
     要素のように、`name` 属性の設定で一意に識別できる場合を除きます。
 
-Android
--------
+## Android
 
 Android では、このプラグインを使用してカスタマイズできる対象は、現在、`platforms/android/AndroidManifest.xml`
 内の設定だけです。Manifest ファイル内の詳細は、[アプリ マニフェスト ( 外部サイト )](http://developer.android.com/guide/topics/manifest/manifest-intro.html)
-をご確認ください。なお、Android 向けの設定は、`config.xml` ファイルの `<platform name=\"android\">` ブロック内に置きます。
+をご確認ください。なお、Android 向けの設定は、`config.xml` ファイルの `<platform name="android">` ブロック内に置きます。
 
 ### Android 向けの preference の設定方法
 
@@ -131,7 +155,7 @@ Android では、このプラグインを使用してカスタマイズできる
 内に定義されているデフォルトの設定を削除する場合には、`<preference>`
 要素に `delete=\"true\"` を設定します。たとえば、`config.xml`
 に次の設定を追加した場合、 `AndroidManifest.xml` 内の
-`<uses-permission android:name=\"android.permission.WRITE_CONTACTS\" />`
+`<uses-permission android:name="android.permission.WRITE_CONTACTS" />`
 を削除できます。
 
 {{<highlight xml>}}
@@ -302,13 +326,12 @@ Android 向けの設定のサンプルを、次に記します ( `config.xml` �
 </platform>
 {{</highlight>}}
 
-iOS
----
+## iOS
 
 iOS では、このプラグインを使用してカスタマイズできる対象は、現在、プロジェクトの
 plist ( `*-Info.plist`、config-file ブロックを使用 )、および、設定情報 (
 `project.pbxproj`、preference 要素を使用 ) です。なお、iOS
-向けの設定は、 `config.xml` ファイルの `<platform name=\"ios\">`
+向けの設定は、 `config.xml` ファイルの `<platform name="ios">`
 ブロック内に置きます。
 
 ### iOS 向けの preference の設定方法
@@ -332,7 +355,7 @@ plist ( `*-Info.plist`、config-file ブロックを使用 )、および、設�
 `XCBuildConfiguration` にも存在しない場合、指定した value とともに、各
 `XCBuildConfiguration` に key が追加されます。
 
-デフォルトでは、"Release" と "Debug" の両方の `XCBuildConfiguration`
+デフォルトでは、Release と Debug の両方の `XCBuildConfiguration`
 ブロックに value が適用されますが、`config.xml` の `<preference>`
 要素に、`buildType`
 属性を追加すれば、ビルドの種類を指定でき、ブロックを絞り込めます。この属性に指定できる値は、`debug`
@@ -608,3 +631,7 @@ preference を用意しています。各 preference の name には、他の na
     の場合、エラーが発生したときでも、設定情報の更新および `prepare`
     処理は、継続して行われます ( エラーがログに出力されます )。
 
+関連項目:
+
+- [基本プラグイン](../../cordova_7.1)
+- [Monaca 提供プラグイン](../../power_plugins)
