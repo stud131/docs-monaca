@@ -140,7 +140,7 @@ In this page, you can modify the usage of each license key:
 
 
 {{<note>}}
-    Only developers who are already belonged to the team can be assigned here. Otherwise, you will need to invite them to the team first. Please refer to {{<link title="Managing Administrator" href="#managing-administrator">}}
+    Only developers who are already belonged to the team can be assigned here. Otherwise, you will need to invite them to the team first. Please refer to {{<link title="managing developer" href="#managing-developer">}}
 {{</note>}}
 
 {{<figure src="/images/team_dashboard/modify_license.png" title="Modifying a license usage">}}
