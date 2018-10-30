@@ -9,11 +9,11 @@ Monaca には 2 種類のダッシュボードがあります。
 
 1. 開発者ダッシュボード：プロジェクトの開発や管理をするために、開発者アカウントで使用されます。
 
-    {{<figure src="/images/team_dashboard/developer_dashboard.png" title="開発者ダッシュボードの例">}}
+    {{<figure src="/images/team_dashboard/developer_dashboard_ja.png" title="開発者ダッシュボードの例">}}
 
 2. チームダッシュボード：開発チームおよび各種ライセンスやチケットを管理するために、管理者アカウントで使用されます。
 
-    {{<figure src="/images/team_dashboard/team_dashboard.png" title="チームダッシュボードの例">}}
+    {{<figure src="/images/team_dashboard/team_dashboard_ja.png" title="チームダッシュボードの例">}}
 
 {{<note>}}
 チームダッシュボードにアクセスするには、対象のプランに加入する必要があります。詳しくは、{{<link title="料金プラン" href="https://ja.monaca.io/pricing.html">}} を参照してください。
@@ -66,7 +66,7 @@ Monaca には 2 種類のダッシュボードがあります。
 
 ## トップページの解説
 
-{{<figure src="/images/team_dashboard/top_page.png" title="チームダッシュボードのトップページ">}}
+{{<figure src="/images/team_dashboard/top_page_ja.png" title="チームダッシュボードのトップページ">}}
 
 このページでは、現在の契約タイプ、ライセンスとチケットの数、申請中の手続きなどチーム全体の概要を確認することができます。
 
@@ -76,23 +76,21 @@ Monaca には 2 種類のダッシュボードがあります。
 
 2. ナビゲーション メニュー
 
-3. 必要な設定項目の一覧 ( [前提条件](#前提条件) を参照 )
+3. 開発者ライセンス、エンタープライズ プラグインライセンス、サポート / CI チケット、その他の用途に関する情報
 
-4. 開発者ライセンス、エンタープライズ プラグインライセンス、サポート / CI チケット、その他の用途に関する情報
-
-5. 申請中の手続きに関する情報。これは、請求書払いで申請が行われた場合に利用できます。
+4. 申請中の手続きに関する情報。これは、請求書払いで申請が行われた場合に利用できます。
 
 ## チーム アカウント
 
 このページでは、チームの開発者と管理者を管理できます。
 
-{{<figure src="/images/team_dashboard/manage_team_account.png">}}
+{{<figure src="/images/team_dashboard/manage_team_account_ja.png">}}
 
 ### 開発者の管理
 
 チームに開発者を追加するには、{{<guilabel name="開発者アカウントを追加する">}} ボタンをクリックします。 次に、追加する開発者のメールアドレスを入力します。
 
-{{<figure src="/images/team_dashboard/add_developer.png" title="開発者をチームに追加する">}}
+{{<figure src="/images/team_dashboard/add_developer_ja.png" title="開発者をチームに追加する">}}
 
 追加する開発者には、次のようなタイプがあります。
 
@@ -112,7 +110,7 @@ Monaca には 2 種類のダッシュボードがあります。
 
 チームに管理者を追加するには、 {{<guilabel name="管理者アカウントを追加する">}} ボタンをクリックします。 次に、新しい管理者の情報を入力します。
 
-{{<figure src="/images/team_dashboard/add_admin.png" title="チームへの管理者の追加">}}
+{{<figure src="/images/team_dashboard/add_admin_ja.png" title="チームへの管理者の追加">}}
 
 {{<note>}}
     Business プランの場合は、管理者は 1 人となるため、管理者を追加することはできません。 Enterprise プランの場合は、複数の管理者を持つことができます。
@@ -128,7 +126,7 @@ Monaca には 2 種類のダッシュボードがあります。
 
 3. 購入したライセンス: 追加購入したライセンス
 
-{{<figure src="/images/team_dashboard/manage_licenses.png" title="ライセンス管理ページの例">}}
+{{<figure src="/images/team_dashboard/manage_licenses_ja.png" title="ライセンス管理ページの例">}}
 
 ### ライセンスキーの使用変更
 
@@ -143,7 +141,7 @@ Monaca には 2 種類のダッシュボードがあります。
     既にチームに追加されている開発者のみ設定を変更することができます。それ以外の場合は、最初に開発者をチームに追加する必要があります。開発者の追加については、{{<link title="開発者の管理" href="#開発者の管理">}} を参照してください。
 {{</note>}}
 
-{{<figure src="/images/team_dashboard/modify_license.png" title="ライセンスキーの使用変更">}}
+{{<figure src="/images/team_dashboard/modify_license_ja.png" title="ライセンスキーの使用変更">}}
 
 ### 追加ライセンスの購入
 
@@ -151,7 +149,7 @@ Monaca には 2 種類のダッシュボードがあります。
 
 追加のライセンスを購入するには、{{<guilabel name="開発者ライセンス購入">}} ボタンをクリックします。 次に、以下の情報を入力します。以降、手順に従い手続きを完了します。
 
-{{<figure src="/images/team_dashboard/purchase_license.png" title="追加ライセンスの購入ページの例">}}
+{{<figure src="/images/team_dashboard/purchase_license_ja.png" title="追加ライセンスの購入ページの例">}}
 
 ## エンタープライズ プラグインライセンス
 
@@ -159,7 +157,7 @@ Business プランの場合は、プラグインライセンスを購入する�
 
 有効なエンタープライズ プラグインライセンスがある場合、チーム内のすべての開発者はプラグインを使用できます ( トライアル期間中 ) 。リリースビルドを行う場合は、プラグインライセンスをプロジェクトに割り当てる必要があります。
 
-{{<figure src="/images/team_dashboard/plugin_list.png" title="エンタープライズ プラグインライセンスページ">}}
+{{<figure src="/images/team_dashboard/plugin_list_ja.png" title="エンタープライズ プラグインライセンスページ">}}
 
 ### プラグインの設定
 
@@ -173,34 +171,34 @@ Business プランの場合は、プラグインライセンスを購入する�
 
 4. {{<guilabel name="登録する">}} ボタンをクリックします。
 
-{{<figure src="/images/team_dashboard/plugin_setting.png" title="プラグインの設定ページ">}}
+{{<figure src="/images/team_dashboard/plugin_setting_ja.png" title="プラグインの設定ページ">}}
 
 ### プラグインライセンスの購入
 
 トライアル期間中の場合は、プラグインライセンスを購入することはできません。
 購入後のプラグインライセンスは、1 年間有効です。
 
-{{<figure src="/images/team_dashboard/purchase_plugin_license.png" title="プラグインライセンスの購入">}}
+{{<figure src="/images/team_dashboard/purchase_plugin_license_ja.png" title="プラグインライセンスの購入">}}
 
 ## サポート / CI チケット
 
 このページでは、利用可能なチケットの数、チケットの有効期限、各チケットの使用履歴など、サポート / CI チケットに関する情報を確認することができます。
 
-{{<figure src="/images/team_dashboard/manage_tickets.png" title="サポート / CI チケットのページ">}}
+{{<figure src="/images/team_dashboard/manage_tickets_ja.png" title="サポート / CI チケットのページ">}}
 
 ### 追加チケットの購入
 
 プラン登録後は、一定数のサポートチケットと CI チケットが毎月付与されます。追加のチケットを購入して使用することもできます。
 
-{{<figure src="/images/team_dashboard/purchase_support_ticket.png" title="追加サポートチケットの購入">}}
+{{<figure src="/images/team_dashboard/purchase_support_ticket_ja.png" title="追加サポートチケットの購入">}}
 
-{{<figure src="/images/team_dashboard/purchase_ci_ticket.png" title="追加 CI チケットの購入">}}
+{{<figure src="/images/team_dashboard/purchase_ci_ticket_ja.png" title="追加 CI チケットの購入">}}
 
 ## アクセス制限
 
 このページでは、開発者ダッシュボードまたはチームダッシュボードへのアクセスを、IPアドレス制限を使用して制限することができます。デフォルトでは、両方のダッシュボードへのアクセス制限はありません。
 
-{{<figure src="/images/team_dashboard/access_restriction.png" title="アクセス制限ページ">}}
+{{<figure src="/images/team_dashboard/access_restriction_ja.png" title="アクセス制限ページ">}}
 
 ### アクセス制限の変更
 
@@ -212,7 +210,7 @@ Business プランの場合は、プラグインライセンスを購入する�
 
 3. ダッシュボードへのアクセスを許可するIPアドレスを入力します。1 行に 1 つの IP アドレスを入力することができます。IP アドレス範囲を指定することもできます。空白文字の後のテキストは、メモとして使用することができます。 ( 下の例を参照 )
 
-    {{<figure src="/images/team_dashboard/limit_access.png" title="アクセス制限の変更">}}
+    {{<figure src="/images/team_dashboard/limit_access_ja.png" title="アクセス制限の変更">}}
 
 {{<note>}}
     チームダッシュボードのアクセス制限については、チームダッシュボードへアクセスできなくなる可能性があるため、現在のIPアドレスと他のIPアドレスを入力する必要があります。
@@ -226,7 +224,7 @@ Business プランの場合は、プラグインライセンスを購入する�
     <b>備考</b> は、請求書リクエストなどの Monaca サポートチームの情報を保存するために使用されます。
 {{</note>}}
 
-{{<figure src="/images/team_dashboard/team_info.png" title="チーム情報ページ">}}
+{{<figure src="/images/team_dashboard/team_info_ja.png" title="チーム情報ページ">}}
 
 ## 契約情報
 
@@ -234,17 +232,17 @@ Business プランの場合は、プラグインライセンスを購入する�
 
 トライアル期間中の場合は、ダッシュボードのトップページにトライアル期間が表示されます。
 
-{{<figure src="/images/team_dashboard/contract_trial.png" title="トライアル中の契約情報">}}
+{{<figure src="/images/team_dashboard/contract_trial_ja.png" title="トライアル中の契約情報">}}
 
 ### プラン契約の登録
 
 プラン契約を登録する場合は、次の情報を入力する必要があります。
 
-{{<figure src="/images/team_dashboard/register_contract.png" title="契約登録ページ">}}
+{{<figure src="/images/team_dashboard/register_contract_ja.png" title="契約登録ページ">}}
 
 プラン契約情報の入力後、お支払い情報を入力する必要があります。
 
-{{<figure src="/images/team_dashboard/payment_info.png" title="お支払い情報ページ">}}
+{{<figure src="/images/team_dashboard/payment_info_ja.png" title="お支払い情報ページ">}}
 
 
 {{<note>}}
@@ -253,7 +251,7 @@ Business プランの場合は、プラグインライセンスを購入する�
 
 お支払い情報を入力後、最後に契約登録内容を確認します。契約情報ページは次のようになります。
 
-{{<figure src="/images/team_dashboard/contract_info.png" title="契約情報ページ">}}
+{{<figure src="/images/team_dashboard/contract_info_ja.png" title="契約情報ページ">}}
 
 ## 決済履歴・領収書
 
@@ -267,11 +265,11 @@ Business プランの場合は、プラグインライセンスを購入する�
     領収書は、クレジットカード決済からのみ発行することができます。
 {{</note>}}
 
-{{<figure src="/images/team_dashboard/invoice.png" title="決済履歴・領収書ページ">}}
+{{<figure src="/images/team_dashboard/invoice_ja.png" title="決済履歴・領収書ページ">}}
 
 ## サポートへのお問い合わせ
 
 チームダッシュボードの使用、契約登録、お支払い方法の変更などについて、ご不明な点がございましたら、サポートお問い合わせページからご連絡ください。
 
-{{<figure src="/images/team_dashboard/support.png" title="サポートお問い合わせフォーム">}}
+{{<figure src="/images/team_dashboard/support_ja.png" title="サポートお問い合わせフォーム">}}
 

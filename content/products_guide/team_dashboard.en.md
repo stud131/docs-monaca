@@ -66,7 +66,7 @@ Once you have successfully registered and logged in as an Administrator in the T
 
 ## Undestanding Top page
 
-{{<figure src="/images/team_dashboard/top_page.png" title="Top page in the Team Dashboard">}}
+{{<figure src="/images/team_dashboard/top_page_en.png" title="Top page in the Team Dashboard">}}
 
 In this page, you will be able to see the summary of the whole administration tasks such as current contract type, number of licenses and tickets, orders in progress and so on.
 
@@ -76,17 +76,15 @@ There are 5 main parts of this top page:
 
 2. navigation menu
 
-3. listing what needs to be done after the administrator registration (as shown in [Prerequisites](#prerequisites))
+3. displaying information about numbers of developer licenses, Power plugin licenses, support & CI tickets and other usages
 
-4. displaying information about numbers of developer licenses, Power plugin licenses, support & CI tickets and other usages
-
-5. displaying information about various orders in progress. This is available when orders are made using billing method. In other words, it shows how many orders are still waiting for the payment to be settled/completed. 
+4. displaying information about various orders in progress. This is available when orders are made using billing method. In other words, it shows how many orders are still waiting for the payment to be settled/completed. 
 
 ## Team Account
 
 In this page, you can manage developers and administrators in your team. 
 
-{{<figure src="/images/team_dashboard/manage_team_account.png">}}
+{{<figure src="/images/team_dashboard/manage_team_account_en.png">}}
 
 ### Managing Developer
 
@@ -253,7 +251,7 @@ After filling in the contract information, you will need to fill in the payment 
 
 Once a valid payment information is filled, you will be asked to confirm your contract registration one last time before completing the process. Then, your Contract Information page will look something like this:
 
-{{<figure src="/images/team_dashboard/contract_info.png" title="Contract Information page">}}
+{{<figure src="/images/team_dashboard/contract_info_en.png" title="Contract Information page">}}
 
 ## Invoice & Receipt
 
