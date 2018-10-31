@@ -19,10 +19,31 @@
 <script src="{{"js/transition.js" | relURL}}"></script> -->
 
 <script>
+  function sendMessage(message) {
+    return new Promise(function(resolve, reject) {
+      var messageChannel = new MessageChannel();
+      messageChannel.port1.onmessage = function(event) {
+        if (event.data.error) {
+          reject(event.data.error);
+        } else {
+          resolve(event.data);
+        }
+      };
+      navigator.serviceWorker.controller.postMessage(message,
+        [messageChannel.port2]);
+    });
+  }
+
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
       navigator.serviceWorker.register('/sw.js').then(function(registration) {
         // Registration was successful
+        if (navigator.serviceWorker.controller) {
+          sendMessage({
+            url: window.location.href,
+            lang: window.location.href.split('/')[3]
+          });
+        }
         console.log('ServiceWorker registration successful with scope: ', registration.scope);
       }, function(err) {
         // registration failed :(
