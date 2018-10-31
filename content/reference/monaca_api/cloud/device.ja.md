@@ -136,7 +136,7 @@ monaca.cloud.Device.saveProperty(name: String, value: String) : $.Promise
 
 **エラーコード**
 
-エラーが発生すると、 [Error](../error) オブジェクトを返します。
+エラーが発生すると、 [Error](../error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------
@@ -188,7 +188,7 @@ monaca.cloud.Device.saveProperties(properties: Object) : $.Promise
 
 **エラーコード**
 
-エラーが発生すると、 [Error](../error) オブジェクトを返します。
+エラーが発生すると、 [Error](../error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------

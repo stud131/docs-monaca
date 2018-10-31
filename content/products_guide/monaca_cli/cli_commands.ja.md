@@ -6,25 +6,25 @@ aliases: /ja/monaca_cli/manual/cli_commands
 
 | コマンド |	説明 |
 |---------|----------------|
-| [monaca login](#monaca-login) |	Monaca へのサインインします。|
-| [monaca logout](#monaca-logout) |	Monaca からサインアウトします。|
-| [monaca update](#monaca-update) |	CLI 2.x で作成したプロジェクトを最新の Monaca プロジェクト構成に更新します。 |
-| [monaca init](#monaca-init) |	他の CLI ツールを使用して作成したプロジェクトを初期化して、Monaca で実行できるようにします。 |
-| [monaca signup](#monaca-signup) |	Monaca のアカウント登録を行います。|
-| [monaca create](#monaca-create) |	テンプレートを使用して、ローカルに Monaca プロジェクトを新規作成します。|
-| [monaca clone](#monaca-clone) | Monaca クラウドからプロジェクトをクローンします。|
-| [monaca import](#monaca-import) |	Monaca クラウドからプロジェクトをインポートします。|
-| [monaca download](#monaca-download) |	Monaca クラウドからプロジェクトをダウンロードします。|
-| [monaca upload](#monaca-upload) |	Monaca クラウドへプロジェクトをアップロードします。|
-| [monaca signing](#monaca-signing) | iOS と Android のビルド用の署名設定を管理します。 |
-| [monaca remote build](#monaca-remote-build) |	Monaca クラウド上で、プロジェクトをリモートビルドします。|
-| [monaca remote config](#monaca-remote-config) | Monaca クラウド上で、プロジェクト設定を開きます。|
-| [monaca preview](#monaca-preview) | ローカル上で Web サーバーを起動させます。|
-| [monaca debug](#monaca-debug) | Monaca デバッガー上でプロジェクトを実行します。|
-| [monaca transpile](#monaca-transpile) | ソースコードをコード変換 ( トランスパイル ) します。| 
-| [monaca config](#monaca-config) |	Monaca CLI の設定内容を管理できます。| 
-| [monaca plugin](#monaca-plugin) |	Cordova プラグインを管理します。 |
-| [monaca docs](#monaca-docs) |	Monaca CLI、Onsen UI、チュートリアルを表示します。|
+| [monaca login](#monaca-login/) |	Monaca へのサインインします。|
+| [monaca logout](#monaca-logout/) |	Monaca からサインアウトします。|
+| [monaca update](#monaca-update/) |	CLI 2.x で作成したプロジェクトを最新の Monaca プロジェクト構成に更新します。 |
+| [monaca init](#monaca-init/) |	他の CLI ツールを使用して作成したプロジェクトを初期化して、Monaca で実行できるようにします。 |
+| [monaca signup](#monaca-signup/) |	Monaca のアカウント登録を行います。|
+| [monaca create](#monaca-create/) |	テンプレートを使用して、ローカルに Monaca プロジェクトを新規作成します。|
+| [monaca clone](#monaca-clone/) | Monaca クラウドからプロジェクトをクローンします。|
+| [monaca import](#monaca-import/) |	Monaca クラウドからプロジェクトをインポートします。|
+| [monaca download](#monaca-download/) |	Monaca クラウドからプロジェクトをダウンロードします。|
+| [monaca upload](#monaca-upload/) |	Monaca クラウドへプロジェクトをアップロードします。|
+| [monaca signing](#monaca-signing/) | iOS と Android のビルド用の署名設定を管理します。 |
+| [monaca remote build](#monaca-remote-build/) |	Monaca クラウド上で、プロジェクトをリモートビルドします。|
+| [monaca remote config](#monaca-remote-config/) | Monaca クラウド上で、プロジェクト設定を開きます。|
+| [monaca preview](#monaca-preview/) | ローカル上で Web サーバーを起動させます。|
+| [monaca debug](#monaca-debug/) | Monaca デバッガー上でプロジェクトを実行します。|
+| [monaca transpile](#monaca-transpile/) | ソースコードをコード変換 ( トランスパイル ) します。| 
+| [monaca config](#monaca-config/) |	Monaca CLI の設定内容を管理できます。| 
+| [monaca plugin](#monaca-plugin/) |	Cordova プラグインを管理します。 |
+| [monaca docs](#monaca-docs/) |	Monaca CLI、Onsen UI、チュートリアルを表示します。|
 
 ## monaca login
 

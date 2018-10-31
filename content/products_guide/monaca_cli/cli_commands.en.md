@@ -6,25 +6,25 @@ aliases: /en/monaca_cli/manual/cli_commands
 
 | Commands |	Description |
 |----------|----------------|
-| [monaca login](#monaca-login) |	Sign in to Monaca Cloud. |
-| [monaca logout](#monaca-logout) |	Sign out from Monaca Cloud. |
-| [monaca update](#monaca-update) |	Update projects created with CLI 2.x to the latest Monaca project structure. |
-| [monaca init](#monaca-init) |	Initialize projects created using other CLI tools to be able to execute with Monaca. |
-| [monaca signup](#monaca-signup) |	Register a new Monaca account. |
-| [monaca create](#monaca-create) |	Create a new local Monaca project from a template. |
-| [monaca clone](#monaca-clone) |	Clone a project from Monaca Cloud. |
-| [monaca import](#monaca-import) |	Import a project from Monaca Cloud. |
-| [monaca download](#monaca-download) |	Download a project from Monaca Cloud. |
-| [monaca upload](#monaca-upload) |	Upload a project to Monaca Cloud. |
-| [monaca signing](#monaca-signing) | Manage signing configurations for iOS and Android builds. |
-| [monaca remote build](#monaca-remote-build) |	Build a project on Monaca Cloud. |
-| [monaca remote config](#monaca-remote-config) |   Open the project configuration on Monaca Cloud. |
-| [monaca preview](#monaca-preview) |	Run a local web server for preview .|
-| [monaca debug](#monaca-debug) |	Run app on device using Monaca Debugger. |
-| [monaca transpile](#monaca-transpile) |	Transpile project source code. |
-| [monaca config](#monaca-config) |	Manage Monaca CLI configuration. |
-| [monaca plugin](#monaca-plugin) |	Manage Cordova plugins of a project. |
-| [monaca docs](#monaca-docs) |	Display docs for Monaca CLI, Onsen UI and Tutorials. |
+| [monaca login](#monaca-login/) |	Sign in to Monaca Cloud. |
+| [monaca logout](#monaca-logout/) |	Sign out from Monaca Cloud. |
+| [monaca update](#monaca-update/) |	Update projects created with CLI 2.x to the latest Monaca project structure. |
+| [monaca init](#monaca-init/) |	Initialize projects created using other CLI tools to be able to execute with Monaca. |
+| [monaca signup](#monaca-signup/) |	Register a new Monaca account. |
+| [monaca create](#monaca-create/) |	Create a new local Monaca project from a template. |
+| [monaca clone](#monaca-clone/) |	Clone a project from Monaca Cloud. |
+| [monaca import](#monaca-import/) |	Import a project from Monaca Cloud. |
+| [monaca download](#monaca-download/) |	Download a project from Monaca Cloud. |
+| [monaca upload](#monaca-upload/) |	Upload a project to Monaca Cloud. |
+| [monaca signing](#monaca-signing/) | Manage signing configurations for iOS and Android builds. |
+| [monaca remote build](#monaca-remote-build/) |	Build a project on Monaca Cloud. |
+| [monaca remote config](#monaca-remote-config/) |   Open the project configuration on Monaca Cloud. |
+| [monaca preview](#monaca-preview/) |	Run a local web server for preview .|
+| [monaca debug](#monaca-debug/) |	Run app on device using Monaca Debugger. |
+| [monaca transpile](#monaca-transpile/) |	Transpile project source code. |
+| [monaca config](#monaca-config/) |	Manage Monaca CLI configuration. |
+| [monaca plugin](#monaca-plugin/) |	Manage Cordova plugins of a project. |
+| [monaca docs](#monaca-docs/) |	Display docs for Monaca CLI, Onsen UI and Tutorials. |
 
 ## monaca login
 
@@ -565,9 +565,9 @@ $ monaca docs usage
 
 See Also:
 
-- [Monaca CLI Tutorial](../tutorial)
-- [Monaca CLI Overview](../overview)
-- [Project Dependencies](../dependencies)
-- [Pairing and Debugging](../pairing_debugging)
-- [Remote Building and Publishing](../build_publish)
-- [Troubleshooting Guide](../troubleshooting)
+- [Monaca CLI Tutorial](../tutorial/)
+- [Monaca CLI Overview](../overview/)
+- [Project Dependencies](../dependencies/)
+- [Pairing and Debugging](../pairing_debugging/)
+- [Remote Building and Publishing](../build_publish/)
+- [Troubleshooting Guide](../troubleshooting/)

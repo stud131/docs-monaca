@@ -9,9 +9,9 @@ Monaca を使用した、携帯端末向けアプリの開発手順を教えて�
 どの開発工程からでも、また、どの開発環境でも、Monaca
 を導入できるように、次の 3 つの開発ツールを提供しています。
 
-- [Monaca クラウド IDE](/ja/products_guide/monaca_ide)
-- [Monaca Localkit](/ja/products_guide/monaca_localkit)
-- [Monaca CLI](/ja/products_guide/monaca_cli)
+- [Monaca クラウド IDE](/ja/products_guide/monaca_ide/)
+- [Monaca Localkit](/ja/products_guide/monaca_localkit/)
+- [Monaca CLI](/ja/products_guide/monaca_cli/)
 
 これらのツールを使用すれば、お好みのプラットフォーム上で、アプリ開発を進められます。次に、Monaca
 を使用した開発手順の大まかな流れを記します。
@@ -46,7 +46,7 @@ Monaca クラウド IDE のコードエディター上で、カーソルがズ�
 
 Monaca
 を使用したアプリ開発の詳細を記した、チュートリアル、開発ガイド、サンプルアプリなどを豊富にご用意しています。具体的なコーディング方法、解説なども、併せて記述していますので、是非、ご確認ください
-( 参考リンク :  [サードパーティー製プラグイン](/ja/reference/third_party_phonegap)、[サンプル＆Tip](/ja/sampleapp)。
+( 参考リンク :  [サードパーティー製プラグイン](/ja/reference/third_party_phonegap/)、[サンプル＆Tip](/ja/sampleapp/)。
 
 Monacaでチーム開発を行う方法を教えてください。
 ----------------------------------------------------------------------

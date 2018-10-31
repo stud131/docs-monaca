@@ -7,11 +7,11 @@ Monaca is built on top of Cordova. Therefore, any Cordova-like projects can be i
 
 Welcome to Monaca and enjoy the ride!
 
-- [Key Points](key_point)
-- [Migrating from Ionic](ionic_migration)
-- [Migrating from Vue](vue_migration)
-- [Migrating from Angular](angular_migration)
-- [Migrating from React](react_migration)
-- [Migrating from Telerik Platform](telerik_migration)
-- [Migrating from PhoneGap Platform](phonegap_migration)
+- [Key Points](key_point/)
+- [Migrating from Ionic](ionic_migration/)
+- [Migrating from Vue](vue_migration/)
+- [Migrating from Angular](angular_migration/)
+- [Migrating from React](react_migration/)
+- [Migrating from Telerik Platform](telerik_migration/)
+- [Migrating from PhoneGap Platform](phonegap_migration/)
 

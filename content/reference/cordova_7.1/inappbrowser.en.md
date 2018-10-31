@@ -660,5 +660,5 @@ iab.open('http://url-that-fails-whitelist.com', 'random_string', 'location=no');
 
 See Also:
 
-- [Third-party Cordova Plugins](../../third_party_phonegap)
-- [Core Cordova Plugins](../../cordova_6.5)
+- [Third-party Cordova Plugins](../../third_party_phonegap/)
+- [Core Cordova Plugins](../../cordova_6.5/)

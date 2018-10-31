@@ -12,5 +12,5 @@ review from Apple. Apple will check if your apps are eligible or
 qualified to be in the App Store. Usually, it takes two weeks for the
 review. Therefore, please wait patiently for it.
 
-- [App Store Connect Guide](app_store_connect)
-- [Monaca Upload Feature](app_submission)
+- [App Store Connect Guide](app_store_connect/)
+- [Monaca Upload Feature](app_submission/)

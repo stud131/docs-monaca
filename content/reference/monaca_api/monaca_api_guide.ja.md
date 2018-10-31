@@ -3,7 +3,7 @@ title: Monaca クラウド & リモートビルド API
 weight: 10
 ---
 
-「 Monaca クラウド & リモートビルド API 」 を組み込めば、Cordova アプリのビルド処理を始め、Monaca クラウドが提供する各種 Web サービスを使用することができます ( [Monaca クラウド IDE](/ja/products_guide/monaca_ide) と [Monaca CLI](/ja/products_guide/monaca_cli) で提供しているサービス・機能が、この API 経由で使用できるようになります )。
+「 Monaca クラウド & リモートビルド API 」 を組み込めば、Cordova アプリのビルド処理を始め、Monaca クラウドが提供する各種 Web サービスを使用することができます ( [Monaca クラウド IDE](/ja/products_guide/monaca_ide/) と [Monaca CLI](/ja/products_guide/monaca_cli/) で提供しているサービス・機能が、この API 経由で使用できるようになります /)。
 
 ここでは、Node.js を使用したプロジェクトを例として、「 Monaca クラウド & リモートビルド API 」 の組み込み方法と使用方法を解説します。
 

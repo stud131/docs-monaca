@@ -56,7 +56,7 @@ Collection.find(criteria: Criteria or String, [orderBy: String or Array], [optio
 
 Name | Type | Description
 -----|------|-------------
-`criteria` | String | [Criteria](../criteria) or String
+`criteria` | String | [Criteria](../criteria/) or String
 `orderBy` | String | <code>field_name ASC&#124;DESC</code>: For multiple orders, use array (e.g. `["title ASC", "author ASC"]`).
 `options` | JSON Object | Available options: <ul><li>`propertyNames`: specify the preferred user properties. If not specified, all user properties are returned.</li><li>`limit`: Limit number of results.</li><li>`page`: Start from specified page.</li></ul>
 
@@ -188,7 +188,7 @@ Collection.findOne(criteria: Criteria or String, [orderBy: String or Array], [op
 
 Name | Type | Description
 -----|------|-------------
-`criteria` | String | [Criteria](../criteria) or String
+`criteria` | String | [Criteria](../criteria/) or String
 `orderBy` | String | <code>field_name ASC&#124;DESC</code>: For multiple orders, use array (e.g. `["title ASC", "author ASC"]`).
 `options` | JSON Object | Available options: <ul><li>`propertyNames`: specify the preferred user properties. If not specified, all user properties are returned.</li></ul>
 
@@ -204,7 +204,7 @@ Within the `done()` callback, there is a JSON Object which has the following pro
 
 **Errors Code**
 
-Errors are returned as [Error](../error) object.
+Errors are returned as [Error](../error/) object.
 
 Code | Description
 -----|--------------------------
@@ -258,7 +258,7 @@ Within the `done()` callback, there is a JSON Object which has the following pro
 
 **Errors Code**
 
-Errors are returned as [Error](../error) object.
+Errors are returned as [Error](../error/) object.
 
 Code | Description
 -----|--------------------------
@@ -409,13 +409,13 @@ Diary.updatePermission('group_id == 1', newPermission)
 
 See Also:
 
-- [Collection Item](../collection_item)
-- [Collection Management](../../cloud_management/collection)
-- [Collection Item Management](../../cloud_management/collection_item)
-- [Backend Control Panel](/en/products_guide/backend/control_panel)
-- [Backend API](../../cloud)
-- [Backend Memo](/en/sampleapp/samples/backend_memo)
-- [Backend Management API](../../cloud_management)
+- [Collection Item](../collection_item/)
+- [Collection Management](../../cloud_management/collection/)
+- [Collection Item Management](../../cloud_management/collection_item/)
+- [Backend Control Panel](/en/products_guide/backend/control_panel/)
+- [Backend API](../../cloud/)
+- [Backend Memo](/en/sampleapp/samples/backend_memo/)
+- [Backend Management API](../../cloud_management/)
 - [Backend Management API Key](/en/products_guide/backend/control_panel/#backend-management-api-key)
 
 

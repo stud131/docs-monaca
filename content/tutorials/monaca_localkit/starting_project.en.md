@@ -88,4 +88,4 @@ In order to preview a project, please do as follows:
 
 **Next**:
 
-- [Part 2: Running Monaca Debugger with Monaca Localkit](../testing_debugging)
+- [Part 2: Running Monaca Debugger with Monaca Localkit](../testing_debugging/)

@@ -88,4 +88,4 @@ Monaca Localkit
 
 **次へ**:
 
-- [パート 2 : Monaca Localkit と Monaca デバッガーとの連携](../testing_debugging)
+- [パート 2 : Monaca Localkit と Monaca デバッガーとの連携](../testing_debugging/)

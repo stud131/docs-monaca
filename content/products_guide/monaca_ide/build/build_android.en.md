@@ -176,7 +176,7 @@ follows:
 
 See Also: 
 
-- [Building for iOS](../ios/build_ios)
-- [Building for Windows](../build_winrt)
-- [Google Play Distribution](../../deploy/google_play)
-- [Build History](../build_history)
+- [Building for iOS](../ios/build_ios/)
+- [Building for Windows](../build_winrt/)
+- [Google Play Distribution](../../deploy/google_play/)
+- [Build History](../build_history/)

@@ -80,7 +80,7 @@ enabled.
 
 See Also:
 
-- [Monaca Localkit Overview](../overview)
-- [Monaca Localkit Tutorial](../tutorial)
-- [Pairing and Debugging](../pairing_debugging)
-- [Remote Building and Publishing](../build_publish)
+- [Monaca Localkit Overview](../overview/)
+- [Monaca Localkit Tutorial](../tutorial/)
+- [Pairing and Debugging](../pairing_debugging/)
+- [Remote Building and Publishing](../build_publish/)

@@ -213,5 +213,5 @@ Due to alignment with w3c spec, the starred methods will be phased out.
 
 See Also:
 
-- [Third-party Cordova Plugins](../../third_party_phonegap)
-- [Core Cordova Plugins](../../cordova_6.5)
+- [Third-party Cordova Plugins](../../third_party_phonegap/)
+- [Core Cordova Plugins](../../cordova_6.5/)

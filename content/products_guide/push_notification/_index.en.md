@@ -6,7 +6,7 @@ aliases:
     - /en/push_notification/manual
 ---
 
-- [Introduction to Push Notification](overview)
-- [iOS App Push Notification Settings](apns)
-- [Android App Push Notification Settings](gcm)
+- [Introduction to Push Notification](overview/)
+- [iOS App Push Notification Settings](apns/)
+- [Android App Push Notification Settings](gcm/)
 

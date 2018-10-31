@@ -141,5 +141,5 @@ UIInterfaceOrientationPortrait	| 通常の縦向き表示とは逆方向に、�
 Value | 型  | デフォルト値 | 解説
 ------|-----|------------|--------------------
 UIStatusBarHidden | Boolean | `false` | `true` に設定した場合、アプリの画面上部のステータスバーが非表示になります。`UIStatusBarHidden` を `true` に設定して、 `UIViewControllerBasedStatusBarAppearance` を `false` に設定した場合、アプリの画面上部のステータスバーは、非表示となります。
-UIViewControllerBasedStatusBarAppearance | Boolean | `false` | `true` に設定した場合、アプリの画面上部のステータスバーが非表示になります。[ステータスバーの制御プラグイン](/ja/reference/cordova_6.5/statusbar) ( StatusBar プラグイン ) を使用する場合には、`true` に設定します。
+UIViewControllerBasedStatusBarAppearance | Boolean | `false` | `true` に設定した場合、アプリの画面上部のステータスバーが非表示になります。[ステータスバーの制御プラグイン](/ja/reference/cordova_6.5/statusbar/) ( StatusBar プラグイン ) を使用する場合には、`true` に設定します。
 

@@ -65,13 +65,13 @@ ctrl + c
 
 ## Debugging Monaca Apps with Monaca CLI
 
-Please refer to [Monaca Debugger with Monaca Local Development Tools](/en/products_guide/debugger/debug/#monaca-debugger-with-monaca-local-development-tools).
+Please refer to [Monaca Debugger with Monaca Local Development Tools](/en/products_guide/debugger/debug/#monaca-debugger-with-monaca-local-development-tools/).
 
 See Also:
 
-- [Monaca CLI Tutorial](../tutorial)
-- [Monaca CLI Overview](../overview)
-- [Project Dependencies](../dependencies)
-- [Monaca CLI Commands](../cli_commands)
-- [Remote Building and Publishing](../build_publish)
-- [Troubleshooting Guide](../troubleshooting)
+- [Monaca CLI Tutorial](../tutorial/)
+- [Monaca CLI Overview](../overview/)
+- [Project Dependencies](../dependencies/)
+- [Monaca CLI Commands](../cli_commands/)
+- [Remote Building and Publishing](../build_publish/)
+- [Troubleshooting Guide](../troubleshooting/)

@@ -299,5 +299,5 @@ Permissions
 
 See Also:
 
-- [Third-party Cordova Plugins](../../third_party_phonegap)
-- [Core Cordova Plugins](../../cordova_6.5)
+- [Third-party Cordova Plugins](../../third_party_phonegap/)
+- [Core Cordova Plugins](../../cordova_6.5/)

@@ -95,7 +95,7 @@ monaca debug{{</highlight>}}
 
 詳細については、次の内容を参照してください。
 
-- [Monaca CLI チュートリアル](/ja/tutorials/monaca_cli)
-- [Monaca CLI マニュアル](/ja/products_guide/monaca_cli)
+- [Monaca CLI チュートリアル](/ja/tutorials/monaca_cli/)
+- [Monaca CLI マニュアル](/ja/products_guide/monaca_cli/)
 
 

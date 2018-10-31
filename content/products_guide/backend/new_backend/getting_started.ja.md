@@ -16,8 +16,8 @@ Monaca プロジェクトに Monaca バックエンドを追加する手順は�
 
     {{<img src="/images/backend/getting_started/1.png">}}
 
-4.  バックエンドに接続すると、バックエンド管理パネルが表示されます。 この管理パネル内で、さまざまな [バックエンドの管理](../backend_operations) を実行できます。 バックエンドの管理は、 [Monaca バックエンド API](/ja/reference/monaca_api/cloud) を使用して行うこともできます。
+4.  バックエンドに接続すると、バックエンド管理パネルが表示されます。 この管理パネル内で、さまざまな [バックエンドの管理](../backend_operations/) を実行できます。 バックエンドの管理は、 [Monaca バックエンド API](/ja/reference/monaca_api/cloud/) を使用して行うこともできます。
 
     {{<img src="/images/backend/getting_started/2.png">}}
 
-5. Monaca バックエンドの使い方は、[バックエンド メモ帳アプリ](/ja/sampleapp/samples/backend_memo) を参照してください。
+5. Monaca バックエンドの使い方は、[バックエンド メモ帳アプリ](/ja/sampleapp/samples/backend_memo/) を参照してください。

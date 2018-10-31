@@ -30,10 +30,10 @@ CLI は、コマンドライン形式のインターフェイスであり、Mona
 
 <hr>
 
-- [パート 1 : プロジェクトの作成](/ja/tutorials/monaca_cli/starting_project)
-- [パート 2 : Monaca CLI と Monaca デバッガーとの連携](/ja/tutorials/monaca_cli/testing_debugging)
-- [パート 3 : Monaca アプリのビルド](/ja/tutorials/monaca_cli/building_app)
-- [パート 4 : Monaca アプリの配布申請](/ja/tutorials/monaca_cli/publishing_app)
+- [パート 1 : プロジェクトの作成](/ja/tutorials/monaca_cli/starting_project/)
+- [パート 2 : Monaca CLI と Monaca デバッガーとの連携](/ja/tutorials/monaca_cli/testing_debugging/)
+- [パート 3 : Monaca アプリのビルド](/ja/tutorials/monaca_cli/building_app/)
+- [パート 4 : Monaca アプリの配布申請](/ja/tutorials/monaca_cli/publishing_app/)
 
 {{% /excerpt%}}
 

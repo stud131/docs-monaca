@@ -39,7 +39,7 @@ Within the `done()` callback, there is a `permission` JSON Object. For example: 
 
 **Errors Code**
 
-Errors are returned as [Error](../error) object.
+Errors are returned as [Error](../error/) object.
 
 Code | Description
 -----|--------------------------
@@ -93,7 +93,7 @@ Within the `done()` callback, there is a `permission` JSON Object. For example: 
 
 **Errors Code**
 
-Errors are returned as [Error](../error) object.
+Errors are returned as [Error](../error/) object.
 
 Code | Description
 -----|--------------------------
@@ -148,7 +148,7 @@ Within the `done()` callback, there is a JSON Object which has the following pro
 
 **Errors Code**
 
-Errors are returned as [Error](../error) object.
+Errors are returned as [Error](../error/) object.
 
 Code | Description
 -----|--------------------------
@@ -238,7 +238,7 @@ Type | Description
 
 **Errors Code**
 
-Errors are returned as [Error](../error) object.
+Errors are returned as [Error](../error/) object.
 
 Code | Description
 -----|--------------------------
@@ -373,13 +373,13 @@ The following code will display each item's update time which are found by the `
 
 See Also:
 
-- [Collection](../collection)
-- [Collection Management](../../cloud_management/collection)
-- [Collection Item Management](../../cloud_management/collection_item)
-- [Backend Control Panel](/en/products_guide/backend/control_panel)
-- [Backend API](../../cloud)
-- [Backend Memo](/en/sampleapp/samples/backend_memo)
-- [Backend Management API](../../cloud_management)
+- [Collection](../collection/)
+- [Collection Management](../../cloud_management/collection/)
+- [Collection Item Management](../../cloud_management/collection_item/)
+- [Backend Control Panel](/en/products_guide/backend/control_panel/)
+- [Backend API](../../cloud/)
+- [Backend Memo](/en/sampleapp/samples/backend_memo/)
+- [Backend Management API](../../cloud_management/)
 - [Backend Management API Key](/en/products_guide/backend/control_panel/#backend-management-api-key)
 
 

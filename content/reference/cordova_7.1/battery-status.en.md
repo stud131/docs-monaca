@@ -131,5 +131,5 @@ function onBatteryCritical(status) {
 
 See Also:
 
-- [Third-party Cordova Plugins](../../third_party_phonegap)
-- [Core Cordova Plugins](../../cordova_7.1)
+- [Third-party Cordova Plugins](../../third_party_phonegap/)
+- [Core Cordova Plugins](../../cordova_7.1/)

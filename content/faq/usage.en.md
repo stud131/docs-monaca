@@ -8,9 +8,9 @@ weight: 60
 For your flexibility and convenience during app development process,
 Monaca provides 3 different development environments such as:
 
-- [Monaca Cloud IDE](/en/products_guide/monaca_ide)
-- [Monaca Localkit](/en/products_guide/monaca_localkit)
-- [Monaca CLI](/en/products_guide/monaca_cli)
+- [Monaca Cloud IDE](/en/products_guide/monaca_ide/)
+- [Monaca Localkit](/en/products_guide/monaca_localkit/)
+- [Monaca CLI](/en/products_guide/monaca_cli/)
 
 You can choose your desired platform and start building your
 application. The following steps are the mobile app development steps
@@ -26,7 +26,7 @@ using Monaca:
 
 Moreover, note that in order to install the built application on iPhone
 or iPad, you need to register iOS Developer Program. For more details,
-please refer to [Building an iOS App](/en/products_guide/monaca_ide/build/ios/build_ios).
+please refer to [Building an iOS App](/en/products_guide/monaca_ide/build/ios/build_ios/).
 
 ## Can I create my own project template?
 
@@ -44,7 +44,7 @@ browsers, you can reset with `Ctrl+0`.)
 As references for app development using Monaca, we have prepared a
 tutorial, introductory guide, and sample apps. Each of these reference
 materials provides descriptions on how to write specific codes, so
-please do take a look. ([Third-party Cordova Plugins](/en/reference/third_party_phonegap) and [Samples & Tips](/en/sampleapp))
+please do take a look. ([Third-party Cordova Plugins](/en/reference/third_party_phonegap/) and [Samples & Tips](/en/sampleapp/)/)
 
 ## Please tell me how to do team development with Monaca.
 
@@ -82,7 +82,7 @@ each resource or enforcing source IP restrictions for access (fee-based). Please
 
 ## Are there any keyboard shortcuts or keybindings that can be used on the Monaca Cloud IDE?
 
-Shortcuts that can be used on Monaca Cloud IDE are listed in [Editor Shortcuts](/en/products_guide/monaca_ide/code_editor/editor). Also, Monaca can use keybindings like `vim`. You can
+Shortcuts that can be used on Monaca Cloud IDE are listed in [Editor Shortcuts](/en/products_guide/monaca_ide/code_editor/editor/). Also, Monaca can use keybindings like `vim`. You can
 set the keybinding from the Environment Settings of the File menu on the
 top of the page of Monaca Cloud IDE.
 

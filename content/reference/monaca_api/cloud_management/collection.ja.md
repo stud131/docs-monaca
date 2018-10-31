@@ -57,7 +57,7 @@ Collection.create(_id: String, isInsertable: Boolean, defaultPublicPermission: S
 
 **エラーコード**
 
-エラーが発生すると、[Error](../../cloud/error) オブジェクトを返します。
+エラーが発生すると、[Error](../../cloud/error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------
@@ -84,7 +84,7 @@ Collection.drop(_id: String)
 
 **エラーコード**
 
-エラーが発生すると、[Error](../../cloud/error) オブジェクトを返します。
+エラーが発生すると、[Error](../../cloud/error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------
@@ -113,7 +113,7 @@ Collection.setConfig(_id: String, isInsertable: Boolean, defaultPublicPermission
 
 **エラーコード**
 
-エラーが発生すると、[Error](../../cloud/error) オブジェクトを返します。
+エラーが発生すると、[Error](../../cloud/error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------
@@ -142,7 +142,7 @@ Collection.getConfig(_id: String)
 
 **エラーコード**
 
-エラーが発生すると、[Error](../../cloud/error) オブジェクトを返します。
+エラーが発生すると、[Error](../../cloud/error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------
@@ -172,7 +172,7 @@ Collection.getPropertyNames(_id: String)
 
 **エラーコード**
 
-エラーが発生すると、[Error](../../cloud/error) オブジェクトを返します。
+エラーが発生すると、[Error](../../cloud/error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------

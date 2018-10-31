@@ -7,5 +7,5 @@ Monaca では、プロジェクトに付加価値を加えることができる�
 をサポートしています。これらのサービスは、プラグインとして、プロジェクトに組み込めます。現在、Monaca
 では、次のサービスがご利用できます。
 
-- [Repro ( iOS 専用 )](repro)
-- [AppsFlyer](apps_flyer)
+- [Repro ( iOS 専用 )](repro/)
+- [AppsFlyer](apps_flyer/)

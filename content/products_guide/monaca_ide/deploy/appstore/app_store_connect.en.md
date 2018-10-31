@@ -133,8 +133,8 @@ When your app is accepted by Apple, it will be up in the App Store.
 
 See Also:
 
-- [Monaca Upload Feature](../app_submission)
-- [Building an iOS App](../../../build/ios/build_ios/#building-for-ios)
-- [Google Play Distribution](../../google_play)
-- [Non-market App Distribution](../../non_market_deploy)
-- [Amazon Appstore Distribution](../../amazon_store)
+- [Monaca Upload Feature](../app_submission/)
+- [Building an iOS App](../../../build/ios/build_ios/#building-for-ios/)
+- [Google Play Distribution](../../google_play/)
+- [Non-market App Distribution](../../non_market_deploy/)
+- [Amazon Appstore Distribution](../../amazon_store/)

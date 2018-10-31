@@ -45,9 +45,9 @@ The user should proceed as follows:
 
 See Also:
 
-- [Monaca CLI Tutorial](../tutorial)
-- [Monaca CLI Overview](../overview)
-- [Project Dependencies](../dependencies)
-- [Monaca CLI Commands](../cli_commands)
-- [Pairing and Debugging](../pairing_debugging)
-- [Remote Building and Publishing](../build_publish)
+- [Monaca CLI Tutorial](../tutorial/)
+- [Monaca CLI Overview](../overview/)
+- [Project Dependencies](../dependencies/)
+- [Monaca CLI Commands](../cli_commands/)
+- [Pairing and Debugging](../pairing_debugging/)
+- [Remote Building and Publishing](../build_publish/)

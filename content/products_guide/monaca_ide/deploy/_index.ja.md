@@ -4,10 +4,10 @@ weight: 80
 aliases: /ja/monaca_ide/manual/deploy/
 ---
 
-- [App Store での配布](appstore)
-- [Google Play での配布](google_play)
-- [Amazon アプリストア での配布](amazon_store)
-- [公式ストア経由以外での配布](non_market_deploy)
+- [App Store での配布](appstore/)
+- [Google Play での配布](google_play/)
+- [Amazon アプリストア での配布](amazon_store/)
+- [公式ストア経由以外での配布](non_market_deploy/)
 
 
 

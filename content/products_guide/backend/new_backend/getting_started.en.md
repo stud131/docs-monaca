@@ -20,8 +20,6 @@ In order to add Monaca Backend into your Monaca project, please do as follows:
 
     {{<img src="/images/backend/getting_started/1.png">}}
 
-4.  After attaching the Backend, the Backend Control panel will appear. Within this control panel, various [Backend Operations](../backend_operations) can be done. These backend operations can also be done using [Monaca Backend API](/en/reference/monaca_api/cloud).
-
     {{<img src="/images/backend/getting_started/2.png">}}
 
-5. For a quick hands-on practice with Monaca Backend, please follow the [Backend Memo](/en/sampleapp/samples/backend_memo) tutorial.
+5. For a quick hands-on practice with Monaca Backend, please follow the [Backend Memo](/en/sampleapp/samples/backend_memo/) tutorial.

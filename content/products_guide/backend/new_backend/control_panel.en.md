@@ -4,7 +4,7 @@ weight: 30
 aliases: /en/backend/manual/control_panel/
 ---
 
-Besides [backend operations](../backend_operations), various backend configuration and information can be found in the Backend Control Panel. 
+Besides [backend operations](../backend_operations/), various backend configuration and information can be found in the Backend Control Panel. 
 
 ## Changing the Backend
 
@@ -35,7 +35,7 @@ Besides [backend operations](../backend_operations), various backend configurati
 Backend Management API key and Endpoint URL are needed when you want to use Monaca Backend
 Management API. This API allows you to manage your Monaca Backend from
 your server rather than from Monaca Cloud IDE. For more information
-about this, please refer to [Backend Management API](/en/reference/monaca_api/cloud_management).
+about this, please refer to [Backend Management API](/en/reference/monaca_api/cloud_management/).
 
 In order to get Backend Management API key and Endpoint URL, please follow the
 instruction below:
@@ -46,7 +46,7 @@ instruction below:
 
     {{<img src="/images/backend/control_panel/4.png">}}
 
-3. Then, various information related to Management API will be shown. You can find the **Endpoint URL** there. This URL will be used as `JSON-RPC Request URL` (See [Backend Management API](/en/reference/monaca_api/cloud_management)).
+3. Then, various information related to Management API will be shown. You can find the **Endpoint URL** there. This URL will be used as `JSON-RPC Request URL` (See [Backend Management API](/en/reference/monaca_api/cloud_management/)).
 
     {{<img src="/images/backend/control_panel/5.png">}}
 
@@ -83,5 +83,5 @@ If you want to show/hide other column(s), please do as follows:
 
 See Also:
 
-- [Backend API](/en/reference/monaca_api/cloud)
-- [Backend Memo](/en/sampleapp/samples/backend_memo)
+- [Backend API](/en/reference/monaca_api/cloud/)
+- [Backend Memo](/en/sampleapp/samples/backend_memo/)

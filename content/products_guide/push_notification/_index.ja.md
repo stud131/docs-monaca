@@ -6,6 +6,6 @@ aliases:
     - /ja/push_notification/manual
 ---
 
-- [プッシュ通知](overview)
-- [iOS のプッシュ通知設定](apns)
-- [Android のプッシュ通知設定](gcm)
+- [プッシュ通知](overview/)
+- [iOS のプッシュ通知設定](apns/)
+- [Android のプッシュ通知設定](gcm/)

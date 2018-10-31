@@ -47,7 +47,7 @@ $ sudo npm install -g monaca
 
 ### Step 2: Following CLI Tutorial
 
-After successfully installed Monaca CLI, please follow our simple and easy tutorial on [how to use Monaca CLI](../tutorial).
+After successfully installed Monaca CLI, please follow our simple and easy tutorial on [how to use Monaca CLI](../tutorial/).
 
 ## Transpiling in Monaca CLI
 
@@ -96,9 +96,9 @@ node_modules
 
 See Also:
 
-- [Monaca CLI Tutorial](../tutorial)
-- [Monaca CLI Commands](../cli_commands)
-- [Project Dependencies](../dependencies)
-- [Pairing and Debugging](../pairing_debugging)
-- [Remote Building and Publishing](../build_publish)
-- [Troubleshooting Guide](../troubleshooting)
+- [Monaca CLI Tutorial](../tutorial/)
+- [Monaca CLI Commands](../cli_commands/)
+- [Project Dependencies](../dependencies/)
+- [Pairing and Debugging](../pairing_debugging/)
+- [Remote Building and Publishing](../build_publish/)
+- [Troubleshooting Guide](../troubleshooting/)

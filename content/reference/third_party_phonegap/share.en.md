@@ -63,5 +63,5 @@ show(func)   |Show a list of apps for user to choose and share the data when an 
 
 See Also:
 
-- [Core Cordova Plugins](../../cordova_6.5)
-- [Monaca Power Plugins](../../power_plugins)
+- [Core Cordova Plugins](../../cordova_6.5/)
+- [Monaca Power Plugins](../../power_plugins/)

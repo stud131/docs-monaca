@@ -42,7 +42,7 @@ before, and then use the new files. You may read about [Generate Certificates](/
 ## I don't know about how to build iOS apps or the certificates-related procedures.
 
 
-The procedures can be found in [Building an iOS App](/en/products_guide/monaca_ide/build/ios/build_ios).
+The procedures can be found in [Building an iOS App](/en/products_guide/monaca_ide/build/ios/build_ios/).
 
 ## Can I build an application for only iPhone using Monaca?
 
@@ -55,7 +55,7 @@ iPad is selected.
 There are two ways to upload the built app to App Store Connect for App
 Store submission:
 
-1.  using [Monaca Upload](/en/products_guide/monaca_ide/deploy/appstore/app_submission) (requires [a valid subscription plan](https://monaca.io/pricing.html))
+1.  using [Monaca Upload](/en/products_guide/monaca_ide/deploy/appstore/app_submission/) (requires [a valid subscription plan](https://monaca.io/pricing.html))
 2.  using Application Loader software (Mac OS X only)
 
 ## Are there any examples of applications developed with Monaca that went through Apple's review, and are actually available on the App Store?
@@ -88,7 +88,7 @@ staff.
 ## Tell me how to import/export private keys and certificates that are using Xcode.
 
 You can import private keys on your local Mac, and export Monaca's
-private keys and certificates. For details, please refer to [Build Settings between Monaca and Xcode](/en/products_guide/monaca_ide/build/ios/import_export).
+private keys and certificates. For details, please refer to [Build Settings between Monaca and Xcode](/en/products_guide/monaca_ide/build/ios/import_export/).
 
 ## The built application crashes right after starting up.
 
@@ -137,7 +137,7 @@ the same name.
 ## Can I share my iOS certificates and private key?
 
 Yes, it is possible to share iOS private key and certificates among
-other users and environments. Please refer to [Build Settings between Monaca and Xcode](/en/products_guide/monaca_ide/build/ios/import_export).
+other users and environments. Please refer to [Build Settings between Monaca and Xcode](/en/products_guide/monaca_ide/build/ios/import_export/).
 
 ## Can I share my Android keystore?
 
@@ -173,4 +173,4 @@ please refer to it when registering to the AppStore.
 {{<warning>}}
     If your application is targeting for iOS 6.0 or newer, and using Web SQL Database, the files created by the database are stored in the iCloud by default (when BackupWebStorage parameter is set to cloud). In such case, your app may be rejected if you did not declare the app to use iCloud when submitting for App Store. Accordingly, Web SQL Database files will not be stored in the iCloud backup storage when BackupWebStorage parameter is set to none. If you want to backup your data to iCloud, please set the parameter to cloud.
 {{</warning>}}
-For more detail, please refer `BackupWebStorage` in [iOS Configuration File](/en/reference/config/ios_configuration).
+For more detail, please refer `BackupWebStorage` in [iOS Configuration File](/en/reference/config/ios_configuration/).

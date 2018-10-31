@@ -18,7 +18,7 @@ please go [here](https://play.google.com/apps/publish/).
 
 ## Create a Release Build of the App
 
-Create and download a release build version of your app through Monaca. Please refer to [Building for Android](../../build/build_android) to build a release build of the app. Then, download the built app (APK file).
+Create and download a release build version of your app through Monaca. Please refer to [Building for Android](../../build/build_android/) to build a release build of the app. Then, download the built app (APK file).
 
 ## Register the Apps in Google Play
 
@@ -78,6 +78,6 @@ In this section, we will start uploading the APK file and finalize the release i
 
 See Also: 
 
-- [Building for Android](../../build/build_android)
-- [App Store Distribution](../appstore)
-- [Non-market App Distribution](../non_market_deploy)
+- [Building for Android](../../build/build_android/)
+- [App Store Distribution](../appstore/)
+- [Non-market App Distribution](../non_market_deploy/)

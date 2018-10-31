@@ -62,4 +62,4 @@ IDE. In order to do this, please do as follows:
 See Also:
 
 - [App Store Distribution](../)
-- [App Store Connect Guide](../app_store_connect)
+- [App Store Connect Guide](../app_store_connect/)

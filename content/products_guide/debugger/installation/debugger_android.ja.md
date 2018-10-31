@@ -93,10 +93,10 @@ Monaca デバッガーには、「 基本プラグイン 」 および 「 サ�
 
 基本プラグインとは、バッテリー情報の取得 API、カメラ
 API、住所録の取得 API、端末情報の取得 API
-などを指します。詳細は、[基本プラグイン](/ja/reference/cordova_6.5) をご確認ください。
+などを指します。詳細は、[基本プラグイン](/ja/reference/cordova_6.5/) をご確認ください。
 
 また、DatePicker、BarcodeScanner など、サードパーティー製プラグインも、Monaca に実装されています。詳細は、
-[サードパーティー製プラグイン](/ja/reference/third_party_phonegap) をご確認ください。
+[サードパーティー製プラグイン](/ja/reference/third_party_phonegap/) をご確認ください。
 
 これ以外の第三者提供 ( 「 外部の Cordova プラグイン 」 )
 または自作のプラグイン ( 「[ユーザー Cordova プラグイン]({{<ref "/products_guide/monaca_ide/dependencies/custom_cordova_plugin.ja.md">}})」 )
@@ -157,7 +157,7 @@ Android 向けの Monaca
 
 参考ページ
 
-- [エミュレーター上へのデバッガーのインストール](../debugger_emulator)
-- [iOS 上へのデバッガーのインストール](../debugger_ios)
-- [機能の概要](../../features)
-- [使用例](../../debug)
+- [エミュレーター上へのデバッガーのインストール](../debugger_emulator/)
+- [iOS 上へのデバッガーのインストール](../debugger_ios/)
+- [機能の概要](../../features/)
+- [使用例](../../debug/)

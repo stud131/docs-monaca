@@ -30,5 +30,5 @@ Generally, you can only connect to public repositories. However, with a valid Mo
 
 There are two ways to integrate your Monaca account with a Git service:
 
-- [GitHub Integration](../github_integration)
-- [Git SSH Integration](../git_ssh_integration)
+- [GitHub Integration](../github_integration/)
+- [Git SSH Integration](../git_ssh_integration/)

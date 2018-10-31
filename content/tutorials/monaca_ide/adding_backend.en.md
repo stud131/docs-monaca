@@ -42,7 +42,7 @@ Collection is a general purpose storage to keep data in the Backend.
 {{</note>}}
 
 After you follow the above steps, you can now start creating your own
-applications with Backend support. [Backend Memo](/en/sampleapp/samples/backend_memo) demonstrates
+applications with Backend support. [Backend Memo](/en/sampleapp/samples/backend_memo/) demonstrates
 a step-by-step instruction on how to manipulate Monaca Backend in an
 application. Please refer to it and start coding your app with Monaca
 Backend.
@@ -53,4 +53,4 @@ See Also:
 - [Running Monaca Debugger with Monaca Cloud IDE](../testing_debugging/)
 - [Building Monaca App](../building_app/)
 - [Publishing Monaca App](../publishing_app/)
-- [Sample Apps & Templates](/en/sampleapp/samples)
+- [Sample Apps & Templates](/en/sampleapp/samples/)

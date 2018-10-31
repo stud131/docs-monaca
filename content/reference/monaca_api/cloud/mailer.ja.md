@@ -35,7 +35,7 @@ Mailer.sendMail(userOid, templateName, substituteParams , [options]) : $.Promise
 
 **エラーコード**
 
-エラーが発生すると、[Error](../error) オブジェクトを返します。
+エラーが発生すると、[Error](../error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------

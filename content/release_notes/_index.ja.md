@@ -16,7 +16,7 @@ weight: 5
 
 Monaca Cloud IDEのアップデートとともに、新しいMonaca CLIとLocalkitをリリースしました。  
 このリリースは、Monacaでのアプリ開発環境の柔軟性を向上させる更新となります。  
-詳細については、[新しいMonaca CLIとLocalkit](20180918_monaca_cli_3.0)を参照してください。
+詳細については、[新しいMonaca CLIとLocalkit](20180918_monaca_cli_3.0/)を参照してください。
 
 #### 2018年 09月 11日
 

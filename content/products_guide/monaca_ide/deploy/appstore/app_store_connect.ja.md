@@ -128,8 +128,8 @@ Store での配布基準に適合しているかが審査されます。レビ�
 
 参考ページ:
 
-- [iOS アプリ アップロード機能](../app_submission)
-- [iOS アプリのビルド](../../../build/ios/build_ios/#building-for-ios)
-- [Google Play での配布](../../google_play)
-- [公式ストア経由以外での配布](../../non_market_deploy)
-- [Amazon アプリストア での配布](../../amazon_store)
+- [iOS アプリ アップロード機能](../app_submission/)
+- [iOS アプリのビルド](../../../build/ios/build_ios/#building-for-ios/)
+- [Google Play での配布](../../google_play/)
+- [公式ストア経由以外での配布](../../non_market_deploy/)
+- [Amazon アプリストア での配布](../../amazon_store/)

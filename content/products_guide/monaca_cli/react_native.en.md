@@ -97,14 +97,14 @@ $ react-native run-android{{</highlight>}}
 
  Commands | Description 
 ----------|-------------
-[monaca login](#monaca-login) | Sign in to Monaca Cloud.
-[monaca logout](#monaca-logout) | Sign out from Monaca Cloud.
-[monaca signup](#monaca-signup) | Register a new Monaca account.
-[monaca remote build](#monaca-remote-build) | Build a project on Monaca Cloud.
-[monaca config](#monaca-config) | Manage Monaca CLI configuration.
-[monaca remote config](#monaca-remote-config) | Open the project configuration on Monaca Cloud.
-[monaca docs](#monaca-docs) | Display docs for Monaca CLI, Onsen UI and Tutorials.
-[monaca info](#monaca-info) | Display information about monaca dependencies.
+[monaca login](#monaca-login/) | Sign in to Monaca Cloud.
+[monaca logout](#monaca-logout/) | Sign out from Monaca Cloud.
+[monaca signup](#monaca-signup/) | Register a new Monaca account.
+[monaca remote build](#monaca-remote-build/) | Build a project on Monaca Cloud.
+[monaca config](#monaca-config/) | Manage Monaca CLI configuration.
+[monaca remote config](#monaca-remote-config/) | Open the project configuration on Monaca Cloud.
+[monaca docs](#monaca-docs/) | Display docs for Monaca CLI, Onsen UI and Tutorials.
+[monaca info](#monaca-info/) | Display information about monaca dependencies.
 
 ### monaca login
 

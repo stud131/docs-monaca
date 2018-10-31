@@ -13,9 +13,9 @@ development on the client part.
     Monaca Backend plugin is not included in both Monaca Debugger (store-version) and custom Monaca Debugger (build from a project). Therefore, please build (debug build) your app and install on your device in order to test Monaca Backend operations.
 {{</note>}}
 
-- [Getting Started](getting_started)
-- [Backend Operations](backend_operations)
-- [Backend Control Panel](control_panel)
+- [Getting Started](getting_started/)
+- [Backend Operations](backend_operations/)
+- [Backend Control Panel](control_panel/)
 
 
 

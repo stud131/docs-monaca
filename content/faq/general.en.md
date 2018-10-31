@@ -25,7 +25,7 @@ upon the open source Apache Cordova project. It was originally developed
 by Nitobi which was acquired by Adobe. Monaca utilizes Cordova Core
 Plugins to access the unique features of smartphones using JavaScript.
 For more information of Cordova Core Plugins usage in Monaca, please
-refer to [Cordova Plugins](/en/products_guide/monaca_ide/dependencies/cordova_plugin) and [here](https://cordova.apache.org/docs/en/latest/) .
+refer to [Cordova Plugins](/en/products_guide/monaca_ide/dependencies/cordova_plugin/) and [here](https://cordova.apache.org/docs/en/latest/) .
 
 ## Can I develop commercial smartphone applications using Monaca?
 
@@ -86,10 +86,10 @@ aware that this count is applied to all your projects.
 ## Will the Cordova plugin become unusable under the Basic Plan?
 
 For Basic and Personal plan, you can use the built-in Cordova plugins
-such as ChildBrowser, DatePicker, Bluetooth and so on. Please refer to [Third-party Cordova Plugins](/en/reference/third_party_phonegap) for all the built-in Cordova plugins
+such as ChildBrowser, DatePicker, Bluetooth and so on. Please refer to [Third-party Cordova Plugins](/en/reference/third_party_phonegap/) for all the built-in Cordova plugins
 provided by Monaca. However, in order to add other Custom Cordova
 plugin, you need to have a Gold or Platinum plan. To add a custom
-Cordova plugin, please refer to [Custom Cordova Plugins](/en/products_guide/monaca_ide/dependencies/custom_cordova_plugin).
+Cordova plugin, please refer to [Custom Cordova Plugins](/en/products_guide/monaca_ide/dependencies/custom_cordova_plugin/).
 
 ## How to unregister my Monaca account?
 

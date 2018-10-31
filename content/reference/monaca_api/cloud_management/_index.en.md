@@ -23,7 +23,7 @@ specifications:
 ## JSON-RPC Endpoint
 
 You can get endpoint URL from Backend Management API
-Key panel in which it is called *Management API URL* (See [Backend Management API Key](/en/products_guide/backend/control_panel/#backend-management-api-key)).
+Key panel in which it is called *Management API URL* (See [Backend Management API Key](/en/products_guide/backend/control_panel/#backend-management-api-key/)).
 
 ## JSON-RPC Request
 

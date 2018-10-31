@@ -128,7 +128,7 @@ Type | Description
 
 **Errors Code**
 
-Errors are returned as [Error](../error) object.
+Errors are returned as [Error](../error/) object.
 
 Code | Description
 -----|--------------------------
@@ -179,7 +179,7 @@ Type | Description
 
 **Errors Code**
 
-Errors are returned as [Error](../error) object.
+Errors are returned as [Error](../error/) object.
 
 Code | Description
 -----|--------------------------
@@ -210,8 +210,8 @@ monaca.cloud.Device.saveProperties({"nickname": "Monaca", "color": "#9999FF"})
 
 See Also: 
 
-- [Backend Control Panel](/en/products_guide/backend/control_panel)
-- [Backend API](../../cloud)
-- [Backend Memo](/en/sampleapp/samples/backend_memo)
-- [Backend Management API](../../cloud_management)
+- [Backend Control Panel](/en/products_guide/backend/control_panel/)
+- [Backend API](../../cloud/)
+- [Backend Memo](/en/sampleapp/samples/backend_memo/)
+- [Backend Management API](../../cloud_management/)
 - [Backend Management API Key](/en/products_guide/backend/control_panel/#backend-management-api-key)

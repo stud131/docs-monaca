@@ -53,7 +53,7 @@ Collection.find(criteria: Criteria or String, [orderBy: String or Array], [optio
 
 パラメーター | 型 | 解説 
 -----|------|-------------
-`criteria` | 文字列 | [Criteria](../criteria) または 文字列
+`criteria` | 文字列 | [Criteria](../criteria/) または 文字列
 `orderBy` | 文字列 | <code>field_name ASC&#124;DESC</code>。並べ替え条件を複数指定する場合には、配列を使用します。例 ： ["title ASC", "author ASC"]
 `options` | JSON オブジェクト | 利用可能なオプションを、次に記します。 <ul><li>`propertyNames`: 検索対象のユーザーのプロパティーを指定します。指定がない場合、ユーザーのすべてのプロパティーを返します。</li><li>`limit`: 結果の件数の上限です。</li><li>`page`: 指定したページ以降から、結果を取得します。</li></ul>
 
@@ -70,7 +70,7 @@ Collection.find(criteria: Criteria or String, [orderBy: String or Array], [optio
 
 **エラーコード**
 
-エラーが発生すると、[Error](../error) オブジェクトを返します。
+エラーが発生すると、[Error](../error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------
@@ -140,7 +140,7 @@ Collection.findMine(criteria: Criteria or String, [orderBy: String or Array], [o
 
 **エラーコード**
 
-エラーが発生すると、[Error](../error) オブジェクトを返します。
+エラーが発生すると、[Error](../error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------
@@ -177,7 +177,7 @@ Collection.findOne(criteria: Criteria or String, [orderBy: String or Array], [op
 
 パラメーター | 型 | 解説 
 -----|------|-------------
-`criteria` | 文字列 | [Criteria](../criteria) または 文字列
+`criteria` | 文字列 | [Criteria](../criteria/) または 文字列
 `orderBy` | 文字列 | <code>field_name ASC&#124;DESC</code>。並べ替え条件を複数指定する場合には、配列を使用します。例 ： ["title ASC", "author ASC"]
 `options` | JSON オブジェクト | 利用可能なオプション: <ul><li>`propertyNames`: 検索対象のユーザーのプロパティーを指定します。指定がない場合、ユーザーのすべてのプロパティーを返します。</li></ul>
 
@@ -193,7 +193,7 @@ Collection.findOne(criteria: Criteria or String, [orderBy: String or Array], [op
 
 **エラーコード**
 
-エラーが発生すると、[Error](../error) オブジェクトを返します。
+エラーが発生すると、[Error](../error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------
@@ -245,7 +245,7 @@ Collection.findOneMine(criteria: Criteria or String, [orderBy: String or Array],
 
 **エラーコード**
 
-エラーが発生すると、[Error](../error) オブジェクトを返します。
+エラーが発生すると、[Error](../error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------

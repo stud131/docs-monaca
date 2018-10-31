@@ -13,7 +13,7 @@ Localkit、Monaca CLI) と Monaca
 
 {{<note>}}
 最初に、端末またはエミュレーター上に、Monaca
-デバッガーをインストールします。詳細は、{{<link href="../installation" title="Monaca デバッガーのインストール方法">}}
+デバッガーをインストールします。詳細は、{{<link href="../installation/" title="Monaca デバッガーのインストール方法">}}
 をご確認ください。
 {{</note>}}
 

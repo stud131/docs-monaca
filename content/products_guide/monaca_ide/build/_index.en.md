@@ -73,8 +73,8 @@ aliases: /en/monaca_ide/manual/build/
     </tr>
 </table>
 
-- [Building for iOS](ios)
-- [Building for Android](build_android)
-- [Building for Windows](build_winrt)
-- [Common Build and Application Uploader Errors](build_error)
-- [Build History](build_history)
+- [Building for iOS](ios/)
+- [Building for Android](build_android/)
+- [Building for Windows](build_winrt/)
+- [Common Build and Application Uploader Errors](build_error/)
+- [Build History](build_history/)

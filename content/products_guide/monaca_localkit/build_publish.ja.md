@@ -16,15 +16,15 @@ aliases: /ja/monaca_localkit/manual/build_publish
 
 各プラットフォーム向けアプリのビルド方法と配布申請に関しては、次の解説をご確認ください。
 
-- [ビルド](/ja/products_guide/monaca_ide/build)
-- [配布方法](/ja/products_guide/monaca_ide/deploy)
+- [ビルド](/ja/products_guide/monaca_ide/build/)
+- [配布方法](/ja/products_guide/monaca_ide/deploy/)
 
 
 参考ページ
 
-- [概要](../overview)
-- [チュートリアル](../tutorial)
-- [ペアリングとデバッグ](../pairing_debugging)
-- [トラブルシューティング](../troubleshooting)
+- [概要](../overview/)
+- [チュートリアル](../tutorial/)
+- [ペアリングとデバッグ](../pairing_debugging/)
+- [トラブルシューティング](../troubleshooting/)
 
 

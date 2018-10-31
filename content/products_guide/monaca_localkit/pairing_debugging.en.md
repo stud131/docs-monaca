@@ -52,7 +52,7 @@ Please refer to [Monaca Debugger with Monaca Local Development Tools](/en/produc
 
 See Also:
 
-- [Monaca Localkit Overview](../overview)
-- [Monaca Localkit Tutorial](../tutorial)
-- [Remote Building and Publishing](../build_publish)
-- [Troubleshooting Guide](../troubleshooting)
+- [Monaca Localkit Overview](../overview/)
+- [Monaca Localkit Tutorial](../tutorial/)
+- [Remote Building and Publishing](../build_publish/)
+- [Troubleshooting Guide](../troubleshooting/)

@@ -88,5 +88,5 @@ These are just a brief view of what you can do with Monaca CLI. If you
 would like to learn more about it, please refer to the following
 contents:
 
-- [Monaca CLI Tutorial](/en/tutorials/monaca_cli)
-- [Monaca CLI Manual](/en/products_guide/monaca_cli)
+- [Monaca CLI Tutorial](/en/tutorials/monaca_cli/)
+- [Monaca CLI Manual](/en/products_guide/monaca_cli/)

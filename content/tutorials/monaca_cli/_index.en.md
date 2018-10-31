@@ -26,9 +26,9 @@ Before getting started with this tutorial, you will need the following:
 
 <hr>
 
-- [Part 1: Starting a Project](/en/tutorials/monaca_cli/starting_project)
-- [Part 2: Running Monaca Debugger with Monaca CLI](/en/tutorials/monaca_cli/testing_debugging)
-- [Part 3: Building Monaca App](/en/tutorials/monaca_cli/building_app)
-- [Part 4: Publishing Monaca App](/en/tutorials/monaca_cli/publishing_app)
+- [Part 1: Starting a Project](/en/tutorials/monaca_cli/starting_project/)
+- [Part 2: Running Monaca Debugger with Monaca CLI](/en/tutorials/monaca_cli/testing_debugging/)
+- [Part 3: Building Monaca App](/en/tutorials/monaca_cli/building_app/)
+- [Part 4: Publishing Monaca App](/en/tutorials/monaca_cli/publishing_app/)
 
 {{% /excerpt%}}

@@ -29,7 +29,7 @@ Monaca クラウド IDE上で、{{<menu menu1="設定" menu2="外部サービス
 
 -   [Core Cordova Plugins (英語サイト)](/en/reference/cordova_6.5/)
 -   [基本プラグイン](/ja/reference/cordova_6.5/)
--   [サンプル＆Tip](/ja/sampleapp)
+-   [サンプル＆Tip](/ja/sampleapp/)
 
 Windows ストアアプリには、基本プラグインを使用できませんが、WinJS を使用できます。
 
@@ -55,11 +55,11 @@ Monaca では、UIKit はサポートしておりません。
 
 Free プランでも、Monacaで提供している Cordova プラグイン (
 基本プラグイン、サードパーティー製プラグイン など )
-をご利用いただけます。Monaca でご利用いただけるサードパーティー製プラグインに関しては、 [サードパーティー製プラグイン](/ja/reference/third_party_phonegap)
+をご利用いただけます。Monaca でご利用いただけるサードパーティー製プラグインに関しては、 [サードパーティー製プラグイン](/ja/reference/third_party_phonegap/)
 をご確認ください。また、自作のユーザー Cordova
 プラグインを使用する場合には、Pro プラン または
 企業向けプランが必要となります。ユーザー Cordova
-プラグインの追加方法に関しては、 [ ユーザー Cordova プラグイン](/en/products_guide/monaca_ide/dependencies/custom_cordova_plugin)をご確認ください。
+プラグインの追加方法に関しては、 [ ユーザー Cordova プラグイン](/en/products_guide/monaca_ide/dependencies/custom_cordova_plugin/)をご確認ください。
 
 ## Windows ストアアプリの開発に関する制約を教えてください。
 

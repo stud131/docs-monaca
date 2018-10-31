@@ -10,7 +10,7 @@ functionality of the app on an actual device without building. When
 using Monaca Debugger, any changes made to the code immediately reflect
 to the actual running device. No build and run process are required.
 This would help to speed up the development and testing process. For
-more details, please refer to [Monaca Debugger](/en/products_guide/debugger).
+more details, please refer to [Monaca Debugger](/en/products_guide/debugger/).
 
 ## Are the operations of an app on the Monaca Debugger the same as when the app is installed on an actual device?
 
@@ -99,7 +99,7 @@ We are providing 3 different ways to debug your application.
 2.  Debug using Monaca Debugger with Monaca IDE (Weinre)
 3.  Debug using Monaca Debugger with USB debugging
 
-For more details, please refer to [Debugger's Usage](/en/products_guide/debugger/debug).
+For more details, please refer to [Debugger's Usage](/en/products_guide/debugger/debug/).
 
 ## What is a network install?
 

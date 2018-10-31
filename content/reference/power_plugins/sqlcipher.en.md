@@ -109,5 +109,5 @@ This API is not implemented for Windows 8.1 or higher and Windows Phone 8.1 or h
 
 See Also:
 
-- [Third-party Cordova Plugins](../../third_party_phonegap)
-- [Core Cordova Plugins](../../cordova_6.5)
+- [Third-party Cordova Plugins](../../third_party_phonegap/)
+- [Core Cordova Plugins](../../cordova_6.5/)

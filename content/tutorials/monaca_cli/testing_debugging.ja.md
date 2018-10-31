@@ -4,7 +4,7 @@ weight: 2
 aliases: /ja/monaca_cli/tutorial/testing_debugging/
 ---
 
-[Monaca デバッガー](/ja/products_guide/debugger) は、Monaca
+[Monaca デバッガー](/ja/products_guide/debugger/) は、Monaca
 アプリの検証とデバッグを、端末上でリアルタイムに行うためのアプリです。
 
 Monaca アプリの開発時、Monaca CLI ( ローカル PC 側 ) と Monaca
@@ -111,4 +111,4 @@ Monaca デバッガーを使うのは簡単です。 プロジェクトをさら
 
 **次へ**: 
 
-- [パート 3 : Monaca アプリのビルド](../building_app)
+- [パート 3 : Monaca アプリのビルド](../building_app/)

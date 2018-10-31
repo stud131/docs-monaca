@@ -30,9 +30,9 @@ Localkit を使用すれば、オフラインでの開発も行え、また、Mo
 
 <hr>
 
-- [パート 1 : プロジェクトの作成](/ja/tutorials/monaca_localkit/starting_project)
-- [パート 2 : Monaca Localkit と Monaca デバッガーとの連携](/ja/tutorials/monaca_localkit/testing_debugging)
-- [パート 3 : Monaca アプリのビルド](/ja/tutorials/monaca_localkit/building_app)
-- [パート 4 : Monaca アプリの配布申請](/ja/tutorials/monaca_localkit/publishing_app)
+- [パート 1 : プロジェクトの作成](/ja/tutorials/monaca_localkit/starting_project/)
+- [パート 2 : Monaca Localkit と Monaca デバッガーとの連携](/ja/tutorials/monaca_localkit/testing_debugging/)
+- [パート 3 : Monaca アプリのビルド](/ja/tutorials/monaca_localkit/building_app/)
+- [パート 4 : Monaca アプリの配布申請](/ja/tutorials/monaca_localkit/publishing_app/)
 
 {{%/excerpt%}}

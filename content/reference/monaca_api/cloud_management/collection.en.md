@@ -54,7 +54,7 @@ Name | Type | Description
 
 **Errors Code**
 
-Errors are returned as [Error](../../cloud/error) object.
+Errors are returned as [Error](../../cloud/error/) object.
 
 Code | Description
 -----|--------------------------
@@ -80,7 +80,7 @@ Name | Type | Description
 
 **Errors Code**
 
-Errors are returned as [Error](../../cloud/error) object.
+Errors are returned as [Error](../../cloud/error/) object.
 
 Code | Description
 -----|--------------------------
@@ -108,7 +108,7 @@ Name | Type | Description
 
 **Errors Code** 
 
-Errors are returned as [Error](../../cloud/error) object.
+Errors are returned as [Error](../../cloud/error/) object.
 
 Code | Description
 -----|--------------------------
@@ -136,7 +136,7 @@ Name | Type | Description
 
 **Errors Code**
 
-Errors are returned as [Error](../../cloud/error) object.
+Errors are returned as [Error](../../cloud/error/) object.
 
 Code | Description
 -----|--------------------------
@@ -165,7 +165,7 @@ Name | Type | Description
 
 **Errors Code**
 
-Errors are returned as [Error](../../cloud/error) object.
+Errors are returned as [Error](../../cloud/error/) object.
 
 Code | Description
 -----|--------------------------
@@ -174,11 +174,11 @@ Code | Description
 See Also:
 
 - [Collection Item Management](../collection_item)
-- [Collection API](../../cloud/collection)
-- [Backend Control Panel](/en/products_guide/backend/control_panel)
-- [Backend API](../../cloud)
-- [Backend Memo](/en/sampleapp/samples/backend_memo)
-- [Backend Management API](../../cloud_management)
+- [Collection API](../../cloud/collection/)
+- [Backend Control Panel](/en/products_guide/backend/control_panel/)
+- [Backend API](../../cloud/)
+- [Backend Memo](/en/sampleapp/samples/backend_memo/)
+- [Backend Management API](../../cloud_management/)
 - [Backend Management API Key](/en/products_guide/backend/control_panel/#backend-management-api-key)
 
 

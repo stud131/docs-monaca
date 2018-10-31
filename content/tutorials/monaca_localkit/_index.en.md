@@ -29,8 +29,8 @@ Before getting started with this tutorial, you will need the following:
 <hr>
 
 - [Part 1: Starting a Project](/en/tutorials/monaca_localkit/starting_project/)
-- [Part 2: Running Monaca Debugger with Monaca Localkit](/en/tutorials/monaca_localkit/testing_debugging)
-- [Part 3: Building Monaca App](/en/tutorials/monaca_localkit/building_app)
-- [Part 4: Publishing Monaca App](/en/tutorials/monaca_localkit/publishing_app)
+- [Part 2: Running Monaca Debugger with Monaca Localkit](/en/tutorials/monaca_localkit/testing_debugging/)
+- [Part 3: Building Monaca App](/en/tutorials/monaca_localkit/building_app/)
+- [Part 4: Publishing Monaca App](/en/tutorials/monaca_localkit/publishing_app/)
 
 {{%/excerpt%}}

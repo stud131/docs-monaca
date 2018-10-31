@@ -335,7 +335,7 @@ App ID の登録を、次の手順で行います。
 
 参考ページ
 
-- [Android アプリのビルド](../../build_android)
-- [Windows アプリのビルド](../../build_winrt)
-- [App Store での配布](../../../deploy/appstore)
-- [ビルド履歴一覧](../../build_history)
+- [Android アプリのビルド](../../build_android/)
+- [Windows アプリのビルド](../../build_winrt/)
+- [App Store での配布](../../../deploy/appstore/)
+- [ビルド履歴一覧](../../build_history/)

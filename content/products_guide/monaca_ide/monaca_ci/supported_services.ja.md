@@ -234,4 +234,4 @@ Monaca CI では、次のパラメーターをサポートしています ( JSON
 -   [Test Flight](https://developer.apple.com/testflight/)
 
 参考ページ  
-- [Monaca CI について](../overview)
+- [Monaca CI について](../overview/)

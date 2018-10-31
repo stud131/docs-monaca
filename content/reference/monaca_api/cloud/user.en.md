@@ -60,7 +60,7 @@ Within the `done()` callback, there is a `user` JSON Object which has the follow
 
 **Errors Code**
 
-Errors are returned as [Error](../error) object.
+Errors are returned as [Error](../error/) object.
 
 Code | Description
 -----|--------------------------
@@ -107,7 +107,7 @@ Type | Description
 
 **Errors Code**
 
-Errors are returned as [Error](../error) object.
+Errors are returned as [Error](../error/) object.
 
 Code | Description
 -----|--------------------------
@@ -151,7 +151,7 @@ Type | Description
 
 **Errors Code**
 
-Errors are returned as [Error](../error) object.
+Errors are returned as [Error](../error/) object.
 
 Code | Description
 -----|--------------------------
@@ -205,7 +205,7 @@ Within the `done()` callback, there is a `user` JSON Object which has the follow
 
 **Errors Code**
 
-Errors are returned as [Error](../error) object.
+Errors are returned as [Error](../error/) object.
 
 Code | Description
 -----|--------------------------
@@ -281,7 +281,7 @@ Within the `done()` callback, there is a `user` JSON Object which has the follow
 
 **Errors Code**
 
-Errors are returned as [Error](../error) object.
+Errors are returned as [Error](../error/) object.
 
 Code | Description
 -----|--------------------------
@@ -325,7 +325,7 @@ Type | Description
 
 **Errors Code**
 
-Errors are returned as [Error](../error) object.
+Errors are returned as [Error](../error/) object.
 
 Code | Description
 -----|--------------------------
@@ -371,7 +371,7 @@ Type | Description
 
 **Errors Code**
 
-Errors are returned as [Error](../error) object.
+Errors are returned as [Error](../error/) object.
 
 Code | Description
 -----|--------------------------
@@ -421,7 +421,7 @@ Type | Description
 
 **Errors Code**
 
-Errors are returned as [Error](../error) object.
+Errors are returned as [Error](../error/) object.
 
 Code | Description
 -----|--------------------------
@@ -477,7 +477,7 @@ Within the `done()` callback, there is a `user` JSON Object which has the follow
 
 **Errors Code**
 
-Errors are returned as [Error](../error) object.
+Errors are returned as [Error](../error/) object.
 
 Code | Description
 -----|--------------------------
@@ -521,7 +521,7 @@ Type | Description
 
 **Errors Code**
 
-Errors are returned as [Error](../error) object.
+Errors are returned as [Error](../error/) object.
 
 Code | Description
 -----|--------------------------
@@ -570,7 +570,7 @@ Within the `done()` callback, there is:
 
 **Errors Code**
 
-Errors are returned as [Error](../error) object.
+Errors are returned as [Error](../error/) object.
 
 Code | Description
 -----|--------------------------
@@ -616,7 +616,7 @@ Type | Description
 
 **Errors Code**
 
-Errors are returned as [Error](../error) object.
+Errors are returned as [Error](../error/) object.
 
 Code | Description
 -----|--------------------------
@@ -662,7 +662,7 @@ Type | Description
 
 **Errors Code**
 
-Errors are returned as [Error](../error) object.
+Errors are returned as [Error](../error/) object.
 
 Code | Description
 -----|--------------------------
@@ -702,10 +702,10 @@ var oid = monaca.cloud.User._oid;
 
 See Also: 
 
-- [User Management](../../cloud_management/user)
-- [Backend Control Panel](/en/products_guide/backend/control_panel)
-- [Backend API](../../cloud)
-- [Backend Memo](/en/sampleapp/samples/backend_memo)
-- [Backend Management API](../../cloud_management)
+- [User Management](../../cloud_management/user/)
+- [Backend Control Panel](/en/products_guide/backend/control_panel/)
+- [Backend API](../../cloud/)
+- [Backend Memo](/en/sampleapp/samples/backend_memo/)
+- [Backend Management API](../../cloud_management/)
 - [Backend Management API Key](/en/products_guide/backend/control_panel/#backend-management-api-key)
 

@@ -59,7 +59,7 @@ monaca.cloud.User.register(username: String, password: String, [properties: Obje
 
 **エラーコード**
 
-エラーが発生すると、 [Error](../error) オブジェクトを返します。
+エラーが発生すると、 [Error](../error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------
@@ -106,7 +106,7 @@ monaca.cloud.User.validate(username: String, [properties: Object]) : $.Promise
 
 **エラーコード**
 
-エラーが発生すると、[Error](../error) オブジェクトを返します。
+エラーが発生すると、[Error](../error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------
@@ -150,7 +150,7 @@ monaca.cloud.User.unregister(password: String) : $.Promise
 
 **エラーコード**
 
-エラーが発生すると、[Error](../error) オブジェクトを返します。
+エラーが発生すると、[Error](../error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------
@@ -204,7 +204,7 @@ Within the `done()` callback, there is a `user` JSON Object which has the follow
 
 **エラーコード**
 
-エラーが発生すると、[Error](../error) オブジェクトを返します。
+エラーが発生すると、[Error](../error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------
@@ -282,7 +282,7 @@ Within the `done()` callback, there is a `user` JSON Object which has the follow
 
 **エラーコード**
 
-エラーが発生すると、[Error](../error) オブジェクトを返します。
+エラーが発生すると、[Error](../error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------
@@ -326,7 +326,7 @@ monaca.cloud.User.logout() : $.Promise
 
 **エラーコード**
 
-エラーが発生すると、[Error](../error) オブジェクトを返します。
+エラーが発生すると、[Error](../error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------
@@ -372,7 +372,7 @@ monaca.cloud.User.updatePassword(oldPassword: String, newPassword: String) : $.P
 
 **エラーコード**
 
-エラーが発生すると、[Error](../error) オブジェクトを返します。
+エラーが発生すると、[Error](../error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------
@@ -420,7 +420,7 @@ monaca.cloud.User.sendPasswordResetToken(username: String, options: Object) : $.
 
 **エラーコード**
 
-エラーが発生すると、[Error](../error) オブジェクトを返します。
+エラーが発生すると、[Error](../error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------
@@ -475,7 +475,7 @@ Within the `done()` callback, there is a `user` JSON Object which has the follow
 
 **エラーコード**
 
-エラーが発生すると、[Error](../error) オブジェクトを返します。
+エラーが発生すると、[Error](../error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------
@@ -519,7 +519,7 @@ monaca.cloud.User.getProperty(name: String) : $.Promise
 
 **エラーコード**
 
-エラーが発生すると、[Error](../error) オブジェクトを返します。
+エラーが発生すると、[Error](../error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------
@@ -567,7 +567,7 @@ monaca.cloud.User.getProperties(names: Array) : $.Promise
 
 **エラーコード**
 
-エラーが発生すると、[Error](../error) オブジェクトを返します。
+エラーが発生すると、[Error](../error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------
@@ -613,7 +613,7 @@ monaca.cloud.User.saveProperty(name: String, value: String) : $.Promise
 
 **エラーコード**
 
-エラーが発生すると、[Error](../error) オブジェクトを返します。
+エラーが発生すると、[Error](../error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------
@@ -658,7 +658,7 @@ monaca.cloud.User.saveProperties(properties: Object) : $.Promise
 
 **エラーコード**
 
-エラーが発生すると、[Error](../error) オブジェクトを返します。
+エラーが発生すると、[Error](../error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------

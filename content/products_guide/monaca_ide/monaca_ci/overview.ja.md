@@ -275,4 +275,4 @@ Monaca CI では、JSON のレシピ ( アプリの設定に使用する、JSON
 
 参考ページ:
 
-- [アプリ配信/配布支援サービス (デプロイサービス)](../supported_services)
+- [アプリ配信/配布支援サービス (デプロイサービス/)](../supported_services/)

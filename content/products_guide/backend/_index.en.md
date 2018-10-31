@@ -6,5 +6,5 @@ aliases:
     - /en/backend/manual/
 ---
 
-- [Monaca Backend (Current Monaca Cloud IDE)](current_backend)
-- [Monaca Backend (New Monaca Cloud IDE)](new_backend)
+- [Monaca Backend (Current Monaca Cloud IDE/)](current_backend/)
+- [Monaca Backend (New Monaca Cloud IDE/)](new_backend/)

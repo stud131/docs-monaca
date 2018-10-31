@@ -20,12 +20,12 @@ Cordova プラグイン ( Monaca
 Monaca が提供している、第三者提供の Cordova
 プラグインは、次のとおりです。
 
-- [BarcodeScanner プラグイン](barcode_scanner)
-- [PhoneGap BarcodeScanner プラグイン](phonegap_plugin_barcodescanner)
-- [Custom Config プラグイン](custom_config)
-- [Datepicker プラグイン](datepicker)
-- [Share プラグイン ( Android 向け )](share)
-- [WebIntent プラグイン ( Android 向け )](webintent)
+- [BarcodeScanner プラグイン](barcode_scanner/)
+- [PhoneGap BarcodeScanner プラグイン](phonegap_plugin_barcodescanner/)
+- [Custom Config プラグイン](custom_config/)
+- [Datepicker プラグイン](datepicker/)
+- [Share プラグイン ( Android 向け )](share/)
+- [WebIntent プラグイン ( Android 向け )](webintent/)
 
 
 

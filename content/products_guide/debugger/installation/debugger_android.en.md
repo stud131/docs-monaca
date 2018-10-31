@@ -98,13 +98,13 @@ automatically included.
 
 Monaca includes Core cordova plugins which are a minimal set of APIs
 such as Battery Status, Camera, Contacts, Device and so on. For a
-complete list of core Cordova plugins, please refer to [Core Cordova Plugins](/en/reference/cordova_6.5).
+complete list of core Cordova plugins, please refer to [Core Cordova Plugins](/en/reference/cordova_6.5/).
 
 Monaca also includes some third-party Cordova plugins such as Statusbar,
 DatePicker, BarcodeScanner and so on. For a complete list of currently
-included third-party Cordova plugins, please refer to [Third-party Cordova Plugins](/en/reference/third_party_phonegap).
+included third-party Cordova plugins, please refer to [Third-party Cordova Plugins](/en/reference/third_party_phonegap/).
 
-While developing your project, you may need to add other third-party or [custom Cordova plugins](/en/products_guide/monaca_ide/dependencies/custom_cordova_plugin) to your project.
+While developing your project, you may need to add other third-party or [custom Cordova plugins](/en/products_guide/monaca_ide/dependencies/custom_cordova_plugin/) to your project.
 The standard Monaca Debugger (Store Version) doesn't have these newly
 added plugins. For this reason, your project might not run properly in
 the debugger. Therefore, you need to use Custom Monaca Debugger. Custom
@@ -157,7 +157,7 @@ debugger. For more information, please refer to [how to use Network Install feat
 
 See Also:
 
-- [Debugger Installation on Emulator](../debugger_emulator)
-- [Debugger Installation on iOS](../debugger_ios)
-- [Debugger's Functionalities](../../features)
-- [Debugger's Usage](../../debug)
+- [Debugger Installation on Emulator](../debugger_emulator/)
+- [Debugger Installation on iOS](../debugger_ios/)
+- [Debugger's Functionalities](../../features/)
+- [Debugger's Usage](../../debug/)

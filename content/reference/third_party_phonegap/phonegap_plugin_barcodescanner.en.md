@@ -89,5 +89,5 @@ Here is a simple example demonstrating how to use the PhoneGap BarcodeScanner Pl
 
 See Also:
 
-- [Core Cordova Plugins](../../cordova_7.1)
-- [Monaca Power Plugins](../../power_plugins)
+- [Core Cordova Plugins](../../cordova_7.1/)
+- [Monaca Power Plugins](../../power_plugins/)

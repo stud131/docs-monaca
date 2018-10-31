@@ -21,5 +21,5 @@ aliases: /ja/monaca_ide/manual/version_control/introduction
 
 Monaca アカウントと Git サービスを統合する方法は 2 つあります。
 
-- [GitHub との連携](../github_integration)
-- [Git SSH との連携](../git_ssh_integration)
+- [GitHub との連携](../github_integration/)
+- [Git SSH との連携](../git_ssh_integration/)

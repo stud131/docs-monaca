@@ -12,5 +12,5 @@ App Store Connect を使用します。App Store Connect 上では、アプリ�
 での配布基準に適合しているかが審査されます。アプリの提出後、審査終了までには、通常、2
 週間程度かかります。
 
-- [App Store Connect ガイド](app_store_connect)
-- [Monaca 提供のアップロード機能](app_submission)
+- [App Store Connect ガイド](app_store_connect/)
+- [Monaca 提供のアップロード機能](app_submission/)

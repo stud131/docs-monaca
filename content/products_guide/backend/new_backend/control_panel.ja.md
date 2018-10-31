@@ -4,7 +4,7 @@ weight: 30
 aliases: /ja/backend/manual/control_panel/
 ---
 
-[バックエンドの操作](../backend_operations) のほかに、さまざまなバックエンドの設定と情報がバックエンド管理パネルにあります。
+[バックエンドの操作](../backend_operations/) のほかに、さまざまなバックエンドの設定と情報がバックエンド管理パネルにあります。
 
 ## バックエンドの切り替え
 
@@ -35,7 +35,7 @@ aliases: /ja/backend/manual/control_panel/
 Monaca バックエンド マネジメント API の使用時には、バックエンド
 マネジメント API キーが必要です。この API を使用すれば、Monaca クラウド
 IDE からではなく、開発者自身のサーバーから Monaca
-バックエンドを管理できます。詳細は、[バックエンド マネジメント API](/ja/reference/monaca_api/cloud_management) をご確認ください。
+バックエンドを管理できます。詳細は、[バックエンド マネジメント API](/ja/reference/monaca_api/cloud_management/) をご確認ください。
 
 バックエンド マネジメント API キーとエンドポイント URL の取得手順を、次に記します。
 
@@ -46,7 +46,7 @@ IDE からではなく、開発者自身のサーバーから Monaca
     {{<img src="/images/backend/control_panel/4.png">}}
 
 3.  次に、マネジメント APIに関連するさまざまな情報が表示されます。
-**マネジメント API のエンドポイント URL**は、`JSON-RPC Request URL` ([バックエンド マネジメント API](/ja/reference/monaca_api/cloud_management) を参照）として使用されます。
+**マネジメント API のエンドポイント URL**は、`JSON-RPC Request URL` ([バックエンド マネジメント API](/ja/reference/monaca_api/cloud_management/) を参照）として使用されます。
 
     {{<img src="/images/backend/control_panel/5.png">}}
 
@@ -82,6 +82,6 @@ IDE からではなく、開発者自身のサーバーから Monaca
 
 参考ページ
 
-- [バックエンド API](/ja/reference/monaca_api/cloud)
+- [バックエンド API](/ja/reference/monaca_api/cloud/)
 - [バックエンド メモ帳アプリ]({{<ref "backend_memo.ja.md">}}    )
 

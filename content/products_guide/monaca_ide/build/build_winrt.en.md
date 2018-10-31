@@ -134,7 +134,7 @@ If you don't have the license, please register
 
 See Also: 
 
-- [Building for iOS](../ios/build_ios)
-- [Building for Android](../build_android)
-- [Google Play Distribution](../../deploy/google_play)
-- [Build History](../build_history)
+- [Building for iOS](../ios/build_ios/)
+- [Building for Android](../build_android/)
+- [Google Play Distribution](../../deploy/google_play/)
+- [Build History](../build_history/)

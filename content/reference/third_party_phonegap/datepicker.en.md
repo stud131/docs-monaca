@@ -153,5 +153,5 @@ Please note that, this example only works with iPhone but not iPad.
 
 See Also:
 
-- [Core Cordova Plugins](../../cordova_6.5)
-- [Monaca Power Plugins](../../power_plugins)
+- [Core Cordova Plugins](../../cordova_6.5/)
+- [Monaca Power Plugins](../../power_plugins/)

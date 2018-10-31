@@ -9,7 +9,7 @@ aliases: /ja/backend/manual/control_operations/
 - [ユーザー管理](#ユーザー管理)
 - [コレクション管理](#コレクション管理)
 - [メールテンプレートの管理](#メールテンプレートの管理)
-- [プッシュ通知](/ja/products_guide/push_notification/overview)
+- [プッシュ通知](/ja/products_guide/push_notification/overview/)
 
 ## ユーザー管理
 

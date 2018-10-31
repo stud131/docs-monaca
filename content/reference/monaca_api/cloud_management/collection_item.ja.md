@@ -45,7 +45,7 @@ CollectionItem.list(collectionName: String, page: Number, itemsInPage: Number, s
 
 **エラーコード**
 
-エラーが発生すると、[Error](../../cloud/error) オブジェクトを返します。
+エラーが発生すると、[Error](../../cloud/error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------
@@ -75,7 +75,7 @@ CollectionItem.create(collectionName: String, item: JSON Object)
 
 **エラーコード**
 
-エラーが発生すると、[Error](../../cloud/error) オブジェクトを返します。
+エラーが発生すると、[Error](../../cloud/error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------
@@ -105,7 +105,7 @@ CollectionItem.get(collectionName: String, _id: String)
 
 **エラーコード**
 
-エラーが発生すると、[Error](../../cloud/error) オブジェクトを返します。
+エラーが発生すると、[Error](../../cloud/error/) オブジェクトを返します。
 
 コード | 解説
 ------|--------------------------
@@ -134,7 +134,7 @@ CollectionItem.update(collectionName: String, _id: String, item: JSON Object)
 
 **エラーコード**
 
-エラーが発生すると、[Error](../../cloud/error) オブジェクトを返します。
+エラーが発生すると、[Error](../../cloud/error/) オブジェクトを返します。
 
 コード | 解説
 ------|--------------------------
@@ -162,7 +162,7 @@ CollectionItem.delete(collectionName: String, idList: Array of String)
 
 **エラーコード**
 
-エラーが発生すると、[Error](../../cloud/error) オブジェクトを返します。
+エラーが発生すると、[Error](../../cloud/error/) オブジェクトを返します。
 
 コード | 解説
 ------|--------------------------
@@ -192,7 +192,7 @@ CollectionItem.getPermission(collectionName: String, _id: String)
 
 **エラーコード**
 
-エラーが発生すると、[Error](../../cloud/error) オブジェクトを返します。
+エラーが発生すると、[Error](../../cloud/error/) オブジェクトを返します。
 
 コード | 解説
 ------|--------------------------
@@ -221,7 +221,7 @@ CollectionItem.setPermission(collectionName: String, _id: String, permission: JS
 
 **エラーコード**
 
-エラーが発生すると、[Error](../../cloud/error) オブジェクトを返します。
+エラーが発生すると、[Error](../../cloud/error/) オブジェクトを返します。
 
 コード | 解説
 ------|--------------------------

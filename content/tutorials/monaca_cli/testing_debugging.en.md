@@ -4,7 +4,7 @@ weight: 2
 aliases: /en/monaca_cli/tutorial/testing_debugging/
 ---
 
-[Monaca Debugger](/en/products_guide/debugger) is a powerful
+[Monaca Debugger](/en/products_guide/debugger/) is a powerful
 application for testing and debugging your Monaca applications on real
 devices in real time.
 
@@ -114,4 +114,4 @@ That’s it! That’s how easy it is to use Monaca Debugger. Please try to make 
 
 **Next**: 
 
-- [Part 3: Building Monaca App](../building_app)
+- [Part 3: Building Monaca App](../building_app/)

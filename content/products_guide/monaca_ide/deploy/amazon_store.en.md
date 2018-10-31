@@ -14,7 +14,7 @@ is free.
 ## Create a Release Build of the App
 
 Using Monaca Cloud IDE build feature, you can build a release version of
-your app and upload it to Amazon Appstore. Follow the steps in [Building for Android](../../build/build_android) to build the app with “Release Build”. Then,
+your app and upload it to Amazon Appstore. Follow the steps in [Building for Android](../../build/build_android/) to build the app with “Release Build”. Then,
 download the built app (APK file).
 
 ## Register the Apps in Amazon AppStore
@@ -114,7 +114,7 @@ Badges](https://developer.amazon.com/public/support/legal/tuabg).
 
 See Also: 
 
-- [Building for Android](../../build/build_android)
-- [Google Play Distribution](../google_play)
-- [App Store Distribution](../appstore)
-- [Non-market App Distribution](../non_market_deploy)
+- [Building for Android](../../build/build_android/)
+- [Google Play Distribution](../google_play/)
+- [App Store Distribution](../appstore/)
+- [Non-market App Distribution](../non_market_deploy/)

@@ -337,7 +337,7 @@ provisioning profile:
 
 See Also: 
 
-- [Building for Android](../../build_android)
-- [Building for Windows](../../build_winrt)
-- [App Store Distribution](../../../deploy/appstore)
-- [Build History](../../build_history)
+- [Building for Android](../../build_android/)
+- [Building for Windows](../../build_winrt/)
+- [App Store Distribution](../../../deploy/appstore/)
+- [Build History](../../build_history/)

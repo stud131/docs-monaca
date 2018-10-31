@@ -64,8 +64,8 @@ Monaca Localkit を使用した、Monaca アプリのデバッグ
 
 参考ページ
 
-- [チュートリアル](../tutorial)
-- [概要](../overview)
-- [リモートビルドと配布申請](../build_publish)
-- [トラブルシューティング](../troubleshooting)
+- [チュートリアル](../tutorial/)
+- [概要](../overview/)
+- [リモートビルドと配布申請](../build_publish/)
+- [トラブルシューティング](../troubleshooting/)
 

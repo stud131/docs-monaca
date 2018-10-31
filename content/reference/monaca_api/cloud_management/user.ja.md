@@ -45,7 +45,7 @@ User.list(page: Number, itemsInPage: Number, sortPropery: String, [propertyNames
 
 **エラーコード**
 
-エラーが発生すると、[Error](../../cloud/error) オブジェクトを返します。
+エラーが発生すると、[Error](../../cloud/error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------
@@ -76,7 +76,7 @@ User.create(username: String, password: String, properties: JSON Object)
 
 **エラーコード**
 
-エラーが発生すると、[Error](../../cloud/error) オブジェクトを返します。
+エラーが発生すると、[Error](../../cloud/error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------
@@ -105,7 +105,7 @@ User.get(_id: String)
 
 **エラーコード**
 
-エラーが発生すると、[Error](../../cloud/error) オブジェクトを返します。
+エラーが発生すると、[Error](../../cloud/error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------
@@ -133,7 +133,7 @@ User.update(_id: Stirng, user: JSON Object)
 
 **エラーコード**
 
-エラーが発生すると、[Error](../../cloud/error) オブジェクトを返します。
+エラーが発生すると、[Error](../../cloud/error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------
@@ -160,7 +160,7 @@ User.delete(_idList: JSON Object)
 
 **エラーコード**
 
-エラーが発生すると、[Error](../../cloud/error) オブジェクトを返します。
+エラーが発生すると、[Error](../../cloud/error/) オブジェクトを返します。
 
 コード | 解説
 -----|--------------------------

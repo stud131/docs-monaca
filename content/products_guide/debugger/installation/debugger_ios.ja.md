@@ -163,7 +163,7 @@ App Store から入手した iOS 向けの Monaca
 
 参考ページ
 
-- [エミュレーター上へのデバッガーのインストール](../debugger_emulator)
-- [Android 向けの Monaca デバッガー](../debugger_android)
-- [機能の概要](../../features)
-- [使用例](../../debug)
+- [エミュレーター上へのデバッガーのインストール](../debugger_emulator/)
+- [Android 向けの Monaca デバッガー](../debugger_android/)
+- [機能の概要](../../features/)
+- [使用例](../../debug/)

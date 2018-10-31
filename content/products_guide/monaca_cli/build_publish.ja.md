@@ -21,5 +21,5 @@ aliases: /ja/monaca_cli/manual/build_publish
 
 各プラットフォーム向けアプリのビルド方法と配布申請に関しては、次の解説をご確認ください。
 
-- [Monaca アプリのビルド](/ja/tutorials/monaca_cli/building_app)
-- [配布方法](/ja/products_guide/monaca_ide/deploy)
+- [Monaca アプリのビルド](/ja/tutorials/monaca_cli/building_app/)
+- [配布方法](/ja/products_guide/monaca_ide/deploy/)

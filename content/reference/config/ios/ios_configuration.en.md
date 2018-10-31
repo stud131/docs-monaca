@@ -52,7 +52,7 @@ the page:
 All the configuration parameters of an iOS app are stored in the files
 as follows:
 
-- [config.xml](../config_xml)
+- [config.xml](../config_xml/)
 
 {{<note>}}
   These configurations are critical to the iOS app to run. Wrong configuration can prevent the app from running properly, please edit the file carefully.

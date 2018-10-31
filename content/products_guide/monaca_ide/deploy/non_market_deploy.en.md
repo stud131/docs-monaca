@@ -209,7 +209,7 @@ This is simply an installation through direct link to your `.apk` file:
 
 See Also: 
 
-- [Building for iOS](../../build/ios/build_ios)
-- [Building for Android](../../build/build_android)
-- [Google Play Distribution](../google_play)
-- [App Store Distribution](../appstore)
+- [Building for iOS](../../build/ios/build_ios/)
+- [Building for Android](../../build/build_android/)
+- [Google Play Distribution](../google_play/)
+- [App Store Distribution](../appstore/)

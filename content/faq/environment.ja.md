@@ -6,14 +6,14 @@ weight: 20
 Monaca を使用するためには何が必要ですか？
 -----------------------------------------
 
-[Monaca クラウド IDE](/ja/products_guide/monaca_ide) を使用するためには、「安定したインターネット接続 」 と 「 最新の [Google Chrome](https://www.google.com/chrome/) ブラウザー 」
+[Monaca クラウド IDE](/ja/products_guide/monaca_ide/) を使用するためには、「安定したインターネット接続 」 と 「 最新の [Google Chrome](https://www.google.com/chrome/) ブラウザー 」
 が必要です。なお、アプリを検証するときには、スマートフォンなどの携帯端末が別途必要となります。また、Monaca
-が提供している [Monaca デバッガー](/ja/products_guide/debugger)
+が提供している [Monaca デバッガー](/ja/products_guide/debugger/)
 アプリを端末にインストールすれば、開発効率を上げることもできます (Monaca デバッガーを使用すると、コードを変更するたびに、変更箇所がアプリ側へ反映されます。コードの修正に通常伴う再ビルドと再インストールは必要ありません)。
 
 また、Monaca クラウド IDE ( クラウド環境用 )
 以外にも、ローカル環境用の開発ツールも提供しています。Monaca
-ユーザーの多様なニーズに応じられるように、[Monaca Localkit](/ja/products_guide/monaca_localkit) and [Monaca CLI](/ja/products_guide/monaca_cli) を現在提供しています。
+ユーザーの多様なニーズに応じられるように、[Monaca Localkit](/ja/products_guide/monaca_localkit/) and [Monaca CLI](/ja/products_guide/monaca_cli/) を現在提供しています。
 
 Monaca を使用したモバイルアプリの開発には、どんな知識が必要となりますか？
 -------------------------------------------------------------------------
@@ -82,7 +82,7 @@ Monaca アプリの開発において、現在使用している開発環境を�
 -----------------------------------------------------------------------------------
 
 現在お使いの開発環境をそのまま使用することができます。Monaca
-では、[Monaca Localkit](/ja/products_guide/monaca_localkit)、[Monaca CLI](/ja/products_guide/monaca_cli)
+では、[Monaca Localkit](/ja/products_guide/monaca_localkit/)、[Monaca CLI](/ja/products_guide/monaca_cli/)
 などのローカル環境用の開発ツールを提供しており、これらのツールは、お好みの
 IDE やコードエディターと併用することができます。
 

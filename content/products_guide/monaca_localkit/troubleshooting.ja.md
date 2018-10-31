@@ -84,8 +84,8 @@ Cloud上に存在する場合にのみ、この解決方法が適用できます
 
 参考ページ
 
-- [チュートリアル](../tutorial)
-- [概要](../overview)
-- [リモートビルドと配布申請](../build_publish)
-- [ペアリングとデバッグ](../pairing_debugging)
+- [チュートリアル](../tutorial/)
+- [概要](../overview/)
+- [リモートビルドと配布申請](../build_publish/)
+- [ペアリングとデバッグ](../pairing_debugging/)
 

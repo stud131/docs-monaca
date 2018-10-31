@@ -40,8 +40,8 @@ Before start using push notification with Monaca, it is necessary to
 configure the Push Notification settings for each platform of your
 application as follows:
 
-- [iOS App Push Notification Settings](../apns)
-- [Android App Push Notification Settings](../gcm)
+- [iOS App Push Notification Settings](../apns/)
+- [Android App Push Notification Settings](../gcm/)
 
 {{<note>}}
     Monaca Debugger can’t receive push notifications. You must build your app to receive push notifications.

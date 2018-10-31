@@ -10,7 +10,7 @@ In this page, we will cover the two following topics:
 2.  [Building a Monaca App for Android](#building-a-monaca-app-for-android)
 
 For more information on how to build Monaca Apps for other platforms,
-please refer to [Build](/en/products_guide/monaca_ide/build).
+please refer to [Build](/en/products_guide/monaca_ide/build/).
 
 ##  Building a Monaca App for iOS
 
@@ -96,7 +96,7 @@ There are 3 ways to install the debug built app such as:
 
 1.  Download the built app and use Apple Configurator 2 to install the built app on your iOS device. (Mac Only)
 2.  Install via QR code.
-3.  Install via [cofigured deployment services](/en/products_guide/monaca_ide/monaca_ci/supported_services).
+3.  Install via [cofigured deployment services](/en/products_guide/monaca_ide/monaca_ci/supported_services/).
 
 ##  Building a Monaca App for Android
 
@@ -106,7 +106,7 @@ please refer to [Types of Build]({{<ref "build_android.en.md#types-of-build">}})
 
 ### Step 1: Configuring Android App Settings
 
-1.  In the command window, navigate to your project folder and type [monaca remote build](/en/products_guide/monaca_cli/cli_commands/#monaca-remote-build) command. This command will automatically upload your local project files to Monaca Cloud. Please type the following command to open an interactive build interface in your browser.
+1.  In the command window, navigate to your project folder and type [monaca remote build](/en/products_guide/monaca_cli/cli_commands/#monaca-remote-build/) command. This command will automatically upload your local project files to Monaca Cloud. Please type the following command to open an interactive build interface in your browser.
 
     {{<highlight bash>}}$ monaca remote build --browser{{</highlight>}}
 
@@ -185,8 +185,8 @@ There are 5 ways you can install the built app such as:
     USB cable.
 4.  sending the URL to download the built app to your registered email
     address.
-5.  installing via [configured deployment services](/en/products_guide/monaca_ide/monaca_ci/supported_services).
+5.  installing via [configured deployment services](/en/products_guide/monaca_ide/monaca_ci/supported_services/).
 
 **Next**: 
 
-- [Part 4: Publishing Monaca App](../publishing_app)
+- [Part 4: Publishing Monaca App](../publishing_app/)

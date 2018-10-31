@@ -10,7 +10,7 @@ In this page, we will cover the two following topics:
 2.  [Building a Monaca App for Android](#building-a-monaca-app-for-android)
 
 For more information on how to build Monaca Apps for other platforms,
-please refer to [Build](/en/products_guide/monaca_ide/build).
+please refer to [Build](/en/products_guide/monaca_ide/build/).
 
 ##  Building a Monaca App for iOS
 
@@ -190,8 +190,8 @@ There are 5 ways you can install the built app such as:
     USB cable
 4.  sending the URL to download the built app to your registered email
     address
-5.  installing via [configured deployment services](/en/products_guide/monaca_ide/monaca_ci/supported_services)
+5.  installing via [configured deployment services](/en/products_guide/monaca_ide/monaca_ci/supported_services/)
 
 **Next**:
 
-- [Part 4: Publishing Monaca App](../publishing_app)
+- [Part 4: Publishing Monaca App](../publishing_app/)

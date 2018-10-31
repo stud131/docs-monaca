@@ -15,7 +15,7 @@ Google Play ストアでアプリを配布するためには、 *Google Play Dev
 
 ## リリースビルドのアプリを作成
 
-リリースビルド版のアプリをビルドする場合、 [Android アプリのビルド](../../build/build_android) を参照してください。ビルドの完了後、アプリ ( apk ファイル ) をダウンロードします。
+リリースビルド版のアプリをビルドする場合、 [Android アプリのビルド](../../build/build_android/) を参照してください。ビルドの完了後、アプリ ( apk ファイル ) をダウンロードします。
 
 ## Google Play へのアプリの登録
 
@@ -76,6 +76,6 @@ Google Play ストアでアプリを配布するためには、 *Google Play Dev
 
 参考ページ:
 
-- [Android アプリのビルド](../../build/build_android)
-- [App Store での配布](../appstore)
-- [公式ストア経由以外での配布](../non_market_deploy)
+- [Android アプリのビルド](../../build/build_android/)
+- [App Store での配布](../appstore/)
+- [公式ストア経由以外での配布](../non_market_deploy/)

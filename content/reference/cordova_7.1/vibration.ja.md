@@ -214,5 +214,5 @@ navigator.notification.vibrateWithPattern([0, 100, 100, 200, 100, 400, 100, 800]
 
 関連項目:
 
-- [サードパーティー製プラグイン](../../third_party_phonegap)
-- [基本プラグイン](../../cordova_7.1)
+- [サードパーティー製プラグイン](../../third_party_phonegap/)
+- [基本プラグイン](../../cordova_7.1/)

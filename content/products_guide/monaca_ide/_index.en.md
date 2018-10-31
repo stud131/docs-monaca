@@ -8,15 +8,15 @@ aliases:
 
 {{<figure src="/images/monaca_ide/manual/1.png">}}
 
-- [Overview](overview)
-- [Changes in the New Cloud IDE](changes)
-- [Integrated Terminal](terminal)
-- [Editor Shortcut](editor)
-- [Project Dependencies](dependencies)
-- [Version Control](version_control)
-- [Monaca CI](monaca_ci)
-- [Build](build)
-- [Distribution](deploy)
-- [Tutorial](tutorial)
+- [Overview](overview/)
+- [Changes in the New Cloud IDE](changes/)
+- [Integrated Terminal](terminal/)
+- [Editor Shortcut](editor/)
+- [Project Dependencies](dependencies/)
+- [Version Control](version_control/)
+- [Monaca CI](monaca_ci/)
+- [Build](build/)
+- [Distribution](deploy/)
+- [Tutorial](tutorial/)
 
 

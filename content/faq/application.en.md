@@ -31,7 +31,7 @@ the document below.
 
 -   [Cordova Core Plugins English](/en/reference/cordova_6.5/)
 -   [Cordova Core Plugins Japanese](/ja/reference/cordova_6.5/)
--   [Samples & Tips](/en/sampleapp)
+-   [Samples & Tips](/en/sampleapp/)
 
 Windows Store apps are not compatible with Cordova Core Plugins, but
 compatible with developments that used WinJS.
@@ -56,10 +56,10 @@ include the following mata tag in your code.
 ## Can I use Cordova plugins?
 
 For Basic and Personal plans, you can use the built-in Cordova plugins
-such as ChildBrowser, DatePicker, Bluetooth and so on. Please refer to [Third-party Cordova Plugins](/en/reference/third_party_phonegap) for all the built-in Cordova plugins
+such as ChildBrowser, DatePicker, Bluetooth and so on. Please refer to [Third-party Cordova Plugins](/en/reference/third_party_phonegap/) for all the built-in Cordova plugins
 provided by Monaca. However, In order to add Custom Cordova plugin, you
 will need to have a Gold or Platinum plan. To add a custom Cordova
-plugin, please refer to [Custom Cordova Plugins](/en/products_guide/monaca_ide/dependencies/custom_cordova_plugin).
+plugin, please refer to [Custom Cordova Plugins](/en/products_guide/monaca_ide/dependencies/custom_cordova_plugin/).
 
 ## Tell me about restrictions for developing Windows Store apps.
 
@@ -87,7 +87,7 @@ There are two ways to make an app runs in fullscreen mode:
 
 ### iOS
 
-You need to use [StatusBar Plugin](/en/reference/cordova_6.5/statusbar) to hide the native status bar. 
+You need to use [StatusBar Plugin](/en/reference/cordova_6.5/statusbar/) to hide the native status bar. 
 
 {{<note>}}
     To ensure the configuration is updated successfully, please build your app again after making the above configuration. 

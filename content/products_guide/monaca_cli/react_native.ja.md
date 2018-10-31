@@ -87,14 +87,14 @@ $ react-native run-android{{</highlight>}}
 
 コマンド | 説明
 ----------|-------------
-[monaca login](#monaca-login) | Monaca へのサインインします。
-[monaca logout](#monaca-logout) | Monaca からサインアウトします。
-[monaca signup](#monaca-signup) | Monaca のアカウント登録を行います。
-[monaca remote build](#monaca-remote-build) | Monaca クラウド上で、プロジェクトをリモートビルドします。
-[monaca config](#monaca-config) | Monaca CLIの設定内容を管理できます。
-[monaca remote config](#monaca-remote-config) | Monaca クラウドのプロジェクト設定を開きます。
-[monaca docs](#monaca-docs) | Monaca CLI, Onsen UI, チュートリアルを表示します。
-[monaca info](#monaca-info) | Monaca の依存関係に関する情報を表示します。
+[monaca login](#monaca-login/) | Monaca へのサインインします。
+[monaca logout](#monaca-logout/) | Monaca からサインアウトします。
+[monaca signup](#monaca-signup/) | Monaca のアカウント登録を行います。
+[monaca remote build](#monaca-remote-build/) | Monaca クラウド上で、プロジェクトをリモートビルドします。
+[monaca config](#monaca-config/) | Monaca CLIの設定内容を管理できます。
+[monaca remote config](#monaca-remote-config/) | Monaca クラウドのプロジェクト設定を開きます。
+[monaca docs](#monaca-docs/) | Monaca CLI, Onsen UI, チュートリアルを表示します。
+[monaca info](#monaca-info/) | Monaca の依存関係に関する情報を表示します。
 
 ### monaca login
 

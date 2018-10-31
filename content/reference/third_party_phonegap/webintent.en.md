@@ -66,5 +66,5 @@ url: 'tel: phone_number=' + '03-5875-6862'
 
 See Also:
 
-- [Core Cordova Plugins](../../cordova_6.5)
-- [Monaca Power Plugins](../../power_plugins)
+- [Core Cordova Plugins](../../cordova_6.5/)
+- [Monaca Power Plugins](../../power_plugins/)

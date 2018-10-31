@@ -143,5 +143,5 @@ You can download a sample screen orientation file below:
 Value | Type | Default | Description
 ------|------|---------|--------------------
 UIStatusBarHidden | Boolean | `false` | If set to `true`, the status bar at the top of the application will be hidden. If *UIStatusBarHidden* set to `true` and *UIViewControllerBasedStatusBarAppearance* set to `false`, the status bar at the top of the app will be hidden.
-UIViewControllerBasedStatusBarAppearance | Boolean | `false` | If set to `true`, the status bar at the top of the application will be hidden. Set to `true` in order to use [StatusBar Plugin](/en/reference/cordova_6.5/statusbar). 
+UIViewControllerBasedStatusBarAppearance | Boolean | `false` | If set to `true`, the status bar at the top of the application will be hidden. Set to `true` in order to use [StatusBar Plugin](/en/reference/cordova_6.5/statusbar/). 
 

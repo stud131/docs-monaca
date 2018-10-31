@@ -11,7 +11,7 @@ aliases: /ja/monaca_ide/tutorial/building_app/
 2.  [Android 向け Monaca アプリのビルド](#android-向け-monaca-アプリのビルド)
 
 他のプラットフォーム向けの Monaca アプリのビルドに関しては、
-[ビルド](/ja/products_guide/monaca_ide/build) をご確認ください。
+[ビルド](/ja/products_guide/monaca_ide/build/) をご確認ください。
 
 ## iOS 向け Monaca アプリのビルド
 
@@ -178,7 +178,7 @@ Monaca での Android キーストアの設定方法は、次のとおりです�
 3.  ビルド済みアプリをコンピューターに直接ダウンロードし、USB
     ケーブル経由でインストールします。
 4.  登録されているメールアドレスに、ダウンロードするための URL を送信します。
-5.  [配信/配布支援サービス ( デプロイサービス )](/ja/products_guide/monaca_ide/monaca_ci/supported_services) 経由でインストールします。
+5.  [配信/配布支援サービス ( デプロイサービス )](/ja/products_guide/monaca_ide/monaca_ci/supported_services/) 経由でインストールします。
 
 **Next**: 
 

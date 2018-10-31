@@ -55,7 +55,7 @@ $ sudo npm install -g monaca
 
 ### ステップ 2 : チュートリアルの確認
 
-Monaca CLI のインストール後は、こちらの [Monaca CLI チュートリアル](../tutorial)
+Monaca CLI のインストール後は、こちらの [Monaca CLI チュートリアル](../tutorial/)
 の内容に沿って、Monaca CLI を使用してみましょう。
 
 ## トランスパイル処理 ( コード変換 )
@@ -97,9 +97,9 @@ node_modules
 
 参考ページ
 
-- [チュートリアル](../tutorial)
-- [Monaca CLI コマンド](../cli_commands)
-- [プロジェクトの構成](../dependencies)
-- [ペアリングとデバッグ](../pairing_debugging)
-- [リモートビルドと配布申請](../build_publish)
-- [トラブルシューティング ガイド](../troubleshooting)
+- [チュートリアル](../tutorial/)
+- [Monaca CLI コマンド](../cli_commands/)
+- [プロジェクトの構成](../dependencies/)
+- [ペアリングとデバッグ](../pairing_debugging/)
+- [リモートビルドと配布申請](../build_publish/)
+- [トラブルシューティング ガイド](../troubleshooting/)
