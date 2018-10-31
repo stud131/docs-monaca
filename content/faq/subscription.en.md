@@ -8,10 +8,12 @@ weight: 40
 In order to upgrade/downgrade your subscription plan, please do as
 follows:
 
-1.  Go to [Manage Plan page](https://monaca.mobi/en/plan/manage).
-2.  Click on {{<guilabel name="Switch Plan">}} button.
-3.  Choose the new plan.
-4.  Follow the switching wizard as shown on screen.
+1.  Log in to [Monaca Cloud IDE](https://monaca.mobi/en/login) with your
+    Monaca account.
+2.  Go to [Manage Plan page](https://monaca.mobi/en/plan/manage).
+3.  Click on {{<guilabel name="Switch Plan">}} button.
+4.  Choose the new plan.
+5.  Follow the switching wizard as shown on screen.
 
 {{<note>}}
     When upgrading, you will be billed for the differences of the plans’ prices calculated based on the number of days remaining in the month. However, when downgrading, there will be no refund of the charge which have already been paid.
