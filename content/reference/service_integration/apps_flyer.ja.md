@@ -67,7 +67,7 @@ document.addEventListener("deviceready", function(){
 
 ### 使い方
 
-#### SDK Initialization
+#### SDK の初期化
 
 SDK を初期化します。
 
@@ -87,10 +87,10 @@ initSdk(options, onSuccess, onError): void
 
 名前 | 型 | デフォルト値 | 解説
 -----|------|---------|------------------
-`devKey` | 文字列 | | [Dev key の解説 ( AppsFlyer のサイト )](https://support.appsflyer.com/hc/ja/articles/208164153-AppsFlyer-SDK%E5%AE%9F%E8%A3%85%E3%82%AC%E3%82%A4%E3%83%89-Android)
-`appId` | 文字列 | | ( iOS の場合 ) [App Store で使用する App ID](https://support.appsflyer.com/hc/ja/articles/207478863-AppsFlyer-SDK-%E5%AE%9F%E8%A3%85%E3%82%AC%E3%82%A4%E3%83%89-iOS) です。
+`devKey` | 文字列 | | [Dev key の解説 ( AppsFlyer のサイト )](https://support.appsflyer.com/hc/ja/articles/211719806-App-Settings#sdk-dev-key)
+`appId` | 文字列 | | ( iOS のみ ) App Store で使用する App ID です。
 `isDebug` | 真偽値 | `false` | デバッグモード ( 任意 )
-`onInstallConversionDataListener` | 真偽値 | `false` | アトリビューション/コンバージョン データに、SDK 経由でアクセスします ( ディファード ディープリンク/Deferred DeepLinking )。AppsFlyer プラグインでは、アトリビューション データを、onSuccess コールバックに返します。詳細は、次のリンク先をご確認ください。 <ul><li>[ディファード ディープリンク ( Android の場合 )](https://support.appsflyer.com/hc/ja/articles/212736766-SDK%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%9FAppsFlyer%E3%82%A2%E3%83%88%E3%83%AA%E3%83%93%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3-%E3%82%B3%E3%83%B3%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%87%E3%83%BC%E3%82%BF-Android-%E5%8F%96%E5%BE%97%E6%96%B9%E6%B3%95-Accessing-AF-Attribution)</li><li>[ディファード ディープリンク ( iOS の場合 )](https://support.appsflyer.com/hc/ja/articles/209621766-SDK%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%9FAppsFlyer%E3%82%A2%E3%83%88%E3%83%AA%E3%83%93%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3-%E3%82%B3%E3%83%B3%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%87%E3%83%BC%E3%82%BF-iOS-%E5%8F%96%E5%BE%97%E6%96%B9%E6%B3%95-Accessing-AF-Attribution)</li></ul>
+`onInstallConversionDataListener` | 真偽値 | `false` | アトリビューション/コンバージョン データに、SDK 経由でアクセスします ( ディファード ディープリンク/Deferred DeepLinking )。AppsFlyer プラグインでは、アトリビューション データを、onSuccess コールバックに返します。詳細は、次のリンク先をご確認ください。 <ul><li>[ディファードディープリンク - コンバージョンデータの取得](https://support.appsflyer.com/hc/ja/articles/207032096-ディファードディープリンク-コンバージョンデータの取得)</li></ul>
 
 **例**
 
@@ -115,7 +115,7 @@ var options = {
 window.plugins.appsFlyer.initSdk(options, onSuccess, onError);
 {{</highlight>}}
 
-#### In-App Events Tracking API 
+#### アプリ内イベントトラッキング API
 
 `trackEvent` メソッドを使用して、AppsFlyer の分析メカニズム ( AppsFlyer
 analytics )
@@ -152,7 +152,7 @@ var eventValues = {
 window.plugins.appsFlyer.trackEvent(eventName, eventValues);
 {{</highlight>}}
 
-#### Currency Code Setting
+#### 通貨コードの設定
 
 通貨コードを変更できます。
 
@@ -175,7 +175,7 @@ window.plugins.appsFlyer.setCurrencyCode("USD");
 window.plugins.appsFlyer.setCurrencyCode("GBP"); // British Pound
 {{</highlight>}}
 
-#### Customer User ID Setting (Advanced)
+#### カスタマーユーザー ID の設定 ( 詳細 )
 
 カスタム ID をセットします。AppsFlyer 提供の ID 群 ( 端末 ID、ユーザー
 ID など ) と、このカスタム ID を紐づけすれば、各種情報を、カスタム ID
@@ -208,7 +208,7 @@ setAppUserId(customerUserId): void
 window.plugins.appsFlyer.setAppUserId(userId);
 {{</highlight>}}
 
-#### GCM Project Number Setting
+#### GCM プロジェクト番号の設定
 
 GCM のプロジェクト番号をセットします。この番号を使用して、アプリのアンインストールを監視・追跡します
 ( Android プラットフォーム向け )。
@@ -221,9 +221,9 @@ setGCMProjectID(GCMProjectNumber): void
 
 名前 | 型 | 解説 
 -----|------|-------------
-`GCMProjectNumber` | 文字列 | GCM のプロジェクト番号。Google Developer Console 上で確認できます。詳細は、[Android アンインストール トラッキング](https://support.appsflyer.com/hc/ja/articles/209621846-Android-%E3%82%A2%E3%83%B3%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%83%88%E3%83%A9%E3%83%83%E3%82%AD%E3%83%B3%E3%82%B0) ページをご確認ください。
+`GCMProjectNumber` | 文字列 | GCM のプロジェクト番号。Google Developer Console 上で確認できます。詳細は、[アンインストール計測](https://support.appsflyer.com/hc/ja/articles/210289286-アンインストール計測#Androidアンインストール) ページをご確認ください。
 
-#### Uninstall Tracking 
+#### トラッキングのアンインストール
 
 アプリのアンインストールを監視・追跡するため、iOS
 のデバイストークンをセットします ( iOS プラットフォーム向け )。
@@ -236,9 +236,9 @@ registerUninstall(token): void
 
 名前 | 型 | 解説 
 -----|------|-------------
-`token` | 文字列 | iOS のデバイストークン。 `UnityEngine.iOS.NotificationServices.deviceToken` を使用すれば、デバイストークンを取得できます。詳細は、[Unity の解説](https://support.appsflyer.com/hc/en-us/articles/213766183-Unity)、および、[iOS アンインストールトラッキングの解説](https://support.appsflyer.com/hc/ja/articles/213838823-iOS%E3%82%A2%E3%83%B3%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%83%88%E3%83%A9%E3%83%83%E3%82%AD%E3%83%B3%E3%82%B0) をご確認ください。
+`token` | 文字列 | iOS のデバイストークン。 `UnityEngine.iOS.NotificationServices.deviceToken` を使用すれば、デバイストークンを取得できます。詳細は、[Unity の解説](https://support.appsflyer.com/hc/ja/articles/213766183-AppsFlyer-SDKの実装-Unity)、および、[iOS アンインストールの計測](https://support.appsflyer.com/hc/ja/articles/210289286-アンインストール計測#iOSアンインストール) をご確認ください。
 
-#### Getting AppsFlyer's Device ID
+#### AppsFlyer のデバイスIDを取得する
 
 この API を使用すれば、AppsFlyer 側で独自に割り振っている端末 ID
 を取得できます。この端末 ID は、各種レポートの出力時、および、各種 API
@@ -265,7 +265,7 @@ var getUserIdCallbackFn = function(id) {
 window.plugins.appsFlyer.getAppsFlyerUID(getUserIdCallbackFn);
 {{</highlight>}}
 
-#### Deeplinks Tracking
+#### ディープリンク トラッキング
 
 AppsFlyer のアトリビューション
 データを使用して、ディープリンクを追跡します。
@@ -344,7 +344,7 @@ document.addEventListener("deviceready", function(){
 }, false);{{</highlight>}}
 
 5.  Google Play/App Store
-    に提出する前に、[Android](https://support.appsflyer.com/hc/en-us/articles/207032136-Testing-AppsFlyer-Android-SDK-Integration-Before-Submitting-to-Google-Play)/[iOS](https://support.appsflyer.com/hc/en-us/articles/207032046-Testing-AppsFlyer-iOS-SDK-Integration-Before-Submitting-to-the-App-Store-)
+    に提出する前に、[Android](https://support.appsflyer.com/hc/ja/articles/207032136-Google-Play-に提出前-提出後のAppsFlyer-Android-SDK-インテグレーションテスト)/[iOS](https://support.appsflyer.com/hc/ja/articles/115000262823-iOS-SDK実装-計測テスト方法-Testing-iOS-SDK-Integration)
     端末で、アプリを検証することを推奨します。
 
 {{<note>}}
@@ -356,7 +356,7 @@ AppsFlyer の使用に関する詳細は、 {{<link href="https://support.appsfl
 ここまでの手順で、プラグインの準備が整いました。ここからは、AppsFly
 が提供する API をいくつか紹介します。
 
-#### Customer User ID Setting (Advanced)
+#### カスタマーユーザー ID の設定 ( 詳細 )
 
 カスタム ID をセットします。AppsFlyer 提供の ID 群 ( 端末 ID、ユーザー
 ID など ) と、このカスタム ID を紐づけすれば、各種情報を、カスタム ID
@@ -375,7 +375,7 @@ window.plugins.appsFlyer.setAppUserId(userId);
 を呼び出すことを推奨します。
 {{</note>}}
 
-#### Currency Code Setting (Optional)
+#### 通貨コード設定 ( オプション )
 
 デフォルトでは、通貨コード ( Currency Code ) は、`USD` ( 米ドル )
 に設定されています。設定は、次のようにすれば変更できます。
@@ -389,7 +389,7 @@ window.plugins.appsFlyer.setCurrencyCode("GBP");
 使用可能な通貨コードに関しては、 {{<link title="ISO 4217 Currency Codes" href="http://www.xe.com/iso4217.php">}} をご確認ください。
 {{</note>}}
 
-#### In-App Events Tracking API
+#### In-App イベントトラッキング API
 
 アプリ内イベントを使用すると、ユーザーの動向を分析できます。また、特定のキャンペーンまたはメディアソースへの関連付けもできます ( ユーザーの操作と、そのきっかけとなったキャンペーンなどを対応付けできます )。ROI ( 投資対効果 ) と LTV ( 顧客生涯価値 ) の計算に必要となる、データ収集対象のイベントに関しては、慎重に選択する必要があります。
 
@@ -403,7 +403,7 @@ window.plugins.appsFlyer.sendTrackingWithEvent(eventName, eventValue);
 // window.plugins.appsFlyer.sendTrackingWithEvent(eventName, "");
 {{</highlight>}}
 
-#### Rich In-App Events Tracking API
+#### Rich In-App イベントトラッキング API
 
 AppsFlyer 提供の 「 リッチ アプリ内イベント 」
 では、アプリのインストール後に起こりうる、すべてのイベントを監視・追跡でき、加えて、メディアソースまたはキャンペーンと、発生したイベントを関連付けることができます。各アプリ内イベントは、イベント名
@@ -415,7 +415,7 @@ var eventValues = {"af_content_id": "id123", "af_currency":"USD", "af_revenue": 
 window.plugins.appsFlyer.trackEvent(eventName, eventValues);
 {{</highlight>}}
 
-#### Getting AppsFlyer’s Device ID (Advanced)
+#### AppsFlyer のデバイス ID を取得する ( 詳細 )
 
 この API を使用すれば、AppsFlyer 側で独自に割り振っている端末 ID
 を取得できます。この端末 ID は、各種レポートの出力時、および、各種 API
@@ -435,7 +435,7 @@ var getUserIdCallbackFn = function(id) {
 window.plugins.appsFlyer.getAppsFlyerUID(getUserIdCallbackFn);
 {{</highlight>}}
 
-#### Accessing AppsFlyer Attribution/Conversion Data (Deferred Deep-linking)
+#### AppsFlyer アトリビューション/コンバージョンデータへのアクセス ( Deferred Deep-linking )
 
 AppsFlyer では、アトリビューション データへ、SDK
 レベルで、リアルタイムにアクセスできます。このデータを使用して、アプリの新規インストール・初回起動時、ユーザー側に最初に表示されるページをカスタマイズできます。このような処理は、「
@@ -444,9 +444,7 @@ AppsFlyer では、アトリビューション データへ、SDK
 の分野では、一般的な処理ですが、、モバイルアプリのエコシステム下で、このような処理を実現することは、技術的に難しいとされています。AppsFlyer
 は、プラットフォームの種類および状況にかかわらず、この処理を行ってくれます。
 
-詳細は、[AppsFlyer のアトリビューションデータ/コンバージョンデータへ SDK
-からアクセスする方法 ( iOS と Android 向け
-)](https://support.appsflyer.com/hc/ja/articles/209621766-SDK%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%9FAppsFlyer%E3%82%A2%E3%83%88%E3%83%AA%E3%83%93%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3-%E3%82%B3%E3%83%B3%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%87%E3%83%BC%E3%82%BF-iOS-%E5%8F%96%E5%BE%97%E6%96%B9%E6%B3%95-Accessing-AF-Attribution)
+詳細は、[ディファードディープリンク - コンバージョンデータの取得](https://support.appsflyer.com/hc/ja/articles/207032096-ディファードディープリンク-コンバージョンデータの取得)
 をご確認ください。
 
 {{<note>}}

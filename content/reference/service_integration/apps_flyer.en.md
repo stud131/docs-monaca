@@ -85,10 +85,10 @@ Name | Type | Description
 
 Name | Type | Default | Description
 -----|------|---------|------------------
-`devKey` | String | | [Appsflyer Dev key](https://support.appsflyer.com/hc/en-us/articles/207032126-AppsFlyer-SDK-Integration-Android#SDK_Initialization_and_Installation_Event_(Minimum_Requirement_for_Tracking))
+`devKey` | String | | [Appsflyer Dev key](https://support.appsflyer.com/hc/en-us/articles/211719806-App-Settings#sdk-dev-key)
 `appId` | String | | (For iOS only) Your iOS app ID in the App Store
 `isDebug` | Boolean | `false` | (optional) Debug mode 
-`onInstallConversionDataListener` | Boolean | `false` | Accessing AppsFlyer Attribution/Conversion Data from the SDK (Deferred Deeplinking). AppsFlyer plugin will return attribution data in onSuccess callback. For more information, please refer to: <ul><li>[Deferred Deeplinking for Android](https://support.appsflyer.com/hc/en-us/articles/207032176-Accessing-AppsFlyer-Attribution-Conversion-Data-from-the-SDK-Android-Deferred-Deeplinking-)</li><li>[Deferred Deeplinking for iOS](https://support.appsflyer.com/hc/en-us/articles/207032096-Accessing-AppsFlyer-Attribution-Conversion-Data-from-the-SDK-Deferred-Deeplinking-)</li></ul>
+`onInstallConversionDataListener` | Boolean | `false` | Accessing AppsFlyer Attribution/Conversion Data from the SDK (Deferred Deeplinking). AppsFlyer plugin will return attribution data in onSuccess callback. For more information, please refer to: <ul><li>[Deferred Deep Linking - Getting the Conversion Data](https://support.appsflyer.com/hc/en-us/articles/207032096-Deferred-Deep-Linking-Getting-the-Conversion-Data)</li></ul>
 
 **Example**
 
@@ -216,7 +216,7 @@ setGCMProjectID(GCMProjectNumber): void
 
 Name | Type | Description
 -----|------|-------------
-`GCMProjectNumber` | String | GCM Project number. It is obtained through your google developer console. For more information, please refer to [Android Uninstall Tracking Guide](https://support.appsflyer.com/hc/en-us/articles/208004986-Android-Uninstall-Tracking).
+`GCMProjectNumber` | String | GCM Project number. It is obtained through your google developer console. For more information, please refer to [Android Uninstall Measurement](https://support.appsflyer.com/hc/en-us/articles/210289286-Uninstall-Measurement#AndroidUninstall).
 
 #### Uninstall Tracking 
 
@@ -231,7 +231,7 @@ registerUninstall(token): void
 
 Name | Type | Description
 -----|------|-------------
-`token` | String | Your iOS device token. You can get your device token from `UnityEngine.iOS.NotificationServices.deviceToken`. For more information, please refer to [Unity](https://support.appsflyer.com/hc/en-us/articles/213766183-Unity) and [iOS Uninstall Tracking Guide](https://support.appsflyer.com/hc/en-us/articles/211211963-iOS-Uninstall-Tracking).
+`token` | String | Your iOS device token. You can get your device token from `UnityEngine.iOS.NotificationServices.deviceToken`. For more information, please refer to [Unity](https://support.appsflyer.com/hc/en-us/articles/213766183-Unity) and [iOS Uninstall Measurement](https://support.appsflyer.com/hc/en-us/articles/210289286#iOSUninstall).
 
 #### Getting AppsFlyer's Device ID
 
@@ -340,7 +340,7 @@ document.addEventListener("deviceready", function(){
     window.plugins.appsFlyer.initSdk(args);
 }, false);{{</highlight>}}
 
-5.  Test your app for [Android](https://support.appsflyer.com/hc/en-us/articles/207032136-Testing-AppsFlyer-Android-SDK-Integration-Before-Submitting-to-Google-Play)/[iOS](https://support.appsflyer.com/hc/en-us/articles/207032046-Testing-AppsFlyer-iOS-SDK-Integration-Before-Submitting-to-the-App-Store-) before submitting to the Google Play/App Store.
+5.  Test your app for [Android](https://support.appsflyer.com/hc/en-us/articles/207032136-Testing-AppsFlyer-Android-SDK-Integration-Before-Submitting-to-Google-Play)/[iOS](https://support.appsflyer.com//hc/en-us/articles/115000262823) before submitting to the Google Play/App Store.
 
 {{<note>}}
 For more information on how to use AppsFlyer, please refer to {{<link href="https://support.appsflyer.com/hc/en-us" title="AppsFlyer Documentation">}}.
@@ -443,7 +443,7 @@ on the web, however there is a big challenge doing this in the mobile
 app ecosystem. Luckily, AppsFlyer provides support for all cases and
 platforms.
 
-Read more on [Accessing AppsFlyer Attribution or Conversion Data from the SDK for iOS and Android](https://support.appsflyer.com/hc/en-us/articles/207032096-Accessing-AppsFlyer-Attribution-Conversion-Data-from-the-SDK-Deferred-Deeplinking-).
+Read more on [Deferred Deep Linking - Getting the Conversion Data](https://support.appsflyer.com/hc/en-us/articles/207032096-Accessing-AppsFlyer-Attribution-Conversion-Data-from-the-SDK-Deferred-Deeplinking-).
 
 {{<note>}}
     AppsFlyer plugin will fire <code>onInstallConversionDataLoaded</code> event with attribution data. You must implement an event listener to receive the data.
