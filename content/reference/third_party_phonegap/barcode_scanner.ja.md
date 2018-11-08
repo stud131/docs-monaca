@@ -4,7 +4,7 @@ weight: 10
 ---
 
 {{<note>}}
-BarcodeScanner プラグイン ( Monaca クラウド IDE に組み込まれているプラグイン ) は、Android バージョン 6 以上では動作しません。また、プロジェクトの Cordova バージョンが 6.5 の場合、iOS では動作しない場合があります。プラグインが動作しない場合は、{{<link href="https://docs.monaca.io/ja/reference/third_party_phonegap/phonegap_plugin_barcodescanner/" title="PhoneGap BarcodeScanner プラグイン">}} をご使用下さい。
+BarcodeScanner プラグイン ( Monaca クラウド IDE に組み込まれているプラグイン ) は、Android バージョン 6 以上では動作しません。また、プロジェクトの Cordova バージョンが 6.5 の場合、iOS では動作しない場合があります。プラグインが動作しない場合は、Cordova 7.1 で提供している {{<link href="https://docs.monaca.io/ja/reference/third_party_phonegap/phonegap_plugin_barcodescanner/" title="PhoneGap BarcodeScanner プラグイン">}} をご使用下さい。
 {{</note>}}
 
 ## プラグインの追加方法 ( Monaca 上での処理 )
