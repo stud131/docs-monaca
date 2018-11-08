@@ -6,8 +6,7 @@ weight: 10
 {{<note>}}
 BarcodeScanner Plugin (the built-in plugin on Monaca Cloud IDE) can't be
 used with Android version 6 or higher and it may also not work with
-Cordova 6.5 projects for iOS platform. In this case, please use {{<link href="https://github.com/phonegap/phonegap-plugin-barcodescanner" title="the external PhoneGap Plugin BarcodeScanner">}}.
-In order to import this plugin, you need to subscribe to a valid plan. Please refer to {{<link href="https://monaca.mobi/en/pricing" title="Monaca Subscription Plans">}}.
+Cordova 6.5 projects for iOS platform. In this case, please use the {{<link href="https://docs.monaca.io/en/reference/third_party_phonegap/phonegap_plugin_barcodescanner/" title="PhoneGap BarcodeScanner Plugin">}}.
 {{</note>}}
 
 ## Enable Plugin in Monaca
