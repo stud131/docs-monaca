@@ -4,6 +4,8 @@ weight: 10
 ---
 
 {{<note>}}
+The PhoneGap BarcodeScanner plugin can be used from Cordova 7.1.
+<br />
 When using with android custom build debugger, you need to build config.xml with the following settings.
 {{</note>}}
 
