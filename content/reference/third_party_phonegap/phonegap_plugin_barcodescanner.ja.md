@@ -6,7 +6,7 @@ weight: 10
 {{<note>}}
 PhoneGap BarcodeScanner プラグインは、Cordova 7.1 から利用することができます。
 <br />
-Androidカスタムビルドデバッガーで使用する場合は、config.xml に次の設定をしてビルドする必要があります。
+Android カスタムビルドデバッガーで使用する場合は、config.xml に次の設定をしてビルドする必要があります。
 {{</note>}}
 
 {{<highlight xml>}}
