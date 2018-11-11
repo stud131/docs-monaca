@@ -218,3 +218,8 @@ monaca.cloud.Device.saveProperties({"nickname": "Monaca", "color": "#9999FF"})
 {{</highlight>}}
 
 
+関連項目：
+
+- [バックエンド API](../../cloud)
+- [バックエンド メモ帳アプリ](/ja/sampleapp/samples/backend_memo)
+- [バックエンド マネジメント API](../../cloud_management)

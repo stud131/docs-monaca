@@ -387,3 +387,11 @@ Diary.updatePermission('group_id == 1', newPermission)
 });
 {{</highlight>}}
 
+関連項目：
+
+- [コレクションアイテム](../collection_item)
+- [コレクションの管理](../../cloud_management/collection)
+- [コレクションアイテムの管理](../../cloud_management/collection_item)
+- [バックエンド API](../../cloud)
+- [バックエンド メモ帳アプリ](/ja/sampleapp/samples/backend_memo)
+- [バックエンド マネジメント API](../../cloud_management)

@@ -94,3 +94,8 @@ MonaQLの演算子と値の型を記します。
 `?`              | プレースホルダー
 
 
+関連項目：
+
+- [バックエンド API](../../cloud)
+- [バックエンド メモ帳アプリ](/ja/sampleapp/samples/backend_memo)
+- [バックエンド マネジメント API](../../cloud_management)

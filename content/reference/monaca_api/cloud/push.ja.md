@@ -41,3 +41,10 @@ monaca.cloud.Push.setHandler(function(data1, data2, data3) {
 {{</highlight>}}
 
 
+関連項目：
+
+- [プッシュ通知](/ja/products_guide/push_notification/overview)
+- [プッシュ通知機能](../../cloud_management/push)
+- [バックエンド API](../../cloud)
+- [バックエンド メモ帳アプリ](/ja/sampleapp/samples/backend_memo)
+- [バックエンド マネジメント API](../../cloud_management)

@@ -366,3 +366,14 @@ monaca.cloud.CollectionItem._updatedAt : Date ( 読み込み専用 )
     });
 });
 {{</highlight>}}
+
+
+See Also:
+
+- [コレクション](../collection)
+- [コレクションの管理](../../cloud_management/collection)
+- [コレクションアイテムの管理](../../cloud_management/collection_item)
+- [バックエンド API](../../cloud)
+- [バックエンド メモ帳アプリ](/ja/sampleapp/samples/backend_memo)
+- [バックエンド マネジメント API](../../cloud_management)
+

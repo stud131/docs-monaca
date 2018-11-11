@@ -130,7 +130,8 @@ monaca.cloud.User.validate("me@example.com")
 
 ## User.unregister()
 
-ユーザーを未登録状態にします。. The current user must be authenticated.
+ユーザーを未登録状態にします。
+現在のユーザーを認証する必要があります。
 
 {{<highlight javascript>}}
 monaca.cloud.User.unregister(password: String) : $.Promise
@@ -175,7 +176,7 @@ monaca.cloud.User.unregister("password")
 
 ## User.login()
 
-ユーザーのログインを行います。.
+ユーザーのログインを行います。
 
 {{<highlight javascript>}}
 monaca.cloud.User.login(username: String, password: String) : $.Promise
@@ -194,7 +195,7 @@ monaca.cloud.User.login(username: String, password: String) : $.Promise
 -----|--------------------------
 [$.Promise](../other/#promise) オブジェクト | 結果の処理には、 `done()`、`fail()`、`always()` を使用します。
 
-Within the `done()` callback, there is a `user` JSON Object which has the following properties:
+`done()` コールバックには、以下のプロパティを持つ `user` JSON オブジェクトがあります。
 
 - `_id` : {String}
 - `_username` : {String}
@@ -272,7 +273,7 @@ monaca.cloud.User.autoLogin() : $.Promise
 -----|--------------------------
 [$.Promise](../other/#promise) オブジェクト | 結果の処理には、 `done()`、`fail()`、`always()` を使用します。
 
-Within the `done()` callback, there is a `user` JSON Object which has the following properties:
+`done()` コールバックには、以下のプロパティを持つ `user` JSON オブジェクトがあります。
 
 - `_id` : {String}
 - `_username` : {String}
@@ -465,7 +466,7 @@ monaca.cloud.User.resetPasswordAndLogin(username: String, newPassword: String, t
 -----|--------------------------
 [$.Promise](../other/#promise) オブジェクト | 結果の処理には、 `done()`、`fail()`、`always()` を使用します。
 
-Within the `done()` callback, there is a `user` JSON Object which has the following properties:
+`done()` コールバックには、以下のプロパティを持つ `user` JSON オブジェクトがあります。
 
 - `_id` : {String}
 - `_username` : {String}
@@ -694,3 +695,11 @@ monaca.cloud.User._oid
 {{<highlight javascript>}}
 var oid = monaca.cloud.User._oid;
 {{</highlight>}}
+
+
+関連項目：
+
+- [ユーザーの管理](../../cloud_management/user)
+- [バックエンド API](../../cloud)
+- [バックエンド メモ帳アプリ](/en/sampleapp/samples/backend_memo)
+- [バックエンド マネジメント API](../../cloud_management)
