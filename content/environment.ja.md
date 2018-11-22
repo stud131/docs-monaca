@@ -4,7 +4,7 @@ title: 対応環境
 
 ## Monaca クラウド IDE
 
-- ブラウザー: 最新版のChrome
+- ブラウザー: 最新版のPC版Chrome
 - 安定したインターネット環境
 
 ## Monaca デバッガー

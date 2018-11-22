@@ -4,7 +4,7 @@ title: Supported Environment
 
 ## Monaca Cloud IDE
 
-- Browser: Latest Chrome
+- Browser: Latest version of PC Chrome
 - Stable Internet connection
 
 
