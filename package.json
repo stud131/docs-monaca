@@ -6,9 +6,6 @@
     "watch-sass": "npm run build-sass && npm run build-sass -- -w"
   },
   "dependencies": {
-    "hoek": "^5.0.3",
-    "node-sass": "^4.9.0",
-    "npm": "^5.8.0",
-    "update": "^0.7.4"
+    "node-sass": "^4.11.0"
   }
 }
