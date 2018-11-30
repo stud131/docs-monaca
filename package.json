@@ -2,9 +2,11 @@
   "name": "monaca-docs-new",
   "version": "1.0.0",
   "scripts": {
-    "build-sw": "workbox injectManifest themes/monaca/static/workbox-config.js",
-    "build-sass": "npm run build-sw && node-sass themes/monaca/static/scss/original/theme.scss themes/monaca/static/theme-original/style.css",
-    "watch-sass": "npm run build-sass && npm run build-sass -- -w"
+    "build-sw-dev": "workbox injectManifest workbox-dev-config.js",
+    "build-sw": "workbox injectManifest workbox-config.js",
+    "build-sass": "node-sass themes/monaca/static/scss/original/theme.scss themes/monaca/static/theme-original/style.css",
+    "watch-sass": "npm run build-sass && npm run build-sass -- -w",
+    "dev": "npm run build-sw-dev && hugo server"
   },
   "dependencies": {
     "node-sass": "^4.11.0",

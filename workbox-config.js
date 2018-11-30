@@ -10,6 +10,6 @@ module.exports = {
 	  '**/js/monaca.js',
 	  '**/js/zepto.min.js'
 	],
-	swDest: 'themes/monaca/static/sw.js',
+	swDest: 'public/sw.js',
 	swSrc: 'themes/monaca/static/sw-src.js'
 };

@@ -25,10 +25,12 @@ Describe your update points
 Hugo comes with a built-in server which watches for file changes. To use it, just run:
 
 ```
-hugo server
+npm run dev
 ```
 
 You can then access it in your browser at `http://localhost:1313`.
+
+Note: To build the latest development service worker for `hugo server`, please run `npm run build-sw-dev`.
 
 ### Theme
 The Monaca docs use a customised fork of the [DocDock theme](https://github.com/vjeantet/hugo-theme-docdock). The CSS for this theme is generated using SASS, which Hugo doesn't support as part of its build process. So, we need to watch and build it separately. First, install the dependencies by running `npm install`. Then you can watch it for changes by running:
@@ -45,6 +47,10 @@ npm run build-sass && hugo
 ```
 
 This will build the docs into the `public` folder.
+
+## Build Service Worker
+
+First, run `npm run build-sass && hugo` to build the docs into the `public` folder. Then run `npm run build-sw` to generate `sw.js` into `public` folder.
 
 ## Troubleshooting
 

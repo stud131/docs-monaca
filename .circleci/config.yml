@@ -24,6 +24,9 @@ jobs:
       - run:
           name: Build hugo
           command: hugo --baseURL "https://docs.monaca.io/"
+      - run:
+          name: Build Service Worker
+          command: npm run build-sw
       - save_cache:
           key: docs-{{ epoch }}
           paths:
