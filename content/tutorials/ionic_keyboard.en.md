@@ -9,6 +9,10 @@ Keyboard plugin for Cordova apps.
 - Plugin ID/Package Name: `cordova-plugin-ionic-keyboard`
 - Tested Version: `2.1.2`
 
+{{<note>}}
+To check third party cordova plugins, you need to create a custom build debugger ( {{<link title="Android version" href="https://docs.monaca.io/en/products_guide/debugger/installation/debugger_android/#build-and-install-custom-monaca-debugger">}} or {{<link title="iOS version" href="https://docs.monaca.io/en/products_guide/debugger/installation/debugger_ios/#how-to-build-custom-monaca-debugger">}} ).
+{{</note>}}
+
 ## Demo 
 
 {{<import pid="5b29e4e1e788857854dba6d9" title="Ionic Keyboard Demo">}}

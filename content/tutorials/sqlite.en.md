@@ -9,6 +9,10 @@ This Cordova/PhoneGap plugin opens and uses sqlite databases on Android, iOS and
 - Plugin ID/Package Name: `cordova-sqlite-storage`
 - Tested Version: 2.3.0
 
+{{<note>}}
+To check third party cordova plugins, you need to create a custom build debugger ( {{<link title="Android version" href="https://docs.monaca.io/en/products_guide/debugger/installation/debugger_android/#build-and-install-custom-monaca-debugger">}} or {{<link title="iOS version" href="https://docs.monaca.io/en/products_guide/debugger/installation/debugger_ios/#how-to-build-custom-monaca-debugger">}} ).
+{{</note>}}
+
 ## Demo 
 
 {{<import pid="5ac33652e78885cd208b4567" title="Sqlite Storage Plugin Demo">}}

@@ -9,6 +9,10 @@ Cordova アプリ用のキーボードプラグインです。
 - Plugin ID/Package Name: `cordova-plugin-ionic-keyboard`
 - Tested Version: `2.1.2`
 
+{{<note>}}
+サードパーティー製 Cordova プラグインを確認する場合は、カスタムビルドデバッガー ( {{<link title="Android 版" href="https://docs.monaca.io/ja/products_guide/debugger/installation/debugger_android/#カスタムビルド版-monaca-デバッガーのビルドとインストール">}} または {{<link title="iOS 版" href="https://docs.monaca.io/ja/products_guide/debugger/installation/debugger_ios/#カスタムビルド版-monaca-デバッガーのビルド方法">}} ) を作成する必要があります。
+{{</note>}}
+
 ## デモ 
 
 {{<import pid="5b29e4e1e788857854dba6d9" title="Ionic Keyboard Demo">}}

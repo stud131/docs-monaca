@@ -5,14 +5,17 @@ weight: 100
 
 This Cordova/PhoneGap plugin is used for In-App Purchase on iOS, Android and Windows apps.
 
+- Repo: https://github.com/j3k0/cordova-plugin-purchase
+- Plugin ID/Package Name: `cc.fovea.cordova.purchase`
+- Tested Version: 7.1.3
+
 {{<note>}}
     In order to work demo apps, in-app billing setup is necessary in App Store Connect.
 {{</note>}}
 
-
-- Repo: https://github.com/j3k0/cordova-plugin-purchase
-- Plugin ID/Package Name: `cc.fovea.cordova.purchase`
-- Tested Version: 7.1.3
+{{<note>}}
+To check third party cordova plugins, you need to create a custom build debugger ( {{<link title="Android version" href="https://docs.monaca.io/en/products_guide/debugger/installation/debugger_android/#build-and-install-custom-monaca-debugger">}} or {{<link title="iOS version" href="https://docs.monaca.io/en/products_guide/debugger/installation/debugger_ios/#how-to-build-custom-monaca-debugger">}} ).
+{{</note>}}
 
 ## Demo 
 

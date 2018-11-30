@@ -9,6 +9,10 @@ weight: 70
 - Plugin ID/Package Name: `cordova-plugin-google-analytics`
 - Tested Version: 1.8.3
 
+{{<note>}}
+サードパーティー製 Cordova プラグインを確認する場合は、カスタムビルドデバッガー ( {{<link title="Android 版" href="https://docs.monaca.io/ja/products_guide/debugger/installation/debugger_android/#カスタムビルド版-monaca-デバッガーのビルドとインストール">}} または {{<link title="iOS 版" href="https://docs.monaca.io/ja/products_guide/debugger/installation/debugger_ios/#カスタムビルド版-monaca-デバッガーのビルド方法">}} ) を作成する必要があります。
+{{</note>}}
+
 ## デモ 
 
 {{<import pid="5ac33902e7888548428b4567" title="Google Analytics Plugin Demo">}}

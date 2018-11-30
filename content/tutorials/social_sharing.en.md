@@ -9,6 +9,10 @@ This Cordova plugin is used share text, files, images, and links via social netw
 - Plugin ID/Package Name: `cordova-plugin-x-socialsharing`
 - Tested Version: `5.4.0`
 
+{{<note>}}
+To check third party cordova plugins, you need to create a custom build debugger ( {{<link title="Android version" href="https://docs.monaca.io/en/products_guide/debugger/installation/debugger_android/#build-and-install-custom-monaca-debugger">}} or {{<link title="iOS version" href="https://docs.monaca.io/en/products_guide/debugger/installation/debugger_ios/#how-to-build-custom-monaca-debugger">}} ).
+{{</note>}}
+
 ## Demo 
 
 {{<import pid="5b29ede3e788853905dba6d9" title="Social Sharing Demo">}}

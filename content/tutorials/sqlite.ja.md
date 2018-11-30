@@ -9,6 +9,10 @@ weight: 50
 - Plugin ID/Package Name: `cordova-sqlite-storage`
 - Tested Version: 2.3.0
 
+{{<note>}}
+サードパーティー製 Cordova プラグインを確認する場合は、カスタムビルドデバッガー ( {{<link title="Android 版" href="https://docs.monaca.io/ja/products_guide/debugger/installation/debugger_android/#カスタムビルド版-monaca-デバッガーのビルドとインストール">}} または {{<link title="iOS 版" href="https://docs.monaca.io/ja/products_guide/debugger/installation/debugger_ios/#カスタムビルド版-monaca-デバッガーのビルド方法">}} ) を作成する必要があります。
+{{</note>}}
+
 ## デモ 
 
 {{<import pid="5ac33652e78885cd208b4567" title="Sqlite Storage Plugin Demo">}}

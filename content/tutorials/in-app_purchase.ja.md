@@ -5,14 +5,17 @@ weight: 100
 
 この Cordova プラグインは、iOS、Android、Windows アプリでのアプリ内課金に使用されます。
 
+- Repo: https://github.com/j3k0/cordova-plugin-purchase
+- Plugin ID/Package Name: `cc.fovea.cordova.purchase`
+- Tested Version: 7.1.3
+
 {{<note>}}
     デモアプリを動作させるためには、App Store Connect でアプリ内課金の設定が必要になります。
 {{</note>}}
 
-
-- Repo: https://github.com/j3k0/cordova-plugin-purchase
-- Plugin ID/Package Name: `cc.fovea.cordova.purchase`
-- Tested Version: 7.1.3
+{{<note>}}
+サードパーティー製 Cordova プラグインを確認する場合は、カスタムビルドデバッガー ( {{<link title="Android 版" href="https://docs.monaca.io/ja/products_guide/debugger/installation/debugger_android/#カスタムビルド版-monaca-デバッガーのビルドとインストール">}} または {{<link title="iOS 版" href="https://docs.monaca.io/ja/products_guide/debugger/installation/debugger_ios/#カスタムビルド版-monaca-デバッガーのビルド方法">}} ) を作成する必要があります。
+{{</note>}}
 
 ## デモ 
 

@@ -9,6 +9,10 @@ weight: 140
 - Plugin ID/Package Name: `phonegap-plugin-push`
 - Tested Version: `2.1.3`
 
+{{<note>}}
+サードパーティー製 Cordova プラグインを確認する場合は、カスタムビルドデバッガー ( {{<link title="Android 版" href="https://docs.monaca.io/ja/products_guide/debugger/installation/debugger_android/#カスタムビルド版-monaca-デバッガーのビルドとインストール">}} または {{<link title="iOS 版" href="https://docs.monaca.io/ja/products_guide/debugger/installation/debugger_ios/#カスタムビルド版-monaca-デバッガーのビルド方法">}} ) を作成する必要があります。
+{{</note>}}
+
 ## デモ  
 
 {{<import pid="5b2b3b4ce788850e4fdba6d4" title="Phonegap Push デモ">}}
