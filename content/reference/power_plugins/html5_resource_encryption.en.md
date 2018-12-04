@@ -14,12 +14,12 @@ In order to use this plugin, you are required to subscribe to a valid plan. Plea
 This plugin is used differently depending on the Cordova version of your
 project:
 
-- [For Cordova 6.2 Projects](#for-cordova-6-2-projects)
+- [For Cordova 6.2 or Higher Projects](#for-cordova-6-2-or-higher-projects)
 - [For Cordova 5.2 or Lower Projects](#for-cordova-5-2-or-lower-projects)
 
-##  For Cordova 6.2 Projects
+##  For Cordova 6.2 or Higher Projects
 
-The plugin for Cordova 6.2 projects has two additional features:
+The plugin for Cordova 6.2 or Higher Projectss has two additional features:
 
 1.  Developers can choose the encrypted directories other than `www`. For example, `www/data`, `www/js` etc.
 2.  The decryption can now be done manually. In other words, the
@@ -28,7 +28,7 @@ The plugin for Cordova 6.2 projects has two additional features:
 
 ### Supported Platforms
 
--   Cordova 6.2
+-   Cordova 6.2 or higher
 -   iOS 7 or higher
 -   Android 4.0 or higher
 
@@ -56,7 +56,7 @@ The plugin for Cordova 6.2 projects has two additional features:
     Parameter | Type | Description
     ----------|------|----------------
     `SECRET` | String | [Required] Password/secret for the encryption.
-    `TARGETS` | String | [Optional] Target folder of the project files to be encrypted. Default folder is `www`.
+    `TARGETS` | String | [Optional] Target folder of the project files to be encrypted. <ul><li>`www` folder (default) 。</li><li>To set multiple folders, separate them with `,` (comma).<br />Example: TARGETS＝www/data,www/js</li></ul>
     `AUTO_DECRYPT` | Boolean | [Optional] Auto decryption options: <ul><li>`1`: (default) for enabling auto decryption</li><li>`0`: for disabling auto decryption</li></ul>
 
     {{<img src="/images/reference/power_plugins/html5_resource_encryption/7.png" width="500">}}
