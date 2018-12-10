@@ -29,19 +29,13 @@ Monaca Localkit
     サーバーのサポートを介して、複数のプラットフォーム向けのアプリをビルドできます。
 
 {{<note>}}
-    {{<link href="../../monaca_ide" title="Monaca クラウド IDE">}} と Monaca Localkit
-間では、プロジェクトの同期は行われず、それぞれのツールに置かれているプロジェクトは、独立しています。ただし、{{<link href="#プロジェクトのインポート" title="Monaca クラウド IDE から Monaca Localkit へ、プロジェクトをインポート">}}
-できます。
-{{</note>}}
-
-{{<note>}}
     30 日間のトライアル期間 ( 初回ログイン時から起算 )
 を設けておりますが、Monaca Localkit
 を長期でご利用になる場合には、対応するプランへの加入が必要です。詳細は、{{<link href="https://monaca.mobi/ja/pricing?type=2" title="各プランの解説">}} をご確認ください。
 {{</note>}}
 
 {{<warning>}}
-    Monaca Localkit では、{{<link href="../../backend" title="Monaca バックエンド">}} と {{<link href="../../push_notification" title="プッシュ通知機能">}} は現在ご利用できません。
+    Monaca Localkit では、{{<link href="../../backend" title="Monaca バックエンド">}} と {{<link href="../../push_notification" title="プッシュ通知機能">}} は利用できません。
 {{</warning>}}
 
 インストールと設定
@@ -54,7 +48,7 @@ Monaca Localkit
 2. [こちら](../../debugger/installation) の記載内容に従い、Monaca デバッガーをインストールします。
 
 {{<warning>}}
-    Windows環境でLocalkitを利用する場合、事前にGitをインストールする必要があります。
+    Windows 環境で Localkit を利用する場合は、事前に Git をインストールする必要があります。
 {{</warning>}}
 
 使用例
@@ -106,7 +100,7 @@ Monaca Localkit
     - hooks ディレクトリー内のスクリプトは無視されます。
     - Cordova を含め、各プラットフォーム固有のソースコードは、インポートの対象外となります。Monaca では、Monaca 側にあらかじめ実装されている、Cordova プラグインと他の関連ライブラリーが使用されます。
 
-3.  `Zip ファイルからインポート` : zip ファイルをインポートします (
+3.  `Zip ファイルからインポート` : Zip ファイルをインポートします (
     有効な形式のプロジェクトを圧縮した Zip ファイルであること )。
 
 Monaca Localkit へプロジェクトをインポートします。次の手順に従います。
@@ -190,11 +184,7 @@ Localkit
 
 {{<figure src="/images/monaca_localkit/manual/overview/14.png">}}
 
-{{<note>}}
-    Monaca クラウド上へプロジェクトをアップロードするときには、強制的に、コード変換処理が行われます。これは、コンテンツの整合性を維持するための措置です。
-{{</note>}}
-
-#### Transpiler Console
+#### *Transpiler Console*
 
 変換処理の進捗・内容をリアルタイムで監視することができます。以前は、別ウィンドウ上のログに出力していましたが、ユーザー側で各種設定を行う必要がありました。そこで、LocalKit
 にコンソールを移植して、LocalKit 上でもログを確認できるようにしました。
@@ -222,6 +212,9 @@ Localkit
     - 待ち受けポート番号 : Monaca Localkit と Monaca デバッガーをペアリングするときに使用するポート番号を指定します。
     - プロキシーサーバー : プロキシサーバーを指定します。
     - ログ出力 : ログの出力先となるファイルを指定します。
+    - 言語 : 表示言語を指定します。
+    - ファイル同期 : リモート画面（ リモートビルドと設定 ）を閉じた後のダウンロード操作を指定します。
+    - アップロードオプション : アップロードする前にプロジェクトをトランスパイルするか指定します。
 
     {{<img src="/images/monaca_localkit/manual/overview/12.png">}}
 

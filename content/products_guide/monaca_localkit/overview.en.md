@@ -32,10 +32,6 @@ provides the following functions:
     various platforms with support from Monaca server.
 
 {{<note>}}
-    Please remember that the projects you have in Monaca Cloud IDE and Monaca Localkit are not synchronized. They are completely separated. However, you can {{<link href="#importing-a-project" title="import projects from Monaca Cloud IDE to Monaca Localkit">}}.
-{{</note>}}
-
-{{<note>}}
     You are required to have a valid plan in order to use Monaca Localkit. Otherwise, Monaca Localkit will run in an evaluation mode for 30 days after the first login. Please refer to {{<link href="https://monaca.mobi/en/pricing" title="Monaca Subscription Plans">}} for more details of each Monaca plan.
 {{</note>}}
 
@@ -191,10 +187,6 @@ also be checked in the `Transpiler` tabbar element.
 
 {{<figure src="/images/monaca_localkit/manual/overview/14.png">}}
 
-{{<note>}}
-    The only case in which we force to execute a transpiling operation is when the developer performs an upload operation to Monaca Cloud because it’s the only way to assure content consistency.
-{{</note>}}
-
 #### *Transpiler Console*
 
 It is important that you can constantly check the transpiling process
@@ -222,10 +214,13 @@ developer is not interested in displaying the generated log.
 
 2.  In this `Preferences` dialog, you can do the following settings:
 
-    -   `Working Directory`: specify a default location to store your local projects.
-    -   `Listening Port`: specify a port number to be used when pairing Monaca Localkit with Monaca Debugger.
-    -   `Proxy Server`: specify a proxy server.
-    -   `Log Output`: specify where you want to store a log file.
+    -   `Working Directory`: Specify a default location to store your local projects.
+    -   `Listening Port`: Specify a port number to be used when pairing Monaca Localkit with Monaca Debugger.
+    -   `Proxy Server`: Specify a proxy server.
+    -   `Log Output`: Specify where you want to store a log file.
+    -   `Language`: Specify a display language.
+    -   `Synchronize Changes`: Specify the download operation after closing remote windows (Remote Build and Settings) on the Preferences menu.
+    -   `Upload Option`: Specify whether it is needed to transpile project before uploading.
 
     {{<img src="/images/monaca_localkit/manual/overview/12.png">}}
 
