@@ -7,12 +7,19 @@ title: Supported Environment
 - Browser: Latest version of PC Chrome
 - Stable Internet connection
 
-
 ## Monaca Debugger
 
 - iOS 8 or higher
 - Android 4.0 or higher
 - Wi-Fi connection is preferred
+
+## Monaca Localkit
+
+The Monaca Localkit is currently tested on:
+
+- macOS Mojave
+- Windows 10 (64-bit)
+- Ubuntu Linux 16.04 (64-bit)
 
 ## Built App 
 

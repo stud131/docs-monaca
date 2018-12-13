@@ -135,9 +135,9 @@ Monaca Localkit provides an `Open in` feature which is used to open your
 local project files in different ways such as:
 
 -   Finder/File Explorer: This will reveal the selected project's folder
-    in Finder (for Mac) or File Explorer (for Windows).
+    in Finder (for Mac), File Browser (for Linux), or File Explorer (for Windows).
 -   Terminal/Command Prompt: This will open the selected project's
-    folder in Terminal (for Mac) or Command Prompt for (Windows).
+    folder in Terminal (for Mac/Linux) or Command Prompt for (Windows).
 -   Other editor programs: You can also add any preferred editors to
     open your local project files from Monaca Localkit.
 
@@ -208,7 +208,7 @@ developer is not interested in displaying the generated log.
 
 ###  Preference Dialog
 
-1.  From Monaca Localkit menu, go to {{<guilabel name="Preferences">}} (for Mac) or go to {{<menu menu1="File" menu2="Preferences">}} (for Windows).
+1.  From Monaca Localkit menu, go to {{<guilabel name="Preferences">}} (for Mac) or go to {{<menu menu1="File" menu2="Preferences">}} (for Windows/Linux).
 
     {{<img src="/images/monaca_localkit/manual/overview/11.png">}}
 
