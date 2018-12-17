@@ -13,6 +13,14 @@ title: 対応環境
 - Android 4.0以上
 - Wi-Fi接続を推奨します
 
+## Monaca Localkit
+
+Monaca Localkit は、次の環境で動作検証を行っています。
+
+- macOS Mojave
+- Windows 10 (64-bit)
+- Ubuntu Linux 16.04 (64-bit)
+
 ## ビルドアプリ
 
 | ビルドアプリ | Android | iOS | Windows|

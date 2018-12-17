@@ -141,10 +141,9 @@ Monaca Localkit へプロジェクトをインポートします。次の手順�
 では、「 次の方法で開く 」 ( Open In )
 機能を提供しており、プロジェクトフォルダーを開く方法を選択・カスタマイズできます。
 
--   Finder / ファイルエクスプローラ : Finder ( Mac の場合 ) または
-    ファイルエクスプローラ ( Windows の場合 )
+-   Finder / ファイルエクスプローラ : Finder ( Mac の場合 ) 、File Browser ( Linux の場合 ) または、ファイルエクスプローラ ( Windows の場合 )
     を使用して、対象プロジェクトのフォルダーを開きます。
--   ターミナル / コマンドプロンプト : ターミナル ( Mac の場合 ) または
+-   ターミナル / コマンドプロンプト : ターミナル ( Mac / Linux の場合 ) または
     コマンドプロンプト ( Windows の場合 )
     を使用して、対象プロジェクトのフォルダーを開きます。
 -   プログラムを追加 ... :
@@ -202,7 +201,7 @@ Localkit
 ### 設定ダイアログ
 
 1.  Monaca Localkit メニュー上で、 `設定` ( Mac の場合 ) または
-    {{<menu menu1="ファイル" menu2="設定">}} ( Windows の場合 ) を選択します。
+    {{<menu menu1="ファイル" menu2="設定">}} ( Windows / Linux の場合 ) を選択します。
 
     {{<img src="/images/monaca_localkit/manual/overview/11.png">}}
 
