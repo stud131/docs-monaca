@@ -19,8 +19,7 @@ weight: 20
 - [Cordova 6.2 以降向けのプロジェクトで使用する場合](#cordova-6-2-以降向けのプロジェクトで使用する場合)
 - [Cordova 5.2 向け、または、それ以前のバージョンを使用したプロジェクトで使用する場合](#cordova-5-2-向け-または-それ以前のバージョンを使用したプロジェクトで使用する場合)
 
-Cordova 6.2 以降向けのプロジェクトで使用する場合
---------------------------------------------
+##  Cordova 6.2 以降向けのプロジェクトで使用する場合
 
 ### サポート対象のプラットフォーム
 
@@ -31,7 +30,7 @@ Cordova 6.2 以降向けのプロジェクトで使用する場合
 
 1.  Monaca クラウド IDE から {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} を選択します。
 
-2.  *利用可能なプラグイン* 項目の `Encrypt` プラグインにカーソルを置き、{{<guilabel name="有効">}} ボタンをクリックします。
+2.  *利用可能なプラグイン* 項目の `InAppUpdater` プラグインにカーソルを置き、{{<guilabel name="有効">}} ボタンをクリックします。
 
     {{<img src="/images/reference/power_plugins/inapp_updater/8.png">}}
 
@@ -45,10 +44,10 @@ Cordova 6.2 以降向けのプロジェクトで使用する場合
 
 ### プラグインの設定
 
-本プラグインを利用するためには、[/checkUpdate](#checkupdate-url-checkupdate)
-と [/download](#download-url-download) の二つのWeb API（URL）が必要となります。
+本プラグインを利用するためには、[checkUpdate](#checkupdate-url-checkupdate)
+と [download](#download-url-download) の二つのWeb API（URL）が必要となります。
 
-####  CheckUpdate URL (/checkUpdate)
+####  CheckUpdate URL
 
 サーバーにある更新バージョンを確認します
 
@@ -61,7 +60,7 @@ Cordova 6.2 以降向けのプロジェクトで使用する場合
 `os` | 文字列 | [ 任意 ] 更新対象となる OS の種類
 `build_type` | 文字列 | [ 任意 ] ビルドの種類
 `app_version` | 文字列 | [ 任意 ] アプリのバージョン
-`plugin_version` | 文字列 | [ 任意 ] In-App-Updater プラグインのバージョン
+`plugin_version` | 文字列 | [ 任意 ] InAppUpdater プラグインのバージョン
 
 **Response パラメーター**
 
@@ -108,7 +107,7 @@ Cordova 6.2 以降向けのプロジェクトで使用する場合
 上の例に示すように、更新番号の値は「日付」「URL」などの更新情報で構成されるJSONオブジェクトです。これは、
 [getServerVersion()](#getserverversion) メソッドの Promise によって返される JSON オブジェクトの `updateInfo` パラメータによって取得できます。
 
-#### Download URL (/download)
+#### Download URL
 
 更新用のパッケージファイル(ZIP形式)をダウンロードします。
 
@@ -126,7 +125,7 @@ Cordova 6.2 以降向けのプロジェクトで使用する場合
 `os` | 文字列 | [ 任意 ] 更新対象となる OS の種類
 `build_type` | 文字列 | [ 任意 ] ビルドの種類
 `app_version` | 文字列 | [ 任意 ] アプリのバージョン
-`plugin_version` | 文字列 | [ 任意 ] In-App-Updater プラグインのバージョン
+`plugin_version` | 文字列 | [ 任意 ] InAppUpdater プラグインのバージョン
 
 **Response パラメーター**
 
@@ -134,29 +133,29 @@ Cordova 6.2 以降向けのプロジェクトで使用する場合
 
 ### メソッド
 
-このプラグインの最もシンプルな使用方法は、 [autoUpdate()](#autoupdate) を使用して、更新ファイルのダウンロード ( [プラグインの設定](#プラグインの設定) を参照のこと ) とアプリの更新を自動で行うことです。
+このプラグインの最もシンプルな使用方法は、[autoUpdate()](#autoupdate) を使用して、更新ファイルのダウンロード ( [プラグインの設定](#プラグインの設定) を参照のこと ) とアプリの更新を自動で行うことです。
 
-[getServerVersion()](#getserverversion)、 [download()](#download)、 [updateAndRestart()](#updateandrestart) などのメソッドを組わせて使用すれば、更新処理をカスタマイズすることもできます。
+[getServerVersion()](#getserverversion)、[download()](#download)、[updateAndRestart()](#updateandrestart) などのメソッドを組わせて使用すれば、更新処理をカスタマイズすることもできます。
 
 このプラグインが提供しているメソッドは次のとおりです。
 
 メソッド                    | 解説
 ---------------------------|------------------------------------------------------------
 [getServerVersion()](#getserverversion) | 更新ファイルの情報をサーバー側から取得します。
-[forceStopGetServerVersion()](#forcestopgetserverversion) | [getServerVersion()](#getserverversion) の処理を中断させます。
+[forceStopGetServerVersion()](#forcestopgetserverversion) | [getServerVersion()](#getserverversion) の処理を中断します。
 [getLocalVersion()](#getlocalversion) | 現在のアプリの更新番号を確認します。
 [download()](#download) | 更新用ファイルをダウンロードします。
-[forceStopDownload()](#forcestopdownload) | [download()](#download) の処理を中断させます。
-[updateAndRestart()](#updateandrestart) | ダウンロードした更新用ファイルを展開しマウントします。次に、アプリを再起動させます。
+[forceStopDownload()](#forcestopdownload) | [download()](#download) の処理を中断します。
+[updateAndRestart()](#updateandrestart) | ダウンロードした更新用ファイルを展開し、アプリを再起動します。
 [status()](#status) | プラグインの状態を確認します。
-[showAlertDialog()](#showalertdialog) | ダイアログ ( タイトルとメッセージ ) を表示します。ダイアログは、一度に一個のみ表示できます。
+[showAlertDialog()](#showalertdialog) | ダイアログ ( タイトルとメッセージ ) を表示します。
 [dismissAlertDialog()](#dismissalertdialog) | 警告 ( Alert ) ダイアログを閉じます。
-[showProgressDialog()](#showprogressdialog) | 進捗表示 ( Progress ) 用ダイアログを表示します。こちらのダイアログでは、更新の進捗状況が表示されます。
+[showProgressDialog()](#showprogressdialog) | 進捗表示 ( Progress ) 用ダイアログを表示します。
 [changeProgressDialog()](#changeprogressdialog) | 進捗表示 ( Progress ) 用ダイアログを更新します。
 [dismissProgressDialog()](#dismissprogressdialog) | 進捗表示 ( Progress ) 用ダイアログを閉じます。
 [networkStatus()](#networkstatus) | ネットワークの状態 ( Wifi、3G/LTE、接続なし など ) を確認します。
-[terminateApp()](#terminateapp) | アプリを強制終了させます。
-[autoUpdate()](#autoupdate) | 必要であれば、getServerVersion、download などのメソッドを使用して、自動的にアップデートを行います。
+[terminateApp()](#terminateapp) | アプリを強制終了します。
+[autoUpdate()](#autoupdate) | 更新ファイルのダウンロードとアプリの更新を自動的に行います。
 
 #### getServerVersion()
 
@@ -185,9 +184,9 @@ monaca.InAppUpdater.getServerVersion([args: JSON object]): Promise
     `needsUpdate` | 真偽値 | アプリのバージョンを更新する必要があるかを示します。
     `updatable` | 真偽値 | 更新用のファイルがサーバー側に置かれているかを示します。
     `latestVersion` | 文字列 | アプリの最新バージョン
-    `myVersion` | 文字列 | アプリの現バージョン
-    `latestUpdateNumber` | 文字列 | アプリの現バージョンに適用できる最新の更新番号
-    `myUpdateNumber` | 文字列 | アプリの現バージョンが使用している現在の更新番号
+    `myVersion` | 文字列 | 現在のアプリバージョン
+    `latestUpdateNumber` | 文字列 | 現在のアプリバージョンに適用できる最新の更新番号
+    `myUpdateNumber` | 文字列 | 現在のアプリバージョンが使用している更新番号
     `updateInfo` | JSON オブジェクト | サーバー側の設定が、次のようになっている場合、{{<highlight javascript>}}{
   "ios": {
     "2.1.0": {　// app version
@@ -223,7 +222,7 @@ monaca.InAppUpdater.getServerVersion().then(
 
 #### forceStopGetServerVersion()
 
-`getServerVersion()` の処理を中断させます。
+`getServerVersion()` の処理を中断します。
 
 {{<highlight javascript>}}
 monaca.InAppUpdater.forceStopGetServerVersion(): Promise
@@ -288,7 +287,7 @@ monaca.InAppUpdater.download(args: JSON object): Promise
 `version` | 数値 | 対象のアプリバージョン
 `updateNumber` | 数値 | 更新番号
 `bufferSize` | 数値 | ( Android 専用 ) バッファーサイズ ( バイト単位 )。デフォルト値は `8192` です。
-`url` | 文字列 | こちらに設定された URL から Zip ファイルをダウンロードします。この値を設定しない場合には、`config.xml` 内の `monaca:updater_DownloadUrl` 値が代わりに使用されます
+`url` | 文字列 | 設定された URL から Zip ファイルをダウンロードします。この値を設定しない場合には、`config.xml` 内の `monaca:updater_DownloadUrl` 値が代わりに使用されます。
 `connectDelay` | 数値 | サーバー接続を開始するまでの待機時間 ( ミリ秒単位 )
 `connectTimeout` | 数値 | ( Android 専用 ) サーバー接続時に適用するタイムアウト時間 ( ミリ秒単位 )
 `readTimeout` | 数値 | ( Android 専用 ) サーバーからのレスポンス受信時に適用するタイムアウト時間 ( すべてのレスポンスを受け取るまでの時間、ミリ秒単位 )
@@ -320,7 +319,7 @@ monaca.InAppUpdater.download( { version : targetVersion, updateNumber : targetBu
 
 #### forceStopDownload()
 
-`download()` の処理を中断させます。
+`download()` の処理を中断します。
 
 {{<highlight javascript>}}
 monaca.InAppUpdater.forceStopDownload(): Promise
@@ -346,7 +345,7 @@ monaca.InAppUpdater.forceStopDownload().then(
 
 #### updateAndRestart()
 
-ダウンロードした更新用ファイルを展開しマウントします。次に、アプリを再起動させます。
+ダウンロードした更新用ファイルを展開し、アプリを再起動します。
 
 {{<highlight javascript>}}
 monaca.InAppUpdater.updateAndRestart(): Promise
@@ -413,8 +412,7 @@ monaca.InAppUpdater.status().then(
 
 #### showAlertDialog()
 
-ダイアログ ( タイトルとメッセージ )
-を表示します。ダイアログは、一度に一個のみ表示できます。
+ダイアログ ( タイトルとメッセージ ) を表示します。
 
 {{<highlight javascript>}}
 monaca.InAppUpdater.showAlertDialog(args: JSON object): Promise
@@ -543,7 +541,7 @@ monaca.InAppUpdater.changeProgressDialog(args: JSON object): Promise
 
 プロパティ | 型 | 解説
 ----------|------|----------------
-`progress` | 数値 | 進捗を示す値です。こちらの値を更新/変更します。
+`progress` | 数値 | 進捗を示す値
 
 **戻り値 (Promise)**
 
@@ -630,7 +628,7 @@ monaca.InAppUpdater.networkStatus().then(
 
 #### terminateApp()
 
-アプリを強制終了させます。
+アプリを強制終了します。
 
 {{<note>}}
 このメソッドは、旧 <code>InAppUpdater</code> ( Cordova 5 向けの v2.0.4 )
@@ -719,8 +717,7 @@ monaca.InAppUpdater.autoUpdate( {
 });
 {{</highlight>}}
 
-Cordova 5.2 向け、または、それ以前のバージョンを使用したプロジェクトで使用する場合
-----------------------------------------------------------------------------------
+##  Cordova 5.2 向け、または、それ以前のバージョンを使用したプロジェクトで使用する場合
 
 ### サポート対象のプラットフォーム
 
@@ -731,7 +728,7 @@ Cordova 5.2 向け、または、それ以前のバージョンを使用した�
 
 1.  Monaca クラウド IDE から {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} を選択します。
 
-2.  *利用可能なプラグイン* 項目の `Encrypt` プラグインにカーソルを置き、{{<guilabel name="有効">}} ボタンをクリックします。
+2.  *利用可能なプラグイン* 項目の `InAppUpdater` プラグインにカーソルを置き、{{<guilabel name="有効">}} ボタンをクリックします。
 
     {{<img src="/images/reference/power_plugins/inapp_updater/1.png">}}
 
@@ -739,13 +736,13 @@ Cordova 5.2 向け、または、それ以前のバージョンを使用した�
 
     {{<img src="/images/reference/power_plugins/inapp_updater/2.png">}}
 
-4.  [更新方法 ( Update Mode )](#更新方法-update-方法) を適宜選択して、 [アクセス先の URL ( Deploy URL )](#更新用パッケージファイルのアップロード先) を入力します。アクセス先の URL には、パッケージファイルの更新分が置かれている場所を指定します ( 詳細は、 [プラグインの設定](#プラグインの設定-1) の内容をご確認ください )。次に、{{<guilabel name="OK">}} ボタンをクリックします。
+4.  [更新モード](#更新モード) を適宜選択して、[デプロイURL](#更新用パッケージファイルのアップロード先) を入力します。アクセス先の URL には、パッケージファイルの更新分が置かれている場所を指定します ( 詳細は、[プラグインの設定](#プラグインの設定-1) の内容をご確認ください )。次に、{{<guilabel name="OK">}} ボタンをクリックします。
 
     {{<img src="/images/reference/power_plugins/inapp_updater/3.png" width="500">}}
 
 ### プラグインの設定
 
-#### 更新方法 ( Update 方法 )
+#### 更新モード
 
 更新用の差分が存在する場合、指定した更新方法に基づき、アプリ側で更新を行います。
 

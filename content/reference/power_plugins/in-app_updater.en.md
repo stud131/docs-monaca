@@ -47,9 +47,9 @@ project:
 ###  Plugin Configuration
 
 In this section, we will talk about how to create the two web API you
-will need to use this plugin: [/checkUpdate](#checkupdate-url-checkupdate) and [/download](#download-url-download).
+will need to use this plugin: [checkUpdate](#checkupdate-url-checkupdate) and [download](#download-url-download).
 
-####  CheckUpdate URL (/checkUpdate)
+####  CheckUpdate URL
 
 Check the update version on the server side.
 
@@ -62,7 +62,7 @@ Parameter | Data Type | Description
 `os` | String | [optional] The type of OS to receive the update
 `build_type` | String | [optional] The type of build
 `app_version` | String | [optional] The version of the app
-`plugin_version` | String | [optional] The version of the In-App-Updater plugin
+`plugin_version` | String | [optional] The version of the InAppUpdater plugin
 
 **Response Parameters**
 
@@ -112,7 +112,7 @@ object consists of the update information such as `date`, `url` and so
 on. It can be obtained by the `updateInfo` parameter of a JSON object
 returned by the Promise of [getServerVersion()](#getserverversion) method.
  
-#### Download URL (/download)
+#### Download URL
 
 Download the zip file (update package file).
 
@@ -130,7 +130,7 @@ Parameter| Data Type | Description
 `os` | String | [optional] The type of OS to receive the update
 `build_type` | String | [optional] The type of build
 `app_version` | String | [optional] The version of the app
-`plugin_version` | String | [optional] The version of the In-App-Updater plugin
+`plugin_version` | String | [optional] The version of the InAppUpdater plugin
 
 **Response Parameters**
 
