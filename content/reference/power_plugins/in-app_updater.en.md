@@ -38,7 +38,7 @@ project:
 
     {{<img src="/images/reference/power_plugins/inapp_updater/9.png">}}
 
-4.  Input the [CheckUpdate URL](#checkupdate-url-checkupdate) and [Download URL](#download-url-download) appropriately. Then, click {{<guilabel name="OK">}} button.
+4.  Input the [CheckUpdate URL](#checkupdate-url) and [Download URL](#download-url) appropriately. Then, click {{<guilabel name="OK">}} button.
 
     {{<img src="/images/reference/power_plugins/inapp_updater/10.png" width="500">}}
 
@@ -47,7 +47,7 @@ project:
 ###  Plugin Configuration
 
 In this section, we will talk about how to create the two web API you
-will need to use this plugin: [checkUpdate](#checkupdate-url-checkupdate) and [download](#download-url-download).
+will need to use this plugin: [CheckUpdate URL](#checkupdate-url) and [Download URL](#download-url).
 
 ####  CheckUpdate URL
 
@@ -117,7 +117,7 @@ returned by the Promise of [getServerVersion()](#getserverversion) method.
 Download the zip file (update package file).
 
 {{<note>}}
-    You can omit this preference if you set a download URL with {{<link title="download" href="#download">}}.
+    You can omit this preference if you set a download URL with {{<link title="download()" href="#download">}}.
 {{</note>}}
 
 **Request Parameters**
@@ -295,7 +295,7 @@ Name | Data Type | Description
 `version` | String | The target app version
 `updateNumber` | Integer | The update number
 `bufferSize` | Integer | (Android only) Buffer size in bytes. The default value is `8192`.
-`url` | String | The URL where you download the ZIP file from. If this value is not existed, the value of `monaca:updater_DownloadUrl` in `config.xml` is used instead.
+`url` | String | The URL where you download the ZIP file from. If this value is not existed, the value of [Download URL](#download-url) (`monaca:updater_DownloadUrl` in `config.xml`) is used instead.
 `connectDelay` | Integer | A delay time in milliseconds before starting to connect to the server
 `connectTimeout` | Integer | (Android only) A time-out duration in milliseconds for connecting to the server
 `readTimeout` | Integer | (Android only) A time-out duration in milliseconds for receiving all responses from the server

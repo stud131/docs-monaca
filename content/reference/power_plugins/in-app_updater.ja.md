@@ -38,14 +38,14 @@ weight: 20
 
     {{<img src="/images/reference/power_plugins/inapp_updater/9.png">}}
 
-4.  Input the [CheckUpdate URL](#checkupdate-url-checkupdate) と [Download URL](#download-url-download) 欄を適宜入力して、 {{<guilabel name="OK">}} ボタンをクリックします。
+4.  [CheckUpdate URL](#checkupdate-url) と [Download URL](#download-url) 欄を適宜入力して、 {{<guilabel name="OK">}} ボタンをクリックします。
 
     {{<img src="/images/reference/power_plugins/inapp_updater/10.png" width="500">}}
 
 ### プラグインの設定
 
-本プラグインを利用するためには、[checkUpdate](#checkupdate-url-checkupdate)
-と [download](#download-url-download) の二つのWeb API（URL）が必要となります。
+本プラグインを利用するためには、[CheckUpdate URL](#checkupdate-url)
+と [Download URL](#download-url) の二つのWeb API（URL）が必要となります。
 
 ####  CheckUpdate URL
 
@@ -109,10 +109,10 @@ weight: 20
 
 #### Download URL
 
-更新用のパッケージファイル(ZIP形式)をダウンロードします。
+更新用のパッケージファイル ( ZIP 形式 ) をダウンロードします。
 
 {{<note>}}
-    {{<link title="download" href="#download">}} でダウンロードURLを設定すると、この設定を省略できます。
+    {{<link title="download()" href="#download">}} メソッドでダウンロード URL を設定すると、この設定を省略できます。
 {{</note>}}
 
 **Request パラメーター**
@@ -287,7 +287,7 @@ monaca.InAppUpdater.download(args: JSON object): Promise
 `version` | 数値 | 対象のアプリバージョン
 `updateNumber` | 数値 | 更新番号
 `bufferSize` | 数値 | ( Android 専用 ) バッファーサイズ ( バイト単位 )。デフォルト値は `8192` です。
-`url` | 文字列 | 設定された URL から Zip ファイルをダウンロードします。この値を設定しない場合には、`config.xml` 内の `monaca:updater_DownloadUrl` 値が代わりに使用されます。
+`url` | 文字列 | 設定された URL から Zip ファイルをダウンロードします。この値を設定しない場合には、[Download URL](#download-url) の値 ( `config.xml` 内の `monaca:updater_DownloadUrl` ) が代わりに使用されます。
 `connectDelay` | 数値 | サーバー接続を開始するまでの待機時間 ( ミリ秒単位 )
 `connectTimeout` | 数値 | ( Android 専用 ) サーバー接続時に適用するタイムアウト時間 ( ミリ秒単位 )
 `readTimeout` | 数値 | ( Android 専用 ) サーバーからのレスポンス受信時に適用するタイムアウト時間 ( すべてのレスポンスを受け取るまでの時間、ミリ秒単位 )
