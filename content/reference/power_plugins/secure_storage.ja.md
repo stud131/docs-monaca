@@ -3,37 +3,33 @@ title: セキュア ストレージ プラグイン
 weight: 30
 ---
 
-ストレージ内のデータの暗号化を行うプラグイン ( Monaca Secure Storage )
+ストレージ内のデータの暗号化を行うプラグイン ( SecureStorage )
 です。このプラグインを組み込んだアプリをアンインストールするときには、保存されたデータも、共に消去されます。
 
 {{<note>}}
   このプラグインを使用するためには、対応するプランへの加入が必要となります。詳細は、 {{<link href="https://ja.monaca.io/pricing.html" title="料金プラン">}} をご確認ください。
 {{</note>}}
 
-サポート対象のプラットフォーム
-------------------------------
+## サポート対象のプラットフォーム
 
 -   Cordova 4.1 以降
 -   iOS
 -   Android
 
-暗号化方式
-----------
+## 暗号化方式
 
 - 暗号化方式 AES   
 - 鍵長 `256` bit
 
-プラグインの追加方法
---------------------
+# プラグインの追加方法
 
 1.  Monaca クラウド IDE から {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} を選択します。
 
-2.  `Monaca Secure Storage` の {{<guilabel name="有効">}} ボタンをクリックして、プロジェクトへ追加します。
+2.  `SecureStorage` の {{<guilabel name="有効">}} ボタンをクリックして、プロジェクトへ追加します。
 
     {{<img src="/images/reference/power_plugins/secure_storage/1.png">}}
 
-メソッド
---------
+# メソッド
 
 メソッド | 解説
 -------|-----------------
@@ -54,8 +50,7 @@ plugins.secureStorage.clear(function(result) {
 // result: true=success, false=error
 });{{</highlight>}}
 
-App Store への提出に際して
---------------------------
+# App Store への提出に際して
 
 このプラグインでは、iOS SDK
 の暗号化ライブラリーを使用しています。よって、このプラグインを組み込んだ、ビルド済みアプリを
