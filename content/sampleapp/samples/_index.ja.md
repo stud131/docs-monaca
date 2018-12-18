@@ -1,9 +1,7 @@
 ---
-title: サンプルアプリ & テンプレート
+title: サンプルアプリ
 weight: 10
 ---
-
-## サンプルアプリ
 
 サンプルアプリをこのページでご紹介します。別ページにて、これらのアプリのソースコードと解説をご提供していますので、ぜひご確認ください。
 
@@ -220,32 +218,4 @@ weight: 10
     </li>
     </ul>
 
-</section>
-
-## テンプレート
-
-<section>
-    <ul class="sample-container">
-
-    <li class="sample-item">
-        <img src="/images/samples/onsen_minimum.png" alt="" class="thumb">
-        <button onclick="GoTo('/ja/sampleapp/samples/onsen_ui_minimum_project/')">解説</button>
-        <h3>Onsen UI 最小限のテンプレート</h3>
-        <p align="left">Onsen UI アプリ用の最小限のテンプレートです。Onsen UI が持つ機能をいくつか使用しています。</p>
-    </li>
-
-    <li class="sample-item">
-        <img src="/images/samples/onsen_tabbar.png" alt="" class="thumb">
-        <button onclick="GoTo('/ja/sampleapp/samples/onsen_ui_tabbar_navigator/')">解説</button>
-        <h3>Onsen UI ナビ付きタブバー</h3>
-        <p align="left">Onsen UI を使用したアプリに、タブバーを組み込んでいます。</p>
-    </li>
-
-    <li class="sample-item">
-        <img src="/images/samples/onsen_sliding.png" alt="" class="thumb">
-        <button onclick="GoTo('/ja/sampleapp/samples/onsen_ui_sliding_menu/')">解説</button>
-        <h3>Onsen UI スライディングメニュー</h3>
-        <p align="left">Onsen UI のスライディングメニューとナビゲーションを使用しています。</p>
-    </li>
-    </ul>
 </section>

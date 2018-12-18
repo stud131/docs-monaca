@@ -3,5 +3,5 @@ title: Samples & Tips
 weight: 40
 ---
 
-- [Sample Apps & Templates](samples)
+- [Sample Apps](samples)
 - [Tips & Tricks](tips)

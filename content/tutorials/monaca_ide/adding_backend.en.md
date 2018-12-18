@@ -53,4 +53,4 @@ See Also:
 - [Running Monaca Debugger with Monaca Cloud IDE](../testing_debugging/)
 - [Building Monaca App](../building_app/)
 - [Publishing Monaca App](../publishing_app/)
-- [Sample Apps & Templates](/en/sampleapp/samples)
+- [Sample Apps](/en/sampleapp/samples)

@@ -129,4 +129,4 @@ Monaca の詳細については、以下を参照してください。
 
 - [Monaca クラウド IDE チュートリアル](/ja/tutorials/monaca_ide/)
 - [Monaca クラウド IDE](/ja/products_guide/monaca_ide/)
-- [サンプルアプリ & テンプレート](/ja/sampleapp/samples/)
+- [サンプルアプリ](/ja/sampleapp/samples/)

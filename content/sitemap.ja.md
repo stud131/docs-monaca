@@ -150,7 +150,7 @@ title: サイトマップ
             - [Android の設定](/ja/reference/config/android_configuration)
             - [iOS の設定](/ja/reference/config/ios_configuration)
     - [サンプル＆Tip](/ja/sampleapp)
-        - [サンプルアプリ & テンプレート](/ja/sampleapp/samples) 
+        - [サンプルアプリ](/ja/sampleapp/samples) 
         - [開発 Tips](/ja/sampleapp/tips)
             - [音楽の再生方法](/ja/sampleapp/tips/media)
             - [スプラッシュ画像の制御方法](/ja/sampleapp/tips/splashscreen)

@@ -150,7 +150,7 @@ title: Sitemap
             - [Android Configuration](/en/reference/config/android_configuration)
             - [iOS Configuration](/en/reference/config/ios_configuration)
     - [Samples & Tips](/en/sampleapp)
-        - [Sample Apps & Templates](/en/sampleapp/samples) 
+        - [Sample Apps](/en/sampleapp/samples) 
         - [Tips & Tricks](/en/sampleapp/tips)
             - [Playing Sound and Music](/en/sampleapp/tips/media)
             - [Control the Splash Screen](/en/sampleapp/tips/splashscreen)

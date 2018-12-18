@@ -49,3 +49,11 @@ aliases: /ja/monaca_ide/tutorial/adding_backend/
 [バックエンド メモ帳アプリ]({{<ref "backend_memo.ja.md">}}) では、アプリから Monaca
 バックエンドを操作する方法を段階的に解説しています。こちらも参考にして、Monaca
 バックエンドを使用したアプリのコーディングをお試しください。
+
+See Also:
+
+- [パート 1 : プロジェクトの作成](../starting_project/)
+- [パート 2 : Monaca クラウド IDE と Monaca デバッガーとの連携](../testing_debugging/)
+- [パート 3 : Monaca アプリのビルド](../building_app/)
+- [パート 4 : Monaca アプリの配布申請](../publishing_app/)
+- [サンプルアプリ](/ja/sampleapp/samples)

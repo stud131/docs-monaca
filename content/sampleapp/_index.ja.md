@@ -3,5 +3,5 @@ title: サンプル＆Tip
 weight: 40
 ---
 
-- [サンプルアプリ & テンプレート](samples)
+- [サンプルアプリ](samples)
 - [開発 Tips](tips)

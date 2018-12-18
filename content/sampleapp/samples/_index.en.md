@@ -1,9 +1,7 @@
 ---
-title: Sample Apps & Templates
+title: Sample Apps
 weight: 10
 ---
-
-## Sample Apps
 
 This section introduces various sample applications which are published to external sites with complete source code and explanation.
 
@@ -219,34 +217,4 @@ This section introduces various sample applications which are published to exter
     </li>
     </ul>
 
-</section>
-
-## Templates
-
-<section>
-    <ul class="sample-container">
-
-    <li class="sample-item">
-        <img src="/images/samples/onsen_minimum.png" alt="" class="thumb">
-        <button onclick="GoTo('/en/sampleapp/samples/onsen_ui_minimum_project/')">Detail</button>
-        <h3>Onsen UI Minimum Template</h3>
-        <p align="left">A minimum template for Onsen UI application</p>
-    </li>
-
-    <li class="sample-item">
-        <img src="/images/samples/onsen_tabbar.png" alt="" class="thumb">
-        <button onclick="GoTo('/en/sampleapp/samples/onsen_ui_tabbar_navigator/')">Detail</button>
-        <h3>Onsen UI Tabbar</h3>
-        <p align="left">Tab-bar style Onsen UI app</p>
-    </li>
-
-    <li class="sample-item">
-        <img src="/images/samples/onsen_sliding.png" alt="" class="thumb">
-        <button onclick="GoTo('/en/sampleapp/samples/onsen_ui_sliding_menu/')">Detail</button>
-        <h3>Onsen UI Sliding Menu</h3>
-        <p align="left">Onsen UI sliding menu with navigation example.</p>
-    </li>
-
-
-    </ul>
 </section>
