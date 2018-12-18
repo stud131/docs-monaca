@@ -6,12 +6,12 @@ aliases: /ja/backend/samples/
 
 Monaca バックエンド API を使用するメモ帳アプリを作成します。
 
-{{<import pid="5923c8f6013eb0ce4ab3b899" title="Backend Memo">}}
+{{<import pid="5c187e77e788852e447f60b2" title="Backend Memo">}}
 
 **テスト環境**
 
-- Android 7.0
-- iOS 10.1.1
+- Android 9.0
+- iOS 12.1.1
 
 {{<iframeApp src="https://monaca.github.io/project-templates/16-backend-memo/www/index.html">}}
 

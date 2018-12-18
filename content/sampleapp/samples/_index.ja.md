@@ -155,7 +155,7 @@ weight: 10
 
     <li class="sample-item">
         <img src="/images/samples/backend_memo.png" alt="" class="thumb">
-        <button onclick="location.href='https://monaca.mobi/directimport?pid=5923c8f6013eb0ce4ab3b899'">Direct Import</button>&nbsp;
+        <button onclick="location.href='https://monaca.mobi/directimport?pid=5c187e77e788852e447f60b2'">Direct Import</button>&nbsp;
         <button onclick="GoTo('/ja/sampleapp/samples/backend_memo/')">解説</button>
         <h3>バックエンド メモ帳アプリ</h3>
         <p align="left">Monaca Backend API を使用したメモ帳アプリを作成できる、サンプルアプリです。</p>

@@ -154,7 +154,7 @@ This section introduces various sample applications which are published to exter
 
     <li class="sample-item">
         <img src="/images/samples/backend_memo.png" alt="" class="thumb">
-        <button onclick="location.href='https://monaca.mobi/directimport?pid=5923c8f6013eb0ce4ab3b899'">Direct Import</button>&nbsp;
+        <button onclick="location.href='https://monaca.mobi/directimport?pid=5c187e77e788852e447f60b2'">Direct Import</button>&nbsp;
         <button onclick="GoTo('/en/sampleapp/samples/backend_memo/')">Detail</button>
         <h3>Backend Memo</h3>
         <p align="left">A sample application allowing a user to create a memo app using Monaca Backend API</p>
