@@ -147,7 +147,7 @@ weight: 10
     </li>
     <li class="sample-item">
         <img src="/images/samples/monacanoid.png" alt="" class="thumb">
-        <button onclick="location.href='https://monaca.mobi/directimport?pid=5923a149ff2af2060e324c54'">Direct Import</button>&nbsp;
+        <button onclick="location.href='https://monaca.mobi/directimport?pid=5c1aba3ae788854a482f328b'">Direct Import</button>&nbsp;
         <button onclick="GoTo('/ja/sampleapp/samples/break_the_bricks/')">解説</button>
         <h3>ブロック崩しゲーム</h3>
         <p align="left">パドルを操作して、ボールを落とさないように打ち返して、ブロックを崩していくゲームです。</p>

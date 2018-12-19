@@ -7,12 +7,12 @@ pixi.js を使用したサンプルゲームです。 pixi.js は、非常に高
 未対応のブラウザーでは、Canvas にフォールバック ( fallback / 切り替え ) します ]。Pixi の詳細は、
 [こちら](https://github.com/GoodBoyDigital/pixi.js) をご確認ください。このゲームでは、ボールが画面下に落ちないように、パドルを操作しながら、煉瓦状に積まれたブロックを崩していきます。すべてのブロックを崩し終えたところで、ゲームクリアとなります。
 
-{{<import pid="5923a149ff2af2060e324c54" title="Break the Bricks">}}
+{{<import pid="5c1aba3ae788854a482f328b" title="Break the Bricks">}}
 
 **テスト環境**
 
-- Android 7.0
-- iOS 10.1.1
+- Android 9.0
+- iOS 12.1.1
 
 {{<iframeApp src="https://monaca.github.io/project-templates/5-monacanoid/www/index.html">}}
                                                                                                     

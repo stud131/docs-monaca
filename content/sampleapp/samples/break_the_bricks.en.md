@@ -10,12 +10,12 @@ information about Pixi, please refer to
 controlls a paddle to prevent a ball from falling while trying to clear
 the bricks. The objective of the game is to clear all the bricks.
 
-{{<import pid="5923a149ff2af2060e324c54" title="Break the Bricks">}}
+{{<import pid="5c1aba3ae788854a482f328b" title="Break the Bricks">}}
 
 **Tested Environment**
 
-- Android 7.0
-- iOS 10.1.1
+- Android 9.0
+- iOS 12.1.1
 
 {{<iframeApp src="https://monaca.github.io/project-templates/5-monacanoid/www/index.html">}}
 

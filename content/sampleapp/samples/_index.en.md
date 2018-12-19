@@ -146,7 +146,7 @@ This section introduces various sample applications which are published to exter
     </li>
     <li class="sample-item">
         <img src="/images/samples/monacanoid.png" alt="" class="thumb">
-        <button onclick="location.href='https://monaca.mobi/directimport?pid=5923a149ff2af2060e324c54'">Direct Import</button>&nbsp;
+        <button onclick="location.href='https://monaca.mobi/directimport?pid=5c1aba3ae788854a482f328b'">Direct Import</button>&nbsp;
         <button onclick="GoTo('/en/sampleapp/samples/break_the_bricks/')">Detail</button>
         <h3>Break the Bricks</h3>
         <p align="left">A sample game allowing the player to controll a paddle to prevent a ball from falling while trying to clear the bricks</p>
