@@ -6,12 +6,12 @@ weight: 110
 This sample app is a train catalog which displaying the types trains
 towards Tokaido and Tohoku areas.
 
-{{<import pid="5923ccc5ff2af20e3acb2dd1" title="Train Catalog App">}}
+{{<import pid="5c19c0afe78885aa3b2f3290" title="Train Catalog App">}}
 
 **Tested Environment**
 
-- Android 7.0
-- iOS 10.1.1
+- Android 9.0
+- iOS 12.1.1
 
 {{<iframeApp src="https://monaca.github.io/project-templates/20-train-catalog/www/index.html">}}
 

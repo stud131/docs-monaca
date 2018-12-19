@@ -5,12 +5,12 @@ weight: 110
 
 このサンプルアプリは、東海道から東北区間で運行されている車両を表示する電車図鑑です。
 
-{{<import pid="5923ccc5ff2af20e3acb2dd1" title="Train Catalog App">}}
+{{<import pid="5c19c0afe78885aa3b2f3290" title="Train Catalog App">}}
 
 **テスト環境**
 
-- Android 7.0
-- iOS 10.1.1
+- Android 9.0
+- iOS 12.1.1
 
 {{<iframeApp src="https://monaca.github.io/project-templates/20-train-catalog/www/index.html">}}
                                                                               

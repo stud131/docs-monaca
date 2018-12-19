@@ -178,7 +178,7 @@ weight: 10
     </li>
     <li class="sample-item">
         <img src="/images/samples/shinkansen.png" alt="" class="thumb">
-        <button onclick="location.href='https://monaca.mobi/directimport?pid=5923ccc5ff2af20e3acb2dd1'">Direct Import</button>
+        <button onclick="location.href='https://monaca.mobi/directimport?pid=5c19c0afe78885aa3b2f3290'">Direct Import</button>
         &nbsp;
         <button onclick="GoTo('/ja/sampleapp/samples/shinkansen/')">解説</button>
         <h3>電車図鑑アプリ</h3>

@@ -177,7 +177,7 @@ This section introduces various sample applications which are published to exter
     </li>
     <li class="sample-item">
         <img src="/images/samples/shinkansen.png" alt="" class="thumb">
-        <button onclick="location.href='https://monaca.mobi/directimport?pid=5923ccc5ff2af20e3acb2dd1'">Direct Import</button>
+        <button onclick="location.href='https://monaca.mobi/directimport?pid=5c19c0afe78885aa3b2f3290'">Direct Import</button>
         &nbsp;
         <button onclick="GoTo('/en/sampleapp/samples/shinkansen/')">Detail</button>
         <h3>Train Catalog</h3>
