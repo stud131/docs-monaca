@@ -132,7 +132,7 @@ weight: 10
 
     <li class="sample-item">
         <img src="/images/samples/rss.png" alt="" class="thumb">
-        <button onclick="location.href='https://monaca.mobi/directimport?pid=5923c410803451c87248d1f7'">Direct Import</button>&nbsp;
+        <button onclick="location.href='https://monaca.mobi/directimport?pid=5c19c4b4e78885fc7a8d12a1'">Direct Import</button>&nbsp;
         <button onclick="GoTo('/ja/sampleapp/samples/sample_rss_reader/')">解説</button>
         <h3>RSS リーダーのサンプル</h3>
         <p align="left">jQuery Mobile を使用した、RSS リーダーのサンプルアプリです。</p>

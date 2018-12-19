@@ -5,12 +5,12 @@ weight: 50
 
 This is an RSS reader application using jQuery.
 
-{{<import pid="5923c410803451c87248d1f7" title="RSS Reader App  ">}}
+{{<import pid="5c19c4b4e78885fc7a8d12a1" title="RSS Reader App  ">}}
 
 **Tested Environment** 
 
-- Android 7.0
-- iOS 10.1.1
+- Android 9.0
+- iOS 12.1.1
 
 {{<figure src="/images/sampleapp/sample_rss_reader/rss_reader_2.png" width="300">}}      
 
