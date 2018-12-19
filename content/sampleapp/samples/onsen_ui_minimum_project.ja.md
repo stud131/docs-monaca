@@ -1,6 +1,7 @@
 ---
 title: Onsen UI 最小限のテンプレート
 weight: 160
+hidden: true
 ---
 
 [Onsen UI](https://ja.onsen.io/) アプリの作成時に使用できる、最小限のテンプレートです。

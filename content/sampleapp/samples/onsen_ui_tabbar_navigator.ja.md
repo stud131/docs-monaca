@@ -1,6 +1,7 @@
 ---
 title: Onsen UI ナビ付 タブバー
 weight: 170
+hidden: true
 ---
 
 [Onsen UI タブバー](https://ja.onsen.io/v2/api/js/ons-tabbar.html) と
