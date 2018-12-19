@@ -5,12 +5,12 @@ weight: 40
 
 このサンプルアプリは、基本プラグインのデモ用アプリですす。デモとして、複数の端末機能 ( カメラ、連絡帳、コンパスなど ) を実装させています。
 
-{{<import pid="59239fcc013eb0bc28683312" title="Hello World App">}}
+{{<import pid="5c19c5c7e78885bf3f2f328f" title="Hello World App">}}
 
 **テスト環境** 
 
-- Android 7.0
-- iOS 10.1.1
+- Android 9.0
+- iOS 12.1.1
 
 {{<iframeApp src="https://monaca.github.io/project-templates/0-helloworld/www/index.html">}}
 

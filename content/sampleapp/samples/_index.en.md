@@ -123,7 +123,7 @@ This section introduces various sample applications which are published to exter
 
     <li class="sample-item">
         <img src="/images/samples/helloworld.png" alt="" class="thumb">
-        <button onclick="location.href='https://monaca.mobi/directimport?pid=59239fcc013eb0bc28683312'">Direct Import</button>&nbsp;
+        <button onclick="location.href='https://monaca.mobi/directimport?pid=5c19c5c7e78885bf3f2f328f'">Direct Import</button>&nbsp;
         <button onclick="GoTo('/en/sampleapp/samples/hello_world/')">Detail</button>
         <h3>Hello World App</h3>
         <p align="left">A Core Cordova Plugins Demo showing several device functionalities such as camera, contacts & etc</p>

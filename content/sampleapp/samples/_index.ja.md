@@ -124,7 +124,7 @@ weight: 10
 
     <li class="sample-item">
         <img src="/images/samples/helloworld.png" alt="" class="thumb">
-        <button onclick="location.href='https://monaca.mobi/directimport?pid=59239fcc013eb0bc28683312'">Direct Import</button>&nbsp;
+        <button onclick="location.href='https://monaca.mobi/directimport?pid=5c19c5c7e78885bf3f2f328f'">Direct Import</button>&nbsp;
         <button onclick="GoTo('/ja/sampleapp/samples/hello_world/')">解説</button>
         <h3>Hello World アプリ</h3>
         <p align="left">Core Cordova Plugins を使用したデモアプリです。デバイス側の複数の機能 ( カメラ、連絡帳など ) にアクセスしています。</p>
