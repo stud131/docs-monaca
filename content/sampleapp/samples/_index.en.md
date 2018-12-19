@@ -138,7 +138,7 @@ This section introduces various sample applications which are published to exter
     </li>
     <li class="sample-item">
         <img src="/images/samples/memo.png" alt="" class="thumb">
-        <button onclick="location.href='https://monaca.mobi/directimport?pid=5923c5a6013eb09f3fb07bc7'">Direct Import</button>
+        <button onclick="location.href='https://monaca.mobi/directimport?pid=5c19c3cfe78885a2417f60aa'">Direct Import</button>
         &nbsp;
         <button onclick="GoTo('/en/sampleapp/samples/memo_application/')">Detail</button>
         <h3>Memo Application</h3>

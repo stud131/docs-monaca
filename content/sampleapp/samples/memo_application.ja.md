@@ -5,12 +5,12 @@ weight: 60
 
 localStorage を使用して、メモ帳アプリを作成するサンプルアプリです。
 
-{{<import pid="5923c5a6013eb09f3fb07bc7" title="Memo Application">}}
+{{<import pid="5c19c3cfe78885a2417f60aa" title="Memo Application">}}
 
 **テスト環境** 
 
-- Android 7.0
-- iOS 10.1.1
+- Android 9.0
+- iOS 12.1.1
 
 {{<iframeApp src="https://monaca.github.io/project-templates/4-jqm-memo/www/index.html">}}    
                                                                                                  
