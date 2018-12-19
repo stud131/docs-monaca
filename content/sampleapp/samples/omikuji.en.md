@@ -8,12 +8,12 @@ development is done using HTML and JavaScript just like webpages.
 JavaScript is a scripting language with simple syntax and functions, and
 often used for smartphone development compared to other languages.
 
-{{<import pid="5923a1c28034511f6d8a8fe3" title="Omikuji Fortune Telling App">}}
+{{<import pid="5c1ac173e7888547697f60aa" title="Omikuji Fortune Telling App">}}
 
 **Tested Environment**
 
-- Android 7.0
-- iOS 10.1.1
+- Android 9.0
+- iOS 12.1.1
 
 {{<iframeApp src="https://monaca.github.io/project-templates/23-omikuji/www/index.html">}}
 

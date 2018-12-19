@@ -202,7 +202,7 @@ weight: 10
     </li>
     <li class="sample-item">
         <img src="/images/samples/omikuji.png" alt="" class="thumb">
-        <button onclick="location.href='https://monaca.mobi/directimport?pid=5923a1c28034511f6d8a8fe3'">Direct Import</button>
+        <button onclick="location.href='https://monaca.mobi/directimport?pid=5c1ac173e7888547697f60aa'">Direct Import</button>
         &nbsp;
         <button onclick="GoTo('/ja/sampleapp/samples/omikuji/')">解説</button>
         <h3>おみくじ占いアプリ</h3>

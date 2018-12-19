@@ -201,7 +201,7 @@ This section introduces various sample applications which are published to exter
     </li>
     <li class="sample-item">
         <img src="/images/samples/omikuji.png" alt="" class="thumb">
-        <button onclick="location.href='https://monaca.mobi/directimport?pid=5923a1c28034511f6d8a8fe3'">Direct Import</button>
+        <button onclick="location.href='https://monaca.mobi/directimport?pid=5c1ac173e7888547697f60aa'">Direct Import</button>
         &nbsp;
         <button onclick="GoTo('/en/sampleapp/samples/omikuji/')">Detail</button>
         <h3>Omikuji Fortune Telling</h3>

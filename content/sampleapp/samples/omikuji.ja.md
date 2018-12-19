@@ -8,12 +8,12 @@ weight: 140
 を使用します。JavaScript
 は、簡素な構文と関数群でプログラムを構築できるスクリプト言語です。他の言語と比較すると、スマートフォーン向けの開発のときに、多く使用されています。
 
-{{<import pid="5923a1c28034511f6d8a8fe3" title="Omikuji Fortune Telling App">}}
+{{<import pid="5c1ac173e7888547697f60aa" title="Omikuji Fortune Telling App">}}
 
 **テスト環境**
 
-- Android 7.0
-- iOS 10.1.1
+- Android 9.0
+- iOS 12.1.1
 
 {{<iframeApp src="https://monaca.github.io/project-templates/23-omikuji/www/index.html">}}
 
