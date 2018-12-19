@@ -11,8 +11,8 @@ sample app is based on a demo on [AdMob Plugin Pro on GitHub](https://github.com
 
 **Tested Environment** 
 
-- Android 6.2
-- iOS 9.3.5
+- Android 9.0
+- iOS 12.1.1
 
 {{< figure src="/images/sampleapp/admob/cover.png" title="Banner Ads & Interstitial Ads">}}
 

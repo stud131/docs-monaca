@@ -9,8 +9,8 @@ weight: 30
 
 **テスト環境** 
 
-- Android 6.2
-- iOS 9.3.5
+- Android 9.0
+- iOS 12.1.1
 
 {{< figure src="/images/sampleapp/admob/cover.png" title="Banner Ads & Interstitial Ads">}}                                                                                            
 ## 事前準備                                                                                  
