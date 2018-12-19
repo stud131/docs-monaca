@@ -169,7 +169,7 @@ This section introduces various sample applications which are published to exter
     </li>
     <li class="sample-item">
         <img src="/images/samples/todo.png" alt="" class="thumb">
-        <button onclick="location.href='https://monaca.mobi/directimport?pid=5923a0bf013eb0662bca5a15'">Direct Import</button>
+        <button onclick="location.href='https://monaca.mobi/directimport?pid=5c1abdbae78885fe687f60aa'">Direct Import</button>
         &nbsp;
         <button onclick="GoTo('/en/sampleapp/samples/todo/')">Detail</button>
         <h3>TODO App</h3>

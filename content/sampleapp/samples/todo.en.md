@@ -5,12 +5,12 @@ weight: 100
 
 The application allows you to add a todo list.
 
-{{<import pid="5923a0bf013eb0662bca5a15" title="TODO App">}}
+{{<import pid="5c1abdbae78885fe687f60aa" title="TODO App">}}
 
 **Tested Environment**
 
-- Android 7.0
-- iOS 10.1.1
+- Android 9.0
+- iOS 12.1.1
 
 {{<iframeApp src="https://monaca.github.io/project-templates/19-todo-app/www/index.html">}}
 

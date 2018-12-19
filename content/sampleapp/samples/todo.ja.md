@@ -5,12 +5,12 @@ weight: 100
 
 TODO 一覧に、TODO を追加するアプリです。
 
-{{<import pid="5923a0bf013eb0662bca5a15" title="TODO App">}}
+{{<import pid="5c1abdbae78885fe687f60aa" title="TODO App">}}
 
 **テスト環境**
 
-- Android 7.0
-- iOS 10.1.1
+- Android 9.0
+- iOS 12.1.1
 
 {{<iframeApp src="https://monaca.github.io/project-templates/19-todo-app/www/index.html">}}                              
                                                                                             
