@@ -5,12 +5,12 @@ weight: 90
 
 This sample app shows how to retrieve pictures from Flickr and displays them as a slide show.
 
-{{<import pid="5923cadf013eb0c4545dd864" title="Flickr Sample">}}
+{{<import pid="5c19c2d9e788850c427f60af" title="Flickr Sample">}}
 
 **Tested Environment**
 
-- Android 7.0
-- iOS 10.1.1
+- Android 9.0
+- iOS 12.1.1
 
 {{<iframeApp src="https://monaca.github.io/project-templates/18-flickr-sample/www/index.html">}}
 

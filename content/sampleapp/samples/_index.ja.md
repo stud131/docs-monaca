@@ -163,7 +163,7 @@ weight: 10
 
     <li class="sample-item">
         <img src="/images/samples/flickr.png" alt="" class="thumb">
-        <button onclick="location.href='https://monaca.mobi/directimport?pid=5923cadf013eb0c4545dd864'">Direct Import</button>&nbsp;
+        <button onclick="location.href='https://monaca.mobi/directimport?pid=5c19c2d9e788850c427f60af'">Direct Import</button>&nbsp;
         <button onclick="GoTo('/ja/sampleapp/samples/flickr/')">解説</button>
         <h3>Flickr サンプル</h3>
         <p align="left">Flickr を使用したサンプルアプリです。Flickr から写真を取得して、スライドショーで表示します。</p>

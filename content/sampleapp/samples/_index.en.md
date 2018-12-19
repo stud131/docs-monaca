@@ -162,7 +162,7 @@ This section introduces various sample applications which are published to exter
 
     <li class="sample-item">
         <img src="/images/samples/flickr.png" alt="" class="thumb">
-        <button onclick="location.href='https://monaca.mobi/directimport?pid=5923cadf013eb0c4545dd864'">Direct Import</button>&nbsp;
+        <button onclick="location.href='https://monaca.mobi/directimport?pid=5c19c2d9e788850c427f60af'">Direct Import</button>&nbsp;
         <button onclick="GoTo('/en/sampleapp/samples/flickr/')">Detail</button>
         <h3>Flickr Sample</h3>
         <p align="left">A sample app retrieving pictures from Flickr and displaying them as a slide show</p>

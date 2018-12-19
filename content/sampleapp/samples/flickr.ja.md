@@ -5,12 +5,12 @@ weight: 90
 
 このサンプルアプリでは、Flickr から画像を取得して、スライドショーをします。
 
-{{<import pid="5923cadf013eb0c4545dd864" title="Flickr Sample">}}
+{{<import pid="5c19c2d9e788850c427f60af" title="Flickr Sample">}}
 
 **テスト環境**
 
-- Android 7.0
-- iOS 10.1.1
+- Android 9.0
+- iOS 12.1.1
 
 {{<iframeApp src="https://monaca.github.io/project-templates/18-flickr-sample/www/index.html">}}
 
