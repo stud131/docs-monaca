@@ -9,12 +9,12 @@ weight: 120
 
 現在の日付と時間を表示する時計アプリのサンプルです。
 
-{{<import pid="5923cd8e8034518c22fbdcbf" title="Clock App">}}
+{{<import pid="5c19bf68e7888520447f60ad" title="Clock App">}}
 
 **テスト環境** 
 
-- Android 7.0
-- iOS 10.1.1
+- Android 9.0
+- iOS 12.1.1
 
 {{<iframeApp src="https://monaca.github.io/project-templates/21-clock-app/www/index.html">}}                                                                                                    
 ## ファイル構成

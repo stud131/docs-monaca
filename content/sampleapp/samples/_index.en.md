@@ -185,7 +185,7 @@ This section introduces various sample applications which are published to exter
     </li>
     <li class="sample-item">
         <img src="/images/samples/clock.png" alt="" class="thumb">
-        <button onclick="location.href='https://monaca.mobi/directimport?pid=5923cd8e8034518c22fbdcbf'">Direct Import</button>
+        <button onclick="location.href='https://monaca.mobi/directimport?pid=5c19bf68e7888520447f60ad'">Direct Import</button>
         &nbsp;
         <button onclick="GoTo('/en/sampleapp/samples/clock/')">Detail</button>
         <h3>Clock App</h3>

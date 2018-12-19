@@ -186,7 +186,7 @@ weight: 10
     </li>
     <li class="sample-item">
         <img src="/images/samples/clock.png" alt="" class="thumb">
-        <button onclick="location.href='https://monaca.mobi/directimport?pid=5923cd8e8034518c22fbdcbf'">Direct Import</button>
+        <button onclick="location.href='https://monaca.mobi/directimport?pid=5c19bf68e7888520447f60ad'">Direct Import</button>
         &nbsp;
         <button onclick="GoTo('/ja/sampleapp/samples/clock/')">解説</button>
         <h3>時計アプリ</h3>
