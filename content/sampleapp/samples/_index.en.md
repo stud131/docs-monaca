@@ -31,7 +31,7 @@ This section introduces various sample applications which are published to exter
 
     <li class="sample-item">
         <img src="/images/samples/twitter_sso.png" alt="" class="thumb">
-        <button onclick="location.href='https://monaca.mobi/directimport?pid=591bff71ff2af275320625fa'">Direct Import</button>&nbsp;
+        <button onclick="location.href='https://monaca.mobi/directimport?pid=5c19c699e78885ec6c2f329d'">Direct Import</button>&nbsp;
         <button onclick="GoTo('/en/sampleapp/samples/twitter_sso/')">Detail</button>
         <h3>Twitter Single Sign-on App</h3>
         <p align="left">A sample app using Native Twitter authentication with Angular 1 and Onsen UI</p>

@@ -31,7 +31,7 @@ weight: 10
 
     <li class="sample-item">
         <img src="/images/samples/twitter_sso.png" alt="" class="thumb">
-        <button onclick="location.href='https://monaca.mobi/directimport?pid=591bff71ff2af275320625fa'">Direct Import</button>&nbsp;
+        <button onclick="location.href='https://monaca.mobi/directimport?pid=5c19c699e78885ec6c2f329d'">Direct Import</button>&nbsp;
         <button onclick="GoTo('/ja/sampleapp/samples/twitter_sso/')">解説</button>
         <h3>Twitter アプリ ( シングルサインオンを使用 )
 </h3>

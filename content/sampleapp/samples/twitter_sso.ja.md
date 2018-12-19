@@ -12,12 +12,12 @@ weight: 10
 iOS アプリ上での SSO
 を可能にしています。認証成功後、ユーザーの基本情報がアプリ上に表示されます。
 
-{{<import pid="591bff71ff2af275320625fa" title="Twitter Single Sign-on App">}}
+{{<import pid="5c19c699e78885ec6c2f329d" title="Twitter Single Sign-on App">}}
 
 **テスト環境**
 
-- Android 7.0
-- iOS 10.1.1
+- Android 9.0
+- iOS 12.1.1
 
 {{<figure src="/images/sampleapp/twitter_sso/cover.png">}}
 
@@ -34,8 +34,7 @@ iOS アプリ上での SSO
 2.  {{<guilabel name="Create New App">}} ボタンをクリックします。
 
 3.  Name ( アプリ名 )、Description ( アプリの説明 )、Website (
-    アプリのダウンロード元となる URL )、Callback URL (
-    認証成功後に表示されるページ。こちらは任意 )
+    アプリのダウンロード元となる URL )、Callback URL ( 任意：認証成功後に表示されるページ。`twittersdk://` の設定が必要になる場合があります。 )
     を入力します。次に、`Yes, I have read and agreed to the Twitter Developer Agreement.`
     にチェックを入れ、{{<guilabel name="Create your Twitter application">}}
     ボタンをクリックします。
@@ -66,7 +65,7 @@ iOS アプリ上での SSO
 
 ## Monaca クラウド IDE へのプロジェクトのインポート
 
-{{<import pid="591bff71ff2af275320625fa" title="Twitter Single Sign-on App">}}
+{{<import pid="5c19c699e78885ec6c2f329d" title="Twitter Single Sign-on App">}}
 
 ## プラグインの設定
 

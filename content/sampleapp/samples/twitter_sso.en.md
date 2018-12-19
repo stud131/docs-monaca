@@ -11,12 +11,12 @@ This plugin uses Twitter's [Fabric](https://fabric.io/) SDK to enable
 SSO with your Android and iOS apps. After a successful authentication,
 the user’s basic information will be displayed in the app.
 
-{{<import pid="591bff71ff2af275320625fa" title="Twitter Single Sign-on App">}}
+{{<import pid="5c19c699e78885ec6c2f329d" title="Twitter Single Sign-on App">}}
 
 **Tested Environment**
 
-- Android 7.0
-- iOS 10.1.1
+- Android 9.0
+- iOS 12.1.1
 
 {{<figure src="/images/sampleapp/twitter_sso/cover.png">}}
 
@@ -32,7 +32,7 @@ follows:
     with a valid Twitter account.
 2.  Click on {{<guilabel name="Create New App">}} button.
 3.  Fill in the information of your app such as: Name, Description,
-    Website and Callback URL (optional). Then, tick
+    Website and Callback URL (optional: It may be necessary to set `twittersdk://`). Then, tick
     `Yes, I have read and agreed to the Twitter Developer Agreement.` and
     click on {{<guilabel name="Create your Twitter application">}} button.
 4.  Go to Settings tab and tick
@@ -62,7 +62,7 @@ get `Fabric API key`, please proceed as follows:
 
 ## Importing the Project to Monaca Cloud IDE
 
-{{<import pid="591bff71ff2af275320625fa" title="Twitter Single Sign-on App">}}
+{{<import pid="5c19c699e78885ec6c2f329d" title="Twitter Single Sign-on App">}}
 
 ## Configuring the Plugin
 
