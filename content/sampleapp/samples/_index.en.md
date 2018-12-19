@@ -193,7 +193,7 @@ This section introduces various sample applications which are published to exter
     </li>
     <li class="sample-item">
         <img src="/images/samples/agecalc.png" alt="" class="thumb">
-        <button onclick="location.href='https://monaca.mobi/directimport?pid=5923d096013eb065012a943a'">Direct Import</button>
+        <button onclick="location.href='https://monaca.mobi/directimport?pid=5c19b37ee7888542497f60bd'">Direct Import</button>
         &nbsp;
         <button onclick="GoTo('/en/sampleapp/samples/age-calc/')">Detail</button>
         <h3>BirthYear App</h3>

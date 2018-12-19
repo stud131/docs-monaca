@@ -9,12 +9,12 @@ weight: 130
 
 The app will calculate a user's birthyear and display it after he/she entered his/her name and age.
 
-{{<import pid="5923d096013eb065012a943a" title="BirthYear App">}}
+{{<import pid="5c19b37ee7888542497f60bd" title="BirthYear App">}}
 
 **Tested Environment**
 
-- Android 4.2.2
-- iOS 7.1.1
+- Android 9.0
+- iOS 12.1.1
 
 {{<iframeApp src="https://monaca.github.io/project-templates/22-birth-year-app/www/index.html">}}
 
