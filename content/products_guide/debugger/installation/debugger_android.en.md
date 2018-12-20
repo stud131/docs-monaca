@@ -71,11 +71,12 @@ aliases: /en/debugger/manual/installation/debugger_android
 
 
 {{<warning>}}
-    The plugin below will not be installed on both the store version and the custom Monaca Debugger.<br>
+    The following cordova plugin for push notification can not be used in the store version and the custom build debugger.<br>
 You can use these plugins in debug build or release build.
 <ul style="margin:5px;">
-    <li>Monaca Backend plugin</li>
-    <li>Plugin for push notification
+    <li>MonacaBackend plugin</li>
+    <li>NIFCloudMB plugin</li>
+    <li>Other cordova plugin for push notification Example:
         <ul>
             <li>phonegap-plugin-push</li>
             <li>onesignal-cordova-plugin</li>

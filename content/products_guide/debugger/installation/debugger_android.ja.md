@@ -66,11 +66,12 @@ aliases: /ja/debugger/manual/installation/debugger_android
 </table>
 
 {{<warning>}}
-下のプラグインは、ストア版およびカスタム版デバッガーの両方ともにインストールされません。<br>
+下記のようなプッシュ通知用 Cordova プラグインは、ストア版およびカスタムビルドデバッガーでは利用することはできません。<br>
 利用する際は、デバッグビルドかリリースビルドにてご利用ください。
 <ul style="margin:5px;">
-    <li>Monacaバックエンドプラグイン</li>
-    <li>プッシュ通知に関するプラグイン
+    <li>MonacaBackend プラグイン</li>
+    <li>NIFCloudMB プラグイン</li>
+    <li>その他のプッシュ通知用 Cordova プラグイン例
         <ul>
             <li>phonegap-plugin-push</li>
             <li>onesignal-cordova-plugin</li>
