@@ -3,20 +3,19 @@ title: Facebook アプリ (シングルサインオンを使用)
 weight: 20
 ---
 
-ここでは、Facebook 上でのシングルサインオン ( Single Sign-On/SSO )
+ここでは、Facebook 上でのシングルサインオン ( SSO )
 の方法を解説します。Angular 1 と [Onsen UI](https://onsen.io/)
 を使用して、Monaca クラウド IDE
 上でアプリを構築します。認証処理には、[cordova-plugin-facebook4](https://github.com/jeduan/cordova-plugin-facebook4)
-プラグインを使用します。\[ 以下の文は現在確認中 \]
-シングルサインオンには、ネイティブの Facebook
+プラグインを使用します。シングルサインオンには、ネイティブの Facebook
 アプリを使用します。標準的なダイアログを使用した認証方法の場合、サインオンの処理が著しく遅くなります。
 
 {{<import pid="591abc668034513c335e2ecf" title="Facebook Single Sign-on App">}}
 
 **テスト環境** 
 
-- Android 7.0
-- iOS 10.1.1
+- Android 9.0
+- iOS 12.1.1
 
 {{<figure src="/images/sampleapp/facebook_sso/cover.png">}}
 
@@ -80,7 +79,7 @@ weight: 20
 
     {{<img src="/images/sampleapp/facebook_sso/plugin_config.png">}}
 
-3. `APP_ID` と `APP_NAME` を入力します ( [Prerequisite](#prerequisite) を参照のこと )。次のスクリーンショットをご確認ください。
+3. `APP_ID` と `APP_NAME` を入力します ( [事前準備](#事前準備) を参照のこと )。次のスクリーンショットをご確認ください。
 
     {{<img src="/images/sampleapp/facebook_sso/plugin_params.png">}}
 

@@ -13,8 +13,8 @@ standard dialog based authentication.
 
 **Tested Environment** 
 
-- Android 7.0
-- iOS 10.1.1
+- Android 9.0
+- iOS 12.1.1
 
 {{<figure src="/images/sampleapp/facebook_sso/cover.png">}}
 
