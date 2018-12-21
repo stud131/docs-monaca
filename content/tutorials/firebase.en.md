@@ -13,6 +13,10 @@ This Cordova plugin brings push notifications, analytics, event tracking, crash 
 To check third party cordova plugins, you need to create a custom build debugger ( {{<link title="Android version" href="https://docs.monaca.io/en/products_guide/debugger/installation/debugger_android/#build-and-install-custom-monaca-debugger">}} or {{<link title="iOS version" href="https://docs.monaca.io/en/products_guide/debugger/installation/debugger_ios/#how-to-build-custom-monaca-debugger">}} ).
 {{</note>}}
 
+{{<note>}}
+The custom build debugger can not check push notifications. To check push notifications, please check with debug build or release build.
+{{</note>}}
+
 ## Demo 
 
 {{<import pid="5ac5776ee788854f3a8b456a" title="Google Firebase Plugin Demo">}}
