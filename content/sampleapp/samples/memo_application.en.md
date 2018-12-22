@@ -5,6 +5,8 @@ weight: 60
 
 This sample app allows user to create a memo application using local storage.
 
+## Demo 
+
 {{<import pid="5c19c3cfe78885a2417f60aa" title="Memo Application">}}
 
 **Tested Environment** 

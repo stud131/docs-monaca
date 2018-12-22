@@ -5,6 +5,8 @@ weight: 90
 
 This sample app shows how to retrieve pictures from Flickr and displays them as a slide show.
 
+## Demo 
+
 {{<import pid="5c19c2d9e788850c427f60af" title="Flickr Sample">}}
 
 **Tested Environment**

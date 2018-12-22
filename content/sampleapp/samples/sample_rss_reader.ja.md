@@ -5,6 +5,8 @@ weight: 50
 
 こちらは、jQuery を使用した、RSS リーダーのアプリです。
 
+## デモ 
+
 {{<import pid="5c19c4b4e78885fc7a8d12a1" title="RSS Reader App  ">}}
 
 **テスト環境** 

@@ -9,6 +9,12 @@ The authentication is done by [cordova-plugin-facebook4](https://github.com/jedu
 for the user; otherwise, the sign on will degrade gracefully using the
 standard dialog based authentication.
 
+{{<note>}}
+To check third party cordova plugins, you need to create a custom build debugger ( {{<link title="Android version" href="https://docs.monaca.io/en/products_guide/debugger/installation/debugger_android/#build-and-install-custom-monaca-debugger">}} or {{<link title="iOS version" href="https://docs.monaca.io/en/products_guide/debugger/installation/debugger_ios/#how-to-build-custom-monaca-debugger">}} ).
+{{</note>}}
+
+## Demo 
+
 {{<import pid="591abc668034513c335e2ecf" title="Facebook Single Sign-on App">}}
 
 **Tested Environment** 

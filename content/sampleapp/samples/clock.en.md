@@ -9,6 +9,8 @@ weight: 120
 
 This sample app is a clock app displaying current Date and time.
 
+## Demo 
+
 {{<import pid="5c19bf68e7888520447f60ad" title="Clock App">}}
 
 **Tested Environment**

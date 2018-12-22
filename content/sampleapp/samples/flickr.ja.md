@@ -5,6 +5,8 @@ weight: 90
 
 このサンプルアプリでは、Flickr から画像を取得して、スライドショーをします。
 
+## デモ 
+
 {{<import pid="5c19c2d9e788850c427f60af" title="Flickr Sample">}}
 
 **テスト環境**

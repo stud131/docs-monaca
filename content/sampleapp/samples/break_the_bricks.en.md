@@ -10,6 +10,8 @@ information about Pixi, please refer to
 controlls a paddle to prevent a ball from falling while trying to clear
 the bricks. The objective of the game is to clear all the bricks.
 
+## Demo 
+
 {{<import pid="5c1aba3ae788854a482f328b" title="Break the Bricks">}}
 
 **Tested Environment**

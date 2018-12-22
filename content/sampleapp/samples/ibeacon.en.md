@@ -7,18 +7,24 @@ This sample app uses iBeacon service to detect its proximity to iBeacon
 device. This Monaca app has [Onsen UI](https://onsen.io/) as its UI. When the mobile
 (running this app) gets close enough to a predefined iBeacon device, a new page showing its UUID will be displayed.
 
+{{<note>}}
+To check third party cordova plugins, you need to create a custom build debugger ( {{<link title="Android version" href="https://docs.monaca.io/en/products_guide/debugger/installation/debugger_android/#build-and-install-custom-monaca-debugger">}} or {{<link title="iOS version" href="https://docs.monaca.io/en/products_guide/debugger/installation/debugger_ios/#how-to-build-custom-monaca-debugger">}} ).
+<br />
+To use the cordova-plugin-ibeacon plugin with the Android custom build debugger, you need to build config.xml with the following settings.
+<br /><br />
+&lt;reference name="monaca:ANDROID_DEBUGGER_APPCOMPAT_VERSION" value="27.+" /&gt;
+{{</note>}}
+
+## Demo 
+
 {{<import pid="5923d13f8034510a419679fa" title="iBeacon">}}
 
 **Tested Environment** 
 
 - Android 7.0
-- iOS 10.1.1
+- iOS 12.1.1
 
 {{<iframeApp src="https://monaca.github.io/project-templates/24-ibeacon/www/index.html">}}
-
-{{<note>}}
-    In order to test this application, you can either build the application or use the custom built Monaca Debugger.
-{{</note>}}
 
 ## Prerequisite                                                                                    
   

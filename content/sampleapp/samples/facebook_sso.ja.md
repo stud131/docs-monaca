@@ -10,6 +10,13 @@ weight: 20
 プラグインを使用します。シングルサインオンには、ネイティブの Facebook
 アプリを使用します。標準的なダイアログを使用した認証方法の場合、サインオンの処理が著しく遅くなります。
 
+{{<note>}}
+サードパーティー製 Cordova プラグインを確認する場合は、カスタムビルドデバッガー ( {{<link title="Android 版" href="https://docs.monaca.io/ja/products_guide/debugger/installation/debugger_android/#カスタムビルド版-monaca-デバッガーのビルドとインストール">}} または {{<link title="iOS 版" href="https://docs.monaca.io/ja/products_guide/debugger/installation/debugger_ios/#カスタムビルド版-monaca-デバッガーのビルド方法">}} ) を作成する必要があります。
+{{</note>}}
+
+## デモ 
+
+
 {{<import pid="591abc668034513c335e2ecf" title="Facebook Single Sign-on App">}}
 
 **テスト環境** 

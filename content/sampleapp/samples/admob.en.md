@@ -7,6 +7,12 @@ In this page, we will show how to integrate Monaca with the most common
 mobile ads network called, [AdMob](https://www.google.com/admob/). This
 sample app is based on a demo on [AdMob Plugin Pro on GitHub](https://github.com/floatinghotpot/cordova-admob-pro).
 
+{{<note>}}
+To check third party cordova plugins, you need to create a custom build debugger ( {{<link title="Android version" href="https://docs.monaca.io/en/products_guide/debugger/installation/debugger_android/#build-and-install-custom-monaca-debugger">}} or {{<link title="iOS version" href="https://docs.monaca.io/en/products_guide/debugger/installation/debugger_ios/#how-to-build-custom-monaca-debugger">}} ).
+{{</note>}}
+
+## Demo 
+
 {{<import pid="5923cb95ff2af25b33815106" title="AdMob Demo">}}
 
 **Tested Environment** 

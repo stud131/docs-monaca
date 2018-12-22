@@ -5,6 +5,12 @@ weight: 30
 
 このページでは、Monaca を使用して、[AdMob](https://www.google.com/admob/) ( モバイルアド/広告ネットワーク ) の実装方法を解説します。この解説で使用しているデモ用アプリは、[AdMob Plugin Pro](https://github.com/floatinghotpot/cordova-admob-pro) ( Github 上 ) を参考にして、構築されています。
 
+{{<note>}}
+サードパーティー製 Cordova プラグインを確認する場合は、カスタムビルドデバッガー ( {{<link title="Android 版" href="https://docs.monaca.io/ja/products_guide/debugger/installation/debugger_android/#カスタムビルド版-monaca-デバッガーのビルドとインストール">}} または {{<link title="iOS 版" href="https://docs.monaca.io/ja/products_guide/debugger/installation/debugger_ios/#カスタムビルド版-monaca-デバッガーのビルド方法">}} ) を作成する必要があります。
+{{</note>}}
+
+## デモ 
+
 {{<import pid="5923cb95ff2af25b33815106" title="AdMob Demo">}}
 
 **テスト環境** 
