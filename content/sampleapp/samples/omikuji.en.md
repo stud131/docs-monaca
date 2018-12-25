@@ -8,6 +8,8 @@ development is done using HTML and JavaScript just like webpages.
 JavaScript is a scripting language with simple syntax and functions, and
 often used for smartphone development compared to other languages.
 
+## Demo 
+
 {{<import pid="5c1ac173e7888547697f60aa" title="Omikuji Fortune Telling App">}}
 
 **Tested Environment**

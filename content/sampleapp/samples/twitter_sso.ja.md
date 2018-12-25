@@ -12,6 +12,12 @@ weight: 10
 iOS アプリ上での SSO
 を可能にしています。認証成功後、ユーザーの基本情報がアプリ上に表示されます。
 
+{{<note>}}
+サードパーティー製 Cordova プラグインを確認する場合は、カスタムビルドデバッガー ( {{<link title="Android 版" href="https://docs.monaca.io/ja/products_guide/debugger/installation/debugger_android/#カスタムビルド版-monaca-デバッガーのビルドとインストール">}} または {{<link title="iOS 版" href="https://docs.monaca.io/ja/products_guide/debugger/installation/debugger_ios/#カスタムビルド版-monaca-デバッガーのビルド方法">}} ) を作成する必要があります。
+{{</note>}}
+
+## デモ 
+
 {{<import pid="5c19c699e78885ec6c2f329d" title="Twitter Single Sign-on App">}}
 
 **テスト環境**

@@ -11,6 +11,12 @@ This plugin uses Twitter's [Fabric](https://fabric.io/) SDK to enable
 SSO with your Android and iOS apps. After a successful authentication,
 the user’s basic information will be displayed in the app.
 
+{{<note>}}
+To check third party cordova plugins, you need to create a custom build debugger ( {{<link title="Android version" href="https://docs.monaca.io/en/products_guide/debugger/installation/debugger_android/#build-and-install-custom-monaca-debugger">}} or {{<link title="iOS version" href="https://docs.monaca.io/en/products_guide/debugger/installation/debugger_ios/#how-to-build-custom-monaca-debugger">}} ).
+{{</note>}}
+
+## Demo 
+
 {{<import pid="5c19c699e78885ec6c2f329d" title="Twitter Single Sign-on App">}}
 
 **Tested Environment**

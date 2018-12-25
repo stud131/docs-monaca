@@ -5,6 +5,8 @@ weight: 60
 
 localStorage を使用して、メモ帳アプリを作成するサンプルアプリです。
 
+## デモ 
+
 {{<import pid="5c19c3cfe78885a2417f60aa" title="Memo Application">}}
 
 **テスト環境** 

@@ -6,6 +6,8 @@ weight: 40
 This sample app is a Core Cordova Plugins Demo showing several device
 functionalities such as camera, contacts, compass and so on.
 
+## Demo 
+
 {{<import pid="5c19c5c7e78885bf3f2f328f" title="Hello World App">}}
 
 **Tested Environment**

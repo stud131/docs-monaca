@@ -8,18 +8,24 @@ iBeacon ( アイビーコン ) サービスを組み込んだサンプルアプ�
 を構築しています。iBeacon 発信機の射程内に携帯端末が入ると、発信機の
 UUID が画面上に表示されます ( このサンプルでは、アプリが起動中であること、発信機は端末側に登録済みであることが必要です )。
 
+{{<note>}}
+サードパーティー製 Cordova プラグインを確認する場合は、カスタムビルドデバッガー ( {{<link title="Android 版" href="https://docs.monaca.io/ja/products_guide/debugger/installation/debugger_android/#カスタムビルド版-monaca-デバッガーのビルドとインストール">}} または {{<link title="iOS 版" href="https://docs.monaca.io/ja/products_guide/debugger/installation/debugger_ios/#カスタムビルド版-monaca-デバッガーのビルド方法">}} ) を作成する必要があります。
+<br />
+Android カスタムビルドデバッガーで cordova-plugin-ibeacon プラグインを使用する場合は、config.xml に次の設定をしてビルドする必要があります。
+<br /><br />
+&lt;reference name="monaca:ANDROID_DEBUGGER_APPCOMPAT_VERSION" value="27.+" /&gt;
+{{</note>}}
+
+## デモ 
+
 {{<import pid="5923d13f8034510a419679fa" title="iBeacon">}}
 
 **テスト環境** 
 
 - Android 7.0
-- iOS 10.1.1
+- iOS 12.1.1
 
 {{<iframeApp src="https://monaca.github.io/project-templates/24-ibeacon/www/index.html">}}
-
-{{<note>}}
-    アプリをビルドするか、または、カスタムビルドされた Monaca デバッガーを使用すれば、アプリの検証を行えます。
-{{</note>}}
 
 ## 事前準備
 
