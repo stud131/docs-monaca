@@ -40,7 +40,7 @@ The Monaca Localkit is currently tested on:
 
 | Cordova Version | Android  (SDK Version)| iOS (Xcode Version)|
 |:------------|:-------------------:|:--------------------:|
-| Cordova 7.1 | 26 | 9 |
+| Cordova 7.1 | 26 | 9 / 10.1 |
 | Cordova 6.5 | 25 | 8 |
 | Cordova 6.2 | 23 | 7 |
 | Cordova 5.2 | 22 | 6.4 |
