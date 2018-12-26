@@ -3,6 +3,10 @@ title: Release Notes and Updates
 weight: 5
 ---
 
+#### Dec 26, 2018
+
+Monaca iOS build support Xcode 10.1. Please select Xcode 10.1 from the "Build Environment Settings" page and try the iOS build. For details, see [here](/en/products_guide/monaca_ide/build/build_env_settings/).
+
 #### Oct 3, 2018
 
 Added sorting functionality to the dashboard project list. Now you can sort by created time, last accessed time and project title.
