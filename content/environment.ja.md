@@ -43,6 +43,3 @@ Monaca Localkit は、次の環境で動作検証を行っています。
 | Cordova 7.1 | 26 | 9 / 10.1 |
 | Cordova 6.5 | 25 | 8 |
 | Cordova 6.2 | 23 | 7 |
-| Cordova 5.2 | 22 | 6.4 |
-| Cordova 4.1 | 21 | 6.2 |
-| Cordova 3.5 | 19 | 6.0.1 |
