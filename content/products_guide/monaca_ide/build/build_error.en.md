@@ -35,7 +35,7 @@ Provisioning profile "For Debug Build" doesn't include the aps-environment entit
 
 This error means that your current provisioning profile doesn't have the
 right configuration for push notification. In other words, when you are
-using `MonacaBackend` or `NCMB` plugins for Cordova 6.5 project, this
+using `MonacaBackend` or `NIFCloudMB` plugins for Cordova 6.5 or later project, this
 error will occur if you don't have the right configuration for push
 notification in iOS.
 
@@ -175,3 +175,16 @@ This bundle does not support one or more of the devices supported by the previou
 When updating an application, it is not possible to reduce the number of
 supporting devices. Please check the setting of a target device in iOS
 application setting.
+
+{{<highlight bash>}}
+Invalid App Store Icon. The App Store Icon in the asset catalog in 'xxx.app' can't be transparent nor contain an alpha channel.
+{{</highlight>}}
+
+There is a possibility that the App Store icon is transparent or contains an alpha channel. Please check the App Store icon.
+
+{{<highlight bash>}}
+ SDK Version Issue. This app was built with the iOS 10.3 SDK. All iOS apps submitted to the App Store must be built with the iOS 11 SDK or later, included in Xcode 9 or later. Further, starting March 2019, all iOS apps submitted to the App Store must be built with the iOS 12.1 SDK or later, included in Xcode 10.1 or later.
+{{</highlight>}}
+
+The target project is not built with Xcode 9 or later.
+If the target project is less than cordova 7.1, you need to upgrade to cordova 7.1. From March 2019, you need to build with Xcode 10.1. To set the target project to Xcode 10.1, see [Build Environment Settings](/en/products_guide/monaca_ide/build/build_env_settings/).

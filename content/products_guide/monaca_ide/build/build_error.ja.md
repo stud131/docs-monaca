@@ -7,8 +7,7 @@ aliases: /ja/monaca_ide/manual/build/build_error
 ビルドまたは App Store Connect
 にアップロードする際の一般的なエラーのリストを次に示します。
 
-minSdkVersion
--------------
+## minSdkVersion
 
 {{< highlight bash >}}
 minSdkVersion 14 cannot be smaller than version 16 declared in library ["library name"]
@@ -21,27 +20,26 @@ minSdkVersion 14 cannot be smaller than version 16 declared in library ["library
 プラグインが要求している API レベル より低い `android-minSdkVersion`
 が設定されています。
 
-このエラーの解決する場合は、下記のように `config.xml` ファイルに
+このエラーに対応する場合は、下記のように `config.xml` ファイルに
 `minSdkVersion` の設定を行います。
 
 {{< highlight xml >}}
 <preference name="android-minSdkVersion" value="16" />
 {{< /highlight >}}
 
-Provisioning Profile
---------------------
+## Provisioning Profile
 
 {{<highlight bash >}}
 Provisioning profile "For Debug Build" doesn't include the aps-environment entitlement.
 {{</highlight>}}
 
-Cordova 6.5 のプロジェクトを使用している場合、 `MomacaBackend`
-プラグイン または `NCMB` プラグイン」を使用する場合は、ビルド時に iOS
+Cordova 6.5 以降のプロジェクトを使用している場合、 `MomacaBackend`
+プラグイン または `NIFCloudMB` プラグイン」を使用する場合は、ビルド時に iOS
 プッシュ通知に必要な設定を行う必要があります。
 
-このエラーを解決する場合は、下記のプッシュ通知に必要な設定を行う必要があります。
+このエラーに対応する場合は、下記のプッシュ通知に必要な設定を行う必要があります。
 
--   プッシュ通知用のApp ID
+-   プッシュ通知用の App ID
 -   プッシュ通知用の証明書
 -   プッシュ通知用のプロビジョニングプロファイル
 
@@ -57,20 +55,19 @@ Provisioning profile "profile_xxx" has app ID "com.example.xxx", which does not 
 Code Sign error: No matching provisioning profiles found
 {{</highlight>}}
 
-iOSビルド設定に問題がある可能性があります。ビルド時に使用している「App
+iOS ビルド設定に問題がある可能性があります。ビルド時に使用している「App
 ID」「証明書」「プロビジョニングプロファイル」に問題がないか確認してください。
 
 {{<highlight bash>}}
 Error code 65 for command: xcodebuild 
 {{</highlight>}}
 
-プロビジョニングプロファイルに設定されているバンドルIDとプロジェクトのApp
-IDが一致していない等の
-iOSビルド設定に問題がある可能性があります。ビルド時に使用している「App
+プロビジョニングプロファイルに設定されているバンドルIDとプロジェクトの App
+ID が一致していない等の
+iOS ビルド設定に問題がある可能性があります。ビルド時に使用している「App
 ID」「証明書」「プロビジョニングプロファイル」に問題がないか確認してください。
 
-スプラッシュ スクリーン
------------------------
+## スプラッシュ スクリーン
 
 {{<highlight bash>}}
 AAPT: libpng error: Not a PNG file
@@ -78,26 +75,21 @@ AAPT: libpng error: Not a PNG file
 
 このエラーは、次のようなスプラッシュ画面イメージファイルに関連するエラーです。
 
--   PNG形式以外のファイル形式が使用されている可能性があります。現在、Monaca
-    ではスプラッシュ画面イメージとして PNG
-    形式ファイルのみがサポートされています。
+-   PNG 形式以外のファイル形式が使用されている可能性があります。現在、Monaca
+    ではスプラッシュ画面イメージとして PNG 形式ファイルのみがサポートされています。
 -   スプラッシュ画像ファイルに問題がある可能性があります。
--   9-patch 形式の画像を使用している場合は、9-patch
-    画像に問題がないか確認してください。
+-   9-patch 形式の画像を使用している場合は、9-patch 画像に問題がないか確認してください。
 
-プロジェクト ファイル
----------------------
+## プロジェクト ファイル
 
 {{<highlight bash>}}
 Process 'command '/data/android-sdk/build-tools/23.0.3/aapt'' finished with non-zero exit value 1
 {{</highlight>}}
 
 このエラーは、プロジェクトファイルに無効なファイル名が設定されている可能性があります。
-対象プロジェクト内のリソースファイル名に日本語等の 2
-バイト文字や特殊文字が使用されていないか確認してください。
+対象プロジェクト内のリソースファイル名に日本語等の 2 バイト文字や特殊文字が使用されていないか確認してください。
 
-Android キーストア
-------------------
+## Android キーストア
 
 {{<highlight bash>}}
 Failed to read key keyname from store "/tmp/monaca/xxxxxxxxxxx/output/etc/keystore.private": Cannot recover key
@@ -106,29 +98,26 @@ Failed to read key keyname from store "/tmp/monaca/xxxxxxxxxxx/output/etc/keysto
 キーストアからキー名を読み取ることができませんでした。
 以下を確認してください。
 
--   Androidキーストア設定で、正しいキーストアが設定されているか確認してください。
+-   Android キーストア設定で、正しいキーストアが設定されているか確認してください。
 -   ビルドの際、選択したエイリアスのパスワードが、正しく入力されているか確認してください。
 
-Crosswalk プラグイン
---------------------
+## Crosswalk プラグイン
 
 {{<highlight bash>}}
 Build Error: Error: App File not found. null
 {{</highlight>}}
 
 このエラーは、Cordova 6.2 プロジェクトで `Crosswalk WebView Engine`
-プラグイン v2.2.0 以降が有効になっている可能性があります。 Cordova 6.2
-プロジェクトで `Crosswalk WebView Engine`
-プラグインを使用している場合は、 `v2.1.0` 以下を使用してください。
+プラグイン v2.2.0 以降が有効になっている可能性があります。 Cordova 6.2 プロジェクトで `Crosswalk WebView Engine`
+プラグインを使用している場合は、`v2.1.0` 以下を使用してください。
 
-Cordova 6.2 プロジェクトでは、 `Crosswalk WebView Engine`
+Cordova 6.2 プロジェクトでは、`Crosswalk WebView Engine`
 プラグインの以下の設定で正常にビルドができることを確認しています。
 
 1.  プラグインバージョン: 1.7.2 / Crosswalk のバージョン (標準設定)
 2.  プラグインバージョン: 2.1.0 / Crosswalk のバージョン: 21.51.546.7
 
-App Store Connect
---------------
+## App Store Connect
 
 {{<highlight bash>}}
 Unable to validate your application. Your Apple ID or password was entered incorrectly.
@@ -142,9 +131,7 @@ App Store Connect へのアップロード時に使用される`Apple ID` また
 Unable to validate your application. Please sign in with an app-specific password. You can create one at appleid.apple.com.
 {{</highlight>}}
 
-App Store Connect へアップロードする際に使用している「Apple ID」が、2
-ファクタ認証を利用している場合は、App
-用パスワードをお試しください。詳しくは [App
+App Store Connect へアップロードする際に使用している「Apple ID」が、2 ファクタ認証を利用している場合は、App 用パスワードをお試しください。詳しくは [App
 用パスワードを使う](https://support.apple.com/ja-jp/HT204397)
 を参照してください。
 
@@ -152,15 +139,13 @@ App Store Connect へアップロードする際に使用している「Apple ID
 No suitable application records were found. Verify your bundle identifier 'com.example.xxx' is correct.
 {{</highlight>}}
 
-App Store Connect
-に「com.example.xxx」アプリが登録されているか確認してください。
+App Store Connect に「com.example.xxx」アプリが登録されているか確認してください。
 
 {{<highlight bash>}}
 There already exists a binary upload with build version '1.0.0' for train '1.0.0'
 {{</highlight>}}
 
-App Store Connect
-に同じビルドバージョンのアプリがあります。対象プロジェクトのビルドバージョンを確認してください。
+App Store Connect に同じビルドバージョンのアプリがあります。対象プロジェクトのビルドバージョンを確認してください。
 
 {{<highlight bash>}}
 The value for key CFBundleShortVersionString [0.0.1] in the Info.plist file must contain a higher version than that of the previously approved version [1.0.0]
@@ -173,6 +158,18 @@ The value for key CFBundleShortVersionString [0.0.1] in the Info.plist file must
 This bundle does not support one or more of the devices supported by the previous app. This bundle does not support one or more of the devices supported by the previous app version. Your app update must continue to support all devices previously supported. You declare supported devices in Xcode with the Targeted Device Family build setting. 
 {{</highlight>}}
 
-iOS
-アプリを更新する場合、サポートするデバイスの数を減らすことはできません。
+iOS アプリを更新する場合、サポートするデバイスの数を減らすことはできません。
 iOS アプリ設定の対象デバイス設定を確認してください。
+
+{{<highlight bash>}}
+Invalid App Store Icon. The App Store Icon in the asset catalog in 'xxx.app' can't be transparent nor contain an alpha channel.
+{{</highlight>}}
+
+App Store アイコンが透過されているかアルファチャネルが含まれている可能性があります。App Store アイコンを確認してください。
+
+{{<highlight bash>}}
+ SDK Version Issue. This app was built with the iOS 10.3 SDK. All iOS apps submitted to the App Store must be built with the iOS 11 SDK or later, included in Xcode 9 or later. Further, starting March 2019, all iOS apps submitted to the App Store must be built with the iOS 12.1 SDK or later, included in Xcode 10.1 or later.
+{{</highlight>}}
+
+対象プロジェクトが Xcode 9 以降でビルドされていません。対象プロジェクトが Cordova 7.1 未満の場合は、Cordova 7.1 へアップグレードしてください。<br />
+2019年3月からは、Xcode 10.1 でビルドをする必要があります。[ビルド環境の設定](/ja/products_guide/monaca_ide/build/build_env_settings/) を参考に、対象プロジェクトの Xcode バージョンを `10.1` に設定してビルドを行なってください。
