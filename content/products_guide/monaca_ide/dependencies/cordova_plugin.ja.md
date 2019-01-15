@@ -9,9 +9,9 @@ aliases: /ja/monaca_ide/manual/dependencies/cordova_plugin
 
 カメラ、ファイルシステム、端末側のストレージなど、端末側のネイティブ機能を使用する場合には、通常、ネイティブコードが必要となりますが、Cordova を使用すれば、JavaScript を使用してこれらのネイティブ機能へアクセスすることができます。
 
-具体的には、Cordova が提供しているデバイス系の API を使用することで、端末側のネイティブ機能に JavaScript からアクセスできるようになります。Monaca では、Cordova を採用し、JavaScript 経由で、ハイブリッドアプリ内から端末側のネイティブ機能へアクセスしています。
+具体的には、Cordova が提供しているデバイス系の API を使用することで、端末側のネイティブ機能に JavaScript からアクセスできるようになります。Monaca では、Cordova を採用し、JavaScript 経由でハイブリッドアプリ内から端末側のネイティブ機能へアクセスしています。
 
-Cordova に関する詳細につきましては、[こちら](https://cordova.apache.org/) を参照ください。
+Cordova に関する詳細は、[こちら](https://cordova.apache.org/) をご確認ください。
 
 ## Cordova の読み込み
 
@@ -89,7 +89,7 @@ Cordova が完全に読み込まれる前に、デバイス API ( Cordova プラ
 
 ## Monaca 側で用意している Cordova プラグイン
 
-Monaca クラウド IDE の Cordova プラグインページから直接、「 基本プラグイン 」と、いくつかの「 サードパーティー製プラグイン 」を簡単に有効にすることができます。
+Monaca クラウド IDE の Cordova プラグインページから直接、「 基本プラグイン 」と、いくつかの「 サードパーティー製プラグイン 」を <span class="guilabel">有効</span> にすることができます。
 
 -   基本プラグインとは、バッテリー情報の取得 API、カメラ API、住所録の取得 API、端末情報の取得 API など、以前から Cordova 側で提供していた API を指します。詳細は、 [ 基本プラグイン ](/ja/reference/cordova_6.5/) をご確認ください。
 
