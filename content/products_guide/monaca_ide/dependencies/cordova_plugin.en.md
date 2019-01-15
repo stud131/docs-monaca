@@ -27,45 +27,48 @@ You can't use device APIs (Cordova plugins) before Cordova is fully loaded. The 
 As an example, let's start up Camera functions by using Camera APIs. Please copy and paste the code below to your project in Monaca Cloud IDE then you can run it on [Monaca Debugger](/en/products_guide/debugger/).
 
 <div class="admonition note">
-    This code was written for Cordova 4.1. We apologize in advance in case the code may behave differently on various devices.
+    This code was written for Cordova 7.1. We apologize in advance in case the code may behave differently on various devices.
 </div>
 
 ```html
 <!DOCTYPE HTML>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <script src="components/loader.js"></script>
-    <script>
-        document.addEventListener ("deviceready", onDeviceReady, false);
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    document.addEventListener ("deviceready", onDeviceReady, false);
 
-        //these functions runs when Cordova is ready
-        function onDeviceReady () {
-            alert ('Cordova is ready!');
-        }
+    //these functions runs when Cordova is ready
+    function onDeviceReady () {
+      alert ('Cordova is ready!');
+    }
 
-        function snapPicture () {
-            navigator.camera.getPicture (successCallback, FailCallback, {destinationType: Camera.DestinationType.DATA_URL});
+    function snapPicture () {
+      navigator.camera.getPicture (successCallback, FailCallback, {destinationType: Camera.DestinationType.DATA_URL});
 
-            //Success Callback
-            function successCallback (imageData) {
-                //Display image
-                var image = document.getElementById ('picture');
-                image.src = "data:image/jpeg;base64, " + imageData;
-            }
+      //Success Callback
+      function successCallback (imageData) {
+        //Display image
+        var image = document.getElementById ('picture');
+        image.src = "data:image/jpeg;base64, " + imageData;
+      }
 
-            //Error CallBack
-            function FailCallback (message) {
-                alert ('Error!!!: ' + message);
-            }
-        }
-    </script>
+      //Error CallBack
+      function FailCallback (message) {
+        alert ('Error!!!: ' + message);
+      }
+    }
+  </script>
 </head>
 <body>
-    <h1>Camera Sample</h1>
-    <input type="button" onclick="snapPicture()" value="Snap" ><br><br>
-    <img id="picture" src="" width="150" height="150">
+  <h1>Camera Sample</h1>
+  <input type="button" onclick="snapPicture()" value="Snap" ><br><br>
+  <img id="picture" src="" width="150" height="150">
 </body>
 </html>
 ```
@@ -89,8 +92,7 @@ In order to upgrade the Cordova version of your project, please do as following:
 1.  From Monaca Cloud IDE, go to <span class="guilabel"><b>
 Configure → Cordova Plugin Settings</b></span>.
 
-2.  Select the preferred Cordova Version from the dropdown list as shown
-    below.
+2.  Click the upgrade link.
 
     <img src="/images/monaca_ide/manual/dependencies/cordova_plugin/3.png" width="" class="single_img">
 
