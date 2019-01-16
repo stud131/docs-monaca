@@ -11,33 +11,18 @@ execution time.
 In order to use this plugin, you are required to subscribe to a valid plan. Please refer to {{<link href="https://monaca.mobi/en/pricing" title="Monaca Subscription Plans">}}.
 {{</note>}}
 
-This plugin is used differently depending on the Cordova version of your
-project:
-
-- [For Cordova 6.2 or Higher Projects](#for-cordova-6-2-or-higher-projects)
-- [For Cordova 5.2 or Lower Projects](#for-cordova-5-2-or-lower-projects)
-
-##  For Cordova 6.2 or Higher Projects
-
-The plugin for Cordova 6.2 or Higher Projectss has two additional features:
-
-1.  Developers can choose the encrypted directories other than `www`. For example, `www/data`, `www/js` etc.
-2.  The decryption can now be done manually. In other words, the
-    encrypted folder can't be read unless the decrypt function is
-    called.
-
-### Supported Platforms
+## Supported Platforms
 
 -   Cordova 6.2 or higher
 -   iOS 7 or higher
 -   Android 4.0 or higher
 
-### Encryption Scheme
+## Encryption Scheme
 
 - Encryption Method: `AES`
 - Key Length: `256` bits
 
-### Adding the Plugin in Monaca Cloud IDE
+## Adding the Plugin in Monaca Cloud IDE
 
 1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="Cordova Plugin Settings">}}.
 
@@ -61,7 +46,7 @@ The plugin for Cordova 6.2 or Higher Projectss has two additional features:
 
     {{<img src="/images/reference/power_plugins/html5_resource_encryption/7.png" width="500">}}
 
-### Manual Decryption
+## Manual Decryption
 
 You can also manually decrypt the configured target folder. The target
 folder is encrypted and can't be read until the
@@ -70,12 +55,12 @@ it can not be read with the script tag in `index.html` file.
 
 Please follow the steps below on how to use manual decryption:
 
-#### Step 1: Enabling the Manual Decryption Option
+### Step 1: Enabling the Manual Decryption Option
 
 In order to enable manual decryption, please set `AUTO_DECRYPT` to `0`
 in the plugin configuration (Step 4 in the previous section).
 
-#### Step 2: Getting the Hash Code for Decryption
+### Step 2: Getting the Hash Code for Decryption
 
 A hash code is required when calling `monaca.Encrypt.setDecryptHash()`
 function to decrypt the target folder(s). The hash code can be found in
@@ -95,7 +80,7 @@ the build log as follows:
 Hash : [4c716d***************************************************ae9f720d]
 ...{{</highlight>}}
 
-#### Step 3: Calling the Decryption Function
+### Step 3: Calling the Decryption Function
 
 Once you have the hash code, you can start using the decryption
 function. The function needs to be called inside the `deviceready`
@@ -117,7 +102,7 @@ function. For security concern, you can also hide it by loading the
 value from the server and use it under a parameter.
 {{</note>}}
 
-### App Store Submission
+## App Store Submission
 
 In this plugin, we use the encryption library of iOS SDK. Therefore, in
 order to release the built app embedded this plugin to the AppStore, you
@@ -127,48 +112,3 @@ shown in the screenshot below:
 
 {{<figure src="/images/reference/power_plugins/html5_resource_encryption/4.png">}}
 
-##  For Cordova 5.2 or Lower Projects
-
-### Supported Platforms
-
--   Cordova 5.2 or lower
--   iOS 7 or higher
--   Android 4.0 or higher
-
-### Encryption Scheme
-
-- Encryption Method: `AES`
-- Key Length: `256` bits
-
-### Enabling the Plugin in Monaca Cloud IDE
-
-1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="Cordova Plugin Settings">}}.
-
-2.  Under *Available Plugins* section, hover over the the `Encrypt` plugin and click {{<guilabel name="Enable">}} button.
-
-    {{<img src="/images/reference/power_plugins/html5_resource_encryption/1.png">}}
-
-3.  Next, you need to setup the encryption password. Find the newly
-    added plugin under the *Enabled Plugins* section. Then, hover the
-    plugin and click {{<guilabel name="Configure">}} button.
-
-    {{<img src="/images/reference/power_plugins/html5_resource_encryption/2.png">}}
-
-4.  Enter the password for this encryption. Then, click {{<guilabel name="OK">}} button.
-
-    {{<img src="/images/reference/power_plugins/html5_resource_encryption/3.png" width="400">}}
-
-### App Store Submission
-
-In this plugin, we use the encryption library of iOS SDK. Therefore, in
-order to release the built app embedded this plugin to the AppStore, you
-need to set 2 options when you submit your app for a review. Under the
-Export Compliance section, please choose "Yes" for both questions as
-shown in the screenshot below:
-
-{{<figure src="/images/reference/power_plugins/html5_resource_encryption/4.png">}}
-
-See Also:
-
-- [Third-party Cordova Plugins](../../third_party_phonegap)
-- [Core Cordova Plugins](../../cordova_6.5)

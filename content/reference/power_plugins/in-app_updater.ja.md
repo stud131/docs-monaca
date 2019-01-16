@@ -13,20 +13,12 @@ weight: 20
     このプラグインを使用するためには、対応するプランへの加入が必要となります。詳細は、 {{<link href="https://ja.monaca.io/pricing.html" title="料金プラン">}} をご確認ください。
 {{</note>}}
 
-プロジェクトで使用する Cordova
-のバージョンによって、このプラグインは使用できる機能が異なります。
-
-- [Cordova 6.2 以降向けのプロジェクトで使用する場合](#cordova-6-2-以降向けのプロジェクトで使用する場合)
-- [Cordova 5.2 向け、または、それ以前のバージョンを使用したプロジェクトで使用する場合](#cordova-5-2-向け-または-それ以前のバージョンを使用したプロジェクトで使用する場合)
-
-##  Cordova 6.2 以降向けのプロジェクトで使用する場合
-
-### サポート対象のプラットフォーム
+## サポート対象のプラットフォーム
 
 -   iOS 8 以上
 -   Android 4 以降
 
-### プラグインの追加方法
+## プラグインの追加方法
 
 1.  Monaca クラウド IDE から {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} を選択します。
 
@@ -42,12 +34,14 @@ weight: 20
 
     {{<img src="/images/reference/power_plugins/inapp_updater/10.png" width="500">}}
 
+## 使い方
+
 ### プラグインの設定
 
 本プラグインを利用するためには、[CheckUpdate URL](#checkupdate-url)
 と [Download URL](#download-url) の二つのWeb API（URL）が必要となります。
 
-####  CheckUpdate URL
+###  CheckUpdate URL
 
 サーバーにある更新バージョンを確認します
 
@@ -107,7 +101,7 @@ weight: 20
 上の例に示すように、更新番号の値は「日付」「URL」などの更新情報で構成されるJSONオブジェクトです。これは、
 [getServerVersion()](#getserverversion) メソッドの Promise によって返される JSON オブジェクトの `updateInfo` パラメータによって取得できます。
 
-#### Download URL
+### Download URL
 
 更新用のパッケージファイル ( ZIP 形式 ) をダウンロードします。
 
@@ -131,7 +125,7 @@ weight: 20
 
 成功時のレスポンスには、処理結果 ( Zip 形式 ) が入っています。
 
-### メソッド
+## API リファレンス
 
 このプラグインの最もシンプルな使用方法は、[autoUpdate()](#autoupdate) を使用して、更新ファイルのダウンロード ( [プラグインの設定](#プラグインの設定) を参照のこと ) とアプリの更新を自動で行うことです。
 
@@ -157,7 +151,7 @@ weight: 20
 [terminateApp()](#terminateapp) | アプリを強制終了します。
 [autoUpdate()](#autoupdate) | 更新ファイルのダウンロードとアプリの更新を自動的に行います。
 
-#### getServerVersion()
+### getServerVersion()
 
 更新ファイルの情報をサーバー側から取得します。
 
@@ -220,7 +214,7 @@ monaca.InAppUpdater.getServerVersion().then(
 );
 {{</highlight>}}
 
-#### forceStopGetServerVersion()
+### forceStopGetServerVersion()
 
 `getServerVersion()` の処理を中断します。
 
@@ -246,7 +240,7 @@ monaca.InAppUpdater.forceStopGetServerVersion().then(
 );
 {{</highlight>}}
 
-#### getLocalVersion()
+### getLocalVersion()
 
 現在のアプリの更新番号を確認します。
 
@@ -272,7 +266,7 @@ monaca.InAppUpdater.getLocalVersion().then(
 );
 {{</highlight>}}
 
-#### download()
+### download()
 
 更新用ファイルをダウンロードします。
 
@@ -317,7 +311,7 @@ monaca.InAppUpdater.download( { version : targetVersion, updateNumber : targetBu
 );
 {{</highlight>}}
 
-#### forceStopDownload()
+### forceStopDownload()
 
 `download()` の処理を中断します。
 
@@ -343,7 +337,7 @@ monaca.InAppUpdater.forceStopDownload().then(
 );
 {{</highlight>}}
 
-#### updateAndRestart()
+### updateAndRestart()
 
 ダウンロードした更新用ファイルを展開し、アプリを再起動します。
 
@@ -378,7 +372,7 @@ monaca.InAppUpdater.updateAndRestart().then(
 );
 {{</highlight>}}
 
-#### status()
+### status()
 
 プラグインの状態を確認します。
 
@@ -410,7 +404,7 @@ monaca.InAppUpdater.status().then(
 );
 {{</highlight>}}
 
-#### showAlertDialog()
+### showAlertDialog()
 
 ダイアログ ( タイトルとメッセージ ) を表示します。
 
@@ -453,7 +447,7 @@ monaca.InAppUpdater.showAlertDialog({
 );
 {{</highlight>}}
 
-#### dismissAlertDialog()
+### dismissAlertDialog()
 
 警告 ( Alert ) ダイアログを閉じます。
 
@@ -481,7 +475,7 @@ setTimeout( function() {
 } , 1000 );
 {{</highlight>}}
 
-#### showProgressDialog()
+### showProgressDialog()
 
 進捗表示 ( Progress )
 用ダイアログを表示します。こちらのダイアログでは、更新の進捗状況が表示されます。
@@ -529,7 +523,7 @@ monaca.InAppUpdater.showProgressDialog(
 );
 {{</highlight>}}
 
-#### changeProgressDialog()
+### changeProgressDialog()
 
 進捗表示 ( Progress ) 用ダイアログを更新します。
 
@@ -565,7 +559,7 @@ monaca.InAppUpdater.changeProgressDialog( { progress: progress } ).then(
 )
 {{</highlight>}}
 
-#### dismissProgressDialog()
+### dismissProgressDialog()
 
 進捗表示 ( Progress ) 用ダイアログを閉じます。
 
@@ -593,7 +587,7 @@ setTimeout( function() {
 } , 1000 );
 {{</highlight>}}
 
-#### networkStatus()
+### networkStatus()
 
 ネットワークの状態 ( Wifi、3G/LTE、接続なし など ) を確認します。
 
@@ -626,7 +620,7 @@ monaca.InAppUpdater.networkStatus().then(
 );
 {{</highlight>}}
 
-#### terminateApp()
+### terminateApp()
 
 アプリを強制終了します。
 
@@ -658,7 +652,7 @@ monaca.InAppUpdater.terminateApp()
 monaca.InAppUpdater.terminateApp();
 {{</highlight>}}
 
-#### autoUpdate()
+### autoUpdate()
 
 更新ファイルのダウンロードとアプリの更新を自動的に行います。
 
@@ -717,120 +711,3 @@ monaca.InAppUpdater.autoUpdate( {
 });
 {{</highlight>}}
 
-##  Cordova 5.2 向け、または、それ以前のバージョンを使用したプロジェクトで使用する場合
-
-### サポート対象のプラットフォーム
-
--   iOS 7 以降
--   Android 4.0 以降
-
-### プラグインの追加方法
-
-1.  Monaca クラウド IDE から {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} を選択します。
-
-2.  *利用可能なプラグイン* 項目の `InAppUpdater` プラグインにカーソルを置き、{{<guilabel name="有効">}} ボタンをクリックします。
-
-    {{<img src="/images/reference/power_plugins/inapp_updater/1.png">}}
-
-3.  プラグインの設定を行います。*有効なプラグイン* 項目へ行き、先ほど追加したプラグイン上に、カーソルを置き、{{<guilabel name="設定">}} ボタンをクリックします。
-
-    {{<img src="/images/reference/power_plugins/inapp_updater/2.png">}}
-
-4.  [更新モード](#更新モード) を適宜選択して、[デプロイURL](#更新用パッケージファイルのアップロード先) を入力します。アクセス先の URL には、パッケージファイルの更新分が置かれている場所を指定します ( 詳細は、[プラグインの設定](#プラグインの設定-1) の内容をご確認ください )。次に、{{<guilabel name="OK">}} ボタンをクリックします。
-
-    {{<img src="/images/reference/power_plugins/inapp_updater/3.png" width="500">}}
-
-### プラグインの設定
-
-#### 更新モード
-
-更新用の差分が存在する場合、指定した更新方法に基づき、アプリ側で更新を行います。
-
-方法 | 解説
------|--------------
-`Default` | 更新処理をしなくても、アプリを実行できます。
-`Severe` | 更新処理ができない場合、アプリは実行できません。たとえば、ネットワーク接続できない場合、アプリは終了します。
-
-`config.xml` ファイル内に、次の設定を記述します。
-
-{{<highlight xml>}}
-<preference name="monaca:UpdateMode" value="default"/>
-<preference name="monaca:UpdateUrl" value="DEPLOY_URL"/>
-{{</highlight>}}
-
-### 更新用パッケージファイルの作成
-
-更新用のパッケージファイルは、次のような形式・構成で作成します。
-
--   `update.json` : 各プラットフォームに適用する、更新用ファイルのバージョン番号が記述された設定ファイルです。
--   `android-vX.X.X.zip` : Android 向けの更新ファイルです ( Monaca 側で作成 )
--   `ios-vX.X.X.zip` : iOS 向けの更新ファイルです ( Monaca 側で作成 )
-
-{{<note>}}
-更新対象のプラットフォーム ( iOS または Android )
-は、必要に応じて、選択できます。
-{{</note>}}
-
-#### 1. update.json ファイルの作成
-
-上述のように、`update.json` は、更新用ファイルのバージョン情報を記述した設定ファイルです。次の例示の形式に従い、このファイルを作成します。
-
-{{<highlight json>}}
-{
-  "ios": { "version": "2.0.0" },
-  "android": { "version": "2.1.0" }
-}
-{{</highlight>}}
-
-記述内容を解説します。「 `"ios": { "version": "2.0.0" }` 」
-と記述した場合、iOS 向けの更新 ( ダウンロードの対象 )
-には、`ios-v2.0.0.zip` ファイルが使用されます。
-
-#### 2. Android または iOS 向けの更新用ファイルの作成
-
-更新用ファイルのファイル名には、バージョン番号が含まれます。このバージョン番号には、更新用ファイルが作成されたときの、Android
-アプリ または iOS アプリのバージョン番号が使用されています。
-
-更新用ファイルのバージョン番号は、次の手順で変更できます。
-
-1.  Monaca クラウド IDE から、 {{<menu menu1="設定" menu2="iOS アプリ設定">}} ( iOS
-    の場合 )、または、 {{<menu menu1="設定" menu2="Android アプリ設定">}} ( Android の場合 ) を、選択します。
-
-2.  バージョン番号を入力して、 {{<guilabel name="保存する">}} ボタンをクリックします。
-
-{{<figure src="/images/reference/power_plugins/inapp_updater/6.png" title="Android">}}
-{{<figure src="/images/reference/power_plugins/inapp_updater/7.png" title="iOS">}}
-
-{{<note>}}
-Android と iOS のバージョン番号には、それぞれ、異なる番号を設定できます。
-{{</note>}}
-
-アプリ情報の設定後、プラットフォーム別に、パッケージファイルのビルドを行います。次の手順に従います。
-
-1.  Monaca クラウド IDE から、 {{<menu menu1="ビルド" menu2="iOS アプリのビルド">}} ( iOS
-    の場合 )、または、 {{<menu menu1="ビルド" menu2="Android アプリのビルド">}} ( Android の場合 ) を、選択します。
-
-2.  {{<menu menu1="リリース向けビルド/リリースビルド" menu2="In-App Updater用更新ファイル">}} を選択します。
-
-    {{<img src="/images/reference/power_plugins/inapp_updater/4.png">}}
-
-3.  {{<guilabel name="ビルドを開始する">}} ボタンをクリックして、パッケージの作成を開始します。作成には、しばらくかかる場合があります。
-
-4.  ビルド完了後、更新用のパッケージファイルをダウンロードします。
-
-    {{<img src="/images/reference/power_plugins/inapp_updater/5.png">}}
-
-### 更新用パッケージファイルのアップロード先
-
-パッケージファイル ( `update.json`、ならびに、`android-vX.X.X.zip` または/および `ios-vX.X.X.zip` )
-の作成後、これらのファイルをサーバーにアップロードします。ファイルは、必ず、同じ階層に置きます。たとえば、[ アクセス先の URL ( Deploy URL ) ] として、 `http://example.com/HelloWorld/` を指定した場合、更新用ファイルの置き場所は、次のようになります。
-
-{{<highlight bash>}}
-http://example.com/HelloWorld/update.json
-http://example.com/HelloWorld/ios-v2.0.0.zip
-http://example.com/HelloWorld/android-v2.1.0.zip
-{{</highlight>}}
-
-{{<note>}}
-こちらのプラグインを使用したことにより、App Store へのアプリ申請が却下される場合があります。なお、現時点では、そのような報告が寄せられたことはありません。
-{{</note>}}

@@ -11,16 +11,6 @@ aliases: /ja/monaca_ide/manual/dependencies/file_dir
 
 Cordova バージョンによっては、Monaca プロジェクトのファイルとフォルダ構造が異なる場合があります。
 
-### Cordova 5.2 以前の場合
-
-| ファイル・フォルダ名 | 説明 |
-|------------------|-------------|
-| [android/](#android-フォルダー) | Android アプリ向けの設定を保存しているフォルダー |
-| [ios/](#ios-フォルダー) | iOS アプリ向けの設定を保存しているフォルダー |
-| [www/](#www-フォルダー) | アプリの中核となるファイル ( 群 ) を保存しているフォルダー |
-| [config.xml](#config-xml-ファイル) | Cordova の設定ファイル |
-
-
 ### Cordova 6.2 と Cordova 6.5 の場合
 
 | ファイル・フォルダ名 | 説明 |
@@ -40,43 +30,7 @@ Cordova バージョンによっては、Monaca プロジェクトのファイ�
 | [config.xml](#config-xml-ファイル) | Cordova の設定ファイル |
 | `package.json` | Cordova プラグイン管理ファイル |
 
-## android フォルダー
-
-Android アプリの設定ファイルを、`android` フォルダーに保存します。
-
-| ファイル名 | 説明 |
-|----------|-------------|
-| `AndroidManifest.xml` | Android アプリの実行時に使用する Manifest ファイル |
-
-このファイルの使用方法の詳細については、[Android Configuration File]({{<ref "android_configuration.ja.md">}}) を参照してください。
-
-<div class="admonition note">
-Cordova 6.2 以降をサポートする Monaca
-フレームワークでは、<code>AndroidManifest.xml</code>
-ファイルを使用しないように、仕様が変更されました。よって、Android
-アプリの設定をカスタマイズする場合には、<a href="/ja/reference/third_party_phonegap/custom_config/">Custom Config プラグイン</a>を使用する必要があります。
-</div>
-
-## ios フォルダー
-
-iOS アプリの設定ファイルを、 `ios` フォルダーに保存します。
-
-| ファイル名 | 説明 |
-|----------|-------------|
-| `MonacaApp-Info.plist`  | iOS アプリの実行時に使用する `Info.plist` ファイル
-
-このファイルの使用方法の詳細については、[iOS Configuration File]({{<ref "ios_configuration.ja.md">}}) を参照してください。
-
-<div class="admonition note">
-Cordova 6.2 以降をサポートする Monaca
-フレームワークでは、<code>MonacaApp-Info.plist</code>
-ファイルを使用しないように、仕様が変更されました。よって、iOS
-アプリの設定をカスタマイズする場合には、<a href="/ja/reference/third_party_phonegap/custom_config/">
-Custom Config プラグイン
-</a>を使用する必要があります。
-</div>
-
-## www フォルダー
+### www フォルダー
 
 アプリ本体のファイルを格納します。ファイルとフォルダーは、`www`
 フォルダー下であれば、自由に配置できますが、次のファイルとフォルダーだけは、特別な意味を持ちます。
@@ -106,11 +60,11 @@ JS/CSS コンポーネントを格納します。次の 2
     <code>loader.js</code> file also loads <code>cordova.js</code> file.
 </div>
 
-## plugins フォルダー
+### plugins フォルダー
 
 ZIP ファイルを使用して Cordova プラグインをインポートした場合、このフォルダ内に保存されます。 URL または プラグインID を使用してプラグインをインポートした場合は、ビルドの際にプラグインファイルがダウンロードされます。
 
-## config.xml ファイル
+### config.xml ファイル
 
 `config.xml` には、Cordova
 の挙動を制御するための設定が定義されています。`config.xml`

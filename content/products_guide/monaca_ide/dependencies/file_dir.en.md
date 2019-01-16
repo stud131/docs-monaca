@@ -11,16 +11,6 @@ aliases: /en/monaca_ide/manual/dependencies/file_dir
 
 With a different Cordova version, the file and folder structure of a Monaca project is configured differently. 
 
-### For Cordova 5.2 or lower
-
-| File/Folder Name | Description |
-|------------------|-------------|
-| [android/](#android-folder) | Storage folder for Android application settings |
-| [ios/](#ios-folder) | Storage folder for iOS application settings |
-| [www/](#www-folder) | Storage folder for the main body of the application |
-| [config.xml](#config-xml-file) | Cordova configuration file |
-
-
 ### For Cordova 6.2 and 6.5
 
 | File/Folder Name | Description |
@@ -40,40 +30,7 @@ With a different Cordova version, the file and folder structure of a Monaca proj
 | [config.xml](#config-xml-file) | Application configuration file |
 | `package.json` | Cordova plugins management file |
 
-## android Folder
-
-Android application settings files are stored inside the `android`
-folder.
-
-| File Name | Description |
-|------------------|-------------|
-| `AndroidManifest.xml` | 	Manifest file used when running Android applications |
-
-For more information about how to use this file, please see [Android Configuration File](/en/reference/config/android_configuration/).
-
-
-<div class="admonition note">
-    For Cordova 6.2 or higher, <code>AndroidManifest.xml</code> file is removed from Monaca framework. Therefore, in order to config Android application settings, use <a href="/en/reference/third_party_phonegap/custom_config/">
-    Cordova Custom Config Plugin</a>.
-</div>
-
-## ios Folder
-
-iOS application settings files are stored inside the `ios` folder.
-
-| File Name | Description |
-|------------------|-------------|
-| `MonacaApp-Info.plist` | Info.plist file used when running iOS applications |
-
-For more information about how to use this file, please see [iOS Configuration File](/en/reference/config/ios_configuration/).
-
-
-<div class="admonition note">
-    For Cordova 6.2 or higher, <code>MonacaApp-Info.plist</code> file is removed from Monaca framework. Therefore, in order to config Android application settings, use <a href="/en/reference/third_party_phonegap/custom_config/">
-    Cordova Custom Config Plugin</a>.
-</div>
-
-## www Folder
+### www Folder
 
 Files of the application's main body are stored here. Files and folders
 can be arranged freely within this `www` folder, but the following files
@@ -105,11 +62,11 @@ Each component will create its own folder within (one level below)
     <code>loader.js</code> file also loads <code>cordova.js</code> file.
 </div>
 
-## plugins Folder
+### plugins Folder
 
 If you import a Cordova plugin using ZIP file, it will be stored inside this folder. However, if you import the plugin using package URL/Plugin ID, the plugin file will be downloaded during build.
 
-## config.xml File
+### config.xml File
 
 The `config.xml` file is a settings file controlling various settings of Cordova. Please refer to the following documentations regarding how to edit `config.xml` file for Android and iOS:
 

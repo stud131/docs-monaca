@@ -3,11 +3,6 @@ title: AppsFlyer
 weight: 20
 ---
 
-{{<note>}}
-使用する Cordova のバージョンにより、AppsFlyer
-の使用方法が異なります。バージョン別の使用方法がこのページに記載されていますので、サービスをご利用になる前に、内容をご確認ください。
-{{</note>}}
-
 [AppsFlyer](https://www.appsflyer.com/overview/)
 は、モバイル広告に関する宣伝効果の測定 ( アトリビューション )
 および収集したデータの分析 ( アナリティクス )
@@ -40,9 +35,7 @@ AppsFlyer を使用した監視・追跡を行う前に、次の情報が必要�
 4.  インストールを継続するか確認する画面が表示されます。 {{<guilabel name="OK">}}
     をクリックして、インストールを開始します。
 
-## AppsFlyer の使用方法 ( Cordova バージョン 6.2 以降の場合 )
-
-### 設定
+## 設定
 
 次の記述を追加します。devKey ( および appID )
 を渡して、監視・追跡処理を初期化します。
@@ -65,9 +58,9 @@ document.addEventListener("deviceready", function(){
 }, false);
 {{</highlight>}}
 
-### 使い方
+## 使い方
 
-#### SDK の初期化
+### SDK の初期化
 
 SDK を初期化します。
 
@@ -115,7 +108,7 @@ var options = {
 window.plugins.appsFlyer.initSdk(options, onSuccess, onError);
 {{</highlight>}}
 
-#### アプリ内イベントトラッキング API
+### アプリ内イベントトラッキング API
 
 `trackEvent` メソッドを使用して、AppsFlyer の分析メカニズム ( AppsFlyer
 analytics )
@@ -152,7 +145,7 @@ var eventValues = {
 window.plugins.appsFlyer.trackEvent(eventName, eventValues);
 {{</highlight>}}
 
-#### 通貨コードの設定
+### 通貨コードの設定
 
 通貨コードを変更できます。
 
@@ -175,7 +168,7 @@ window.plugins.appsFlyer.setCurrencyCode("USD");
 window.plugins.appsFlyer.setCurrencyCode("GBP"); // British Pound
 {{</highlight>}}
 
-#### カスタマーユーザー ID の設定 ( 詳細 )
+### カスタマーユーザー ID の設定 ( 詳細 )
 
 カスタム ID をセットします。AppsFlyer 提供の ID 群 ( 端末 ID、ユーザー
 ID など ) と、このカスタム ID を紐づけすれば、各種情報を、カスタム ID
@@ -208,7 +201,7 @@ setAppUserId(customerUserId): void
 window.plugins.appsFlyer.setAppUserId(userId);
 {{</highlight>}}
 
-#### GCM プロジェクト番号の設定
+### GCM プロジェクト番号の設定
 
 GCM のプロジェクト番号をセットします。この番号を使用して、アプリのアンインストールを監視・追跡します
 ( Android プラットフォーム向け )。
@@ -223,7 +216,7 @@ setGCMProjectID(GCMProjectNumber): void
 -----|------|-------------
 `GCMProjectNumber` | 文字列 | GCM のプロジェクト番号。Google Developer Console 上で確認できます。詳細は、[アンインストール計測](https://support.appsflyer.com/hc/ja/articles/210289286-アンインストール計測#Androidアンインストール) ページをご確認ください。
 
-#### トラッキングのアンインストール
+### トラッキングのアンインストール
 
 アプリのアンインストールを監視・追跡するため、iOS
 のデバイストークンをセットします ( iOS プラットフォーム向け )。
@@ -238,7 +231,7 @@ registerUninstall(token): void
 -----|------|-------------
 `token` | 文字列 | iOS のデバイストークン。 `UnityEngine.iOS.NotificationServices.deviceToken` を使用すれば、デバイストークンを取得できます。詳細は、[Unity の解説](https://support.appsflyer.com/hc/ja/articles/213766183-AppsFlyer-SDKの実装-Unity)、および、[iOS アンインストールの計測](https://support.appsflyer.com/hc/ja/articles/210289286-アンインストール計測#iOSアンインストール) をご確認ください。
 
-#### AppsFlyer のデバイスIDを取得する
+### AppsFlyer のデバイスIDを取得する
 
 この API を使用すれば、AppsFlyer 側で独自に割り振っている端末 ID
 を取得できます。この端末 ID は、各種レポートの出力時、および、各種 API
@@ -265,7 +258,7 @@ var getUserIdCallbackFn = function(id) {
 window.plugins.appsFlyer.getAppsFlyerUID(getUserIdCallbackFn);
 {{</highlight>}}
 
-#### ディープリンク トラッキング
+### ディープリンク トラッキング
 
 AppsFlyer のアトリビューション
 データを使用して、ディープリンクを追跡します。
@@ -295,173 +288,3 @@ var handleOpenURL = function(url) {
 }
 {{</highlight>}}
 
-## AppsFlyer の使用方法 ( Cordova バージョン 5.2以下の場合 )
-
-### 設定
-
-Monaca プロジェクトへ AppsFlyer
-を追加したあと、実際にプラグインを使用する前に、いくつかの設定を行う必要があります。次の手順に従います。
-
-1.  プロジェクトの `www` フォルダーのルートディレクトリー下の `config.xml`
-    へ、次の記述を追加します ( Monaca 上での処理 )。
-
-    {{<highlight xml>}}
-<!-- for iOS -->
-<feature name="AppsFlyerPlugin">
-    <param name="ios-package" value="AppsFlyerPlugin" />
-</feature>{{</highlight>}}
-
-    {{<highlight xml>}}
-<!-- for Android -->
-<feature name="AppsFlyerPlugin">
-    <param name="android-package" value="com.appsflyer.cordova.plugin.AppsFlyerPlugin" />
-</feature>{{</highlight>}}
-
-2.  Android の場合には、`AndroidManifest.xml` へ、次の記述を追加します (
-    Monaca 上での処理 )。
-
-    {{<highlight xml>}}
-<uses-permission android:name="android.permission.INTERNET" />
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-<uses-permission android:name="android.permission.READ_PHONE_STATE" />{{</highlight>}}
-
-3.  AppsFlyer へログインして、アプリを登録します ( AppsFlyer 上での処理 )。アプリの登録時に入力する情報とマニフェストに登録する ( または、登録している ) 情報は、一致する必要があります。App Store/Google Play ストア/Microsoft ストアを経由しない Android アプリのインストールの監視・追跡に関しては、[こちら](https://support.appsflyer.com/hc/en-us/articles/207447023-Tracking-Installs-for-Out-Of-Store-Applications) をご確認ください。[ 翻訳者メモ ： 上記ストアを経由しないでインストールするアプリを、AppsFlyer では、Out of Store アプリと呼称しています ]
-
-4.  次の記述を、コードに追加します ( Monaca 上での処理 )。実際の使用時には、適当な DEV KEY を渡して、監視・追跡処理を初期化します。
-
-    {{<highlight javascript>}}
-document.addEventListener("deviceready", function(){
-    var args = [];
-    var devKey = "xxXXXXXxXxXXXXxXXxxxx8";   // your AppsFlyer devKey
-    args.push(devKey);
-    var userAgent = window.navigator.userAgent.toLowerCase();
-
-    if (/iphone|ipad|ipod/.test( userAgent )) {
-        var appId = "123456789";            // your ios app id in app store
-        args.push(appId);
-    }
-    window.plugins.appsFlyer.initSdk(args);
-}, false);{{</highlight>}}
-
-5.  Google Play/App Store
-    に提出する前に、[Android](https://support.appsflyer.com/hc/ja/articles/207032136-Google-Play-に提出前-提出後のAppsFlyer-Android-SDK-インテグレーションテスト)/[iOS](https://support.appsflyer.com/hc/ja/articles/115000262823-iOS-SDK実装-計測テスト方法-Testing-iOS-SDK-Integration)
-    端末で、アプリを検証することを推奨します。
-
-{{<note>}}
-AppsFlyer の使用に関する詳細は、 {{<link href="https://support.appsflyer.com/hc/ja" title="AppsFlyer ドキュメント ( 日本語あり )">}} をご確認ください。
-{{</note>}}
-
-### 使い方
-
-ここまでの手順で、プラグインの準備が整いました。ここからは、AppsFly
-が提供する API をいくつか紹介します。
-
-#### カスタマーユーザー ID の設定 ( 詳細 )
-
-カスタム ID をセットします。AppsFlyer 提供の ID 群 ( 端末 ID、ユーザー
-ID など ) と、このカスタム ID を紐づけすれば、各種情報を、カスタム ID
-下に集約できるようになります。このカスタム ID ( AppsFlyer
-側とユーザー側で使用している ID の対応付けに使用 ) は、AppsFlyer
-が提供する CSV レポートを出力時、および、PostBack 系の API
-の使用時にも使用できます。
-
-{{<highlight javascript>}}
-window.plugins.appsFlyer.setAppUserId(userId);
-{{</highlight>}}
-
-{{<note>}}
-この ID の設定は、アプリを初めて起動するときに行う必要があります ( SDK
-の初期化時 )。実装方法としては、deviceready イベントの処理時に、この API
-を呼び出すことを推奨します。
-{{</note>}}
-
-#### 通貨コード設定 ( オプション )
-
-デフォルトでは、通貨コード ( Currency Code ) は、`USD` ( 米ドル )
-に設定されています。設定は、次のようにすれば変更できます。
-
-{{<highlight javascript>}}
-//For example, you want to change to British Pound
-window.plugins.appsFlyer.setCurrencyCode("GBP");
-{{</highlight>}}
-
-{{<note>}}
-使用可能な通貨コードに関しては、 {{<link title="ISO 4217 Currency Codes" href="http://www.xe.com/iso4217.php">}} をご確認ください。
-{{</note>}}
-
-#### In-App イベントトラッキング API
-
-アプリ内イベントを使用すると、ユーザーの動向を分析できます。また、特定のキャンペーンまたはメディアソースへの関連付けもできます ( ユーザーの操作と、そのきっかけとなったキャンペーンなどを対応付けできます )。ROI ( 投資対効果 ) と LTV ( 顧客生涯価値 ) の計算に必要となる、データ収集対象のイベントに関しては、慎重に選択する必要があります。
-
-`trackEvent` メソッドを使用して、AppsFlyer の分析メカニズム ( AppsFlyer analytics )
-側に、アプリ内イベントの収集データを渡します。また、このメソッドを使用すれば、監視対象のイベントを、コードに直接追加して、動的に追加できるようになります。
-
-{{<highlight javascript>}}
-// eventName - any string to define the event name. For example: “registration” or “purchase”
-// eventValue - the sales value. For example: 0.99 or 0.79
-window.plugins.appsFlyer.sendTrackingWithEvent(eventName, eventValue);
-// window.plugins.appsFlyer.sendTrackingWithEvent(eventName, "");
-{{</highlight>}}
-
-#### Rich In-App イベントトラッキング API
-
-AppsFlyer 提供の 「 リッチ アプリ内イベント 」
-では、アプリのインストール後に起こりうる、すべてのイベントを監視・追跡でき、加えて、メディアソースまたはキャンペーンと、発生したイベントを関連付けることができます。各アプリ内イベントは、イベント名
-( event name )、および、関連するイベント パラメーター群で構成されます。
-
-{{<highlight javascript>}}
-var eventName = "af_add_to_cart";
-var eventValues = {"af_content_id": "id123", "af_currency":"USD", "af_revenue": "2"};
-window.plugins.appsFlyer.trackEvent(eventName, eventValues);
-{{</highlight>}}
-
-#### AppsFlyer のデバイス ID を取得する ( 詳細 )
-
-この API を使用すれば、AppsFlyer 側で独自に割り振っている端末 ID
-を取得できます。この端末 ID は、各種レポートの出力時、および、各種 API
-で使用されます。
-
-{{<highlight javascript>}}
-// getUserIdCallbackFn - callback function
-window.plugins.appsFlyer.getAppsFlyerUID(getUserIdCallbackFn);
-{{</highlight>}}
-
-この API の使用例を、次に記します。
-
-{{<highlight javascript>}}
-var getUserIdCallbackFn = function(id) {
-    alert('received id is: ' + id);
-}
-window.plugins.appsFlyer.getAppsFlyerUID(getUserIdCallbackFn);
-{{</highlight>}}
-
-#### AppsFlyer アトリビューション/コンバージョンデータへのアクセス ( Deferred Deep-linking )
-
-AppsFlyer では、アトリビューション データへ、SDK
-レベルで、リアルタイムにアクセスできます。このデータを使用して、アプリの新規インストール・初回起動時、ユーザー側に最初に表示されるページをカスタマイズできます。このような処理は、「
-ディファード ディープリンク 」 ( Deferred DeepLinking )
-と呼ばれています。Web
-の分野では、一般的な処理ですが、、モバイルアプリのエコシステム下で、このような処理を実現することは、技術的に難しいとされています。AppsFlyer
-は、プラットフォームの種類および状況にかかわらず、この処理を行ってくれます。
-
-詳細は、[ディファードディープリンク - コンバージョンデータの取得](https://support.appsflyer.com/hc/ja/articles/207032096-ディファードディープリンク-コンバージョンデータの取得)
-をご確認ください。
-
-{{<note>}}
-    AppsFlyer プラグインでは、アトリビューションデータを使用して、 <code>onInstallConversionDataLoaded</code> イベントを実行します。なお、データの取得するため、イベントリスナーを設定する必要があります。
-{{</note>}}
-
-{{<highlight javascript>}}
-document.addEventListener('onInstallConversionDataLoaded', function(e){
-    var attributionData = (JSON.stringify(e.detail));
-    alert(attributionData);
-}, false);
-{{</highlight>}}
-
-## Monaca から AppsFlyer を削除する方法
-
-1.  Monaca クラウド IDE から、{{<menu menu1="設定" menu2="Cordova プラグインの管理">}} を選択します。
-
-2.  `有効なプラグイン` 項目へ移動し、*AppsFlyer* プラグイン上にカーソルを置き、 {{<guilabel name="無効">}} ボタンをクリックします。
-
-    {{<img src="/images/reference/service_integration/apps_flyer/2.png">}}

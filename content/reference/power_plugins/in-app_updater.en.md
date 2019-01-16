@@ -11,20 +11,12 @@ which will be accessed from the app.
     In order to use this plugin, you are required to subscribe to a valid plan. Please refer to {{<link href="https://monaca.mobi/en/pricing" title="Monaca Subscription Plans">}}.
 {{</note>}}
 
-This plugin is used differently depending on the Cordova version of your
-project:
-
-- [For Cordova 6.2 or Higher Projects or Higher](#for-cordova-6-2-or-higher-projects-or-higher)
-- [For Cordova 5.2 or Lower Projects](#for-cordova-5-2-or-lower-projects)
-
-##  For Cordova 6.2 or Higher Projects or Higher
-
-### Supported Platforms
+## Supported Platforms
 
 -   iOS 8 or later
 -   Android 4 or later
 
-### Adding the Plugin in Monaca Cloud IDE
+## Adding the Plugin in Monaca Cloud IDE
 
 1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="Cordova Plugin Settings">}}.
 
@@ -42,14 +34,14 @@ project:
 
     {{<img src="/images/reference/power_plugins/inapp_updater/10.png" width="500">}}
 
-### Usage
+## Usage
 
 ###  Plugin Configuration
 
 In this section, we will talk about how to create the two web API you
 will need to use this plugin: [CheckUpdate URL](#checkupdate-url) and [Download URL](#download-url).
 
-####  CheckUpdate URL
+###  CheckUpdate URL
 
 Check the update version on the server side.
 
@@ -112,7 +104,7 @@ object consists of the update information such as `date`, `url` and so
 on. It can be obtained by the `updateInfo` parameter of a JSON object
 returned by the Promise of [getServerVersion()](#getserverversion) method.
  
-#### Download URL
+### Download URL
 
 Download the zip file (update package file).
 
@@ -136,7 +128,7 @@ Parameter| Data Type | Description
 
 A successful response contains a ZIP file of InAppUpdater resource.
 
-### API Reference
+## API Reference
 
 The easiest way to use this plugin is to only use [autoUpdate()](#autoupdate) which will
 download the update files (as configure in [Plugin Configuration](#plugin-configuration)) and
@@ -165,7 +157,7 @@ Methods                    | Description
 [terminateApp()](#terminateapp) | Terminate/Shut down the app.
 [autoUpdate()](#autoupdate) | Update automatically if necessary, by using methods such as getServerVersion, download, etc.
 
-####  getServerVersion()
+###  getServerVersion()
 
 Get the information of files to be updated from the server.
 
@@ -228,7 +220,7 @@ monaca.InAppUpdater.getServerVersion().then(
 );
 {{</highlight>}}
 
-####  forceStopGetServerVersion()
+###  forceStopGetServerVersion()
 
 Force `getServerVersion()` to stop.
 
@@ -254,7 +246,7 @@ monaca.InAppUpdater.forceStopGetServerVersion().then(
 );
 {{</highlight>}}
 
-####  getLocalVersion()
+###  getLocalVersion()
 
 Get the currect version of the app.
 
@@ -280,7 +272,7 @@ monaca.InAppUpdater.getLocalVersion().then(
 );
 {{</highlight>}}
 
-####  download()
+###  download()
 
 Download the update files.
 
@@ -325,7 +317,7 @@ monaca.InAppUpdater.download( { version : targetVersion, updateNumber : targetBu
 );
 {{</highlight>}}
 
-####  forceStopDownload()
+###  forceStopDownload()
 
 Force `download()` to stop.
 
@@ -351,7 +343,7 @@ monaca.InAppUpdater.forceStopDownload().then(
 );
 {{</highlight>}}
 
-####  updateAndRestart()
+###  updateAndRestart()
 
 Deploy and mount the downloaded update files, and then restart the app.
 
@@ -386,7 +378,7 @@ monaca.InAppUpdater.updateAndRestart().then(
 );
 {{</highlight>}}
 
-####  status()
+###  status()
 
 Get the current status of the plugin.
 
@@ -418,7 +410,7 @@ monaca.InAppUpdater.status().then(
 );
 {{</highlight>}}
 
-#### showAlertDialog()
+### showAlertDialog()
 
 Show a dialog with a title and a message. Only one dialog is shown at a
 time.
@@ -462,7 +454,7 @@ monaca.InAppUpdater.showAlertDialog({
 );
 {{</highlight>}}
 
-#### dismissAlertDialog()
+### dismissAlertDialog()
 
 Close the Alert dialog.
 
@@ -490,7 +482,7 @@ setTimeout( function() {
 } , 1000 );
 {{</highlight>}}
 
-#### showProgressDialog()
+### showProgressDialog()
 
 Show a Progress dialog indicating the update progress.
 
@@ -537,7 +529,7 @@ monaca.InAppUpdater.showProgressDialog(
 );
 {{</highlight>}}
 
-#### changeProgressDialog()
+### changeProgressDialog()
 
 Change the Progress dialog.
 
@@ -573,7 +565,7 @@ monaca.InAppUpdater.changeProgressDialog( { progress: progress } ).then(
 )
 {{</highlight>}}
 
-#### dismissProgressDialog()
+### dismissProgressDialog()
 
 Close a Progress dialog.
 
@@ -601,7 +593,7 @@ setTimeout( function() {
 } , 1000 );
 {{</highlight>}}
 
-#### networkStatus()
+### networkStatus()
 
 Check the network status (Wifi, 3G/LTE, or disconnected).
 
@@ -634,7 +626,7 @@ monaca.InAppUpdater.networkStatus().then(
 );
 {{</highlight>}}
 
-#### terminateApp()
+### terminateApp()
 
 Terminate/Shut down the app.
 
@@ -664,7 +656,7 @@ monaca.InAppUpdater.terminateApp()
 monaca.InAppUpdater.terminateApp();
 {{</highlight>}}
 
-####  autoUpdate()
+###  autoUpdate()
 
 Download the update files and update the app automatically.
 
@@ -723,136 +715,3 @@ monaca.InAppUpdater.autoUpdate( {
 });
 {{</highlight>}}
 
-##  For Cordova 5.2 or Lower Projects
-
-### Supported Platforms
-
--   iOS 7 or later
--   Android 4.0 or later
-
-### Adding the Plugin in Monaca Cloud IDE
-
-1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="Cordova Plugin Settings">}}.
-
-2.  Under *Available Plugins* section, hover over the the `InAppUpdater` plugin and click {{<guilabel name="Enable">}} button.
-
-    {{<img src="/images/reference/power_plugins/inapp_updater/1.png">}}
-
-3.  Next, you need to configure necessary information for this plugin.
-    Find your newly added plugin under the *Enable Plugins* section.
-    Then, hover the plugin and click {{<guilabel name="Configure">}} button.
-
-    {{<img src="/images/reference/power_plugins/inapp_updater/2.png">}}
-
-4.  Choose an appropriate [Update Mode](#update-mode) and enter the [Deploy URL](#placing-the-update-package-files) storing the package update files (see [Plugin Configuration](#plugin-configuration-1)). Then, click {{<guilabel name="OK">}} button.
-
-    {{<img src="/images/reference/power_plugins/inapp_updater/3.png" width="500">}}
-
-###  Plugin Configuration
-
-#### Update Mode
-
-When there are available updates, the application will try to update the
-app according to the predefined update mode.
-
-Mode | Description
------|--------------
-`Default` | The application can run even the update process cannot be done.
-`Severe` | The application cannot run if the update process cannot be done. For instance, if the application has no network connectivity, the app will exit.
-
-These settings are stored in `config.xml` file as shown below:
-
-{{<highlight xml>}}
-<preference name="monaca:UpdateMode" value="default"/>
-<preference name="monaca:UpdateUrl" value="DEPLOY_URL"/>
-{{</highlight>}}
-
-### Creating Update Package Files
-
-The update package files are:
-
--   `update.json`: an update configuration file storing version of update
-    file for each platform
--   `android-vX.X.X.zip`: an Android update file generated by Monaca
--   `ios-vX.X.X.zip`: an iOS update file generated by Monaca
-
-{{<note>}}
-It's possible to just update the app for iOS or Android depending on the
-update file(s) you have.
-{{</note>}}
-
-#### 1. Creating update.json File
-
-As mention above, the `update.json` file is an update configuration file
-to store the version information of the update files. Please create this
-file with the following format as an example:
-
-{{<highlight json>}}
-{
-  "ios": { "version": "2.0.0" },
-  "android": { "version": "2.1.0" }
-}
-{{</highlight>}}
-
-In this example, `"ios": { "version": "2.0.0" }` means that the
-`ios-v2.0.0.zip` file will be used to download as an in-app update for
-iOS.
-
-#### 2. Creating Android or iOS Update File
-
-Each update file has a version number in its filename. This version
-number is based on the Android or iOS app's version number when the
-update file is created.
-
-You can update the version of the update file by the following steps:
-
-1.  From Monaca Cloud IDE, go to {{<menu menu1="Configure" menu2="App Settings for iOS">}} for iOS
-    or go to {{<menu menu1="Configure" menu2="App Settings for Android">}} for Android.
-
-2.  Enter the version number and click {{<guilabel name="Save">}} button.
-
-{{<figure src="/images/reference/power_plugins/inapp_updater/6.png" title="Android">}}
-{{<figure src="/images/reference/power_plugins/inapp_updater/7.png" title="iOS">}}
-
-{{<note>}}
-The Android and iOS versions do not have be the same.
-{{</note>}}
-
-After you are done configuring the app's information, you can start
-building the package file for each platform. Please do as follows:
-
-1.  From Monaca Cloud IDE, go to {{<menu menu1="Build" menu2="Build App for iOS">}} for iOS
-    or {{<menu menu1="Build" menu2="Build App for Android">}} for Android.
-
-2.  Select {{<menu menu1="Build for Release" menu2="Create a package for In-App Updater">}}.
-
-    {{<img src="/images/reference/power_plugins/inapp_updater/4.png">}}
-
-3.  Click {{<guilabel name="Start Build">}}. It may takes sometimes to create the package. So
-    please wait.
-4.  When the build is successfully completed, you can download the
-    update package file.
-
-    {{<img src="/images/reference/power_plugins/inapp_updater/5.png">}}
-
-###  Placing the Update Package Files
-
-After you have created the package files (`update.json`,`android-vX.X.X.zip` and/or `ios-vX.X.X.zip`), you can start uploading them to your server. Please make sure to place all files at the same level.
-For example, if your Deploy URL is `http://example.com/HelloWorld/`,
-then your update files should be placed as follows:
-
-{{<highlight bash>}}
-http://example.com/HelloWorld/update.json
-http://example.com/HelloWorld/ios-v2.0.0.zip
-http://example.com/HelloWorld/android-v2.1.0.zip
-{{</highlight>}}
-
-{{<note>}}
-Using this plugin might cause your app to be rejected by the App Store.
-However, so far we haven't had any known rejection yet.
-{{</note>}}
-
-See Also:
-
-- [Third-party Cordova Plugins](../../third_party_phonegap)
-- [Core Cordova Plugins](../../cordova_6.5)
