@@ -12,7 +12,7 @@ which will be accessed from the app.
 {{</note>}}
 
 ## Supported Platforms
-
+-   Cordova 6.2 or higher
 -   iOS 8 or later
 -   Android 4 or later
 

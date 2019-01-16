@@ -15,6 +15,7 @@ weight: 20
 
 ## サポート対象のプラットフォーム
 
+-   Cordova 6.2 以降
 -   iOS 8 以上
 -   Android 4 以降
 
