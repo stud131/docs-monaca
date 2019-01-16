@@ -21,7 +21,7 @@ weight: 30
 - 暗号化方式 AES   
 - 鍵長 `256` bit
 
-# プラグインの追加方法
+## プラグインの追加方法
 
 1.  Monaca クラウド IDE から {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} を選択します。
 
@@ -29,7 +29,7 @@ weight: 30
 
     {{<img src="/images/reference/power_plugins/secure_storage/1.png">}}
 
-# メソッド
+## メソッド
 
 メソッド | 解説
 -------|-----------------
@@ -50,7 +50,7 @@ plugins.secureStorage.clear(function(result) {
 // result: true=success, false=error
 });{{</highlight>}}
 
-# App Store への提出に際して
+## App Store への提出に際して
 
 このプラグインでは、iOS SDK
 の暗号化ライブラリーを使用しています。よって、このプラグインを組み込んだ、ビルド済みアプリを

@@ -21,7 +21,7 @@ application is uninstalled, saved data will also be deleted.
 - Encryption Method: `AES`
 - Key Length: `256` bits
 
-# Adding the Plugin in Monaca Cloud IDE
+## Adding the Plugin in Monaca Cloud IDE
 
 1.  From Monaca Cloud IDE menu, go to {{<menu menu1="Configure" menu2="Cordova Plugin Settings">}}.
 
@@ -29,7 +29,7 @@ application is uninstalled, saved data will also be deleted.
 
     {{<img src="/images/reference/power_plugins/secure_storage/1.png">}}
 
-# Methods
+## Methods
 
 Method | Description
 -------|-----------------
@@ -50,7 +50,7 @@ plugins.secureStorage.clear(function(result) {
 // result: true=success, false=error
 });{{</highlight>}}
 
-# App Store Submission
+## App Store Submission
 
 In this plugin, we use the encryption library of iOS SDK. Therefore, in
 order to release the built app embedded this plugin to the App Store,
