@@ -354,6 +354,8 @@ $ monaca remote build <platform> [options]
 - `--output`: The path in which the built file will be stored (including the filename)
 - `--android_webview`: (Android only) Chooses a type of webview. It can be: `default` or `crosswalk`.
 - `--android_arch`: (Android only) Required if `--android_webview` is `crosswalk`. It can be: `x86` or `arm`.
+- `--skipUpload`: Skipping the uploading of the local project to the cloud.
+- `--skipTranspile`: Skipping the transpile process when uploading the local project to the cloud.
 - `--browser`: Opens the build process in a browser (see the screenshots below).
     
 **Example**
@@ -376,6 +378,11 @@ Open the project configuration on Monaca Cloud. Once the configuration has been 
 {{<highlight javascript>}}
 $ monaca remote config
 {{</highlight>}}
+
+**Options**
+
+- `--skipUpload`: Skipping the uploading of the local project to the cloud.
+- `--skipTranspile`: Skipping the transpile process when uploading the local project to the cloud.
 
 **Use Case**
 
