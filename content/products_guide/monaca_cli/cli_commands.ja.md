@@ -353,7 +353,7 @@ $ monaca remote build <platform> [options]
 - `--android_webview`: (Android のみ) Webview のタイプを選択します。`default`、`crosswalk` のいずれかを指定します。
 - `--android_arch`: (Android のみ) `--android_webview` を `crosswalk` に指定した場合、こちらは必須オプションになります。値は、`x86`、`arm` のいずれかを指定します。
 - `--skipUpload`: クラウドへローカルプロジェクトをアップロードする処理をスキップします。
-- `--skipTranspile`: クラウドへローカルプロジェクトをアップロードするときにトランスパイル処理をスキップします。
+- `--skipTranspile`: クラウドへローカルプロジェクトをアップロードする時にトランスパイル処理をスキップします。
 - `--browser`: ブラウザー上で [ ビルド設定 ] 画面を開きます ( 下のスクリーンショットを参照のこと )。
 
 **【具体例】**
