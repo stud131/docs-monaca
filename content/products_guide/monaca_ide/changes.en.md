@@ -47,7 +47,7 @@ The Monaca Cloud IDE uses [Monaco](https://microsoft.github.io/monaco-editor/) f
 
 {{<figure src="/images/monaca_ide/manual/changes/3.png">}}
 
-For the Monaca Cloud IDE shortcut keys, see [Editor Shortcuts](../code_editor/editor/).
+For editor shortcuts, see [Editor Shortcuts](../code_editor/editor/).
 
 ## Monaca Backend
 
