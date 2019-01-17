@@ -8,7 +8,7 @@ title: サイトマップ
         - [Monaca での開発の概要](/ja/products_guide/monaca_intro)
         - [Monaca クラウド IDE](/ja/products_guide/monaca_ide)
             - [概要](/ja/products_guide/monaca_ide/overview)
-            - [新しい Monaca クラウド IDE の変更点](/ja/products_guide/monaca_ide/changes)
+            - [Monaca クラウド IDE の機能](/ja/products_guide/monaca_ide/changes)
             - [コードエディター](/ja/products_guide/monaca_ide/code_editor)
                 - [エディターのショートカット一覧](/ja/products_guide/monaca_ide/code_editor/editor)
             - [プロジェクトの構成](/ja/products_guide/monaca_ide/dependencies)

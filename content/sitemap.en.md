@@ -8,7 +8,7 @@ title: Sitemap
         - [Monaca Development Overview](/en/products_guide/monaca_intro)
         - [Monaca Cloud IDE](/en/products_guide/monaca_ide)
             - [Overview](/en/products_guide/monaca_ide/overview)
-            - [Changes in the New Cloud IDE](/en/products_guide/monaca_ide/changes)
+            - [Features in the  Monaca Cloud IDE](/en/products_guide/monaca_ide/changes)
             - [Code Editor](/en/products_guide/monaca_ide/code_editor)
                 - [Editor Shortcut](/en/products_guide/monaca_ide/code_editor/editor)
             - [Project Dependencies](/en/products_guide/monaca_ide/dependencies)

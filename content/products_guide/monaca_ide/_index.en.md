@@ -9,7 +9,7 @@ aliases:
 {{<figure src="/images/monaca_ide/manual/1.png">}}
 
 - [Overview](overview)
-- [Changes in the New Cloud IDE](changes)
+- [Features in the  Monaca Cloud IDE](changes)
 - [Integrated Terminal](terminal)
 - [Editor Shortcut](editor)
 - [Project Dependencies](dependencies)
