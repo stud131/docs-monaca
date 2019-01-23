@@ -22,7 +22,7 @@ iOS ビルドが、Xcode 10.1 へ対応いたしました。( 対象は、Cordov
 
 #### 2018年9月18日
 
-Monaca Cloud IDE のアップデートとともに、新しい Monaca CLI と Localkit をリリースしました。  
+Monaca クラウド IDE のアップデートとともに、新しい Monaca CLI と Localkit をリリースしました。  
 このリリースは、Monaca でのアプリ開発環境の柔軟性を向上させる更新となります。  
 詳細につきましては、[新しい Monaca CLI と Localkit](20180918_monaca_cli_3.0) を参照してください。
 

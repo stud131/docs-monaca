@@ -109,7 +109,7 @@ $ monaca update --force --createPackageJson
 
 ## monaca init
 
-このコマンドは、Monaca CLI 3.x から利用できます。 Monaca（ Monaca CLI、Monaca Cloud IDE、Monaca Localkit ）で実行できるように、他の CLI ツールを使用して作成したプロジェクトを初期化します。 以下のリソースがプロジェクトに追加されます。
+このコマンドは、Monaca CLI 3.x から利用できます。 Monaca（ Monaca CLI、Monaca クラウド IDE、Monaca Localkit ）で実行できるように、他の CLI ツールを使用して作成したプロジェクトを初期化します。 以下のリソースがプロジェクトに追加されます。
 
 - `www/components`: JS/CSS コンポーネント用フォルダーとリソースファイル。
 - `config.xml`: Cordova アプリ用グローバル設定ファイル。

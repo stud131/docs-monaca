@@ -144,13 +144,13 @@ IDE のメニューから、{{<menu menu1="プロジェクト" menu2="プル">}}
 
 ## GitHub との再度の連携時にエラーが発生した場合
 
-Monaca と GitHub の連携をいったん解除して、再び、上記の [セットアップ](#セットアップ) に従い、連携を行ったところ、次のようなエラーが表示される場合があります。
+Monaca と GitHub の連携を解除して、再び上記の [セットアップ](#セットアップ) に従い、連携を行ったところ、次のようなエラーが表示される場合があります。
 
 {{<figure src="/images/monaca_ide/manual/version_control/14.png" >}}
 
 この場合、次の手順に従います。
 
-1.  Monaca Cloud IDE から、いったんログアウトします。
+1.  Monaca クラウド IDE からログアウトします。
 2.  [Monaca ログイン](https://monaca.mobi/ja/login)
     ページに移動して、{{<guilabel name="Sign In With GitHub">}} をクリックします。
 
