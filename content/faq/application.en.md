@@ -3,13 +3,13 @@ title: Application
 weight: 50
 ---
 
-## Can I use an external ad network?
+### Can I use an external ad network?
 
 For Monaca, there is no particular restriction on installing an ad
 network in an application. Technically, ads can be posted on WebView, so
 please use them according to the agreements of each ad network company.
 
-## Can I use external backend service?
+### Can I use external backend service?
 
 You can use external backend services with Monaca. We also provide some
 external services (including backend) you can integrate into your
@@ -23,7 +23,7 @@ If you cannot find the backend service you want there, you can import its SDK in
 
 {{<figure src="/images/faq/import.png">}}
 
-## What kind of features can be used in applications developed using Monaca?
+### What kind of features can be used in applications developed using Monaca?
 
 With Monaca you can develop applications that are able to use all types
 of unique features on smartphones.(Camera, GPS, etc.) Please refer to
@@ -36,15 +36,15 @@ the document below.
 Windows Store apps are not compatible with Cordova Core Plugins, but
 compatible with developments that used WinJS.
 
-## In applications that are developed using Monaca, can I embed codes written in Java? (For Android)
+### In applications that are developed using Monaca, can I embed codes written in Java? (For Android)
 
 Monaca currently does not support the embedding of Java native codes.
 
-## Can I use UIKit with an application developed with Monaca?
+### Can I use UIKit with an application developed with Monaca?
 
 Monaca currently does not support the uses of UIKit.
 
-## Can I develop applications with many different screen sizes?
+### Can I develop applications with many different screen sizes?
 
 In order to develop application with many deferent screen sizes, you can
 include the following mata tag in your code.
@@ -53,7 +53,7 @@ include the following mata tag in your code.
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
 {{</highlight>}}
 
-## Can I use Cordova plugins?
+### Can I use Cordova plugins?
 
 For Basic and Personal plans, you can use the built-in Cordova plugins
 such as ChildBrowser, DatePicker, Bluetooth and so on. Please refer to [Third-party Cordova Plugins](/en/reference/third_party_phonegap) for all the built-in Cordova plugins
@@ -61,7 +61,7 @@ provided by Monaca. However, In order to add Custom Cordova plugin, you
 will need to have a Gold or Platinum plan. To add a custom Cordova
 plugin, please refer to [Custom Cordova Plugins](/en/products_guide/monaca_ide/dependencies/custom_cordova_plugin).
 
-## Tell me about restrictions for developing Windows Store apps.
+### Tell me about restrictions for developing Windows Store apps.
 
 For Windows Store app development, native JavaScript and HTML5 features
 are used. Therefore, features such as those in PhoneGap cannot be used.
@@ -71,11 +71,11 @@ those in PhoneGap. Also, for Windows Store app, there are some features
 and properties in the standard JavaScript and HTML5 that can't be used.
 For more details, please refer to [HTML, CSS, and JavaScript features and difference](http://msdn.microsoft.com/en-us/library/windows/apps/hh465380.aspx).
 
-## Can I develop a full-screen app?
+### Can I develop a full-screen app?
 
 Yes, you can. However, you need to make configuration differently on iOS and Android. 
 
-### Android
+#### Android
 
 There are two ways to make an app runs in fullscreen mode:
 
@@ -85,7 +85,7 @@ There are two ways to make an app runs in fullscreen mode:
 
     {{<highlight xml>}}<preference name="Fullscreen" value="true"/>{{</highlight>}}
 
-### iOS
+#### iOS
 
 You need to use [StatusBar Plugin](/en/reference/cordova_6.5/statusbar) to hide the native status bar. 
 
@@ -93,12 +93,12 @@ You need to use [StatusBar Plugin](/en/reference/cordova_6.5/statusbar) to hide 
     To ensure the configuration is updated successfully, please build your app again after making the above configuration. 
 {{</note>}}
 
-## Can I always use the latest version of Cordova?
+### Can I always use the latest version of Cordova?
 
 Monaca supports specific Cordova versions. However, we regularly update
 and provide the latest Cordova version support as soon as possible.
 
-## How can I make font size bigger for input and textarea controls?
+### How can I make font size bigger for input and textarea controls?
 
 You can fix this problem by applying following styles.
 
@@ -108,13 +108,13 @@ form input, form textarea {
 }
 {{</highlight>}}
 
-## Cordova API and Monaca JavaScript API do not work.
+### Cordova API and Monaca JavaScript API do not work.
 
 Please check your code if `components/loader.js` file is loaded. You can't
 use Cordova API and other JavaScript APIs provided by Monaca if the file
 was not loaded.
 
-## How to change the app start page from index.html to another?
+### How to change the app start page from index.html to another?
 
 1.  Go to `config.xml` file under `www` folder.
 2.  Under `<widget>` element, input the location of the file you want
@@ -131,7 +131,7 @@ was not loaded.
     This method won’t work in Android Debugger downloaded from Google Play. Creating a custom Android debugger will solve this issue. Please refer to {{<link href="/en/products_guide/debugger/installation/debugger_android/#custom-debugger-and" title="Build and Install Custom Monaca Debugger">}}.
 {{</warning>}}
 
-## Limitation of version number and version code for Monaca apps
+### Limitation of version number and version code for Monaca apps
 
 Based on Cordova, the maximum value of version number is `99.99.99` and
 the corresponding maximum value of version code is `999999` for Monaca
@@ -149,7 +149,7 @@ If you want to use a larger version code value, you need to modify
     Starting from 2014/04/02, <code>config.xml</code> file is located under <b>www</b> folder. If your project is created before that, <code>config.xml</code> file is located as <code>android/config.xml</code> and <code>ios/config.xml</code> for Android and iOS respectively.
 {{</note>}}
 
-## Cordova APIs (such as camera, compass, and so on) are not working
+### Cordova APIs (such as camera, compass, and so on) are not working
 
 When using Cordova APIs (such as camera, compass, and so on), you need
 to make sure that those APIs are called after they have loaded and are
@@ -163,7 +163,7 @@ please refer to [deviceready event](http://cordova.apache.org/docs/en/6.x/cordov
     For Onsen UI, <code>ons.ready()</code> function is called when both <code>deviceready</code> and <code>DOMContentLoaded</code> events are fired. Therefore, you can deal with both events by using <code>ons.ready()</code> function.
 {{</note>}}
 
-## The built app does not work, or works differently than what it runs on the debugger.
+### The built app does not work, or works differently than what it runs on the debugger.
 
 It is likely that the built app does not contain the necessary Cordova
 plugin. Although Monaca Debugger contains all core plugins by default,
@@ -171,7 +171,7 @@ you need to manually specify which plugin to install when you build the
 app. You can manage the plugins to include in the app by enabling in
 Manage Cordova Plugins configuration.
 
-##  How to make iOS's App ID and Android's Package Name differently.
+###  How to make iOS's App ID and Android's Package Name differently.
 
 Currently, when you update either iOS's App ID or Android's Package
 Name, both of them will change. In other words, they are configured to
@@ -190,7 +190,7 @@ the existing `id` value. Here is an example of the updated file:
     With this kind of configuration, all builds are succeeded except Android’s {{<link href="/en/products_guide/debugger/installation/debugger_android/#custom-debugger-and" title="custom Debugger build">}}.
 {{</note>}}
 
-## How to get SHA-1 fingerprint of a keystore created in Monaca Cloud IDE
+### How to get SHA-1 fingerprint of a keystore created in Monaca Cloud IDE
 
 Assuming that you already created an Android keystore with Monaca Cloud
 IDE, please follow the instruction below to get a SHA-1 fingerprint of
@@ -207,7 +207,7 @@ the keystore:
 
 4.  Then, you will be asked to input the password of the keystore.
 
-## Can't install my app on an iOS device after building.
+### Can't install my app on an iOS device after building.
 
 Please check whether the target device is registered in the provisioning
 profile selected at the time of building.

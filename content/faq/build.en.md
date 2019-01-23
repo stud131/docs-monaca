@@ -3,7 +3,7 @@ title: Build
 weight: 30
 ---
 
-## Can I register the application made by Monaca to a marketplace (App Store/Google Play)?
+### Can I register the application made by Monaca to a marketplace (App Store/Google Play)?
 
 Registration to a marketplace is evaluated according to the
 application's purpose, development, etc. A submission for registration
@@ -11,7 +11,7 @@ to the marketplace has never been rejected because the app was built
 using Monaca. In fact, many Monaca apps have been released. If the
 rejection has occurred because of Monaca, please [contact us](https://monaca.io/service/index.html).
 
-## In iOS applications developments for iPhone/iPad, is it necessary to register to the iOS Developer Program?
+### In iOS applications developments for iPhone/iPad, is it necessary to register to the iOS Developer Program?
 
 Yes, normally it is necessary to register to the iOS Developer Program
 in order to develop iOS applications. Actually, in iOS app development,
@@ -19,19 +19,19 @@ it is not necessary to register the Mac environment to the iOS Developer
 Program, but you need to register to the Program to install the
 developed application on an actual machine and make it run.
 
-## The developed application using Monaca does not function well on mobile device.
+### The developed application using Monaca does not function well on mobile device.
 
 In this case, please run and check the application again after stopping
 all applications running on the device.
 
-## I can't successfully build iOS (iPhone/iPad) apps.
+### I can't successfully build iOS (iPhone/iPad) apps.
 
 In iOS apps developing, you need to follow the instructions provided by
 Apple. Register properly the information of the device and developer,
 and then prepare the necessary files. For a step-by-step guide, please
 refer to [Building an iOS App]({{< ref "build_ios.en.md" >}}).
 
-## I was able to build build iOS (iPhone/iPad) apps before, but now I can't successfully build them anymore.
+### I was able to build build iOS (iPhone/iPad) apps before, but now I can't successfully build them anymore.
 
 This may caused by the expiry of certificates, reissuing certificates
 requirement, and other factors. Therefore, you need to recreate
@@ -39,18 +39,18 @@ provisioning profiles. Please recreate the required files like
 certificates and provisioning profiles by using the same procedures as
 before, and then use the new files. You may read about [Generate Certificates](/en/products_guide/monaca_ide/build/ios/build_ios/#create_cer) and [Create Provisioning Profiles](/en/products_guide/monaca_ide/build/ios/build_ios/#register_provisioning) for more details.
 
-## I don't know about how to build iOS apps or the certificates-related procedures.
+### I don't know about how to build iOS apps or the certificates-related procedures.
 
 
 The procedures can be found in [Building an iOS App](/en/products_guide/monaca_ide/build/ios/build_ios).
 
-## Can I build an application for only iPhone using Monaca?
+### Can I build an application for only iPhone using Monaca?
 
 You can build an application just for iPhone by setting the target
 device family in iOS App Settings. By default, iPhone, iPod touch and
 iPad is selected.
 
-## How to upload the built app for App Store submission?
+### How to upload the built app for App Store submission?
 
 There are two ways to upload the built app to App Store Connect for App
 Store submission:
@@ -58,17 +58,17 @@ Store submission:
 1.  using [Monaca Upload](/en/products_guide/monaca_ide/deploy/appstore/app_submission) (requires [a valid subscription plan](https://monaca.io/pricing.html))
 2.  using Application Loader software (Mac OS X only)
 
-## Are there any examples of applications developed with Monaca that went through Apple's review, and are actually available on the App Store?
+### Are there any examples of applications developed with Monaca that went through Apple's review, and are actually available on the App Store?
 
 Many applications have been published on the App Store so far.
 
-## Can I develop Windows Store apps?
+### Can I develop Windows Store apps?
 
 It is possible to develop a Windows Store app as a debug build. But in
 this case, you can't release that app to the Windows Store. (We will to
 tackle this issue in the future.)
 
-## I can't successfully register the iOS app to App Store/I can't pass the review.
+### I can't successfully register the iOS app to App Store/I can't pass the review.
 
 There may be various reasons for this but most of them lie in the
 certificates, provisioning profile, and App ID. Please double-check the
@@ -85,12 +85,12 @@ Using Monaca has never been the reason of a rejected review. If the
 review result was `Incorrect API is used`, please notify our support
 staff.
 
-## Tell me how to import/export private keys and certificates that are using Xcode.
+### Tell me how to import/export private keys and certificates that are using Xcode.
 
 You can import private keys on your local Mac, and export Monaca's
 private keys and certificates. For details, please refer to [Build Settings between Monaca and Xcode](/en/products_guide/monaca_ide/build/ios/import_export).
 
-## The built application crashes right after starting up.
+### The built application crashes right after starting up.
 
 The following points are the possibilities which could make the
 application crashes after starting up, please double-checked these
@@ -106,23 +106,23 @@ points and rebuild your application.
     that application uses *location information* but
     `ACCESS_COARSE_LOCATION` is not permitted and so on.
 
-## Can I use Japanese for the app name?
+### Can I use Japanese for the app name?
 
 You can use Japanese. Please set Japanese for the app name from Build
 Settings in Monaca Cloud IDE.
 
-## What kind of character string should be used for iOS App ID?
+### What kind of character string should be used for iOS App ID?
 
 You can set it with your own preference; however, we recommend that the
 App ID should be your own domain name but written in reverse. Please see
 [our blog article](http://blog.asial.co.jp/738) (Japanese) for details.
 
-## During the iOS build, an internal server error (71).
+### During the iOS build, an internal server error (71).
 
 This is an error that occurs when your App ID or application name
 contains one-byte space. Please recheck them again.
 
-## Application Loader raises following error when uploading iOS application.
+### Application Loader raises following error when uploading iOS application.
 
 If your app raised one of the following errors:
 
@@ -134,12 +134,12 @@ If your app raised one of the following errors:
 Open Key Chain Access and delete certificates and private keys that have
 the same name.
 
-## Can I share my iOS certificates and private key?
+### Can I share my iOS certificates and private key?
 
 Yes, it is possible to share iOS private key and certificates among
 other users and environments. Please refer to [Build Settings between Monaca and Xcode](/en/products_guide/monaca_ide/build/ios/import_export).
 
-## Can I share my Android keystore?
+### Can I share my Android keystore?
 
 Yes, you can share your Android keystore. You can download your Android
 keystore from Monaca Cloud IDE. Please always back up and keep the
@@ -149,7 +149,7 @@ package.
 
 How to create and export Android keystore are described in [Configure Android Keystore](/en/products_guide/monaca_ide/build/build_android/#step-2-configure-android-keystore).
 
-## Things to keep in mind when you register applications to the App Store
+### Things to keep in mind when you register applications to the App Store
 
 You can submit Monaca Apps to the App Store and many Monaca Apps have
 been accepted.

@@ -3,7 +3,7 @@ title: Usage
 weight: 60
 ---
 
-## Tell me about the steps to develop applications for mobile devices using Monaca.
+### Tell me about the steps to develop applications for mobile devices using Monaca.
 
 For your flexibility and convenience during app development process,
 Monaca provides 3 different development environments such as:
@@ -28,25 +28,25 @@ Moreover, note that in order to install the built application on iPhone
 or iPad, you need to register iOS Developer Program. For more details,
 please refer to [Building an iOS App](/en/products_guide/monaca_ide/build/ios/build_ios).
 
-## Can I create my own project template?
+### Can I create my own project template?
 
 We do not offer a template function for the projects.
 
-## The Code Editor's cursor on the Monaca Cloud IDE is shown to be off in its alignment. What should I do?
+### The Code Editor's cursor on the Monaca Cloud IDE is shown to be off in its alignment. What should I do?
 
 The Code Editor on the Monaca Cloud IDE may not be able to handle the
 scale from the display function of your browser. Please use the Monaca
 Cloud IDE without using the browser's enlarge/reduce functions. (In many
 browsers, you can reset with `Ctrl+0`.)
 
-## I don't know how to write the program.
+### I don't know how to write the program.
 
 As references for app development using Monaca, we have prepared a
 tutorial, introductory guide, and sample apps. Each of these reference
 materials provides descriptions on how to write specific codes, so
 please do take a look. ([Third-party Cordova Plugins](/en/reference/third_party_phonegap) and [Samples & Tips](/en/sampleapp))
 
-## Please tell me how to do team development with Monaca.
+### Please tell me how to do team development with Monaca.
 
 Using the Monaca cloud IDE team management function, you can share a project among members registered in Monaca. For details, please check the [Share](https://docs.monaca.io/en/products_guide/monaca_ide/overview/#share).
 
@@ -73,34 +73,34 @@ However, if your usage plan is Basic or Personal, you can only join a
 team as a Tester. For more information of the usage plan and its
 limitation, please refer to [Monaca Usage Plan](https://monaca.io/pricing.html).
 
-## In Monaca, how is the security of development assets maintained?
+### In Monaca, how is the security of development assets maintained?
 
 Currently, for general use, each user's resources are controlled by each
 account on the same server. We can handle on an individual basis of
 strengthening the security such as having an independent location of
 each resource or enforcing source IP restrictions for access (fee-based). Please contact us [here](https://monaca.io/support/inquiry.html).
 
-## Are there any keyboard shortcuts or keybindings that can be used on the Monaca Cloud IDE?
+### Are there any keyboard shortcuts or keybindings that can be used on the Monaca Cloud IDE?
 
 Shortcuts that can be used on Monaca Cloud IDE are listed in [Editor Shortcuts](/en/products_guide/monaca_ide/code_editor/editor). Also, Monaca can use keybindings like `vim`. You can
 set the keybinding from the Environment Settings of the File menu on the
 top of the page of Monaca Cloud IDE.
 
-## I want to change the background color of the Splash screen.
+### I want to change the background color of the Splash screen.
 
 For the changes to the Splash screen, you can configure from the `Splash Screen Settings` in [Configure iOS App Settings](/en/products_guide/monaca_ide/build/ios/build_ios/#configure-ios-app-settings) and [Configure Android App](/en/products_guide/monaca_ide/build/build_android/#step-1-configure-android-app) for iOS and Android, respectively.
 
-## Splash screen is not showing on Monaca Debugger.
+### Splash screen is not showing on Monaca Debugger.
 
 Splash screen can only appear properly on a build app. It may not appear
 properly on Monaca Debugger. Therefore, please test the splash screen on
 a build app only.
 
-## Can I use a GIF image as splash screen?
+### Can I use a GIF image as splash screen?
 
 Currently, you can only PNG file as a splash screen image in Monaca.
 
-## Project list is not showing properly in Monaca Localkit.
+### Project list is not showing properly in Monaca Localkit.
 
 If Monaca Localkit's project list is not displayed properly, please try
 resetting Monaca Localkit as follows:

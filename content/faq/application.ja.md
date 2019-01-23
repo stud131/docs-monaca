@@ -3,13 +3,13 @@ title: アプリケーション
 weight: 50
 ---
 
-## 外部の広告ネットワークは使えますか？
+### 外部の広告ネットワークは使えますか？
 
 アプリ上でのアドネットワークの掲載に関しては、Monaca
 では特に制限を設けておりません。また、WebView
 上に広告を置くことに関して、技術的な制約もありません。なお、広告の掲載時は、広告ネットワーク側の規約に従ってください。
 
-## 外部のバックエンドサービスは使えますか？
+### 外部のバックエンドサービスは使えますか？
 
 はい、Monaca
 で使用できます。バックエンドサービスを含む、外部の各種サービスを、Monaca
@@ -23,7 +23,7 @@ Monaca クラウド IDE上で、{{<menu menu1="設定" menu2="外部サービス
 
 {{<figure src="/images/faq/import.png">}}
 
-## Monaca で開発するアプリでは、どんな機能が使えますか？
+### Monaca で開発するアプリでは、どんな機能が使えますか？
 
 スマートフォン搭載の各種機能 ( Camera、GPS など ) を使ったアプリを開発できます。詳細に関しては、次のドキュメントをご確認ください。
 
@@ -33,16 +33,16 @@ Monaca クラウド IDE上で、{{<menu menu1="設定" menu2="外部サービス
 
 Windows ストアアプリには、基本プラグインを使用できませんが、WinJS を使用できます。
 
-## Monaca で開発したアプリに、Java で記述したコードを組み込むことはできますか ( Android の場合 )？
+### Monaca で開発したアプリに、Java で記述したコードを組み込むことはできますか ( Android の場合 )？
 
 ネイティブコード ( Java ) の組み込みを、Monaca
 では現在サポートしておりません。
 
-## Monaca で開発するアプリで、UIKit を使うことはできますか ？
+### Monaca で開発するアプリで、UIKit を使うことはできますか ？
 
 Monaca では、UIKit はサポートしておりません。
 
-## さまざまな画面サイズに対応したアプリの開発はできますか？
+### さまざまな画面サイズに対応したアプリの開発はできますか？
 
 次の meta
 タグをコードに追加すれば、さまざまな画面サイズに対応したアプリを開発できます。
@@ -51,7 +51,7 @@ Monaca では、UIKit はサポートしておりません。
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
 {{</highlight>}}
 
-## Cordova プラグインは使えますか？
+### Cordova プラグインは使えますか？
 
 Free プランでも、Monacaで提供している Cordova プラグイン (
 基本プラグイン、サードパーティー製プラグイン など )
@@ -61,7 +61,7 @@ Free プランでも、Monacaで提供している Cordova プラグイン (
 企業向けプランが必要となります。ユーザー Cordova
 プラグインの追加方法に関しては、 [ ユーザー Cordova プラグイン](/en/products_guide/monaca_ide/dependencies/custom_cordova_plugin)をご確認ください。
 
-## Windows ストアアプリの開発に関する制約を教えてください。
+### Windows ストアアプリの開発に関する制約を教えてください
 
 Windows ストアアプリの開発では、JavaScript と HTML5
 のネイティブ機能が使用されます。Cordova
@@ -75,12 +75,12 @@ Windows ストアアプリの開発では、JavaScript と HTML5
 )](http://msdn.microsoft.com/en-us/library/windows/apps/hh465380.aspx)
 をご確認ください。
 
-## フルスクリーンアプリを開発できますか？
+### フルスクリーンアプリを開発できますか？
 
 フルスクリーンアプリを開発することは可能です。 ただし、iOS と Android
 で設定を変更する必要があります。
 
-### Android
+#### Android
 
 アプリをフルスクリーンモードで実行するには、次の2つの方法があります。
 
@@ -90,7 +90,7 @@ Windows ストアアプリの開発では、JavaScript と HTML5
 
     {{<highlight xml>}}<preference name="Fullscreen" value="true"/>{{</highlight>}}
 
-### iOS
+#### iOS
 
 ステータスバーを非表示にする場合は、 [StatusBar プラグイン](/ja/reference/cordova_6.5/statusbar/)
 を使用する必要があります。
@@ -100,13 +100,13 @@ Windows ストアアプリの開発では、JavaScript と HTML5
 {{</note>}}
 
 
-## Cordova は常に最新のバージョンが使えるのですか？
+### Cordova は常に最新のバージョンが使えるのですか？
 
 Monaca では、ある特定のバージョンの Cordova
 のみサポートしています。なお、最新バージョンの Cordova
 を使用できるように、バージョン更新は、定期的に、また、迅速に行っております。
 
-## テキストエリアの入力文字のフォントを大きくしたいのですが、なにか方法はありますか？
+### テキストエリアの入力文字のフォントを大きくしたいのですが、なにか方法はありますか？
 
 次の CSS のスタイルをお試しください。
 
@@ -116,12 +116,12 @@ form input, form textarea {
 }
 {{</highlight>}}
 
-## Cordova API、および、Monaca 提供の JavaScript API が使えません。
+### Cordova API、および、Monaca 提供の JavaScript API が使えません
 
 `components/loader.js`を読み込んでいることをご確認ください。このファイルを読み込んでいない場合、Monaca
 が提供している、Cordova API と JavaScript API を使うことはできません。
 
-## アプリ起動時のページを、index.html から他のページに変更する方法を教えてください。
+### アプリ起動時のページを、index.html から他のページに変更する方法を教えてください
 
 1.  `www` フォルダー下に置かれた `config.xml` ファイルを開きます。
 2.  `<widget>` 要素下の `<content>` タグに、起動時に表示するページ (
@@ -138,7 +138,7 @@ form input, form textarea {
     Google Play からダウンロードした Android向けのデバッガーでは、この方法は使用できません。解決策としては、カスタムビルド版のAndroid 向けのデバッガーを使用します。詳細は、 {{<link href="/ja/products_guide/debugger/installation/debugger_android/#custom-debugger-and" title=" カスタムビルド版 Monaca デバッガーのビルドとインストール">}}をご確認ください。
 {{</warning>}}
 
-## Monaca アプリで使用できる、バージョン番号とバージョンコードに関して、制限はありますか？
+### Monaca アプリで使用できる、バージョン番号とバージョンコードに関して、制限はありますか？
 
 Based on Cordova, the maximum value of version number is `99.99.99` and
 the corresponding maximum value of version code is `999999` for Monaca
@@ -156,7 +156,7 @@ apps.
     2014年4月2日から、仕様が変更され、<code>config.xml</code> ファイルは、<b>www</b> フォルダー下に置かれるようになりました。これより前に作成されたプロジェクトの場合、 <code>android/config.xml</code> ( Android の場合 ) と <code>ios/config.xml</code> ( iOS の場合 ) のように、<code>config.xml</code> ファイルが置かれています。
 {{</note>}}
 
-## Cordova API ( カメラ、コンパスなど ) が動作しません。
+### Cordova API ( カメラ、コンパスなど ) が動作しません
 
 Cordova API ( カメラ、コンパス ) を実際に呼び出す前に、Cordova 側の準備
 ( deviceready イベント ) をする必要があります。
@@ -175,11 +175,11 @@ API を安全に使用できます。詳細は、[deviceready イベントの解
 の両イベント後に発火するため、確実に、アプリ側の準備が完了しています。
 {{</note>}}
 
-## デバッガー上では動作確認できましたが、ビルドしたアプリを端末にインストールして動作確認したところ、うまくいきません。
+### デバッガー上では動作確認できましたが、ビルドしたアプリを端末にインストールして動作確認したところ、うまくいきません
 
 ビルドしたアプリ側に、必要なプラグインが組み込まれていない可能性があります。Monaca デバッガー側には、基本プラグインのすべてが、標準で実装されていますが、アプリをビルドする場合には、あらかじめ、開発時に、実装するプラグインを手動で指定しておく必要があります。なお、プラグインの組み込みは、Monaca クラウド IDE の [ Cordova プラグインの管理 ] メニュー上から行います。
 
-## App ID ( iOS 側 ) と パッケージ名 ( Android 側 ) にそれぞれ異なる値を設定するには？
+### App ID ( iOS 側 ) と パッケージ名 ( Android 側 ) にそれぞれ異なる値を設定するには？
 
 現在、iOS 側の App ID または Android
 側のパッケージ名を変更すると、変更後の値が双方に反映されます。つまり、変更後も、両方の値は自動的に同一の値へと修正されます。ただし、それぞれに異なる値を設定することもできます。
@@ -196,7 +196,7 @@ API を安全に使用できます。詳細は、[deviceready イベントの解
     なお、このような設定にした場合、{{<link href="/en/products_guide/debugger/installation/debugger_android/#custom-debugger-and" title="Android 向けのカスタムビルド版デバッガー">}}のビルド処理が失敗することが確認されています。他のビルド処理では、このような不具合は確認されていません。
 {{</note>}}
 
-## キーストア内の SHA-1 フィンガープリントを確認する方法 ( Monaca クラウド IDE 上のキーストアを使用 )
+### キーストア内の SHA-1 フィンガープリントを確認する方法 ( Monaca クラウド IDE 上のキーストアを使用 )
 
 Monaca クラウド IDE
 上にキーストアがすでに作成されていることを前提として、キーストア内の
@@ -213,6 +213,6 @@ SHA-1 フィンガープリントの確認方法を解説します。
 
 4.  キーストアに設定されたパスワードを入力するように要求されます。
 
-## ビルド後に iOS 端末にアプリをインストールできません。
+### ビルド後に iOS 端末にアプリをインストールできません
 
 対象端末が、ビルド時に選択されたプロビジョニングプロファイルに登録されているか確認してください。

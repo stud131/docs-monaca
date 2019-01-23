@@ -3,7 +3,7 @@ title: Debugger
 weight: 70
 ---
 
-## What is the Monaca Debugger?
+### What is the Monaca Debugger?
 
 Monaca Debugger is an application for debugging that can check the
 functionality of the app on an actual device without building. When
@@ -12,7 +12,7 @@ to the actual running device. No build and run process are required.
 This would help to speed up the development and testing process. For
 more details, please refer to [Monaca Debugger](/en/products_guide/debugger).
 
-## Are the operations of an app on the Monaca Debugger the same as when the app is installed on an actual device?
+### Are the operations of an app on the Monaca Debugger the same as when the app is installed on an actual device?
 
 The app operations on Monaca Debugger may differ from the ones on the
 actual device. After building and installing the app, it is necessary to
@@ -20,7 +20,7 @@ check its icon, installation and operations without Monaca Debugger.
 Moreover, the app works more slowly on Monaca Debugger than the built
 apps because of the connection to the Monaca Cloud IDE.
 
-## Before building, can I check application operations during development?
+### Before building, can I check application operations during development?
 
 Monaca provides utiliy to check the display and operations of
 application which is [Live Preview](/en/products_guide/monaca_ide/overview/#preview_team_panel) feature on the
@@ -29,14 +29,14 @@ the device prior to building by using Monaca Debugger. Both are very
 useful tools for improving development efficiency, so please make the
 most use of them.
 
-## The debug log is not displayed.
+### The debug log is not displayed.
 
 For some devices, such as devices from HTC, there are confirmed cases of
 which the debug log cannot be displayed. If possible, please inform us
 of any information about devices that have such problem via [Monaca Support](https://monaca.io/service/index.html), we will look into it and provide
 the solution as soon as possible.
 
-## When I started the app on Android, the app crashed.
+### When I started the app on Android, the app crashed.
 
 There may have problems of configuration in `AndroidManifest.xml` file. If you use PhoneGap, please make sure to have this setting: 
 
@@ -46,18 +46,18 @@ There may have problems of configuration in `AndroidManifest.xml` file. If you u
 
 For details, please refer to [Android Configuration]({{<ref "android_configuration.en.md" >}}).
 
-## Monaca Debugger is not working.
+### Monaca Debugger is not working.
 
 Please try to reinstall Monaca Debugger. If it is still not working,
 please [contact us](https://monaca.io/service/index.html).
 
-## I cannot use CSS and JavaScript files in Live Preview.
+### I cannot use CSS and JavaScript files in Live Preview.
 
 While reading external JavaScript or CSS codes, there is a possibility
 that they are not readable for some reasons such as requirement for an
 authentication.
 
-## Cannot Login to Monaca Debugger.
+### Cannot Login to Monaca Debugger.
 
 The following issues are the common issues and solutions when logging in
 Monaca Debugger:
@@ -68,7 +68,7 @@ Monaca Debugger:
 -   The email address was auto-completed. Please manually input the
     email address and password.
 
-## JavaScript error when loading Angular.js or other external library.
+### JavaScript error when loading Angular.js or other external library.
 
 In some cases, Monaca Debugger may assume the exceptions occurs
 internally by the external JavaScript library as errors. As long as the
@@ -76,7 +76,7 @@ errors do not stop the functionality of your app, it should be fine to
 ignore them. Please note that in the built version, these errors should
 not be occurred when running on actual device.
 
-## What is the difference between Monaca Debugger and its custom build version?
+### What is the difference between Monaca Debugger and its custom build version?
 
 Here are some important differences:
 
@@ -91,7 +91,7 @@ Here are some important differences:
     do USB debugging on Monaca Debugger downloaded from App Store. For
     more details, please see [Monaca Debugger for iOS]({{<ref "debugger_ios.en.md">}}).
 
-## How can I debug my application?
+### How can I debug my application?
 
 We are providing 3 different ways to debug your application.
 
@@ -101,12 +101,12 @@ We are providing 3 different ways to debug your application.
 
 For more details, please refer to [Debugger's Usage](/en/products_guide/debugger/debug).
 
-## What is a network install?
+### What is a network install?
 
 Network installation is a way to install your debug or ad-hoc built app
 to your devices from Monaca Debugger. For more details, please refer to [Network Install for Android](/en/products_guide/debugger/installation/debugger_android/#network-and) or [Network Install for iOS](/en/products_guide/debugger/installation/debugger_ios/#network-ios).
 
-## Changes are not updated in a project on Monaca debugger.
+### Changes are not updated in a project on Monaca debugger.
 
 When you make changes to your project but those changes are not updated
 in the project on Monaca Debugger, please try the following steps:
@@ -135,7 +135,7 @@ In order to reset Monaca Debugger, please do as follows:
 
 If the issue still persists, please contact our [Monaca Support](https://monaca.io/service/index.html).
 
-## console.log is not working on iOS for Cordova 6.5 project
+### console.log is not working on iOS for Cordova 6.5 project
 
 In this case, please check the version of Monaca Core Utility. In a
 Cordova 6.5 project, `Monaca Core Utility Version: 2.0.6` is a default
