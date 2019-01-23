@@ -8,7 +8,7 @@ Monaca Cloud IDE is equipped with terminal consoles. This is mainly used for run
 In this section, we will guide you through how you can take advantages of the Integrated Terminal feature in Monaca Cloud IDE.
 
 {{<note>}}
-    Currently, this feature is available to all Monaca developers. However, Free plan users can enjoy this feature as a trial, and it will be restricted after Q3, 2018.
+    Terminal feature can be used from pay plan.
 {{</note>}}
 
 ## Overview
