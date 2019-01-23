@@ -16,7 +16,7 @@ Yes, you can but there are limitation for free users. For more
 information related to types of Monaca accounts and their usage, please
 refer to [Monaca Subscription Plan](https://monaca.io/pricing.html).
 
-If you are new to Monaca and interested to try it, please [sign up](https://monaca.mobi/register/start) your free account to start.
+If you are new to Monaca and interested to try it, please [sign up](https://monaca.mobi/en/signup) your free account to start.
 
 ## What is Cordova Core Plugin?
 

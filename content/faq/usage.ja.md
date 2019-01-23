@@ -16,7 +16,7 @@ Monaca を使用した、携帯端末向けアプリの開発手順を教えて�
 これらのツールを使用すれば、お好みのプラットフォーム上で、アプリ開発を進められます。次に、Monaca
 を使用した開発手順の大まかな流れを記します。
 
--   [こちら](https://monaca.mobi/ja/register/start) から Monaca
+-   [こちら](https://monaca.mobi/ja/signup) から Monaca
     に登録します。
 -   HTML5/CSS3/JavaScript でコードを記述します。
 -   Monaca デバッガーを必要に応じて使用し、アプリの動作確認を行います。

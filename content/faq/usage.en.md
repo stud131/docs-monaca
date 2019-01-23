@@ -16,7 +16,7 @@ You can choose your desired platform and start building your
 application. The following steps are the mobile app development steps
 using Monaca:
 
--   Register a user in [Monaca](https://monaca.mobi/en/register/start).
+-   Register a user in [Monaca](https://monaca.mobi/en/signup).
 -   Write HTML5/CSS3/JavaScript in your desired platform.
 -   If needed, check application operations using Monaca Debugger.
 -   Configure your target device build settings and start building the

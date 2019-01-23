@@ -18,7 +18,7 @@ Monaca は無料で使えますか？
 [料金プランの詳細](https://ja.monaca.io/pricing.html) をご確認ください。
 
 Monaca を初めてお使いになる場合には、こちらから
-[登録](https://monaca.mobi/ja/register/start)
+[登録](https://monaca.mobi/ja/signup)
 を行ってください。無料アカウントをご利用できます。
 
 基本プラグイン とは何ですか？
