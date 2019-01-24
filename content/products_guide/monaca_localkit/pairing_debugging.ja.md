@@ -13,14 +13,14 @@ Monaca Localkit が実行中であること ) と端末 ( Monaca
 に接続されていることを確認してください。公共のネットワークなどでは、クライアント同士の通信が許可されていないことがあり、その場合、ペアリングはできません。
 {{</note>}}
 
-ペアリングの設定
-----------------
+## ペアリングの設定
 
 1.  Monaca Localkit ( ホスト PC ) にログインします。
-2.  Monaca デバッガー ( 携帯端末 ) にログインします。Monaca Localkit
-    のログイン時と、同じアカウントを使用します。
-3.  ログイン後、次のように、Monaca デバッガーがホスト PC
-    を認識しているか確認します。次に、 {{<guilabel name="ペアリング">}}
+
+2.  Monaca デバッガー ( 携帯端末 ) にログインします。Monaca Localkit にログインしている Monaca アカウントを使用します。
+
+3.  ログイン後、次のように Monaca デバッガーがホスト PC
+    を認識しているか確認します。次に、{{<guilabel name="ペアリング">}}
     をクリックして、ペアリングします。Monaca デバッガーがホスト PC
     を自動認識していない場合には、
     [ペアリング方法](/ja/products_guide/debugger/troubleshooting/#monaca-デバッガーとのペアリングが失敗する場合) をご確認ください。
@@ -38,8 +38,7 @@ Monaca Localkit が実行中であること ) と端末 ( Monaca
 
     {{<img src="/images/monaca_localkit/manual/pairing_debugging/3.png" width="300">}}
 
-ペアリングの解除
-----------------
+## ペアリングの解除
 
 1.  Monaca
     デバッガー画面の左上端に表示された切り替えメニューをクリックして、
@@ -57,8 +56,7 @@ Monaca Localkit が実行中であること ) と端末 ( Monaca
 
     {{<img src="/images/monaca_localkit/manual/pairing_debugging/5.png" width="300">}}
 
-Monaca Localkit を使用した、Monaca アプリのデバッグ
----------------------------------------------------
+## Monaca Localkit を使用した Monaca アプリのデバッグ
 
 [Monaca 提供のローカル環境用の開発ツールと Monaca デバッガーとの連携]({{<ref "debug.ja.md#monaca-提供のローカル環境用の開発ツールと-monaca-デバッガーとの連携">}}) をご確認ください。
 

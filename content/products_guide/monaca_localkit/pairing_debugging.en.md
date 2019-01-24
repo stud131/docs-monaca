@@ -15,8 +15,10 @@ Debugger) first.
 ## Start Pairing
 
 1.  Log in to Monaca Localkit on your host PC.
+
 2.  Use the same account to log in to Monaca Debugger on your mobile
     device.
+    
 3.  Once logged in, Monaca Debugger should be able to detect the host PC
     as shown below. Then, click {{<guilabel name="Pair">}} button to start the pairing.
     However, if Monaca Debugger is unable to detect the host PC
