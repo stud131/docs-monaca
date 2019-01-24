@@ -7,8 +7,7 @@ aliases: /ja/monaca_cli/manual/build_publish
 リモートビルド の機能を解説します ( \[ ビルド設定 \] 画面の各タブの解説
 )。
 
--   ビルド : ビルド対象のプラットフォーム ( Android、iOS、Chrome
-    Apps、Windows ) を選択します。
+-   ビルド : ビルド対象のプラットフォーム ( Android、iOS、Windows ) を選択します。
 -   ビルド設定 :
     アプリおよび各プラットフォーム向けのビルドに必要な設定をします。
 -   依存関係の設定 : 必要なプラグイン （

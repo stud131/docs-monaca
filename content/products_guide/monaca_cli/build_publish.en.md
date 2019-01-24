@@ -7,7 +7,7 @@ aliases: /en/monaca_cli/manual/build_publish
 Inside `Remote Build`, there are several important functions such as:
 
 -   Building application: Choose a specific platform (among Android,
-    iOS, Chrome Apps and Windows) to build.
+    iOS and Windows) to build.
 -   Building configuration: Configure necessary information regarding
     the application and build for each platform.
 -   Project dependencies: Include necessary dependencies

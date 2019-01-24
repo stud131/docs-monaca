@@ -26,7 +26,7 @@ aliases: /ja/monaca_cli/manual/cli_commands
 | [monaca plugin](#monaca-plugin) |	Cordova プラグインを管理します。 |
 | [monaca docs](#monaca-docs) |	Monaca CLI、Onsen UI、チュートリアルを表示します。|
 
-## monaca login
+### monaca login
 
 Monaca クラウドにサインインします。Monaca
 アカウント登録時のユーザー名とパスワードを入力します。
@@ -49,7 +49,7 @@ $ monaca login me@monaca.io
 $ echo "mypass" | monaca login me@monaca.io
 {{</highlight>}}
 
-## monaca logout
+### monaca logout
 
 Monaca クラウドからサインアウトして、保持していたログイントークンを削除します。
 
@@ -68,7 +68,7 @@ You have been signed out.
 Removed Monaca Debugger pairing information.
 {{</highlight>}}
 
-## monaca update
+### monaca update
 
 このコマンドは、Monaca CLI 3.x から利用できます。 Monaca CLI 2.x で作成した旧プロジェクトを更新するために使用されます。
 
@@ -107,7 +107,7 @@ $ monaca update
 $ monaca update --force --createPackageJson
 {{</highlight>}}
 
-## monaca init
+### monaca init
 
 このコマンドは、Monaca CLI 3.x から利用できます。 Monaca（ Monaca CLI、Monaca クラウド IDE、Monaca Localkit ）で実行できるように、他の CLI ツールを使用して作成したプロジェクトを初期化します。 以下のリソースがプロジェクトに追加されます。
 
@@ -129,7 +129,7 @@ $ monaca init
 $ monaca init
 {{</highlight>}}
 
-## monaca signup
+### monaca signup
 
 Monaca クラウド にサインアップします。
 ユーザーの資格情報を要求する画面が表示されます。
@@ -151,7 +151,7 @@ $ monaca signup
 $ monaca signup me@monaca.io
 {{</highlight>}}
 
-## monaca create
+### monaca create
 
 指定したパスのテンプレートから新しいローカル Monaca
 プロジェクトを作成します。 Monaca
@@ -176,7 +176,7 @@ $ monaca create MyProject/Demo
 $ monaca create MyProject/Demo --url http://github.com/me/myproject/archive/master.zip
 {{</highlight>}}
 
-## monaca clone
+### monaca clone
 
 Monaca クラウド上に置かれているプロジェクトを、ローカルへクローンします。Monaca
 クラウド上に置かれているプロジェクトの一覧が表示されます。プロジェクトを選択し、次に、保存先を指定します。
@@ -195,7 +195,7 @@ $ monaca clone
 
 {{<figure src="/images/monaca_cli/manual/cli_commands/clone.png" width="600">}}
 
-## monaca import
+### monaca import
 
 Monaca クラウド上に置かれているプロジェクトをインポートします。Monaca
 クラウド上に置かれているプロジェクトの一覧が表示されます。プロジェクトを選択し、次に、保存先を指定します。
@@ -214,7 +214,7 @@ $ monaca import
 
 {{<figure src="/images/monaca_cli/manual/cli_commands/import.png" width="600">}}
 
-## monaca download
+### monaca download
 
 Monaca
 クラウド上で同期対象のプロジェクトに対して行った更新・修正箇所をダウンロードします。
@@ -239,7 +239,7 @@ $ monaca download [options]
 
 {{<figure src="/images/monaca_cli/manual/cli_commands/download.png" width="600">}}
 
-## monaca upload
+### monaca upload
 
 ローカルのプロジェクトを Monaca クラウドへアップロードします (
 プロジェクトが置かれたディレクトリーのルートへ移動して、コマンドを実行します
@@ -273,7 +273,7 @@ $ monaca upload [options]
 
 {{<figure src="/images/monaca_cli/manual/cli_commands/upload.png" width="600">}}
 
-## monaca signing
+### monaca signing
 
 iOS および Android ビルド用の署名設定を管理します。
 
@@ -322,7 +322,7 @@ $ monaca signing remove certificate
 $ monaca signing remove provisioning
 {{</highlight>}}
 
-## monaca remote build
+### monaca remote build
 
 Monaca クラウド上でプロジェクトをビルドします。Monaca
 クラウド上に、対象のプロジェクトが存在しない場合、ビルドを開始する前に、対象のプロジェクトが自動的にアップロードされます。一方、Monaca
@@ -369,7 +369,7 @@ $ monaca remote build --browser
 
 {{<figure src="/images/monaca_cli/manual/cli_commands/build_window.png">}}
 
-##  monaca remote config
+###  monaca remote config
 
 Monaca クラウド上でプロジェクト設定を開きます。  
 設定が完了したら、 `monaca download` を実行して変更した設定内容をローカルに反映してください。
@@ -392,7 +392,7 @@ $ monaca remote config
 $ monaca download
 {{</highlight>}}
 
-## monaca preview
+### monaca preview
 
 ローカル上で Web サーバーを起動後、ブラウザー上でアプリを起動させます (
 `www` 下のアセットがブラウザー上で使用できる状態になります
@@ -418,7 +418,7 @@ $ monaca preview
     <code>monaca preview</code> の処理を停止する場合には、<code>Ctrl+c</code> を押します。
 {{</note>}}
 
-## monaca debug
+### monaca debug
 
 端末上でアプリをデバッグするためのコマンドです。ローカルで行った、ファイルへの変更は、デバッガー上にも即反映されます。このコマンドを実行すると、Web
 サーバーが起動され、Monaca
@@ -461,7 +461,7 @@ $ monaca debug
     <code>monaca debug</code> の処理を停止する場合には、<code>Ctrl+c</code> を押します。
 {{</note>}}
     
-## monaca transpile
+### monaca transpile
 
 ReactJS、VueJS、Angular プロジェクトなど、トランスパイルが必要なプロジェクトをトランスパイルします。package.json で定義された `npm run monaca:transpile` を実行します。
 
@@ -482,7 +482,7 @@ Build completed in 71.835s
 ....
 {{</highlight>}}
 
-## monaca config
+### monaca config
 
 プロキシおよび API エンドポイントの設定内容を管理できます。
 
@@ -512,7 +512,7 @@ $ monaca config endpoint my.endpoint.com
 $ monaca config endpoint --reset
 {{</highlight>}}
 
-## monaca plugin
+### monaca plugin
 
 プロジェクトで使用するプラグインを管理します。プラグインの追加、削除、インストール済みのプラグイン一覧を行うことができます。
 
@@ -538,7 +538,7 @@ $ monaca plugin search keyboard
 $ monaca plugin ls
 {{</highlight>}}
 
-## monaca docs
+### monaca docs
 
 Monaca CLI 、Onsen UI 、チュートリアルのドキュメントを表示します。
 

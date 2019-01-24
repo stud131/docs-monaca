@@ -26,7 +26,7 @@ aliases: /en/monaca_cli/manual/cli_commands
 | [monaca plugin](#monaca-plugin) |	Manage Cordova plugins of a project. |
 | [monaca docs](#monaca-docs) |	Display docs for Monaca CLI, Onsen UI and Tutorials. |
 
-## monaca login
+### monaca login
 
 Signs in to Monaca Cloud. You will be prompted to input your Monaca
 account information (username and password).
@@ -49,7 +49,7 @@ $ monaca login me@monaca.io
 $ echo "mypass" | monaca login me@monaca.io
 {{</highlight>}}
 
-## monaca logout
+### monaca logout
 
 Signs out from Monaca Cloud and removes stored login token.
 
@@ -68,7 +68,7 @@ You have been signed out.
 Removed Monaca Debugger pairing information.
 {{</highlight>}}
 
-## monaca update
+### monaca update
 
 This command is available from Monaca CLI 3.x. It is used to update old projects created with Monaca CLI 2.x.
 
@@ -107,7 +107,7 @@ $ monaca update
 $ monaca update --force --createPackageJson
 {{</highlight>}}
 
-## monaca init
+### monaca init
 
 This command is available from Monaca CLI 3.x. Initialize projects created using other CLI tool to be able to execute it with Monaca (Monaca CLI, Monaca Cloud IDE, Monaca Localkit). The following resources will be added to the project.
 
@@ -129,7 +129,7 @@ Here is an example of how to use this command:
 $ monaca init
 {{</highlight>}}
 
-## monaca signup
+### monaca signup
 
 Signs up for Monaca Cloud. Will display a prompt that asks for user credentials.
 
@@ -150,7 +150,7 @@ $ monaca signup
 $ monaca signup me@monaca.io
 {{</highlight>}}
 
-## monaca create
+### monaca create
 
 Creates a new local Monaca project from a template at a specified path.
 You will be asked to choose a project template from a list of available
@@ -175,7 +175,7 @@ $ monaca create MyProject/Demo
 $ monaca create MyProject/Demo --url http://github.com/me/myproject/archive/master.zip
 {{</highlight>}}
 
-##  monaca clone
+###  monaca clone
 
 Clones a project from the Monaca Cloud into your local PC at a specified
 location. You will be asked to select a project from a list of all your
@@ -196,7 +196,7 @@ Here is an example of how to clone a project called `Memo Application` from Mona
 
 {{<figure src="/images/monaca_cli/manual/cli_commands/clone.png" width="600">}}
 
-##  monaca import
+###  monaca import
 
 Imports a project from Monaca Cloud. You will be asked to select a
 project from a list of all your existing projects in Monaca Cloud and
@@ -216,7 +216,7 @@ Here is an example of how to import a project called `Memo Application` from Mon
 
 {{<figure src="/images/monaca_cli/manual/cli_commands/import.png" width="600">}}
 
-## monaca download
+### monaca download
 
 Downloads updates/changes (of the corresponding synced project) made in
 Monaca Cloud into the local project.
@@ -241,7 +241,7 @@ Navigate to your project folder. Then, type `monaca download` command with vario
 
 {{<figure src="/images/monaca_cli/manual/cli_commands/download.png" width="600">}}
 
-## monaca upload
+### monaca upload
 
 Uploads the current project files to Monaca Cloud. The project files
 will be compared with the corresponding remote files so that only the
@@ -274,7 +274,7 @@ Navigate to your project folder. Then, type `monaca upload` command with various
 
 {{<figure src="/images/monaca_cli/manual/cli_commands/upload.png" width="600">}}
 
-## monaca signing
+### monaca signing
 
 Manages signing configurations for iOS and Android builds.
 
@@ -323,7 +323,7 @@ $ monaca signing remove certificate
 $ monaca signing remove provisioning
 {{</highlight>}}
 
-##  monaca remote build
+###  monaca remote build
 
 Builds the project in Monaca Cloud. If your project does not exist in
 Monaca Cloud yet, it will be automatically uploaded to the cloud first
@@ -371,7 +371,7 @@ $ monaca remote build --browser
 
 {{<figure src="/images/monaca_cli/manual/cli_commands/build_window.png">}}
 
-##  monaca remote config
+###  monaca remote config
 
 Open the project configuration on Monaca Cloud. Once the configuration has been performed, execute `monaca download` to get the changes locally.
 
@@ -393,7 +393,7 @@ $ monaca remote config
 $ monaca download
 {{</highlight>}}
 
-## monaca preview
+### monaca preview
 
 Starts a local web server that serves the `www` assets. The command will
 watch the file system for changes and reload the browser when a change
@@ -418,7 +418,7 @@ Navigate to your project folder and use `monaca preview` command. Then, a browse
     In order to stop <code>monaca preview</code> process, press <code>Ctrl+c</code>.
 {{</note>}}
 
-##  monaca debug
+###  monaca debug
 
 Debugs one or more applications on a device and receives code changes
 instantly. This command starts a web server for Monaca Debugger to
@@ -465,7 +465,7 @@ network connection (see the screenshots). Otherwise, please refer to [Fail to Pa
     In order to stop <code>monaca debug</code> process, press <code>Ctrl+c</code>.
 {{</note>}}
 
-## monaca transpile
+### monaca transpile
 
 Transpiles projects that are transpilable such as ReactJS, VueJS and Angular
 projects. It will execute `npm run monaca:transpile` defined in package.json.
@@ -487,7 +487,7 @@ Build completed in 71.835s
 ....
 {{</highlight>}}
 
-## monaca config
+### monaca config
 
 Manages proxy and API endpoint configuration.
 
@@ -517,7 +517,7 @@ $ monaca config endpoint my.endpoint.com
 $ monaca config endpoint --reset
 {{</highlight>}}
 
-## monaca plugin
+### monaca plugin
 
 Manages plugins of a project such as adding new plugins, listing and
 removing installed plugins.
@@ -544,7 +544,7 @@ $ monaca plugin search keyboard
 $ monaca plugin ls
 {{</highlight>}}
 
-## monaca docs
+### monaca docs
 
 Displays docs for Monaca CLI, Onsen UI and Tutorials.
 
