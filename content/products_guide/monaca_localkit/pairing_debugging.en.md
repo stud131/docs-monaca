@@ -8,9 +8,16 @@ In order to debug Monaca app with Monaca Localkit, you need to pair your
 host PC (running Monaca Localkit) with your device (running Monaca
 Debugger) first.
 
-{{<note>}}
-    Make sure your host PC and your mobile device are in the same network connection (LAN or Wi-Fi). Some public networks do not allow connections between clients; therefore, pairing cannot be done in this case.
-{{</note>}}
+Before connecting Monaca Debugger to your host PC, please pay attention
+to the following points:
+
+1.  Monaca Debugger and the host PC have to connect to the same network
+    connection (LAN or Wi-Fi). Some public networks do not allow
+    connections between clients; therefore, pairing cannot be done in
+    this case.
+2.  Use the same Monaca account for both Monaca Debugger and the host
+    PC.
+3.  Disable the host PC's firewall.
 
 ## Start Pairing
 
