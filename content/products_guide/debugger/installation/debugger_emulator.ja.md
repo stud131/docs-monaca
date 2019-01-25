@@ -4,15 +4,14 @@ weight: 40
 aliases: /ja/debugger/manual/installation/debugger_emulator
 ---
 
-ここでは 「 Android SDK 」 の AVD ( Android Virtual Device/Android
+ここでは 「 Android SDK 」 の AVD ( Android Virtual Device / Android
 仮想端末 ) と呼ばれる Android エミュレーター上で、Monaca
 デバッガーを動作させる方法を紹介します。これを使えば、Android
 アプリのシミュレートを PC 上で行えます。また、複数の Android
 端末でアプリの検証を行いたい場合もこの方法が有用です。
 
 {{<note>}}
-Monacaバックエンドプラグインは、カスタム版Monaca
-Debuggeに含まれていません。
+Monaca Backend プラグインは、カスタム版 Monaca デバッガーには含まれません。
 {{</note>}}
 
 {{<note>}}

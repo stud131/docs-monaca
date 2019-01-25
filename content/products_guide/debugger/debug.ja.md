@@ -5,7 +5,7 @@ aliases: /ja/debugger/manual/debug
 ---
 
 Monaca 提供の各種開発ツール ( Monaca クラウド IDE、Monaca
-Localkit、Monaca CLI) と Monaca
+Localkit、Monaca CLI ) と Monaca
 デバッガーの連携方法に関して、ここでは解説します。
 
 - [Monaca クラウド IDE と Monaca デバッガーとの連携 ( Web 経由 )](#monaca-クラウド-ide-と-monaca-デバッガーとの連携-web-経由)
@@ -36,17 +36,12 @@ DOM の解析が行えます。
 
 {{<figure src="/images/debugger/manual/debug/1.png" title="Monaca クラウド IDE 上の デバッグパネル">}}
 
-In order to start debugging your app by using Monaca クラウド IDE と
-Monaca デバッガーとの連携 ( Web 経由 ), please follow the following
-instruction:
+Monaca クラウド IDE と Monaca デバッガーを使用してアプリのデバッグする方法は、以下になります。
 
 1.  Monaca クラウド IDE 上で、プロジェクトを開きます。
 2.  Monaca デバッガー上で、プロジェクトを実行します。
-3.  IDE
-    と端末が接続されていることを確認します。デバッグパネル上に、端末情報が表示されていれば、接続されています
-    ( 下のスクリーンショットを参照のこと )。表示されない場合、IDE
-    またはデバッガーをいったんリフレッシュさせます。IDE
-    と端末の接続後に、アプリのデバッグを IDE 上で行えます。
+3.  IDEと端末が接続されていることを確認します。
+デバッグパネル上に、端末情報が表示されていれば、接続されています ( 下のスクリーンショットを参照のこと )。表示されない場合、IDEまたはデバッガーをいったんリフレッシュさせます。IDE と端末の接続後に、アプリのデバッグを IDE 上で行えます。
 
     {{<figure src="/images/debugger/manual/debug/2.png">}}
 
@@ -266,7 +261,7 @@ Localkit があります。
     {{<figure src="/images/debugger/manual/debug/12.png" width="300">}}  
 
 5.  Chrome DevTools または Safari の Web インスペクタがホスト PC
-    側で起動されているか確認します。起動されていない場合、troubleshoot\_inspector
+    側で起動されているか確認します。起動されていない場合は、[トラブルシューティング ガイド](../troubleshooting/#troubleshoot-inspector)
     をご確認ください。また、併せて、次のリンク先もご確認ください。
 
     - [Safari の Web インスペクタの使用方法 ( 外部サイト)](https://developer.apple.com/library/safari/documentation/AppleApplications/Conceptual/Safari_Developer_Guide/Introduction/Introduction.html)

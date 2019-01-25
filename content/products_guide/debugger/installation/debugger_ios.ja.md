@@ -10,12 +10,12 @@ aliases: /ja/debugger/manual/installation/debugger_ios
     <tr>
         <th width="25%"></th>
         <th>ストア版 Monaca デバッガー</th>
-        <th>カスタムビルド版Monacaデバッガー</th>
+        <th>カスタムビルド版 Monaca デバッガー</th>
     </tr>
     <tr>
         <td>説明</td>
         <td>ストア版 Monaca デバッガー</td>
-        <td>Monaca クラウド IDE にて、ビルドして作成する Monaca デバッガー</td>
+        <td>Monaca クラウド IDE でビルドして作成する Monaca デバッガー</td>
     </tr>
     <tr>
         <td>インストール方法</td>

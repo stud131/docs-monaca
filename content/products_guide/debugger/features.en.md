@@ -82,10 +82,18 @@ documentations:
 
 ### Debugger Settings
 
-Shows debugger's configurations such as memory usage, splash screen
-(Android only), storage usage and so on. Synced files are synced project
-files while storage data is previously stored data (local storage data)
-created by your projects on your device's memory.
+Shows debugger's configurations such as memory usage, splash screen (Android only), storage usage and so on. 
+
+-   Allow device to sleep
+-   Show memory usage
+-   Show splash screen( Android only )
+-   Restart after resume
+-   Restart after network connection recovery
+-   Hide Debugger Menu
+-   Clear Synced files
+-   Clear storage data
+
+Synced files are synced project files while storage data is previously stored data (local storage data) created by your projects on your device's memory.
 
 {{<figure src="/images/debugger/manual/features/11.png" width="300">}}  
 

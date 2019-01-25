@@ -43,7 +43,7 @@ Monaca
 
 インスペクタ機能を使用すると、[Chrome Dev Tools](https://developer.chrome.com/devtools/index)
 を使用してプロジェクトをデバッグ・検査することができます。
-インスペクタ機能を使用する前に、端末のUSBデバッグを有効にする必要があります。
+インスペクタ機能を使用する前に、端末の USB デバッグを有効にする必要があります。
 詳細は、[USB デバッグの事前準備](../debug/#pre-debug-app)
 をご確認ください。
 
@@ -53,12 +53,11 @@ Monaca
     {{<link href="/en/products_guide/monaca_localkit" title="Monaca Localkit">}} または {{<link href="/en/products_guide/monaca_cli" title="Monaca CLI">}} の使用時のみ、このインスペクタ機能を利用できます。詳細は、{{<link href="../debug/#debugger-with-local-tools" title="Monaca Localkit を使用して、アプリをデバッグする方法 ( USB デバッグの解説箇所 )">}} または {{<link href="/ja/products_guide/debugger/debug/#monaca-提供のローカル環境用の開発ツールと-monaca-デバッガーとの連携" title="Monaca CLI を使用して、アプリをデバッグする方法 ( USB デバッグの解説箇所 )">}} をご確認ください。
 {{</note>}}
 
-デバッガーのメニュー
---------------------
+## デバッガーのメニュー
 
 {{<figure src="/images/debugger/manual/features/8.png" width="300">}}  
 
-Inside デバッガーのメニュー, there are:
+デバッガーのメニューの中には、次のものがあります。
 
 ### すべてのプロジェクト
 
@@ -85,12 +84,18 @@ Locakit または Monaca CLI
 
 ### デバッガーの設定
 
-デバッガー側の各種設定を行えます。設定可能な項目は、\[
-スリープを許可する \]、\[ メモリー使用量表示 \]、\[ スプラッシュ表示 \]
-( Android のみ )、\[ アプリの復帰時にプロジェクトを再実行 \]、\[
-ネットワーク再接続時にプロジェクトを再実行 \]、\[ 同期データを削除する
-\]、\[ Local Storage を削除する \]
-です。同期データとは、ローカル側と同期を行ったプロジェクトファイルを指します。また、Local
+デバッガー側の各種設定を行えます。設定可能な項目は、以下になります。
+
+-   スリープを許可する
+-   メモリー使用量表示
+-   スプラッシュ表示 ( Android のみ )
+-   アプリの復帰時にプロジェクトを再実行
+-   ネットワーク再接続時にプロジェクトを再実行
+-   デバッガーメニューを非表示にする
+-   同期データを削除する
+-   Local Storage を削除する
+
+同期データとは、ローカル側と同期を行ったプロジェクトファイルを指します。また、Local
 Storage とは、端末のメモリー ( LocalStorage )
 上に、プロジェクト側で作成・保存したデータを指します。
 
@@ -104,8 +109,7 @@ Storage とは、端末のメモリー ( LocalStorage )
 
 {{<figure src="/images/debugger/manual/features/12.png" width="300">}}  
 
-プロジェクトオプション
-----------------------
+## プロジェクトオプション
 
 Monaca デバッガー上のプロジェクト一覧の \[ Monaca.io プロジェクト \]
 では、各プロジェクトの右側に \[ プロジェクトオプション \]

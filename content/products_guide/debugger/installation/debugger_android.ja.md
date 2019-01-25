@@ -14,14 +14,14 @@ aliases: /ja/debugger/manual/installation/debugger_android
     </tr>
     <tr>
         <td>説明</td>
-        <td>GooglePlayストアやAppStoreで配布されているMonaca デバッガー</td>
-        <td>Monaca クラウド IDE にて、ビルドして作成するMonaca デバッガー</td>
+        <td>Google Play ストアや App Store で配布されている Monaca デバッガー</td>
+        <td>Monaca クラウド IDE でビルドして作成する Monaca デバッガー</td>
     </tr>
     <tr>
         <td>インストール方法</td>
         <td>
             <ul>
-                <li><a href="https://play.google.com/store/apps/details?id=mobi.monaca.debugger&hl=ja">Google Playストア</a></li>
+                <li><a href="https://play.google.com/store/apps/details?id=mobi.monaca.debugger&hl=ja">Google Play ストア</a></li>
                 <li><a href="https://itunes.apple.com/jp/app/monaca/id550941371">App Store</a></li>
             </ul>
         </td>
