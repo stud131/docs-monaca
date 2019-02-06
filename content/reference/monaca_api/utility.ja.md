@@ -12,9 +12,9 @@ Monaca で提供している、他の関数を紹介します。
 [monaca.isAndroid](#monaca-isandroid) | Android 端末かどうか判別します。
 [monaca.isIOS](#monaca-isios) | iOS 端末かどうか判別します。
 
-## monaca.getDeviceId()
+### monaca.getDeviceId()
 
-一意のデバイス ID を取得します。 which has been created randomly.
+一意のデバイス ID を取得します。
 
 {{<note>}}
 Monaca フレームワークでは、アプリの初回起動時に、一意のデバイス ID を自動的に生成します。
@@ -43,7 +43,7 @@ monaca.getDeviceId(function(id){
 {{</highlight>}}
 
 
-## monaca.baseUrl
+### monaca.baseUrl
 
 `www` フォルダーへの絶対 URL を取得します。
 
@@ -66,7 +66,7 @@ window.onload = function()
 }
 {{</highlight>}}
 
-## monaca.isAndroid
+### monaca.isAndroid
 
 Android 端末 かどうかを判別します。
 
@@ -88,7 +88,7 @@ if(monaca.isAndroid === true){
 }
 {{</highlight>}}
 
-## monaca.isIOS
+### monaca.isIOS
 
 iOS 端末かどうかを判別します。
 

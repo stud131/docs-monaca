@@ -12,7 +12,7 @@ Method/Property | Description
 [monaca.isAndroid](#monaca-isandroid) | Check whether the device is Android or not
 [monaca.isIOS](#monaca-isios) | Check the device is iOS or not
 
-## monaca.getDeviceId()
+### monaca.getDeviceId()
 
 Get the unique device ID which has been created randomly.
 
@@ -43,7 +43,7 @@ monaca.getDeviceId(function(id){
 });
 {{</highlight>}}
 
-## monaca.baseUrl
+### monaca.baseUrl
 
 Get an absolute URL to `www` folder.
 
@@ -66,7 +66,7 @@ window.onload = function()
 }
 {{</highlight>}}
 
-## monaca.isAndroid
+### monaca.isAndroid
 
 Check whether the device is an Android device or not.
 
@@ -88,7 +88,7 @@ if(monaca.isAndroid === true){
 }
 {{</highlight>}}
 
-## monaca.isIOS
+### monaca.isIOS
 
 Check whether the device is an iOS device or not .
 
