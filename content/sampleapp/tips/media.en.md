@@ -10,9 +10,9 @@ In Monaca, there are two ways to play sound and music such as:
 
 ##  Using HTML5 &lt;audio&gt; Tag
 
-{{<warning>}}
+{{<note>}}
     The HTML5 <code>audio</code> tag may not work properly on iOS devices.
-{{</warning>}}
+{{</note>}}
 
 ### Playing Sound from External Sources
 
@@ -48,6 +48,8 @@ using `<audio>` tag to play an audio file located under `www/` folder:
 </body>
 ...
 {{</highlight>}}
+
+{{<img src="/images/tips/media/1.png">}}
 
 ##  Using Cordova Media Plugin
 
@@ -166,7 +168,7 @@ located under `www/` folder. You can play, pause and stop the music.
     <script>
         var media = null;
         var mediaTimer = null;
-        var srcFile = "test.mp3";
+        var srcFile = "sample.mp3";
 
         document.addEventListener("deviceready", onDeviceReady, false);
         function onDeviceReady() {

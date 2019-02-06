@@ -33,7 +33,7 @@ HTML5の `<audio>` タグは、URLを指定することによって、外部の�
 ### 音の再生 ( Monaca プロジェクト内の音源を使用 )
 
 HTML5 `<audio>` タグは、Monacaプロジェクト内に配置された音源を再生するためにも使用できます。
-たとえば、次のコードは `<audio>` タグを使って `www/` フォルダの下にある音源ファイルを再生しています。
+たとえば、次のコードは `<audio>` タグを使って `www` フォルダ配下にある音源ファイルを再生しています。
 
 {{<highlight html>}}
 ...
@@ -45,6 +45,8 @@ HTML5 `<audio>` タグは、Monacaプロジェクト内に配置された音源�
 </body>
 ...
 {{</highlight>}}
+
+{{<img src="/images/tips/media/1.png">}}
 
 ## Media プラグインを使用する
 
@@ -145,7 +147,7 @@ Media プラグインでは、開始、一時停止、停止、再開、音量�
 
 ### 音の再生 ( Monaca プロジェクト内の音源を使用 )
 
-次の例では、`www/` フォルダの下にある音源ファイルの使い方を示します。
+次の例では、`www` フォルダ配下にある音源ファイルの使い方を示します。
 音源の再生、一時停止、停止することができます。
 
 {{<highlight html>}}
@@ -161,7 +163,7 @@ Media プラグインでは、開始、一時停止、停止、再開、音量�
     <script>
         var media = null;
         var mediaTimer = null;
-        var srcFile = "test.mp3";
+        var srcFile = "sample.mp3";
 
         document.addEventListener("deviceready", onDeviceReady, false);
         function onDeviceReady() {
