@@ -199,13 +199,13 @@ This is simply an installation through direct link to your `.apk` file:
 4.  Go the link of the uploaded file from your device. Then, you will be
     prompted to install the applicaiton.
 
-{{<note>}}
-    Please make sure make these settings on your device beforehand:
-    <ul>
-        <li>enable USB Debugging.</li>
-        <li>allow installation of apps from sources other than the Play Store.</li>
-    </ul>
-{{</note>}}
+    {{<note>}}
+        Please make sure make these settings on your device beforehand:
+        <ul>
+            <li>enable USB Debugging.</li>
+            <li>allow installation of apps from sources other than the Play Store.</li>
+        </ul>
+    {{</note>}}
 
 See Also: 
 

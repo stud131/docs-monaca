@@ -4,8 +4,7 @@ weight: 40
 aliases: /ja/monaca_ide/manual/deploy/non_market_deploy
 ---
 
-iOS アプリの場合
-----------------
+## iOS アプリの場合
 
 App Store を経由せずに、アプリの配布を行う場合があります。次のような、2
 つのシナリオが考えられます。
@@ -15,7 +14,7 @@ App Store を経由せずに、アプリの配布を行う場合があります�
     Store
     経由以外の方法でアプリを配布できる方が、都合がよい場合があります。
 2.  社内 ( In-house ) での使用を前提にしたアプリの場合 :
-    企業/組織内での使用目的で作成されたアプリの場合、App Store
+    企業または組織内での使用目的で作成されたアプリの場合、App Store
     経由以外の方法でアプリを配布できる方が、都合がよい場合があります。
 
 {{<note>}}
@@ -38,7 +37,7 @@ TestFlight Beta Testing ( Beta 版アプリの検証アプリ ) | 可 | 不可
 各プログラムの比較に関しては、[こちら](https://developer.apple.com/support/compare-memberships/)
 をご確認ください。
 
-プレリリース ( pre-release ) 版アプリの配布方法 ( 検証目的 ) は、2
+プレリリース版アプリの配布方法 ( 検証目的 ) は、2
 通りあります。
 
 -   App Store Connect を使用 : iOS Developer Program
@@ -122,7 +121,7 @@ iTunes を再設計し、iPhone や iPad 用のアプリを購入するための
 
 ### OTA 配布形式でのインストール方法
 
-OTA ( Over-The-Air/ワイヤレス通信 ) 配布形式であれば、HTTPS
+OTA ( Over-The-Air ) 配布形式であれば、HTTPS
 経由で、ビルド済み ( Ad Hoc ビルド ) アプリをインストールできます。
 
 1.  デバッグビルドまたは Ad Hoc ビルドで、アプリをビルドします。iOS
@@ -170,7 +169,7 @@ OTA ( Over-The-Air/ワイヤレス通信 ) 配布形式であれば、HTTPS
     {{</highlight>}}
 
     {{<note>}}
-        <code>.plist</code> ファイル作成時の注意点を、次に記します。
+        <code>.plist</code> ファイル作成時の注意点：
         <ul>
             <li><code>.plist</code> ファイルは、HTTPS プロトコル経由でアクセスできること。</li>
             <li>App ID を使用して、bundle-identifier を更新すること。</li>
@@ -198,24 +197,21 @@ OTA ( Over-The-Air/ワイヤレス通信 ) 配布形式であれば、HTTPS
 
     {{<img src="/images/monaca_ide/manual/deploy/non_market_deploy/3.png" width="300">}}
 
-Android アプリの場合
---------------------
+## Android アプリの場合
 
-Google Play ストア、Amazon AppStore
-などの公式なストアを経由せずに、アプリの配布を行う場合があります。次のような、2
+Google Play ストアや Amazon AppStore
+などの公式ストアを経由せずに、アプリの配布を行う場合があります。次のような、2
 つのシナリオが考えられます。
 
 1.  検証目的 :
-    アプリのリリース前には、さまざまな検証を行います。このため、複数のテストユーザーに、App
-    Store
-    経由以外の方法でアプリを配布できる方が、都合がよい場合があります。
+    アプリのリリース前には、さまざまな検証を行います。このため、複数のテストユーザーに、公式ストア経由以外の方法でアプリを配布できる方が、都合がよい場合があります。
 
 2.  プライベートでの使用 :
     不特定多数への配布を目的とせず、プライベートでアプリを使用します。
 
 ### ADB コマンドを使用したインストール方法
 
-ADB ( Android Debug Bridge/Android デバッグ ブリッジ ) は、コマンド
+ADB ( Android Debug Bridge ) は、コマンド
 ライン ツールです。このツールを使用して、端末・PC
 間で、各種処理を行えます。
 
@@ -259,10 +255,17 @@ ADB
 
 4.  端末からアップロードしたファイルへのリンクをクリックして、アプリのインストールを開始します。
 
-{{<note>}}
-    事前に確認する事項を、次に記します。
-    <ul>
-        <li>USB デバッグ の有効化</li>
-        <li>セキュリティー設定の変更 ( Google Play ストアではなく、指定するソースから、提供元不明のアプリをインストールできること )</li>
-    </ul>
-{{</note>}}
+    {{<note>}}
+        事前に確認する項目：
+        <ul>
+            <li>USB デバッグ の有効化。</li>
+            <li>セキュリティー設定の変更。 ( Google Play ストアではなく、指定するソースから、提供元不明のアプリをインストールできること )</li>
+        </ul>
+    {{</note>}}
+
+関連項目：
+
+- [iOS アプリのビルド](../../build/ios/build_ios)
+- [Android アプリのビルド](../../build/build_android)
+- [Google Play での配布](../google_play)
+- [App Store での配布](../appstore)
