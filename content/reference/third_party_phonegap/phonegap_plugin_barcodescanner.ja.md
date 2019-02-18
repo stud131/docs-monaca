@@ -4,17 +4,15 @@ weight: 10
 ---
 
 {{<note>}}
-PhoneGap BarcodeScanner プラグインは、Cordova 7.1 から利用することができます。
-<br />
-Android カスタムビルドデバッガーで使用する場合は、config.xml に次の設定をしてビルドする必要があります。
-<br /><br />
-&lt;reference name="monaca:ANDROID_DEBUGGER_APPCOMPAT_VERSION" value="27.+" /&gt;
+<li>PhoneGap BarcodeScanner プラグインは、Cordova 7.1 から利用することができます。</li>
+<li>サードパーティー製 Cordova プラグインを確認する場合は、カスタムビルドデバッガー ( {{<link title="Android 版" href="https://docs.monaca.io/ja/products_guide/debugger/installation/debugger_android/#カスタムビルド版-monaca-デバッガーのビルドとインストール">}} または {{<link title="iOS 版" href="https://docs.monaca.io/ja/products_guide/debugger/installation/debugger_ios/#カスタムビルド版-monaca-デバッガーのビルド方法">}} ) を作成する必要があります。</li>
 {{</note>}}
 
 {{<note>}}
-Cordova 7.1 で提供している MonacaBackend プラグインと組み合わせる場合は、プラグイン設定画面の「インストールパラメータ」に下記の設定が必要になります。
-<br /><br />
-ANDROID_SUPPORT_V4_VERSION=26.+
+<li>Android カスタムビルドデバッガーで使用する場合は、config.xml に次の設定をしてビルドする必要があります。<br /><br />
+&lt;reference name="monaca:ANDROID_DEBUGGER_APPCOMPAT_VERSION" value="27.+" /&gt;</li><br />
+<li>Cordova 7.1 で提供している MonacaBackend プラグインと組み合わせる場合は、プラグイン設定画面の「インストールパラメータ」に下記の設定が必要になります。<br /><br />
+ANDROID_SUPPORT_V4_VERSION=26.+</li>
 {{</note>}}
 
 ## iOS 特有の動作

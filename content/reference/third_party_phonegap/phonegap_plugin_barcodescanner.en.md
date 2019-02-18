@@ -4,17 +4,16 @@ weight: 10
 ---
 
 {{<note>}}
-The PhoneGap BarcodeScanner plugin can be used from Cordova 7.1.
-<br />
-When using with android custom build debugger, you need to build config.xml with the following settings.
-<br /><br />
-&lt;reference name="monaca:ANDROID_DEBUGGER_APPCOMPAT_VERSION" value="27.+" /&gt;
+<li>The PhoneGap BarcodeScanner plugin can be used from Cordova 7.1.</li>
+<li>To check third party cordova plugins, you need to create a custom build debugger ( {{<link title="Android version" href="https://docs.monaca.io/en/products_guide/debugger/installation/debugger_android/#build-and-install-custom-monaca-debugger">}} or {{<link title="iOS version" href="https://docs.monaca.io/en/products_guide/debugger/installation/debugger_ios/#how-to-build-custom-monaca-debugger">}} ).</li>
 {{</note>}}
 
 {{<note>}}
-When combining with the MonacaBackend plugin provided in the cordova 7.1, the following setting is required for "Install Parameters" on the plugin setting screen.
+<li>When using with android custom build debugger, you need to build config.xml with the following settings.
 <br /><br />
-ANDROID_SUPPORT_V4_VERSION=26.+
+&lt;reference name="monaca:ANDROID_DEBUGGER_APPCOMPAT_VERSION" value="27.+" /&gt;</li><br />
+<li>When combining with the MonacaBackend plugin provided in the cordova 7.1, the following setting is required for "Install Parameters" on the plugin setting screen.<br /><br />
+ANDROID_SUPPORT_V4_VERSION=26.+</li>
 {{</note>}}
 
 ## iOS Quirks
