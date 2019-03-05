@@ -12,11 +12,6 @@ aliases: /ja/monaca_ide/manual/deploy/appstore/app_store_connect
     プロジェクトを他のメンバーと共有している場合には、プロジェクトのオーナーだけが iOS アプリ アップロード機能を使用できます。
 {{</note>}}
 
-{{<warning>}}
-    アクティベーション コードを使用し、アカウントをアップグレードさせて、アップロード機能を使用する場合には、アップグレード後のプランがこの機能をサポートしている必要があります。なにかご質問がございましたら、こちらの {{<link href="https://ja.monaca.io/service/index.html" title="お問い合わせ">}} までご連絡ください。
-{{</warning>}}
-
-
 Monaca 提供のアップロード機能を使用すれば、Monaca クラウド IDE から
 App Store Connect
 に、アプリをアップロードできます。手順は、次のとおりです。
@@ -32,6 +27,9 @@ App Store Connect
     {{<img src="/images/monaca_ide/manual/deploy/app_submission/2.png">}}
 
 4.  有効な Apple アカウント情報を入力して、{{<guilabel name="次へ">}} をクリックします。
+
+    パスワードには、App用パスワードを入力します。  
+    App用パスワードの取得方法については、{{<link href="https://support.apple.com/ja-jp/HT204397" title="こちら" target="_blank">}}をご確認ください。
 
     {{<img src="/images/monaca_ide/manual/deploy/app_submission/3.png">}}
 
@@ -56,3 +54,8 @@ App Store Connect
     {{</note>}}
 
 8.  これで、アプリのアップロードが完了しました。この後に、App Store Connect 上にて、申請に向けた手続きがありますので、詳細は、[アップロード後に行うアプリの設定](../app_store_connect/#アップロード後に行うアプリの設定) をご確認ください。
+
+
+{{<warning>}}
+    アクティベーション コードを使用し、アカウントをアップグレードさせて、アップロード機能を使用する場合には、アップグレード後のプランがこの機能をサポートしている必要があります。なにかご質問がございましたら、こちらの {{<link href="https://ja.monaca.io/service/index.html" title="お問い合わせ">}} までご連絡ください。
+{{</warning>}}
