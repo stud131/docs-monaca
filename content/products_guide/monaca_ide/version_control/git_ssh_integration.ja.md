@@ -9,10 +9,6 @@ Monacaでは、Git サービスを使ってレポジトリとプロジェクト�
 サービスの 1 つです。 次の項目では、GitHub を例として使用します。
 
 {{<note>}}
-    現在、SSH 接続の Git サービスは、 {{<link href="../../changes" title="新しい Monaca クラウド IDE">}} でのみ利用可能です。
-{{</note>}}
-
-{{<note>}}
     ここでは、Public 指定されたレポジトリを対象として解説を進めます。Private 指定のレポジトリに接続する場合には、対応する Monacaプランに加入する必要があります。詳細は、 {{<link href="https://ja.monaca.io/pricing.html" title="料金プラン">}} をご確認ください。
 {{</note>}}
 

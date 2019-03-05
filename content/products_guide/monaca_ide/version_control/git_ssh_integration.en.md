@@ -10,10 +10,6 @@ supporting SSH connection. Therefore, we will be using GitHub as an
 example in the following subsections.
 
 {{<note>}}
-    Currently, Git Services with SSH connection is only available in the {{<link href="../../changes" title="new Cloud IDE">}}.
-{{</note>}}
-
-{{<note>}}
     Generally, you can only connect to public repositories. However, with valid Monaca subscription plan, you can additionally connect to private repositories. Please refer to {{<link href="https://monaca.io/pricing.html" title="Monaca Subscription Plan">}}.
 {{</note>}}
 
