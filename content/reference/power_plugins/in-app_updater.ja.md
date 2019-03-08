@@ -3,11 +3,9 @@ title: In-App アップデーター プラグイン
 weight: 20
 ---
 
-アプリの再ビルド・再パッケージ化を行わずに、アプリで使用している HTML5
-アセットを更新するためのプラグイン ( Monaca In-App Updater )
-です。なお、更新ファイルをホストする Web
-サーバーが、別途、必要になります (
-アプリから、これらのファイルへアクセスできること )。
+In-App アップデーター プラグインは、アプリの再ビルド・再パッケージ化を行わずに、アプリで使用している HTML5 アセットを更新するためのプラグインです。
+
+In-App アップデーター プラグインを使用する場合は、別途、更新ファイルをホストする Web サーバーが、必要になります (アプリから、これらのファイルへアクセスできること )。
 
 {{<note>}}
     このプラグインを使用するためには、対応するプランへの加入が必要となります。詳細は、 {{<link href="https://ja.monaca.io/pricing.html" title="料金プラン">}} をご確認ください。
@@ -37,6 +35,13 @@ weight: 20
 
 ## 使い方
 
+In-App アップデーター プラグインは、対象アプリのバージョンに対して、HTML5
+アセットを更新します。
+HTML5 アセットを更新する場合は、Web サーバー側の更新ファイルに新しい更新番号の設定を行います。
+
+Web サーバー側の更新ファイルについては、[CheckUpdate URL](#checkupdate-url) を参照ください。
+
+
 ### プラグインの設定
 
 本プラグインを利用するためには、[CheckUpdate URL](#checkupdate-url)
@@ -44,7 +49,7 @@ weight: 20
 
 ###  CheckUpdate URL
 
-サーバーにある更新バージョンを確認します
+Web サーバー側の更新ファイルに設定されている更新バージョンを確認します。
 
 **Request パラメーター**
 
@@ -64,10 +69,10 @@ weight: 20
 {{<highlight javascript>}}
 {
   "ios": {
-    "2.1.0": {　// app version
-      "1": { // update number
+    "2.1.0": {　// アプリのバージョン
+      "1": { // 更新番号
         "date": 20170113,
-        "url": "https://hogehoge.com/app/ios-v2.1.0.zip" // This parameter is optional.
+        "url": "https://hogehoge.com/app/ios-v2.1.0.zip" // オプション
       }
     }
   }
@@ -79,20 +84,20 @@ weight: 20
 {{<highlight javascript>}}
 {
   "ios": {
-    "2.1.0": {　// app version
-      "1": { // update number
+    "2.1.0": {　// アプリのバージョン
+      "1": { // 更新番号
         "date": 20170113,
-        "url": "https://hogehoge.com/app/1/ios-v2.1.0.zip" //  This parameter is optional.
+        "url": "https://hogehoge.com/app/1/ios-v2.1.0.zip" //  オプション
       },
-      "2": { // update number
+      "2": { // 更新番号
         "date": 20170113,
-        "url": "https://hogehoge.com/app/2/ios-v2.1.0.zip" //  This parameter is optional.
+        "url": "https://hogehoge.com/app/2/ios-v2.1.0.zip" //  オプション
       }
     },
-    "2.2.0": {　// app version
-      "1": { // update number
+    "2.2.0": {　// アプリのバージョン
+      "1": { // 更新番号
         "date": 20170210,
-        "url": "https://hogehoge.com/app/1/ios-v2.2.0.zip" //  This parameter is optional.
+        "url": "https://hogehoge.com/app/1/ios-v2.2.0.zip" //  オプション
       }
     }
   }
@@ -114,9 +119,9 @@ weight: 20
 
 パラメーター | 型 | 解説
 ----------|-----------|---------------------
-`update_number` | 文字列 | ダウンロードするバージョンの番号 ( 更新バージョン番号 )
+`update_number` | 文字列 | ダウンロードする更新番号
 `project_id` | 文字列 | プロジェクトの一意の ID
-`my_update_number` | 文字列 | [ 任意 ] アプリの現在の更新番号
+`my_update_number` | 文字列 | [ 任意 ] 現在の更新番号
 `os` | 文字列 | [ 任意 ] 更新対象となる OS の種類
 `build_type` | 文字列 | [ 任意 ] ビルドの種類
 `app_version` | 文字列 | [ 任意 ] アプリのバージョン
@@ -144,10 +149,10 @@ weight: 20
 [updateAndRestart()](#updateandrestart) | ダウンロードした更新用ファイルを展開し、アプリを再起動します。
 [status()](#status) | プラグインの状態を確認します。
 [showAlertDialog()](#showalertdialog) | ダイアログ ( タイトルとメッセージ ) を表示します。
-[dismissAlertDialog()](#dismissalertdialog) | 警告 ( Alert ) ダイアログを閉じます。
-[showProgressDialog()](#showprogressdialog) | 進捗表示 ( Progress ) 用ダイアログを表示します。
-[changeProgressDialog()](#changeprogressdialog) | 進捗表示 ( Progress ) 用ダイアログを更新します。
-[dismissProgressDialog()](#dismissprogressdialog) | 進捗表示 ( Progress ) 用ダイアログを閉じます。
+[dismissAlertDialog()](#dismissalertdialog) | 警告ダイアログを閉じます。
+[showProgressDialog()](#showprogressdialog) | 進捗表示用ダイアログを表示します。
+[changeProgressDialog()](#changeprogressdialog) | 進捗表示用ダイアログを更新します。
+[dismissProgressDialog()](#dismissprogressdialog) | 進捗表示用ダイアログを閉じます。
 [networkStatus()](#networkstatus) | ネットワークの状態 ( Wifi、3G/LTE、接続なし など ) を確認します。
 [terminateApp()](#terminateapp) | アプリを強制終了します。
 [autoUpdate()](#autoupdate) | 更新ファイルのダウンロードとアプリの更新を自動的に行います。
@@ -179,15 +184,15 @@ monaca.InAppUpdater.getServerVersion([args: JSON object]): Promise
     `needsUpdate` | 真偽値 | アプリのバージョンを更新する必要があるかを示します。
     `updatable` | 真偽値 | 更新用のファイルがサーバー側に置かれているかを示します。
     `latestVersion` | 文字列 | アプリの最新バージョン
-    `myVersion` | 文字列 | 現在のアプリバージョン
-    `latestUpdateNumber` | 文字列 | 現在のアプリバージョンに適用できる最新の更新番号
-    `myUpdateNumber` | 文字列 | 現在のアプリバージョンが使用している更新番号
+    `myVersion` | 文字列 | 現在のアプリのバージョン
+    `latestUpdateNumber` | 文字列 | 現在のアプリのバージョンに適用できる最新の更新番号
+    `myUpdateNumber` | 文字列 | 現在のアプリのバージョンが使用している更新番号
     `updateInfo` | JSON オブジェクト | サーバー側の設定が、次のようになっている場合、{{<highlight javascript>}}{
   "ios": {
-    "2.1.0": {　// app version
-      "1": { // update number
+    "2.1.0": {　// アプリのバージョン
+      "1": { // 更新番号
         "date": 20170113,
-        "url": "https://hogehoge.com/app/ios-v2.1.0.zip" // This parameter is optional.
+        "url": "https://hogehoge.com/app/ios-v2.1.0.zip" // オプション
       }
     }
   }
@@ -279,7 +284,7 @@ monaca.InAppUpdater.download(args: JSON object): Promise
 
 プロパティ | 型 | 解説
 ----------|------|----------------
-`version` | 数値 | 対象のアプリバージョン
+`version` | 数値 | 対象のアプリのバージョン
 `updateNumber` | 数値 | 更新番号
 `bufferSize` | 数値 | ( Android 専用 ) バッファーサイズ ( バイト単位 )。デフォルト値は `8192` です。
 `url` | 文字列 | 設定された URL から Zip ファイルをダウンロードします。この値を設定しない場合には、[Download URL](#download-url) の値 ( `config.xml` 内の `monaca:updater_DownloadUrl` ) が代わりに使用されます。

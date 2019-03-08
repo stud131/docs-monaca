@@ -36,6 +36,12 @@ which will be accessed from the app.
 
 ## Usage
 
+This plugin updates the HTML5 asset for the version of the target application.
+When updating the HTML5 asset, set a new update number in the update file on the web server side.
+
+For the update file on the Web server side, see [CheckUpdate URL](#checkupdate-url).
+
+
 ###  Plugin Configuration
 
 In this section, we will talk about how to create the two web API you
