@@ -7,7 +7,7 @@ aliases: /en/monaca_ide/tutorial/adding_backend/
 
 ## Step 1: Attaching Backend to Your Project
 
-1.  From Monaca Cloud IDE, click on `Cloud` icon above the file tree menu
+1.  From Monaca Cloud IDE, click on `Backend` icon above the file tree menu
     to go to the Backend Control Panel. Then, click on {{<guilabel name="Start Using Backend">}}
     button.
 
@@ -23,12 +23,15 @@ aliases: /en/monaca_ide/tutorial/adding_backend/
 
     {{<img src="/images/monaca_ide/tutorial/adding_backend/5.png">}}
 
+{{<note>}}
+    If you do not use push notifications, disable <span class="guilabel">MonacaBackend</span> from <span class="guilabel">Configure → Manage Cordova plugins</span>.
+{{</note>}}
+
 ## Step 2: Creating a New Collection
 
 Collection is a general purpose storage to keep data in the Backend.
 
-1.  From Backend Control Panel, click on `Options Menu` icon. Then, choose
-    {{<guilabel name="New Collection...">}}.
+1.  From Backend Control Panel, click on `New Collection` icon.
 
     {{<img src="/images/monaca_ide/tutorial/adding_backend/6.png">}}
 

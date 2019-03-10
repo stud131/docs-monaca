@@ -5,12 +5,11 @@ hidden: true
 aliases: /ja/monaca_ide/tutorial/adding_backend/
 ---
 
-ステップ 1 : バックエンドとプロジェクトの紐付け
------------------------------------------------
+## ステップ 1 : バックエンドとプロジェクトの紐付け
 
-1.  Monaca クラウド IDE のメニュー上で、左側のツリーメニューの上部に表示された `クラウド` ( 雲
-    ) アイコンをクリックして、バックエンド管理画面へ行きます。次に、
-    {{<guilabel name="バックエンドを利用する">}} ボタンをクリックします。
+1.  Monaca クラウド IDE のメニューにある `バックエンド` ( 雲
+    ) をクリックして、バックエンド管理画面へ行きます。次に、
+    {{<guilabel name="バックエンドを作成して利用する">}} ボタンをクリックします。
 
     {{<img src="/images/monaca_ide/tutorial/adding_backend/3.png">}}
 
@@ -25,13 +24,16 @@ aliases: /ja/monaca_ide/tutorial/adding_backend/
 
     {{<img src="/images/monaca_ide/tutorial/adding_backend/5.png">}}
 
-ステップ 2 : コレクションの新規作成
------------------------------------
+{{<note>}}
+    プッシュ通知を使用しない場合は、<span class="guilabel"><b>
+    設定 → Cordova プラグインの管理</b></span> から <span class="guilabel">MonacaBackend</span> を <span class="guilabel">無効</span> にします。
+{{</note>}}
+
+## ステップ 2 : コレクションの新規作成
 
 コレクションとは、バックエンドの使用時に、データの格納を行う、汎用的なストレージのことを指します。
 
-1.  バックエンド管理画面上で、 `オプションメニュー`
-    アイコンをクリックして、{{<guilabel name="コレクションの作成...">}} を選択します。
+1.  バックエンド管理画面上で、`コレクションの作成` アイコンをクリックします。
 
     {{<img src="/images/monaca_ide/tutorial/adding_backend/6.png">}}
 
