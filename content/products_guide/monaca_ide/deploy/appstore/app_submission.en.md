@@ -29,7 +29,7 @@ IDE. In order to do this, please do as follows:
 
 4.  Fill in a valid Apple account information. Click {{<guilabel name="Next">}}.
 
-    Use "app-specific passwords" to the password field.  
+    Use `app-specific passwords` to the password field.  
     For details on how to obtain the password for App, please refer {{<link href="https://support.apple.com/en-us/HT204397" title="here" target="_blank">}}.
 
     {{<img src="/images/monaca_ide/manual/deploy/app_submission/3.png">}}
@@ -38,7 +38,15 @@ IDE. In order to do this, please do as follows:
 
     {{<img src="/images/monaca_ide/manual/deploy/app_submission/4.png">}}
 
-6.  The uploading will start. Please wait.
+6.  The following screen is displayed for a plan that requires billing. Click {{<guilabel name="Purchase">}}.
+
+    {{<img src="/images/monaca_ide/manual/deploy/app_submission/7.png">}}
+
+7.  The following screen will be displayed when the billing process of [6] is completed. Click {{<guilabel name="Upload">}}.
+
+    {{<img src="/images/monaca_ide/manual/deploy/app_submission/8.png">}}
+
+8.  The uploading will start. Please wait.
 
     {{<note>}}
         If you upload multiple versions of the app, please make sure that each app file has different version number. Otherwise, the upload will fail.
@@ -46,7 +54,7 @@ IDE. In order to do this, please do as follows:
 
     {{<img src="/images/monaca_ide/manual/deploy/app_submission/5.png">}}
 
-7.  If your upload is successful, the following screen will appear. It
+9.  If your upload is successful, the following screen will appear. It
     may take sometimes until the app shows up in the App Store Connect.
 
     {{<img src="/images/monaca_ide/manual/deploy/app_submission/6.png">}}

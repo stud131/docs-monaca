@@ -5,7 +5,7 @@ aliases: /ja/monaca_ide/manual/deploy/appstore/app_store_connect
 ---
 
 {{<note>}}
-    iOS アプリ アップロード機能を使用するためには、対応するプランへの加入が必要です。詳細は、 {{<link href="https://ja.monaca.io/pricing.html" title="こちら">}} をご確認ください。
+    iOS アプリ アップロード機能を使用するためには、対応するプランへの加入が必要です。詳細は、{{<link href="https://ja.monaca.io/pricing.html" title="こちら">}} をご確認ください。
 {{</note>}}
 
 {{<note>}}
@@ -26,18 +26,26 @@ App Store Connect
 
     {{<img src="/images/monaca_ide/manual/deploy/app_submission/2.png">}}
 
-4.  有効な Apple アカウント情報を入力して、{{<guilabel name="次へ">}} をクリックします。
+4.  有効な Apple ID 情報を入力して、{{<guilabel name="次へ">}} をクリックします。
 
-    パスワードには、App用パスワードを入力します。  
-    App用パスワードの取得方法については、{{<link href="https://support.apple.com/ja-jp/HT204397" title="こちら" target="_blank">}}をご確認ください。
+    パスワードには、`App 用パスワード` を入力します。  
+    App 用パスワードの取得方法については、{{<link href="https://support.apple.com/ja-jp/HT204397" title="こちら" target="_blank">}}をご確認ください。
 
     {{<img src="/images/monaca_ide/manual/deploy/app_submission/3.png">}}
 
-5.  App Store Connect 上でアプリの登録を事前に行っておく必要があります。詳細は、[こちら](../itunes_connect/#アプリの登録) をご確認ください。ここでは、登録済みであることを前提として、`App Store Connect にアプリ情報を登録しました。` にチェックを入れます。次に、{{<guilabel name="Upload">}} をクリックします。
+5.  App Store Connect 上でアプリの登録を事前に行っておく必要があります。詳細は、[こちら](../itunes_connect/#アプリの登録) をご確認ください。ここでは、登録済みであることを前提として、`App Store Connect にアプリ情報を登録しました。` にチェックを入れます。次に、{{<guilabel name="アップロード">}} をクリックします。
 
     {{<img src="/images/monaca_ide/manual/deploy/app_submission/4.png">}}
 
-6.  アップロードが完了するまで、しばらく待ちます。
+6.  課金が必要なプランの場合は、次の画面が表示されます。{{<guilabel name="課金する">}} をクリックします。
+
+    {{<img src="/images/monaca_ide/manual/deploy/app_submission/7.png">}}
+
+7.  [ 6 ] の課金処理が完了すると、次の画面が表示されます。{{<guilabel name="アップロード">}} をクリックします。
+
+    {{<img src="/images/monaca_ide/manual/deploy/app_submission/8.png">}}
+
+8.  アップロードが完了するまで、しばらく待ちます。
 
     {{<note>}}
         バージョンが異なる同一アプリをアップロードする場合、ファイル内のバージョン情報を、対応するバージョンに変更しておく必要があります。それ以外の場合、アップロードが失敗します。
@@ -45,17 +53,22 @@ App Store Connect
 
     {{<img src="/images/monaca_ide/manual/deploy/app_submission/5.png">}}
 
-7.  アップロード完了後、次のページが表示されます。なお、App Store Connect 上にアプリが表示されるまでには、しばらく時間がかかる場合があります。
+9.  アップロード完了後、次のページが表示されます。App Store Connect 上にアプリが表示されるまでには、しばらく時間がかかる場合があります。
 
     {{<img src="/images/monaca_ide/manual/deploy/app_submission/6.png">}}
 
     {{<note>}}
-        App Store Connect へのアップロード時、Apple 側でなんらかのエラーを出力する場合があります ( アカウントに登録しているメールアドレス宛にもエラー通知が送信されます )。その場合には、エラー内容を確認して、適切に対処してください。エラーの解消後、再度、アプリをアップロードします。
+        App Store Connect へのアップロードの際に、Apple 側でエラーを出力する場合があります ( アカウントに登録しているメールアドレス宛にもエラー通知が送信されます )。その場合には、エラー内容を確認して適切に対処してください。エラーの解消後、再度アプリをアップロードします。
     {{</note>}}
 
-8.  これで、アプリのアップロードが完了しました。この後に、App Store Connect 上にて、申請に向けた手続きがありますので、詳細は、[アップロード後に行うアプリの設定](../app_store_connect/#アップロード後に行うアプリの設定) をご確認ください。
+8.  これで、アプリのアップロードが完了しました。この後、App Store Connect 上で申請に向けた手続きがあります。詳細は、[アップロード後に行うアプリの設定](../app_store_connect/#アップロード後に行うアプリの設定) をご確認ください。
 
 
 {{<warning>}}
-    アクティベーション コードを使用し、アカウントをアップグレードさせて、アップロード機能を使用する場合には、アップグレード後のプランがこの機能をサポートしている必要があります。なにかご質問がございましたら、こちらの {{<link href="https://ja.monaca.io/service/index.html" title="お問い合わせ">}} までご連絡ください。
+    アクティベーション コードを使用してアップロード機能を使用する場合には、アップグレード後のプランが、この機能をサポートしている必要があります。不明な点がご質問がございましたら、こちらの{{<link href="https://ja.monaca.io/service/index.html" title="お問い合わせ">}} までご連絡ください。
 {{</warning>}}
+
+関連項目:
+
+- [App Store での配布](../)
+- [App Store Connect ガイド](../app_store_connect)
