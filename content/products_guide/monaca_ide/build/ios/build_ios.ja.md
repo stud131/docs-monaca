@@ -40,7 +40,7 @@ Monaca では、デバッグビルド、テストビルド ( Ad Hoc )、リリ�
         </td>
         <td>
             <ul>
-                <li>iTunes を使用</li>
+                <li>Apple Configurator 2 ( Mac のみ )</li>
                 <li><a href="/ja/products_guide/debugger/features/#プロジェクトオプション">ネットワーク インストール</a></li>
             </ul>
         </td>
@@ -56,7 +56,23 @@ Monaca では、デバッグビルド、テストビルド ( Ad Hoc )、リリ�
         </td>
         <td>
             <ul>
-                <li>iTunes を使用</li>
+                <li>Apple Configurator 2 ( Mac のみ )</li>
+                <li>QR コード</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td><b>In-house ビルド</b></td>
+        <td>App Store 経由以外で配布するためのアプリをビルドします。</td>
+        <td>
+            <ul>
+                <li>配布用証明書</li>
+                <li>配布用 ( In-house ) プロビジョニング プロファイル</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Apple Configurator 2 ( Mac のみ )</li>
                 <li>QR コード</li>
             </ul>
         </td>

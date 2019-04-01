@@ -32,7 +32,7 @@ follows:
     </tr>
     <tr>
         <td><b>Debug Build</b></td>
-        <td>Building the app for installing on development device(s)</td>
+        <td>Building the app for installing on development device(s).</td>
         <td>
             <ul>
                 <li>Development Certificate</li>
@@ -41,14 +41,14 @@ follows:
         </td>
         <td>
             <ul>
-                <li>iTunes</li>
+                <li>Apple Configurator 2 ( Mac only )</li>
                 <li><a href="/en/products_guide/debugger/features/#project-options">Network Install</a></li>
             </ul>
         </td>
     </tr>
     <tr>
         <td><b>Ad Hoc Build</b></td>
-        <td>Building the app for installing on a limited group of devices</td>
+        <td>Building the app for installing on a limited group of devices.</td>
         <td>
             <ul>
                 <li>Production Certificate</li>
@@ -57,14 +57,30 @@ follows:
         </td>
         <td>
             <ul>
-                <li>iTunes</li>
+                <li>Apple Configurator 2 ( Mac only )</li>
+                <li>QR Code</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td><b>In-house Build</b></td>
+        <td>Building the app for distribution outside the App Store.</td>
+        <td>
+            <ul>
+                <li>Production Certificate</li>
+                <li>Distribution (In-house) Provisioning Profile</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Apple Configurator 2 ( Mac only )</li>
                 <li>QR Code</li>
             </ul>
         </td>
     </tr>
     <tr>
         <td><b>Release Build</b></td>
-        <td>Building the app for distribution in App Store</td>
+        <td>Building the app for distribution in App Store.</td>
         <td>
             <ul>
                 <li>Production Certificate</li>
@@ -79,7 +95,7 @@ follows:
     </tr>
     <tr>
         <td><b>Simulator Build</b></td>
-        <td>Building the app for testing on iOS simulator</td>
+        <td>Building the app for testing on iOS simulator.</td>
         <td>
             <ul>
                 <li>N/A</li>
