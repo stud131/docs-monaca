@@ -18,7 +18,7 @@ App Store を経由せずに、アプリの配布を行う場合があります�
     経由以外の方法でアプリを配布できる方が、都合がよい場合があります。
 
 {{<note>}}
-    社内だけの配布でも、{{<link href="https://developer.apple.com/programs/enterprise/" title="Apple Developer Enterprise Program">}} アカウントに登録する必要があります。
+    社内( In-house ) だけの配布でも、{{<link href="https://developer.apple.com/programs/enterprise/" title="Apple Developer Enterprise Program">}} アカウントに登録する必要があります。
 {{</note>}}
 
 Apple Developer Proram と Apple Developer Enterprise Program
@@ -29,7 +29,7 @@ Apple Developer Proram と Apple Developer Enterprise Program
 ベータ版リリースの OS への配布 | 可 | 可
 Ad Hoc 配布 | 可 | 可
 App Store での配布 | 可 | 不可
-社内専用の配布 | 不可 | 可
+社内( In-house ) 専用の配布 | 不可 | 可
 TestFlight Beta Testing ( Beta 版アプリの検証アプリ ) | 可 | 不可
 チームの管理 | 不可 | 可
 アプリ解析 | 可 | 不可
@@ -122,9 +122,9 @@ iTunes を再設計し、iPhone や iPad 用のアプリを購入するための
 ### OTA 配布形式でのインストール方法
 
 OTA ( Over-The-Air ) 配布形式であれば、HTTPS
-経由で、ビルド済み ( Ad Hoc ビルド ) アプリをインストールできます。
+経由でビルド済みアプリをインストールできます。
 
-1.  デバッグビルドまたは Ad Hoc ビルドで、アプリをビルドします。iOS
+1.  デバッグビルド、Ad Hoc ビルド、または、In-house ビルドでアプリをビルドします。iOS
     のビルド手順に関しては、 [iOS アプリのビルド]({{<ref "build_ios.ja.md">}}) をご確認ください。
 
 2.  ビルド完了後、 `.ipa` ファイルをダウンロードします。

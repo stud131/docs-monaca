@@ -82,10 +82,9 @@ You can install your iOS app (`.ipa` file) via Xcode as follows:
 
 ### Install using OTA Deployment
 
-OTA (Over-The-Air) Deployment enables you to install your built apps
-(ad-hoc build) via HTTPS.
+OTA (Over-The-Air) Deployment enables you to install your built apps via HTTPS.
 
-1.  Build your application with either debug or ad-hoc build. For more
+1.  Build your application with either debug, ad-hoc or in-house build. For more
     details about iOS build process, please refer to [Building an iOS App](../../build/ios/build_ios).
 2.  Download the `.ipa` file after the build completes.
 3.  Upload the `.ipa` file to the site you want.
