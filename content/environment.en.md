@@ -43,3 +43,10 @@ The Monaca Localkit is currently tested on:
 | Cordova 7.1 | 26 | 9 / 10.1 |
 | Cordova 6.5 | 25 | 8 |
 | Cordova 6.2 | 23 | 7 |
+
+## File Name
+
+The following special characters can not be used in file names:
+
+- Unusable special characters:<br />
+  $ % # ^ & * ` ; : < > ? , ' "  / \ |
