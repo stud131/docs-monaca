@@ -7,7 +7,7 @@ This Cordova plugin brings push notifications, analytics, event tracking, crash 
 
 - Repo: https://github.com/arnesson/cordova-plugin-firebase
 - Plugin ID/Package Name: `cordova-plugin-firebase`
-- Tested Version: 0.1.25
+- Tested Version: 2.0.5
 
 {{<note>}}
 To check third party cordova plugins, you need to create a custom build debugger ( {{<link title="Android version" href="https://docs.monaca.io/en/products_guide/debugger/installation/debugger_android/#build-and-install-custom-monaca-debugger">}} or {{<link title="iOS version" href="https://docs.monaca.io/en/products_guide/debugger/installation/debugger_ios/#how-to-build-custom-monaca-debugger">}} ).

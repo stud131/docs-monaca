@@ -7,7 +7,7 @@ weight: 90
 
 - Repo: https://github.com/arnesson/cordova-plugin-firebase
 - Plugin ID/Package Name: `cordova-plugin-firebase`
-- Tested Version: 0.1.25
+- Tested Version: 2.0.5
 
 {{<note>}}
 サードパーティー製 Cordova プラグインを確認する場合は、カスタムビルドデバッガー ( {{<link title="Android 版" href="https://docs.monaca.io/ja/products_guide/debugger/installation/debugger_android/#カスタムビルド版-monaca-デバッガーのビルドとインストール">}} または {{<link title="iOS 版" href="https://docs.monaca.io/ja/products_guide/debugger/installation/debugger_ios/#カスタムビルド版-monaca-デバッガーのビルド方法">}} ) を作成する必要があります。
