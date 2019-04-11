@@ -4,7 +4,7 @@ title: 対応環境
 
 ## Monaca クラウド IDE
 
-- ブラウザー: 最新版の PC 版 Chrome
+- ブラウザー: PC 版 Chrome ( 最新バージョン )
 - 安定したインターネット環境
 
 ## Monaca デバッガー
@@ -20,6 +20,13 @@ Monaca Localkit は、次の環境で動作検証を行っています。
 - macOS Mojave
 - Windows 10 (64-bit)
 - Ubuntu Linux 16.04 (64-bit)
+
+## Monaca CLI
+
+Monaca CLI は、次の環境で動作検証を行っています。
+
+- Node.js：8.15.1
+- npm：6.4.1
 
 ## ビルドアプリ
 

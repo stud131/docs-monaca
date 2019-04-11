@@ -15,11 +15,18 @@ title: Supported Environment
 
 ## Monaca Localkit
 
-The Monaca Localkit is currently tested on:
+Monaca Localkit is currently tested on:
 
 - macOS Mojave
 - Windows 10 (64-bit)
 - Ubuntu Linux 16.04 (64-bit)
+
+## Monaca CLI
+
+Monaca CLI is currently tested on:
+
+- Node.js：8.15.1
+- npm：6.4.1
 
 ## Built App 
 
