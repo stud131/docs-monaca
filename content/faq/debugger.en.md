@@ -135,18 +135,16 @@ In order to reset Monaca Debugger, please do as follows:
 
 If the issue still persists, please contact our [Monaca Support](https://monaca.io/service/index.html).
 
-### console.log is not working on iOS for Cordova 6.5 project
+### console.log is not working on iOS for Cordova 6.5 or later project
 
 In this case, please check the version of Monaca Core Utility. In a
-Cordova 6.5 project, `Monaca Core Utility Version: 2.0.6` is a default
-setting. However, if you upgrade an older Cordova project to Cordova
-6.5, the version of Monaca Core Utility will not be updated. Therefore,
+Cordova 6.5 or later project, `Monaca Core Utility Version: 2.0.6` is a default
+setting. However, if you upgrade an older Cordova project to Cordova 6.5 or later, the version of Monaca Core Utility will not be updated. Therefore,
 if the version of Monaca Core Utility is lower than `2.0.6`, please
 update it as follows:
 
 1.  Go to {{<menu menu1="Config" menu2="Manage JS/CSS Components">}}.
 2.  Remove `Monaca Core Utility` component.
 3.  Then, re-add the component by clicking on {{<guilabel name="Add">}} button of `Monaca Core Utility`.
-4.  Select `2.0.6` version and click on {{<guilabel name="Install">}} button.
-5.  Click on {{<guilabel name="Save">}} button. Now, the `Monaca Core Utility Version: 2.0.6` should appear on the list.
-
+4.  Select `2.0.6` or later version and click on {{<guilabel name="Install">}} button.
+5.  Click on {{<guilabel name="Save">}} button.

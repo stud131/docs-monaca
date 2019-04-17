@@ -125,19 +125,16 @@ Monaca Debugger のリセットは、下記の手順で行うことができま�
 問題が解決できない場合には、 [Monaca
 問い合わせ窓口](https://ja.monaca.io/service/) までご連絡ください。
 
-### Cordova 6.5 プロジェクトの iOS で console.log が表示されません
+### Cordova 6.5 以降プロジェクトの iOS で console.log が表示されません
 
-Monaca Core Utility のバージョンを確認してください。 Cordova 6.5
-プロジェクトでは、 `Monaca Core Utility Version: 2.0.6`
-が、標準設定にになります。 旧CordovaプロジェクトをCordova
-6.5にアップグレードした場合は、Monaca Core Utility
+Monaca Core Utility のバージョンを確認してください。 Cordova 6.5 以降のプロジェクトでは、 `Monaca Core Utility Version: 2.0.6`
+が、標準設定になります。 旧 Cordova プロジェクトを Cordova
+6.5 以降にアップグレードした場合は、Monaca Core Utility
 のバージョンは更新されません。Monaca Core Utility のバージョンが `2.0.6`
 より低い場合は、下記の手順で更新を行うことができます。
 
 1.  {{<menu menu1="設定" menu2="JS/CSS コンポーネントの追加と削除">}} へ移動します。
 2.  `Monaca Core Utility` を削除します。
-3.  `Monaca Core Utility` の {{<guilabel name="Add" >}} ボタンをクリックして、再度追加します。
-4.  バージョン `2.0.6` 選択し {{<guilabel name="インストール">}} ボタンをクリックします。
-5.  {{<guilabel name="保存">}} ボタンをクリックします。`Monaca Core Utility Version: 2.0.6`
-    が、リストに表示されます。
-
+3.  `Monaca Core Utility` の {{<guilabel name="追加" >}} ボタンをクリックして、再度追加します。
+4.  バージョン `2.0.6` 以降を選択し {{<guilabel name="インストール">}} ボタンをクリックします。
+5.  {{<guilabel name="保存">}} ボタンをクリックします。
