@@ -25,7 +25,7 @@ Monaca Localkit は、次の環境で動作検証を行っています。
 
 Monaca CLI は、次の環境で動作検証を行っています。
 
-- Node.js：8.15.1
+- Node.js：8.16.0
 - npm：6.4.1
 
 ## ビルドアプリ
