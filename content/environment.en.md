@@ -10,7 +10,7 @@ title: Supported Environment
 ## Monaca Debugger
 
 - iOS 8 or higher
-- Android 4.0 or higher
+- Android 4.1 or higher
 - Wi-Fi connection is preferred
 
 ## Monaca Localkit
@@ -32,16 +32,15 @@ Monaca CLI is currently tested on:
 
 | Built App | Android | iOS | Windows|
 |:------------|:-------:|:--:|:------:|
-| Cordova6.5 or higher | 4.1 or higher | 9 or higher | 8.1 |
-| Cordova6.2 or lower | 4.0 or higher | 8 or higher | 8.1 |
+| Cordova 6.5 or higher | 4.1 or higher | 9 or higher | 8.1 |
+| Cordova 6.2 | 4.0 or higher | 8 or higher | 8.1 |
 
 ## Custom Debugger
 
 | Custom Debugger | Android | iOS     |
 |:-----------|:------------:|:------------:|
-| Cordova　7.1 | 4.1 or higher| 9 or higher  |
-| Cordova　6.5 | 4.1 or higher| 9 or higher  |
-| Cordova　6.2 | 4.1 ~ 7      | 8 ~ 10       |
+| Cordova 6.5 or higher | 4.1 or higher| 9 or higher  |
+| Cordova 6.2 | 4.0 or higher | 8 ~ 10       |
 
 ## Build Environment
 
