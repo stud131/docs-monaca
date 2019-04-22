@@ -289,9 +289,10 @@ App ID の登録を、次の手順で行います。
 3.  端末の情報を入力します。
 
     - `Name` : 端末を識別するための名前を入力します ( 例 : MyiPhone )
-    - `UDID` : 端末固有の識別コードです。UDID は、コンピューターに iOS 端末を接続して確認できます。まず、iTunes を起動して、端末情報を表示させます。端末情報の `シリアル番号` をクリックして、UDID ( `40` 文字 ) を表示させます。次に、UDID を右クリックし、コピーします ( 下のスクリーンショットを参照のこと )。
+    - `UDID` : 端末固有の識別コードです。UDID は、コンピューターに iOS 端末を接続して確認できます。macOS の場合は、システム情報の `シリアル番号` から、Windows の場合は、デバイスマネージャーの `デバイス インスタンス パス` から確認できます。( 下のスクリーンショットを参照のこと )。
 
-    {{<img src="/images/monaca_ide/manual/build/build_ios/6.png">}}
+    {{<figure src="/images/monaca_ide/manual/build/build_ios/6_1.png" title="macOS">}}
+    {{<figure src="/images/monaca_ide/manual/build/build_ios/6_2.png" title="Windows">}}
 
 4.  入力後、{{<guilabel name="Continue">}} をクリックします。次の画面で入力情報を確認して、
     {{<guilabel name="Register">}} をクリックします。iOS Dev Center

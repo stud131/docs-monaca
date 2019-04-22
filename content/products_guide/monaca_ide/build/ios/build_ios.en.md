@@ -292,9 +292,10 @@ development, please follow the instruction below:
 3.  Fill in the information of your device.
 
     -   `Name`: a name represent your device (Example: MyiPhone)
-    -   `UDID`: a unique device identifier of your device. You can find this identifier by connecting your iOS device to your computer. Then, open iTunes and see the summary of your device. After that, click on the device’s `Serial Number` to reveal the UDID which consists of `40` characters. Right-click on it to copy this UDID. (See below)
+    -   `UDID`: a unique device identifier of your device. You can find this identifier by connecting your iOS device to your computer. For macOS, you can check from the `serial number` of system information. For Windows, you can check from the `device instance path` of Device Manager. (See below)
 
-        {{<img src="/images/monaca_ide/manual/build/build_ios/6.png">}}
+    {{<figure src="/images/monaca_ide/manual/build/build_ios/6_1.png" title="macOS">}}
+    {{<figure src="/images/monaca_ide/manual/build/build_ios/6_2.png" title="Windows">}}
 
 4.  Then, press {{<guilabel name="Continue">}}. After reviewing your device’s info, click
     {{<guilabel name="Register">}}. By now, you have completed your device registration into
