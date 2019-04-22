@@ -9,7 +9,7 @@ title: 対応環境
 
 ## Monaca デバッガー
 
-- iOS 8 以上
+- iOS 9 以上
 - Android 4.1 以上
 - Wi-Fi 接続を推奨します
 

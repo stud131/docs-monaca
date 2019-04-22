@@ -9,7 +9,7 @@ title: Supported Environment
 
 ## Monaca Debugger
 
-- iOS 8 or higher
+- iOS 9 or higher
 - Android 4.1 or higher
 - Wi-Fi connection is preferred
 
