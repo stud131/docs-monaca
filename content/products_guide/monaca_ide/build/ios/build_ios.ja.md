@@ -7,7 +7,7 @@ aliases:
 ---
 
 {{<note>}}
-Appleは2018年4月から、App Storeに提出されたすべての新しいiOSアプリケーションはiOS 11 SDKで構築する必要があると {{<link title="アナウンス" href="https://developer.apple.com/ios/submit/">}}がありました。また、ユニバーサルアプリを含むすべてのiPhoneアプリは、iPhone XのSuper Retinaディスプレイをサポートする必要があります。このため、MonacaアプリをAppStoreに公開するには、Cordova 7.1以降をプロジェクトで利用する必要があります。
+2019年3月27日以降、App Store に送信されるすべての iOS アプリは、iOS 12.1 SDK 以降で構築され、iPhone XS Max または 12.9 インチ iPad Pro (3rd generation) の全画面デザインをサポートする必要があります。詳細については、{{<link title="Submitting iOS Apps to the App Store" href="https://developer.apple.com/ios/submit/">}} を参照していください。このため、Monacaで開発するアプリを AppStore に公開するには、Cordova 7.1 以降のプロジェクトを使用する必要があります。
 {{</note>}}
 
 ## 事前準備
@@ -143,7 +143,7 @@ Ad Hoc 配布とは、App Store
     {{<img src="/images/monaca_ide/manual/build/build_ios/1.png">}}
 
     {{<warning>}}
-        Monaca 上でのアプリ設定では、App ID に、アスタリスク (*) は使用できません。使用した場合、ビルドが失敗します。また、この App ID には、iOS Dev Center で登録した/する Explicit App ID と同じものを使用します。詳細は、{{<link href="#app-id-の登録" title="App ID の登録">}} をご確認ください。
+        Monaca のアプリ設定では、App ID にアスタリスク (*) を使用することはできません。使用した場合、ビルドは失敗します。また、この App ID には iOS Dev Center に登録した App ID と同じ ID を使用します。詳細は、{{<link href="#app-id-の登録" title="App ID の登録">}} をご確認ください。
     {{</warning>}}
 
 3.  設定後、{{<guilabel name="保存する">}} をクリックします。

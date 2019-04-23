@@ -5,7 +5,7 @@ aliases: /ja/monaca_ide/manual/build/ios
 ---
 
 {{<note>}}
-Appleは2018年4月から、App Storeに提出されたすべての新しいiOSアプリケーションはiOS 11 SDKで構築する必要があると {{<link title="アナウンス" href="https://developer.apple.com/ios/submit/">}}がありました。また、ユニバーサルアプリを含むすべてのiPhoneアプリは、iPhone XのSuper Retinaディスプレイをサポートする必要があります。このため、MonacaアプリをAppStoreに公開するには、Cordova 7.1以降をプロジェクトで利用する必要があります。
+2019年3月27日以降、App Store に送信されるすべての iOS アプリは、iOS 12.1 SDK 以降で構築され、iPhone XS Max または 12.9 インチ iPad Pro (3rd generation) の全画面デザインをサポートする必要があります。詳細については、{{<link title="Submitting iOS Apps to the App Store" href="https://developer.apple.com/ios/submit/">}} を参照していください。このため、Monacaで開発するアプリを AppStore に公開するには、Cordova 7.1 以降のプロジェクトを使用する必要があります。
 {{</note>}}
 
 - [iOS アプリのビルド](build_ios)

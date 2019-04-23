@@ -7,7 +7,7 @@ aliases:
 ---
 
 {{<note>}}
-Starting from April 2018, Apple {{<link title="announces" href="https://developer.apple.com/ios/submit/">}} that all new iOS apps submitted to the App Store must be built with the iOS 11 SDK. All new apps for iPhone, including universal apps, must support the Super Retina display of iPhone X. For this reason, in order to publish Monaca apps to the AppStore, you must use Cordova 7.1 or higher in your projects. 
+Starting March 27, 2019, all iOS apps submitted to the App Store will need to be built with the iOS 12.1 SDK or later, and support the all-screen design of iPhone XS Max or the 12.9-inch iPad Pro (3rd generation) For more information, see {{<link title="Submitting iOS Apps to the App Store" href="https://developer.apple.com/ios/submit/">}}. For this reason, in order to publish Monaca apps to the AppStore, you must use Cordova 7.1 or higher in your projects. 
 {{</note>}}
 
 ## Prerequisites
