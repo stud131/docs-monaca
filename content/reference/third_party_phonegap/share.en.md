@@ -30,12 +30,12 @@ show(func)   |Show a list of apps for user to choose and share the data when an 
 {{<highlight html>}}
 <!DOCTYPE HTML>
 <html>
-
 <head>
   <title>Cordova - Share Plugin Demo</title>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
   <script src="components/loader.js"></script>
   <link rel="stylesheet" href="components/loader.css">
 
@@ -63,5 +63,5 @@ show(func)   |Show a list of apps for user to choose and share the data when an 
 
 See Also:
 
-- [Core Cordova Plugins](../../cordova_6.5)
+- [Core Cordova Plugins](../../cordova_7.1)
 - [Monaca Power Plugins](../../power_plugins)

@@ -10,8 +10,7 @@ Share プラグインを使用すれば、他のアプリ ( Gmail、Dropbox な�
 このプラグインは、Android プラットフォーム専用です。
 {{</note>}}
 
-プラグインの追加方法 ( Monaca 上での処理 )
-------------------------------------------
+## プラグインの追加方法 ( Monaca 上での処理 )
 
 1.  Monaca クラウド IDE から {{<menu menu1="設定" menu2="Cordova プラグインの管理">}} を選択します。
 
@@ -19,25 +18,23 @@ Share プラグインを使用すれば、他のアプリ ( Gmail、Dropbox な�
 
     {{<img src="/images/reference/third_party_phonegap/share/1.png">}}
 
-メソッド
---------
+## メソッド
 
 関数名 | 解説
 -------------|----------------------------------------------------------
 show(func)   | データを共有するアプリの一覧を表示して、アプリの選択後に、データの共有を行います。                               
 
-Share プラグインの記述例
-------------------------
+## Share プラグインの記述例
 
 {{<highlight html>}}
 <!DOCTYPE HTML>
 <html>
-
 <head>
   <title>Cordova - Share Plugin Demo</title>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
   <script src="components/loader.js"></script>
   <link rel="stylesheet" href="components/loader.css">
 
@@ -62,3 +59,8 @@ Share プラグインの記述例
 </body>
 </html>
 {{</highlight>}}
+
+関連項目:
+
+- [基本プラグイン](../../cordova_7.1)
+- [Monaca 提供プラグイン](../../power_plugins)
