@@ -400,7 +400,7 @@ monaca.cloud.User.updatePassword("oldPassword", "newPassword")
 
 ユーザーがパスワードを忘れてしまいログインできない場合、パスワード再設定用トークンを、メールで送信します。メールを送信する前に、Monaca
 クラウド IDE
-上で、メールのテンプレートを作成しておきます。メールテンプレートの作成方法に関しては、[メールテンプレートの管理]({{<ref "control_operations.ja.md#メールテンプレートの管理">}}) をご確認ください。
+上で、メールのテンプレートを作成しておきます。メールテンプレートの作成方法に関しては、[メールテンプレートの管理](/ja/products_guide/backend/backend_operations/#メールテンプレートの管理) をご確認ください。
 
 {{<highlight javascript>}}
 monaca.cloud.User.sendPasswordResetToken(username: String, options: Object) : $.Promise
