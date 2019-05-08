@@ -247,7 +247,7 @@ monaca.cloud.User.isAuthenticated() : Boolean
 **例**
 
 {{<highlight javascript>}}
-if (false == monaca.cloud..User.isAuthenticated()) {
+if (false == monaca.cloud.User.isAuthenticated()) {
     // Go to login
 }
 {{</highlight>}}

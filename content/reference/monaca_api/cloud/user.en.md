@@ -247,7 +247,7 @@ Type | Description
 **Example**
 
 {{<highlight javascript>}}
-if (false == monaca.cloud..User.isAuthenticated()) {
+if (false == monaca.cloud.User.isAuthenticated()) {
     // Go to login
 }
 {{</highlight>}}
