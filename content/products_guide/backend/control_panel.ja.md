@@ -45,15 +45,15 @@ IDE からではなく、開発者自身のサーバーから Monaca
 
     {{<img src="/images/backend/control_panel/4.png">}}
 
-3.  次に、マネジメント APIに関連するさまざまな情報が表示されます。
-**マネジメント API のエンドポイント URL**は、`JSON-RPC Request URL` ([バックエンド マネジメント API](/ja/reference/monaca_api/cloud_management) を参照）として使用されます。
+3.  次に、マネジメント API に関連するさまざまな情報が表示されます。
+**マネジメント API のエンドポイント URL**は、`JSON-RPC Request URL` ( [バックエンド マネジメント API](/ja/reference/monaca_api/cloud_management) を参照 ）として使用されます。
 
     {{<img src="/images/backend/control_panel/5.png">}}
 
-4.  次に、APIキーを作成します。 2つの方法でAPIキーを作成できます。
+4.  次に、API キーを作成します。2 つの方法で API キーを作成できます。
 
     - IP アドレスの範囲 : 指定した IP アドレスの範囲に対して、API キーを 1 つ設定できます。
-    - 空白を設定 (推奨しません) : 任意のIPアドレス用のAPIキーを作成します。
+    - 空白を設定 ( 推奨しません ) : 任意の IP アドレス用の API キーを作成します。
 
     {{<img src="/images/backend/control_panel/6.png">}}
 
