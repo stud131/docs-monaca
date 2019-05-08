@@ -32,7 +32,7 @@ are displayed as a pop-up dialogue box.
 
 ## Prerequisite
 
-Monaca Backend is required in order to send push notifications from Monaca Cloud IDE. In order to add a Monaca Backend to your project, please refer to [Getting Started with Monaca Backend](../../backend/new_backend/getting_started/).
+Monaca Backend is required in order to send push notifications from Monaca Cloud IDE. In order to add a Monaca Backend to your project, please refer to [Getting Started with Monaca Backend](../../backend/getting_started/).
 
 ## How to Enable Push Notification with Monaca
 

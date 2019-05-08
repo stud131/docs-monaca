@@ -34,7 +34,7 @@ aliases: /ja/push_notification/manual/overview
 
 ## 事前準備
 
-Monaca クラウド IDE からプッシュ通知を送信するには、Monaca バックエンドを事前に準備しておく必要があります。 プロジェクトに Monaca バックエンドを追加するには、[Monaca バックエンド 入門](../../backend/new_backend/getting_started/) を参照してください。
+Monaca クラウド IDE からプッシュ通知を送信するには、Monaca バックエンドを事前に準備しておく必要があります。 プロジェクトに Monaca バックエンドを追加するには、[Monaca バックエンド 入門](../../backend/getting_started/) を参照してください。
 
 
 ## プッシュ通知の設定 ( Monaca 上での処理 )
