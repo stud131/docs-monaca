@@ -21,7 +21,7 @@ Please modify your project's package.json from
 to
 
 {{<highlight javascript>}}
-        "cordova-plugin-firebase": "https://github.com/monaca-plugins/cordova-plugin-firebase.git#v2.0.5-modified"
+        "cordova-plugin-firebase": "git+https://github.com/monaca-plugins/cordova-plugin-firebase.git#v2.0.5-modified"
 {{</highlight>}}
 
 {{</note>}}
