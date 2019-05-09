@@ -10,16 +10,16 @@ weight: 90
 - Tested Version: 2.0.5
 
 {{<note>}}
-2019/05/09現在、 cordova-plugin-firebase@2.0.5 はライブラリのバージョンに不具合があり、Androidで正常にビルドが出来ません。そのため、package.json を
+2019/05/09 現在、cordova-plugin-firebase@2.0.5 はライブラリのバージョンに不具合があり、Android で正常にビルドが出来ません。そのため、package.json を
 
 {{<highlight javascript>}}
-        "cordova-plugin-firebase": "2.0.5"
+"cordova-plugin-firebase": "2.0.5"
 {{</highlight>}}
 
 から
 
 {{<highlight javascript>}}
-        "cordova-plugin-firebase": "git+https://github.com/monaca-plugins/cordova-plugin-firebase.git#v2.0.5-modified"
+"cordova-plugin-firebase": "git+https://github.com/monaca-plugins/cordova-plugin-firebase.git#v2.0.5-modified"
 {{</highlight>}}
 
 に変更してください。
