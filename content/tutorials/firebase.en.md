@@ -15,13 +15,13 @@ This Cordova plugin brings push notifications, analytics, event tracking, crash 
 Please modify your project's package.json from
 
 {{<highlight javascript>}}
-        "cordova-plugin-firebase": "2.0.5"
+"cordova-plugin-firebase": "2.0.5"
 {{</highlight>}}
 
 to
 
 {{<highlight javascript>}}
-        "cordova-plugin-firebase": "git+https://github.com/monaca-plugins/cordova-plugin-firebase.git#v2.0.5-modified"
+"cordova-plugin-firebase": "git+https://github.com/monaca-plugins/cordova-plugin-firebase.git#v2.0.5-modified"
 {{</highlight>}}
 
 {{</note>}}
