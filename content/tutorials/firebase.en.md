@@ -10,7 +10,7 @@ This Cordova plugin brings push notifications, analytics, event tracking, crash 
 - Tested Version: 2.0.5
 
 {{<note>}}
-2019/05/09 This plugin cordova-plugin-firebase@2.0.5 has an issue about libraries version. The build for android will fails.
+2019/05/09 This plugin cordova-plugin-firebase@2.0.5 has an issue about libraries version. The build for android will fail.
 
 Please modify your project's package.json from
 
