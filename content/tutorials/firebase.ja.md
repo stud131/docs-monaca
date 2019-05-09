@@ -19,7 +19,7 @@ weight: 90
 から
 
 {{<highlight javascript>}}
-        "cordova-plugin-firebase": "https://github.com/monaca-plugins/cordova-plugin-firebase.git#v2.0.5-modified"
+        "cordova-plugin-firebase": "git+https://github.com/monaca-plugins/cordova-plugin-firebase.git#v2.0.5-modified"
 {{</highlight>}}
 
 に変更してください。
