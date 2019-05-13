@@ -1,6 +1,6 @@
 # Monaca Docs
 
-These docs are built using [Hugo](https://gohugo.io/). If you do not have it installed, follow the instructions on the Hugo site.
+These docs are built using [Hugo](https://gohugo.io/). If you do not have it installed, follow the instructions on the Hugo site. (Latest version may not work. The version 0.39 works. See https://github.com/gohugoio/hugo/releases/tag/v0.39 )
 
 ## Update Site flow
 
