@@ -70,14 +70,6 @@ Monacaの機能を利用するには、以下の手順に沿って試してく�
 
     {{<img src="/images/monaca_cli/samples/vue_onsen/1.png">}}
 
-    または、 `monaca demo` を使用して、ブラウザ上で iOS と Android を同時にプレビューすることができます。
-
-    {{<highlight bash>}}
-npm run build:watch  // In a different terminal
-monaca demo{{</highlight>}}
-
-    {{<img src="/images/monaca_cli/samples/vue_onsen/2.png">}}
-
 3.  実機でのデバッグは、下記のコマンドで実行できます。
 
     {{<highlight bash>}}
